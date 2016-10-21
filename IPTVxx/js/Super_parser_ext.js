@@ -1,903 +1,1363 @@
-var _$_563e = ["911.to/get_cv/md5/", "indexOf", "hdrezka.tv/films", "hdrezka.tv/series", "gidtv.cc", "divan.tv/", "Request", "file: \"", "\",", ".videokub.com/embed/", ".videokub.me/embed/", "file:\"", "/\",", ".lovekino.tv/video/md5hash", "http://s2.lovekino.tv/player/play.php?name=films/klyatva.na.krovi.2010.xvid.iptvrip.filesx.flv", "video/", "/", "md5hash", "replace", "serialo.ru/video", "http://latino-serialo.ru/italianskie_seriali_online/2638-polny-ocharovaniya-cheias-de-charme-seriya-10.html", "responseText", "XHRObj", ";pl=", "\"", "", "file\":\"", "/video/", "/md5hash/", "md4hash", "fileplaneta.com", "dd=", "&&", "hd=", "</track>", "<filehd>", "</filehd>", "<id>", "</id><file>", "</file>", "aburmu4.tv", "http://s1.aburmu4.tv/player/play.php?s=1&name=vsfw/antboy_2013.flv", "aburmu4.tv@", "http://50.7.188.234/v/", "/vsfw/antboy_2013.flv", "dolgoe.net", "http://srv10.dolgoe.net/php/video.php?name=film/tammy.2014.flv", "http://srv10.dolgoe.net/video/", "/film/tammy.2014.flv", "serverfilm.net", "http://srv10.serverfilm.net/php/video.php?name=film/gorod.grehov.2.flv", "http://srv10.serverfilm.net/video/", "/film/gorod.grehov.2.flv", "hdcdn.nl", "moonwalk.cc", "korolek.tv", "http://s1.korolek.tv/player/play.php?name=vsfw/golodni.igry.2014.camrip.flv", "http://s1.korolek.tv/v/", "/vsfw/golodni.igry.2014.camrip.flv", "online-cinema.biz", "&file=", "50.7.168.250", "video-fokus.org", "50.7.132.82", "37.48.85.202", "188.227.185.66", "176.58.40.180", "212.113.33.98", "212.113.37.99", "http://kino-live.org/hq/715505-slova.html", "/s/", ".kinoylei.ru", "http://server1.kinoylei.ru/get2/3074", "film/", ".kinoluvr.ru", "http://server1.kinoluvr.ru/get2/5792", "moviestape.com/", "http://fs0.moviestape.com/show.php?name=films/Charlie.and.the.Chocolate.Factory.mp4", "http://fs0.moviestape.com/video/", "/films/", "poiuytrew.pw/", "http://filmix.net/semejnyj/36974-tor-legenda-vikingov-legends-of-valhalla-thor-2011.html", "http://185.25.119.98/php/filmix_c.php?code=", "cleanArray(['", "','", "_[", "].", "split", ",", "]", "[", "pirateplayer.com/", "http://pirateplayer.com/embed/sPXX6HVcfQV", "st=http://pirateplayer.com/player/1-f/Kh5CER87XrjkpQjC19ni3e-Ym3NWhDi0U/", "/embed/\"", "hotcloud.org/", "https://my-hit.org/film/558/playlist.txt", "id=", "\"}]}", "http://fs0.moviestape.com/show.php?name=films/Captain.Phillips.mp4", "http://s*/video/", "/s*/s*mp4'};", "baskino.com/films", "kinobar.net", "src=\"", "\" type=", ".jampo.tv/play", "<video width=\"s*?\" height=\"s*?\" src=\"", "\" controls />", "lidertvvv", "moonwalk.cc/video", "/iframe", "/index.m3u8", "moonwalk.cc/serial", "http://moonwalk.cc/video/", "video_token: '", "',", "serialon.com/", "http://www.serialon.com/serial/10601-agent-osobogo-naznacheniya-4-15-seriya.html", "'file':'http://www.serialon.com/h-video/", "/agent-osobogo-naznacheniya-4/agent-osobogo-naznacheniya-4_1/agent-osobogo-naznacheniya-4_1.flv'", "serialsonline.net/clip", "watch-online-hd.ru/", "hdgo.cc", "http://watch-online-hd.ru/embed/54/", "http://v4.watch-online-hd.ru/flv/", "/54-sdelka-s-dyavolom.mp4", "onlyclips.net/artist", "<iframe.*src=\".*youtube.com/embed/", "\" fr", "vk.com", "http:", "iframe.*?src=\"", "rutube.ru", "http://rutube.ru/api/oembed/?format=json&url=", "http://", "\"//", "m3u8&quot;: &quot;", ";},", ".kinoxa-x.ru", "50.7.172.194/kino.php", "<video width=570 height=360 src=\"", "\" controls", "kinoprosmotr.net/", ";file=", "&amp;poster=", "kinoprosmotr.org/video/", "http://kinoprosmotr.net/serial/1839-ne-ver-su-iz-kvartiry-23.html", "serial.php%3Fip%3D", "%26fi", "new-kino.net", "http://new-kino.net/komedii/5631-igrushka-1982.html", "?new-kino.net", "/dd11/", "uakino", "kino-dom.tv/s/md5", "http://kino-dom.tv/asian/3513-strelok-iz-chosona.html", "value=\"http://kino-dom.tv/", "/play/", "kaban.tv/", ",\"file\":\"", "\",\"f", "http://185.25.119.98/php/kaban/kaban.php?code=", "videoapi.my.mail.ru/", "html", "json", "embed/", "sd\":\"", "tree.tv", "&dd=", "substr", "cxz.to", "minizal.net", "http://s2.minizal.net/php/playlist.php?pl=/syn_otca_narodov.txt", "porntube.com", "??", "<stream label=\"", "</stream>", "<file>", "</", "&", "streamcloud.eu", "GET", "open", "send", "streamcloud.eu/", ".html", "op=download1&usr_login=&id=", "&fname=", "&referer=&hash=&imhuman=Weiter+zum+Video", "POST", "onreadystatechange", "readyState", "status", "/video.sibnet.ru", "cookie", "=", "length", "slice", "'file':'", "'", "http://video.sibnet.ru", "Accept-Encoding", "identity", "setRequestHeader", "Accept-Language", "en-us,en;q=0.5", "Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "User-Agent", "Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.6) Gecko/20100627 Firefox/3.6.6", "Accept-Charset", "ISO-8859-1,utf-8;q=0.7,*;q=0.7", "X-Set-Cookie", "Wert", "X-Alt-Referer", "http://video.sibnet.ru/player/player.swf", "Referer", "Connection", "close", "getAllResponseHeaders", "film-center.info/", "http://srv1.film-center.info/player/play.php?name=flv/full/zavtrak.na.trave.1979.dvdrip.flv", "onlinefilmx.ru/video", "onlinefilmx.tv/video", "http://s3.onlinefilmx.ru/player/play.php?id=113", "tushkan.net/video", "rugailo.net/video/", "http://srv3.tushkan.net/php/tushkan.php?name=film/Slova.2012.flv", "/film/", "tushkan.net/php", "rugailo.net/php", "videose.org/", "file' : '", "latino-serialo.ru", "#", "kset.kz", "ImZpbGUi", "==", "http://gegen-abzocke.com/xml/nstrim/kset/code.php?code_url=", "#redirect#", ".tfilm.tv/", "http://filmin.ru/28234-buket.html", "http://gegen-abzocke.com/xml/nstrim/filmin/code.php?code_url=", "baskino.com/", "kinobanda.net/", "http://kinobanda.net/get.php?pl=23298/1/0/", "http://gegen-abzocke.com/xml/nstrim/kinobanda/code.php?code_url=", "veterok.tv/v/", "\"]=\"", "\";", "imovies.ge/", "file>", "<", "kino-live.org/s/md5", "embed.nowvideo.eu/", "flashvars.file=\"", "flashvars.filekey=\"", "http://www.nowvideo.eu/api/player.api.php?user=undefined&codes=1&key=", "&pass=undefined&file=", "http", "&title", "file : '", "namba.net/", "CSRF_TOKEN='", "http://namba.net/api/?service=video&action=video&token=", "&id=", "flv\":\"", "jampo.", "flashvars.File = '", "online.ua/", "file: 'http://video.online.ua/playlist/", "http://video.online.ua/playlist/", "<location>", "mediacdn.ru", "match", "http://app1.bonus-tv.ru/api/channels", "X-Requested-With", "XMLHttpRequest", "Host", "app.bonus-tv.ru", "http://bonus-tv.ru:90/lg/publish/", "X_USERNAME", "c3d33d76a835a59ff32bb65e77dfa45c", "X_PASSWORD", "event=", "&hash=(.*?)\"", "debilizator.tv", "<source src=\"", "\" type=\"video/mp4\"", "stepashka.com/video/", "http://online.stepashka.com/filmy/deutsch/19600-the-incident-asylum-blackout-2011-deutsch.html", "http://gegen-abzocke.com/xml/nstrim/stepashka/code.php?code_url=", "//kinostok.tv/player/", "//kinostok.tv/embed", "http://gegen-abzocke.com/xml/nstrim/kinostok/code.php?code_url=", "api.video.mail.ru/", "hd\":\"", "novamov.com/embed", "http://www.novamov.com/api/player.api.php?pass=undefined&user=undefined&key=", "&codes=undefined&file=", "videoweed.es/file", "videoweed.es/embed", "http://www.videoweed.es/api/player.api.php?user=undefined&codes=1&key=", "//kino-v-online.tv/kino/md5", "//kino-v-online.tv/serial/md5", "?st=1", "http://kino-v-online.tv/2796-materik-online-film.html", "/kino/", ".flv", "//vtraxe.com/", "3Fv=", "http://gegen-abzocke.com/xml/nstrim/uletno/code.php?code_url=", "http://kino-dom.tv/drama/1110-taynyy-krug-the-sesret-sirsle-1-sezon-1-seriya-eng-onlayn.html", "pl:\"http://kino-dom.tv/", "linecinema.org/s/md5", "http://www.linecinema.org/newsz/boevyk-online/508954-bliznecy-drakony-twin-dragons-1992-dvdrip-onlayn.html", "linecinema.org/s/", "//figvam.ru/", "figvam.ru", "go2load.com", "ftp://", ".igru-film.net/", "xyss", "xys", "http://fepcom.net/", "ssa", "http://gegen-abzocke.com/xml/nstrim/fepcom/code.php?code_url=", "kinoylei.ru/", " http://server1.kinoylei.ru/player/pl.php?id=2902-3142", "//77.120.114", "nowfilms.ru/", "/tmp/", "//77.120.119", "http://gegen-abzocke.com/xml/nstrim/liveonline/code.php?code_url=", "uletfilm.net/", "//kinostok.tv/video/", "/streaming.video.", "get-location/", "/m", "http://static.video.yandex.ru/get-token/", "?nc=0.50940609164536", "token>", "</token>", "video-location>", "</video-location>", "&amp;", "filmix.net/s/md5hash", "filevideosvc.org/s/md5hash", "http://gegen-abzocke.com/xml/nstrim/filmix/code.php?code_url=", "goshatube.com/watch?v=", "goshatube", "youtube", "crossdomain.xml\");yt.preload.start(\"", "\");</script>", "http://gegen-abzocke.com/xml/nstrim/youtube/test.php?host=", "/streaming2.video.", "/streaming2", "/streaming", "bigcinema.tv", "http://bigcinema.tv/movie/voyna-mirovz-world-warz.html", "http://gegen-abzocke.com/xml/nstrim/bigcinema/code.php?code_url=", "allserials.tv/s/md5", "http://allserials.tv/get.php?action=playlist&pl=Osennie.cvety.2009", "http://gegen-abzocke.com/xml/nstrim/allserials/code.php?code_url=", "kinopod.org/get/md5", "flvstorage.com/get/md5", "http://kinopod.tv/serials/episode/38967.html", "/get/", "allinspace.com/", "ttp://", ".datalock.ru/", "http://seasonvar.ru/serial-11182-Legko_li_byt__molodym.html", "\"secure\": \"", "zaycev.net", "encodeURIComponent(\"/mini.php?id=", ";", "&ass=", "http://dl.zaycev.net/mini/", ".mp3", "dailymotion.com", "stream_h264_e\":\"", "mp333.do.am", "var link1 = \"", "?lang=", "hubu.ru", ",'", "loveradio.ru", "{uid: '", "icons/", ".png", "loveradio", "top40", "jlo", "love_", "http://stream2.loveradio.ru:9000/", "_64?type=.flv&UID=", "87.239.31", "http://www.inetcom.tv/channel/russia_1", "?sid=", "77.91.77", "http://inetcom.tv/videorec/lookChannel?ch_id=13", "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)", "inetcom.tv", "http://inetcom.tv/channel/pervyi", "result = ", "log", "http://hubu.ru", "sinemaizle.org/webscripti.php?git=", "http://www.sinemaizle.org/the-help-2012-duygularin-rengi-full-turkce-dublaj-izle.html", "?file=http:", "image", "_", "watchcinema.ru", "<iframe src=\"", "//vkontakte.ru/", "//vk.com/", "src=\"http://www.youtube.com/embed/", "?", "vk.com/video_ext.php?", "/vkontakte.php?video", "vkontakte.ru/video_ext.php", "/vkontakte/vk_kinohranilishe.php?id=", "youtube.com/watch?v=", "youtube.com/embed", "http://911.to/ajax/get_player/482", "911.to", "Mozilla/5.0 (Windows; U; Windows NT 5.1; ru; rv:1.9.2.13) Gecko/20101203 Firefox/3.6.13", "ru-ru,ru;q=0.8,en-us;q=0.5,en;q=0.3", "windows-1251,utf-8;q=0.7,*;q=0.7", "Keep-Alive", "115", "keep-alive", "Cache-Control", "max-age=0", "http%3A%2F%2F911.to%2Fajax%2Fget_player%2F482", "http://911.to/get_cv/", "/482", "md5", "@", "name=\"post_id\" id=\"post_id\" value=\"", "\" />", "http://hdrezka.tv/engine/ajax/getvideo.php", "text/plain, */*; q=0.01", "Content-Type", "application/x-www-form-urlencoded; charset=UTF-8", "hdrezka.tv", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:27.0) Gecko/20100101 Firefox/27.0", "link", "mp4", "/manifest.f4m", "setFlash('", " ", "parse", "brb.to", "is_first: 1,", "http://brb.to", "http://cxz.to"];
+var superparams = [
+	/*ok*/ "911.to/get_cv/md5/", //0
+	/*ok*/ "indexOf", //1
+	/*ok*/ "hdrezka.tv/films", //2
+	/*ok*/ "hdrezka.tv/series", //3
+	/*ok*/ "gidtv.cc", //4
+	/*ok*/ "divan.tv/", //5
+	/*ok*/ "Request", //6
+	/*ok*/ "file: //\"", //7
+	/*ok*/ "\",", //8
+	/*ok*/ ".videokub.com/embed/", //9
+	/*ok*/ ".videokub.me/embed/", //10
+	/*ok*/ "file:\"", //11
+	/*ok*/ "/\",", //12
+	/*ok*/ ".lovekino.tv/video/md5hash", //13
+	/*ok*/ "http://s2.lovekino.tv/player/play.php?name=films/klyatva.na.krovi.2010.xvid.iptvrip.filesx.flv", //14
+	/*ok*/ "video/", //15
+	/*ok*/ "/", //16
+	/*ok*/ "md5hash", //17
+	/*ok*/ "replace", //18
+	/*ok*/ "serialo.ru/video", //19
+	/*ok*/ "http://latino-serialo.ru/italianskie_seriali_online/2638-polny-ocharovaniya-cheias-de-charme-seriya-10.html", //20
+	/*ok*/ "responseText", //21
+	/*ok*/ "XHRObj", //22
+	/*ok*/ ";pl=", //23
+	/*ok*/ "\"", //24
+	/*ok*/ "", //25
+	/*ok*/ "file\":\"", //26
+	/*ok*/ "/video/", //27
+	/*ok*/ "/md5hash/", //28
+	/*ok*/ "md4hash", //29
+	/*ok*/ "fileplaneta.com", //30
+	/*ok*/ "dd=", //31
+	/*ok*/ "&&", //32
+	/*ok*/ "hd=", //33
+	/*ok*/ "</track>", //34
+	/*ok*/ "<filehd>", //35
+	/*ok*/ "</filehd>", //36
+	/*ok*/ "<id>", //37
+	/*ok*/ "</id><file>", //38
+	/*ok*/ "</file>", //39
+	/*ok*/ "aburmu4.tv", //40
+	/*ok*/ "http://s1.aburmu4.tv/player/play.php?s=1&name=vsfw/antboy_2013.flv", //41
+	/*ok*/ "aburmu4.tv@", //42
+	/*ok*/ "http://50.7.188.234/v/", //43
+	/*ok*/ "/vsfw/antboy_2013.flv", //44
+	/*ok*/ "dolgoe.net", //45
+	/*ok*/ "http://srv10.dolgoe.net/php/video.php?name=film/tammy.2014.flv", //46
+	/*ok*/ "http://srv10.dolgoe.net/video/", //47
+	/*ok*/ "/film/tammy.2014.flv", //48
+	/*ok*/ "serverfilm.net", //49
+	/*ok*/ "http://srv10.serverfilm.net/php/video.php?name=film/gorod.grehov.2.flv", //50
+	/*ok*/ "http://srv10.serverfilm.net/video/", //51
+	/*ok*/ "/film/gorod.grehov.2.flv", //52
+	/*ok*/ "hdcdn.nl", //53
+	/*ok*/ "moonwalk.cc", //54
+	/*ok*/ "korolek.tv", //55
+	/*ok*/ "http://s1.korolek.tv/player/play.php?name=vsfw/golodni.igry.2014.camrip.flv", //56
+	/*ok*/ "http://s1.korolek.tv/v/", //57
+	/*ok*/ "/vsfw/golodni.igry.2014.camrip.flv", //58
+	/*ok*/ "online-cinema.biz", //59
+	/*ok*/ "&file=", //60
+	/*ok*/ "50.7.168.250", //61
+	/*ok*/ "video-fokus.org", //62
+	/*ok*/ "50.7.132.82", //63
+	/*ok*/ "37.48.85.202", //64
+	/*ok*/ "188.227.185.66", //65
+	/*ok*/ "176.58.40.180", //66
+	/*ok*/ "212.113.33.98", //67
+	/*ok*/ "212.113.37.99", //68
+	/*ok*/ "http://kino-live.org/hq/715505-slova.html", //69
+	/*ok*/ "/s/", //70
+	/*ok*/ ".kinoylei.ru", //71
+	/*ok*/ "http://server1.kinoylei.ru/get2/3074", //72
+	/*ok*/ "film/", //73
+	/*ok*/ ".kinoluvr.ru", //74
+	/*ok*/ "http://server1.kinoluvr.ru/get2/5792", //75
+	/*ok*/ "moviestape.com/", //76
+	/*ok*/ "http://fs0.moviestape.com/show.php?name=films/Charlie.and.the.Chocolate.Factory.mp4", //77
+	/*ok*/ "http://fs0.moviestape.com/video/", //78
+	/*ok*/ "/films/", //79
+	/*ok*/ "poiuytrew.pw/", //80
+	/*ok*/ "http://filmix.net/semejnyj/36974-tor-legenda-vikingov-legends-of-valhalla-thor-2011.html", //81
+	/*ok*/ "http://185.25.119.98/php/filmix_c.php?code=", //82
+	/*ok*/ "cleanArray(['", //83
+	/*ok*/ "','", //84
+	/*ok*/ "_[", //85
+	/*ok*/ "].", //86
+	/*ok*/ "split", //87
+	/*ok*/ ",", //88
+	/*ok*/ "]", //89
+	/*ok*/ "[", //90
+	/*ok*/ "pirateplayer.com/", //91
+	"http://pirateplayer.com/embed/sPXX6HVcfQV", //92
+	"st=http://pirateplayer.com/player/1-f/Kh5CER87XrjkpQjC19ni3e-Ym3NWhDi0U/", //93
+	"/embed/\"", //94
+	"hotcloud.org/", //95
+	"https://my-hit.org/film/558/playlist.txt", //96
+	"id=", //97
+	"\"}]}", //98
+	"http://fs0.moviestape.com/show.php?name=films/Captain.Phillips.mp4", //99
+	"http://s*/video/", //100
+	"/s*/s*mp4'};", //101
+	/*ok*/ "baskino.com/films", //102
+	/*ok*/ "kinobar.net", //103
+	/*ok*/ "src=\"", //104
+	/*ok*/ "\" //type=", //105
+	".jampo.tv/play", //106
+	"<video //width=\"s*?\" //height=\"s*?\" //src=\"", //107
+	"\" //controls ///>", //108
+	"lidertvvv", //109
+	"moonwalk.cc/video", //110
+	"/iframe", //111
+	"/index.m3u8", //112
+	"moonwalk.cc/serial", //113
+	"http://moonwalk.cc/video/", //114
+	"video_token: //'", //115
+	"',", //116
+	"serialon.com/", //117
+	"http://www.serialon.com/serial/10601-agent-osobogo-naznacheniya-4-15-seriya.html", //118
+	"'file':'http://www.serialon.com/h-video/", //119
+	"/agent-osobogo-naznacheniya-4/agent-osobogo-naznacheniya-4_1/agent-osobogo-naznacheniya-4_1.flv'", //120
+	"serialsonline.net/clip", //121
+	"watch-online-hd.ru/", //122
+	"hdgo.cc", //123
+	"http://watch-online-hd.ru/embed/54/", //124
+	"http://v4.watch-online-hd.ru/flv/", //125
+	"/54-sdelka-s-dyavolom.mp4", //126
+	"onlyclips.net/artist", //127
+	"<iframe.*src=\".*youtube.com/embed/", //128
+	"\" //fr", //129
+	/*ok*/ "vk.com", //130
+	"http:", //131
+	"iframe.*?src=\"", //132
+	"rutube.ru", //133
+	"http://rutube.ru/api/oembed/?format=json&url=", //134
+	"http://", //135
+	"\"//", //136
+	"m3u8&quot;: //&quot;", //137
+	";},", //138
+	".kinoxa-x.ru", //139
+	"50.7.172.194/kino.php", //140
+	"<video //width=570 //height=360 //src=\"", //141
+	"\" //controls", //142
+	"kinoprosmotr.net/", //143
+	";file=", //144
+	"&amp;poster=", //145
+	"kinoprosmotr.org/video/", //146
+	"http://kinoprosmotr.net/serial/1839-ne-ver-su-iz-kvartiry-23.html", //147
+	"serial.php%3Fip%3D", //148
+	"%26fi", //149
+	"new-kino.net", //150
+	"http://new-kino.net/komedii/5631-igrushka-1982.html", //151
+	"?new-kino.net", //152
+	"/dd11/", //153
+	"uakino", //154
+	"kino-dom.tv/s/md5", //155
+	"http://kino-dom.tv/asian/3513-strelok-iz-chosona.html", //156
+	"value=\"http://kino-dom.tv/", //157
+	"/play/", //158
+	"kaban.tv/", //159
+	",\"file\":\"", //160
+	"\",\"f", //161
+	"http://185.25.119.98/php/kaban/kaban.php?code=", //162
+	"videoapi.my.mail.ru/", //163
+	/*ok*/ "html", //164
+	/*ok*/ "json", //165
+	"embed/", //166
+	"sd\":\"", //167
+	"tree.tv", //168
+	"&dd=", //169
+	/*ok*/ "substr", //170
+	/*ok*/ "cxz.to", //171
+	"minizal.net", //172
+	"http://s2.minizal.net/php/playlist.php?pl=/syn_otca_narodov.txt", //173
+	"porntube.com", //174
+	"??", //175
+	"<stream //label=\"", //176
+	"</stream>", //177
+	"<file>", //178
+	"</", //179
+	"&", //180
+	"streamcloud.eu", //181
+	/*ok*/ "GET", //182
+	/*ok*/ "open", //183
+	/*ok*/ "send", //184
+	"streamcloud.eu/", //185
+	/*ok*/ ".html", //186
+	"op=download1&usr_login=&id=", //187
+	"&fname=", //188
+	"&referer=&hash=&imhuman=Weiter+zum+Video", //189
+	/*ok*/ "POST", //190
+	/*ok*/ "onreadystatechange", //191
+	/*ok*/ "readyState", //192
+	/*ok*/ "status", //193
+	/*ok*/ "/video.sibnet.ru", //194
+	/*ok*/ "cookie", //195
+	/*ok*/ "=", //196
+	/*ok*/ "length", //197
+	/*ok*/ "slice", //198
+	/*ok*/ "'file':'", //199
+	/*ok*/ "'", //200
+	/*ok*/ "http://video.sibnet.ru", //201
+	/*ok*/ "Accept-Encoding", //202
+	/*ok*/ "identity", //203
+	/*ok*/ "setRequestHeader", //204
+	/*ok*/ "Accept-Language", //205
+	/*ok*/ "en-us,en;q=0.5", //206
+	/*ok*/ "Accept", //207
+	/*ok*/ "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", //208
+	/*ok*/ "User-Agent", //209
+	/*ok*/ "Mozilla/5.0 //(X11; //U; //Linux //x86_64; //en-US; //rv:1.9.2.6) //Gecko/20100627 //Firefox/3.6.6", //210
+	/*ok*/ "Accept-Charset", //211
+	/*ok*/ "ISO-8859-1,utf-8;q=0.7,*;q=0.7", //212
+	/*ok*/ "X-Set-Cookie", //213
+	/*ok*/ "Wert", //214
+	/*ok*/ "X-Alt-Referer", //215
+	/*ok*/ "http://video.sibnet.ru/player/player.swf", //216
+	/*ok*/ "Referer", //217
+	/*ok*/ "Connection", //218
+	/*ok*/ "close", //219
+	/*ok*/ "getAllResponseHeaders", //220
+	"film-center.info/", //221
+	"http://srv1.film-center.info/player/play.php?name=flv/full/zavtrak.na.trave.1979.dvdrip.flv", //222
+	"onlinefilmx.ru/video", //223
+	"onlinefilmx.tv/video", //224
+	"http://s3.onlinefilmx.ru/player/play.php?id=113", //225
+	"tushkan.net/video", //226
+	"rugailo.net/video/", //227
+	"http://srv3.tushkan.net/php/tushkan.php?name=film/Slova.2012.flv", //228
+	"/film/", //229
+	"tushkan.net/php", //230
+	"rugailo.net/php", //231
+	"videose.org/", //232
+	"file' //: //'", //233
+	"latino-serialo.ru", //234
+	"#", //235
+	"kset.kz", //236
+	"ImZpbGUi", //237
+	"==", //238
+	"http://gegen-abzocke.com/xml/nstrim/kset/code.php?code_url=", //239
+	"#redirect#", //240
+	".tfilm.tv/", //241
+	"http://filmin.ru/28234-buket.html", //242
+	"http://gegen-abzocke.com/xml/nstrim/filmin/code.php?code_url=", //243
+	"baskino.com/", //244
+	"kinobanda.net/", //245
+	"http://kinobanda.net/get.php?pl=23298/1/0/", //246
+	"http://gegen-abzocke.com/xml/nstrim/kinobanda/code.php?code_url=", //247
+	"veterok.tv/v/", //248
+	"\"]=\"", //249
+	"\";", //250
+	"imovies.ge/", //251
+	"file>", //252
+	"<", //253
+	"kino-live.org/s/md5", //254
+	"embed.nowvideo.eu/", //255
+	"flashvars.file=\"", //256
+	"flashvars.filekey=\"", //257
+	"http://www.nowvideo.eu/api/player.api.php?user=undefined&codes=1&key=", //258
+	"&pass=undefined&file=", //259
+	"http", //260
+	"&title", //261
+	"file //: //'", //262
+	"namba.net/", //263
+	"CSRF_TOKEN='", //264
+	"http://namba.net/api/?service=video&action=video&token=", //265
+	"&id=", //266
+	"flv\":\"", //267
+	"jampo.", //268
+	"flashvars.File //= //'", //269
+	"online.ua/", //270
+	"file: //'http://video.online.ua/playlist/", //271
+	"http://video.online.ua/playlist/", //272
+	"<location>", //273
+	"mediacdn.ru", //274
+	/*ok*/ "match", //275
+	"http://app1.bonus-tv.ru/api/channels", //276
+	/*ok*/ "X-Requested-With", //277
+	/*ok*/ "XMLHttpRequest", //278
+	/*ok*/ "Host", //279
+	"app.bonus-tv.ru", //280
+	"http://bonus-tv.ru:90/lg/publish/", //281
+	"X_USERNAME", //282
+	"c3d33d76a835a59ff32bb65e77dfa45c", //283
+	"X_PASSWORD", //284
+	"event=", //285
+	"&hash=(.*?)\"", //286
+	"debilizator.tv", //287
+	"<source //src=\"", //288
+	"\" //type=\"video/mp4\"", //289
+	"stepashka.com/video/", //290
+	"http://online.stepashka.com/filmy/deutsch/19600-the-incident-asylum-blackout-2011-deutsch.html", //291
+	"http://gegen-abzocke.com/xml/nstrim/stepashka/code.php?code_url=", //292
+	"//kinostok.tv/player/", //293
+	"//kinostok.tv/embed", //294
+	"http://gegen-abzocke.com/xml/nstrim/kinostok/code.php?code_url=", //295
+	"api.video.mail.ru/", //296
+	"hd\":\"", //297
+	"novamov.com/embed", //298
+	"http://www.novamov.com/api/player.api.php?pass=undefined&user=undefined&key=", //299
+	"&codes=undefined&file=", //300
+	"videoweed.es/file", //301
+	"videoweed.es/embed", //302
+	"http://www.videoweed.es/api/player.api.php?user=undefined&codes=1&key=", //303
+	"//kino-v-online.tv/kino/md5", //304
+	"//kino-v-online.tv/serial/md5", //305
+	"?st=1", //306
+	"http://kino-v-online.tv/2796-materik-online-film.html", //307
+	"/kino/", //308
+	".flv", //309
+	"//vtraxe.com/", //310
+	"3Fv=", //311
+	"http://gegen-abzocke.com/xml/nstrim/uletno/code.php?code_url=", //312
+	"http://kino-dom.tv/drama/1110-taynyy-krug-the-sesret-sirsle-1-sezon-1-seriya-eng-onlayn.html", //313
+	"pl:\"http://kino-dom.tv/", //314
+	"linecinema.org/s/md5", //315
+	"http://www.linecinema.org/newsz/boevyk-online/508954-bliznecy-drakony-twin-dragons-1992-dvdrip-onlayn.html", //316
+	"linecinema.org/s/", //317
+	"//figvam.ru/", //318
+	"figvam.ru", //319
+	"go2load.com", //320
+	"ftp://", //321
+	".igru-film.net/", //322
+	"xyss", //323
+	"xys", //324
+	"http://fepcom.net/", //325
+	"ssa", //326
+	"http://gegen-abzocke.com/xml/nstrim/fepcom/code.php?code_url=", //327
+	"kinoylei.ru/", //328
+	" //http://server1.kinoylei.ru/player/pl.php?id=2902-3142", //329
+	"//77.120.114", //330
+	"nowfilms.ru/", //331
+	"/tmp/", //332
+	"//77.120.119", //333
+	"http://gegen-abzocke.com/xml/nstrim/liveonline/code.php?code_url=", //334
+	"uletfilm.net/", //335
+	"//kinostok.tv/video/", //336
+	"/streaming.video.", //337
+	"get-location/", //338
+	"/m", //339
+	"http://static.video.yandex.ru/get-token/", //340
+	"?nc=0.50940609164536", //341
+	"token>", //342
+	"</token>", //343
+	"video-location>", //344
+	"</video-location>", //345
+	"&amp;", //346
+	"filmix.net/s/md5hash", //347
+	"filevideosvc.org/s/md5hash", //348
+	"http://gegen-abzocke.com/xml/nstrim/filmix/code.php?code_url=", //349
+	"goshatube.com/watch?v=", //350
+	"goshatube", //351
+	"youtube", //352
+	"crossdomain.xml\");yt.preload.start(\"", //353
+	"\");</script>", //354
+	"http://gegen-abzocke.com/xml/nstrim/youtube/test.php?host=", //355
+	"/streaming2.video.", //356
+	"/streaming2", //357
+	"/streaming", //358
+	"bigcinema.tv", //359
+	"http://bigcinema.tv/movie/voyna-mirovz-world-warz.html", //360
+	"http://gegen-abzocke.com/xml/nstrim/bigcinema/code.php?code_url=", //361
+	"allserials.tv/s/md5", //362
+	"http://allserials.tv/get.php?action=playlist&pl=Osennie.cvety.2009", //363
+	"http://gegen-abzocke.com/xml/nstrim/allserials/code.php?code_url=", //364
+	"kinopod.org/get/md5", //365
+	"flvstorage.com/get/md5", //366
+	"http://kinopod.tv/serials/episode/38967.html", //367
+	"/get/", //368
+	"allinspace.com/", //369
+	"ttp://", //370
+	".datalock.ru/", //371
+	"http://seasonvar.ru/serial-11182-Legko_li_byt__molodym.html", //372
+	"\"secure\": //\"", //373
+	"zaycev.net", //374
+	"encodeURIComponent(\"/mini.php?id=", //375
+	";", //376
+	"&ass=", //377
+	"http://dl.zaycev.net/mini/", //378
+	".mp3", //379
+	"dailymotion.com", //380
+	"stream_h264_e\":\"", //381
+	"mp333.do.am", //382
+	"var //link1 //= //\"", //383
+	"?lang=", //384
+	"hubu.ru", //385
+	",'", //386
+	"loveradio.ru", //387
+	"{uid: //'", //388
+	"icons/", //389
+	".png", //390
+	"loveradio", //391
+	"top40", //392
+	"jlo", //393
+	"love_", //394
+	"http://stream2.loveradio.ru:9000/", //395
+	"_64?type=.flv&UID=", //396
+	"87.239.31", //397
+	"http://www.inetcom.tv/channel/russia_1", //398
+	"?sid=", //399
+	"77.91.77", //400
+	"http://inetcom.tv/videorec/lookChannel?ch_id=13", //401
+	"Mozilla/4.0 //(compatible; //MSIE //6.0; //Windows //NT //5.1; //SV1; //.NET //CLR //1.1.4322)", //402
+	"inetcom.tv", //403
+	"http://inetcom.tv/channel/pervyi", //404
+	"result //= //", //405
+	"log", //406
+	"http://hubu.ru", //407
+	"sinemaizle.org/webscripti.php?git=", //408
+	"http://www.sinemaizle.org/the-help-2012-duygularin-rengi-full-turkce-dublaj-izle.html", //409
+	"?file=http:", //410
+	"image", //411
+	"_", //412
+	"watchcinema.ru", //413
+	"<iframe //src=\"", //414
+	"//vkontakte.ru/", //415
+	"//vk.com/", //416
+	"src=\"http://www.youtube.com/embed/", //417
+	"?", //418
+	"vk.com/video_ext.php?", //419
+	"/vkontakte.php?video", //420
+	"vkontakte.ru/video_ext.php", //421
+	"/vkontakte/vk_kinohranilishe.php?id=", //422
+	"youtube.com/watch?v=", //423
+	"youtube.com/embed", //424
+	"http://911.to/ajax/get_player/482", //425
+	"911.to", //426
+	/*ok*/ "Mozilla/5.0 //(Windows; //U; //Windows //NT //5.1; //ru; //rv:1.9.2.13) //Gecko/20101203 //Firefox/3.6.13", //427
+	/*ok*/ "ru-ru,ru;q=0.8,en-us;q=0.5,en;q=0.3", //428
+	/*ok*/ "windows-1251,utf-8;q=0.7,*;q=0.7", //429
+	/*ok*/ "Keep-Alive", //430
+	/*ok*/ "115", //431
+	/*ok*/ "keep-alive", //432
+	/*ok*/ "Cache-Control", //433
+	/*ok*/ "max-age=0", //434
+	/*ok*/ "http%3A%2F%2F911.to%2Fajax%2Fget_player%2F482", //435
+	"http://911.to/get_cv/", //436
+	"/482", //437
+	/*ok*/ "md5", //438
+	/*ok*/ "@", //439
+	"name=\"post_id\" //id=\"post_id\" //value=\"", //440
+	"\" ///>", //441
+	"http://hdrezka.tv/engine/ajax/getvideo.php", //442
+	/*ok*/ "text/plain, //*/*; //q=0.01", //443
+	/*ok*/ "Content-Type", //444
+	/*ok*/ "application/x-www-form-urlencoded; //charset=UTF-8", //445
+	/*ok*/ "hdrezka.tv", //446
+	/*ok*/ "Mozilla/5.0 //(Macintosh; //Intel //Mac //OS //X //10.9; //rv:27.0) //Gecko/20100101 //Firefox/27.0", //447
+	/*ok*/ "link", //448
+	/*ok*/ "mp4", //449
+	/*ok*/ "/manifest.f4m", //450
+	/*ok*/ "setFlash('", //451
+	/*ok*/ " //", //452
+	/*ok*/ "parse", //453
+	/*ok*/ "brb.to", //454
+	/*ok*/ "is_first: //1,", //455
+	/*ok*/ "http://brb.to", //456
+	/*ok*/ "http://cxz.to" //457
+];
+
 Super_parser_external = function (h) {
     var c = h;
-    if (h[_$_563e[1]](_$_563e[0]) > 0) {
+    if (h.indexOf("911.to/get_cv/md5/") > 0) {
         c = i911_to(h);
         h = c;
     };
-    if (h[_$_563e[1]](_$_563e[2]) > 0) {
+    if (h.indexOf("hdrezka.tv/films") > 0) {
         c = hdrezka_film(h);
         h = c;
     };
-    if (h[_$_563e[1]](_$_563e[3]) > 0) {
+    if (h.indexOf("hdrezka.tv/series") > 0) {
         c = hdrezka_serial(h);
         h = c;
     };
-    if (h[_$_563e[1]](_$_563e[4]) > 0) {
+    if (h.indexOf("gidtv.cc") > 0) {
         c = hdrezka_gid(h);
         h = c;
     };
-    if (h[_$_563e[1]](_$_563e[5]) > 0) {
-        var L = API[_$_563e[6]](h);
-        c = parser(L, _$_563e[7], _$_563e[8]);
+    if (h.indexOf("divan.tv/") > 0) {
+        var L = API.Request(h);
+        c = parser(L, "file: //\"", "\",");
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[9]) > 0 || h[_$_563e[1]](_$_563e[10]) > 0) {
-        var L = API[_$_563e[6]](h);
-        c = parser(L, _$_563e[11], _$_563e[12]);
+    if (h.indexOf(".videokub.com/embed/") > 0 || h.indexOf(".videokub.me/embed/") > 0) {
+        var L = API.Request(h);
+        c = parser(L, "file:\"", "/\",");
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[13]) > 0) {
-        var L = API[_$_563e[6]](_$_563e[14]);
-        var K = parser(L, _$_563e[15], _$_563e[16]);
-        c = h[_$_563e[18]](_$_563e[17], K);
+    if (h.indexOf(".lovekino.tv/video/md5hash") > 0) {
+        var L = API.Request("http://s2.lovekino.tv/player/play.php?name=films/klyatva.na.krovi.2010.xvid.iptvrip.filesx.flv");
+        var K = parser(L, "video/", "/");
+        c = h.replace("md5hash", K);
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[19]) > 0) {
-        var S = API[_$_563e[6]](_$_563e[20]);
-        var L = API[_$_563e[22]][_$_563e[21]];
-        var z = parser(L, _$_563e[23], _$_563e[24]);
-        var S = API[_$_563e[6]](z)[_$_563e[18]](/[\n]/g, _$_563e[25]);
-        var L = API[_$_563e[22]][_$_563e[21]];
-        var bg = parser(L, _$_563e[26], _$_563e[24]);
-        var K = parser(bg, _$_563e[27], _$_563e[16]);
-        var bh = bg[_$_563e[18]](K, _$_563e[17]);
-        var I = parser(bh, _$_563e[28], _$_563e[16]);
-        var bk = h[_$_563e[18]](_$_563e[17], K);
-        c = bk[_$_563e[18]](_$_563e[29], I);
+    if (h.indexOf("serialo.ru/video") > 0) {
+        var S = API.Request("http://latino-serialo.ru/italianskie_seriali_online/2638-polny-ocharovaniya-cheias-de-charme-seriya-10.html");
+        var L = API.XHRObj.responseText;
+        var z = parser(L, ";pl=", "\"");
+        var S = API.Request(z).replace(/[\n]/g, "");
+        var L = API.XHRObj.responseText;
+        var bg = parser(L, "file\":\"", "\"");
+        var K = parser(bg, "/video/", "/");
+        var bh = bg.replace(K, "md5hash");
+        var I = parser(bh, "/md5hash/", "/");
+        var bk = h.replace("md5hash", K);
+        c = bk.replace("md4hash", I);
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[30]) > 0) {
-        var a = API[_$_563e[6]](h);
-        var D = parser(h, _$_563e[31], _$_563e[32]);
-        var A = parser(h, _$_563e[33], _$_563e[32]);
+    if (h.indexOf("fileplaneta.com") > 0) {
+        var a = API.Request(h);
+        var D = parser(h, "dd=", "&&");
+        var A = parser(h, "hd=", "&&");
         if (A == 1) {
-            var V = parser(a, D, _$_563e[34]);
-            c = parser(V, _$_563e[35], _$_563e[36]);
+            var V = parser(a, D, "</track>");
+            c = parser(V, "<filehd>", "</filehd>");
         } else {
-            var W = _$_563e[37] + D + _$_563e[38];
-            c = parser(a, W, _$_563e[39]);
+            var W = "<id>" + D + "</id><file>";
+            c = parser(a, W, "</file>");
         };
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[40]) > 0) {
-        var a = API[_$_563e[6]](_$_563e[41]);
-        c = h[_$_563e[18]](_$_563e[17], parser(a, _$_563e[43], _$_563e[44]))[_$_563e[18]](_$_563e[42], _$_563e[25]);
+    if (h.indexOf("aburmu4.tv") > 0) {
+        var a = API.Request("http://s1.aburmu4.tv/player/play.php?s=1&name=vsfw/antboy_2013.flv");
+        c = h.replace("md5hash", parser(a, "http://50.7.188.234/v/", "/vsfw/antboy_2013.flv")).replace("aburmu4.tv@", "");
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[45]) > 0) {
-        var a = API[_$_563e[6]](_$_563e[46]);
-        c = h[_$_563e[18]](_$_563e[17], parser(a, _$_563e[47], _$_563e[48]))[_$_563e[18]](_$_563e[42], _$_563e[25]);
+    if (h.indexOf("dolgoe.net") > 0) {
+        var a = API.Request("http://srv10.dolgoe.net/php/video.php?name=film/tammy.2014.flv");
+        c = h.replace("md5hash", parser(a, "http://srv10.dolgoe.net/video/", "/film/tammy.2014.flv")).replace("aburmu4.tv@", "");
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[49]) > 0) {
-        var a = API[_$_563e[6]](_$_563e[50]);
-        c = h[_$_563e[18]](_$_563e[17], parser(a, _$_563e[51], _$_563e[52]))[_$_563e[18]](_$_563e[42], _$_563e[25]);
+    if (h.indexOf("serverfilm.net") > 0) {
+        var a = API.Request("http://srv10.serverfilm.net/php/video.php?name=film/gorod.grehov.2.flv");
+        c = h.replace("md5hash", parser(a, "http://srv10.serverfilm.net/video/", "/film/gorod.grehov.2.flv")).replace("aburmu4.tv@", "");
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[53]) > 0) {
-        c = h[_$_563e[18]](_$_563e[53], _$_563e[54]);
+    if (h.indexOf("hdcdn.nl") > 0) {
+        c = h.replace("hdcdn.nl", "moonwalk.cc");
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[55]) > 0) {
-        var a = API[_$_563e[6]](_$_563e[56]);
-        c = h[_$_563e[18]](_$_563e[17], parser(a, _$_563e[57], _$_563e[58]))[_$_563e[18]](_$_563e[42], _$_563e[25]);
+    if (h.indexOf("korolek.tv") > 0) {
+        var a = API.Request("http://s1.korolek.tv/player/play.php?name=vsfw/golodni.igry.2014.camrip.flv");
+        c = h.replace("md5hash", parser(a, "http://s1.korolek.tv/v/", "/vsfw/golodni.igry.2014.camrip.flv")).replace("aburmu4.tv@", "");
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[59]) > 0) {
-        var a = API[_$_563e[6]](h);
-        c = parser(a, _$_563e[60], _$_563e[24]);
+    if (h.indexOf("online-cinema.biz") > 0) {
+        var a = API.Request(h);
+        c = parser(a, "&file=", "\"");
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[61]) > 0 || h[_$_563e[1]](_$_563e[62]) > 0 || h[_$_563e[1]](_$_563e[63]) > 0 || h[_$_563e[1]](_$_563e[64]) > 0 || h[_$_563e[1]](_$_563e[65]) > 0 || h[_$_563e[1]](_$_563e[65]) > 0 || h[_$_563e[1]](_$_563e[66]) > 0 || h[_$_563e[1]](_$_563e[67]) > 0 || h[_$_563e[1]](_$_563e[68]) > 0) {
-        var a = API[_$_563e[6]](_$_563e[69]);
-        c = h[_$_563e[18]](_$_563e[17], parser(a, _$_563e[70], _$_563e[16]));
+    if (h.indexOf("50.7.168.250") > 0 || h.indexOf("video-fokus.org") > 0 || h.indexOf("50.7.132.82") > 0 || h.indexOf("37.48.85.202") > 0 || h.indexOf("188.227.185.66") > 0 || h.indexOf("188.227.185.66") > 0 || h.indexOf("176.58.40.180") > 0 || h.indexOf("212.113.33.98") > 0 || h.indexOf("212.113.37.99") > 0) {
+        var a = API.Request("http://kino-live.org/hq/715505-slova.html");
+        c = h.replace("md5hash", parser(a, "/s/", "/"));
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[71]) > 0) {
-        var a = API[_$_563e[6]](_$_563e[72]);
-        c = h[_$_563e[18]](_$_563e[17], parser(a, _$_563e[73], _$_563e[16]));
+    if (h.indexOf(".kinoylei.ru") > 0) {
+        var a = API.Request("http://server1.kinoylei.ru/get2/3074");
+        c = h.replace("md5hash", parser(a, "film/", "/"));
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[74]) > 0) {
-        var a = API[_$_563e[6]](_$_563e[75]);
-        c = h[_$_563e[18]](_$_563e[17], parser(a, _$_563e[73], _$_563e[16]));
+    if (h.indexOf(".kinoluvr.ru") > 0) {
+        var a = API.Request("http://server1.kinoluvr.ru/get2/5792");
+        c = h.replace("md5hash", parser(a, "film/", "/"));
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[76]) > 0) {
-        var a = API[_$_563e[6]](_$_563e[77]);
-        c = h[_$_563e[18]](_$_563e[17], parser(a, _$_563e[78], _$_563e[79]));
+    if (h.indexOf("moviestape.com/") > 0) {
+        var a = API.Request("http://fs0.moviestape.com/show.php?name=films/Charlie.and.the.Chocolate.Factory.mp4");
+        c = h.replace("md5hash", parser(a, "http://fs0.moviestape.com/video/", "/films/"));
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[80]) > 0) {
-        var a = API[_$_563e[6]](_$_563e[81]);
-        c = h[_$_563e[18]](_$_563e[17], API[_$_563e[6]](_$_563e[82] + parser(a, _$_563e[83], _$_563e[84])));
-        var U = parser(c, _$_563e[85], _$_563e[86]);
+    if (h.indexOf("poiuytrew.pw/") > 0) {
+        var a = API.Request("http://filmix.net/semejnyj/36974-tor-legenda-vikingov-legends-of-valhalla-thor-2011.html");
+        c = h.replace("md5hash", API.Request("http://185.25.119.98/php/filmix_c.php?code=" + parser(a, "cleanArray(['", "','")));
+        var U = parser(c, "_[", "].");
         if (U) {
-            var O = U[_$_563e[18]](_$_563e[88], _$_563e[25])[_$_563e[87]](/([0-9])/);
-            c = c[_$_563e[18]](U, O[1] + O[3] + O[5])[_$_563e[18]](_$_563e[90], _$_563e[25])[_$_563e[18]](_$_563e[89], _$_563e[25]);
+            var O = U.replace(",", "").split(/([0-9])/);
+            c = c.replace(U, O[1] + O[3] + O[5]).replace("[", "").replace("]", "");
             return c = Addidation_parser(c);
         };
     };
-    if (h[_$_563e[1]](_$_563e[91]) > 0) {
-        var a = API[_$_563e[6]](_$_563e[92]);
-        c = h[_$_563e[18]](_$_563e[17], parser(a, _$_563e[93], _$_563e[94]));
+    if (h.indexOf("pirateplayer.com/") > 0) {
+        var a = API.Request(superparams[92]);
+        c = h.replace("md5hash", parser(a, superparams[93], superparams[94]));
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[95]) > 0) {
-        var a = API[_$_563e[6]](_$_563e[96]);
-        c = h[_$_563e[18]](_$_563e[17], parser(a, _$_563e[97], _$_563e[98]));
+    if (h.indexOf(superparams[95]) > 0) {
+        var a = API.Request(superparams[96]);
+        c = h.replace("md5hash", parser(a, superparams[97], superparams[98]));
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[76]) > 0) {
-        var a = API[_$_563e[6]](_$_563e[99]);
-        c = h[_$_563e[18]](_$_563e[17], parser(a, _$_563e[100], _$_563e[101]));
+    if (h.indexOf("moviestape.com/") > 0) {
+        var a = API.Request(superparams[99]);
+        c = h.replace("md5hash", parser(a, superparams[100], superparams[101]));
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[102]) > 0) {
-        var a = API[_$_563e[6]](h);
-        c = parser(a, _$_563e[11], _$_563e[24]);
+    if (h.indexOf("baskino.com/films") > 0) {
+        var a = API.Request(h);
+        c = parser(a, "file:\"", "\"");
         return c = Addidation_parser(c);
     };
-    if (c[_$_563e[1]](_$_563e[103]) > 0) {
-        var a = API[_$_563e[6]](h);
-        c = parser(a, _$_563e[104], _$_563e[105]);
+    if (c.indexOf("kinobar.net") > 0) {
+        var a = API.Request(h);
+        c = parser(a, "src=\"", "\" //type=");
         return c = Addidation_parser(c);
     };
-    if (c[_$_563e[1]](_$_563e[106]) > 0) {
-        var a = API[_$_563e[6]](h);
-        c = parser(a, _$_563e[107], _$_563e[108]);
+    if (c.indexOf(superparams[106]) > 0) {
+        var a = API.Request(h);
+        c = parser(a, superparams[107], superparams[108]);
         return c = Addidation_parser(c);
     };
-    if (c[_$_563e[1]](_$_563e[109]) > 0) {
-        var a = API[_$_563e[6]](h[_$_563e[18]](_$_563e[109], _$_563e[25]));
-        c = parser(a, _$_563e[7], _$_563e[8]);
+    if (c.indexOf(superparams[109]) > 0) {
+        var a = API.Request(h.replace(superparams[109], ""));
+        c = parser(a, "file: //\"", "\",");
         return c = Addidation_parser(c);
     };
-    if (c[_$_563e[1]](_$_563e[110]) > 0) {
-        c = h[_$_563e[18]](_$_563e[111], _$_563e[112]);
+    if (c.indexOf(superparams[110]) > 0) {
+        c = h.replace(superparams[111], superparams[112]);
         return c = Addidation_parser(c);
     };
-    if (c[_$_563e[1]](_$_563e[113]) > 0) {
-        var a = API[_$_563e[6]](h);
-        c = _$_563e[114] + parser(a, _$_563e[115], _$_563e[116]) + _$_563e[112];
+    if (c.indexOf(superparams[113]) > 0) {
+        var a = API.Request(h);
+        c = superparams[114] + parser(a, superparams[115], superparams[116]) + superparams[112];
         return c = Addidation_parser(c);
     };
-    if (c[_$_563e[1]](_$_563e[117]) > 0) {
-        var a = API[_$_563e[6]](_$_563e[118]);
-        c = h[_$_563e[18]](_$_563e[17], parser(a, _$_563e[119], _$_563e[120]));
+    if (c.indexOf(superparams[117]) > 0) {
+        var a = API.Request(superparams[118]);
+        c = h.replace("md5hash", parser(a, superparams[119], superparams[120]));
         return c = Addidation_parser(c);
     };
-    if (c[_$_563e[1]](_$_563e[121]) > 0) {
-        var a = API[_$_563e[6]](h);
-        c = parser(a, _$_563e[11], _$_563e[24]);
+    if (c.indexOf(superparams[121]) > 0) {
+        var a = API.Request(h);
+        c = parser(a, "file:\"", "\"");
         return c = Addidation_parser(c);
     };
-    if (c[_$_563e[1]](_$_563e[122]) > 0 || c[_$_563e[1]](_$_563e[123]) > 0) {
-        var a = API[_$_563e[6]](_$_563e[124]);
-        c = h[_$_563e[18]](_$_563e[17], parser(a, _$_563e[125], _$_563e[126]));
+    if (c.indexOf(superparams[122]) > 0 || c.indexOf(superparams[123]) > 0) {
+        var a = API.Request(superparams[124]);
+        c = h.replace("md5hash", parser(a, superparams[125], superparams[126]));
         return c = Addidation_parser(c);
     };
-    if (c[_$_563e[1]](_$_563e[121]) > 0) {
-        var a = API[_$_563e[6]](h);
-        c = parser(a, _$_563e[11], _$_563e[24]);
+    if (c.indexOf(superparams[121]) > 0) {
+        var a = API.Request(h);
+        c = parser(a, "file:\"", "\"");
         return c = Addidation_parser(c);
     };
-    if (c[_$_563e[1]](_$_563e[127]) > 0) {
-        var a = API[_$_563e[6]](h);
-        c = parser(a, _$_563e[128], _$_563e[129]);
+    if (c.indexOf(superparams[127]) > 0) {
+        var a = API.Request(h);
+        c = parser(a, superparams[128], superparams[129]);
         return c = Addidation_parser(c);
     };
-    if (c[_$_563e[1]](_$_563e[130]) > 0) {
-        var a = API[_$_563e[6]](h);
-        c = _$_563e[131] + parser(a, _$_563e[132], _$_563e[24])[_$_563e[18]](_$_563e[131], _$_563e[25]);
+    if (c.indexOf("vk.com") > 0) {
+        var a = API.Request(h);
+        c = superparams[131] + parser(a, superparams[132], "\"").replace(superparams[131], "");
         return c = Addidation_parser(c);
     };
-    if (c[_$_563e[1]](_$_563e[133]) > 0) {
-        a = _$_563e[134] + c;
-        var g = API[_$_563e[6]](a);
-        a = _$_563e[135] + parser(g, _$_563e[136], _$_563e[24]);
-        g = API[_$_563e[6]](a);
-        c = parser(g, _$_563e[137], _$_563e[138]);
+    if (c.indexOf(superparams[133]) > 0) {
+        a = superparams[134] + c;
+        var g = API.Request(a);
+        a = superparams[135] + parser(g, superparams[136], "\"");
+        g = API.Request(a);
+        c = parser(g, superparams[137], superparams[138]);
         return c = Addidation_parser(c);
     };
-    if (c[_$_563e[1]](_$_563e[139]) > 0 || c[_$_563e[1]](_$_563e[140]) > 0) {
-        var a = API[_$_563e[6]](h);
-        c = parser(a, _$_563e[141], _$_563e[142]);
+    if (c.indexOf(superparams[139]) > 0 || c.indexOf(superparams[140]) > 0) {
+        var a = API.Request(h);
+        c = parser(a, superparams[141], superparams[142]);
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[143]) > 0) {
-        var a = API[_$_563e[6]](h)[_$_563e[18]](/[\n]/g, _$_563e[25]);
-        c = parser(a, _$_563e[144], _$_563e[145]);
+    if (h.indexOf(superparams[143]) > 0) {
+        var a = API.Request(h).replace(/[\n]/g, "");
+        c = parser(a, superparams[144], superparams[145]);
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[146]) > 0) {
-        var a = API[_$_563e[6]](_$_563e[147])[_$_563e[18]](/[\r\n]/g, _$_563e[25]);
-        c = h[_$_563e[18]](_$_563e[17], parser(a, _$_563e[148], _$_563e[149]));
+    if (h.indexOf(superparams[146]) > 0) {
+        var a = API.Request(superparams[147]).replace(/[\r\n]/g, "");
+        c = h.replace("md5hash", parser(a, superparams[148], superparams[149]));
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[150]) > 0) {
-        var a = API[_$_563e[6]](_$_563e[151])[_$_563e[18]](/[\r\n]/g, _$_563e[25]);
-        c = h[_$_563e[18]](_$_563e[17], parser(a, _$_563e[153], _$_563e[16]))[_$_563e[18]](_$_563e[152], _$_563e[25]);
+    if (h.indexOf(superparams[150]) > 0) {
+        var a = API.Request(superparams[151]).replace(/[\r\n]/g, "");
+        c = h.replace("md5hash", parser(a, superparams[153], "/")).replace(superparams[152], "");
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[154]) > 0) {
-        var a = API[_$_563e[6]](h);
-        c = parser(a, _$_563e[26], _$_563e[24]);
+    if (h.indexOf(superparams[154]) > 0) {
+        var a = API.Request(h);
+        c = parser(a, "file\":\"", "\"");
         c = decodeURIComponent(c);
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[155]) > 0) {
-        var a = API[_$_563e[6]](_$_563e[156]);
-        c = h[_$_563e[18]](_$_563e[17], parser(a, _$_563e[157], _$_563e[158]));
+    if (h.indexOf(superparams[155]) > 0) {
+        var a = API.Request(superparams[156]);
+        c = h.replace("md5hash", parser(a, superparams[157], superparams[158]));
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[159]) > 0) {
-        var a = API[_$_563e[6]](h);
-        var f = parser(a, _$_563e[160], _$_563e[161]);
-        c = _$_563e[162] + f;
+    if (h.indexOf(superparams[159]) > 0) {
+        var a = API.Request(h);
+        var f = parser(a, superparams[160], superparams[161]);
+        c = superparams[162] + f;
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[163]) > 0) {
-        h[_$_563e[18]](_$_563e[166], _$_563e[25])[_$_563e[18]](_$_563e[164], _$_563e[165]);
-        var a = API[_$_563e[6]](h);
-        c = parser(a, _$_563e[167], _$_563e[24]);
+    if (h.indexOf(superparams[163]) > 0) {
+        h.replace(superparams[166], "").replace("html", "json");
+        var a = API.Request(h);
+        c = parser(a, superparams[167], "\"");
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[168]) > 0) {
-        var a = API[_$_563e[6]](h)[_$_563e[18]](/[\n]/g, _$_563e[25]);;;
-        var N = parser(h, _$_563e[169], _$_563e[32]);
-        var X = a[_$_563e[1]](N);
-        var Y = a[_$_563e[1]](_$_563e[135], X);
-        var Z = a[_$_563e[1]](_$_563e[135], Y);
-        var ba = a[_$_563e[1]](_$_563e[24], Y);
-        c = a[_$_563e[170]](Z, ba - Z);
+    if (h.indexOf(superparams[168]) > 0) {
+        var a = API.Request(h).replace(/[\n]/g, "");;;
+        var N = parser(h, superparams[169], "&&");
+        var X = a.indexOf(N);
+        var Y = a.indexOf(superparams[135], X);
+        var Z = a.indexOf(superparams[135], Y);
+        var ba = a.indexOf("\"", Y);
+        c = a.substr(Z, ba - Z);
         return c;
     };
-    if (h[_$_563e[1]](_$_563e[171]) > 0) {
+    if (h.indexOf("cxz.to") > 0) {
         c = getFsToVideo(decLongUrl(h))
     };
-    if (h[_$_563e[1]](_$_563e[172]) > 0) {
-        var a = API[_$_563e[6]](_$_563e[173])[_$_563e[18]](/[\r\n]/g, _$_563e[25]);
-        c = h[_$_563e[18]](_$_563e[17], parser(a, _$_563e[27], _$_563e[16]));
+    if (h.indexOf(superparams[172]) > 0) {
+        var a = API.Request(superparams[173]).replace(/[\r\n]/g, "");
+        c = h.replace("md5hash", parser(a, "/video/", "/"));
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[174]) > 0) {
-        var S = API[_$_563e[6]](h);
-        var E = API[_$_563e[22]][_$_563e[21]];
-        var N = parser(E, _$_563e[175], _$_563e[32]);
-        var bg = parser(E, _$_563e[176] + N, _$_563e[177]);
-        r = parser(bg, _$_563e[178], _$_563e[179]);
-        c = decodeURIComponent(r[_$_563e[18]](/&amp;/g, _$_563e[180]));
+    if (h.indexOf(superparams[174]) > 0) {
+        var S = API.Request(h);
+        var E = API.XHRObj.responseText;
+        var N = parser(E, superparams[175], "&&");
+        var bg = parser(E, superparams[176] + N, superparams[177]);
+        r = parser(bg, superparams[178], superparams[179]);
+        c = decodeURIComponent(r.replace(/&amp;/g, superparams[180]));
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[181]) > 0) {
+    if (h.indexOf(superparams[181]) > 0) {
         http2 = new XMLHttpRequest();
-        http2[_$_563e[183]](_$_563e[182], h, false);
-        http2[_$_563e[184]](null);
+        http2.open("GET", h, false);
+        http2.send(null);
         sleep(12000);
-        var D = parser(h, _$_563e[185], _$_563e[16]);
-        var w = parser(h, D + _$_563e[16], _$_563e[186]);
-        var M = _$_563e[187] + D + _$_563e[188] + w + _$_563e[189];
+        var D = parser(h, superparams[185], "/");
+        var w = parser(h, D + "/", ".html");
+        var M = superparams[187] + D + superparams[188] + w + superparams[189];
         C = new XMLHttpRequest();
-        C[_$_563e[183]](_$_563e[190], h, true);
-        C[_$_563e[191]] = function () {
-            if (C[_$_563e[192]] == 4 && C[_$_563e[193]] == 200) {
-                c = parser(C[_$_563e[21]], _$_563e[7], _$_563e[24]);
+        C.open("POST", h, true);
+        C.onreadystatechange = function () {
+            if (C.readyState == 4 && C.status == 200) {
+                c = parser(C.responseText, "file: //\"", "\"");
                 return c = Addidation_parser(c);
             }
         };
     };
-    if (h[_$_563e[1]](_$_563e[194]) > 0) {
-        var S = API[_$_563e[6]](h);
-        Wert = document[_$_563e[195]];
-        Wert = Wert[_$_563e[198]](Wert[_$_563e[1]](_$_563e[196]) + 1, Wert[_$_563e[197]]);
-        var E = API[_$_563e[22]][_$_563e[21]];
-        var x = parser(E, _$_563e[199], _$_563e[200]);
-        var l = _$_563e[201] + x;
+    if (h.indexOf("/video.sibnet.ru") > 0) {
+        var S = API.Request(h);
+        Wert = document.cookie;
+        Wert = Wert.slice(Wert.indexOf("=") + 1, Wert.length);
+        var E = API.XHRObj.responseText;
+        var x = parser(E, "'file':'", "'");
+        var l = "http://video.sibnet.ru" + x;
         xhr = new XMLHttpRequest();
-        xhr[_$_563e[183]](_$_563e[182], l, false);
-        xhr[_$_563e[204]](_$_563e[202], _$_563e[203]);
-        xhr[_$_563e[204]](_$_563e[205], _$_563e[206]);
-        xhr[_$_563e[204]](_$_563e[207], _$_563e[208]);
-        xhr[_$_563e[204]](_$_563e[209], _$_563e[210]);
-        xhr[_$_563e[204]](_$_563e[211], _$_563e[212]);
-        xhr[_$_563e[204]](_$_563e[213], _$_563e[214]);
-        xhr[_$_563e[204]](_$_563e[215], _$_563e[216]);
-        xhr[_$_563e[204]](_$_563e[217], _$_563e[216]);
-        xhr[_$_563e[204]](_$_563e[218], _$_563e[219]);
-        xhr[_$_563e[184]]();
-        S = xhr[_$_563e[220]]();
-        var i = S[_$_563e[170]](S[_$_563e[1]](_$_563e[135]));
-        c = i[_$_563e[18]](/^\s+/, _$_563e[25])[_$_563e[18]](/\s+$/, _$_563e[25]);
+        xhr.open("GET", l, false);
+        xhr.setRequestHeader("Accept-Encoding", "identity");
+        xhr.setRequestHeader("Accept-Language", "en-us,en;q=0.5");
+        xhr.setRequestHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
+        xhr.setRequestHeader("User-Agent", "Mozilla/5.0 //(X11; //U; //Linux //x86_64; //en-US; //rv:1.9.2.6) //Gecko/20100627 //Firefox/3.6.6");
+        xhr.setRequestHeader("Accept-Charset", "ISO-8859-1,utf-8;q=0.7,*;q=0.7");
+        xhr.setRequestHeader("X-Set-Cookie", "Wert");
+        xhr.setRequestHeader("X-Alt-Referer", "http://video.sibnet.ru/player/player.swf");
+        xhr.setRequestHeader("Referer", "http://video.sibnet.ru/player/player.swf");
+        xhr.setRequestHeader("Connection", "close");
+        xhr.send();
+        S = xhr.getAllResponseHeaders();
+        var i = S.substr(S.indexOf(superparams[135]));
+        c = i.replace(/^\s+/, "").replace(/\s+$/, "");
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[221]) > 0) {
-        var n = _$_563e[222];
-        var S = API[_$_563e[6]](n);
-        var F = API[_$_563e[22]][_$_563e[21]];
-        var x = parser(F, _$_563e[27], _$_563e[16]);
-        c = h[_$_563e[18]](_$_563e[17], x);
+    if (h.indexOf(superparams[221]) > 0) {
+        var n = superparams[222];
+        var S = API.Request(n);
+        var F = API.XHRObj.responseText;
+        var x = parser(F, "/video/", "/");
+        c = h.replace("md5hash", x);
         return c = Addidation_parser(c);
     };
-    if ((h[_$_563e[1]](_$_563e[223]) > 0) || (h[_$_563e[1]](_$_563e[224]) > 0)) {
+    if ((h.indexOf(superparams[223]) > 0) || (h.indexOf(superparams[224]) > 0)) {
         C = new XMLHttpRequest();
-        var n = _$_563e[225];
-        C[_$_563e[183]](_$_563e[182], n, true);
-        C[_$_563e[191]] = function () {
-            if (C[_$_563e[192]] == 4 && C[_$_563e[193]] == 200) {
-                var x = parser(C[_$_563e[21]], _$_563e[27], _$_563e[16]);
-                c = h[_$_563e[18]](_$_563e[17], x);
+        var n = superparams[225];
+        C.open("GET", n, true);
+        C.onreadystatechange = function () {
+            if (C.readyState == 4 && C.status == 200) {
+                var x = parser(C.responseText, "/video/", "/");
+                c = h.replace("md5hash", x);
                 return c = Addidation_parser(c);
             }
         };
     };
-    if (h[_$_563e[1]](_$_563e[226]) > 0 || h[_$_563e[1]](_$_563e[227]) > 0) {
-        var n = API[_$_563e[6]](_$_563e[228]);
-        var x = parser(n, _$_563e[27], _$_563e[229]);
-        c = h[_$_563e[18]](_$_563e[17], x);
+    if (h.indexOf(superparams[226]) > 0 || h.indexOf(superparams[227]) > 0) {
+        var n = API.Request(superparams[228]);
+        var x = parser(n, "/video/", superparams[229]);
+        c = h.replace("md5hash", x);
         return c = Addidation_parser(c);
     };
-    if ((h[_$_563e[1]](_$_563e[230]) > 0) || (h[_$_563e[1]](_$_563e[231]) > 0) || (h[_$_563e[1]](_$_563e[232]) > 0)) {
-        var C = API[_$_563e[6]](h);
-        c = parser(C, _$_563e[233], _$_563e[200]);
+    if ((h.indexOf(superparams[230]) > 0) || (h.indexOf(superparams[231]) > 0) || (h.indexOf(superparams[232]) > 0)) {
+        var C = API.Request(h);
+        c = parser(C, superparams[233], "'");
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[154]) > 0) {
-        var S = API[_$_563e[6]](h);
-        var E = API[_$_563e[22]][_$_563e[21]];
-        c = parser(E, _$_563e[26], _$_563e[8]);
+    if (h.indexOf(superparams[154]) > 0) {
+        var S = API.Request(h);
+        var E = API.XHRObj.responseText;
+        c = parser(E, "file\":\"", "\",");
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[234]) > 0) {
-        var S = API[_$_563e[6]](h);
-        var E = API[_$_563e[22]][_$_563e[21]];
-        var x = parser(E, _$_563e[23], _$_563e[24]);
-        var S = API[_$_563e[6]](x);
-        var T = API[_$_563e[22]][_$_563e[21]];
-        var bc = parser(h, _$_563e[175], _$_563e[17]);
-        var bd = parser(h, _$_563e[17], _$_563e[32]);
-        var bl = parser(h, _$_563e[32], _$_563e[235]);
-        var r = parser(T, _$_563e[135] + bl, bd);
-        c = _$_563e[135] + bl + r + bc;
+    if (h.indexOf(superparams[234]) > 0) {
+        var S = API.Request(h);
+        var E = API.XHRObj.responseText;
+        var x = parser(E, ";pl=", "\"");
+        var S = API.Request(x);
+        var T = API.XHRObj.responseText;
+        var bc = parser(h, superparams[175], "md5hash");
+        var bd = parser(h, "md5hash", "&&");
+        var bl = parser(h, "&&", superparams[235]);
+        var r = parser(T, superparams[135] + bl, bd);
+        c = superparams[135] + bl + r + bc;
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[236]) > 0) {
+    if (h.indexOf(superparams[236]) > 0) {
         C = new XMLHttpRequest();
-        C[_$_563e[183]](_$_563e[182], h, true);
-        C[_$_563e[191]] = function () {
-            if (C[_$_563e[192]] == 4 && C[_$_563e[193]] == 200) {
-                var d = parser(C[_$_563e[21]], _$_563e[237], _$_563e[238]);
-                var e = _$_563e[239] + d;
-                var S = API[_$_563e[6]](e);
-                c = API[_$_563e[22]][_$_563e[21]];
+        C.open("GET", h, true);
+        C.onreadystatechange = function () {
+            if (C.readyState == 4 && C.status == 200) {
+                var d = parser(C.responseText, superparams[237], superparams[238]);
+                var e = superparams[239] + d;
+                var S = API.Request(e);
+                c = API.XHRObj.responseText;
                 return c = Addidation_parser(c);
             }
         };
     };
-    if (h[_$_563e[1]](_$_563e[240]) != -1) {
-        var be = h[_$_563e[18]](_$_563e[240], _$_563e[25]);
-        var S = API[_$_563e[6]](be);
-        c = API[_$_563e[22]][_$_563e[21]];
+    if (h.indexOf(superparams[240]) != -1) {
+        var be = h.replace(superparams[240], "");
+        var S = API.Request(be);
+        c = API.XHRObj.responseText;
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[150]) > 0) {
-        var n = _$_563e[151];
-        var S = API[_$_563e[6]](n);
-        var F = API[_$_563e[22]][_$_563e[21]];
-        var x = parser(F, _$_563e[153], _$_563e[16]);
-        c = h[_$_563e[18]](_$_563e[17], x);
+    if (h.indexOf(superparams[150]) > 0) {
+        var n = superparams[151];
+        var S = API.Request(n);
+        var F = API.XHRObj.responseText;
+        var x = parser(F, superparams[153], "/");
+        c = h.replace("md5hash", x);
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[241]) > 0) {
-        var n = _$_563e[242];
-        var S = API[_$_563e[6]](n);
-        var E = API[_$_563e[22]][_$_563e[21]];
-        var d = parser(E, _$_563e[144], _$_563e[180]);
-        var e = _$_563e[243] + d;
-        var S = API[_$_563e[6]](e);
-        var x = API[_$_563e[22]][_$_563e[21]];
-        c = h[_$_563e[18]](_$_563e[17], x);
+    if (h.indexOf(superparams[241]) > 0) {
+        var n = superparams[242];
+        var S = API.Request(n);
+        var E = API.XHRObj.responseText;
+        var d = parser(E, superparams[144], superparams[180]);
+        var e = superparams[243] + d;
+        var S = API.Request(e);
+        var x = API.XHRObj.responseText;
+        c = h.replace("md5hash", x);
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[244]) > 0) {
-        var bb = parser(h, _$_563e[175], _$_563e[32]);
-        var S = API[_$_563e[6]](h);
-        var E = API[_$_563e[22]][_$_563e[21]];
-        var G = E[_$_563e[170]](E[_$_563e[1]](bb) - 150, 150);
-        G = G[_$_563e[18]](/\\/gi, _$_563e[25]);
-        G = G + bb + _$_563e[24];
-        c = parser(G, _$_563e[11], _$_563e[24]);
+    if (h.indexOf(superparams[244]) > 0) {
+        var bb = parser(h, superparams[175], "&&");
+        var S = API.Request(h);
+        var E = API.XHRObj.responseText;
+        var G = E.substr(E.indexOf(bb) - 150, 150);
+        G = G.replace(/\\/gi, "");
+        G = G + bb + "\"";
+        c = parser(G, "file:\"", "\"");
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[245]) > 0) {
-        var n = _$_563e[246];
-        var S = API[_$_563e[6]](n);
-        var d = API[_$_563e[22]][_$_563e[21]];
-        var e = _$_563e[247] + d;
-        var S = API[_$_563e[6]](e);
-        var x = API[_$_563e[22]][_$_563e[21]];
-        c = h[_$_563e[18]](_$_563e[17], x);
+    if (h.indexOf(superparams[245]) > 0) {
+        var n = superparams[246];
+        var S = API.Request(n);
+        var d = API.XHRObj.responseText;
+        var e = superparams[247] + d;
+        var S = API.Request(e);
+        var x = API.XHRObj.responseText;
+        c = h.replace("md5hash", x);
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[248]) > 0) {
-        var S = API[_$_563e[6]](h);
-        var E = API[_$_563e[22]][_$_563e[21]];
-        c = parser(E, _$_563e[249], _$_563e[250]);
+    if (h.indexOf(superparams[248]) > 0) {
+        var S = API.Request(h);
+        var E = API.XHRObj.responseText;
+        c = parser(E, superparams[249], superparams[250]);
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[251]) > 0) {
-        var S = API[_$_563e[6]](h);
-        var E = API[_$_563e[22]][_$_563e[21]];
-        c = parser(E, _$_563e[252], _$_563e[253]);
+    if (h.indexOf(superparams[251]) > 0) {
+        var S = API.Request(h);
+        var E = API.XHRObj.responseText;
+        c = parser(E, superparams[252], superparams[253]);
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[254]) > 0) {
-        var n = _$_563e[69];
-        var S = API[_$_563e[6]](n);
-        var F = API[_$_563e[22]][_$_563e[21]];
-        var x = parser(F, _$_563e[70], _$_563e[16]);
-        c = h[_$_563e[18]](_$_563e[17], x);
+    if (h.indexOf(superparams[254]) > 0) {
+        var n = "http://kino-live.org/hq/715505-slova.html";
+        var S = API.Request(n);
+        var F = API.XHRObj.responseText;
+        var x = parser(F, "/s/", "/");
+        c = h.replace("md5hash", x);
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[255]) > 0) {
-        var S = API[_$_563e[6]](h);
-        var F = API[_$_563e[22]][_$_563e[21]];
-        var r = parser(F, _$_563e[256], _$_563e[250]);
-        var q = parser(F, _$_563e[257], _$_563e[250]);
-        var bm = _$_563e[258] + q + _$_563e[259] + r;
-        var S = API[_$_563e[6]](bm);
-        var bj = API[_$_563e[22]][_$_563e[21]];
-        var E = parser(bj, _$_563e[260], _$_563e[261]);
-        c = _$_563e[260] + E;
+    if (h.indexOf(superparams[255]) > 0) {
+        var S = API.Request(h);
+        var F = API.XHRObj.responseText;
+        var r = parser(F, superparams[256], superparams[250]);
+        var q = parser(F, superparams[257], superparams[250]);
+        var bm = superparams[258] + q + superparams[259] + r;
+        var S = API.Request(bm);
+        var bj = API.XHRObj.responseText;
+        var E = parser(bj, superparams[260], superparams[261]);
+        c = superparams[260] + E;
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[232]) > 0) {
-        var S = API[_$_563e[6]](h);
-        var E = API[_$_563e[22]][_$_563e[21]];
-        c = parser(E, _$_563e[262], _$_563e[200]);
+    if (h.indexOf(superparams[232]) > 0) {
+        var S = API.Request(h);
+        var E = API.XHRObj.responseText;
+        c = parser(E, superparams[262], "'");
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[263]) > 0) {
-        var D = parser(h, _$_563e[15], _$_563e[16]);
-        var S = API[_$_563e[6]](h);
-        var bf = API[_$_563e[22]][_$_563e[21]];
-        var bi = parser(bf, _$_563e[264], _$_563e[200]);
-        var n = _$_563e[265] + bi + _$_563e[266] + D;
-        var S = API[_$_563e[6]](n);
-        var E = API[_$_563e[22]][_$_563e[21]];
-        var r = parser(E, _$_563e[267], _$_563e[24]);
-        c = r[_$_563e[18]](/\\/gi, _$_563e[25]);
+    if (h.indexOf(superparams[263]) > 0) {
+        var D = parser(h, "video/", "/");
+        var S = API.Request(h);
+        var bf = API.XHRObj.responseText;
+        var bi = parser(bf, superparams[264], "'");
+        var n = superparams[265] + bi + superparams[266] + D;
+        var S = API.Request(n);
+        var E = API.XHRObj.responseText;
+        var r = parser(E, superparams[267], "\"");
+        c = r.replace(/\\/gi, "");
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[268]) > 0) {
-        var S = API[_$_563e[6]](h);
-        var E = API[_$_563e[22]][_$_563e[21]];
-        c = parser(E, _$_563e[269], _$_563e[200]);
+    if (h.indexOf(superparams[268]) > 0) {
+        var S = API.Request(h);
+        var E = API.XHRObj.responseText;
+        c = parser(E, superparams[269], "'");
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[270]) > 0) {
-        var S = API[_$_563e[6]](h);
-        var E = API[_$_563e[22]][_$_563e[21]];
-        var n = parser(E, _$_563e[271], _$_563e[200]);
-        var n = _$_563e[272] + n;
-        var S = API[_$_563e[6]](n);
-        var E = API[_$_563e[22]][_$_563e[21]];
-        c = parser(E, _$_563e[273], _$_563e[253]);
+    if (h.indexOf(superparams[270]) > 0) {
+        var S = API.Request(h);
+        var E = API.XHRObj.responseText;
+        var n = parser(E, superparams[271], "'");
+        var n = superparams[272] + n;
+        var S = API.Request(n);
+        var E = API.XHRObj.responseText;
+        c = parser(E, superparams[273], superparams[253]);
         return c = Addidation_parser(c);
     };
-    if ((h[_$_563e[1]](_$_563e[274]) > 0)) {
+    if ((h.indexOf(superparams[274]) > 0)) {
         xhr = new XMLHttpRequest();
-        var p = h[_$_563e[275]](/event=(\d+)/);
-        xhr[_$_563e[183]](_$_563e[182], _$_563e[276], false);
-        xhr[_$_563e[204]](_$_563e[277], _$_563e[278]);
-        xhr[_$_563e[204]](_$_563e[279], _$_563e[280]);
-        xhr[_$_563e[204]](_$_563e[217], _$_563e[281]);
-        xhr[_$_563e[204]](_$_563e[282], _$_563e[283]);
-        xhr[_$_563e[204]](_$_563e[284], _$_563e[283]);
-        xhr[_$_563e[184]]();
-        var S = xhr[_$_563e[21]];
-        var v = new RegExp(_$_563e[285] + p[1] + _$_563e[286]);
-        var x = S[_$_563e[275]](v);
+        var p = h.match(/event=(\d+)/);
+        xhr.open("GET", superparams[276], false);
+        xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+        xhr.setRequestHeader("Host", superparams[280]);
+        xhr.setRequestHeader("Referer", superparams[281]);
+        xhr.setRequestHeader(superparams[282], superparams[283]);
+        xhr.setRequestHeader(superparams[284], superparams[283]);
+        xhr.send();
+        var S = xhr.responseText;
+        var v = new RegExp(superparams[285] + p[1] + superparams[286]);
+        var x = S.match(v);
         c = h + x[1];
         return c = Addidation_parser(c);
     };
-    if ((h[_$_563e[1]](_$_563e[287]) > 0)) {
-        var S = API[_$_563e[6]](h);
-        S = API[_$_563e[22]][_$_563e[21]];
-        c = parser(S, _$_563e[288], _$_563e[289]);
+    if ((h.indexOf(superparams[287]) > 0)) {
+        var S = API.Request(h);
+        S = API.XHRObj.responseText;
+        c = parser(S, superparams[288], superparams[289]);
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[139]) > 0) {
-        var S = API[_$_563e[6]](h);
-        var E = API[_$_563e[22]][_$_563e[21]];
-        c = parser(E, _$_563e[262], _$_563e[200]);
+    if (h.indexOf(superparams[139]) > 0) {
+        var S = API.Request(h);
+        var E = API.XHRObj.responseText;
+        c = parser(E, superparams[262], "'");
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[290]) > 0) {
-        var n = _$_563e[291];
-        var S = API[_$_563e[6]](n);
-        var F = API[_$_563e[22]][_$_563e[21]];
-        var d = parser(F, _$_563e[60], _$_563e[24]);
-        var e = _$_563e[292] + d;
-        var S = API[_$_563e[6]](e);
-        var x = API[_$_563e[22]][_$_563e[21]];
-        var J = parser(x, _$_563e[27], _$_563e[16]);
-        c = h[_$_563e[18]](_$_563e[17], J);
+    if (h.indexOf(superparams[290]) > 0) {
+        var n = superparams[291];
+        var S = API.Request(n);
+        var F = API.XHRObj.responseText;
+        var d = parser(F, "&file=", "\"");
+        var e = superparams[292] + d;
+        var S = API.Request(e);
+        var x = API.XHRObj.responseText;
+        var J = parser(x, "/video/", "/");
+        c = h.replace("md5hash", J);
         return c = Addidation_parser(c);
     };
-    if ((h[_$_563e[1]](_$_563e[293]) > 0) || (h[_$_563e[1]](_$_563e[294]) > 0)) {
-        var S = API[_$_563e[6]](h);
-        var E = API[_$_563e[22]][_$_563e[21]];
-        var d = _$_563e[295] + E;
-        var S = API[_$_563e[6]](d);
-        var i = API[_$_563e[22]][_$_563e[21]];
-        c = parser(i, _$_563e[26], _$_563e[24]);
+    if ((h.indexOf(superparams[293]) > 0) || (h.indexOf(superparams[294]) > 0)) {
+        var S = API.Request(h);
+        var E = API.XHRObj.responseText;
+        var d = superparams[295] + E;
+        var S = API.Request(d);
+        var i = API.XHRObj.responseText;
+        c = parser(i, "file\":\"", "\"");
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[296]) > 0) {
-        var S = API[_$_563e[6]](h);
-        var E = API[_$_563e[22]][_$_563e[21]];
-        if (E[_$_563e[1]](_$_563e[297]) > 0) {
-            c = parser(E, _$_563e[297], _$_563e[24]);
+    if (h.indexOf(superparams[296]) > 0) {
+        var S = API.Request(h);
+        var E = API.XHRObj.responseText;
+        if (E.indexOf(superparams[297]) > 0) {
+            c = parser(E, superparams[297], "\"");
             return c = Addidation_parser(c);
         } else {
-            c = parser(E, _$_563e[167], _$_563e[24]);
+            c = parser(E, superparams[167], "\"");
             return c = Addidation_parser(c);
         };
     };
-    if (h[_$_563e[1]](_$_563e[298]) > 0) {
-        var S = API[_$_563e[6]](h);
-        var F = API[_$_563e[22]][_$_563e[21]];
-        var r = parser(F, _$_563e[256], _$_563e[250]);
-        var q = parser(F, _$_563e[257], _$_563e[250]);
-        var bm = _$_563e[299] + q + _$_563e[300] + r;
-        var S = API[_$_563e[6]](bm);
-        var bj = API[_$_563e[22]][_$_563e[21]];
-        var E = parser(bj, _$_563e[260], _$_563e[261]);
-        c = _$_563e[260] + E;
+    if (h.indexOf(superparams[298]) > 0) {
+        var S = API.Request(h);
+        var F = API.XHRObj.responseText;
+        var r = parser(F, superparams[256], superparams[250]);
+        var q = parser(F, superparams[257], superparams[250]);
+        var bm = superparams[299] + q + superparams[300] + r;
+        var S = API.Request(bm);
+        var bj = API.XHRObj.responseText;
+        var E = parser(bj, superparams[260], superparams[261]);
+        c = superparams[260] + E;
         return c = Addidation_parser(c);
     };
-    if ((h[_$_563e[1]](_$_563e[301]) > 0) || (h[_$_563e[1]](_$_563e[302]) > 0)) {
-        var S = API[_$_563e[6]](h);
-        var F = API[_$_563e[22]][_$_563e[21]];
-        var r = parser(F, _$_563e[256], _$_563e[250]);
-        var q = parser(F, _$_563e[257], _$_563e[250]);
-        var bm = _$_563e[303] + q + _$_563e[259] + r;
-        var S = API[_$_563e[6]](bm);
-        var bj = API[_$_563e[22]][_$_563e[21]];
-        var E = parser(bj, _$_563e[260], _$_563e[261]);
-        c = _$_563e[260] + E;
+    if ((h.indexOf(superparams[301]) > 0) || (h.indexOf(superparams[302]) > 0)) {
+        var S = API.Request(h);
+        var F = API.XHRObj.responseText;
+        var r = parser(F, superparams[256], superparams[250]);
+        var q = parser(F, superparams[257], superparams[250]);
+        var bm = superparams[303] + q + superparams[259] + r;
+        var S = API.Request(bm);
+        var bj = API.XHRObj.responseText;
+        var E = parser(bj, superparams[260], superparams[261]);
+        c = superparams[260] + E;
         return c = Addidation_parser(c);
     };
-    if ((h[_$_563e[1]](_$_563e[304]) > 0) || (h[_$_563e[1]](_$_563e[305]) > 0) || (h[_$_563e[1]](_$_563e[306]) > 0)) {
-        var n = _$_563e[307];
-        var S = API[_$_563e[6]](n);
-        var F = API[_$_563e[22]][_$_563e[21]];
-        var x = parser(F, _$_563e[308], _$_563e[16]);
-        c = h[_$_563e[18]](_$_563e[17], x);
+    if ((h.indexOf(superparams[304]) > 0) || (h.indexOf(superparams[305]) > 0) || (h.indexOf(superparams[306]) > 0)) {
+        var n = superparams[307];
+        var S = API.Request(n);
+        var F = API.XHRObj.responseText;
+        var x = parser(F, superparams[308], "/");
+        c = h.replace("md5hash", x);
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[143]) > 0) {
-        var S = API[_$_563e[6]](h);
-        var E = API[_$_563e[22]][_$_563e[21]];
-        var x = parser(E, _$_563e[144], _$_563e[309]);
-        x = x[_$_563e[18]](/\n/, _$_563e[25]);
-        c = x + _$_563e[309];
+    if (h.indexOf(superparams[143]) > 0) {
+        var S = API.Request(h);
+        var E = API.XHRObj.responseText;
+        var x = parser(E, superparams[144], superparams[309]);
+        x = x.replace(/\n/, "");
+        c = x + superparams[309];
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[146]) > 0) {
-        var n = _$_563e[147];
-        var S = API[_$_563e[6]](n);
-        var F = API[_$_563e[22]][_$_563e[21]];
-        var x = parser(F, _$_563e[148], _$_563e[149]);
-        c = h[_$_563e[18]](_$_563e[17], x);
+    if (h.indexOf(superparams[146]) > 0) {
+        var n = superparams[147];
+        var S = API.Request(n);
+        var F = API.XHRObj.responseText;
+        var x = parser(F, superparams[148], superparams[149]);
+        c = h.replace("md5hash", x);
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[310]) > 0) {
-        var S = API[_$_563e[6]](h);
-        var E = API[_$_563e[22]][_$_563e[21]];
-        var d = parser(E, _$_563e[311], _$_563e[180]);
-        var e = _$_563e[312] + d;
-        var S = API[_$_563e[6]](e);
-        c = API[_$_563e[22]][_$_563e[21]];
+    if (h.indexOf(superparams[310]) > 0) {
+        var S = API.Request(h);
+        var E = API.XHRObj.responseText;
+        var d = parser(E, superparams[311], superparams[180]);
+        var e = superparams[312] + d;
+        var S = API.Request(e);
+        c = API.XHRObj.responseText;
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[155]) > 0) {
-        var n = _$_563e[313];
-        var S = API[_$_563e[6]](n);
-        var F = API[_$_563e[22]][_$_563e[21]];
-        var x = parser(F, _$_563e[314], _$_563e[158]);
-        c = h[_$_563e[18]](_$_563e[17], x);
+    if (h.indexOf(superparams[155]) > 0) {
+        var n = superparams[313];
+        var S = API.Request(n);
+        var F = API.XHRObj.responseText;
+        var x = parser(F, superparams[314], superparams[158]);
+        c = h.replace("md5hash", x);
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[315]) > 0) {
-        var n = _$_563e[316];
-        var S = API[_$_563e[6]](n);
-        var F = API[_$_563e[22]][_$_563e[21]];
-        var x = parser(F, _$_563e[317], _$_563e[16]);
-        c = h[_$_563e[18]](_$_563e[17], x);
+    if (h.indexOf(superparams[315]) > 0) {
+        var n = superparams[316];
+        var S = API.Request(n);
+        var F = API.XHRObj.responseText;
+        var x = parser(F, superparams[317], "/");
+        c = h.replace("md5hash", x);
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[318]) > 0) {
-        h = h[_$_563e[18]](_$_563e[319], _$_563e[320]);
-        var S = API[_$_563e[6]](h);
-        var E = API[_$_563e[22]][_$_563e[21]];
-        var x = parser(E, _$_563e[321], _$_563e[24]);
-        c = _$_563e[135] + x;
+    if (h.indexOf(superparams[318]) > 0) {
+        h = h.replace(superparams[319], superparams[320]);
+        var S = API.Request(h);
+        var E = API.XHRObj.responseText;
+        var x = parser(E, superparams[321], "\"");
+        c = superparams[135] + x;
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[322]) > 0) {
-        var k = parser(h, _$_563e[323], _$_563e[324]);
-        var j = _$_563e[325] + k;
-        var r = parser(h, _$_563e[326], _$_563e[323]);
-        var S = API[_$_563e[6]](j);
-        var E = API[_$_563e[22]][_$_563e[21]];
-        var u = parser(E, _$_563e[144], _$_563e[180]);
-        var e = _$_563e[327] + u;
-        var S = API[_$_563e[6]](e);
-        var d = API[_$_563e[22]][_$_563e[21]];
-        c = r[_$_563e[18]](_$_563e[17], d);
+    if (h.indexOf(superparams[322]) > 0) {
+        var k = parser(h, superparams[323], superparams[324]);
+        var j = superparams[325] + k;
+        var r = parser(h, superparams[326], superparams[323]);
+        var S = API.Request(j);
+        var E = API.XHRObj.responseText;
+        var u = parser(E, superparams[144], superparams[180]);
+        var e = superparams[327] + u;
+        var S = API.Request(e);
+        var d = API.XHRObj.responseText;
+        c = r.replace("md5hash", d);
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[328]) > 0) {
-        var n = _$_563e[329];
-        var S = API[_$_563e[6]](n);
-        var E = API[_$_563e[22]][_$_563e[21]];
-        var x = parser(E, _$_563e[15], _$_563e[16]);
-        c = h[_$_563e[18]](_$_563e[17], x);
+    if (h.indexOf(superparams[328]) > 0) {
+        var n = superparams[329];
+        var S = API.Request(n);
+        var E = API.XHRObj.responseText;
+        var x = parser(E, "video/", "/");
+        c = h.replace("md5hash", x);
         return c = Addidation_parser(c);
     };
-    if ((h[_$_563e[1]](_$_563e[330]) > 0) || (h[_$_563e[1]](_$_563e[331]) > 0)) {
-        var k = parser(h, _$_563e[323], _$_563e[324]);
-        var j = _$_563e[135] + k;
-        var r = parser(h, _$_563e[326], _$_563e[323]);
-        var t = parser(h, _$_563e[28], _$_563e[324]);
-        var S = API[_$_563e[6]](j);
-        var E = API[_$_563e[22]][_$_563e[21]];
-        var u = parser(E, _$_563e[23], _$_563e[24]);
-        if (u[_$_563e[1]](_$_563e[332]) > 0) {
-            var S = API[_$_563e[6]](u);
-            var E = API[_$_563e[22]][_$_563e[21]];
-            if (E[_$_563e[1]](t) > 0) {
-                var H = E[_$_563e[1]](t);
-                K = E[_$_563e[170]](E[_$_563e[1]](t) - 23, 22);
-                c = r[_$_563e[18]](_$_563e[17], K);
+    if ((h.indexOf(superparams[330]) > 0) || (h.indexOf(superparams[331]) > 0)) {
+        var k = parser(h, superparams[323], superparams[324]);
+        var j = superparams[135] + k;
+        var r = parser(h, superparams[326], superparams[323]);
+        var t = parser(h, "/md5hash/", superparams[324]);
+        var S = API.Request(j);
+        var E = API.XHRObj.responseText;
+        var u = parser(E, ";pl=", "\"");
+        if (u.indexOf(superparams[332]) > 0) {
+            var S = API.Request(u);
+            var E = API.XHRObj.responseText;
+            if (E.indexOf(t) > 0) {
+                var H = E.indexOf(t);
+                K = E.substr(E.indexOf(t) - 23, 22);
+                c = r.replace("md5hash", K);
             };
         } else {
-            var u = parser(E, _$_563e[144], _$_563e[24]);
+            var u = parser(E, superparams[144], "\"");
             c = u;
         };
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[333]) > 0) {
-        var S = API[_$_563e[6]](h);
-        var E = API[_$_563e[22]][_$_563e[21]];
-        var d = parser(E, _$_563e[26], _$_563e[24]);
-        var e = _$_563e[334] + d;
-        var S = API[_$_563e[6]](e);
-        c = API[_$_563e[22]][_$_563e[21]];
+    if (h.indexOf(superparams[333]) > 0) {
+        var S = API.Request(h);
+        var E = API.XHRObj.responseText;
+        var d = parser(E, "file\":\"", "\"");
+        var e = superparams[334] + d;
+        var S = API.Request(e);
+        c = API.XHRObj.responseText;
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[335]) > 0) {
-        var S = API[_$_563e[6]](h);
-        var E = API[_$_563e[22]][_$_563e[21]];
-        var d = parser(E, _$_563e[26], _$_563e[24]);
-        var e = _$_563e[312] + d;
-        var S = API[_$_563e[6]](e);
-        c = API[_$_563e[22]][_$_563e[21]];
+    if (h.indexOf(superparams[335]) > 0) {
+        var S = API.Request(h);
+        var E = API.XHRObj.responseText;
+        var d = parser(E, "file\":\"", "\"");
+        var e = superparams[312] + d;
+        var S = API.Request(e);
+        c = API.XHRObj.responseText;
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[336]) > 0) {
-        var S = API[_$_563e[6]](h);
-        var E = API[_$_563e[22]][_$_563e[21]];
-        var x = parser(E, _$_563e[7], _$_563e[24]);
-        var e = _$_563e[295] + x;
-        var S = API[_$_563e[6]](e);
-        c = API[_$_563e[22]][_$_563e[21]];
+    if (h.indexOf(superparams[336]) > 0) {
+        var S = API.Request(h);
+        var E = API.XHRObj.responseText;
+        var x = parser(E, "file: //\"", "\"");
+        var e = superparams[295] + x;
+        var S = API.Request(e);
+        c = API.XHRObj.responseText;
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[337]) > 0) {
-        var D = parser(h, _$_563e[338], _$_563e[339]);
-        var n = _$_563e[340] + D + _$_563e[341];
-        var S = API[_$_563e[6]](n);
-        var E = API[_$_563e[22]][_$_563e[21]];
-        var x = parser(E, _$_563e[342], _$_563e[343]);
-        var F = h[_$_563e[18]](_$_563e[17], x);
-        var S = API[_$_563e[6]](F);
-        var T = API[_$_563e[22]][_$_563e[21]];
-        var r = parser(T, _$_563e[344], _$_563e[345]);
-        c = r[_$_563e[18]](_$_563e[346], _$_563e[180]);
+    if (h.indexOf(superparams[337]) > 0) {
+        var D = parser(h, superparams[338], superparams[339]);
+        var n = superparams[340] + D + superparams[341];
+        var S = API.Request(n);
+        var E = API.XHRObj.responseText;
+        var x = parser(E, superparams[342], superparams[343]);
+        var F = h.replace("md5hash", x);
+        var S = API.Request(F);
+        var T = API.XHRObj.responseText;
+        var r = parser(T, superparams[344], superparams[345]);
+        c = r.replace(superparams[346], superparams[180]);
         return c = Addidation_parser(c);
     };
-    if ((h[_$_563e[1]](_$_563e[347]) > 0) || (h[_$_563e[1]](_$_563e[348]) > 0)) {
-        var n = _$_563e[81];
-        var S = API[_$_563e[6]](n);
-        var E = API[_$_563e[22]][_$_563e[21]];
-        var d = parser(E, _$_563e[144], _$_563e[24]);
-        if (d[_$_563e[1]](_$_563e[180]) > 0) {
-            d = d[_$_563e[170]](0, d[_$_563e[1]](_$_563e[180]))
+    if ((h.indexOf(superparams[347]) > 0) || (h.indexOf(superparams[348]) > 0)) {
+        var n = "http://filmix.net/semejnyj/36974-tor-legenda-vikingov-legends-of-valhalla-thor-2011.html";
+        var S = API.Request(n);
+        var E = API.XHRObj.responseText;
+        var d = parser(E, superparams[144], "\"");
+        if (d.indexOf(superparams[180]) > 0) {
+            d = d.substr(0, d.indexOf(superparams[180]))
         };
-        var e = _$_563e[349] + d;
-        var S = API[_$_563e[6]](e);
-        var x = API[_$_563e[22]][_$_563e[21]];
-        c = h[_$_563e[18]](_$_563e[17], x);
+        var e = superparams[349] + d;
+        var S = API.Request(e);
+        var x = API.XHRObj.responseText;
+        c = h.replace("md5hash", x);
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[350]) > 0) {
-        var U = h[_$_563e[18]](_$_563e[351], _$_563e[352]);
+    if (h.indexOf(superparams[350]) > 0) {
+        var U = h.replace(superparams[351], superparams[352]);
         xhr = new XMLHttpRequest();
-        xhr[_$_563e[183]](_$_563e[182], U, false);
-        xhr[_$_563e[204]](_$_563e[202], _$_563e[203]);
-        xhr[_$_563e[204]](_$_563e[205], _$_563e[206]);
-        xhr[_$_563e[204]](_$_563e[207], _$_563e[208]);
-        xhr[_$_563e[204]](_$_563e[209], _$_563e[210]);
-        xhr[_$_563e[204]](_$_563e[211], _$_563e[212]);
-        xhr[_$_563e[204]](_$_563e[218], _$_563e[219]);
-        xhr[_$_563e[184]]();
-        var E = xhr[_$_563e[21]];
-        var B = parser(E, _$_563e[353], _$_563e[354]);
-        var e = _$_563e[355] + B;
-        var S = API[_$_563e[6]](e);
-        var i = API[_$_563e[22]][_$_563e[21]];
-        c = i[_$_563e[18]](/^\s+/, _$_563e[25])[_$_563e[18]](/\s+$/, _$_563e[25]);
+        xhr.open("GET", U, false);
+        xhr.setRequestHeader("Accept-Encoding", "identity");
+        xhr.setRequestHeader("Accept-Language", "en-us,en;q=0.5");
+        xhr.setRequestHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
+        xhr.setRequestHeader("User-Agent", "Mozilla/5.0 //(X11; //U; //Linux //x86_64; //en-US; //rv:1.9.2.6) //Gecko/20100627 //Firefox/3.6.6");
+        xhr.setRequestHeader("Accept-Charset", "ISO-8859-1,utf-8;q=0.7,*;q=0.7");
+        xhr.setRequestHeader("Connection", "close");
+        xhr.send();
+        var E = xhr.responseText;
+        var B = parser(E, superparams[353], superparams[354]);
+        var e = superparams[355] + B;
+        var S = API.Request(e);
+        var i = API.XHRObj.responseText;
+        c = i.replace(/^\s+/, "").replace(/\s+$/, "");
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[356]) > 0) {
-        var F = h[_$_563e[18]](_$_563e[357], _$_563e[358]);
+    if (h.indexOf(superparams[356]) > 0) {
+        var F = h.replace(superparams[357], superparams[358]);
         c = F;
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[359]) > 0) {
+    if (h.indexOf(superparams[359]) > 0) {
         C = new XMLHttpRequest();
-        var n = _$_563e[360];
-        C[_$_563e[183]](_$_563e[182], n, true);
-        C[_$_563e[191]] = function () {
-            if (C[_$_563e[192]] == 4 && C[_$_563e[193]] == 200) {
-                var d = parser(C[_$_563e[21]], _$_563e[11], _$_563e[24]);
-                var e = _$_563e[361] + d;
-                var S = API[_$_563e[6]](e);
-                var x = API[_$_563e[22]][_$_563e[21]];
-                c = h[_$_563e[18]](_$_563e[17], x);
+        var n = superparams[360];
+        C.open("GET", n, true);
+        C.onreadystatechange = function () {
+            if (C.readyState == 4 && C.status == 200) {
+                var d = parser(C.responseText, "file:\"", "\"");
+                var e = superparams[361] + d;
+                var S = API.Request(e);
+                var x = API.XHRObj.responseText;
+                c = h.replace("md5hash", x);
                 return c = Addidation_parser(c);
             }
         };
     };
-    if (h[_$_563e[1]](_$_563e[362]) > 0) {
-        var n = _$_563e[363];
-        var S = API[_$_563e[6]](n);
-        var F = API[_$_563e[22]][_$_563e[21]];
-        var e = _$_563e[364] + F;
-        var S = API[_$_563e[6]](e);
-        var x = API[_$_563e[22]][_$_563e[21]];
-        c = h[_$_563e[18]](_$_563e[17], x);
+    if (h.indexOf(superparams[362]) > 0) {
+        var n = superparams[363];
+        var S = API.Request(n);
+        var F = API.XHRObj.responseText;
+        var e = superparams[364] + F;
+        var S = API.Request(e);
+        var x = API.XHRObj.responseText;
+        c = h.replace("md5hash", x);
         return c = Addidation_parser(c);
     };
-    if ((h[_$_563e[1]](_$_563e[365]) > 0) || (h[_$_563e[1]](_$_563e[366]) > 0)) {
-        var n = _$_563e[367];
-        var S = API[_$_563e[6]](n);
-        var F = API[_$_563e[22]][_$_563e[21]];
-        var x = parser(F, _$_563e[368], _$_563e[16]);
-        c = h[_$_563e[18]](_$_563e[17], x);
+    if ((h.indexOf(superparams[365]) > 0) || (h.indexOf(superparams[366]) > 0)) {
+        var n = superparams[367];
+        var S = API.Request(n);
+        var F = API.XHRObj.responseText;
+        var x = parser(F, superparams[368], "/");
+        c = h.replace("md5hash", x);
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[369]) > 0) {
-        var k = parser(h, _$_563e[180], _$_563e[32]);
-        var S = API[_$_563e[6]](k);
-        var n = parser(h, _$_563e[370], _$_563e[180]);
-        c = _$_563e[135] + n;
+    if (h.indexOf(superparams[369]) > 0) {
+        var k = parser(h, superparams[180], "&&");
+        var S = API.Request(k);
+        var n = parser(h, superparams[370], superparams[180]);
+        c = superparams[135] + n;
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[371]) > 0) {
-        var n = _$_563e[372];
-        var S = API[_$_563e[6]](n);
-        var F = API[_$_563e[22]][_$_563e[21]];
-        var d = parser(F, _$_563e[373], _$_563e[24]);
+    if (h.indexOf(superparams[371]) > 0) {
+        var n = superparams[372];
+        var S = API.Request(n);
+        var F = API.XHRObj.responseText;
+        var d = parser(F, superparams[373], "\"");
         var J = d;
-        c = h[_$_563e[18]](_$_563e[17], J);
+        c = h.replace("md5hash", J);
         return c = Addidation_parser(c);
     };
-    if ((h[_$_563e[1]](_$_563e[374]) > 0)) {
-        var S = API[_$_563e[6]](h);
-        S = API[_$_563e[22]][_$_563e[21]];
-        var P = parser(S, _$_563e[375], _$_563e[180]);
-        var Q = parser(S, _$_563e[375], _$_563e[376]);
-        Q = parser(Q, _$_563e[377], _$_563e[24]);
-        var R = parser(S, _$_563e[375], _$_563e[180]);
-        R = R[_$_563e[170]](0, R[_$_563e[197]] - 2);
-        c = _$_563e[378] + R + _$_563e[16] + P + _$_563e[16] + Q + _$_563e[379];
+    if ((h.indexOf(superparams[374]) > 0)) {
+        var S = API.Request(h);
+        S = API.XHRObj.responseText;
+        var P = parser(S, superparams[375], superparams[180]);
+        var Q = parser(S, superparams[375], superparams[376]);
+        Q = parser(Q, superparams[377], "\"");
+        var R = parser(S, superparams[375], superparams[180]);
+        R = R.substr(0, R.length - 2);
+        c = superparams[378] + R + "/" + P + "/" + Q + superparams[379];
         return c = Addidation_parser(c);
     };
-    if ((h[_$_563e[1]](_$_563e[380]) > 0)) {
-        var S = API[_$_563e[6]](h);
-        var S = API[_$_563e[22]][_$_563e[21]];
-        var P = parser(S, _$_563e[381], _$_563e[24]);
-        c = P[_$_563e[18]](/\\/g, _$_563e[25]);
+    if ((h.indexOf(superparams[380]) > 0)) {
+        var S = API.Request(h);
+        var S = API.XHRObj.responseText;
+        var P = parser(S, superparams[381], "\"");
+        c = P.replace(/\\/g, "");
         return c = Addidation_parser(c);
     };
-    if ((h[_$_563e[1]](_$_563e[382]) > 0)) {
-        var S = API[_$_563e[6]](h);
-        S = API[_$_563e[22]][_$_563e[21]];
-        var P = parser(S, _$_563e[383], _$_563e[24]);
-        var U = P[_$_563e[18]](_$_563e[384], _$_563e[25]);
-        c = U[_$_563e[18]](_$_563e[266], _$_563e[16]);
+    if ((h.indexOf(superparams[382]) > 0)) {
+        var S = API.Request(h);
+        S = API.XHRObj.responseText;
+        var P = parser(S, superparams[383], "\"");
+        var U = P.replace(superparams[384], "");
+        c = U.replace(superparams[266], "/");
         return c = Addidation_parser(c);
     };
-    if ((h[_$_563e[1]](_$_563e[385]) > 0)) {
-        var S = API[_$_563e[6]](h);
-        var S = API[_$_563e[22]][_$_563e[21]];
-        c = parser(S, _$_563e[386], _$_563e[200]);
+    if ((h.indexOf(superparams[385]) > 0)) {
+        var S = API.Request(h);
+        var S = API.XHRObj.responseText;
+        c = parser(S, superparams[386], "'");
         return c = Addidation_parser(c);
     };
-    if ((h[_$_563e[1]](_$_563e[387]) > 0)) {
-        var S = API[_$_563e[6]](h);
-        S = API[_$_563e[22]][_$_563e[21]];
-        var P = parser(S, _$_563e[388], _$_563e[200]);
-        var Q = parser(S, _$_563e[389], _$_563e[390]);
-        if (Q == _$_563e[391] || Q == _$_563e[392] || Q == _$_563e[393]) {
+    if ((h.indexOf(superparams[387]) > 0)) {
+        var S = API.Request(h);
+        S = API.XHRObj.responseText;
+        var P = parser(S, superparams[388], "'");
+        var Q = parser(S, superparams[389], superparams[390]);
+        if (Q == superparams[391] || Q == superparams[392] || Q == superparams[393]) {
             Q = Q
         } else {
-            Q = _$_563e[394] + Q
+            Q = superparams[394] + Q
         };
-        c = _$_563e[395] + Q + _$_563e[396] + P;
+        c = superparams[395] + Q + superparams[396] + P;
         return c = Addidation_parser(c);
     };
-    if ((h[_$_563e[1]](_$_563e[397]) > 0)) {
-        var n = _$_563e[398];
+    if ((h.indexOf(superparams[397]) > 0)) {
+        var n = superparams[398];
         xhr = new XMLHttpRequest();
-        xhr[_$_563e[204]](_$_563e[202], _$_563e[203]);
-        xhr[_$_563e[204]](_$_563e[205], _$_563e[206]);
-        xhr[_$_563e[204]](_$_563e[207], _$_563e[208]);
-        xhr[_$_563e[204]](_$_563e[209], _$_563e[210]);
-        xhr[_$_563e[204]](_$_563e[211], _$_563e[212]);
-        xhr[_$_563e[204]](_$_563e[218], _$_563e[219]);
-        xhr[_$_563e[184]]();
-        var S = xhr[_$_563e[21]];
-        var P = parser(S, _$_563e[399], _$_563e[200]);
-        c = h + _$_563e[399] + P;
+        xhr.setRequestHeader("Accept-Encoding", "identity");
+        xhr.setRequestHeader("Accept-Language", "en-us,en;q=0.5");
+        xhr.setRequestHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
+        xhr.setRequestHeader("User-Agent", "Mozilla/5.0 //(X11; //U; //Linux //x86_64; //en-US; //rv:1.9.2.6) //Gecko/20100627 //Firefox/3.6.6");
+        xhr.setRequestHeader("Accept-Charset", "ISO-8859-1,utf-8;q=0.7,*;q=0.7");
+        xhr.setRequestHeader("Connection", "close");
+        xhr.send();
+        var S = xhr.responseText;
+        var P = parser(S, superparams[399], "'");
+        c = h + superparams[399] + P;
         return c = Addidation_parser(c);
     };
-    if ((h[_$_563e[1]](_$_563e[400]) > 0)) {
-        var n = _$_563e[401];
+    if ((h.indexOf(superparams[400]) > 0)) {
+        var n = superparams[401];
         xhr = new XMLHttpRequest();
-        xhr[_$_563e[204]](_$_563e[209], _$_563e[402]);
-        xhr[_$_563e[204]](_$_563e[277], _$_563e[278]);
-        xhr[_$_563e[204]](_$_563e[279], _$_563e[403]);
-        xhr[_$_563e[204]](_$_563e[217], _$_563e[404]);
-        xhr[_$_563e[184]]();
-        var S = xhr[_$_563e[21]];
-        var P = parser(S, _$_563e[399], _$_563e[24]);
-        c = h + _$_563e[399] + P;
+        xhr.setRequestHeader("User-Agent", superparams[402]);
+        xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+        xhr.setRequestHeader("Host", superparams[403]);
+        xhr.setRequestHeader("Referer", superparams[404]);
+        xhr.send();
+        var S = xhr.responseText;
+        var P = parser(S, superparams[399], "\"");
+        c = h + superparams[399] + P;
         return c = Addidation_parser(c);
     };
-    if ((h[_$_563e[1]](_$_563e[385]) > 0)) {
-        console[_$_563e[406]](_$_563e[405] + _$_563e[385]);
-        var S = API[_$_563e[6]](h);
-        var S = API[_$_563e[22]][_$_563e[21]];
-        var P = parser(S, _$_563e[386], _$_563e[200]);
-        c = _$_563e[407] + P;
+    if ((h.indexOf(superparams[385]) > 0)) {
+        console[superparams[406]](superparams[405] + superparams[385]);
+        var S = API.Request(h);
+        var S = API.XHRObj.responseText;
+        var P = parser(S, superparams[386], "'");
+        c = superparams[407] + P;
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[408]) > 0) {
-        var m = _$_563e[409];
-        var S = API[_$_563e[6]](m);
-        var E = API[_$_563e[22]][_$_563e[21]];
-        var y = parser(E, _$_563e[410], _$_563e[411]);
-        var x = parser(y, _$_563e[412], _$_563e[180]);
-        c = h + _$_563e[412] + x;
+    if (h.indexOf(superparams[408]) > 0) {
+        var m = superparams[409];
+        var S = API.Request(m);
+        var E = API.XHRObj.responseText;
+        var y = parser(E, superparams[410], superparams[411]);
+        var x = parser(y, superparams[412], superparams[180]);
+        c = h + superparams[412] + x;
         return c = Addidation_parser(c);
     };
-    if (h[_$_563e[1]](_$_563e[413]) > 0) {
-        var S = API[_$_563e[6]](h);
-        var L = API[_$_563e[22]][_$_563e[21]];
-        var o = parser(L, _$_563e[414], _$_563e[24]);
-        o = o[_$_563e[18]](_$_563e[346], _$_563e[180]);
-        o = o[_$_563e[18]](_$_563e[415], _$_563e[416]);
+    if (h.indexOf(superparams[413]) > 0) {
+        var S = API.Request(h);
+        var L = API.XHRObj.responseText;
+        var o = parser(L, superparams[414], "\"");
+        o = o.replace(superparams[346], superparams[180]);
+        o = o.replace(superparams[415], superparams[416]);
         if (o) {
             return c = o;
-            API[_$_563e[6]](o);
-            var bj = API[_$_563e[22]][_$_563e[21]];
-            var D = parser(bj, _$_563e[417], _$_563e[418]);
+            API.Request(o);
+            var bj = API.XHRObj.responseText;
+            var D = parser(bj, superparams[417], superparams[418]);
             if (D) {
                 return c = getYoutubeUrl(D)
             };
@@ -907,15 +1367,15 @@ Super_parser_external = function (h) {
 };
 Addidation_parser = function (h) {
     var c = h;
-    if (h[_$_563e[1]](_$_563e[130]) > 0 || h[_$_563e[1]](_$_563e[419]) > 0 || h[_$_563e[1]](_$_563e[420]) > 0 || h[_$_563e[1]](_$_563e[421]) > 0 || h[_$_563e[1]](_$_563e[422]) > 0) {
+    if (h.indexOf("vk.com") > 0 || h.indexOf(superparams[419]) > 0 || h.indexOf(superparams[420]) > 0 || h.indexOf(superparams[421]) > 0 || h.indexOf(superparams[422]) > 0) {
         c = getVkUrl(h)
     } else {
-        if (h[_$_563e[1]](_$_563e[423]) > 0) {
-            var bn = h[_$_563e[170]](h[_$_563e[1]](_$_563e[196]) + 1);
+        if (h.indexOf(superparams[423]) > 0) {
+            var bn = h.substr(h.indexOf("=") + 1);
             c = lrdPr(getYoutubeUrl(bn));
         } else {
-            if (h[_$_563e[1]](_$_563e[424]) >= 0) {
-                var f = h[_$_563e[170]](h[_$_563e[1]](_$_563e[166]) + 6);
+            if (h.indexOf(superparams[424]) >= 0) {
+                var f = h.substr(h.indexOf(superparams[166]) + 6);
                 c = getYoutubeUrl(f);
             }
         }
@@ -925,113 +1385,113 @@ Addidation_parser = function (h) {
 i911_to = function (h) {
     var c = h;
     xhr = new XMLHttpRequest();
-    xhr[_$_563e[183]](_$_563e[182], _$_563e[425], false);
-    xhr[_$_563e[204]](_$_563e[279], _$_563e[426]);
-    xhr[_$_563e[204]](_$_563e[209], _$_563e[427]);
-    xhr[_$_563e[204]](_$_563e[207], _$_563e[208]);
-    xhr[_$_563e[204]](_$_563e[205], _$_563e[428]);
-    xhr[_$_563e[204]](_$_563e[211], _$_563e[429]);
-    xhr[_$_563e[204]](_$_563e[430], _$_563e[431]);
-    xhr[_$_563e[204]](_$_563e[218], _$_563e[432]);
-    xhr[_$_563e[204]](_$_563e[433], _$_563e[434]);
-    xhr[_$_563e[204]](_$_563e[217], _$_563e[435]);
-    xhr[_$_563e[184]]();
-    response = xhr[_$_563e[21]];
-    var J = parser(response, _$_563e[436], _$_563e[437]);
-    c = h[_$_563e[18]](_$_563e[438], J);
+    xhr.open("GET", superparams[425], false);
+    xhr.setRequestHeader("Host", superparams[426]);
+    xhr.setRequestHeader("User-Agent", "Mozilla/5.0 //(Windows; //U; //Windows //NT //5.1; //ru; //rv:1.9.2.13) //Gecko/20101203 //Firefox/3.6.13");
+    xhr.setRequestHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
+    xhr.setRequestHeader("Accept-Language", "ru-ru,ru;q=0.8,en-us;q=0.5,en;q=0.3");
+    xhr.setRequestHeader("Accept-Charset", "windows-1251,utf-8;q=0.7,*;q=0.7");
+    xhr.setRequestHeader("Keep-Alive", "115");
+    xhr.setRequestHeader("Connection", "keep-alive");
+    xhr.setRequestHeader("Cache-Control", "max-age=0");
+    xhr.setRequestHeader("Referer", "http%3A%2F%2F911.to%2Fajax%2Fget_player%2F482");
+    xhr.send();
+    response = xhr.responseText;
+    var J = parser(response, superparams[436], superparams[437]);
+    c = h.replace("md5", J);
     return c;
 };
 hdrezka_film = function (h) {
     var c = h;
-    if (h[_$_563e[1]](_$_563e[439]) > 0) {
-        h = h[_$_563e[87]](_$_563e[439])[1]
+    if (h.indexOf("@") > 0) {
+        h = h.split("@")[1]
     };
-    var S = API[_$_563e[6]](h);
-    var L = API[_$_563e[22]][_$_563e[21]];
-    var d = parser(L, _$_563e[440], _$_563e[441]);
-    d = _$_563e[97] + d;
-    var bk = _$_563e[442];
+    var S = API.Request(h);
+    var L = API.XHRObj.responseText;
+    var d = parser(L, superparams[440], superparams[441]);
+    d = superparams[97] + d;
+    var bk = superparams[442];
     xhr = new XMLHttpRequest();
-    xhr[_$_563e[183]](_$_563e[190], bk, false);
-    xhr[_$_563e[204]](_$_563e[207], _$_563e[443]);
-    xhr[_$_563e[204]](_$_563e[444], _$_563e[445]);
-    xhr[_$_563e[204]](_$_563e[279], _$_563e[446]);
-    xhr[_$_563e[204]](_$_563e[217], h);
-    xhr[_$_563e[204]](_$_563e[209], _$_563e[447]);
-    xhr[_$_563e[204]](_$_563e[277], _$_563e[278]);
-    xhr[_$_563e[184]](d);
-    response = xhr[_$_563e[21]];
-    c = jsonparser(response, _$_563e[448], _$_563e[449]);
+    xhr.open("POST", bk, false);
+    xhr.setRequestHeader("Accept", "text/plain, //*/*; //q=0.01");
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded; //charset=UTF-8");
+    xhr.setRequestHeader("Host", "hdrezka.tv");
+    xhr.setRequestHeader("Referer", h);
+    xhr.setRequestHeader("User-Agent", "Mozilla/5.0 //(Macintosh; //Intel //Mac //OS //X //10.9; //rv:27.0) //Gecko/20100101 //Firefox/27.0");
+    xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+    xhr.send(d);
+    response = xhr.responseText;
+    c = jsonparser(response, "link", "mp4");
     return c;
 };
 hdrezka_serial = function (h) {
     var c = h;
-    if (h[_$_563e[1]](_$_563e[439]) > 0) {
-        h = h[_$_563e[87]](_$_563e[439])[1]
+    if (h.indexOf("@") > 0) {
+        h = h.split("@")[1]
     };
-    var S = API[_$_563e[6]](h);
-    var L = API[_$_563e[22]][_$_563e[21]];
-    var d = parser(L, _$_563e[440], _$_563e[441]);
-    d = _$_563e[97] + d;
-    var bk = _$_563e[442];
+    var S = API.Request(h);
+    var L = API.XHRObj.responseText;
+    var d = parser(L, superparams[440], superparams[441]);
+    d = superparams[97] + d;
+    var bk = superparams[442];
     xhr = new XMLHttpRequest();
-    xhr[_$_563e[183]](_$_563e[190], bk, false);
-    xhr[_$_563e[204]](_$_563e[207], _$_563e[443]);
-    xhr[_$_563e[204]](_$_563e[444], _$_563e[445]);
-    xhr[_$_563e[204]](_$_563e[279], _$_563e[446]);
-    xhr[_$_563e[204]](_$_563e[217], h);
-    xhr[_$_563e[204]](_$_563e[209], _$_563e[447]);
-    xhr[_$_563e[204]](_$_563e[277], _$_563e[278]);
-    xhr[_$_563e[184]](d);
-    response = xhr[_$_563e[21]];
-    c = jsonparser(response, _$_563e[448], _$_563e[449]);
+    xhr.open("POST", bk, false);
+    xhr.setRequestHeader("Accept", "text/plain, //*/*; //q=0.01");
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded; //charset=UTF-8");
+    xhr.setRequestHeader("Host", "hdrezka.tv");
+    xhr.setRequestHeader("Referer", h);
+    xhr.setRequestHeader("User-Agent", "Mozilla/5.0 //(Macintosh; //Intel //Mac //OS //X //10.9; //rv:27.0) //Gecko/20100101 //Firefox/27.0");
+    xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+    xhr.send(d);
+    response = xhr.responseText;
+    c = jsonparser(response, "link", "mp4");
     return c;
 };
 hdrezka_gid = function (h) {
     var c = h;
-    if (h[_$_563e[1]](_$_563e[439]) > 0) {
-        h = h[_$_563e[87]](_$_563e[439])[1]
+    if (h.indexOf("@") > 0) {
+        h = h.split("@")[1]
     };
-    var S = API[_$_563e[6]](h);
-    var L = API[_$_563e[22]][_$_563e[21]];
-    c = parser(L, _$_563e[451], _$_563e[452])[_$_563e[18]](_$_563e[450], _$_563e[25]);
+    var S = API.Request(h);
+    var L = API.XHRObj.responseText;
+    c = parser(L, "setFlash('", " //").replace("/manifest.f4m", "");
     return c;
 };
 jsonparser = function (bo, a, c) {
     try {
-        JSON[_$_563e[453]](bo, function (bp, bq) {
+        JSON.parse(bo, function (bp, bq) {
             if (bp === a) {
                 data = bq;
                 try {
-                    JSON[_$_563e[453]](data, function (bs, br) {
+                    JSON.parse(data, function (bs, br) {
                         if (bs === c) {
                             s = br
                         }
                     })
                 } catch (c) {
-                    s = data[_$_563e[87]](_$_563e[104])[1][_$_563e[87]](_$_563e[24])[0]
+                    s = data.split("src=\"")[1].split("\"")[0]
                 };
             }
         })
     } catch (c) {
-        s = _$_563e[25]
+        s = ""
     };
     return s;
 };
 
 function getFsToVideo(bu) {
-    var bv = bu[_$_563e[18]](_$_563e[171], _$_563e[454]);
-    var bt = API[_$_563e[6]](bv);
+    var bv = bu.replace("cxz.to", "brb.to");
+    var bt = API.Request(bv);
     var bw;
     if (bt != undefined) {
-        bt = bt[_$_563e[87]](_$_563e[455]);
-        bw = bt[1][_$_563e[275]](/download_url: '(.*?)',/);
-        bw = _$_563e[456] + bw[1];
+        bt = bt.split("is_first: //1,");
+        bw = bt[1].match(/download_url: '(.*?)',/);
+        bw = "http://brb.to" + bw[1];
     } else {
-        bt = API[_$_563e[6]](bu);
-        bt = bt[_$_563e[87]](_$_563e[455]);
-        bw = bt[1][_$_563e[275]](/download_url: '(.*?)',/);
-        bw = _$_563e[457] + bw[1];
+        bt = API.Request(bu);
+        bt = bt.split("is_first: //1,");
+        bw = bt[1].match(/download_url: '(.*?)',/);
+        bw = "http://cxz.to" + bw[1];
     };
     return bw;
 }
