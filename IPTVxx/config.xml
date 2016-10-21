@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget>
+    <type>user</type>
+    <previewjs>IPTVx</previewjs>
+    <ver>2.90</ver>
+    <mgrver>1.000</mgrver>
+    <network>n</network>
+    <fullwidget>y</fullwidget>
+    <category>video</category>
+    <movie>n</movie>
+    <srcctl>n</srcctl>
+    <ticker>n</ticker>
+    <childlock>n</childlock>
+    <audiomute>n</audiomute>
+    <videomute>n</videomute>
+    <flashplayer>y</flashplayer>
+    <dcont>y</dcont>
+    <apptype>11</apptype>
+    <widgetname>IPTVx</widgetname>
+    <description></description>
+    <width>960</width>
+    <height>540</height>
+    <ThumbIcon>img/logo/iptvx106x106.png</ThumbIcon>
+    <BigThumbIcon>img/logo/iptvx115x115.png</BigThumbIcon>
+    <ListIcon>img/logo/iptvx86x86.png</ListIcon>
+    <BigListIcon>img/logo/iptvx95x95.png</BigListIcon>
+    <author>
+    <name>ruleNone</name>
+    <email>im@multiviewer.tv</email>
+    <link>www.multiviewer.tv</link>
+    <organization></organization>
+    </author>
+</widget>

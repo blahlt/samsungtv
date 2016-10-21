@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<items>
+<playlist_name><![CDATA[<table><tr><td style="vertical-align: middle" align="left" width="250">MAIN PLAYLIST       </td><td aling="right" width="50"><img src="http://nebo.ddns.net/mv/images/cube.gif" height="70" width="70"></img></td></tr></table>]]></playlist_name>
+<category>
+	<category_id>1</category_id>
+	<category_title><![CDATA[<font color="#00ccff">IPTV</font> - Internet TV ]]></category_title>
+</category>
+<category>
+	<category_id>2</category_id>
+	<category_title><![CDATA[<font color="#00ccff">USB playlists</font> - Плейлисты на USB ]]></category_title>
+</category>
+<category>
+	<category_id>3</category_id>
+	<category_title><![CDATA[<font color="#00ccff">Home Cinema</font> - Домашний Кинозал ]]></category_title>
+</category>
+<category>
+	<category_id>4</category_id>
+	<category_title><![CDATA[<font color="#00ccff">Favorites</font> - Избранное ]]></category_title>
+</category>
+<channel>
+	<title><![CDATA[<font color="#00ccff">WELCOME!!!</font> ]]></title>
+	<logo_30x30>logo.png</logo_30x30>
+	<description><![CDATA[<table><tr><td style="vertical-align: top"><img src="logos/logo.gif" ></img></td><td><img src="logos/flag_uk.png" height="20" width="30"></img> <b><i>Updated version of</i> IPTVx ver. 2.96</b><br>MORE TV CHANNELS TO WATCH <br>YouTube PORTAL <br>Search any video without leaving the app - HUGE Choice!!!<br>IPTV-panel playlist reader</td></tr></table><table style="width:100%; padding-top:3px;padding-bottom:3px;"><tr height="4px" bgcolor="#cccccc"><td></td></tr></table><table><img src="logos/flag_rus.png" height="20" width="30"></img>Обнавлённая версия IPTVx!!! <br>ОГРОМНЫЙ ВЫБОР Телеканалов на любой вкус...<br>YouTube ПОИСК - по имени пользователя и не только<br>Загрузка самообновляемых плэйлистов IPTV-панелей... A также - учимся у телевизора не выходя из дома и ещё больше Европейских каналов с ВИП сервисом</table>]]></description>
+	<playlist_url><![CDATA[http://nebo.ddns.net/help/starthelp.xml]]></playlist_url>
+	<category_id>1</category_id>
+</channel>
+<channel>
+	<title><![CDATA[<font color="#00ccff">IPTV</font> From EUROPE]]></title>
+	<logo_30x30>blue_folder_eu.png</logo_30x30>
+	<description><![CDATA[<table><tr><td style="vertical-align: top"><img src="logos/chlogos.gif" ></img></td><td><img src="logos/flag_uk.png" height="20" width="30"></img> Internet TV from Europe!!! <br><b>IPTV</b>French, German, Italian, Russian, Romanian, Armenian etc. - MORE TV CHANNELS TO WATCH</td></tr></table><table style="width:100%; padding-top:3px;padding-bottom:3px;"><tr height="4px" bgcolor="#cccccc"><td></td></tr></table><table><img src="logos/flag_rus.png" height="20" width="30"></img>ЕВРОПЕЙСКОЕ ИНТЕРНЕТ ТЕЛЕВИДЕНИЕ <br>ОГРОМНЫЙ ВЫБОР Телеканалов <br>на разных языках из разных уголков Европы </table>]]></description>
+	<playlist_url><![CDATA[http://nebo.ddns.net:8881/tablemix.php]]></playlist_url>
+	<category_id>1</category_id>
+</channel>
+<channel>
+	<title><![CDATA[ENGLISH <font color="#00ccff">IPTV</font> ]]></title>
+	<description><![CDATA[<table><tr><td style="vertical-align: top"><img src="logos/chlogos1.gif" ></img></td><td> ENGLISH PLAYLIST <h2>ALTERNATIVE IPTV</h2></td></tr></table><table style="width:100%; padding-top:3px;padding-bottom:3px;"><tr height="4px" bgcolor="#cccccc"><td></td></tr></table><table>MORE THAN 40 CHANNELs <br><br>ENGLISH LANGUAGE<br>From INTERNET<br> this is a playlist with selected English audio track, but not all Smart TV models support those streams</table>]]></description>
+	<playlist_url><![CDATA[http://nebo.ddns.net:8881/tableeng.php]]></playlist_url>
+	<category_id>1</category_id>
+	<logo_30x30>blue_folder_uk.png</logo_30x30>
+	<protected>True</protected>
+	<password> 1111</password>
+</channel>
+<channel>
+	<title><![CDATA[RUSSIAN HD <font color="#00ccff">IPTV</font>]]></title>
+	<logo_30x30>blue_folder_rus.png</logo_30x30>
+	<description><![CDATA[<table><tr><td style="vertical-align: top"><img src="logos/chlogos2.gif" ></img></td><td><img src="logos/flag_uk.png" height="20" width="30"></img> Internet TV for you to enjoy!!! <br> many channels with English audio track, but not all TV models support that feature...</td></tr></table><table style="width:100%; padding-top:3px;padding-bottom:3px;"><tr height="4px" bgcolor="#cccccc"><td></td></tr></table><table><img src="logos/flag_rus.png" height="20" width="30"></img> ИНТЕРНЕТ ТЕЛЕВИДЕНИЕ <br>БОЛЕЕ 200 ТЕЛЕКАНАЛОВ<br>на любой вкус от малышей до взрослых </table>]]></description>
+	<playlist_url><![CDATA[http://nebo.ddns.net:8881/start_iptv2.xml]]></playlist_url>
+	<category_id>1</category_id>
+</channel>
+<channel>
+    <title><![CDATA[YouTube <font color="#00ccff">SEARCH</font>]]></title>
+    <description><![CDATA[<table><tr><td style="vertical-align: top; align: center"><img src="logos/youtube-logo-small.png"  width="160" height="100"></img></td><td><img src="logos/flag_uk.png" height="20" width="30"></img> <font color="yellow">NEW</font> YouTube Portal <br> Search by any word or by your Favourite YouTube user. A huge and growing choice of the Online Videos!!!</td></tr></table><table style="width:100%; padding-top:3px;padding-bottom:3px;"><tr height="4px" bgcolor="#cccccc"><td></td></tr></table><table><img src="logos/flag_rus.png" height="20" width="30"></img> ИНТЕРНЕТ ТЕЛЕВИДЕНИЕ <br>ПОИСК на YouTube<br>Огромный выбор видео клипов<br>на любой вкус от малышей до взрослых </table>]]></description>
+    <playlist_url><![CDATA[http://nebo.ddns.net:8881/shz/tableyt.php]]></playlist_url>
+	<logo_30x30>blue_folder_yt.png</logo_30x30>
+</channel>
+<channel>
+	<title><![CDATA[HOME CINEMA - <font color="#00ccff">VOD</font>]]></title>
+	<logo_30x30>blue_folder_films.png</logo_30x30>
+	<description><![CDATA[<table><tr><td style="vertical-align: top"><img src="logos/Icon_HD.png" height="128" width="128"></img></td><td> <img src="logos/flag_uk.png" height="20" width="30"></img> FAVORITE FILMS AND NEW MOVIES <h3><b>Home Cinema </b></h3>Video-On-Demand - Directly from NAS</td></tr></table><table style="width:100%; padding-top:3px;padding-bottom:3px;"><tr height="4px" bgcolor="#cccccc"><td></td></tr></table><table><img src="logos/flag_rus.png" height="20" width="30"></img> ДОМАШНИЙ КИНОЗАЛ<br>ЛЮБИМЫЕ ФИЛЬМЫ И НОВИНКИ КИНО<br><br> Этот лист постоянно пополняется  </table>]]></description>
+	<playlist_url><![CDATA[http://nebo.ddns.net:8881/tablefilms.php]]></playlist_url>
+	<category_id>3</category_id>
+</channel>
+<channel>
+	<title><![CDATA[KIDS CINEMA - <font color="#00ccff">VOD For Kids</font>]]></title>
+	<logo_30x30>blue_folder_films.png</logo_30x30>
+	<description><![CDATA[<table><tr><td style="vertical-align: top"><img src="logos/Icon_Kids.png" height="128" width="128"></img></td><td> <img src="logos/flag_uk.png" height="20" width="30"></img> FAVORITE ANIMATION FILMS FOR ALL AGES <h3><b>Home Cinema for Kids </b></h3>Video-On-Demand - Directly from NAS</td></tr></table><table style="width:100%; padding-top:3px;padding-bottom:3px;"><tr height="4px" bgcolor="#cccccc"><td></td></tr></table><table><img src="logos/flag_rus.png" height="20" width="30"></img> ДОМАШНИЙ КИНОЗАЛ<br>ЛЮБИМЫЕ МУЛЬТФИЛЬМЫ ДЛЯ ВСЕХ ВОЗРАСТОВ<br><br> Этот лист постоянно пополняется  </table>]]></description>
+	<playlist_url><![CDATA[http://nebo.ddns.net:8881/tablekidz.php]]></playlist_url>
+	<category_id>3</category_id>
+</channel>
+<channel>
+	<title><![CDATA[VIDEO TUTORIALS - <font color="#00ccff">VOD</font>]]></title>
+	<logo_30x30>blue_folder_films.png</logo_30x30>
+	<description><![CDATA[<table><tr><td style="vertical-align: top"><img src="logos/Icon_vod_tut.png" height="128" width="128"></img></td><td><img src="logos/flag_uk.png" height="20" width="30"></img> Video Tutorials added to VOD <br>Online Learning from the comfort of your own Home</td></tr></table><table style="width:100%; padding-top:3px;padding-bottom:3px;"><tr height="4px" bgcolor="#cccccc"><td></td></tr></table><table><img src="logos/flag_rus.png" height="20" width="30"></img> Добавлена рубрика видео уроков <br> Yчимся у телевизора не выходя из дома</table>]]></description>
+	<playlist_url><![CDATA[http://nebo.ddns.net:8881/tablevod.php]]></playlist_url>
+	<category_id>3</category_id>
+</channel>
+<channel>
+	<title>USB PORTS Scanner</title>
+	<logo_30x30>blue_folder_usb.png</logo_30x30>
+	<playlist_url>ScanUSB</playlist_url>
+	<description><![CDATA[<table><tr><td style="vertical-align: top"><img src="logos/usb.png" height="128" width="128"></img></td><td> <img src="logos/flag_uk.png" height="20" width="30"></img> USB PORTS Scanner<br>View files and folders on your USB devices</td></tr></table><table style="width:100%; padding-top:3px;padding-bottom:3px;"><tr height="4px" bgcolor="#cccccc"><td></td></tr></table><table><img src="logos/flag_rus.png" height="20" width="30"></img> СКАНЕР USB ПОРТОВ<br>Просмотр файлов и папок на USB накопителях.</table>]]></description>
+	<category_id>2</category_id>
+</channel>
+<channel>
+	<title><![CDATA[Playlists from USB <font color="#00ccff">*.xml</font> / <font color="#00ccff">*.m3u</font>]]></title>
+	<playlist_url>usb.xml</playlist_url>
+	<logo_30x30>blue_folder.png</logo_30x30>
+	<description><![CDATA[<table><tr><td style="vertical-align: top"><img src="logos/blue_folder_usb.png" height="128" width="128"></img></td><td> <img src="logos/flag_uk.png" height="20" width="30"></img> Playlist on USB memory stick! </td></tr></table><table style="width:100%; padding-top:3px;padding-bottom:3px;"><tr height="4px" bgcolor="#cccccc"><td></td></tr></table><table><img src="logos/flag_rus.png" height="20" width="30"></img> Плейлист на флешке !</table>]]></description>
+	<category_id>2</category_id>
+</channel>
+
+<!--
+<channel>
+    <title> YouTube</title>
+    <description><![CDATA[<table><tr><iframe width="320" height="240" src="https://www.youtube.com/embed/tntOCGkgt98" frameborder="0" allowfullscreen></iframe></tr></table>]]></description>
+    <playlist_url><![CDATA[http://tvqb.ru/tv/videohost/ytv3/3.php?page=1&]]></playlist_url>
+</channel>
+http://enigma2.videonavigator.net.ua/portal.php?a=2&s=2&dop=%2Ffilm2016&iden=000001
+-->
+</items>
