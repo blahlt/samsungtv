@@ -1,1512 +1,1513 @@
-var _$_2f23 = [
-	"Widget", // 0
-	"API", // 1
-	"Plugin", // 2
-	"TVKeyValue", // 3
-	"", // 4
-	"rulenone",
-	"nebo.ddns.net",
-	"http://",
-	"mac=",
-	"0.426",
-	"2.96",
-	"onLoad",
-	"Network",
-	"pluginNetwork",
-	"MAC",
-	"GetMAC",
-	"St",
-	"pluginStorage",
-	"Audio",
-	"pluginAudio",
-	"audio_output_device",
-	"GetOutputDevice",
-	"pluginTV",
-	"hardware_type",
-	"GetProductType",
-	"hardware",
-	"GetProductCode",
-	"LN40B650_KOR",
-	"Emu",
-	"C",
-	"indexOf",
-	"seriesC",
-	"E",
-	"D",
-	"seriesE",
-	"IME_XT9/ime.js",
-	"script",
-	"createElement",
-	"language",
-	"javascript",
-	"type",
-	"text/javascript",
-	"src",
-	"$MANAGER_WIDGET/Common/",
-	"appendChild",
-	"body",
-	"############## NOT FOR EMULATOR !!! ################",
-	"Location.reload(true)",
-	"init",
-	"onShow",
-	"onShowEventTVKey",
-	"sendReadyEvent",
-	"Loading...",
-	"status",
-	"loadingshow",
-	"Main.InitScript()",
-	"InitScript",
-	"Supe_ext",
-	"url_arr",
-	"fav.dat",
-	"star_url",
-	"FAV",
-	"openCommonFile",
-	"OpenFav",
-	"length",
-	"fav_start_channels",
-	"ReadPlArr",
-	"fav_url",
-	"XML_URL",
-	"Request",
-	"setGen()",
-	"showScroll()",
-	"confirm.popWindow()",
-	"confirm.closeWindow()",
-	"Not available !",
-	"SetVolumeWithKey",
-	"GetVolume",
-	"round",
-	"0",
-	"|",
-	"<b style='color:#00ccff;'>VOLUME</b> ",
-	" <b style='color:yellow;'>",
-	"</b>",
-	"setOffScreenSaver",
-	"setOffIdleEvent",
-	"SetBannerState",
-	"KEY_VOL_UP",
-	"unregistKey",
-	"KEY_VOL_DOWN",
-	"KEY_MUTE",
-	"KEY_MENU",
-	"registKey",
-	"KEY_GUIDE",
-	"KEY_SOURCE",
-	"onWidgetEvent",
-	"registVOLTVKey",
-	"KEY_PANEL_VOL_UP",
-	"KEY_PANEL_VOL_DOWN",
-	"ResetSelectedPosition",
-	"selected_channel",
-	"selected_page",
-	"chan_array_index",
-	"guide",
-	"help_info",
-	"prev_ch_array",
-	"SaveSelectedPosition",
-	"play_selected_channel",
-	"play_selected_page",
-	"play_chan_array_index",
-	"SetSelectedPosition",
-	"SetFavSelectedPosition",
-	"fav_num",
-	"temp_fav_num",
-	"fav_name",
-	"temp_fav_name",
-	"temp_fav_url",
-	"showCategorySelector",
-	"rightHalf",
-	"setFocus",
-	"CATEGORIES",
-	"categories",
-	"setBox",
-	"top",
-	"style",
-	"selectbox",
-	"60px",
-	"left",
-	"550px",
-	"showFavSelector",
-	"Select Favourites",
-	"favorites",
-	"showSiseSelector",
-	"Size Selector",
-	"120px",
-	"330px",
-	"Menu",
-	"FirstStart",
-	"Timemode",
-	"Main.FirstStart=false;",
-	"load_timer",
-	"search",
-	"xxx",
-	"hidestatus",
-	"statusbar1",
-	"hideplayer",
-	"loadinghide",
-	"AsReqMode",
-	"block_info",
-	"loading_pl",
-	"block_fav",
-	"SetZoom",
-	"playlist_prev",
-	"pre_pl_url",
-	"help_set_par",
-	"infoList",
-	"ya_date",
-	"ya_info",
-	"ya_help",
-	"UpdateHelpBar",
-	"RED",
-	"updatePage",
-	"channelList",
-	"main",
-	"0_help",
-	"1_help",
-	"2_help",
-	"3_help",
-	"3.1_help",
-	"3.2_help",
-	"3.21_help",
-	"3.3_help",
-	"3.4_help",
-	"4_help",
-	"4.1_help",
-	"5_help",
-	"5.1_help",
-	"6_help",
-	"7_help",
-	"8_help",
-	"9_help",
-	"10_help",
-	"10.1_help",
-	"11_help",
-	"12_help",
-	"Favourites",
-	" - \"",
-	"\"",
-	"Edit Favourites",
-	"help",
-	"HELP",
-	"EPG v.",
-	"version",
-	"yandextv_mode",
-	"ya_all_day",
-	"Open",
-	"history.dat",
-	"History",
-	"<b style=\"color:00cbfe;\">IPTV<i>x </i></b><b style=\"font-size:16px;color:cyan;\"> v.",
-	"ver",
-	"<b style=\"font-size:12px;\">  @</b><b style=\"font-size:16px;\">2016</b>",
-	"state",
-	"STOPPED",
-	"PLAYING_VOD",
-	"backgroundImage",
-	"background",
-	"url(img/bg.png)",
-	"guide_step",
-	"url(img/us_bg.png)",
-	"prev_pl_array",
-	"start.xml",
-	"Kill",
-	"Xcode",
-	"widget_date",
-	"540px",
-	"widget_time",
-	"850px",
-	"putInnerHTML",
-	"Forma",
-	"67px",
-	"54px",
-	"75px",
-	"38px",
-	"80px",
-	"66px",
-	"p_bg_num_logo",
-	"url(img/bgn02.png)",
-	"url(img/bgn03.png)",
-	"90px",
-	"46px",
-	"url(img/bgn01.png)",
-	"width",
-	"Update_Page",
-	"ret",
-	"chan_pages",
-	"ch",
-	"last_page_channels_counter",
-	"UpdateChannelBar",
-	"THIS IS RUNNING Update Channel",
-	"number",
-	"channels",
-	"img",
-	"Install the original version",
-	"toLowerCase",
-	"Access denied!",
-	"title",
-	"number_p",
-	"<b style=\"font-size:16px;color:white\"> - [  This portal has <font color=#00ccff>",
-	"</font> links  ]</b>",
-	".xml",
-	".m3u",
-	"=m3u",
-	"<b style=\"font-size:12px;\">  @</b><b style=\"font-size:16px;\">2016 </b></font>",
-	"<b style=\"color:00cbfe;\">HELP </b><b style=\"font-size:16px;color:cyan;\"> [ user guide ] </font>",
-	"Mix",
-	"<b style=\"color:00cbfe;\">EUROPE </b><b style=\"font-size:16px;color:cyan;\"> [ mix ] </font>",
-	"films",
-	"<b style=\"color:00cbfe;\">HOME </b><b style=\"font-size:16px;color:cyan;\"> [ cinema ] </font>",
-	"kids",
-	"<b style=\"color:00cbfe;\">KIDS </b><b style=\"font-size:16px;color:cyan;\"> [ cinema ] </font>",
-	"tutorials",
-	"<b style=\"color:00cbfe;\">VOD </b><b style=\"font-size:16px;color:cyan;\"> [ tutorial ] </font>",
-	"Focus",
-	"Main.updateChannel();",
-	"LoadTimer",
-	"updateChannel",
-	"logos/",
-	":",
-	"logos/blue_folder.png",
-	"logos/image.png",
-	"logos/help.png",
-	"ya_auto",
-	" ",
-	"replace",
-	"chan",
-	"pre_selected_channel",
-	"color",
-	"#CBCBCB",
-	"url(img/number_bar.png)",
-	"url(img/chan_bar.png)",
-	"#FFFFFF",
-	"Main.UpdateChannelInfo()",
-	"UpdateChannelInfo",
-	"scrolling",
-	"ya_base_info",
-	"ch_num",
-	"name",
-	"s_url",
-	"url",
-	"pl_url",
-	"logo",
-	"ssize",
-	"a_num",
-	"buffer",
-	"ibuffer",
-	"timeshift",
-	"region",
-	"parser",
-	"search_on",
-	"toString",
-	"this.url= ",
-	"delta",
-	"Ya_flag_step",
-	"YandexGetUrl(GetYindex());",
-	"Ach(3)= ",
-	"epg_url:",
-	"split",
-	"cutted ee[0] =",
-	"cutted url =",
-	"protocol",
-	"?reg=",
-	"&chan=",
-	"&pass=PaCcT0$33v247&friendly=1",
-	"request =",
-	"showinfoList",
-	"string",
-	"<",
-	"/m.tv.yandex.",
-	"Yindex= ",
-	"UpdatePlayerStatusbar",
-	"ch_number",
-	"ch_name",
-	"ch_img",
-	"scroll_cursor",
-	"getElementById",
-	"playlist_name",
-	"<table width=\"100%\"><tr><td style=\"text-align:center;font-size:20px;color:#00ccff\">",
-	"</td></tr></table><table width=\"100%\"><tr height=\"2px\" bgcolor=\"#00cdfe\"><td></td></tr></table>",
-	"prev_page_text",
-	"prev_page_url",
-	"Back to start",
-	"<td><img src='img/buttons/rew.png'></img></td><td>",
-	"</td>",
-	"<td><img src='img/buttons/rew.png'></img></td><td>Prev</td>",
-	"next_page_text",
-	"next_page_url",
-	"<td><img src='img/buttons/ff.png'></img></td><td>",
-	"<td><img src='img/buttons/ff.png'></img></td><td>Next</td>",
-	"<td><img src='img/buttons/blue.png'></img></td><td>Back to start</td>",
-	"<table><tr>",
-	"</tr></table>",
-	"no additional information available",
-	"<div id=\"allInfo\">",
-	"<div>",
-	"allInfo",
-	"5px",
-	"10px",
-	"lost_date",
-	"Ya_flag_name",
-	"0px",
-	"PlayPrevChannel",
-	"PlayChannel",
-	"Previous channel",
-	"Starting channel",
-	"SavePrevChannel",
-	"play_prev",
-	"push",
-	"PlayPrevPlaylist",
-	"bl",
-	"pop",
-	"DEL",
-	"starthelp.xml",
-	".dat",
-	"-=SEARCH=-",
-	"playlist",
-	"start",
-	"Main playlist!",
-	"SavePrevPlaylist",
-	"all_channels",
-	"selectNextChannel",
-	"selectPrevChannel",
-	"Not Available!",
-	"selectNextPage",
-	"selectPrevPage",
-	"stop",
-	"txt",
-	"txt=",
-	"hurl",
-	"trp",
-	"/sh/request.php?",
-	"boom",
-	"/sh/vip_pls.php?",
-	"svoj",
-	"/sh/mojsvoy_pls.php?",
-	"tablemix",
-	"/sh/euromix.php?",
-	"%3F",
-	"?",
-	"%26",
-	"&",
-	"tableeng",
-	"/sh/englishmix.php?",
-	"tablefilms",
-	"/sh/bigpeople.php?",
-	"tablekidz",
-	"/sh/smallpeople.php?",
-	"tablevod",
-	"/sh/vodmix.php?",
-	"tableyt",
-	"/sh/youtube.php?",
-	"PlayerMode",
-	"stopFPlayer",
-	"stopV",
-	"status1",
-	"url_selected",
-	"Foto",
-	"resolution",
-	"rtmp://",
-	"rtsp://",
-	"mms://",
-	".flv",
-	"PlayFlashStream",
-	"1",
-	"Main.PlayNoFlashStream()",
-	"stop!",
-	"Missing address!",
-	"Main.Menu();",
-	"showScroll();",
-	"exec",
-	"pl_history.dat",
-	"saveHistory",
-	"usb/",
-	"ScanUSB",
-	"$USB_DIR",
-	"OpenHistory",
-	"IP-TV, WEB-TV CHANNELS",
-	"image.png",
-	"live_history.dat",
-	"FILMS, VIDEOS",
-	"film.png",
-	"vod_history.dat",
-	"PLAYLISTs, FILE LISTs",
-	"blue_folder.png",
-	"SearchFormular()",
-	"ytv3/3.php",
-	"search.php",
-	"Reading... ",
-	"API.Request(Main.pl_url);",
-	"Main.PlayChannel()",
-	"SlideShowInterval",
-	"PlayNoFlashStream",
-	"Ibuffer",
-	"Buffer",
-	"screen_size",
-	"rtp://",
-	"udp://",
-	"Proxy",
-	"/udp/",
-	"substr",
-	".m3u8",
-	"|COMPONENT=HLS",
-	"play",
-	"Empty link!",
-	"next",
-	"LOADING",
-	"flashplayer",
-	"flv=",
-	"file=",
-	"<object type=\"application/x-shockwave-flash\" id=\"rmtpplayerHD\" width=\"960\" height=\"540\">",
-	"<param name=\"movie\" value=\"nflashplayer.swf\" />",
-	"<param name=\"FlashVars\" value=\"",
-	"\" /></object>",
-	"PLAYING_LIVE",
-	"Main.setPlayer();",
-	"setPlayer",
-	"player",
-	"rmtpplayerHD",
-	"readFile",
-	"id",
-	"/",
-	"r",
-	"readLine",
-	"closeCommonFile",
-	"writeFile",
-	"isValidCommonPath",
-	"createCommonDir",
-	"w",
-	"writeLine",
-	"||",
-	"splice",
-	"delHistory",
-	"saveFavorites",
-	"<b style=\"color:#CDCDCD\">Added to Favourites ",
-	"\"</b>",
-	"delFavorites",
-	"<b style=\"color:yellow\">Favourites folder ",
-	"\" -  EMPTY !</b>",
-	"API.Request(API.XML_URL)",
-	"Main.PlayPrevPlaylist();",
-	"moveFavorites",
-	"<b style=\"color:yellow\">Your Favourites folder is EMPTY !</b>",
-	"Display.status('Please change address in the settings')",
-	"<b style=\"color:yellow\">Favourites folder",
-	" - ",
-	" -  is EMPTY !</b>",
-	"selected",
-	"pre_selected",
-	"pre_selected_page",
-	"Empty!",
-	"ResetAll",
-	"countPages",
-	"Main.Menu()",
-	"<font color=\"#00ccff\">",
-	"<font color=\"#ffff99\">",
-	"GetUSBListSize",
-	"GetUSBDeviceID",
-	"GetUSBVendorName",
-	"GetUSBPartitionNum",
-	"GetUSBModelName",
-	"GetUSBMountPath",
-	"GetUSBAvailSize",
-	"GetUSBTotalSize",
-	"<h3> Name : ",
-	"</font><br>  Model : ",
-	"</font><br>  The total size : ",
-	"</font><br>  Free size  : ",
-	"</font><br>  Mount Directory  : ",
-	"</font><br>  Partition number  : ",
-	"</font></h3>",
-	"$USB_DIR/",
-	"</font>",
-	"usb_logo.png",
-	"USB Memory HDD",
-	"No USB devices has being found!",
-	"readDir",
-	"/dtv/usb/",
-	"Playlist not found!",
-	"<font color=\"#ffffcc\">",
-	"<font color=\"#00cc99\">",
-	"&page=",
-	"step_read_dir",
-	"substring",
-	".",
-	"..",
-	"<h3>Name : ",
-	"isDir",
-	"<br> Type : ",
-	"File </font>",
-	"match",
-	" \"",
-	"</font>\"",
-	" \" Without Extension \"",
-	"size",
-	"<br> Size : ",
-	"/dtv/usb",
-	" Folder </font>",
-	"mtime",
-	"<br> Creation Date : ",
-	"playlist.png",
-	"</h3>",
-	"music.png",
-	"foto.png",
-	"file.png",
-	"concat",
-	"Empty Folder!",
-	"toFixed",
-	" Gb",
-	" Mb",
-	" Kb",
-	" Byte",
-	"onUnload",
-	"deinit",
-	"DEINIT",
-	"IntervalUpdateTime",
-	"SetTimeDate()",
-	"onreadystatechange",
-	"readyState",
-	"responseText",
-	"inetTime",
-	"SetTimeDate();",
-	"Sync_step",
-	"SyncInetTime()",
-	"Connection Error with NTP server!",
-	"GET",
-	"http://wwp.greenwichmeantime.com/time/scripts/clock-8/x.php",
-	"open",
-	"User-Agent",
-	"Opera/9.80 (Windows NT 5.1; U; ru) Presto/2.9.168 Version/11.51",
-	"setRequestHeader",
-	"send",
-	"year",
-	"getFullYear",
-	"date",
-	"getDate",
-	"month",
-	"getMonth",
-	"day",
-	"getDay",
-	"h",
-	"getHours",
-	"m",
-	"getMinutes",
-	"s",
-	"getSeconds",
-	"Timefix",
-	"y_t_days",
-	"pluginTime",
-	"GetEpochTime",
-	"ya_epg_info_arr",
-	"epg_t1",
-	"epg_t2",
-	"innerHTML",
-	"time",
-	"Sunday",
-	"Monday",
-	"Tuesday",
-	"Wednesday",
-	"Thursday",
-	"Friday",
-	"Saturday",
-	"January",
-	"February",
-	"March",
-	"April",
-	"May",
-	"June",
-	"July",
-	"August",
-	"September",
-	"October",
-	"November",
-	"December",
-	"floor",
-	"progressBar",
-	"px",
-	"% ",
-	"timeInfo",
-	"http://nebo.ddns.net/help/starthelp.xml",
-	"500",
-	"100",
-	"2",
-	"213",
-	"ru",
-	" Main | IP-TV | Films | Series",
-	"London",
-	"360p",
-	"fn",
-	"291s.dat",
-	"Surl",
-	"Login",
-	"Pasword",
-	"Scode",
-	"Favname",
-	"CODE",
-	"REG",
-	"Timeshift",
-	"+",
-	"Size",
-	"Ph",
-	"Pw",
-	"a_size1",
-	"a_size2",
-	"a_size3",
-	"Pstyle",
-	"Mac",
-	"Header",
-	"Vquality",
-	"Cityname",
-	"_ya_name_index_url.dat",
-	"<font style=\"color:#00ccff;font-weight:bolder\">",
-	"StartTime()",
-	"<br>",
-	") ",
-	"Channel",
-	"Channels",
-	"In the database of ",
-	"</font> region ",
-	" </font> ",
-	" : ",
-	"loadComplete",
-	"<b style=\"color:yellow\">ERROR IN THE PLAYLIST!</b>",
-	"getIdb('main');SetupFormular()",
-	"tsnakeman",
-	"://",
-	"search_string",
-	"3.php",
-	"search=",
-	"&maxResults=50",
-	"GETTING URL!!! >",
-	"XHRObj",
-	"destroy",
-	"stReq_timeout",
-	"API.stopRequest()",
-	"stReq_time",
-	"recieveData",
-	"overrideMimeType",
-	"text/xml",
-	"Accept-Encoding",
-	"identity",
-	"Accept-Language",
-	"en-us,en;q=0.5",
-	"Accept",
-	"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-	"Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.6) Gecko/20100627 Firefox/3.6.6",
-	"Accept-Charset",
-	"ISO-8859-1,utf-8;q=0.7,*;q=0.7",
-	"Connection",
-	"close",
-	"Location",
-	"getResponseHeader",
-	"jump",
-	"Gen",
-	"AGEN URL =",
-	"GenUrl",
-	"if(API.Gen){if(API.GenT>=1000)API.GenT=API.GenT/2;API.Gen=false;}else if(API.GenT<512000)API.GenT=API.GenT*2; AGen();",
-	"GenT",
-	"getChannel_list",
-	"responseXML",
-	"GETTING XML SOURCE!!!",
-	"<b style=\"color:yellow\">Wrong address or an Error in the playlist! </b>",
-	"stopRequest",
-	"abort",
-	"chan_counter",
-	"nodeValue",
-	"childNodes",
-	"getElementsByTagName",
-	"getAttributeNode",
-	"All Categories",
-	"\x0A",
-	"#EXTINF:",
-	"/dtv",
-	"#EXTM3U",
-	"cache=",
-	"tvg-name=\"",
-	"tvg-shift=",
-	"tvg-logo=\"",
-	"aspect-ratio=",
-	"16:9",
-	"16x9",
-	"14:9",
-	"14x9",
-	"4:3z2",
-	"4x3z2",
-	"4:3z1",
-	"4x3z1",
-	"3",
-	"4:3",
-	"4x3",
-	"4",
-	"x-zoom",
-	"5",
-	"auto",
-	"6",
-	"audio-track=",
-	"group-title=\"",
-	",",
-	".png",
-	"Category : ",
-	"no_name",
-	"text",
-	"all_logo",
-	"all_size",
-	"all_audiotrack_num",
-	"all_buffer",
-	"all_timeshift",
-	"all_region",
-	"all_parser",
-	"channel",
-	"stream_url",
-	"logo_30x30",
-	"description",
-	"category_id",
-	"audiotrack_num",
-	"playlist_url",
-	"category",
-	"category_title",
-	"setCategory",
-	"This category is empty!",
-	"Select the Quality",
-	"select_list",
-	"last_page_counter",
-	"pages",
-	"updateBox",
-	"<div><div style=\"text-align:center;width:100%;height:10px;padding:4px;font-size:20px;\">",
-	"</div><br>",
-	"style=\"color:#ffffff; border: 2px solid #ffffff\" ",
-	"<li ",
-	">",
-	"</li>",
-	"<div style=\"height:25px;\"><div id=\"navi_button\"><img src=\"img/buttons/exit.png\"></img></div><span id=\"navi_helpertext\">Exit</span>",
-	"<div id=\"navi_button\"><img src=\"img/buttons/move.png\"></img></div><span id=\"navi_helpertext\">Move</span>",
-	"<div id=\"navi_button\"><img src=\"img/buttons/enter.png\"></img></div><span id=\"navi_helpertext\">Enter</span></div></div>",
-	"selectNextItem",
-	"selectPrevItem",
-	"SelectCategory",
-	"SelectFav",
-	"SelectSize",
-	"ch_t",
-	"cur_time",
-	"run",
-	"loading",
-	"loadingshowTimer",
-	"loadingstep",
-	"loadingshow_timer",
-	"index",
-	"imgAnim",
-	"img/loading/loading_0",
-	"img/loading/loading_",
-	"Display.loadingstep();",
-	"Player.ReturnMenu();",
-	"showplayer",
-	"PAUSE_VOD",
-	"help_navi_l_player",
-	"p_epg_line",
-	"progressBarBG",
-	"560px",
-	"725px",
-	"580px",
-	"745px",
-	"860px",
-	"p_info_line",
-	"help_navi_vod_player",
-	"statusbar",
-	"68px",
-	"vod_pause",
-	"vod_play",
-	"39px",
-	"48px",
-	"30px",
-	"40px",
-	"repeat",
-	"Repeat mode",
-	"Continuous playback",
-	"70px",
-	"130px",
-	"595px",
-	"740px",
-	"140px",
-	"20px",
-	"605px",
-	"750px",
-	"ya_prog_id",
-	"epg_info",
-	"100px",
-	"p_second_line",
-	"infobar_timer",
-	"infobarTimer",
-	"epg_info_step",
-	"Display.hideplayer()",
-	"status_timer",
-	"statusTimer",
-	"status1_timer",
-	"status1Timer",
-	"Display.hidestatus()",
-	"getIdn(\"statusbar1\")",
-	"ShowTools",
-	"serieC",
-	"blockNavigation",
-	"send_Return",
-	"sendReturnEvent",
-	"<b style=\"color:yellow\">To quit - press \"EXIT\" again!</b>",
-	"KeyHandler.send_Return=false;",
-	"ReturnMenu",
-	"focus",
-	"MainMenu_Anchor",
-	"KEY_TOOLS",
-	"LoadingPlayer_Anchor",
-	"LivePlayer_Anchor",
-	"VODPlayer_Anchor",
-	"Selectbox_Anchor",
-	"RedFav_Anchor",
-	"Guide_Anchor",
-	"Setup_Anchor",
-	"KanalSelector",
-	"NumberEntered",
-	"Input error",
-	"Keys10",
-	"KEY_1",
-	"KEY_2",
-	"KEY_3",
-	"KEY_4",
-	"KEY_5",
-	"KEY_6",
-	"7",
-	"KEY_7",
-	"8",
-	"KEY_8",
-	"9",
-	"KEY_9",
-	"KEY_0",
-	"info",
-	"ChSelectorTimeout",
-	"KeyHandler.KanalSelector()",
-	"RedFavKeyDown",
-	"keyCode",
-	"KEY_EXIT",
-	"KEY_DOWN",
-	"KEY_UP",
-	"KEY_LEFT",
-	"KEY_RIGHT",
-	"KEY_RED",
-	"KEY_GREEN",
-	"KEY_YELLOW",
-	"KEY_BLUE",
-	"KEY_RETURN",
-	"getIdn('main')",
-	"KEY_STOP",
-	"GuideKeyDown",
-	"MainMenuKeyDown",
-	"ya_prog_info_arr",
-	"There is no EPG!",
-	"openWindow",
-	"MAC = ",
-	" | Parser = ",
-	"KEY_INFO",
-	"SetupFormular();",
-	"KEY_PANEL_MENU",
-	"help_step",
-	"KEY_ENTER",
-	"[[[[[[[[[[[[[[FAV]]]]]]]]]]]]]]]",
-	"KEY_FF",
-	"total_time",
-	"resumeVideo",
-	"pauseVideo",
-	": <font style='font-size:16px;color:white;'>scroll page</font><font style='font-size:16px;color:cyan;'> P-/P+ </font>: <font style='font-size:16px;color:white;'>region - </font><font style='font-size:16px;color:cyan;'>",
-	"</font> : <font style='font-size:16px;color:white;'>index - </font><font style='font-size:16px;color:cyan;'>",
-	"ch_index",
-	"</font> :",
-	"creating Yandex EPG from database",
-	"GetYandexBase()",
-	"KEY_PAUSE",
-	"KEY_RW",
-	"Resume playback",
-	"Repeat playback",
-	"All modes are disabled!",
-	"KEY_PLAY",
-	"ChannelSetupFormular()",
-	"SEFSetNextAudioStream",
-	"KEY_SUBTITLE",
-	"LoadingPlayerKeyDown",
-	"SelectboxKeyDown",
-	"Select Size",
-	"LivePlayerKeyDown",
-	"<table><tr><td><img src=\"img/buttons/move_m.png\"></img></td><td>- Set Zoom</td></tr></table>",
-	"NO EPG!",
-	"setSize",
-	"get3DMode",
-	"change3DMode",
-	"Flash player",
-	"StartSlideShow();",
-	"Start SlideShow",
-	"Stop SlideShow",
-	"No data!",
-	"black_line",
-	"black_line_top",
-	"VODPlayerKeyDown",
-	"PercentJump",
-	"0%",
-	"MinutesJump",
-	"save_time",
-	"PlaySaveTime",
-	"getIdn('selectbox');getIdb('rightHalf');KeyHandler.setFocus(3);",
-	"pluginObjectNNavi",
-	"GetFirmware",
-	"d= ",
-	"-",
-	"2011",
-	"2012",
-	"2013",
-	"2014",
-	"SefPlugin",
-	"pluginObjectSef",
-	"Sef",
-	"plugin",
-	"pluginPlayer",
-	"pluginObjectTVMW",
-	"Screen3Dplugin",
-	"pluginObjectScreen3D",
-	"SetMediaSource",
-	"OnConnectionFailed",
-	"Player.OnConnectionFailed",
-	"OnNetworkDisconnected",
-	"Player.OnNetworkDisconnected",
-	"OnStreamNotFound",
-	"Player.OnStreamNotFound",
-	"OnRenderError",
-	"Player.OnRenderError",
-	"OnBufferingStart",
-	"Player.OnBufferingStart",
-	"OnBufferingProgress",
-	"Player.OnBufferingProgress",
-	"OnBufferingComplete",
-	"Player.OnBufferingComplete",
-	"OnCurrentPlayTime",
-	"Player.OnCurrentPlayTime",
-	"Flag3DEffectSupport",
-	"Flag3DTVConnect",
-	"mode3D",
-	"status3D",
-	"3D OFF",
-	"SIDE - BY - SIDE",
-	"TOP - BOTTOM",
-	"Check3DEffectMode",
-	"Set3DEffectMode",
-	"error",
-	"eerr",
-	"Unsupported container",
-	"Unsupported video codec",
-	"Unsupported audio codec",
-	"Unsupported aspect ratio",
-	"Unsupported refresh rate",
-	"Corrupted stream!",
-	"Missing File",
-	"Disconnected network",
-	"Connection failed",
-	"serr",
-	"Player.ReturnMenu()",
-	"AutoReStart",
-	"Player.play(Player.url,0)",
-	"BufferingTimer",
-	"Auto Restart",
-	"Buffer : 1%",
-	"Buffer : ",
-	"%",
-	"buffering_timer",
-	"message",
-	"GetDuration",
-	"Execute",
-	".mp3",
-	"h_url",
-	"GetResolution",
-	"Player.GetVideoSize();",
-	"GetAudioNum",
-	"<tr><table><tr><td><img src=\"img/buttons/red_m.png\"></img></td><td>- Set Quality</td></tr></table></tr>",
-	"if(Player.message!=\"\")Display.status(\"<table>\"+Player.message+\"</table>\",6000);Main.saveHistory(Player.h_url);if(Player.state==Player.PLAYING_VOD)Player.getSaveTime();",
-	"Player.message=\"\";",
-	"Display.hideplayer();",
-	"SetBuffer",
-	"SetTotalBufferSize",
-	"SetInitialBuffer",
-	"SetInitialTimeOut",
-	"SetPendingBuffer",
-	"Player deinit",
-	"tnum",
-	"long_pause",
-	"SaveUrl",
-	"Stop",
-	"ClearScreen",
-	"Close",
-	"SEFPlay",
-	"Play",
-	"url.dat",
-	"getSaveTime",
-	"video/x-flv",
-	"Display.status(\" Resume ?\",5000);",
-	"Player.save_time=0",
-	"statusmessage",
-	"resume!",
-	"JumpForward",
-	"Display.status(\"resume failed!\",2000);Player.play(Player.url,0);",
-	"GetVideoResolution",
-	"GetVideoHeight",
-	"GetVideoWidth",
-	"X",
-	"- MP3 -",
-	"GetVideoSize",
-	"Player.setSize(Player.size,1,1);",
-	"16x9 FULL",
-	"ORIGINAL",
-	"w/h=1.67",
-	"w/h=1.56",
-	"4x3 ZOOM 2",
-	"w/h=1.45",
-	"4x3 ZOOM 1",
-	"w/h=2",
-	"X-ZOOM - set size: CH LIST",
-	" _ w=",
-	"% _ h=",
-	"ORIGINAL ZOOM 1",
-	"16x9 ZOOM 1",
-	"ORIGINAL ZOOM 2",
-	"16x9 ZOOM 2",
-	"Not specified",
-	"Not specified!",
-	"<tr><table><tr><td><img src=\"img/buttons/blue_m.png\"></img></td><td>- ",
-	"</td></tr></table></tr>",
-	"SetDisplayArea",
-	"SetCropArea",
-	"JumpBackward",
-	"delta_time",
-	" min.",
-	"TestTime",
-	" > > > ",
-	"Resume",
-	"Player.MinutesJump(-0.05);",
-	"Pause",
-	"Player.long_pause=true;",
-	"Connection failed!",
-	"Player",
-	"1.000",
-	"InitPlayer",
-	"OnEvent",
-	"Player.SefOnEvent",
-	"SetPlayerProperty",
-	"StartPlayback",
-	"SefOnEvent",
-	"Function is Not available!",
-	"Only one sound track!",
-	"GetCurrentStreamID",
-	"SetAudioStream",
-	"LangCodes",
-	"Albenian",
-	"Armenian",
-	"Azerbaijan",
-	"Belorussian",
-	"Bulgar",
-	"Chinese",
-	"English",
-	"French",
-	"German",
-	"Italian",
-	"Japanese",
-	"Kazakh",
-	"Korian",
-	"Portuguese",
-	"Russian",
-	"Slovak",
-	"Slovenian",
-	"Spanish",
-	"Serbian",
-	"Swedish",
-	"Turkish",
-	"Ukranian",
-	"Uzbek",
-	"SetStreamID",
-	"GetStreamLanguageInfo",
-	"Unknown",
-	" audio track \u2116",
-	"<tr><td>",
-	"</td></tr>",
-	"<tr><td>Wrong \u2116 of audio track!</td></tr>",
-	"GetTotalNumOfStreamID",
-	"<tr><table><tr><td><img src=\"img/buttons/green_m.png\"></img></td><td> - Change audio track</td></tr></table></tr>",
-	"<tr><td><img src=\"img/buttons/green_m.png\"></img> or \"AD/SUBT\" - Change audio track</td></tr>",
-	"search_h",
-	"<div id=\"allInput\"><form>",
-	"Enter code.",
-	"<span id=\"text_form0\">Access code to \"XXX\" (from 0 to 9999) : </span><input id=\"",
-	"\" type=\"text\" size=\"",
-	"\" maxlength=\"4\"></input>",
-	"Enter your Search here ",
-	"<span id=\"psearch\"> Find : </span><input id=\"",
-	"\" maxlength=\"200\"></input>",
-	"Enter an address ",
-	"<span id=\"psearch\"> Address : </span><input id=\"",
-	"</form><form><span>\"ENTER\" - confirm input.</span></form><form><span>\"EXIT\" and \"RETURN\" - go back.</span></form>",
-	"<h3 style=\"padding-top:150px;text-align:center;\"> Warning !!!<br>If you provide URL of the playlist<br> and file extension doesnt contain \".xml\" or \".m3u\" ,<br>then put \"#\" in the front of URL.</h3>",
-	"</div>",
-	"Keyboard",
-	"setKeypadPos",
-	"setQWERTYPos",
-	"setString",
-	"setKeyFunc",
-	"setEnterFunc",
-	"value",
-	"Main.openCommonFile(Main.pl_url)",
-	"<b style=\"color:#00ccff\">Please wait! Searching...</b>",
-	"<b style=\"color:#00ccff\">Access granted!</b>",
-	"#",
-	"allInput",
-	"Edit impossible! Too big size.",
-	"stream",
-	"Editing options ",
-	"<div id=\"allInput\"><form><span>Name ",
-	" : </span></form><form><input id=\"0\" type=\"text\" size=\"",
-	"\" maxlength=\"200\"/></form><form><span>URL address ",
-	" : </span></form><form><input id=\"1\" type=\"text\" size=\"",
-	"\" maxlength=\"200\"/></form><form><span>Description, additional information : </span></form>",
-	"<form><input id=\"",
-	"\" maxlength=\"200\"/></form>",
-	"<form><span>Icons address ",
-	" : </span></form><form><input id=\"",
-	"<form><span>Starting aspect ratio :</span></form><form><span>\"0\"- 16X9 FULL or ORIGINAL , \"1\"- 14X9 ,</span></form><form><span>\"2\"- 4X3 ZOOM 2 , \"3\"- 4X3 ZOOM 1 ,\"4\"- 4X3 , </span></form><form><span id=\"text_form0\">\"5\"- X-ZOOM , \"6\"- AUTO . </span><input id=\"",
-	"\" maxlength=\"2\"/></form><form><span id=\"text_form0\">Audio track number ( 1, 2, 3 . . . ) : </span><input id=\"",
-	"\"  type=\"text\" size=\"",
-	"\" maxlength=\"2\"/></form><form><span id=\"text_form0\">Shift time EPG ( +/-12 h.) : </span><input id=\"",
-	"\" maxlength=\"4\"/></form><form><span>Total buffer size  0.5 - 20 ( Mb.).</span></form><form><span id=\"text_form0\">If it is not specified - \"auto\" : </span><input id=\"",
-	"\" maxlength=\"3\"/></form><form><span>Start after buffer is  10 - 50 ( % ) .</span></form><form><span id=\"text_form0\">If it is not specified - \"auto\" : </span><input id=\"",
-	"\" maxlength=\"3\"/></form><form><span id=\"text_form0\"> Yandex region code ( \"213\"- Moscow ) : </span><input id=\"",
-	"\" maxlength=\"6\"/></form>",
-	"<form></form><form></form><form></form><form></form><form></form><form></form><form></form></div>",
-	"margin",
-	"px 0px 0px 0px ",
-	"SetupKeyDown",
-	"setup_id",
-	"ua",
-	"by",
-	"-12",
-	"-11",
-	"-10",
-	"-9",
-	"-8",
-	"-7",
-	"-6",
-	"-5",
-	"-4",
-	"-3",
-	"-2",
-	"-1",
-	"+1",
-	"+2",
-	"+3",
-	"+4",
-	"+5",
-	"+6",
-	"+7",
-	"+8",
-	"+9",
-	"+10",
-	"+11",
-	"+12",
-	"10",
-	"auto-sync",
-	"auto-unix",
-	"manual",
-	"11",
-	"12",
-	"16X9",
-	"14X9",
-	"4X3-ZOOM 2",
-	"4X3-ZOOM 1",
-	"4X3",
-	"X-ZOOM",
-	"AUTO",
-	"Not installed",
-	"13",
-	"14",
-	"15",
-	"4X3 ZOOM 1",
-	"4X3 ZOOM 2",
-	"16",
-	"16X9 ZOOM 1",
-	"16X9 ZOOM 2",
-	"17",
-	"ORIG.ZOOM 1",
-	"ORIG.ZOOM 2",
-	"18",
-	"square",
-	"rectangular",
-	"19",
-	"on",
-	"off",
-	"20",
-	"0.5",
-	"0.6",
-	"0.7",
-	"0.8",
-	"0.9",
-	"21",
-	"25",
-	"30",
-	"35",
-	"40",
-	"45",
-	"50",
-	"22",
-	"23",
-	"24",
-	"240p",
-	"480p",
-	"720p",
-	"1080p",
-	"26",
-	"Moscow",
-	"Berlin",
-	"Paris",
-	"Rome",
-	"Dublin",
-	"Madrid",
-	"Lisbon",
-	"Vienna",
-	"Warsaw",
-	"Kiev",
-	"Prague",
-	"Athens",
-	"Ankara",
-	"27",
-	"28",
-	"preventDefault",
-	"en",
-	" Settings , MAC = ",
-	"</span></form><form style=\"color:#00ccff;font-size:17px;\"><span>",
-	"</span></form><form style=\"color:#00ccff;font-size:20px;\"><span>Link is too long!",
-	"<div id=\"allInput\"><form><span> URL of the current playlist : <font style=\"color:#00ccff;font-size:17px;\">\"",
-	"hidden link",
-	"\"</span></form><form><span> URL of the Main playlist : </span></form><form><input id=\"0\" type=\"text\" size=\"",
-	"\" maxlength=\"200\"></input></form>",
-	"<form><span> URL of the hidden playlist : </span></form><form><input id=\"1\" type=\"text\" size=\"",
-	"<form><span id=\"text_form3\"> Login for hidden playlist :</span><input id=\"2\" type=\"text\" size=\"",
-	"\" maxlength=\"40\"></input></form><form><span id=\"text_form3\">Pass for hidden playlist :</span><input id=\"3\" type=\"text\" size=\"",
-	"\" maxlength=\"40\"></input></form><form><span id=\"text_form3\">UDP proxy ( IP : port ) :</span><input id=\"4\" type=\"text\" size=\"",
-	"\" maxlength=\"40\"></input></form><form><span id=\"text_form0\">Access code to \"XXX\" ( 0 - 9999 ) : </span><input id=\"5\" type=\"text\" size=\"",
-	"\" maxlength=\"4\"></input></form><form><span id=\"text_form0\">Code of Fav. name  ( 0 - 9999 ) :</span><input id=\"6\" type=\"text\" size=\"",
-	"\" maxlength=\"4\"></input></form><form><span>Names of Fav. folders, any, order</span></form><form><span>( name 1 | name 2 | name 3 . . . ) : </span></form><form><input id=\"7\" type=\"text\" size=\"",
-	"\" maxlength=\"200\"></input></form><form><span id=\"text_form0\"> Yandex region code ( \"213\"- Moscow ) : </span><input id=\"8\" type=\"text\" size=\"",
-	"\" maxlength=\"7\"></input></form><form><span id=\"text_form1\">EPG from \"m.tv.yandex.</span><img src=\"img/buttons/lr_m.png\"></img><div id=\"9\"></div></form><form><span id=\"text_form1\">EPG Shift time (+/-12 h.)</span><img src=\"img/buttons/lr_m.png\"></img><div id=\"10\"></div></form><form><span id=\"text_form2\">Widget Time : </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"11\"></div></form><form><span id=\"text_form1\">Time zone for \"auto.\" ( +/-12 h.)</span><img src=\"img/buttons/lr_m.png\"></img><div id=\"12\"></div></form><form><span id=\"text_form2\">Starting video size : </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"13\"></div></form><form><span id=\"text_form1\">\"X-ZOOM\" height 50 - 150 ( % )</span><img src=\"img/buttons/lr_m.png\"></img><div id=\"14\"></div></form><form><span id=\"text_form1\">\"X-ZOOM\" width 50 - 150 ( % ) </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"15\"></div></form><form><span id=\"text_form2\">AUTO for w/h<1.35 </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"16\"></div></form><form><span id=\"text_form2\">AUTO for 1.34 < w/h <1.79 </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"17\"></div></form><form><span id=\"text_form2\">AUTO for  w/h > 1.78 </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"18\"></div></form><form><span id=\"text_form2\">Icons shape :</span><img src=\"img/buttons/lr_m.png\"></img><div id=\"19\"></div></form><form><span id=\"text_form1\">External icons :</span><img src=\"img/buttons/lr_m.png\"></img><div id=\"20\"></div></form><form><span>Total buffer size 0.5 - 20 ( Mb.).</span></form><form><span id=\"text_form1\">\"0\"- auto or from the playlist :</span><img src=\"img/buttons/lr_m.png\"></img><div id=\"21\"></div></form><form><span>Start playback after reading </span></form><form><span> from 10 to 50 ( % ) of total buffer size.</span></form><form><span id=\"text_form1\">\"0\"- auto or from the playlist :</span><img src=\"img/buttons/lr_m.png\"></img><div id=\"22\"></div></form><form><span id=\"text_form1\">Bottom help panel  </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"23\"></div></form><form><span id=\"text_form1\">Post MAC address </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"24\"></div></form><form><span id=\"text_form1\">Masking a TV browser </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"25\"></div></form><form><span id=\"text_form1\">Limit the video quality </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"26\"></div></form><form><span id=\"text_form1\">Choose Weather Forecast for </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"27\"></div></form><form><span id=\"text_form1\">Reset to default </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"28\"></div></form><form></form><form></form><form></form><form></form><form></form><form></form><form></form><form></form></div>",
-	"##",
-	"###",
-	"####",
-	"52px",
-	"black",
-	"#999999",
-	"border",
-	"2px solid #ffffff",
-	"blue",
-	"#eeeeee",
-	"2px solid #999999",
-	"reload",
-	"Main|IP-TV|Films|Series",
-	"write",
-	"01",
-	"display",
-	"block",
-	"none",
-	"getElementsByClassName",
-	"s=",
-	"signature=",
-	"http://185.25.119.98/php/youtubesign/youtube.php?sig=",
-	"itag%3D",
-	"HD 1080p.mp4",
-	"121",
-	"37",
-	"HD 720p.mp4",
-	"120",
-	"HD 720p.h264",
-	"84",
-	"480p.flv",
-	"360p.mp4",
-	"240p.mp4",
-	"36",
-	"url=",
-	"sig=",
-	"&s=",
-	"&el=embedded",
-	"&el=detailpage",
-	"&el=vevo",
-	"http://www.youtube.com/get_video_info?&video_id=",
-	"&ps=default&eurl=&gl=US&hl=en",
-	"itag",
-	"%2C",
-	"itag=43",
-	"itag=",
-	"&url=",
-	"vkontakte.ru",
-	"vk.com",
-	"=",
-	"/assets/video/",
-	"vkid=",
-	".vk.flv",
-	"u",
-	"/videos/",
-	"720.mp4",
-	"720p.mp4",
-	"480.mp4",
-	"480p.mp4",
-	"360.mp4",
-	"240.mp4",
-	"http://rutube.ru/api/oembed/?url=",
-	"&format=xml",
-	"http://rutube.ru/play/embed/",
-	"\"m3u8\":",
-	"reverse",
-	"Loading EPG...",
-	"Ya_ready_timeout",
-	"ukErr();",
-	"YaHTTP",
-	"Loaded!",
-	"J = ",
-	"<li><font style=\"color:#00ccff;\">",
-	"<li><font style=\"color:#ffcc00;\">",
-	"<li><font style=\"color:#ffeeee;\">",
-	"</font><font style=\"color:#CCCCCC;\">",
-	"</font></li>",
-	"<ul>",
-	"  ",
-	"</ul>",
-	"it-",
-	"__________This is run",
-	"http://nebo.ddns.net:8881/epg_ita_temp.php?ch=",
-	"_________________b: ",
-	"uk_prog_info_arr",
-	"temp_uk_epg_info_arr",
-	"http://bleb.org/tv/channel.html?ch=",
-	"&all",
-	"_____2____________b: ",
-	"Loading UK EPG...",
-	"<table class=\"listings\">",
-	"<tr>",
-	"<b>",
-	"</b>&nbsp;",
-	"Loading ITA EPG...",
-	"<div class=\"gen dataz\">",
-	"Array MA",
-	"\">",
-	"</a>",
-	"&flag=",
-	"/program/",
-	"channel=",
-	"http:",
-	"https://m.tv.yandex.",
-	"/channels/",
-	"?period=all-day",
-	": <font style='font-size:16px;color:cyan;'>",
-	"toDateString",
-	"</font> : <font style='font-size:16px;color:white;'>scroll page</font><font style='font-size:16px;color:cyan;'> P-/P+ </font> :",
-	"setDate",
-	"date=",
-	"&period=all-day",
-	"temp_ya_epg_info_arr",
-	"join",
-	"Nothing Found!",
-	"Err();",
-	"<span class=\"tv-event__time\">",
-	"<span class=\"tv-event__time-text\">",
-	"</span>",
-	"<span class=\"tv-event-title\">",
-	"Deleting Yandex database",
-	"location.reload(true);",
-	"https://tv.yandex.",
-	"/channels",
-	"connection",
-	"structure",
-	"<img class=\"b-icon\" src=\"",
-	"<td class=\"l-suplayout__rotator\">",
-	"https:",
-	"alt=",
-	"data-id=",
-	"Error ",
-	"___Get-UK-EPGInfo is running",
-	"uk_epg_info_arr",
-	"<li><font style=\"color:#ffcc00;font-size:20px;font-weight:bold;\">",
-	"</font><font style=\"color:#CCCCCC;font-size:20px;font-weight:bold;\">",
-	"TIME _ HOURS_ MIN ",
-	"temp_epg_info",
-	"<font style='color:#00ccff;font-weight:bolder;padding-left:10px;'>",
-	"http://nebo.",
-	"q=",
-	"http://tvqb.ru/",
-	"user=",
-	"action=get_test_url&s_key=",
-	"hash =",
-	"action=get_result_url_hash&s_key=",
-	"&hash=",
-	"md5hash",
-	"vk.com/video_ext.php?",
-	"/vkontakte.php?video",
-	"vkontakte.ru/video_ext.php",
-	"/vkontakte/vk_kinohranilishe.php?id=",
-	"youtube.com/watch?v=",
-	"youtube.com/embed",
-	"embed/",
-	".html",
-	"md4hash",
-	"start_logo",
-	"url(http://neb0.no-ip.biz:8881/pic/IPTVxBG.jpg)",
-	"visibility",
-	"visible",
-	"url(http://neb0.no-ip.biz:8881/pic/set-bg.jpg)",
-	"hidden",
-	"scroll",
-	"scroll_line",
-	"http://nebo.ddns.net:8881/weather_new.php?city=",
-	"weather_icons",
-	"temp",
-	"/weather_temp_new.php?city=",
-	"abs",
-	"new top=",
-	"460px",
-	"ACCESS DENIED",
-	"<b style=\"color:yellow\">",
-	"url(",
-	")",
-	"<p><b style=\"color:#FFFFFF;font-size:14px;\">",
-	"</b> ",
-	"</p>",
-	"Hello! I am an alert box!",
-	"setWindowPosition",
-	"confirm_text",
-	"<img src=\"http://nebo.ddns.net:8881/pic/bg.jpg\" ></img><br><b style=\"color:EF5C0C;font-size:14px\">Welcome to IPTV<i>x </i>World!!!</b><br><i style=\"font-size:12px\">Courtesy of Multiviewer.TV</i><br><b style=\"color:EF5C0C;\">www.multiviewer.tv</b>",
-	"setContents",
-	"turnPopup",
-	"btn_ok",
-	"popWindow",
-	"setWindowPosition1",
-	"<img src=\"http://nebo.ddns.net:8881/pic/bg-update.jpg\" ></img>",
-	"confirm",
-	"backgroundColor",
-	"b_ok",
-	"#5fbaff",
-	"setByttonStyleOnFocus",
-	"getAttribute",
-	"#0866aa",
-	"b_canc",
-	"setByttonStyleOnBlur",
-	"KeyDown",
-	"Options Key code : ",
-	"closeWindow",
-	"btn_canc",
-	"selectButton"
+var mainparams = [
+	/*ok*/ "Widget", // 0
+	/*ok*/ "API", // 1
+	/*ok*/ "Plugin", // 2
+	/*ok*/ "TVKeyValue", // 3
+	/*ok*/ "", // 4
+	/*ok*/ "rulenone", //5
+	/*ok*/ "nebo.ddns.net", //6
+	/*ok*/ "http://", //7
+	/*ok*/ "mac=", //8
+	/*ok*/ "0.426", //9
+	/*ok*/ "2.96", //10
+	/*ok*/ "onLoad", //11
+	/*ok*/ "Network", //12
+	/*ok*/ "pluginNetwork", //13
+	/*ok*/ "MAC", //14
+	/*ok*/ "GetMAC", //15
+	/*ok*/ "St", //16
+	/*ok*/ "pluginStorage", //17
+	/*ok*/ "Audio", //18
+	/*ok*/ "pluginAudio", //19
+	/*ok*/ "audio_output_device", //20
+	/*ok*/ "GetOutputDevice", //21
+	/*ok*/ "pluginTV", //22
+	/*ok*/ "hardware_type", //23
+	/*ok*/ "GetProductType", //24
+	/*ok*/ "hardware", //25
+	/*ok*/ "GetProductCode", //26
+	/*ok*/ "LN40B650_KOR", //27
+	/*ok*/ "Emu", //28
+	/*ok*/ "C", //29
+	/*ok*/ "indexOf", //30
+	/*ok*/ "seriesC", //31
+	/*ok*/ "E", //32
+	/*ok*/ "D", //33
+	/*ok*/ "seriesE", //34
+	/*ok*/ "IME_XT9/ime.js", //35
+	/*ok*/ "script", //36
+	/*ok*/ "createElement", //37
+	/*ok*/ "language", //38
+	/*ok*/ "javascript", //39
+	/*ok*/ "type", //40
+	/*ok*/ "text/javascript", //41
+	/*ok*/ "src", //42
+	/*ok*/ "$MANAGER_WIDGET/Common/", //43
+	/*ok*/ "appendChild", //44
+	/*ok*/ "body", //45
+	/*ok*/ "############## NOT FOR EMULATOR !!! ################", //46
+	/*ok*/ "Location.reload(true)", //47
+	/*ok*/ "init", //48
+	/*ok*/ "onShow", //49
+	/*ok*/ "onShowEventTVKey", //50
+	/*ok*/ "sendReadyEvent", //51
+	/*ok*/ "Loading...", //52
+	/*ok*/ "status", //53
+	/*ok*/ "loadingshow", //54
+	/*ok*/ "Main.InitScript()", //55
+	/*ok*/ "InitScript", //56
+	/*ok*/ "Supe_ext", //57
+	/*ok*/ "url_arr", //58
+	/*ok*/ "fav.dat", //59
+	/*ok*/ "star_url", //60
+	/*ok*/ "FAV", //61
+	/*ok*/ "openCommonFile", //62
+	/*ok*/ "OpenFav", //63
+	/*ok*/ "length", //64
+	/*ok*/ "fav_start_channels", //65
+	/*ok*/ "ReadPlArr", //66
+	/*ok*/ "fav_url", //67
+	/*ok*/ "XML_URL", //68
+	/*ok*/ "Request", //69
+	/*ok*/ "setGen()", //70
+	/*ok*/ "showScroll()", //71
+	/*ok*/ "confirm.popWindow()", //72
+	/*ok*/ "confirm.closeWindow()", //73
+	/*ok*/ "Not available !", //74
+	/*ok*/ "SetVolumeWithKey", //75
+	/*ok*/ "GetVolume", //76
+	/*ok*/ "round", //77
+	/*ok*/ "0", //78
+	/*ok*/ "|", //79
+	/*ok*/ "<b style='color:#00ccff;'>VOLUME</b> ", //80
+	/*ok*/ " <b style='color:yellow;'>", //81
+	/*ok*/ "</b>", //82
+	/*ok*/ "setOffScreenSaver", //83
+	/*ok*/ "setOffIdleEvent", //84
+	/*ok*/ "SetBannerState", //85
+	/*ok*/ "KEY_VOL_UP", //86
+	/*ok*/ "unregistKey", //87
+	/*ok*/ "KEY_VOL_DOWN", //88
+	/*ok*/ "KEY_MUTE", //89
+	/*ok*/ "KEY_MENU", //90
+	/*ok*/ "registKey", //91
+	/*ok*/ "KEY_GUIDE", //92
+	/*ok*/ "KEY_SOURCE", //93
+	/*ok*/ "onWidgetEvent", //94
+	/*ok*/ "registVOLTVKey", //95
+	/*ok*/ "KEY_PANEL_VOL_UP", //96
+	/*ok*/ "KEY_PANEL_VOL_DOWN", //97
+	/*ok*/ "ResetSelectedPosition", //98
+	/*ok*/ "selected_channel", //99
+	/*ok*/ "selected_page", //100
+	/*ok*/ "chan_array_index", //101
+	/*ok*/ "guide", //102
+	/*ok*/ "help_info", //103
+	/*ok*/ "prev_ch_array", //104
+	/*ok*/ "SaveSelectedPosition", //105
+	/*ok*/ "play_selected_channel", //106
+	/*ok*/ "play_selected_page", //107
+	/*ok*/ "play_chan_array_index", //108
+	/*ok*/ "SetSelectedPosition", //109
+	/*ok*/ "SetFavSelectedPosition", //110
+	/*ok*/ "fav_num", //111
+	/*ok*/ "temp_fav_num", //112
+	/*ok*/ "fav_name", //113
+	/*ok*/ "temp_fav_name", //114
+	/*ok*/ "temp_fav_url", //115
+	/*ok*/ "showCategorySelector", //116
+	/*ok*/ "rightHalf", //117
+	/*ok*/ "setFocus", //118
+	/*ok*/ "CATEGORIES", //119
+	/*ok*/ "categories", //120
+	/*ok*/ "setBox", //121
+	/*ok*/ "top", //122
+	/*ok*/ "style", //123
+	/*ok*/ "selectbox", //124
+	/*ok*/ "60px", //125
+	/*ok*/ "left", //126
+	/*ok*/ "550px", //127
+	/*ok*/ "showFavSelector", //128
+	/*ok*/ "Select Favourites", //129
+	/*ok*/ "favorites", //130
+	/*ok*/ "showSiseSelector", //131
+	/*ok*/ "Size Selector", //132
+	/*ok*/ "120px", //133
+	/*ok*/ "330px", //134
+	/*ok*/ "Menu", //135
+	/*ok*/ "FirstStart", //136
+	/*ok*/ "Timemode", //137
+	/*ok*/ "Main.FirstStart=false;", //138
+	/*ok*/ "load_timer", //139
+	/*ok*/ "search", //140
+	/*ok*/ "xxx", //141
+	/*ok*/ "hidestatus", //142
+	/*ok*/ "statusbar1", //143
+	/*ok*/ "hideplayer", //144
+	/*ok*/ "loadinghide", //145
+	/*ok*/ "AsReqMode", //146
+	/*ok*/ "block_info", //147
+	/*ok*/ "loading_pl", //148
+	/*ok*/ "block_fav", //149
+	/*ok*/ "SetZoom", //150
+	/*ok*/ "playlist_prev", //151
+	/*ok*/ "pre_pl_url", //152
+	/*ok*/ "help_set_par", //153
+	/*ok*/ "infoList", //154
+	/*ok*/ "ya_date", //155
+	/*ok*/ "ya_info", //156
+	/*ok*/ "ya_help", //157
+	/*ok*/ "UpdateHelpBar", //158
+	/*ok*/ "RED", //159
+	/*ok*/ "updatePage", //160
+	/*ok*/ "channelList", //161
+	/*ok*/ "main", //162
+	/*ok*/ "0_help", //163
+	/*ok*/ "1_help", //164
+	/*ok*/ "2_help", //165
+	/*ok*/ "3_help", //166
+	/*ok*/ "3.1_help", //167
+	/*ok*/ "3.2_help", //168
+	/*ok*/ "3.21_help", //169
+	/*ok*/ "3.3_help", //170
+	/*ok*/ "3.4_help", //171
+	/*ok*/ "4_help", //172
+	/*ok*/ "4.1_help", //173
+	/*ok*/ "5_help", //174
+	/*ok*/ "5.1_help", //175
+	/*ok*/ "6_help", //176
+	/*ok*/ "7_help", //177
+	/*ok*/ "8_help", //178
+	/*ok*/ "9_help", //179
+	/*ok*/ "10_help", //180
+	/*ok*/ "10.1_help", //181
+	/*ok*/ "11_help", //182
+	/*ok*/ "12_help", //183
+	/*ok*/ "Favourites", //184
+	/*ok*/ " - \"", //185
+	/*ok*/ "\"", //186
+	/*ok*/ "Edit Favourites", //187
+	/*ok*/ "help", //188
+	/*ok*/ "HELP", //189
+	/*ok*/ "EPG v.", //190
+	/*ok*/ "version", //191
+	/*ok*/ "yandextv_mode", //192
+	/*ok*/ "ya_all_day", //193
+	/*ok*/ "Open", //194
+	/*ok*/ "history.dat", //195
+	/*ok*/ "History", //196
+	/*ok*/ "<b style=\"color:00cbfe;\">IPTV<i>x </i></b><b style=\"font-size:16px;color:cyan;\"> v.", //197
+	/*ok*/ "ver", //198
+	/*ok*/ "<b style=\"font-size:12px;\">  @</b><b style=\"font-size:16px;\">2016</b>", //199
+	/*ok*/ "state", //200
+	/*ok*/ "STOPPED", //201
+	/*ok*/ "PLAYING_VOD", //202
+	/*ok*/ "backgroundImage", //203
+	/*ok*/ "background", //204
+	/*ok*/ "url(img/bg.png)", //205
+	/*ok*/ "guide_step", //206
+	/*ok*/ "url(img/us_bg.png)", //207
+	/*ok*/ "prev_pl_array", //208
+	/*ok*/ "start.xml", //209
+	/*ok*/ "Kill", //210
+	/*ok*/ "Xcode", //211
+	/*ok*/ "widget_date", //212
+	/*ok*/ "540px", //213
+	/*ok*/ "widget_time", //214
+	/*ok*/ "850px", //215
+	/*ok*/ "putInnerHTML", //216
+	/*ok*/ "Forma", //217
+	/*ok*/ "67px", //218
+	/*ok*/ "54px", //219
+	/*ok*/ "75px", //220
+	/*ok*/ "38px", //221
+	/*ok*/ "80px", //222
+	/*ok*/ "66px", //223
+	/*ok*/ "p_bg_num_logo", //224
+	/*ok*/ "url(img/bgn02.png)", //225
+	/*ok*/ "url(img/bgn03.png)", //226
+	/*ok*/ "90px", //227
+	/*ok*/ "46px", //228
+	/*ok*/ "url(img/bgn01.png)", //229
+	/*ok*/ "width", //230
+	/*ok*/ "Update_Page", //231
+	/*ok*/ "ret", //232
+	/*ok*/ "chan_pages", //233
+	/*ok*/ "ch", //234
+	/*ok*/ "last_page_channels_counter", //235
+	/*ok*/ "UpdateChannelBar", //236
+	/*ok*/ "THIS IS RUNNING Update Channel", //237
+	/*ok*/ "number", //238
+	/*ok*/ "channels", //239
+	/*ok*/ "img", //240
+	/*ok*/ "Install the original version", //241
+	/*ok*/ "toLowerCase", //242
+	/*ok*/ "Access denied!", //243
+	/*ok*/ "title", //244
+	/*ok*/ "number_p", //245
+	/*ok*/ "<b style=\"font-size:16px;color:white\"> - [  This portal has <font color=#00ccff>", //246
+	/*ok*/ "</font> links  ]</b>", //247
+	/*ok*/ ".xml", //248
+	/*ok*/ ".m3u", //249
+	/*ok*/ "=m3u", //250
+	/*ok*/ "<b style=\"font-size:12px;\">  @</b><b style=\"font-size:16px;\">2016 </b></font>", //251
+	/*ok*/ "<b style=\"color:00cbfe;\">HELP </b><b style=\"font-size:16px;color:cyan;\"> [ user guide ] </font>", //252
+	/*ok*/ "Mix", //253
+	/*ok*/ "<b style=\"color:00cbfe;\">EUROPE </b><b style=\"font-size:16px;color:cyan;\"> [ mix ] </font>", //254
+	/*ok*/ "films", //255
+	/*ok*/ "<b style=\"color:00cbfe;\">HOME </b><b style=\"font-size:16px;color:cyan;\"> [ cinema ] </font>", //256
+	/*ok*/ "kids", //257
+	/*ok*/ "<b style=\"color:00cbfe;\">KIDS </b><b style=\"font-size:16px;color:cyan;\"> [ cinema ] </font>", //258
+	/*ok*/ "tutorials", //259
+	/*ok*/ "<b style=\"color:00cbfe;\">VOD </b><b style=\"font-size:16px;color:cyan;\"> [ tutorial ] </font>", //260
+	/*ok*/ "Focus", //261
+	/*ok*/ "Main.updateChannel();", //262
+	/*ok*/ "LoadTimer", //263
+	/*ok*/ "updateChannel", //264
+	/*ok*/ "logos/", //265
+	/*ok*/ ":", //266
+	/*ok*/ "logos/blue_folder.png", //267
+	/*ok*/ "logos/image.png", //268
+	/*ok*/ "logos/help.png", //269
+	/*ok*/ "ya_auto", //270
+	/*ok*/ " ", //271
+	/*ok*/ "replace", //272
+	/*ok*/ "chan", //273
+	/*ok*/ "pre_selected_channel", //274
+	/*ok*/ "color", //275
+	/*ok*/ "#CBCBCB", //276
+	/*ok*/ "url(img/number_bar.png)", //277
+	/*ok*/ "url(img/chan_bar.png)", //278
+	/*ok*/ "#FFFFFF", //279
+	/*ok*/ "Main.UpdateChannelInfo()", //280
+	/*ok*/ "UpdateChannelInfo", //281
+	/*ok*/ "scrolling", //282
+	/*ok*/ "ya_base_info", //283
+	/*ok*/ "ch_num", //284
+	/*ok*/ "name", //285
+	/*ok*/ "s_url", //286
+	/*ok*/ "url", //287
+	/*ok*/ "pl_url", //288
+	/*ok*/ "logo", //289
+	/*ok*/ "ssize", //290
+	/*ok*/ "a_num", //291
+	/*ok*/ "buffer", //292
+	/*ok*/ "ibuffer", //293
+	/*ok*/ "timeshift", //294
+	/*ok*/ "region", //295
+	/*ok*/ "parser", //296
+	/*ok*/ "search_on", //297
+	/*ok*/ "toString", //298
+	/*ok*/ "this.url= ", //299
+	/*ok*/ "delta", //300
+	/*ok*/ "Ya_flag_step", //301
+	/*ok*/ "YandexGetUrl(GetYindex());", //302
+	/*ok*/ "Ach(3)= ", //303
+	/*ok*/ "epg_url:", //304
+	/*ok*/ "split", //305
+	/*ok*/ "cutted ee[0] =", //306
+	/*ok*/ "cutted url =", //307
+	/*ok*/ "protocol", //308
+	/*ok*/ "?reg=", //309
+	/*ok*/ "&chan=", //310
+	/*ok*/ "&pass=PaCcT0$33v247&friendly=1", //311
+	/*ok*/ "request =", //312
+	/*ok*/ "showinfoList", //313
+	/*ok*/ "string", //314
+	/*ok*/ "<", //315
+	/*ok*/ "/m.tv.yandex.", //316
+	/*ok*/ "Yindex= ", //317
+	/*ok*/ "UpdatePlayerStatusbar", //318
+	/*ok*/ "ch_number", //319
+	/*ok*/ "ch_name", //320
+	/*ok*/ "ch_img", //321
+	/*ok*/ "scroll_cursor", //322
+	/*ok*/ "getElementById", //323
+	/*ok*/ "playlist_name", //324
+	/*ok*/ "<table width=\"100%\"><tr><td style=\"text-align:center;font-size:20px;color:#00ccff\">", //325
+	/*ok*/ "</td></tr></table><table width=\"100%\"><tr height=\"2px\" bgcolor=\"#00cdfe\"><td></td></tr></table>", //326
+	/*ok*/ "prev_page_text", //327
+	/*ok*/ "prev_page_url", //328
+	/*ok*/ "Back to start", //329
+	/*ok*/ "<td><img src='img/buttons/rew.png'></img></td><td>", //330
+	/*ok*/ "</td>", //331
+	/*ok*/ "<td><img src='img/buttons/rew.png'></img></td><td>Prev</td>", //332
+	/*ok*/ "next_page_text", //333
+	/*ok*/ "next_page_url", //334
+	/*ok*/ "<td><img src='img/buttons/ff.png'></img></td><td>", //335
+	/*ok*/ "<td><img src='img/buttons/ff.png'></img></td><td>Next</td>", //336
+	/*ok*/ "<td><img src='img/buttons/blue.png'></img></td><td>Back to start</td>", //337
+	/*ok*/ "<table><tr>", //338
+	/*ok*/ "</tr></table>", //339
+	/*ok*/ "no additional information available", //340
+	/*ok*/ "<div id=\"allInfo\">", //341
+	/*ok*/ "<div>", //342
+	/*ok*/ "allInfo", //343
+	/*ok*/ "5px", //344
+	/*ok*/ "10px", //345
+	/*ok*/ "lost_date", //346
+	/*ok*/ "Ya_flag_name", //347
+	/*ok*/ "0px", //348
+	/*ok*/ "PlayPrevChannel", //349
+	/*ok*/ "PlayChannel", //350
+	/*ok*/ "Previous channel", //351
+	/*ok*/ "Starting channel", //352
+	/*ok*/ "SavePrevChannel", //353
+	/*ok*/ "play_prev", //354
+	/*ok*/ "push", //355
+	/*ok*/ "PlayPrevPlaylist", //356
+	/*ok*/ "bl", //357
+	/*ok*/ "pop", //358
+	/*ok*/ "DEL", //359
+	/*ok*/ "starthelp.xml", //360
+	/*ok*/ ".dat", //361
+	/*ok*/ "-=SEARCH=-", //362 
+	/*ok*/ "playlist", //363
+	/*ok*/ "start", //364
+	/*ok*/ "Main playlist!", //365
+	/*ok*/ "SavePrevPlaylist", //366
+	/*ok*/ "all_channels", //367
+	/*ok*/ "selectNextChannel", //368
+	/*ok*/ "selectPrevChannel", //369
+	/*ok*/ "Not Available!", //370
+	/*ok*/ "selectNextPage", //371
+	/*ok*/ "selectPrevPage", //372
+	/*ok*/ "stop", //373
+	/*ok*/ "txt", //374
+	/*ok*/ "txt=", //375
+	/*ok*/ "hurl", //376
+	/*ok*/ "trp", //377
+	/*ok*/ "/sh/request.php?", //378
+	/*ok*/ "boom", //379
+	/*ok*/ "/sh/vip_pls.php?", //380
+	/*ok*/ "svoj", //381
+	/*ok*/ "/sh/mojsvoy_pls.php?", //382
+	/*ok*/ "tablemix", //383
+	/*ok*/ "/sh/euromix.php?", //384
+	/*ok*/ "%3F", //385
+	/*ok*/ "?", //386
+	/*ok*/ "%26", //387
+	/*ok*/ "&", //388
+	/*ok*/ "tableeng", //389
+	/*ok*/ "/sh/englishmix.php?", //390
+	/*ok*/ "tablefilms", //391
+	/*ok*/ "/sh/bigpeople.php?", //392
+	/*ok*/ "tablekidz", //393
+	/*ok*/ "/sh/smallpeople.php?", //394
+	/*ok*/ "tablevod", //395
+	/*ok*/ "/sh/vodmix.php?", //396
+	/*ok*/ "tableyt", //397
+	/*ok*/ "/sh/youtube.php?", //398
+	/*ok*/ "PlayerMode", //399
+	/*ok*/ "stopFPlayer", //400
+	/*ok*/ "stopV", //401
+	/*ok*/ "status1", //402
+	/*ok*/ "url_selected", //403
+	/*ok*/ "Foto", //404
+	/*ok*/ "resolution", //405
+	/*ok*/ "rtmp://", //406
+	/*ok*/ "rtsp://", //407
+	/*ok*/ "mms://", //408
+	/*ok*/ ".flv", //409
+	/*ok*/ "PlayFlashStream", //410
+	/*ok*/ "1", //411
+	/*ok*/ "Main.PlayNoFlashStream()", //412
+	/*ok*/ "stop!", //413
+	/*ok*/ "Missing address!", //414
+	/*ok*/ "Main.Menu();", //415
+	/*ok*/ "showScroll();", //416
+	/*ok*/ "exec", //417
+	/*ok*/ "pl_history.dat", //418
+	/*ok*/ "saveHistory", //419
+	/*ok*/ "usb/", //420
+	/*ok*/ "ScanUSB", //421
+	/*ok*/ "$USB_DIR", //422
+	/*ok*/ "OpenHistory", //423
+	/*ok*/ "IP-TV, WEB-TV CHANNELS", //424
+	/*ok*/ "image.png", //425
+	/*ok*/ "live_history.dat", //426
+	/*ok*/ "FILMS, VIDEOS", //427
+	/*ok*/ "film.png", //428
+	/*ok*/ "vod_history.dat", //429
+	/*ok*/ "PLAYLISTs, FILE LISTs", //430
+	/*ok*/ "blue_folder.png", //431
+	/*ok*/ "SearchFormular()", //432
+	/*ok*/ "ytv3/3.php", //433
+	/*ok*/ "search.php", //434
+	/*ok*/ "Reading... ", //435
+	/*ok*/ "API.Request(Main.pl_url);", //436
+	/*ok*/ "Main.PlayChannel()", //437
+	/*ok*/ "SlideShowInterval", //438
+	/*ok*/ "PlayNoFlashStream", //439
+	/*ok*/ "Ibuffer", //440
+	/*ok*/ "Buffer", //441
+	/*ok*/ "screen_size", //442
+	/*ok*/ "rtp://", //443
+	/*ok*/ "udp://", //444
+	/*ok*/ "Proxy", //445
+	/*ok*/ "/udp/", //446
+	/*ok*/ "substr", //447
+	/*ok*/ ".m3u8", //448
+	/*ok*/ "|COMPONENT=HLS", //449
+	/*ok*/ "play", //450
+	/*ok*/ "Empty link!", //451
+	/*ok*/ "next", //452
+	/*ok*/ "LOADING", //453
+	/*ok*/ "flashplayer", //454
+	/*ok*/ "flv=", //455
+	/*ok*/ "file=", //456
+	/*ok*/ "<object type=\"application/x-shockwave-flash\" id=\"rmtpplayerHD\" width=\"960\" height=\"540\">", //457
+	/*ok*/ "<param name=\"movie\" value=\"nflashplayer.swf\" />", //458
+	/*ok*/ "<param name=\"FlashVars\" value=\"", //459
+	/*ok*/ "\" /></object>", //460
+	/*ok*/ "PLAYING_LIVE", //461
+	/*ok*/ "Main.setPlayer();", //462
+	/*ok*/ "setPlayer", //463
+	/*ok*/ "player", //464
+	/*ok*/ "rmtpplayerHD", //465
+	/*ok*/ "readFile", //466
+	/*ok*/ "id", //467
+	/*ok*/ "/", //468
+	/*ok*/ "r", //469
+	/*ok*/ "readLine", //470
+	/*ok*/ "closeCommonFile", //471
+	/*ok*/ "writeFile", //472
+	/*ok*/ "isValidCommonPath", //473
+	/*ok*/ "createCommonDir", //474
+	/*ok*/ "w", //475
+	/*ok*/ "writeLine", //476
+	/*ok*/ "||", //477
+	/*ok*/ "splice", //478
+	/*ok*/ "delHistory", //479
+	/*ok*/ "saveFavorites", //480
+	/*ok*/"<b style=\"color:#CDCDCD\">Added to Favourites ", //481
+	/*ok*/ "\"</b>", //482
+	/*ok*/ "delFavorites", //483
+	/*ok*/ "<b style=\"color:yellow\">Favourites folder ", //484
+	/*ok*/ "\" -  EMPTY !</b>", //485
+	/*ok*/ "API.Request(API.XML_URL)", //486
+	/*ok*/ "Main.PlayPrevPlaylist();", //487
+	/*ok*/ "moveFavorites", //488
+	/*ok*/ "<b style=\"color:yellow\">Your Favourites folder is EMPTY !</b>", //489
+	/*ok*/ "Display.status('Please change address in the settings')", //490
+	/*ok*/ "<b style=\"color:yellow\">Favourites folder", //491
+	/*ok*/ " - ", //492
+	/*ok*/ " -  is EMPTY !</b>", //493
+	/*ok*/ "selected", //494
+	/*ok*/ "pre_selected", //495
+	/*ok*/ "pre_selected_page", //496
+	/*ok*/ "Empty!", //497
+	/*ok*/ "ResetAll", //498
+	/*ok*/ "countPages", //499
+	/*ok*/ "Main.Menu()", //500
+	/*ok*/ "<font color=\"#00ccff\">", //501
+	/*ok*/ "<font color=\"#ffff99\">", //502
+	/*ok*/ "GetUSBListSize", //503
+	/*ok*/ "GetUSBDeviceID", //504
+	/*ok*/ "GetUSBVendorName", //505
+	/*ok*/ "GetUSBPartitionNum", //506
+	/*ok*/ "GetUSBModelName", //507
+	/*ok*/ "GetUSBMountPath", //508
+	/*ok*/ "GetUSBAvailSize", //509
+	/*ok*/ "GetUSBTotalSize", //510
+	/*ok*/ "<h3> Name : ", //511
+	/*ok*/ "</font><br>  Model : ", //512
+	/*ok*/ "</font><br>  The total size : ", //513
+	/*ok*/ "</font><br>  Free size  : ", //514
+	/*ok*/ "</font><br>  Mount Directory  : ", //515
+	/*ok*/ "</font><br>  Partition number  : ", //516
+	/*ok*/ "</font></h3>", //517
+	/*ok*/ "$USB_DIR/", //518
+	/*ok*/ "</font>", //519
+	/*ok*/ "usb_logo.png", //520
+	/*ok*/ "USB Memory HDD", //521
+	/*ok*/ "No USB devices has being found!", //522
+	/*ok*/ "readDir", //523
+	/*ok*/ "/dtv/usb/", //524
+	/*ok*/ "Playlist not found!", //525
+	/*ok*/ "<font color=\"#ffffcc\">", //526
+	/*ok*/ "<font color=\"#00cc99\">", //527
+	/*ok*/ "&page=", //528
+	/*ok*/ "step_read_dir", //529
+	/*ok*/ "substring", //530
+	/*ok*/ ".", //531
+	/*ok*/ "..", //532
+	/*ok*/ "<h3>Name : ", //533
+	/*ok*/ "isDir", //534
+	/*ok*/ "<br> Type : ", //535
+	/*ok*/ "File </font>", //536
+	/*ok*/ "match", //537
+	/*ok*/ " \"", //538
+	/*ok*/ "</font>\"", //539
+	/*ok*/ " \" Without Extension \"", //540
+	/*ok*/ "size", //541
+	/*ok*/ "<br> Size : ", //542
+	/*ok*/ "/dtv/usb", //543
+	/*ok*/ " Folder </font>", //544
+	/*ok*/ "mtime", //545
+	/*ok*/ "<br> Creation Date : ", //546
+	/*ok*/ "playlist.png", //547
+	/*ok*/ "</h3>", //548
+	/*ok*/ "music.png", //549
+	/*ok*/ "foto.png", //550
+	/*ok*/ "file.png", //551
+	/*ok*/ "concat", //552
+	/*ok*/ "Empty Folder!", //553
+	/*ok*/ "toFixed", //554
+	/*ok*/ " Gb", //555
+	/*ok*/ " Mb", //556
+	/*ok*/ " Kb", //557
+	/*ok*/ " Byte", //558
+	/*ok*/ "onUnload", //559
+	/*ok*/ "deinit", //560
+	/*ok*/ "DEINIT", //561
+	/*ok*/ "IntervalUpdateTime", //562
+	/*ok*/ "SetTimeDate()", //563
+	/*ok*/ "onreadystatechange", //564
+	/*ok*/ "readyState", //565
+	/*ok*/ "responseText", //566
+	/*ok*/ "inetTime", //567
+	/*ok*/ "SetTimeDate();", //568
+	/*ok*/ "Sync_step", //569
+	/*ok*/ "SyncInetTime()", //570
+	/*ok*/ "Connection Error with NTP server!", //571
+	/*ok*/ "GET", // 572
+	/*ok*/ "http://wwp.greenwichmeantime.com/time/scripts/clock-8/x.php", //573
+	/*ok*/ "open", //574
+	/*ok*/ "User-Agent", //575
+	/*ok*/ "Opera/9.80 (Windows NT 5.1; U; ru) Presto/2.9.168 Version/11.51", //576
+	/*ok*/ "setRequestHeader", //577
+	/*ok*/ "send", //578
+	/*ok*/ "year", //579
+	/*ok*/ "getFullYear", //580
+	/*ok*/ "date", //581
+	/*ok*/ "getDate", //582
+	/*ok*/ "month", //583
+	/*ok*/ "getMonth", //584
+	/*ok*/ "day", //585
+	/*ok*/ "getDay", //586
+	/*ok*/ "h", //587
+	/*ok*/ "getHours", //588
+	/*ok*/ "m", //589
+	/*ok*/ "getMinutes", //590
+	/*ok*/ "s", //591
+	/*ok*/ "getSeconds", //592
+	/*ok*/ "Timefix", //593
+	/*ok*/ "y_t_days", //594
+	/*ok*/ "pluginTime", //595
+	/*ok*/ "GetEpochTime", //596
+	/*ok*/ "ya_epg_info_arr", //597
+	/*ok*/ "epg_t1", //598
+	/*ok*/ "epg_t2", //599
+	/*ok*/ "innerHTML", //600
+	/*ok*/ "time", //601
+	/*ok*/ "Sunday", //602
+	/*ok*/ "Monday", //603
+	/*ok*/ "Tuesday", //604
+	/*ok*/ "Wednesday", //605
+	/*ok*/ "Thursday", //606
+	/*ok*/ "Friday", //607
+	/*ok*/ "Saturday", //608
+	/*ok*/ "January", //609
+	/*ok*/ "February", //610
+	/*ok*/ "March", //611
+	/*ok*/ "April", //612
+	/*ok*/ "May", //613
+	/*ok*/ "June", //614
+	/*ok*/ "July", //615
+	/*ok*/ "August", //616
+	/*ok*/ "September", //617
+	/*ok*/ "October", //618
+	/*ok*/ "November", //619
+	/*ok*/ "December", //620
+	/*ok*/ "floor", //621
+	/*ok*/ "progressBar", //622
+	/*ok*/ "px", //623
+	/*ok*/ "% ", //624
+	/*ok*/ "timeInfo", //625
+	/*ok*/ "http://nebo.ddns.net/help/starthelp.xml", //626
+	/*ok*/ "500", //627
+	/*ok*/ "100", //628
+	/*ok*/ "2", //629
+	/*ok*/ "213", //630
+	/*ok*/ "ru", //631
+	/*ok*/ " Main | IP-TV | Films | Series", //632
+	/*ok*/ "London", //633
+	/*ok*/ "360p", //634
+	/*ok*/ "fn", //635
+	/*ok*/ "291s.dat", //636
+	/*ok*/ "Surl", //637
+	/*ok*/ "Login", //638
+	/*ok*/ "Pasword", //639
+	/*ok*/ "Scode", //640
+	/*ok*/ "Favname", //641
+	/*ok*/ "CODE", //642
+	/*ok*/ "REG", //643
+	/*ok*/ "Timeshift", //644
+	/*ok*/ "+", //645
+	/*ok*/ "Size", //646
+	/*ok*/ "Ph", //647
+	/*ok*/ "Pw", //648
+	/*ok*/ "a_size1", //649
+	/*ok*/ "a_size2", //650
+	/*ok*/ "a_size3", //651
+	/*ok*/ "Pstyle", //652
+	/*ok*/ "Mac", //653
+	/*ok*/ "Header", //654
+	/*ok*/ "Vquality", //655
+	/*ok*/ "Cityname", //656
+	/*ok*/ "_ya_name_index_url.dat", //657
+	/*ok*/ "<font style=\"color:#00ccff;font-weight:bolder\">", //658
+	/*ok*/ "StartTime()", //659
+	/*ok*/ "<br>", //660
+	/*ok*/ ") ", //661
+	/*ok*/ "Channel", //662
+	/*ok*/ "Channels", //663
+	/*ok*/ "In the database of ", //664
+	/*ok*/ "</font> region ", //665
+	/*ok*/ " </font> ", //666
+	/*ok*/ " : ", //667
+	/*ok*/ "loadComplete", //668
+	/*ok*/ "<b style=\"color:yellow\">ERROR IN THE PLAYLIST!</b>", //669
+	/*ok*/ "getIdb('main');SetupFormular()", //670
+	/*ok*/ "tsnakeman", //671
+	/*ok*/ "://", //672
+	/*ok*/ "search_string", //673
+	/*ok*/ "3.php", //674
+	/*ok*/ "search=", //675
+	/*ok*/ "&maxResults=50", //676
+	/*ok*/ "GETTING URL!!! >", //677
+	/*ok*/ "XHRObj", //678
+	/*ok*/ "destroy", //679
+	/*ok*/ "stReq_timeout", //680
+	/*ok*/ "API.stopRequest()", //681
+	/*ok*/ "stReq_time", //682
+	/*ok*/ "recieveData", //683
+	/*ok*/ "overrideMimeType", //684
+	/*ok*/ "text/xml", //685
+	/*ok*/ "Accept-Encoding", //686
+	/*ok*/ "identity", //687
+	/*ok*/ "Accept-Language", //688
+	/*ok*/ "en-us,en;q=0.5", //689
+	/*ok*/ "Accept", //690
+	/*ok*/ "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", //691
+	/*ok*/ "Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.6) Gecko/20100627 Firefox/3.6.6", //692
+	/*ok*/ "Accept-Charset", //693
+	/*ok*/ "ISO-8859-1,utf-8;q=0.7,*;q=0.7", //694
+	/*ok*/ "Connection", //695
+	/*ok*/ "close", //696
+	/*ok*/ "Location", //697
+	/*ok*/ "getResponseHeader", //698
+	/*ok*/ "jump", //699
+	/*ok*/ "Gen", //700
+	/*ok*/ "AGEN URL =", //701
+	/*ok*/ "GenUrl", //702
+	/*ok*/ "if(API.Gen){if(API.GenT>=1000)API.GenT=API.GenT/2;API.Gen=false;}else if(API.GenT<512000)API.GenT=API.GenT*2; AGen();", //703
+	/*ok*/ "GenT", //704
+	/*ok*/ "getChannel_list", //705
+	/*ok*/ "responseXML", //706
+	/*ok*/ "GETTING XML SOURCE!!!", //707
+	/*ok*/ "<b style=\"color:yellow\">Wrong address or an Error in the playlist! </b>", //708
+	/*ok*/ "stopRequest", //709
+	/*ok*/ "abort", //710
+	/*ok*/ "chan_counter", //711
+	/*ok*/ "nodeValue", //712
+	/*ok*/ "childNodes", //713
+	/*ok*/ "getElementsByTagName", //714
+	/*ok*/ "getAttributeNode", //715
+	/*ok*/ "All Categories", //716
+	/*ok*/ "\x0A", //717
+	/*ok*/ "#EXTINF:", //718
+	/*ok*/ "/dtv", //719
+	/*ok*/ "#EXTM3U", //720
+	/*ok*/ "cache=", //721
+	/*ok*/ "tvg-name=\"", //722
+	/*ok*/ "tvg-shift=", //723
+	/*ok*/ "tvg-logo=\"", //724
+	/*ok*/ "aspect-ratio=", //725
+	/*ok*/ "16:9", //726
+	/*ok*/ "16x9", //727
+	/*ok*/ "14:9", //728
+	/*ok*/ "14x9", //729
+	/*ok*/ "4:3z2", //730
+	/*ok*/ "4x3z2", //731
+	/*ok*/ "4:3z1", //732
+	/*ok*/ "4x3z1", //733
+	/*ok*/ "3", //734
+	/*ok*/ "4:3", //735
+	/*ok*/ "4x3", //736
+	/*ok*/ "4", //737
+	/*ok*/ "x-zoom", //738
+	/*ok*/ "5", //739
+	/*ok*/ "auto", //740
+	/*ok*/ "6", //741
+	/*ok*/ "audio-track=", //742
+	/*ok*/ "group-title=\"", //743
+	/*ok*/ ",", //744
+	/*ok*/ ".png", //745
+	/*ok*/ "Category : ", //746
+	/*ok*/ "no_name", //747
+	/*ok*/ "text", //748
+	/*ok*/ "all_logo", //749
+	/*ok*/ "all_size", //750
+	/*ok*/ "all_audiotrack_num", //751
+	/*ok*/ "all_buffer", //752
+	/*ok*/ "all_timeshift", //753
+	/*ok*/ "all_region", //754
+	/*ok*/ "all_parser", //755
+	/*ok*/ "channel", //756
+	/*ok*/ "stream_url", //757
+	/*ok*/ "logo_30x30", //758
+	/*ok*/ "description", //759
+	/*ok*/ "category_id", //760
+	/*ok*/ "audiotrack_num", //761
+	/*ok*/ "playlist_url", //762
+	/*ok*/ "category", //763
+	/*ok*/ "category_title", //764
+	/*ok*/ "setCategory", //765
+	/*ok*/ "This category is empty!", //766
+	/*ok*/ "Select the Quality", //767
+	/*ok*/ "select_list", //768
+	/*ok*/ "last_page_counter", //769
+	/*ok*/ "pages", //770
+	/*ok*/ "updateBox", //771
+	/*ok*/ "<div><div style=\"text-align:center;width:100%;height:10px;padding:4px;font-size:20px;\">", //772
+	/*ok*/ "</div><br>", //773
+	/*ok*/ "style=\"color:#ffffff; border: 2px solid #ffffff\" ", //774
+	/*ok*/ "<li ", //775
+	/*ok*/ ">", //776
+	/*ok*/ "</li>", //777
+	/*ok*/ "<div style=\"height:25px;\"><div id=\"navi_button\"><img src=\"img/buttons/exit.png\"></img></div><span id=\"navi_helpertext\">Exit</span>", //778
+	/*ok*/ "<div id=\"navi_button\"><img src=\"img/buttons/move.png\"></img></div><span id=\"navi_helpertext\">Move</span>", //779
+	/*ok*/ "<div id=\"navi_button\"><img src=\"img/buttons/enter.png\"></img></div><span id=\"navi_helpertext\">Enter</span></div></div>", //780
+	/*ok*/ "selectNextItem", //781
+	/*ok*/ "selectPrevItem", //782
+	/*ok*/ "SelectCategory", //783
+	/*ok*/ "SelectFav", //784
+	/*ok*/ "SelectSize", //785
+	/*ok*/ "ch_t", //786
+	/*ok*/ "cur_time", //787
+	/*ok*/ "run", //788
+	/*ok*/ "loading", //789
+	/*ok*/ "loadingshowTimer", //790
+	/*ok*/ "loadingstep", //791
+	/*ok*/ "loadingshow_timer", //792
+	/*ok*/ "index", //793
+	/*ok*/ "imgAnim", //794
+	/*ok*/ "img/loading/loading_0", //795
+	/*ok*/ "img/loading/loading_", //796
+	/*ok*/ "Display.loadingstep();", //797
+	/*ok*/ "Player.ReturnMenu();", //798
+	/*ok*/ "showplayer", //799
+	/*ok*/ "PAUSE_VOD", //800
+	/*ok*/ "help_navi_l_player", //801
+	/*ok*/ "p_epg_line", //802
+	/*ok*/ "progressBarBG", //803
+	/*ok*/ "560px", //804
+	/*ok*/ "725px", //805
+	/*ok*/ "580px", //806
+	/*ok*/ "745px", //807
+	/*ok*/ "860px", //808
+	/*ok*/ "p_info_line", //809
+	/*ok*/ "help_navi_vod_player", //810
+	/*ok*/ "statusbar", //811
+	/*ok*/ "68px", //812
+	/*ok*/ "vod_pause", //813
+	/*ok*/ "vod_play", //814
+	/*ok*/ "39px", //815
+	/*ok*/ "48px", //816
+	/*ok*/ "30px", //817
+	/*ok*/ "40px", //818
+	/*ok*/ "repeat", //819
+	/*ok*/ "Repeat mode", //820
+	/*ok*/ "Continuous playback", //821
+	/*ok*/ "70px", //822
+	/*ok*/ "130px", //823
+	/*ok*/ "595px", //824
+	/*ok*/ "740px", //825
+	/*ok*/ "140px", //826
+	/*ok*/ "20px", //827
+	/*ok*/ "605px", //828
+	/*ok*/ "750px", //829
+	/*ok*/ "ya_prog_id", //830
+	/*ok*/ "epg_info", //831
+	/*ok*/ "100px", //832
+	/*ok*/ "p_second_line", //833
+	/*ok*/ "infobar_timer", //834
+	/*ok*/ "infobarTimer", //835
+	/*ok*/ "epg_info_step", //836
+	/*ok*/ "Display.hideplayer()", //837
+	/*ok*/ "status_timer", //838
+	/*ok*/ "statusTimer", //839
+	/*ok*/ "status1_timer", //840
+	/*ok*/ "status1Timer", //841
+	/*ok*/ "Display.hidestatus()", //842
+	/*ok*/ "getIdn(\"statusbar1\")", //843
+	/*ok*/ "ShowTools", //844
+	/*ok*/ "serieC", //845
+	/*ok*/ "blockNavigation", //846
+	/*ok*/ "send_Return", //847
+	/*ok*/ "sendReturnEvent", //848
+	/*ok*/ "<b style=\"color:yellow\">To quit - press \"EXIT\" again!</b>", //849
+	/*ok*/ "KeyHandler.send_Return=false;", //850
+	/*ok*/ "ReturnMenu", //851
+	/*ok*/ "focus", //852
+	/*ok*/ "MainMenu_Anchor", //853
+	/*ok*/ "KEY_TOOLS", //854
+	/*ok*/ "LoadingPlayer_Anchor", //855
+	/*ok*/ "LivePlayer_Anchor", //856
+	/*ok*/ "VODPlayer_Anchor", //857
+	/*ok*/ "Selectbox_Anchor", //858
+	/*ok*/ "RedFav_Anchor", //859
+	/*ok*/ "Guide_Anchor", //860
+	/*ok*/ "Setup_Anchor", //861
+	/*ok*/ "KanalSelector", //862
+	/*ok*/ "NumberEntered", //863
+	/*ok*/ "Input error", //864
+	/*ok*/ "Keys10", //865
+	/*ok*/ "KEY_1", //866
+	/*ok*/ "KEY_2", //867
+	/*ok*/ "KEY_3", //868
+	/*ok*/ "KEY_4", //869
+	/*ok*/ "KEY_5", //870
+	/*ok*/ "KEY_6", //871
+	/*ok*/ "7", //872
+	/*ok*/ "KEY_7", //873
+	/*ok*/ "8", //874
+	/*ok*/ "KEY_8", //875
+	/*ok*/ "9", //876
+	/*ok*/ "KEY_9", //877
+	/*ok*/ "KEY_0", //878
+	/*ok*/ "info", //879
+	/*ok*/ "ChSelectorTimeout", //880
+	/*ok*/ "KeyHandler.KanalSelector()", //881
+	/*ok*/ "RedFavKeyDown", //882
+	/*ok*/ "keyCode", //883
+	/*ok*/ "KEY_EXIT", //884
+	/*ok*/ "KEY_DOWN", //885
+	/*ok*/ "KEY_UP", //886
+	/*ok*/ "KEY_LEFT", //887
+	/*ok*/ "KEY_RIGHT", //888
+	/*ok*/ "KEY_RED", //889
+	/*ok*/ "KEY_GREEN", //890
+	/*ok*/ "KEY_YELLOW", //891
+	/*ok*/ "KEY_BLUE", //892
+	/*ok*/ "KEY_RETURN", //893
+	/*ok*/ "getIdn('main')", //894
+	/*ok*/ "KEY_STOP", //895
+	/*ok*/ "GuideKeyDown", //896
+	/*ok*/ "MainMenuKeyDown", //897
+	/*ok*/ "ya_prog_info_arr", //898
+	/*ok*/ "There is no EPG!", //899
+	/*ok*/ "openWindow", //900
+	/*ok*/ "MAC = ", //901
+	/*ok*/ " | Parser = ", //902
+	/*ok*/ "KEY_INFO", //903
+	/*ok*/ "SetupFormular();", //904
+	/*ok*/ "KEY_PANEL_MENU", //905
+	/*ok*/ "help_step", //906
+	/*ok*/ "KEY_ENTER", //907
+	/*ok*/ "[[[[[[[[[[[[[[FAV]]]]]]]]]]]]]]]", //908
+	/*ok*/ "KEY_FF", //909
+	/*ok*/ "total_time", //910
+	/*ok*/ "resumeVideo", //911
+	/*ok*/ "pauseVideo", //912
+	/*ok*/ ": <font style='font-size:16px;color:white;'>scroll page</font><font style='font-size:16px;color:cyan;'> P-/P+ </font>: <font style='font-size:16px;color:white;'>region - </font><font style='font-size:16px;color:cyan;'>", //913
+	/*ok*/ "</font> : <font style='font-size:16px;color:white;'>index - </font><font style='font-size:16px;color:cyan;'>", //914
+	/*ok*/ "ch_index", //915
+	/*ok*/ "</font> :", //916
+	/*ok*/ "creating Yandex EPG from database", //917
+	/*ok*/ "GetYandexBase()", //918
+	/*ok*/ "KEY_PAUSE", //919
+	/*ok*/ "KEY_RW", //920
+	/*ok*/ "Resume playback", //921
+	/*ok*/ "Repeat playback", //922
+	/*ok*/ "All modes are disabled!", //923
+	/*ok*/ "KEY_PLAY", //924
+	/*ok*/ "ChannelSetupFormular()", //925
+	/*ok*/ "SEFSetNextAudioStream", //926
+	/*ok*/ "KEY_SUBTITLE", //927
+	/*ok*/ "LoadingPlayerKeyDown", //928
+	/*ok*/ "SelectboxKeyDown", //929
+	/*ok*/ "Select Size", //930
+	/*ok*/ "LivePlayerKeyDown", //931
+	/*ok*/ "<table><tr><td><img src=\"img/buttons/move_m.png\"></img></td><td>- Set Zoom</td></tr></table>", //932
+	/*ok*/ "NO EPG!", //933
+	/*ok*/ "setSize", //934
+	/*ok*/ "get3DMode", //935
+	/*ok*/ "change3DMode", //936
+	/*ok*/ "Flash player", //937
+	/*ok*/ "StartSlideShow();", //938
+	/*ok*/ "Start SlideShow", //939
+	/*ok*/ "Stop SlideShow", //940
+	/*ok*/ "No data!", //941
+	/*ok*/ "black_line", //942
+	/*ok*/ "black_line_top", //943
+	/*ok*/ "VODPlayerKeyDown", //944
+	/*ok*/ "PercentJump", //945
+	/*ok*/ "0%", //946
+	/*ok*/ "MinutesJump", //947
+	/*ok*/ "save_time", //948
+	/*ok*/ "PlaySaveTime", //949
+	/*ok*/ "getIdn('selectbox');getIdb('rightHalf');KeyHandler.setFocus(3);", //950
+	/*ok*/ "pluginObjectNNavi", //951
+	/*ok*/ "GetFirmware", //952
+	/*ok*/ "d= ", //953
+	/*ok*/ "-", //954
+	/*ok*/ "2011", //955
+	/*ok*/ "2012", //956
+	/*ok*/ "2013", //957
+	/*ok*/ "2014", //958
+	/*ok*/ "SefPlugin", //959
+	/*ok*/ "pluginObjectSef", //960
+	/*ok*/ "Sef", //961
+	/*ok*/ "plugin", //962
+	/*ok*/ "pluginPlayer", //963
+	/*ok*/ "pluginObjectTVMW", //964
+	/*ok*/ "Screen3Dplugin", //965
+	/*ok*/ "pluginObjectScreen3D", //966
+	/*ok*/ "SetMediaSource", //967
+	/*ok*/ "OnConnectionFailed", //968
+	/*ok*/ "Player.OnConnectionFailed", //969
+	/*ok*/ "OnNetworkDisconnected", //970
+	/*ok*/ "Player.OnNetworkDisconnected", //971
+	/*ok*/ "OnStreamNotFound", //972
+	/*ok*/ "Player.OnStreamNotFound", //973
+	/*ok*/ "OnRenderError", //974
+	/*ok*/ "Player.OnRenderError", //975
+	/*ok*/ "OnBufferingStart", //976
+	/*ok*/ "Player.OnBufferingStart", //977
+	/*ok*/ "OnBufferingProgress", //978
+	/*ok*/ "Player.OnBufferingProgress", //979
+	/*ok*/ "OnBufferingComplete", //980
+	/*ok*/ "Player.OnBufferingComplete", //981
+	/*ok*/ "OnCurrentPlayTime", //982
+	/*ok*/ "Player.OnCurrentPlayTime", //983
+	/*ok*/ "Flag3DEffectSupport", //984
+	/*ok*/ "Flag3DTVConnect", //985
+	/*ok*/ "mode3D", //986
+	/*ok*/ "status3D", //987
+	/*ok*/ "3D OFF", //988
+	/*ok*/ "SIDE - BY - SIDE", //989
+	/*ok*/ "TOP - BOTTOM", //990
+	/*ok*/ "Check3DEffectMode", //991
+	/*ok*/ "Set3DEffectMode", //992
+	/*ok*/ "error", //993
+	/*ok*/ "eerr", //994
+	/*ok*/ "Unsupported container", //995
+	/*ok*/ "Unsupported video codec", //996
+	/*ok*/ "Unsupported audio codec", //997
+	/*ok*/ "Unsupported aspect ratio", //998
+	/*ok*/ "Unsupported refresh rate", //999
+	/*ok*/ "Corrupted stream!", //1000
+	/*ok*/ "Missing File", //1001
+	/*ok*/ "Disconnected network", //1002
+	/*ok*/ "Connection failed", //1003
+	/*ok*/ "serr", //1004
+	/*ok*/ "Player.ReturnMenu()", //1005
+	/*ok*/ "AutoReStart", //1006
+	/*ok*/ "Player.play(Player.url,0)", //1007
+	/*ok*/ "BufferingTimer", //1008
+	/*ok*/ "Auto Restart", //1009
+	/*ok*/ "Buffer : 1%", //1010
+	/*ok*/ "Buffer : ", //1011
+	/*ok*/ "%", //1012
+	/*ok*/ "buffering_timer", //1013
+	/*ok*/ "message", //1014
+	/*ok*/ "GetDuration", //1015
+	/*ok*/ "Execute", //1016
+	/*ok*/ ".mp3", //1017
+	/*ok*/ "h_url", //1018
+	/*ok*/ "GetResolution", //1019
+	/*ok*/ "Player.GetVideoSize();", //1020
+	/*ok*/ "GetAudioNum", //1021
+	/*ok*/ "<tr><table><tr><td><img src=\"img/buttons/red_m.png\"></img></td><td>- Set Quality</td></tr></table></tr>", //1022
+	/*ok*/ "if(Player.message!=\"\")Display.status(\"<table>\"+Player.message+\"</table>\",6000);Main.saveHistory(Player.h_url);if(Player.state==Player.PLAYING_VOD)Player.getSaveTime();", //1023
+	/*ok*/ "Player.message=\"\";", //1024
+	/*ok*/ "Display.hideplayer();", //1025
+	/*ok*/ "SetBuffer", //1026
+	/*ok*/ "SetTotalBufferSize", //1027
+	/*ok*/ "SetInitialBuffer", //1028
+	/*ok*/ "SetInitialTimeOut", //1029
+	/*ok*/ "SetPendingBuffer", //1030
+	/*ok*/ "Player deinit", //1031
+	/*ok*/ "tnum", //1032
+	/*ok*/ "long_pause", //1033
+	/*ok*/ "SaveUrl", //1034
+	/*ok*/ "Stop", //1035
+	/*ok*/ "ClearScreen", //1036
+	/*ok*/ "Close", //1037
+	/*ok*/ "SEFPlay", //1038
+	/*ok*/ "Play", //1039
+	/*ok*/ "url.dat", //1040
+	/*ok*/ "getSaveTime", //1041
+	/*ok*/ "video/x-flv", //1042
+	/*ok*/ "Display.status(\" Resume ?\",5000);", //1043
+	/*ok*/ "Player.save_time=0", //1044
+	/*ok*/ "statusmessage", //1045
+	/*ok*/ "resume!", //1046
+	/*ok*/ "JumpForward", //1047
+	/*ok*/ "Display.status(\"resume failed!\",2000);Player.play(Player.url,0);", //1048
+	/*ok*/ "GetVideoResolution", //1049
+	/*ok*/ "GetVideoHeight", //1050
+	/*ok*/ "GetVideoWidth", //1051
+	/*ok*/ "X", //1052
+	/*ok*/ "- MP3 -", //1053
+	/*ok*/ "GetVideoSize", //1054
+	/*ok*/ "Player.setSize(Player.size,1,1);", //1055
+	/*ok*/ "16x9 FULL", //1056
+	/*ok*/ "ORIGINAL", //1057
+	/*ok*/ "w/h=1.67", //1058
+	/*ok*/ "w/h=1.56", //1059
+	/*ok*/ "4x3 ZOOM 2", //1060
+	/*ok*/ "w/h=1.45", //1061
+	/*ok*/ "4x3 ZOOM 1", //1062
+	/*ok*/ "w/h=2", //1063
+	/*ok*/ "X-ZOOM - set size: CH LIST", //1064
+	/*ok*/ " _ w=", //1065
+	/*ok*/ "% _ h=", //1066
+	/*ok*/ "ORIGINAL ZOOM 1", //1067
+	/*ok*/ "16x9 ZOOM 1", //1068
+	/*ok*/ "ORIGINAL ZOOM 2", //1069
+	/*ok*/ "16x9 ZOOM 2", //1070
+	/*ok*/ "Not specified", //1071
+	/*ok*/ "Not specified!", //1072
+	/*ok*/ "<tr><table><tr><td><img src=\"img/buttons/blue_m.png\"></img></td><td>- ", //1073
+	/*ok*/ "</td></tr></table></tr>", //1074
+	/*ok*/ "SetDisplayArea", //1075
+	/*ok*/ "SetCropArea", //1076
+	/*ok*/ "JumpBackward", //1077
+	/*ok*/ "delta_time", //1078
+	/*ok*/ " min.", //1079
+	/*ok*/ "TestTime", //1080
+	/*ok*/ " > > > ", //1081
+	/*ok*/ "Resume", //1082
+	/*ok*/ "Player.MinutesJump(-0.05);", //1083
+	/*ok*/ "Pause", //1084
+	/*ok*/ "Player.long_pause=true;", //1085
+	/*ok*/ "Connection failed!", //1086
+	/*ok*/ "Player", //1087
+	/*ok*/ "1.000", //1088
+	/*ok*/ "InitPlayer", //1089
+	/*ok*/ "OnEvent", //1090
+	/*ok*/ "Player.SefOnEvent", //1091
+	/*ok*/ "SetPlayerProperty", //1092
+	/*ok*/ "StartPlayback", //1093
+	/*ok*/ "SefOnEvent", //1094
+	/*ok*/ "Function is Not available!", //1095
+	/*ok*/ "Only one sound track!", //1096
+	/*ok*/ "GetCurrentStreamID", //1097
+	/*ok*/ "SetAudioStream", //1098
+	/*ok*/ "LangCodes", //1099
+	/*ok*/ "Albenian", //1100
+	/*ok*/ "Armenian", //1101
+	/*ok*/ "Azerbaijan", //1102
+	/*ok*/ "Belorussian", //1103
+	/*ok*/ "Bulgar", //1104
+	/*ok*/ "Chinese", //1105
+	/*ok*/ "English", //1106
+	/*ok*/ "French", //1107
+	/*ok*/ "German", //1108
+	/*ok*/ "Italian", //1109
+	/*ok*/ "Japanese", //1110
+	/*ok*/ "Kazakh", //1111
+	/*ok*/ "Korian", //1112
+	/*ok*/ "Portuguese", //1113
+	/*ok*/ "Russian", //1114
+	/*ok*/ "Slovak", //1115
+	/*ok*/ "Slovenian", //1116
+	/*ok*/ "Spanish", //1117
+	/*ok*/ "Serbian", //1118
+	/*ok*/ "Swedish", //1119
+	/*ok*/ "Turkish", //1120
+	/*ok*/ "Ukranian", //1121
+	/*ok*/ "Uzbek", //1122
+	/*ok*/ "SetStreamID", //1123
+	/*ok*/ "GetStreamLanguageInfo", //1124
+	/*ok*/ "Unknown", //1125
+	/*ok*/ " audio track \u2116", //1126
+	/*ok*/ "<tr><td>", //1127
+	/*ok*/ "</td></tr>", //1128
+	/*ok*/ "<tr><td>Wrong \u2116 of audio track!</td></tr>", //1129
+	/*ok*/ "GetTotalNumOfStreamID", //1130
+	/*ok*/ "<tr><table><tr><td><img src=\"img/buttons/green_m.png\"></img></td><td> - Change audio track</td></tr></table></tr>", //1131
+	/*ok*/ "<tr><td><img src=\"img/buttons/green_m.png\"></img> or \"AD/SUBT\" - Change audio track</td></tr>", //1132
+	/*ok*/ "search_h", //1133
+	/*ok*/ "<div id=\"allInput\"><form>", //1134
+	/*ok*/ "Enter code.", //1135
+	/*ok*/ "<span id=\"text_form0\">Access code to \"XXX\" (from 0 to 9999) : </span><input id=\"", //1136
+	/*ok*/ "\" type=\"text\" size=\"", //1137
+	/*ok*/ "\" maxlength=\"4\"></input>", //1138
+	/*ok*/ "Enter your Search here ", //1139
+	/*ok*/ "<span id=\"psearch\"> Find : </span><input id=\"", //1140
+	/*ok*/ "\" maxlength=\"200\"></input>", //1141
+	/*ok*/ "Enter an address ", //1142
+	/*ok*/ "<span id=\"psearch\"> Address : </span><input id=\"", //1143
+	/*ok*/ "</form><form><span>\"ENTER\" - confirm input.</span></form><form><span>\"EXIT\" and \"RETURN\" - go back.</span></form>", //1144
+	/*ok*/ "<h3 style=\"padding-top:150px;text-align:center;\"> Warning !!!<br>If you provide URL of the playlist<br> and file extension doesnt contain \".xml\" or \".m3u\" ,<br>then put \"#\" in the front of URL.</h3>", //1145
+	/*ok*/ "</div>", //1146
+	/*ok*/ "Keyboard", //1147
+	/*ok*/ "setKeypadPos", //1148
+	/*ok*/ "setQWERTYPos", //1149
+	/*ok*/ "setString", //1150
+	/*ok*/ "setKeyFunc", //1151
+	/*ok*/ "setEnterFunc", //1152
+	/*ok*/ "value", //1153
+	/*ok*/ "Main.openCommonFile(Main.pl_url)", //1154
+	/*ok*/ "<b style=\"color:#00ccff\">Please wait! Searching...</b>", //1155
+	/*ok*/ "<b style=\"color:#00ccff\">Access granted!</b>", //1156
+	/*ok*/ "#", //1157
+	/*ok*/ "allInput", //1158
+	/*ok*/ "Edit impossible! Too big size.", //1159
+	/*ok*/ "stream", //1160
+	/*ok*/ "Editing options ", //1161
+	/*ok*/ "<div id=\"allInput\"><form><span>Name ", //1162
+	/*ok*/ " : </span></form><form><input id=\"0\" type=\"text\" size=\"", //1163
+	/*ok*/ "\" maxlength=\"200\"/></form><form><span>URL address ", //1164
+	/*ok*/ " : </span></form><form><input id=\"1\" type=\"text\" size=\"", //1165
+	/*ok*/ "\" maxlength=\"200\"/></form><form><span>Description, additional information : </span></form>", //1166
+	/*ok*/ "<form><input id=\"", //1167
+	/*ok*/ "\" maxlength=\"200\"/></form>", //1168
+	/*ok*/ "<form><span>Icons address ", //1169
+	/*ok*/ " : </span></form><form><input id=\"", //1170
+	/*ok*/ "<form><span>Starting aspect ratio :</span></form><form><span>\"0\"- 16X9 FULL or ORIGINAL , \"1\"- 14X9 ,</span></form><form><span>\"2\"- 4X3 ZOOM 2 , \"3\"- 4X3 ZOOM 1 ,\"4\"- 4X3 , </span></form><form><span id=\"text_form0\">\"5\"- X-ZOOM , \"6\"- AUTO . </span><input id=\"", //1171
+	/*ok*/ "\" maxlength=\"2\"/></form><form><span id=\"text_form0\">Audio track number ( 1, 2, 3 . . . ) : </span><input id=\"", //1172
+	/*ok*/ "\"  type=\"text\" size=\"", //1173
+	/*ok*/ "\" maxlength=\"2\"/></form><form><span id=\"text_form0\">Shift time EPG ( +/-12 h.) : </span><input id=\"", //1174
+	/*ok*/ "\" maxlength=\"4\"/></form><form><span>Total buffer size  0.5 - 20 ( Mb.).</span></form><form><span id=\"text_form0\">If it is not specified - \"auto\" : </span><input id=\"", //1175
+	/*ok*/ "\" maxlength=\"3\"/></form><form><span>Start after buffer is  10 - 50 ( % ) .</span></form><form><span id=\"text_form0\">If it is not specified - \"auto\" : </span><input id=\"", //1176
+	/*ok*/ "\" maxlength=\"3\"/></form><form><span id=\"text_form0\"> Yandex region code ( \"213\"- Moscow ) : </span><input id=\"", //1177
+	/*ok*/ "\" maxlength=\"6\"/></form>", //1178
+	/*ok*/ "<form></form><form></form><form></form><form></form><form></form><form></form><form></form></div>", //1179
+	/*ok*/ "margin", //1180
+	/*ok*/ "px 0px 0px 0px ", //1181
+	/*ok*/ "SetupKeyDown", //1182
+	/*ok*/ "setup_id", //1183
+	/*ok*/ "ua", //1184
+	/*ok*/ "by", //1185
+	/*ok*/ "-12", //1186
+	/*ok*/ "-11", //1187
+	/*ok*/ "-10", //1188
+	/*ok*/ "-9", //1189
+	/*ok*/ "-8", //1190
+	/*ok*/ "-7", //1191
+	/*ok*/ "-6", //1192
+	/*ok*/ "-5", //1193
+	/*ok*/ "-4", //1194
+	/*ok*/ "-3", //1195
+	/*ok*/ "-2", //1196
+	/*ok*/ "-1", //1197
+	/*ok*/ "+1", //1198
+	/*ok*/ "+2", //1199
+	/*ok*/ "+3", //1200
+	/*ok*/ "+4", //1201
+	/*ok*/ "+5", //1202
+	/*ok*/ "+6", //1203
+	/*ok*/ "+7", //1204
+	/*ok*/ "+8", //1205
+	/*ok*/ "+9", //1206
+	/*ok*/ "+10", //1207
+	/*ok*/ "+11", //1208
+	/*ok*/ "+12", //1209
+	/*ok*/ "10", //1210
+	/*ok*/ "auto-sync", //1211
+	/*ok*/ "auto-unix", //1212
+	/*ok*/ "manual", //1213
+	/*ok*/ "11", //1214
+	/*ok*/ "12", //1215
+	/*ok*/ "16X9", //1216
+	/*ok*/ "14X9", //1217
+	/*ok*/ "4X3-ZOOM 2", //1218
+	/*ok*/ "4X3-ZOOM 1", //1219
+	/*ok*/ "4X3", //1220
+	/*ok*/ "X-ZOOM", //1221
+	/*ok*/ "AUTO", //1222
+	/*ok*/ "Not installed", //1223
+	/*ok*/ "13", //1224
+	/*ok*/ "14", //1225
+	/*ok*/ "15", //1226
+	/*ok*/ "4X3 ZOOM 1", //1227
+	/*ok*/ "4X3 ZOOM 2", //1228
+	/*ok*/ "16", //1229
+	/*ok*/ "16X9 ZOOM 1", //1230
+	/*ok*/ "16X9 ZOOM 2", //1231
+	/*ok*/ "17", //1232
+	/*ok*/ "ORIG.ZOOM 1", //1233
+	/*ok*/ "ORIG.ZOOM 2", //1234
+	/*ok*/ "18", //1235
+	/*ok*/ "square", //1236
+	/*ok*/ "rectangular", //1237
+	/*ok*/ "19", //1238
+	/*ok*/ "on", //1239
+	/*ok*/ "off", //1240
+	/*ok*/ "20", //1241
+	/*ok*/ "0.5", //1242
+	/*ok*/ "0.6", //1243
+	/*ok*/ "0.7", //1244
+	/*ok*/ "0.8", //1245
+	/*ok*/ "0.9", //1246
+	/*ok*/ "21", //1247
+	/*ok*/ "25", //1248
+	/*ok*/ "30", //1249
+	/*ok*/ "35", //1250
+	/*ok*/ "40", //1251
+	/*ok*/ "45", //1252
+	/*ok*/ "50", //1253
+	/*ok*/ "22", //1254
+	/*ok*/ "23", //1255
+	/*ok*/ "24", //1256
+	/*ok*/ "240p", //1257
+	/*ok*/ "480p", //1258
+	/*ok*/ "720p", //1259
+	/*ok*/ "1080p", //1260
+	/*ok*/ "26", //1261
+	/*ok*/ "Moscow", //1262
+	/*ok*/ "Berlin", //1263
+	/*ok*/ "Paris", //1264
+	/*ok*/ "Rome", //1265
+	/*ok*/ "Dublin", //1266
+	/*ok*/ "Madrid", //1267
+	/*ok*/ "Lisbon", //1268
+	/*ok*/ "Vienna", //1269
+	/*ok*/ "Warsaw", //1270
+	/*ok*/ "Kiev", //1271
+	/*ok*/ "Prague", //1272
+	/*ok*/ "Athens", //1273
+	/*ok*/ "Ankara", //1274
+	/*ok*/ "27", //1275
+	/*ok*/ "28", //1276
+	/*ok*/ "preventDefault", //1277
+	/*ok*/ "en", //1278
+	/*ok*/ " Settings , MAC = ", //1279
+	/*ok*/ "</span></form><form style=\"color:#00ccff;font-size:17px;\"><span>", //1280
+	/*ok*/ "</span></form><form style=\"color:#00ccff;font-size:20px;\"><span>Link is too long!", //1281
+	/*ok*/ "<div id=\"allInput\"><form><span> URL of the current playlist : <font style=\"color:#00ccff;font-size:17px;\">\"", //1282
+	/*ok*/ "hidden link", //1283
+	/*ok*/ "\"</span></form><form><span> URL of the Main playlist : </span></form><form><input id=\"0\" type=\"text\" size=\"", //1284
+	/*ok*/ "\" maxlength=\"200\"></input></form>", //1285
+	/*ok*/ "<form><span> URL of the hidden playlist : </span></form><form><input id=\"1\" type=\"text\" size=\"", //1286
+	/*ok*/ "<form><span id=\"text_form3\"> Login for hidden playlist :</span><input id=\"2\" type=\"text\" size=\"", //1287
+	/*ok*/ "\" maxlength=\"40\"></input></form><form><span id=\"text_form3\">Pass for hidden playlist :</span><input id=\"3\" type=\"text\" size=\"", //1288
+	/*ok*/ "\" maxlength=\"40\"></input></form><form><span id=\"text_form3\">UDP proxy ( IP : port ) :</span><input id=\"4\" type=\"text\" size=\"", //1289
+	/*ok*/ "\" maxlength=\"40\"></input></form><form><span id=\"text_form0\">Access code to \"XXX\" ( 0 - 9999 ) : </span><input id=\"5\" type=\"text\" size=\"", //1290
+	/*ok*/ "\" maxlength=\"4\"></input></form><form><span id=\"text_form0\">Code of Fav. name  ( 0 - 9999 ) :</span><input id=\"6\" type=\"text\" size=\"", //1291
+	/*ok*/ "\" maxlength=\"4\"></input></form><form><span>Names of Fav. folders, any, order</span></form><form><span>( name 1 | name 2 | name 3 . . . ) : </span></form><form><input id=\"7\" type=\"text\" size=\"", //1292
+	/*ok*/ "\" maxlength=\"200\"></input></form><form><span id=\"text_form0\"> Yandex region code ( \"213\"- Moscow ) : </span><input id=\"8\" type=\"text\" size=\"", //1293
+	/*ok*/ "\" maxlength=\"7\"></input></form><form><span id=\"text_form1\">EPG from \"m.tv.yandex.</span><img src=\"img/buttons/lr_m.png\"></img><div id=\"9\"></div></form><form><span id=\"text_form1\">EPG Shift time (+/-12 h.)</span><img src=\"img/buttons/lr_m.png\"></img><div id=\"10\"></div></form><form><span id=\"text_form2\">Widget Time : </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"11\"></div></form><form><span id=\"text_form1\">Time zone for \"auto.\" ( +/-12 h.)</span><img src=\"img/buttons/lr_m.png\"></img><div id=\"12\"></div></form><form><span id=\"text_form2\">Starting video size : </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"13\"></div></form><form><span id=\"text_form1\">\"X-ZOOM\" height 50 - 150 ( % )</span><img src=\"img/buttons/lr_m.png\"></img><div id=\"14\"></div></form><form><span id=\"text_form1\">\"X-ZOOM\" width 50 - 150 ( % ) </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"15\"></div></form><form><span id=\"text_form2\">AUTO for w/h<1.35 </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"16\"></div></form><form><span id=\"text_form2\">AUTO for 1.34 < w/h <1.79 </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"17\"></div></form><form><span id=\"text_form2\">AUTO for  w/h > 1.78 </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"18\"></div></form><form><span id=\"text_form2\">Icons shape :</span><img src=\"img/buttons/lr_m.png\"></img><div id=\"19\"></div></form><form><span id=\"text_form1\">External icons :</span><img src=\"img/buttons/lr_m.png\"></img><div id=\"20\"></div></form><form><span>Total buffer size 0.5 - 20 ( Mb.).</span></form><form><span id=\"text_form1\">\"0\"- auto or from the playlist :</span><img src=\"img/buttons/lr_m.png\"></img><div id=\"21\"></div></form><form><span>Start playback after reading </span></form><form><span> from 10 to 50 ( % ) of total buffer size.</span></form><form><span id=\"text_form1\">\"0\"- auto or from the playlist :</span><img src=\"img/buttons/lr_m.png\"></img><div id=\"22\"></div></form><form><span id=\"text_form1\">Bottom help panel  </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"23\"></div></form><form><span id=\"text_form1\">Post MAC address </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"24\"></div></form><form><span id=\"text_form1\">Masking a TV browser </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"25\"></div></form><form><span id=\"text_form1\">Limit the video quality </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"26\"></div></form><form><span id=\"text_form1\">Choose Weather Forecast for </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"27\"></div></form><form><span id=\"text_form1\">Reset to default </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"28\"></div></form><form></form><form></form><form></form><form></form><form></form><form></form><form></form><form></form></div>", //1294
+	/*ok*/ "##", //1295
+	/*ok*/ "###", //1296
+	/*ok*/ "####", //1297
+	/*ok*/ "52px", //1298
+	/*ok*/ "black", //1299
+	/*ok*/ "#999999", //1300
+	/*ok*/ "border", //1301
+	/*ok*/ "2px solid #ffffff", //1302
+	/*ok*/ "blue", //1303
+	/*ok*/ "#eeeeee", //1304
+	/*ok*/ "2px solid #999999", //1305
+	/*ok*/ "reload", //1306
+	/*ok*/ "Main|IP-TV|Films|Series", //1307
+	/*ok*/ "write", //1308
+	/*ok*/ "01", //1309
+	/*ok*/ "display", //1310
+	/*ok*/ "block", //1311
+	/*ok*/ "none", //1312
+	/*ok*/ "getElementsByClassName", //1313
+	/*ok*/ "s=", //1314
+	/*ok*/ "signature=", //1315
+	/*ok*/ "http://185.25.119.98/php/youtubesign/youtube.php?sig=", //1316
+	/*ok*/ "itag%3D", //1317
+	/*ok*/ "HD 1080p.mp4", //1318
+	/*ok*/ "121", //1319
+	/*ok*/ "37", //1320
+	/*ok*/ "HD 720p.mp4", //1321
+	/*ok*/ "120", //1322
+	/*ok*/ "HD 720p.h264", //1323
+	/*ok*/ "84", //1324
+	/*ok*/ "480p.flv", //1325
+	/*ok*/ "360p.mp4", //1326
+	/*ok*/ "240p.mp4", //1327
+	/*ok*/ "36", //1328
+	/*ok*/ "url=", //1329
+	/*ok*/ "sig=", //1330
+	/*ok*/ "&s=", //1331
+	/*ok*/ "&el=embedded", //1332
+	/*ok*/ "&el=detailpage", //1333
+	/*ok*/ "&el=vevo", //1334
+	/*ok*/ "http://www.youtube.com/get_video_info?&video_id=", //1335
+	/*ok*/ "&ps=default&eurl=&gl=US&hl=en", //1336
+	/*ok*/ "itag", //1337
+	/*ok*/ "%2C", //1338
+	/*ok*/ "itag=43", //1339
+	/*ok*/ "itag=", //1340
+	/*ok*/ "&url=", //1341
+	/*ok*/ "vkontakte.ru", //1342
+	/*ok*/ "vk.com", //1343
+	/*ok*/ "=", //1344
+	/*ok*/ "/assets/video/", //1345
+	/*ok*/ "vkid=", //1346
+	/*ok*/ ".vk.flv", //1347
+	/*ok*/ "u", //1348
+	/*ok*/ "/videos/", //1349
+	/*ok*/ "720.mp4", //1350
+	/*ok*/ "720p.mp4", //1351
+	/*ok*/ "480.mp4", //1352
+	/*ok*/ "480p.mp4", //1353
+	/*ok*/ "360.mp4", //1354
+	/*ok*/ "240.mp4", //1355
+	/*ok*/ "http://rutube.ru/api/oembed/?url=", //1356
+	/*ok*/ "&format=xml", //1357
+	/*ok*/ "http://rutube.ru/play/embed/", //1358
+	/*ok*/ "\"m3u8\":", //1359
+	/*ok*/ "reverse", //1360
+	/*ok*/ "Loading EPG...", //1361
+	/*ok*/ "Ya_ready_timeout", //1362
+	/*ok*/ "ukErr();", //1363
+	/*ok*/ "YaHTTP", //1364
+	/*ok*/ "Loaded!", //1365
+	/*ok*/ "J = ", //1366
+	/*ok*/ "<li><font style=\"color:#00ccff;\">", //1367
+	/*ok*/ "<li><font style=\"color:#ffcc00;\">", //1368
+	/*ok*/ "<li><font style=\"color:#ffeeee;\">", //1369
+	/*ok*/ "</font><font style=\"color:#CCCCCC;\">", //1370
+	/*ok*/ "</font></li>", //1371
+	/*ok*/ "<ul>", //1372
+	/*ok*/ "  ", //1373
+	/*ok*/ "</ul>", //1374
+	/*ok*/ "it-", //1375
+	/*ok*/ "__________This is run", //1376
+	/*ok*/ "http://nebo.ddns.net:8881/epg_ita_temp.php?ch=", //1377
+	/*ok*/ "_________________b: ", //1378
+	/*ok*/ "uk_prog_info_arr", //1379
+	/*ok*/ "temp_uk_epg_info_arr", //1380
+	/*ok*/ "http://bleb.org/tv/channel.html?ch=", //1381
+	/*ok*/ "&all", //1382
+	/*ok*/ "_____2____________b: ", //1383
+	/*ok*/ "Loading UK EPG...", //1384
+	/*ok*/ "<table class=\"listings\">", //1385
+	/*ok*/ "<tr>", //1386
+	/*ok*/ "<b>", //1387
+	/*ok*/ "</b>&nbsp;", //1388
+	/*ok*/ "Loading ITA EPG...", //1389
+	/*ok*/ "<div class=\"gen dataz\">", //1390
+	/*ok*/ "Array MA", //1391
+	/*ok*/ "\">", //1392
+	/*ok*/ "</a>", //1393
+	/*ok*/ "&flag=", //1394
+	/*ok*/ "/program/", //1395
+	/*ok*/ "channel=", //1396
+	/*ok*/ "http:", //1397
+	/*ok*/ "https://m.tv.yandex.", //1398
+	/*ok*/ "/channels/", //1399
+	/*ok*/ "?period=all-day", //1400
+	/*ok*/ ": <font style='font-size:16px;color:cyan;'>", //1401
+	/*ok*/ "toDateString", //1402
+	/*ok*/ "</font> : <font style='font-size:16px;color:white;'>scroll page</font><font style='font-size:16px;color:cyan;'> P-/P+ </font> :", //1403
+	/*ok*/ "setDate", //1404
+	/*ok*/ "date=", //1405
+	/*ok*/ "&period=all-day", //1406
+	/*ok*/ "temp_ya_epg_info_arr", //1407
+	/*ok*/ "join", //1408
+	/*ok*/ "Nothing Found!", //1409
+	/*ok*/ "Err();", //1410
+	/*ok*/ "<span class=\"tv-event__time\">", //1411
+	/*ok*/ "<span class=\"tv-event__time-text\">", //1412
+	/*ok*/ "</span>", //1413
+	/*ok*/ "<span class=\"tv-event-title\">", //1414
+	/*ok*/ "Deleting Yandex database", //1415
+	/*ok*/ "location.reload(true);", //1416
+	/*ok*/ "https://tv.yandex.", //1417
+	/*ok*/ "/channels", //1418
+	/*ok*/ "connection", //1419
+	/*ok*/ "structure", //1420
+	/*ok*/ "<img class=\"b-icon\" src=\"", //1421
+	/*ok*/ "<td class=\"l-suplayout__rotator\">", //1422
+	/*ok*/ "https:", //1423
+	/*ok*/ "alt=", //1424
+	/*ok*/ "data-id=", //1425
+	/*ok*/ "Error ", //1426
+	/*ok*/ "___Get-UK-EPGInfo is running", //1427
+	/*ok*/ "uk_epg_info_arr", //1428
+	/*ok*/ "<li><font style=\"color:#ffcc00;font-size:20px;font-weight:bold;\">", //1429
+	/*ok*/ "</font><font style=\"color:#CCCCCC;font-size:20px;font-weight:bold;\">", //1430
+	/*ok*/ "TIME _ HOURS_ MIN ", //1431
+	/*ok*/ "temp_epg_info", //1432
+	/*ok*/ "<font style='color:#00ccff;font-weight:bolder;padding-left:10px;'>", //1433
+	/*ok*/ "http://nebo.", //1434
+	/*ok*/ "q=", //1435
+	/*ok*/ "http://tvqb.ru/", //1436
+	/*ok*/ "user=", //1437
+	/*ok*/ "action=get_test_url&s_key=", //1438
+	/*ok*/ "hash =", //1439
+	/*ok*/ "action=get_result_url_hash&s_key=", //1440
+	/*ok*/ "&hash=", //1441
+	/*ok*/ "md5hash", //1442
+	/*ok*/ "vk.com/video_ext.php?", //1443
+	/*ok*/ "/vkontakte.php?video", //1444
+	/*ok*/ "vkontakte.ru/video_ext.php", //1445
+	/*ok*/ "/vkontakte/vk_kinohranilishe.php?id=", //1446
+	/*ok*/ "youtube.com/watch?v=", //1447
+	/*ok*/ "youtube.com/embed", //1448
+	/*ok*/ "embed/", //1449
+	/*ok*/ ".html", //1450
+	/*ok*/ "md4hash", //1451
+	/*ok*/ "start_logo", //1452
+	/*ok*/ "url(http://neb0.no-ip.biz:8881/pic/IPTVxBG.jpg)", //1453
+	/*ok*/ "visibility", //1454
+	/*ok*/ "visible", //1455
+	/*ok*/ "url(http://neb0.no-ip.biz:8881/pic/set-bg.jpg)", //1456
+	/*ok*/ "hidden", //1457
+	/*ok*/ "scroll", //1458
+	/*ok*/ "scroll_line", //1459
+	/*ok*/ "http://nebo.ddns.net:8881/weather_new.php?city=", //1460
+	/*ok*/ "weather_icons", //1461
+	/*ok*/ "temp", //1462
+	/*ok*/ "/weather_temp_new.php?city=",
+	/*ok*/ "abs", //1464
+	/*ok*/ "new top=", //1465
+	/*ok*/ "460px", //1466
+	/*ok*/ "ACCESS DENIED", //1467
+	/*ok*/ "<b style=\"color:yellow\">", //1468
+	/*ok*/ "url(", //1469
+	/*ok*/ ")", //1470
+	/*ok*/ "<p><b style=\"color:#FFFFFF;font-size:14px;\">", //1471
+	/*ok*/ "</b> ", //1472
+	/*ok*/ "</p>", //1473
+	/*ok*/ "Hello! I am an alert box!", //1474
+	/*ok*/ "setWindowPosition", //1475
+	/*ok*/ "confirm_text", //1476
+	/*ok*/ "<img src=\"http://nebo.ddns.net:8881/pic/bg.jpg\" ></img><br><b style=\"color:EF5C0C;font-size:14px\">Welcome to IPTV<i>x </i>World!!!</b><br><i style=\"font-size:12px\">Courtesy of Multiviewer.TV</i><br><b style=\"color:EF5C0C;\">www.multiviewer.tv</b>", //1477
+	/*ok*/ "setContents", //1478
+	/*ok*/ "turnPopup", //1479
+	/*ok*/ "btn_ok", //1480
+	/*ok*/ "popWindow", //1481
+	/*ok*/ "setWindowPosition1", //1482
+	/*ok*/ "<img src=\"http://nebo.ddns.net:8881/pic/bg-update.jpg\" ></img>", //1483
+	/*ok*/ "confirm", //1484
+	/*ok*/ "backgroundColor", //1485
+	/*ok*/ "b_ok", //1486
+	/*ok*/ "#5fbaff", //1487
+	/*ok*/ "setByttonStyleOnFocus", //1488
+	/*ok*/ "getAttribute", //1489
+	/*ok*/ "#0866aa", //1490
+	/*ok*/ "b_canc", //1491
+	/*ok*/ "setByttonStyleOnBlur", //1492
+	/*ok*/ "KeyDown", //1493
+	/*ok*/ "Options Key code : ", //1494
+	/*ok*/ "closeWindow", //1495
+	/*ok*/ "btn_canc", //1496
+	/*ok*/ "selectButton" //1497
 ];
 
-var widgetAPI = new Common[_$_2f23[1]][_$_2f23[0]]();
-var pluginAPI = new Common[_$_2f23[1]][_$_2f23[2]]();
-var tvKey = new Common[_$_2f23[1]][_$_2f23[3]]();
+var widgetAPI = new Common.API.Widget();
+var pluginAPI = new Common.API.Plugin();
+var tvKey = new Common.API.TVKeyValue();
+
 var Main = {
-    setup_id: _$_2f23[4],
+    setup_id: "",
     YaHTTP: null,
     Ya_ready_timeout: null,
-    XML_URL: _$_2f23[4],
+    XML_URL: "",
     loading_pl: false,
     pre_selected_channel: 0,
     selected_channel: 0,
@@ -1515,18 +1516,18 @@ var Main = {
     play_selected_channel: 0,
     play_selected_page: 0,
     play_chan_array_index: 0,
-    PlayerMode: _$_2f23[4],
+    PlayerMode: "",
     yandextv_mode: false,
     ya_all_day: false,
     ya_base_info: false,
     Ya_flag_step: 0,
-    Ya_flag_name: _$_2f23[4],
+    Ya_flag_name: "",
     ya_prog_id: -1,
-    temp_epg_info: _$_2f23[4],
+    temp_epg_info: "",
     epg_info_step: 0,
     epg_t1: 0,
     epg_t2: 0,
-    ch_index: _$_2f23[4],
+    ch_index: "",
     ya_prog_info_arr: [],
     ya_epg_info_arr: [],
     uk_epg_info_arr: [],
@@ -1537,49 +1538,49 @@ var Main = {
     guide: false,
     block_info: false,
     write: false,
-    usb_info: _$_2f23[4],
-    lost_date: _$_2f23[4],
-    lost_chname: _$_2f23[4],
+    usb_info: "",
+    lost_date: "",
+    lost_chname: "",
     scrolling: 0,
     load_timer: null,
     prev_pl_array: [],
     playlist_prev: false,
     prev_ch_array: [],
     url_arr: [],
-    fav_name: _$_2f23[4],
+    fav_name: "",
     fav_num: 1,
-    fav_url: _$_2f23[4],
-    temp_fav_name: _$_2f23[4],
+    fav_url: "",
+    temp_fav_name: "",
     temp_fav_num: 1,
-    temp_fav_url: _$_2f23[4],
+    temp_fav_url: "",
     block_fav: false,
     play_prev: true,
     help_step: 0,
     help_info: false,
-    MAC: _$_2f23[4],
-    audio_output_device: _$_2f23[4],
-    hardware: _$_2f23[4],
-    hardware_type: _$_2f23[4],
+    MAC: "",
+    audio_output_device: "",
+    hardware: "",
+    hardware_type: "",
     ch_num: 0,
-    name: _$_2f23[4],
-    url: _$_2f23[4],
-    pl_url: _$_2f23[4],
-    pre_pl_url: _$_2f23[4],
-    info: _$_2f23[4],
-    logo: _$_2f23[4],
+    name: "",
+    url: "",
+    pl_url: "",
+    pre_pl_url: "",
+    info: "",
+    logo: "",
     ssize: -1,
     a_num: 0,
     buffer: 0,
     ibuffer: 0,
-    timeshift: _$_2f23[4],
-    search_on: _$_2f23[4],
-    region: _$_2f23[4],
-    parser: _$_2f23[5],
-    usb_url: _$_2f23[4],
-    playlist_name: _$_2f23[4],
-    ret_url: _$_2f23[4],
-    hurl: _$_2f23[6],
-    Kill: _$_2f23[4],
+    timeshift: "",
+    search_on: "",
+    region: "",
+    parser: "rulenone",
+    usb_url: "",
+    playlist_name: "",
+    ret_url: "",
+    hurl: "nebo.ddns.net",
+    Kill: "",
     number_p: 1,
     step_read_dir: 1,
     FAV: false,
@@ -1605,920 +1606,955 @@ var Main = {
     St_size: null,
     IntervalUpdateTime: null,
     SlideShowInterval: null,
-    protocol: _$_2f23[7],
+    protocol: "http://",
     openWindow: null,
-    txt: _$_2f23[8],
+    txt: "mac=",
     trp: 81,
-    version: _$_2f23[9],
-    ver: _$_2f23[10]
+    version: "0.426",
+    ver: "2.96"
 };
-Main[_$_2f23[11]] = function () {
+
+Main.onLoad = function () {
     showImage();
     try {
-        this[_$_2f23[12]] = getId(_$_2f23[13]);
-        this[_$_2f23[14]] = this[_$_2f23[12]][_$_2f23[15]]();
-        this[_$_2f23[16]] = getId(_$_2f23[17]);
-        this[_$_2f23[18]] = getId(_$_2f23[19]);
-        this[_$_2f23[20]] = this[_$_2f23[18]][_$_2f23[21]]();
-        var i = getId(_$_2f23[22]);
-        this[_$_2f23[23]] = i[_$_2f23[24]]();
-        this[_$_2f23[25]] = i[_$_2f23[26]](1);
-        if (this[_$_2f23[25]] == _$_2f23[27]) {
-            Main[_$_2f23[28]] = true
+        this.Network = getId("pluginNetwork");
+        this.MAC = this.Network.GetMAC();
+        this.St = getId("pluginStorage");
+        this.Audio = getId("pluginAudio");
+        this.audio_output_device = this.Audio.GetOutputDevice();
+        var i = getId("pluginTV");
+        this.hardware_type = i.GetProductType();
+        this.hardware = i.GetProductCode(1);
+        if (this.hardware == "LN40B650_KOR") {
+            Main.Emu = true
         } else {
-            if (this[_$_2f23[25]][_$_2f23[30]](_$_2f23[29]) > 1) {
-                Main[_$_2f23[31]] = true
+            if (this.hardware.indexOf("C") > 1) {
+                Main.seriesC = true
             } else {
-                if (this[_$_2f23[25]][_$_2f23[30]](_$_2f23[32]) > 1 || (this[_$_2f23[25]][_$_2f23[30]](_$_2f23[29]) < 0 && this[_$_2f23[25]][_$_2f23[30]](_$_2f23[33]) < 0)) {
-                    Main[_$_2f23[34]] = true;
-                    var j = _$_2f23[35];
-                    var l = document[_$_2f23[37]](_$_2f23[36]);
-                    l[_$_2f23[38]] = _$_2f23[39], l[_$_2f23[40]] = _$_2f23[41], l[_$_2f23[42]] = _$_2f23[43] + j, document[_$_2f23[45]][_$_2f23[44]](l)
+                if (this.hardware.indexOf("E") > 1 || (this.hardware.indexOf("C") < 0 && this.hardware.indexOf("D") < 0)) {
+                    Main.seriesE = true;
+                    var j = "IME_XT9/ime.js";
+                    var l = document.createElement("script");
+                    l.language = "javascript", l.type = "text/javascript", l.src = "$MANAGER_WIDGET/Common/" + j, document.body.appendChild(l)
                 }
             }
         };
-        if (Main[_$_2f23[28]]) {
-            alert(_$_2f23[46]);
-            setTimeout(_$_2f23[47], 2000)
+        if (Main.Emu) {
+            alert("############## NOT FOR EMULATOR !!! ################");
+            setTimeout(function(){ Location.reload(true); }, 2000)
         } else {
-            if (API[_$_2f23[48]]() && Player[_$_2f23[48]]()) {
-                window[_$_2f23[49]] = Main[_$_2f23[50]];
-                widgetAPI[_$_2f23[51]]();
-                Display[_$_2f23[53]](_$_2f23[52], 2000);
-                Display[_$_2f23[54]]();
-                setTimeout(_$_2f23[55], 2500)
+            if (API.init() && Player.init()) {
+                window.onShow = Main.onShowEventTVKey;
+                widgetAPI.sendReadyEvent();
+                Display.status("Loading...", 2000);
+                Display.loadingshow();
+                setTimeout(function(){ Main.InitScript(); }, 2500)
             }
         }
     } catch (b) {}
 };
-Main[_$_2f23[56]] = function () {
-    if (Main[_$_2f23[57]]) {
-        Main[_$_2f23[58]] = [];
-        if (API[_$_2f23[60]][_$_2f23[30]](_$_2f23[59]) > 0) {
-            Main[_$_2f23[61]] = true;
-            Main[_$_2f23[62]](API[_$_2f23[60]])
+
+Main.InitScript = function () {
+    if (Main.Supe_ext) {
+        Main.url_arr = [];
+        if (API.star_url.indexOf("fav.dat") > 0) {
+            Main.FAV = true;
+            Main.openCommonFile(API.star_url)
         } else {
-            if (API[_$_2f23[60]][_$_2f23[30]](_$_2f23[63]) == 0) {
-                if (API[_$_2f23[65]][_$_2f23[64]] > 1) {
-                    Main[_$_2f23[66]](_$_2f23[63], API[_$_2f23[65]])
+            if (API.star_url.indexOf("OpenFav") == 0) {
+                if (API.fav_start_channels.length > 1) {
+                    Main.ReadPlArr("OpenFav", API.fav_start_channels)
                 } else {
-                    Main[_$_2f23[61]] = true;
-                    Main[_$_2f23[62]](Main[_$_2f23[67]])
+                    Main.FAV = true;
+                    Main.openCommonFile(Main.fav_url)
                 }
             } else {
-                API[_$_2f23[68]] = API[_$_2f23[60]];
-                API[_$_2f23[69]](API[_$_2f23[60]])
+                API.XML_URL = API.star_url;
+                API.Request(API.star_url)
             }
         };
-        setTimeout(_$_2f23[70], 5000)
+        setTimeout(function(){ setGen(); }, 5000)
     };
     showWeather();
     showTemp();
-    setTimeout(_$_2f23[71], 800);
-    setTimeout(_$_2f23[72], 1000);
-    setTimeout(_$_2f23[73], 5000)
+    setTimeout(function(){ showScroll(); }, 800);
+    setTimeout(function(){ confirm.popWindow(); }, 1000);
+    setTimeout(function(){ confirm.closeWindow(); }, 5000)
 };
+
 SetVolume = function (o) {
-    if (Main[_$_2f23[20]] == 3 || Main[_$_2f23[23]] == 2) {
-        Display[_$_2f23[53]](_$_2f23[74])
+    if (Main.audio_output_device == 3 || Main.hardware_type == 2) {
+        Display.status("Not available !")
     } else {
-        Main[_$_2f23[18]][_$_2f23[75]](o);
-        var l = Main[_$_2f23[18]][_$_2f23[76]]();
-        var j = _$_2f23[4];
-        var q = Math[_$_2f23[77]](0.44 + l * (1 - l / 360), 10);
-        var p = l > 9 ? l : (_$_2f23[78] + l);
+        Main.Audio.SetVolumeWithKey(o);
+        var l = Main.Audio.GetVolume();
+        var j = "";
+        var q = Math.round(0.44 + l * (1 - l / 360), 10);
+        var p = l > 9 ? l : ("0" + l);
         for (var i = 0; i < q; i++) {
-            j += _$_2f23[79]
+            j += "|"
         };
-        Display[_$_2f23[53]](_$_2f23[80] + p + _$_2f23[81] + j + _$_2f23[82])
+        Display.status("<b style='color:#00ccff;'>VOLUME</b> " + p + " <b style='color:yellow;'>" + j + "</b>")
     }
 };
-Main[_$_2f23[50]] = function () {
-    pluginAPI[_$_2f23[83]]();
-    pluginAPI[_$_2f23[84]]();
-    pluginAPI[_$_2f23[85]](1);
-    pluginAPI[_$_2f23[87]](tvKey[_$_2f23[86]]);
-    pluginAPI[_$_2f23[87]](tvKey[_$_2f23[88]]);
-    pluginAPI[_$_2f23[87]](tvKey[_$_2f23[89]]);
-    pluginAPI[_$_2f23[91]](tvKey[_$_2f23[90]]);
-    pluginAPI[_$_2f23[91]](tvKey[_$_2f23[92]]);
-    pluginAPI[_$_2f23[91]](tvKey[_$_2f23[93]]);
-    pluginAPI[_$_2f23[87]](203);
-    pluginAPI[_$_2f23[87]](204);
-    pluginAPI[_$_2f23[91]](613);
-    pluginAPI[_$_2f23[91]](105);
-    pluginAPI[_$_2f23[91]](106);
-    pluginAPI[_$_2f23[91]](309);
-    pluginAPI[_$_2f23[91]](612);
-    pluginAPI[_$_2f23[91]](1118);
-    pluginAPI[_$_2f23[91]](1219);
-    pluginAPI[_$_2f23[91]](84);
-    pluginAPI[_$_2f23[91]](655);
-    pluginAPI[_$_2f23[91]](650);
-    pluginAPI[_$_2f23[91]](1089);
-    pluginAPI[_$_2f23[91]](1057);
-    pluginAPI[_$_2f23[91]](1083);
-    pluginAPI[_$_2f23[91]](1078);
-    pluginAPI[_$_2f23[91]](1080);
-    pluginAPI[_$_2f23[91]](1086);
-    pluginAPI[_$_2f23[91]](78);
-    pluginAPI[_$_2f23[91]](1249)
+
+Main.onShowEventTVKey = function () {
+    pluginAPI.setOffScreenSaver();
+    pluginAPI.setOffIdleEvent();
+    pluginAPI.SetBannerState(1);
+    pluginAPI.unregistKey(tvKey.KEY_VOL_UP);
+    pluginAPI.unregistKey(tvKey.KEY_VOL_DOWN);
+    pluginAPI.unregistKey(tvKey.KEY_MUTE);
+    pluginAPI.registKey(tvKey.KEY_MENU);
+    pluginAPI.registKey(tvKey.KEY_GUIDE);
+    pluginAPI.registKey(tvKey.KEY_SOURCE);
+    pluginAPI.unregistKey(203);
+    pluginAPI.unregistKey(204);
+    pluginAPI.registKey(613);
+    pluginAPI.registKey(105);
+    pluginAPI.registKey(106);
+    pluginAPI.registKey(309);
+    pluginAPI.registKey(612);
+    pluginAPI.registKey(1118);
+    pluginAPI.registKey(1219);
+    pluginAPI.registKey(84);
+    pluginAPI.registKey(655);
+    pluginAPI.registKey(650);
+    pluginAPI.registKey(1089);
+    pluginAPI.registKey(1057);
+    pluginAPI.registKey(1083);
+    pluginAPI.registKey(1078);
+    pluginAPI.registKey(1080);
+    pluginAPI.registKey(1086);
+    pluginAPI.registKey(78);
+    pluginAPI.registKey(1249)
 };
-curWidget[_$_2f23[94]] = function () {
-    Main[_$_2f23[50]]()
+
+curWidget.onWidgetEvent = function () {
+    Main.onShowEventTVKey()
 };
-Main[_$_2f23[95]] = function () {
-    pluginAPI[_$_2f23[91]](tvKey[_$_2f23[86]]);
-    pluginAPI[_$_2f23[91]](tvKey[_$_2f23[88]]);
-    pluginAPI[_$_2f23[91]](tvKey[_$_2f23[96]]);
-    pluginAPI[_$_2f23[91]](tvKey[_$_2f23[97]]);
-    pluginAPI[_$_2f23[91]](tvKey[_$_2f23[89]])
+
+Main.registVOLTVKey = function () {
+    pluginAPI.registKey(tvKey.KEY_VOL_UP);
+    pluginAPI.registKey(tvKey.KEY_VOL_DOWN);
+    pluginAPI.registKey(tvKey.KEY_PANEL_VOL_UP);
+    pluginAPI.registKey(tvKey.KEY_PANEL_VOL_DOWN);
+    pluginAPI.registKey(tvKey.KEY_MUTE)
 };
-Main[_$_2f23[98]] = function () {
-    this[_$_2f23[99]] = 0;
-    this[_$_2f23[100]] = 0;
-    this[_$_2f23[101]] = 0;
-    if (!this[_$_2f23[102]] && !Main[_$_2f23[103]]) {
-        this[_$_2f23[104]] = []
+
+Main.ResetSelectedPosition = function () {
+    this.selected_channel = 0;
+    this.selected_page = 0;
+    this.chan_array_index = 0;
+    if (!this.guide && !Main.help_info) {
+        this.prev_ch_array = []
     }
 };
-Main[_$_2f23[105]] = function () {
-    this[_$_2f23[106]] = this[_$_2f23[99]];
-    this[_$_2f23[107]] = this[_$_2f23[100]];
-    this[_$_2f23[108]] = this[_$_2f23[101]]
+
+Main.SaveSelectedPosition = function () {
+    this.play_selected_channel = this.selected_channel;
+    this.play_selected_page = this.selected_page;
+    this.play_chan_array_index = this.chan_array_index
 };
-Main[_$_2f23[109]] = function () {
-    this[_$_2f23[99]] = this[_$_2f23[106]];
-    this[_$_2f23[100]] = this[_$_2f23[107]];
-    this[_$_2f23[101]] = this[_$_2f23[108]]
+
+Main.SetSelectedPosition = function () {
+    this.selected_channel = this.play_selected_channel;
+    this.selected_page = this.play_selected_page;
+    this.chan_array_index = this.play_chan_array_index
 };
-Main[_$_2f23[110]] = function () {
-    Main[_$_2f23[111]] = Main[_$_2f23[112]];
-    Main[_$_2f23[113]] = Main[_$_2f23[114]];
-    Main[_$_2f23[67]] = Main[_$_2f23[115]]
+
+Main.SetFavSelectedPosition = function () {
+    Main.fav_num = Main.temp_fav_num;
+    Main.fav_name = Main.temp_fav_name;
+    Main.fav_url = Main.temp_fav_url
 };
-Main[_$_2f23[116]] = function () {
-    getIdn(_$_2f23[117]);
-    KeyHandler[_$_2f23[118]](4);
-    Selectbox[_$_2f23[121]](_$_2f23[119], API[_$_2f23[120]]);
-    getId(_$_2f23[124])[_$_2f23[123]][_$_2f23[122]] = _$_2f23[125];
-    getId(_$_2f23[124])[_$_2f23[123]][_$_2f23[126]] = _$_2f23[127]
+
+Main.showCategorySelector = function () {
+    getIdn("rightHalf");
+    KeyHandler.setFocus(4);
+    Selectbox.setBox("CATEGORIES", API.categories);
+    getId("selectbox").style.top = "60px";
+    getId("selectbox").style.left = "550px"
 };
-Main[_$_2f23[128]] = function () {
-    getIdn(_$_2f23[117]);
-    KeyHandler[_$_2f23[118]](4);
-    Selectbox[_$_2f23[121]](_$_2f23[129], API[_$_2f23[130]]);
-    getId(_$_2f23[124])[_$_2f23[123]][_$_2f23[122]] = _$_2f23[125];
-    getId(_$_2f23[124])[_$_2f23[123]][_$_2f23[126]] = _$_2f23[127]
+
+Main.showFavSelector = function () {
+    getIdn("rightHalf");
+    KeyHandler.setFocus(4);
+    Selectbox.setBox("Select Favourites", API.favorites);
+    getId("selectbox").style.top = "60px";
+    getId("selectbox").style.left = "550px"
 };
-Main[_$_2f23[131]] = function () {
-    KeyHandler[_$_2f23[118]](4);
-    Selectbox[_$_2f23[121]](_$_2f23[132], Main[_$_2f23[58]]);
-    getId(_$_2f23[124])[_$_2f23[123]][_$_2f23[122]] = _$_2f23[133];
-    getId(_$_2f23[124])[_$_2f23[123]][_$_2f23[126]] = _$_2f23[134]
+
+Main.showSiseSelector = function () {
+    KeyHandler.setFocus(4);
+    Selectbox.setBox("Size Selector", Main.url_arr);
+    getId("selectbox").style.top = "120px";
+    getId("selectbox").style.left = "330px"
 };
-Main[_$_2f23[135]] = function () {
-    if (Main[_$_2f23[136]]) {
-        if ((API[_$_2f23[137]] == 0 || API[_$_2f23[137]] == 1)) {
-            setTimeout(_$_2f23[4], 500)
+
+Main.Menu = function () {
+    if (Main.FirstStart) {
+        if ((API.Timemode == 0 || API.Timemode == 1)) {
+            setTimeout(function(){ }, 500)
         }
     };
-    setTimeout(_$_2f23[138], 3000);
-    clearTimeout(this[_$_2f23[139]]);
-    if (!Main[_$_2f23[140]] && !Main[_$_2f23[141]]) {
-        Display[_$_2f23[142]]()
+	setTimeout(function(){ Main.FirstStart=false; }, 3000);
+    clearTimeout(this.load_timer);
+    if (!Main.search && !Main.xxx) {
+        Display.hidestatus()
     };
-    getIdn(_$_2f23[143]);
-    Display[_$_2f23[144]]();
-    Display[_$_2f23[145]]();
-    API[_$_2f23[146]] = true;
-    this[_$_2f23[61]] = false;
-    this[_$_2f23[141]] = false;
-    this[_$_2f23[103]] = false;
-    this[_$_2f23[147]] = false;
-    this[_$_2f23[148]] = false;
-    this[_$_2f23[149]] = false;
-    this[_$_2f23[150]] = false;
-    this[_$_2f23[151]] = true;
-    this[_$_2f23[152]] = API[_$_2f23[68]];
-    getIdn(_$_2f23[124]);
-    getIdn(_$_2f23[153]);
-    getIdb(_$_2f23[117]);
-    getIdn(_$_2f23[154]);
-    getIdn(_$_2f23[155]);
-    getIdn(_$_2f23[156]);
-    getIdn(_$_2f23[157]);
-    Main[_$_2f23[158]]();
-    if (this[_$_2f23[159]]) {
-        KeyHandler[_$_2f23[118]](5)
+    getIdn("statusbar1");
+    Display.hideplayer();
+    Display.loadinghide();
+    API.AsReqMode = true;
+    this.FAV = false;
+    this.xxx = false;
+    this.help_info = false;
+    this.block_info = false;
+    this.loading_pl = false;
+    this.block_fav = false;
+    this.SetZoom = false;
+    this.playlist_prev = true;
+    this.pre_pl_url = API.XML_URL;
+    getIdn("selectbox");
+    getIdn("help_set_par");
+    getIdb("rightHalf");
+    getIdn("infoList");
+    getIdn("ya_date");
+    getIdn("ya_info");
+    getIdn("ya_help");
+    Main.UpdateHelpBar();
+    if (this.RED) {
+        KeyHandler.setFocus(5)
     } else {
-        if (Main[_$_2f23[102]]) {
-            KeyHandler[_$_2f23[118]](6)
+        if (Main.guide) {
+            KeyHandler.setFocus(6)
         } else {
-            KeyHandler[_$_2f23[118]](0)
+            KeyHandler.setFocus(0)
         }
     };
-    Main[_$_2f23[160]]();
-    getIdb(_$_2f23[161]);
-    getIdb(_$_2f23[162])
+    Main.updatePage();
+    getIdb("channelList");
+    getIdb("main")
 };
-Main[_$_2f23[158]] = function () {
-    getIdn(_$_2f23[163]);
-    getIdn(_$_2f23[164]);
-    getIdb(_$_2f23[165]);
-    getIdn(_$_2f23[166]);
-    getIdn(_$_2f23[167]);
-    getIdn(_$_2f23[167]);
-    getIdn(_$_2f23[168]);
-    getIdn(_$_2f23[169]);
-    getIdn(_$_2f23[170]);
-    getIdn(_$_2f23[171]);
-    getIdb(_$_2f23[172]);
-    getIdn(_$_2f23[173]);
-    getIdb(_$_2f23[174]);
-    getIdn(_$_2f23[175]);
-    getIdb(_$_2f23[176]);
-    getIdn(_$_2f23[177]);
-    getIdn(_$_2f23[178]);
-    getIdn(_$_2f23[179]);
-    getIdn(_$_2f23[180]);
-    getIdn(_$_2f23[181]);
-    getIdn(_$_2f23[182]);
-    getIdn(_$_2f23[183]);
-    if (API[_$_2f23[68]][_$_2f23[30]](_$_2f23[59]) > 0 && !Main[_$_2f23[102]]) {
-        Main[_$_2f23[61]] = true;
-        Main[_$_2f23[67]] = API[_$_2f23[68]];
-        if (!this[_$_2f23[159]]) {
-            var i = _$_2f23[184] + Main[_$_2f23[111]] + _$_2f23[185] + Main[_$_2f23[113]] + _$_2f23[186];
-            if (API[_$_2f23[130]][_$_2f23[64]] > 1) {
-                getIdb(_$_2f23[170])
+
+Main.UpdateHelpBar = function () {
+    getIdn("0_help");
+    getIdn("1_help");
+    getIdb("2_help");
+    getIdn("3_help");
+    getIdn("3.1_help");
+    getIdn("3.1_help");
+    getIdn("3.2_help");
+    getIdn("3.21_help");
+    getIdn("3.3_help");
+    getIdn("3.4_help");
+    getIdb("4_help");
+    getIdn("4.1_help");
+    getIdb("5_help");
+    getIdn("5.1_help");
+    getIdb("6_help");
+    getIdn("7_help");
+    getIdn("8_help");
+    getIdn("9_help");
+    getIdn("10_help");
+    getIdn("10.1_help");
+    getIdn("11_help");
+    getIdn("12_help");
+    if (API.XML_URL.indexOf("fav.dat") > 0 && !Main.guide) {
+        Main.FAV = true;
+        Main.fav_url = API.XML_URL;
+        if (!this.RED) {
+            var i = "Favourites" + Main.fav_num + " - \"" + Main.fav_name + "\"";
+            if (API.favorites.length > 1) {
+                getIdb("3.3_help")
             };
-            getIdb(_$_2f23[171])
+            getIdb("3.4_help")
         } else {
-            i = _$_2f23[187] + Main[_$_2f23[111]] + _$_2f23[185] + Main[_$_2f23[113]] + _$_2f23[186];
-            getIdn(_$_2f23[165]);
-            getIdb(_$_2f23[168]);
-            if (API[_$_2f23[130]][_$_2f23[64]] > 1) {
-                getIdb(_$_2f23[169])
+            i = "Edit Favourites" + Main.fav_num + " - \"" + Main.fav_name + "\"";
+            getIdn("2_help");
+            getIdb("3.2_help");
+            if (API.favorites.length > 1) {
+                getIdb("3.21_help")
             };
-            getIdn(_$_2f23[174]);
-            getIdn(_$_2f23[176])
+            getIdn("5_help");
+            getIdn("6_help")
         }
     } else {
-        if (API[_$_2f23[68]][_$_2f23[30]](_$_2f23[188]) > 0) {
-            Main[_$_2f23[103]] = true;
-            i = _$_2f23[189];
-            getIdn(_$_2f23[165]);
-            getIdb(_$_2f23[180]);
-            getIdb(_$_2f23[173])
+        if (API.XML_URL.indexOf("help") > 0) {
+            Main.help_info = true;
+            i = "HELP";
+            getIdn("2_help");
+            getIdb("10_help");
+            getIdb("4.1_help")
         } else {
-            if (Main[_$_2f23[102]]) {
-                i = _$_2f23[190] + this[_$_2f23[191]];
-                this[_$_2f23[192]] = true;
-                getIdn(_$_2f23[165]);
-                getIdn(_$_2f23[174]);
-                getIdn(_$_2f23[176]);
-                getIdb(_$_2f23[173]);
-                getIdb(_$_2f23[181]);
-                if (!Main[_$_2f23[193]]) {
-                    this[_$_2f23[99]] = 1
+            if (Main.guide) {
+                i = "EPG v." + this.version;
+                this.yandextv_mode = true;
+                getIdn("2_help");
+                getIdn("5_help");
+                getIdn("6_help");
+                getIdb("4.1_help");
+                getIdb("10.1_help");
+                if (!Main.ya_all_day) {
+                    this.selected_channel = 1
                 }
             } else {
-                if (API[_$_2f23[68]][_$_2f23[30]](_$_2f23[194]) < 0) {
-                    getIdb(_$_2f23[167])
+                if (API.XML_URL.indexOf("Open") < 0) {
+                    getIdb("3.1_help")
                 };
-                if (API[_$_2f23[120]][_$_2f23[64]] > 2) {
-                    getIdb(_$_2f23[166])
+                if (API.categories.length > 2) {
+                    getIdb("3_help")
                 };
-                if (API[_$_2f23[68]][_$_2f23[30]](_$_2f23[195]) > 0) {
-                    i = _$_2f23[196];
-                    getIdb(_$_2f23[175])
+                if (API.XML_URL.indexOf("history.dat") > 0) {
+                    i = "History";
+                    getIdb("5.1_help")
                 } else {
-                    i = _$_2f23[197] + this[_$_2f23[198]] + _$_2f23[199]
+                    i = "<b style=\"color:00cbfe;\">IPTV<i>x </i></b><b style=\"font-size:16px;color:cyan;\"> v." + this.ver + "<b style=\"font-size:12px;\">  @</b><b style=\"font-size:16px;\">2016</b>"
                 }
             }
         }
     };
-    if (Player[_$_2f23[200]] != Player[_$_2f23[201]]) {
-        getIdb(_$_2f23[164]);
-        if (Player[_$_2f23[200]] == Player[_$_2f23[202]] && !this[_$_2f23[159]]) {
-            getIdb(_$_2f23[178])
+    if (Player.state != Player.STOPPED) {
+        getIdb("1_help");
+        if (Player.state == Player.PLAYING_VOD && !this.RED) {
+            getIdb("8_help")
         };
-        getId(_$_2f23[204])[_$_2f23[123]][_$_2f23[203]] = _$_2f23[205]
+        getId("background").style.backgroundImage = "url(img/bg.png)"
     } else {
-        KeyHandler[_$_2f23[206]] = 0;
-        getIdb(_$_2f23[163]);
-        getId(_$_2f23[204])[_$_2f23[123]][_$_2f23[203]] = _$_2f23[207];
-        if (this[_$_2f23[208]][_$_2f23[64]] > 0) {
-            if (API[_$_2f23[120]][_$_2f23[64]] < 3 && !Main[_$_2f23[61]] && !Main[_$_2f23[102]] && API[_$_2f23[68]][_$_2f23[30]](_$_2f23[195]) < 0) {
-                getIdb(_$_2f23[179])
+        KeyHandler.guide_step = 0;
+        getIdb("0_help");
+        getId("background").style.backgroundImage = "url(img/us_bg.png)";
+        if (this.prev_pl_array.length > 0) {
+            if (API.categories.length < 3 && !Main.FAV && !Main.guide && API.XML_URL.indexOf("history.dat") < 0) {
+                getIdb("9_help")
             };
-            if (API[_$_2f23[68]][_$_2f23[30]](_$_2f23[209]) == 0) {
-                Display[_$_2f23[53]](API[_$_2f23[68]]);
-                if (Main[_$_2f23[210]] != _$_2f23[4]) {
-                    API[_$_2f23[211]] = Main[_$_2f23[210]]
+            if (API.XML_URL.indexOf("start.xml") == 0) {
+                Display.status(API.XML_URL);
+                if (Main.Kill != "") {
+                    API.Xcode = Main.Kill
                 }
             }
         } else {
-            if (API[_$_2f23[68]][_$_2f23[30]](_$_2f23[209]) != 0) {
-                getIdn(_$_2f23[176]);
-                if (!this[_$_2f23[159]]) {
-                    getIdb(_$_2f23[177])
+            if (API.XML_URL.indexOf("start.xml") != 0) {
+                getIdn("6_help");
+                if (!this.RED) {
+                    getIdb("7_help")
                 };
-                if (API[_$_2f23[120]][_$_2f23[64]] < 3 && !Main[_$_2f23[61]] && !Main[_$_2f23[102]]) {
-                    getIdb(_$_2f23[179])
+                if (API.categories.length < 3 && !Main.FAV && !Main.guide) {
+                    getIdb("9_help")
                 }
             } else {
-                if (Main[_$_2f23[210]] != _$_2f23[4]) {
-                    API[_$_2f23[211]] = Main[_$_2f23[210]]
+                if (Main.Kill != "") {
+                    API.Xcode = Main.Kill
                 };
-                getIdn(_$_2f23[176]);
-                getIdb(_$_2f23[179])
+                getIdn("6_help");
+                getIdb("9_help")
             }
         }
     };
-    if (Main[_$_2f23[34]]) {
-        getId(_$_2f23[212])[_$_2f23[123]][_$_2f23[126]] = _$_2f23[213];
-        getId(_$_2f23[214])[_$_2f23[123]][_$_2f23[126]] = _$_2f23[215]
+    if (Main.seriesE) {
+        getId("widget_date").style.left = "540px";
+        getId("widget_time").style.left = "850px"
     };
-    getIdb(_$_2f23[204]);
-    if (API[_$_2f23[68]][_$_2f23[30]](_$_2f23[63]) == 0 || Main[_$_2f23[103]]) {
-        Main[_$_2f23[149]] = true
+    getIdb("background");
+    if (API.XML_URL.indexOf("OpenFav") == 0 || Main.help_info) {
+        Main.block_fav = true
     };
-    widgetAPI[_$_2f23[216]](getId(_$_2f23[191]), i);
+    widgetAPI.putInnerHTML(getId("version"), i);
     showWeather();
     showTemp()
 };
+
 LogoStyle = function (j, q, i) {
     var p, o;
-    if (i == 1 && (API[_$_2f23[217]] == 1 || API[_$_2f23[217]] == 3)) {
-        p = _$_2f23[218];
-        o = _$_2f23[219]
+    if (i == 1 && (API.Forma == 1 || API.Forma == 3)) {
+        p = "67px";
+        o = "54px"
     } else {
         if (i == 1) {
-            p = _$_2f23[220];
-            o = _$_2f23[221]
+            p = "75px";
+            o = "38px"
         } else {
-            if (API[_$_2f23[217]] == 1 || API[_$_2f23[217]] == 3) {
-                p = _$_2f23[222];
-                o = _$_2f23[223];
-                if (q != _$_2f23[4]) {
-                    getId(_$_2f23[224])[_$_2f23[123]][_$_2f23[203]] = _$_2f23[225]
+            if (API.Forma == 1 || API.Forma == 3) {
+                p = "80px";
+                o = "66px";
+                if (q != "") {
+                    getId("p_bg_num_logo").style.backgroundImage = "url(img/bgn02.png)"
                 } else {
-                    getId(_$_2f23[224])[_$_2f23[123]][_$_2f23[203]] = _$_2f23[226]
+                    getId("p_bg_num_logo").style.backgroundImage = "url(img/bgn03.png)"
                 }
             } else {
-                p = _$_2f23[227];
-                o = _$_2f23[228];
-                if (q != _$_2f23[4]) {
-                    getId(_$_2f23[224])[_$_2f23[123]][_$_2f23[203]] = _$_2f23[229]
+                p = "90px";
+                o = "46px";
+                if (q != "") {
+                    getId("p_bg_num_logo").style.backgroundImage = "url(img/bgn01.png)"
                 } else {
-                    getId(_$_2f23[224])[_$_2f23[123]][_$_2f23[203]] = _$_2f23[226]
+                    getId("p_bg_num_logo").style.backgroundImage = "url(img/bgn03.png)"
                 }
             }
         }
     };
-    getId(j)[_$_2f23[42]] = q;
-    getId(j)[_$_2f23[123]][_$_2f23[126]] = p;
-    getId(j)[_$_2f23[123]][_$_2f23[230]] = o
+    getId(j).src = q;
+    getId(j).style.left = p;
+    getId(j).style.width = o
 };
-Main[_$_2f23[160]] = function () {
+
+Main.updatePage = function () {
     try {
-        clearTimeout(this[_$_2f23[139]]);
-        this[_$_2f23[231]] = false;
-        this[_$_2f23[232]] = false;
+        clearTimeout(this.load_timer);
+        this.Update_Page = false;
+        this.ret = false;
         var p = 10;
-        this[_$_2f23[100]] = (this[_$_2f23[100]] > API[_$_2f23[233]] - 1) ? 0 : (this[_$_2f23[100]] < 0) ? API[_$_2f23[233]] - 1 : this[_$_2f23[100]];
+        this.selected_page = (this.selected_page > API.chan_pages - 1) ? 0 : (this.selected_page < 0) ? API.chan_pages - 1 : this.selected_page;
         for (var q = 0; q < 10; q++) {
-            getIdb(_$_2f23[234] + q)
+            getIdb("ch" + q)
         };
-        if (this[_$_2f23[100]] == API[_$_2f23[233]] - 1) {
-            p = API[_$_2f23[235]];
+        if (this.selected_page == API.chan_pages - 1) {
+            p = API.last_page_channels_counter;
             for (var q = p; q < 10; q++) {
-                getIdn(_$_2f23[234] + q)
+                getIdn("ch" + q)
             };
-            if (this[_$_2f23[99]] > API[_$_2f23[235]] - 1) {
-                this[_$_2f23[99]] = API[_$_2f23[235]] - 1
+             if (this.selected_channel > API.last_page_channels_counter - 1) {
+                this.selected_channel = API.last_page_channels_counter - 1
             }
         };
-        Main[_$_2f23[236]]();
-        alert(_$_2f23[237]);
+        Main.UpdateChannelBar();
+        alert("THIS IS RUNNING Update Channel");
         for (var q = 0; q < p; q++) {
-            var o = 10 * this[_$_2f23[100]] + q;
-            if (Main[_$_2f23[102]]) {
-                widgetAPI[_$_2f23[216]](getId(_$_2f23[238] + q), API[_$_2f23[239]][o][10])
+            var o = 10 * this.selected_page + q;
+            if (Main.guide) {
+                widgetAPI.putInnerHTML(getId("number" + q), API.channels[o][10])
             } else {
-                widgetAPI[_$_2f23[216]](getId(_$_2f23[238] + q), o + 1)
+                widgetAPI.putInnerHTML(getId("number" + q), o + 1)
             };
-            var i = (dPr(API[_$_2f23[239]][o][2]) != _$_2f23[4]) ? getLogo1(dPr(API[_$_2f23[239]][o][5]), dPr(API[_$_2f23[239]][o][2])) : getLogo2(lrdPr(API[_$_2f23[239]][o][0]), API[_$_2f23[239]][o][3], dPr(API[_$_2f23[239]][o][5]));
-            LogoStyle(_$_2f23[240] + q, i, 1);
-            var u = (API[_$_2f23[239]][o][0][_$_2f23[242]]()[_$_2f23[30]](_$_2f23[241]) >= 0) ? _$_2f23[243] : API[_$_2f23[239]][o][0];
-            widgetAPI[_$_2f23[216]](getId(_$_2f23[244] + q), u)
+            var i = (dPr(API.channels[o][2]) != "") ? getLogo1(dPr(API.channels[o][5]), dPr(API.channels[o][2])) : getLogo2(lrdPr(API.channels[o][0]), API.channels[o][3], dPr(API.channels[o][5]));
+            LogoStyle("img" + q, i, 1);
+            var u = (API.channels[o][0].toLowerCase().indexOf("Install the original version") >= 0) ? "Access denied!" : API.channels[o][0];
+            widgetAPI.putInnerHTML(getId("title" + q), u)
         };
-        if (this[_$_2f23[245]] > 0) {
-            this[_$_2f23[232]] = true;
-            var s = _$_2f23[4];
-            if (API[_$_2f23[239]][_$_2f23[64]] > 10) {
-                s = _$_2f23[246] + API[_$_2f23[239]][_$_2f23[64]] + _$_2f23[247]
+        if (this.number_p > 0) {
+            this.ret = true;
+            var s = "";
+            if (API.channels.length > 10) {
+                s = "<b style=\"font-size:16px;color:white\"> - [  This portal has <font color=#00ccff>" + API.channels.length + "</font> links  ]</b>"
             };
-            if (API[_$_2f23[68]][_$_2f23[30]](_$_2f23[248]) > 0 || API[_$_2f23[68]][_$_2f23[30]](_$_2f23[249]) > 0 || API[_$_2f23[68]][_$_2f23[30]](_$_2f23[250]) > 0) {
-                widgetAPI[_$_2f23[216]](getId(_$_2f23[191]), _$_2f23[197] + this[_$_2f23[198]] + _$_2f23[251] + s);
-                if (API[_$_2f23[68]][_$_2f23[30]](_$_2f23[188]) > 0) {
-                    widgetAPI[_$_2f23[216]](getId(_$_2f23[191]), _$_2f23[252] + s)
+            if (API.XML_URL.indexOf(".xml") > 0 || API.XML_URL.indexOf(".m3u") > 0 || API.XML_URL.indexOf("=m3u") > 0) {
+                widgetAPI.putInnerHTML(getId("version"), "<b style=\"color:00cbfe;\">IPTV<i>x </i></b><b style=\"font-size:16px;color:cyan;\"> v." + this.ver + "<b style=\"font-size:12px;\">  @</b><b style=\"font-size:16px;\">2016 </b></font>" + s);
+                if (API.XML_URL.indexOf("help") > 0) {
+                    widgetAPI.putInnerHTML(getId("version"), "<b style=\"color:00cbfe;\">HELP </b><b style=\"font-size:16px;color:cyan;\"> [ user guide ] </font>" + s)
                 };
-                if (API[_$_2f23[68]][_$_2f23[30]](_$_2f23[253]) > 0) {
-                    widgetAPI[_$_2f23[216]](getId(_$_2f23[191]), _$_2f23[254] + s)
+                if (API.XML_URL.indexOf("Mix") > 0) {
+                    widgetAPI.putInnerHTML(getId("version"), "<b style=\"color:00cbfe;\">EUROPE </b><b style=\"font-size:16px;color:cyan;\"> [ mix ] </font>" + s)
                 };
-                if (API[_$_2f23[68]][_$_2f23[30]](_$_2f23[255]) > 0) {
-                    widgetAPI[_$_2f23[216]](getId(_$_2f23[191]), _$_2f23[256] + s)
+                if (API.XML_URL.indexOf("films") > 0) {
+                    widgetAPI.putInnerHTML(getId("version"), "<b style=\"color:00cbfe;\">HOME </b><b style=\"font-size:16px;color:cyan;\"> [ cinema ] </font>" + s)
                 };
-                if (API[_$_2f23[68]][_$_2f23[30]](_$_2f23[257]) > 0) {
-                    widgetAPI[_$_2f23[216]](getId(_$_2f23[191]), _$_2f23[258] + s)
+                if (API.XML_URL.indexOf("kids") > 0) {
+                    widgetAPI.putInnerHTML(getId("version"), "<b style=\"color:00cbfe;\">KIDS </b><b style=\"font-size:16px;color:cyan;\"> [ cinema ] </font>" + s)
                 };
-                if (API[_$_2f23[68]][_$_2f23[30]](_$_2f23[259]) > 0) {
-                    widgetAPI[_$_2f23[216]](getId(_$_2f23[191]), _$_2f23[260] + s)
+                if (API.XML_URL.indexOf("tutorials") > 0) {
+                    widgetAPI.putInnerHTML(getId("version"), "<b style=\"color:00cbfe;\">VOD </b><b style=\"font-size:16px;color:cyan;\"> [ tutorial ] </font>" + s)
                 }
             }
         };
-        if (KeyHandler[_$_2f23[261]] == 0 || KeyHandler[_$_2f23[261]] == 5 || KeyHandler[_$_2f23[261]] == 6) {
-            Main[_$_2f23[263]](_$_2f23[262], 100)
+        if (KeyHandler.Focus == 0 || KeyHandler.Focus == 5 || KeyHandler.Focus == 6) {
+            Main.LoadTimer(function() { Main.updateChannel(); }, 100)
         } else {
-            Main[_$_2f23[264]]()
+            Main.updateChannel()
         }
     } catch (f) {}
 };
+
 getLogo1 = function (p, o) {
-    var i = _$_2f23[265];
-    if (o[_$_2f23[30]](_$_2f23[266]) >= 0) {
-        if (API[_$_2f23[217]] == 0 || API[_$_2f23[217]] == 1) {
-            i = _$_2f23[4]
+    var i = "logos/";
+    if (o.indexOf(":") >= 0) {
+        if (API.Forma == 0 || API.Forma == 1) {
+            i = ""
         } else {
-            o = (p != _$_2f23[4]) ? _$_2f23[267] : _$_2f23[268]
+            o = (p != "") ? "logos/blue_folder.png" : "logos/image.png"
         }
     };
     o = i + o;
     return o
 };
+
 getLogo2 = function (o, i, q) {
     o = lrdPr(o);
-    var p = _$_2f23[4];
-    if (API[_$_2f23[68]][_$_2f23[30]](_$_2f23[188]) > 0) {
-        p = _$_2f23[269]
+    var p = "";
+    if (API.XML_URL.indexOf("help") > 0) {
+        p = "logos/help.png"
     } else {
-        if (q != _$_2f23[4]) {
-            p = _$_2f23[267]
+        if (q != "") {
+            p = "logos/blue_folder.png"
         } else {
-            if (API[_$_2f23[217]] == 0 || API[_$_2f23[217]] == 1) {
-                if (Main[_$_2f23[270]] && !isNaN(i) && i > 0 && i < 2000) {
+            if (API.Forma == 0 || API.Forma == 1) {
+                if (Main.ya_auto && !isNaN(i) && i > 0 && i < 2000) {
                     p = Ya_icon_index_url_obj[i]
                 };
-                if (Main[_$_2f23[270]] && lrdPr(o) != _$_2f23[4] && (p == undefined || isNaN(i) || i < 1 || i > 1999)) {
-                    p = Ya_icon_name_url_obj[lrdPr(o)[_$_2f23[242]]()[_$_2f23[272]](/\_/g, _$_2f23[271])]
+                if (Main.ya_auto && lrdPr(o) != "" && (p == undefined || isNaN(i) || i < 1 || i > 1999)) {
+                    p = Ya_icon_name_url_obj[lrdPr(o).toLowerCase().replace(/\_/g, " ")]
                 };
-                if (p == undefined || !Main[_$_2f23[270]]) {
-                    p = (lrdPr(o) != _$_2f23[4] && dPr(i) != _$_2f23[4]) ? _$_2f23[267] : _$_2f23[268]
+                if (p == undefined || !Main.ya_auto) {
+                    p = (lrdPr(o) != "" && dPr(i) != "") ? "logos/blue_folder.png" : "logos/image.png"
                 }
             } else {
-                p = _$_2f23[268]
+                p = "logos/image.png"
             }
         }
     };
     return p
 };
-Main[_$_2f23[236]] = function () {
-    getId(_$_2f23[273] + this[_$_2f23[274]])[_$_2f23[123]][_$_2f23[203]] = _$_2f23[4];
-    getId(_$_2f23[238] + this[_$_2f23[274]])[_$_2f23[123]][_$_2f23[203]] = _$_2f23[4];
-    getId(_$_2f23[244] + this[_$_2f23[274]])[_$_2f23[123]][_$_2f23[275]] = _$_2f23[276];
-    getId(_$_2f23[238] + this[_$_2f23[99]])[_$_2f23[123]][_$_2f23[203]] = _$_2f23[277];
-    getId(_$_2f23[273] + this[_$_2f23[99]])[_$_2f23[123]][_$_2f23[203]] = _$_2f23[278];
-    getId(_$_2f23[244] + this[_$_2f23[99]])[_$_2f23[123]][_$_2f23[275]] = _$_2f23[279];
-    this[_$_2f23[274]] = this[_$_2f23[99]]
+
+Main.UpdateChannelBar = function () {
+    getId("chan" + this.pre_selected_channel).style.backgroundImage = "";
+    getId("number" + this.pre_selected_channel).style.backgroundImage = "";
+    getId("title" + this.pre_selected_channel).style.color = "#CBCBCB";
+    getId("number" + this.selected_channel).style.backgroundImage = "url(img/number_bar.png)";
+    getId("chan" + this.selected_channel).style.backgroundImage = "url(img/chan_bar.png)";
+    getId("title" + this.selected_channel).style.color = "#FFFFFF";
+    this.pre_selected_channel = this.selected_channel
 };
-Main[_$_2f23[264]] = function () {
-    clearTimeout(this[_$_2f23[139]]);
-    if (KeyHandler[_$_2f23[261]] == 0 || KeyHandler[_$_2f23[261]] == 5 || KeyHandler[_$_2f23[261]] == 6) {
+
+Main.updateChannel = function () {
+    clearTimeout(this.load_timer);
+    if (KeyHandler.Focus == 0 || KeyHandler.Focus == 5 || KeyHandler.Focus == 6) {
         YaAbort();
-        getIdn(_$_2f23[154]);
-        getIdn(_$_2f23[155]);
-        getIdn(_$_2f23[156]);
-        Main[_$_2f23[236]]()
+        getIdn("infoList");
+        getIdn("ya_date");
+        getIdn("ya_info");
+        Main.UpdateChannelBar()
     };
-    Main[_$_2f23[231]] = true;
-    if (KeyHandler[_$_2f23[261]] == 0 && !this[_$_2f23[147]]) {
-        Main[_$_2f23[263]](_$_2f23[280], 200)
+    Main.Update_Page = true;
+    if (KeyHandler.Focus == 0 && !this.block_info) {
+        Main.LoadTimer(function() { Main.UpdateChannelInfo(); }, 200)
     } else {
-        Main[_$_2f23[281]]()
+        Main.UpdateChannelInfo()
     }
 };
-Main[_$_2f23[281]] = function () {
-    Main[_$_2f23[282]] = 0;
-    Main[_$_2f23[283]] = false;
-    this[_$_2f23[101]] = 10 * this[_$_2f23[100]] + this[_$_2f23[99]];
-    this[_$_2f23[284]] = this[_$_2f23[101]] + 1;
-    this[_$_2f23[285]] = Ach(0);
-    if (!Main[_$_2f23[286]]) {
-        this[_$_2f23[287]] = Ach(1);
-        this[_$_2f23[288]] = Ach(5)
+
+Main.UpdateChannelInfo = function () {
+    Main.scrolling = 0;
+    Main.ya_base_info = false;
+    this.chan_array_index = 10 * this.selected_page + this.selected_channel;
+    this.ch_num = this.chan_array_index + 1;
+    this.name = Ach(0);
+    if (!Main.s_url) {
+        this.url = Ach(1);
+        this.pl_url = Ach(5)
     };
-    this[_$_2f23[289]] = Ach(2);
-    if (Player[_$_2f23[200]] == Player[_$_2f23[201]]) {
-        this[_$_2f23[290]] = Ach(6);
-        this[_$_2f23[291]] = Ach(7)
+    this.logo = Ach(2);
+    if (Player.state == Player.STOPPED) {
+        this.ssize = Ach(6);
+        this.a_num = Ach(7)
     };
-    this[_$_2f23[292]] = Ach(8);
-    this[_$_2f23[293]] = Ach(9);
-    this[_$_2f23[294]] = Ach(10);
-    this[_$_2f23[295]] = Ach(11);
-    this[_$_2f23[296]] = decLongUrl(Ach(12));
-    this[_$_2f23[297]] = Ach(13);
-    if (!Main[_$_2f23[147]] && KeyHandler[_$_2f23[261]] != 5 && KeyHandler[_$_2f23[261]] != 1) {
-        var i = _$_2f23[4];
-        if (this[_$_2f23[287]] != _$_2f23[4]) {
-            var y = this[_$_2f23[287]][_$_2f23[298]]();
-            alert(_$_2f23[299] + y);
+    this.buffer = Ach(8);
+    this.ibuffer = Ach(9);
+    this.timeshift = Ach(10);
+    this.region = Ach(11);
+    this.parser = decLongUrl(Ach(12));
+    this.search_on = Ach(13);
+    if (!Main.block_info && KeyHandler.Focus != 5 && KeyHandler.Focus != 1) {
+        var i = "";
+        if (this.url != "") {
+            var y = this.url.toString();
+            alert("this.url= " + y);
             i = GetYindex()
         };
-        if (i != _$_2f23[4]) {
-            Main[_$_2f23[192]] = true;
-            Main[_$_2f23[193]] = false;
-            T[_$_2f23[300]] = 0;
-            Main[_$_2f23[301]] = 0;
-            if (!Main[_$_2f23[136]]) {
+        if (i != "") {
+            Main.yandextv_mode = true;
+            Main.ya_all_day = false;
+            T.delta = 0;
+            Main.Ya_flag_step = 0;
+            if (!Main.FirstStart) {
                 YandexGetUrl(i)
             } else {
-                Main[_$_2f23[263]](_$_2f23[302], 1000)
+                Main.LoadTimer(function() { YandexGetUrl(GetYindex()); }, 1000)
             }
         } else {
-            this[_$_2f23[192]] = false;
-            var z = Ach(3)[_$_2f23[298]]();
-            alert(_$_2f23[303] + z);
-            if (Ach(3) != _$_2f23[4] && z[_$_2f23[30]](_$_2f23[304]) >= 0) {
-                var w = z[_$_2f23[305]](_$_2f23[79]);
-                alert(_$_2f23[306] + w[0]);
-                var A = w[0][_$_2f23[305]](_$_2f23[266]);
-                alert(_$_2f23[307] + A[1] + _$_2f23[266] + A[2]);
-                var x = Main[_$_2f23[308]] + A[1] + _$_2f23[266] + A[2] + _$_2f23[309] + w[1] + _$_2f23[310] + w[2] + _$_2f23[311];
-                alert(_$_2f23[312] + x);
+            this.yandextv_mode = false;
+            var z = Ach(3).toString();
+            alert("Ach(3)= " + z);
+            if (Ach(3) != "" && z.indexOf("epg_url:") >= 0) {
+                var w = z.split("|");
+                alert("cutted ee[0] =" + w[0]);
+                var A = w[0].split(":");
+                alert("cutted url =" + A[1] + ":" + A[2]);
+                var x = Main.protocol + A[1] + ":" + A[2] + "?reg=" + w[1] + "&chan=" + w[2] + "&pass=PaCcT0$33v247&friendly=1";
+                alert("request =" + x);
                 EUROGetEPG(x)
             } else {
-                Main[_$_2f23[313]](Ach(3));
-                if (typeof z == _$_2f23[314] && z != _$_2f23[4] && z[_$_2f23[30]](_$_2f23[315]) != 0) {
+                Main.showinfoList(Ach(3));
+                if (typeof z == "string" && z != "" && z.indexOf("<") != 0) {
                     UKGetUrl(i, z)
                 }
             }
         }
     };
-    this[_$_2f23[147]] = false
+    this.block_info = false
 };
+
 GetYindex = function () {
-    var i = (Ach(3) != _$_2f23[4] && Ach(3)[_$_2f23[30]](_$_2f23[316]) > 0) ? Ach(3) : (!isNaN(Ach(3)) && Ach(3) > 0 && Ach(3) < 2000) ? Ach(3) : (Main[_$_2f23[270]] && Main[_$_2f23[285]] != _$_2f23[4]) ? Ya_name_index_obj[Main[_$_2f23[285]][_$_2f23[242]]()[_$_2f23[272]](/\_/g, _$_2f23[271])] : _$_2f23[4];
+    var i = (Ach(3) != "" && Ach(3).indexOf("/m.tv.yandex.") > 0) ? Ach(3) : (!isNaN(Ach(3)) && Ach(3) > 0 && Ach(3) < 2000) ? Ach(3) : (Main.ya_auto && Main.name != "") ? Ya_name_index_obj[Main.name.toLowerCase().replace(/\_/g, " ")] : "";
     if (i == undefined) {
-        i = _$_2f23[4]
+        i = ""
     };
-    alert(_$_2f23[317] + i);
+    alert("Yindex= " + i);
     return i
 };
-Main[_$_2f23[318]] = function () {
-    widgetAPI[_$_2f23[216]](getId(_$_2f23[319]), this[_$_2f23[284]]);
-    widgetAPI[_$_2f23[216]](getId(_$_2f23[320]), Main[_$_2f23[285]]);
-    var i = (Main[_$_2f23[289]] != _$_2f23[4]) ? getLogo1(Main[_$_2f23[288]], Main[_$_2f23[289]]) : getLogo2(Main[_$_2f23[285]], Ach(3), Main[_$_2f23[288]]);
-    LogoStyle(_$_2f23[321], i, 0)
+
+Main.UpdatePlayerStatusbar = function () {
+    widgetAPI.putInnerHTML(getId("ch_number"), this.ch_num);
+    widgetAPI.putInnerHTML(getId("ch_name"), Main.name);
+    var i = (Main.logo != "") ? getLogo1(Main.pl_url, Main.logo) : getLogo2(Main.name, Ach(3), Main.pl_url);
+    LogoStyle("ch_img", i, 0)
 };
-Main[_$_2f23[263]] = function (o, i) {
-    clearTimeout(this[_$_2f23[139]]);
-    this[_$_2f23[139]] = setTimeout(o, i)
+
+Main.LoadTimer = function (o, i) {
+    clearTimeout(this.load_timer);
+    this.load_timer = setTimeout(o, i)
 };
-Main[_$_2f23[313]] = function (o) {
-    document[_$_2f23[323]](_$_2f23[322])[_$_2f23[123]][_$_2f23[122]] = _$_2f23[222];
-    if (KeyHandler[_$_2f23[261]] == 0 || KeyHandler[_$_2f23[261]] == 6) {
-        getIdn(_$_2f23[154]);
-        getIdn(_$_2f23[155]);
-        getIdn(_$_2f23[156]);
-        widgetAPI[_$_2f23[216]](getId(_$_2f23[154]), _$_2f23[4]);
-        if (!this[_$_2f23[192]] || Main[_$_2f23[102]]) {
-            getIdn(_$_2f23[157]);
-            var i = _$_2f23[4];
-            var p = _$_2f23[4];
-            if (API[_$_2f23[324]] != _$_2f23[4]) {
-                p = _$_2f23[325] + API[_$_2f23[324]] + _$_2f23[326]
+
+Main.showinfoList = function (o) {
+    document.getElementById("scroll_cursor").style.top = "80px";
+    if (KeyHandler.Focus == 0 || KeyHandler.Focus == 6) {
+        getIdn("infoList");
+        getIdn("ya_date");
+        getIdn("ya_info");
+        widgetAPI.putInnerHTML(getId("infoList"), "");
+        if (!this.yandextv_mode || Main.guide) {
+            getIdn("ya_help");
+            var i = "";
+            var p = "";
+            if (API.playlist_name != "") {
+                p = "<table width=\"100%\"><tr><td style=\"text-align:center;font-size:20px;color:#00ccff\">" + API.playlist_name + "</td></tr></table><table width=\"100%\"><tr height=\"2px\" bgcolor=\"#00cdfe\"><td></td></tr></table>"
             };
-            if (API[_$_2f23[327]] != _$_2f23[4] && (API[_$_2f23[328]] != _$_2f23[4] || (this[_$_2f23[287]] == _$_2f23[4] && API[_$_2f23[327]][_$_2f23[30]](_$_2f23[329]) == -1))) {
-                i += _$_2f23[330] + API[_$_2f23[327]] + _$_2f23[331]
+            if (API.prev_page_text != "" && (API.prev_page_url != "" || (this.url == "" && API.prev_page_text.indexOf("Back to start") == -1))) {
+                i += "<td><img src='img/buttons/rew.png'></img></td><td>" + API.prev_page_text + "</td>"
             } else {
-                if (API[_$_2f23[328]] != _$_2f23[4]) {
-                    i += _$_2f23[332]
+                if (API.prev_page_url != "") {
+                    i += "<td><img src='img/buttons/rew.png'></img></td><td>Prev</td>"
                 }
             };
-            if (API[_$_2f23[333]] != _$_2f23[4] && (API[_$_2f23[334]] != _$_2f23[4] || (this[_$_2f23[287]] == _$_2f23[4] && API[_$_2f23[333]][_$_2f23[30]](_$_2f23[329]) == -1))) {
-                i += _$_2f23[335] + API[_$_2f23[333]] + _$_2f23[331]
+            if (API.next_page_text != "" && (API.next_page_url != "" || (this.url == "" && API.next_page_text.indexOf("Back to start") == -1))) {
+                i += "<td><img src='img/buttons/ff.png'></img></td><td>" + API.next_page_text + "</td>"
             } else {
-                if (API[_$_2f23[334]] != _$_2f23[4]) {
-                    i += _$_2f23[336]
+                if (API.next_page_url != "") {
+                    i += "<td><img src='img/buttons/ff.png'></img></td><td>Next</td>"
                 }
             };
-            if (API[_$_2f23[334]] != _$_2f23[4] || API[_$_2f23[328]] != _$_2f23[4]) {
-                i += _$_2f23[337]
+            if (API.next_page_url != "" || API.prev_page_url != "") {
+                i += "<td><img src='img/buttons/blue.png'></img></td><td>Back to start</td>"
             };
-            if (i != _$_2f23[4]) {
-                i = _$_2f23[338] + i + _$_2f23[339]
+            if (i != "") {
+                i = "<table><tr>" + i + "</tr></table>"
             };
-            if (o == _$_2f23[4] || o == 0) {
-                i += _$_2f23[340];
-                o = _$_2f23[4]
+            if (o == "" || o == 0) {
+                i += "no additional information available";
+                o = ""
             };
-            i = _$_2f23[341] + p + i + o + _$_2f23[342];
-            widgetAPI[_$_2f23[216]](getId(_$_2f23[154]), i);
-            if (API[_$_2f23[324]] != _$_2f23[4]) {
-                getId(_$_2f23[343])[_$_2f23[123]][_$_2f23[122]] = _$_2f23[344]
+            i = "<div id=\"allInfo\">" + p + i + o + "<div>";
+            widgetAPI.putInnerHTML(getId("infoList"), i);
+            if (API.playlist_name != "") {
+                getId("allInfo").style.top = "5px"
             } else {
-                getId(_$_2f23[343])[_$_2f23[123]][_$_2f23[122]] = _$_2f23[345]
+                getId("allInfo").style.top = "10px"
             };
-            getIdb(_$_2f23[154])
+            getIdb("infoList")
         } else {
-            i = _$_2f23[341] + o + _$_2f23[342];
-            widgetAPI[_$_2f23[216]](getId(_$_2f23[155]), _$_2f23[4]);
-            widgetAPI[_$_2f23[216]](getId(_$_2f23[155]), Main[_$_2f23[346]] + Main[_$_2f23[347]]);
-            widgetAPI[_$_2f23[216]](getId(_$_2f23[156]), _$_2f23[4]);
-            widgetAPI[_$_2f23[216]](getId(_$_2f23[156]), i);
-            getId(_$_2f23[343])[_$_2f23[123]][_$_2f23[122]] = _$_2f23[348];
-            getIdb(_$_2f23[155]);
-            getIdb(_$_2f23[156]);
-            getIdb(_$_2f23[157])
+            i = "<div id=\"allInfo\">" + o + "<div>";
+            widgetAPI.putInnerHTML(getId("ya_date"), "");
+            widgetAPI.putInnerHTML(getId("ya_date"), Main.lost_date + Main.Ya_flag_name);
+            widgetAPI.putInnerHTML(getId("ya_info"), "");
+            widgetAPI.putInnerHTML(getId("ya_info"), i);
+            getId("allInfo").style.top = "0px";
+            getIdb("ya_date");
+            getIdb("ya_info");
+            getIdb("ya_help")
         }
     }
 };
-Main[_$_2f23[349]] = function () {
-    var i = this[_$_2f23[104]][_$_2f23[64]] - 1;
+
+Main.PlayPrevChannel = function () {
+    var i = this.prev_ch_array.length - 1;
     if (i > 0) {
-        var o = this[_$_2f23[104]][i - 1];
-        this[_$_2f23[99]] = o[0];
-        this[_$_2f23[100]] = o[1];
-        this[_$_2f23[101]] = o[2];
-        Main[_$_2f23[192]] = true;
-        Main[_$_2f23[281]]();
-        Main[_$_2f23[350]]();
-        Display[_$_2f23[53]](_$_2f23[351], 500)
+        var o = this.prev_ch_array[i - 1];
+        this.selected_channel = o[0];
+        this.selected_page = o[1];
+        this.chan_array_index = o[2];
+        Main.yandextv_mode = true;
+        Main.UpdateChannelInfo();
+        Main.PlayChannel();
+        Display.status("Previous channel", 500)
     } else {
-        Display[_$_2f23[53]](_$_2f23[352], 500)
+        Display.status("Starting channel", 500)
     }
 };
-Main[_$_2f23[353]] = function () {
-    if (this[_$_2f23[354]]) {
-        var i = [this[_$_2f23[99]], this[_$_2f23[100]], this[_$_2f23[101]]];
-        this[_$_2f23[104]][_$_2f23[355]](i)
+
+Main.SavePrevChannel = function () {
+    if (this.play_prev) {
+        var i = [this.selected_channel, this.selected_page, this.chan_array_index];
+        this.prev_ch_array.push(i)
     }
 };
-Main[_$_2f23[356]] = function () {
-    if (KeyHandler[_$_2f23[357]] && this[_$_2f23[208]][_$_2f23[64]] > this[_$_2f23[245]]) {
-        if (this[_$_2f23[287]] != _$_2f23[4] && (API[_$_2f23[334]] == _$_2f23[4] || API[_$_2f23[328]] == _$_2f23[4])) {
-            this[_$_2f23[245]]++
+
+Main.PlayPrevPlaylist = function () {
+    if (KeyHandler.bl && this.prev_pl_array.length > this.number_p) {
+        if (this.url != "" && (API.next_page_url == "" || API.prev_page_url == "")) {
+            this.number_p++
         };
-        for (var l = 0; l < this[_$_2f23[245]] - 1; l++) {
-            this[_$_2f23[208]][_$_2f23[358]]()
+        for (var l = 0; l < this.number_p - 1; l++) {
+            this.prev_pl_array.pop()
         };
-        this[_$_2f23[245]] = 1
+        this.number_p = 1
     };
-    var i = this[_$_2f23[208]][_$_2f23[64]] - 1;
+    var i = this.prev_pl_array.length - 1;
     if (i > -1) {
-        var j = this[_$_2f23[208]][i];
-        this[_$_2f23[288]] = j[0];
-        this[_$_2f23[99]] = j[1];
-        this[_$_2f23[100]] = j[2];
-        this[_$_2f23[101]] = j[3];
-        this[_$_2f23[245]] = j[4];
-        this[_$_2f23[113]] = j[5];
-        this[_$_2f23[111]] = j[6];
+        var j = this.prev_pl_array[i];
+        this.pl_url = j[0];
+        this.selected_channel = j[1];
+        this.selected_page = j[2];
+        this.chan_array_index = j[3];
+        this.number_p = j[4];
+        this.fav_name = j[5];
+        this.fav_num = j[6];
         var q = [];
         var p = [];
         var o = [];
         q = j[7];
         o = j[8];
         p = j[9];
-        this[_$_2f23[208]][_$_2f23[358]]();
-        this[_$_2f23[151]] = false;
-        Main[_$_2f23[359]] = true;
-        KeyHandler[_$_2f23[357]] = false;
-        Main[_$_2f23[102]] = false;
-        Main[_$_2f23[159]] = false;
-        API[_$_2f23[297]] = _$_2f23[4];
-        if (this[_$_2f23[288]][_$_2f23[30]](_$_2f23[360]) == -1) {
-            this[_$_2f23[103]] = false
+        this.prev_pl_array.pop();
+        this.playlist_prev = false;
+        Main.DEL = true;
+        KeyHandler.bl = false;
+        Main.guide = false;
+        Main.RED = false;
+        API.search_on = "";
+        if (this.pl_url.indexOf("starthelp.xml") == -1) {
+            this.help_info = false
         };
-        if (this[_$_2f23[288]][_$_2f23[30]](_$_2f23[361]) > 0) {
-            Main[_$_2f23[62]](this[_$_2f23[288]])
+        if (this.pl_url.indexOf(".dat") > 0) {
+            Main.openCommonFile(this.pl_url)
         } else {
-            if (q[_$_2f23[64]] > 0) {
-                Main[_$_2f23[66]](this[_$_2f23[288]], q, o, p);
-                API[_$_2f23[324]] = j[10];
-                API[_$_2f23[328]] = j[11];
-                API[_$_2f23[327]] = j[12];
-                API[_$_2f23[334]] = j[13];
-                API[_$_2f23[333]] = j[14]
+            if (q.length > 0) {
+                Main.ReadPlArr(this.pl_url, q, o, p);
+                API.playlist_name = j[10];
+                API.prev_page_url = j[11];
+                API.prev_page_text = j[12];
+                API.next_page_url = j[13];
+                API.next_page_text = j[14]
             } else {
-                if (Main[_$_2f23[285]][_$_2f23[30]](_$_2f23[362]) == 0) {
-                    Main[_$_2f23[285]] = _$_2f23[4]
+                if (Main.name.indexOf("-=SEARCH=-") == 0) {
+                    Main.name = ""
                 };
-                this[_$_2f23[297]] = _$_2f23[4];
-                Main[_$_2f23[363]]()
+                this.search_on = "";
+                Main.playlist()
             }
         }
     } else {
-        if (API[_$_2f23[68]][_$_2f23[30]](_$_2f23[209]) != 0) {
-            this[_$_2f23[364]] = true;
-            Main[_$_2f23[359]] = false;
-            Main[_$_2f23[363]]()
+        if (API.XML_URL.indexOf("start.xml") != 0) {
+            this.start = true;
+            Main.DEL = false;
+            Main.playlist()
         } else {
-            Display[_$_2f23[53]](_$_2f23[365], 500)
+            Display.status("Main playlist!", 500)
         }
     }
 };
-Main[_$_2f23[366]] = function () {
-    if (this[_$_2f23[151]]) {
+
+Main.SavePrevPlaylist = function () {
+    if (this.playlist_prev) {
         var p = [];
         var o = [];
-        if (API[_$_2f23[239]][_$_2f23[64]] < 500 && API[_$_2f23[68]][_$_2f23[30]](_$_2f23[361]) < 0) {
-            p = API[_$_2f23[239]];
-            if (API[_$_2f23[120]][_$_2f23[64]] > 2 && API[_$_2f23[367]][_$_2f23[64]] > API[_$_2f23[239]][_$_2f23[64]]) {
-                o = API[_$_2f23[367]]
+        if (API.channels.length < 500 && API.XML_URL.indexOf(".dat") < 0) {
+            p = API.channels;
+            if (API.categories.length > 2 && API.all_channels.length > API.channels.length) {
+                o = API.all_channels
             }
         };
-        var i = [API[_$_2f23[68]], this[_$_2f23[99]], this[_$_2f23[100]], this[_$_2f23[101]], this[_$_2f23[245]], this[_$_2f23[114]], this[_$_2f23[112]], p, o, API[_$_2f23[120]], API[_$_2f23[324]], API[_$_2f23[328]], API[_$_2f23[327]], API[_$_2f23[334]], API[_$_2f23[333]]];
-        this[_$_2f23[208]][_$_2f23[355]](i);
-        this[_$_2f23[151]] = false
+        var i = [API.XML_URL, this.selected_channel, this.selected_page, this.chan_array_index, this.number_p, this.temp_fav_name, this.temp_fav_num, p, o, API.categories, API.playlist_name, API.prev_page_url, API.prev_page_text, API.next_page_url, API.next_page_text];
+        this.prev_pl_array.push(i);
+        this.playlist_prev = false
     }
 };
-Main[_$_2f23[368]] = function () {
-    if (Main[_$_2f23[231]]) {
-        this[_$_2f23[99]]++;
-        if (this[_$_2f23[99]] >= 10 || (this[_$_2f23[100]] == API[_$_2f23[233]] - 1 && this[_$_2f23[99]] == API[_$_2f23[235]])) {
-            this[_$_2f23[99]] = 0;
-            this[_$_2f23[100]]++;
-            Main[_$_2f23[160]]()
+
+Main.selectNextChannel = function () {
+    if (Main.Update_Page) {
+        this.selected_channel++;
+        if (this.selected_channel >= 10 || (this.selected_page == API.chan_pages - 1 && this.selected_channel == API.last_page_channels_counter)) {
+            this.selected_channel = 0;
+            this.selected_page++;
+            Main.updatePage()
         } else {
-            Main[_$_2f23[264]]()
+            Main.updateChannel()
         }
     }
 };
-Main[_$_2f23[369]] = function () {
-    if (Main[_$_2f23[231]]) {
-        this[_$_2f23[99]]--;
-        if (this[_$_2f23[100]] == 0 && this[_$_2f23[99]] < 0) {
-            this[_$_2f23[99]] = API[_$_2f23[235]] - 1;
-            this[_$_2f23[100]] = API[_$_2f23[233]] - 1;
-            Main[_$_2f23[160]]()
+
+Main.selectPrevChannel = function () {
+    if (Main.Update_Page) {
+        this.selected_channel--;
+        if (this.selected_page == 0 && this.selected_channel < 0) {
+            this.selected_channel = API.last_page_channels_counter - 1;
+            this.selected_page = API.chan_pages - 1;
+            Main.updatePage()
         } else {
-            if (this[_$_2f23[99]] < 0) {
-                this[_$_2f23[99]] = 9;
-                this[_$_2f23[100]]--;
-                Main[_$_2f23[160]]()
+            if (this.selected_channel < 0) {
+                this.selected_channel = 9;
+                this.selected_page--;
+                Main.updatePage()
             } else {
-                Main[_$_2f23[264]]()
+                Main.updateChannel()
             }
         }
     }
 };
 
 function ListNextPage() {
-    if (API[_$_2f23[334]] != _$_2f23[4]) {
-        Main[_$_2f23[288]] = API[_$_2f23[334]];
-        Main[_$_2f23[366]]();
-        Main[_$_2f23[245]]++;
-        if (Main[_$_2f23[288]] != _$_2f23[4]) {
-            Main[_$_2f23[350]]()
+    if (API.next_page_url != "") {
+        Main.pl_url = API.next_page_url;
+        Main.SavePrevPlaylist();
+        Main.number_p++;
+        if (Main.pl_url != "") {
+            Main.PlayChannel()
         }
     } else {
-        Display[_$_2f23[53]](_$_2f23[370])
+        Display.status("Not Available!")
     }
 }
-Main[_$_2f23[371]] = function () {
-    if (API[_$_2f23[334]] != _$_2f23[4] && this[_$_2f23[100]] == API[_$_2f23[233]] - 1) {
+
+Main.selectNextPage = function () {
+    if (API.next_page_url != "" && this.selected_page == API.chan_pages - 1) {
         ListNextPage()
     } else {
-        if (Main[_$_2f23[231]]) {
-            this[_$_2f23[100]]++;
-            Main[_$_2f23[160]]()
+        if (Main.Update_Page) {
+            this.selected_page++;
+            Main.updatePage()
         }
     }
 };
 
 function ListPrevPage() {
-    if (API[_$_2f23[328]] != _$_2f23[4]) {
-        Main[_$_2f23[151]] = false;
-        Main[_$_2f23[208]][_$_2f23[358]]();
-        Main[_$_2f23[288]] = API[_$_2f23[328]];
-        if (Main[_$_2f23[245]] > 1) {
-            Main[_$_2f23[245]]--
+    if (API.prev_page_url != "") {
+        Main.playlist_prev = false;
+        Main.prev_pl_array.pop();
+        Main.pl_url = API.prev_page_url;
+        if (Main.number_p > 1) {
+            Main.number_p--
         };
-        if (Main[_$_2f23[288]] != _$_2f23[4]) {
-            Main[_$_2f23[350]]()
+        if (Main.pl_url != "") {
+            Main.PlayChannel()
         }
     } else {
-        Display[_$_2f23[53]](_$_2f23[370], 500)
+        Display.status("Not Available!", 500)
     }
 }
-Main[_$_2f23[372]] = function () {
-    if (API[_$_2f23[328]] != _$_2f23[4] && this[_$_2f23[100]] == 0) {
+
+Main.selectPrevPage = function () {
+    if (API.prev_page_url != "" && this.selected_page == 0) {
         ListPrevPage()
     } else {
-        if (Main[_$_2f23[231]]) {
-            this[_$_2f23[100]]--;
-            Main[_$_2f23[160]]()
+        if (Main.Update_Page) {
+            this.selected_page--;
+            Main.updatePage()
         }
     }
 };
-Main[_$_2f23[350]] = function () {
+
+Main.PlayChannel = function () {
     hideImage();
     try {
-        clearTimeout(this[_$_2f23[139]]);
-        if (this[_$_2f23[288]] != _$_2f23[4] && this[_$_2f23[288]][_$_2f23[30]](_$_2f23[373]) != 0) {
-            if (this[_$_2f23[288]][_$_2f23[30]](_$_2f23[5]) >= 0) {
-                var B = Main[_$_2f23[14]];
+        clearTimeout(this.load_timer);
+        if (this.pl_url != "" && this.pl_url.indexOf("stop") != 0) {
+            if (this.pl_url.indexOf("rulenone") >= 0) {
+                var B = Main.MAC;
                 var z = 8800;
-                a = Main[_$_2f23[308]];
-                r = Main[_$_2f23[374]];
-                var o = r[_$_2f23[272]](_$_2f23[8], _$_2f23[375]);
-                var C = a + Main[_$_2f23[376]] + _$_2f23[266] + eval(Main[_$_2f23[377]] + z) + _$_2f23[378] + o + B;
-                this[_$_2f23[288]] = C
+                a = Main.protocol;
+                r = Main.txt;
+                var o = r.replace("mac=", "txt=");
+                var C = a + Main.hurl + ":" + eval(Main.trp + z) + "/sh/request.php?" + o + B;
+                this.pl_url = C
             } else {
-                if (this[_$_2f23[288]][_$_2f23[30]](_$_2f23[379]) >= 0) {
-                    var B = Main[_$_2f23[14]];
+                if (this.pl_url.indexOf("boom") >= 0) {
+                    var B = Main.MAC;
                     var z = 8800;
-                    a = Main[_$_2f23[308]];
-                    r = Main[_$_2f23[374]];
-                    var o = r[_$_2f23[272]](_$_2f23[8], _$_2f23[375]);
-                    var C = a + Main[_$_2f23[376]] + _$_2f23[266] + eval(Main[_$_2f23[377]] + z) + _$_2f23[380] + o + B;
-                    this[_$_2f23[288]] = C
+                    a = Main.protocol;
+                    r = Main.txt;
+                    var o = r.replace("mac=", "txt=");
+                    var C = a + Main.hurl + ":" + eval(Main.trp + z) + "/sh/vip_pls.php?" + o + B;
+                    this.pl_url = C
                 } else {
-                    if (this[_$_2f23[288]][_$_2f23[30]](_$_2f23[381]) >= 0) {
-                        var B = Main[_$_2f23[14]];
+                    if (this.pl_url.indexOf("svoj") >= 0) {
+                        var B = Main.MAC;
                         var z = 8800;
-                        a = Main[_$_2f23[308]];
-                        r = Main[_$_2f23[374]];
-                        var o = r[_$_2f23[272]](_$_2f23[8], _$_2f23[375]);
-                        var C = a + Main[_$_2f23[376]] + _$_2f23[266] + eval(Main[_$_2f23[377]] + z) + _$_2f23[382] + o + B;
-                        this[_$_2f23[288]] = C
+                        a = Main.protocol;
+                        r = Main.txt;
+                        var o = r.replace("mac=", "txt=");
+                        var C = a + Main.hurl + ":" + eval(Main.trp + z) + "/sh/mojsvoy_pls.php?" + o + B;
+                        this.pl_url = C
                     } else {
-                        if (this[_$_2f23[288]][_$_2f23[30]](_$_2f23[383]) >= 0) {
-                            var B = Main[_$_2f23[14]];
+                        if (this.pl_url.indexOf("tablemix") >= 0) {
+                            var B = Main.MAC;
                             var z = 8800;
-                            a = Main[_$_2f23[308]];
-                            r = Main[_$_2f23[374]];
-                            var o = r[_$_2f23[272]](_$_2f23[8], _$_2f23[375]);
-                            var C = a + Main[_$_2f23[376]] + _$_2f23[266] + eval(Main[_$_2f23[377]] + z) + _$_2f23[384] + o + B;
-                            this[_$_2f23[288]] = C
+                            a = Main.protocol;
+                            r = Main.txt;
+                            var o = r.replace("mac=", "txt=");
+                            var C = a + Main.hurl + ":" + eval(Main.trp + z) + "/sh/euromix.php?" + o + B;
+                            this.pl_url = C
                         } else {
-                            if (this[_$_2f23[288]][_$_2f23[30]](_$_2f23[250]) >= 0) {
-                                a = this[_$_2f23[288]];
-                                var o = a[_$_2f23[272]](_$_2f23[385], _$_2f23[386]);
-                                var p = o[_$_2f23[272]](_$_2f23[387], _$_2f23[388]);
-                                var q = p[_$_2f23[272]](_$_2f23[387], _$_2f23[388]);
+                            if (this.pl_url.indexOf("=m3u") >= 0) {
+                                a = this.pl_url;
+                                var o = a.replace("%3F", "?");
+                                var p = o.replace("%26", "&");
+                                var q = p.replace("%26", "&");
                                 var C = q;
-                                this[_$_2f23[288]] = C
+                                this.pl_url = C
                             } else {
-                                if (this[_$_2f23[288]][_$_2f23[30]](_$_2f23[389]) >= 0) {
-                                    var B = Main[_$_2f23[14]];
+                                if (this.pl_url.indexOf("tableeng") >= 0) {
+                                    var B = Main.MAC;
                                     var z = 8800;
-                                    a = Main[_$_2f23[308]];
-                                    r = Main[_$_2f23[374]];
-                                    var o = r[_$_2f23[272]](_$_2f23[8], _$_2f23[375]);
-                                    var C = a + Main[_$_2f23[376]] + _$_2f23[266] + eval(Main[_$_2f23[377]] + z) + _$_2f23[390] + o + B;
-                                    this[_$_2f23[288]] = C
+                                    a = Main.protocol;
+                                    r = Main.txt;
+                                    var o = r.replace("mac=", "txt=");
+                                    var C = a + Main.hurl + ":" + eval(Main.trp + z) + "/sh/englishmix.php?" + o + B;
+                                    this.pl_url = C
                                 } else {
-                                    if (this[_$_2f23[288]][_$_2f23[30]](_$_2f23[391]) >= 0) {
-                                        var B = Main[_$_2f23[14]];
+                                    if (this.pl_url.indexOf("tablefilms") >= 0) {
+                                        var B = Main.MAC;
                                         var z = 8800;
-                                        a = Main[_$_2f23[308]];
-                                        r = Main[_$_2f23[374]];
-                                        var o = r[_$_2f23[272]](_$_2f23[8], _$_2f23[375]);
-                                        var C = a + Main[_$_2f23[376]] + _$_2f23[266] + eval(Main[_$_2f23[377]] + z) + _$_2f23[392] + o + B;
-                                        this[_$_2f23[288]] = C
+                                        a = Main.protocol;
+                                        r = Main.txt;
+                                        var o = r.replace("mac=", "txt=");
+                                        var C = a + Main.hurl + ":" + eval(Main.trp + z) + "/sh/bigpeople.php?" + o + B;
+                                        this.pl_url = C
                                     } else {
-                                        if (this[_$_2f23[288]][_$_2f23[30]](_$_2f23[393]) >= 0) {
-                                            var B = Main[_$_2f23[14]];
+                                        if (this.pl_url.indexOf("tablekidz") >= 0) {
+                                            var B = Main.MAC;
                                             var z = 8800;
-                                            a = Main[_$_2f23[308]];
-                                            r = Main[_$_2f23[374]];
-                                            var o = r[_$_2f23[272]](_$_2f23[8], _$_2f23[375]);
-                                            var C = a + Main[_$_2f23[376]] + _$_2f23[266] + eval(Main[_$_2f23[377]] + z) + _$_2f23[394] + o + B;
-                                            this[_$_2f23[288]] = C
+                                            a = Main.protocol;
+                                            r = Main.txt;
+                                            var o = r.replace("mac=", "txt=");
+                                            var C = a + Main.hurl + ":" + eval(Main.trp + z) + "/sh/smallpeople.php?" + o + B;
+                                            this.pl_url = C
                                         } else {
-                                            if (this[_$_2f23[288]][_$_2f23[30]](_$_2f23[395]) >= 0) {
-                                                var B = Main[_$_2f23[14]];
+                                            if (this.pl_url.indexOf("tablevod") >= 0) {
+                                                var B = Main.MAC;
                                                 var z = 8800;
-                                                a = Main[_$_2f23[308]];
-                                                r = Main[_$_2f23[374]];
-                                                var o = r[_$_2f23[272]](_$_2f23[8], _$_2f23[375]);
-                                                var C = a + Main[_$_2f23[376]] + _$_2f23[266] + eval(Main[_$_2f23[377]] + z) + _$_2f23[396] + o + B;
-                                                this[_$_2f23[288]] = C
+                                                a = Main.protocol;
+                                                r = Main.txt;
+                                                var o = r.replace("mac=", "txt=");
+                                                var C = a + Main.hurl + ":" + eval(Main.trp + z) + "/sh/vodmix.php?" + o + B;
+                                                this.pl_url = C
                                             } else {
-                                                if (this[_$_2f23[288]][_$_2f23[30]](_$_2f23[397]) >= 0) {
-                                                    var B = Main[_$_2f23[14]];
+                                                if (this.pl_url.indexOf("tableyt") >= 0) {
+                                                    var B = Main.MAC;
                                                     var z = 8800;
-                                                    a = Main[_$_2f23[308]];
-                                                    r = Main[_$_2f23[374]];
-                                                    var o = r[_$_2f23[272]](_$_2f23[8], _$_2f23[375]);
-                                                    var C = a + Main[_$_2f23[376]] + _$_2f23[266] + eval(Main[_$_2f23[377]] + z) + _$_2f23[398] + o + B;
-                                                    this[_$_2f23[288]] = C
+                                                    a = Main.protocol;
+                                                    r = Main.txt;
+                                                    var o = r.replace("mac=", "txt=");
+                                                    var C = a + Main.hurl + ":" + eval(Main.trp + z) + "/sh/youtube.php?" + o + B;
+                                                    this.pl_url = C
                                                 }
                                             }
                                         }
@@ -2529,141 +2565,142 @@ Main[_$_2f23[350]] = function () {
                     }
                 }
             };
-            Main[_$_2f23[363]]()
+            Main.playlist()
         } else {
-            if (this[_$_2f23[287]] != _$_2f23[4] && this[_$_2f23[287]][_$_2f23[30]](_$_2f23[373]) != 0) {
-                if (Player[_$_2f23[200]] != Player[_$_2f23[201]]) {
-                    if (Main[_$_2f23[399]] == _$_2f23[78]) {
-                        Main[_$_2f23[400]]()
+            if (this.url != "" && this.url.indexOf("stop") != 0) {
+                if (Player.state != Player.STOPPED) {
+                    if (Main.PlayerMode == "0") {
+                        Main.stopFPlayer()
                     } else {
-                        Player[_$_2f23[401]]()
+                        Player.stopV()
                     }
                 };
-                Main[_$_2f23[318]]();
-                Display[_$_2f23[402]](this[_$_2f23[284]]);
-                Main[_$_2f23[58]] = [];
-                Main[_$_2f23[403]] = 0;
-                Main[_$_2f23[404]] = false;
-                Main[_$_2f23[290]] = Ach(6);
-                Main[_$_2f23[291]] = Ach(7);
-                Main[_$_2f23[353]]();
-                Main[_$_2f23[105]]();
-                Main[_$_2f23[68]] = API[_$_2f23[68]];
-                widgetAPI[_$_2f23[216]](getId(_$_2f23[405]), _$_2f23[4]);
-                getIdn(_$_2f23[162]);
-                if (this[_$_2f23[287]][_$_2f23[30]](_$_2f23[406]) >= 0 || this[_$_2f23[287]][_$_2f23[30]](_$_2f23[407]) >= 0 || this[_$_2f23[287]][_$_2f23[30]](_$_2f23[408]) >= 0 || this[_$_2f23[287]][_$_2f23[30]](_$_2f23[409]) >= 0) {
-                    Main[_$_2f23[399]] = _$_2f23[78];
+                Main.UpdatePlayerStatusbar();
+                Display.status1(this.ch_num);
+                Main.url_arr = [];
+                Main.url_selected = 0;
+                Main.Foto = false;
+                Main.ssize = Ach(6);
+                Main.a_num = Ach(7);
+                Main.SavePrevChannel();
+                Main.SaveSelectedPosition();
+                Main.XML_URL = API.XML_URL;
+                widgetAPI.putInnerHTML(getId("resolution"), "");
+                getIdn("main");
+                if (this.url.indexOf("rtmp://") >= 0 || this.url.indexOf("rtsp://") >= 0 || this.url.indexOf("mms://") >= 0 || this.url.indexOf(".flv") >= 0) {
+                    Main.PlayerMode = "0";
                     hideWeather();
                     hideTemp();
                     hideScroll();
-                    Main[_$_2f23[410]]()
+                    Main.PlayFlashStream()
                 } else {
-                    Main[_$_2f23[399]] = _$_2f23[411];
-                    setTimeout(_$_2f23[412], 50);
+                    Main.PlayerMode = "1";
+                    setTimeout(function() { Main.PlayNoFlashStream(); }, 50);
                     hideWeather();
                     hideTemp();
                     hideScroll()
                 };
-                pluginAPI[_$_2f23[83]]()
+                pluginAPI.setOffScreenSaver()
             } else {
-                if (this[_$_2f23[287]][_$_2f23[30]](_$_2f23[373]) == 0 || this[_$_2f23[288]][_$_2f23[30]](_$_2f23[373]) == 0) {
-                    alert(_$_2f23[413])
+                if (this.url.indexOf("stop") == 0 || this.pl_url.indexOf("stop") == 0) {
+                    alert("stop!")
                 } else {
-                    Display[_$_2f23[53]](_$_2f23[414])
+                    Display.status("Missing address!")
                 };
-                setTimeout(_$_2f23[415], 500)
+                setTimeout(function() { Main.Menu(); }, 500)
             }
         }
     } catch (a) {}
 };
-Main[_$_2f23[363]] = function () {
-    setTimeout(_$_2f23[416], 500);
+
+Main.playlist = function () {
+    setTimeout(function(){ showScroll(); }, 500);
     try {
-        this[_$_2f23[288]] = decLongUrl(this[_$_2f23[288]]);
-        this[_$_2f23[152]] = API[_$_2f23[68]];
-        this[_$_2f23[324]] = Main[_$_2f23[285]];
-        if (Main[_$_2f23[364]]) {
-            this[_$_2f23[288]] = _$_2f23[209]
+        this.pl_url = decLongUrl(this.pl_url);
+        this.pre_pl_url = API.XML_URL;
+        this.playlist_name = Main.name;
+        if (Main.start) {
+            this.pl_url = "start.xml"
         };
-        if (API[_$_2f23[211]] != 0 && !Main[_$_2f23[102]] && !Main[_$_2f23[364]] && !Main[_$_2f23[103]] && this[_$_2f23[287]] == _$_2f23[4]) {
+        if (API.Xcode != 0 && !Main.guide && !Main.start && !Main.help_info && this.url == "") {
             var p = /[-="',&\/\?\s\_]xxx|porno|sex|erotica|секс|порно|эротика|aнал/i;
-            if (p[_$_2f23[417]](_$_2f23[271] + Main[_$_2f23[285]]) != null || p[_$_2f23[417]](_$_2f23[271] + API[_$_2f23[324]]) != null || p[_$_2f23[417]](_$_2f23[271] + this[_$_2f23[288]]) != null) {
-                this[_$_2f23[141]] = true
+            if (p.exec(" " + Main.name) != null || p.exec(" " + API.playlist_name) != null || p.exec(" " + this.pl_url) != null) {
+                this.xxx = true
             }
         };
-        if (!this[_$_2f23[359]] && !Main[_$_2f23[102]] && this[_$_2f23[151]] && Main[_$_2f23[288]][_$_2f23[30]](_$_2f23[195]) < 0) {
-            if (API[_$_2f23[68]][_$_2f23[30]](_$_2f23[59]) > 0) {
-                Main[_$_2f23[112]] = Main[_$_2f23[111]];
-                Main[_$_2f23[114]] = Main[_$_2f23[113]]
+        if (!this.DEL && !Main.guide && this.playlist_prev && Main.pl_url.indexOf("history.dat") < 0) {
+            if (API.XML_URL.indexOf("fav.dat") > 0) {
+                Main.temp_fav_num = Main.fav_num;
+                Main.temp_fav_name = Main.fav_name
             };
-            Main[_$_2f23[366]]();
-            if (Main[_$_2f23[288]][_$_2f23[30]](_$_2f23[194]) != 0 && Main[_$_2f23[288]][_$_2f23[30]](_$_2f23[195]) < 0 && API[_$_2f23[68]] != _$_2f23[209]) {
-                Main[_$_2f23[419]](_$_2f23[418])
+            Main.SavePrevPlaylist();
+            if (Main.pl_url.indexOf("Open") != 0 && Main.pl_url.indexOf("history.dat") < 0 && API.XML_URL != "start.xml") {
+                Main.saveHistory("pl_history.dat")
             }
         };
-        this[_$_2f23[364]] = false;
-        this[_$_2f23[140]] = false;
-        if (Main[_$_2f23[288]][_$_2f23[30]](_$_2f23[420]) == 0) {
+        this.start = false;
+        this.search = false;
+        if (Main.pl_url.indexOf("usb/") == 0) {
             var o = SearchPlToUSB();
-            if (o != _$_2f23[4]) {
-                API[_$_2f23[68]] = o;
-                API[_$_2f23[69]](o)
+            if (o != "") {
+                API.XML_URL = o;
+                API.Request(o)
             }
         } else {
-            if (Main[_$_2f23[288]][_$_2f23[30]](_$_2f23[421]) == 0) {
+            if (Main.pl_url.indexOf("ScanUSB") == 0) {
                 ScanUsbPort()
             } else {
-                if (Main[_$_2f23[288]][_$_2f23[30]](_$_2f23[422]) == 0) {
+                if (Main.pl_url.indexOf("$USB_DIR") == 0) {
                     ReadUsbDirN()
                 } else {
-                    if (Main[_$_2f23[288]] == _$_2f23[423]) {
+                    if (Main.pl_url == "OpenHistory") {
                         var i = [
-                            [_$_2f23[424], _$_2f23[4], _$_2f23[425], _$_2f23[424], _$_2f23[4], _$_2f23[426], _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[4]],
-                            [_$_2f23[427], _$_2f23[4], _$_2f23[428], _$_2f23[427], _$_2f23[4], _$_2f23[429], _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[4]],
-                            [_$_2f23[430], _$_2f23[4], _$_2f23[431], _$_2f23[430], _$_2f23[4], _$_2f23[418], _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[4]]
+                            ["IP-TV, WEB-TV CHANNELS", "", "image.png", "IP-TV, WEB-TV CHANNELS", "", "live_history.dat", "", "", "", "", "", "", "", ""],
+                            ["FILMS, VIDEOS", "", "film.png", "FILMS, VIDEOS", "", "vod_history.dat", "", "", "", "", "", "", "", ""],
+                            ["PLAYLISTs, FILE LISTs", "", "blue_folder.png", "PLAYLISTs, FILE LISTs", "", "pl_history.dat", "", "", "", "", "", "", "", ""]
                         ];
-                        Main[_$_2f23[66]](_$_2f23[423], i)
+                        Main.ReadPlArr("OpenHistory", i)
                     } else {
-                        if (Main[_$_2f23[288]][_$_2f23[30]](_$_2f23[195]) >= 0) {
-                            if (API[_$_2f23[211]] != 0) {
-                                this[_$_2f23[141]] = true;
-                                setTimeout(_$_2f23[432], 500)
+                        if (Main.pl_url.indexOf("history.dat") >= 0) {
+                            if (API.Xcode != 0) {
+                                this.xxx = true;
+                                setTimeout(function() { SearchFormular(); }, 500)
                             } else {
-                                Main[_$_2f23[62]](Main[_$_2f23[288]])
+                                Main.openCommonFile(Main.pl_url)
                             }
                         } else {
-                            if (Main[_$_2f23[288]][_$_2f23[30]](_$_2f23[63]) == 0) {
-                                if (API[_$_2f23[65]][_$_2f23[64]] > 1) {
-                                    Main[_$_2f23[66]](_$_2f23[63], API[_$_2f23[65]])
+                            if (Main.pl_url.indexOf("OpenFav") == 0) {
+                                if (API.fav_start_channels.length > 1) {
+                                    Main.ReadPlArr("OpenFav", API.fav_start_channels)
                                 } else {
-                                    Main[_$_2f23[61]] = true;
-                                    Main[_$_2f23[62]](Main[_$_2f23[67]])
+                                    Main.FAV = true;
+                                    Main.openCommonFile(Main.fav_url)
                                 }
                             } else {
-                                if (Main[_$_2f23[288]][_$_2f23[30]](_$_2f23[59]) > 0) {
-                                    Main[_$_2f23[111]] = Main[_$_2f23[284]];
-                                    Main[_$_2f23[113]] = Main[_$_2f23[285]];
-                                    Main[_$_2f23[61]] = true;
-                                    Main[_$_2f23[62]](Main[_$_2f23[288]])
+                                if (Main.pl_url.indexOf("fav.dat") > 0) {
+                                    Main.fav_num = Main.ch_num;
+                                    Main.fav_name = Main.name;
+                                    Main.FAV = true;
+                                    Main.openCommonFile(Main.pl_url)
                                 } else {
-                                    if (this[_$_2f23[141]] || Main[_$_2f23[285]][_$_2f23[30]](_$_2f23[362]) == 0 || this[_$_2f23[288]][_$_2f23[30]](_$_2f23[433]) >= 0 || this[_$_2f23[288]][_$_2f23[30]](_$_2f23[434]) >= 0 || this[_$_2f23[297]] != _$_2f23[4]) {
-                                        if (!this[_$_2f23[141]]) {
-                                            Main[_$_2f23[140]] = true
+                                    if (this.xxx || Main.name.indexOf("-=SEARCH=-") == 0 || this.pl_url.indexOf("ytv3/3.php") >= 0 || this.pl_url.indexOf("search.php") >= 0 || this.search_on != "") {
+                                        if (!this.xxx) {
+                                            Main.search = true
                                         };
-                                        setTimeout(_$_2f23[432], 500)
+                                        setTimeout(function() { SearchFormular(); }, 500)
                                     } else {
-                                        API[_$_2f23[68]] = this[_$_2f23[288]];
-                                        this[_$_2f23[148]] = true;
-                                        Display[_$_2f23[53]](_$_2f23[435], 0);
-                                        if (Main[_$_2f23[288]][_$_2f23[30]](_$_2f23[250]) >= 0) {
-                                            API[_$_2f23[146]] = true;
-                                            if (this[_$_2f23[288]][_$_2f23[30]](_$_2f23[250]) >= 0) {
-                                                setTimeout(_$_2f23[436], 3000)
+                                        API.XML_URL = this.pl_url;
+                                        this.loading_pl = true;
+                                        Display.status("Reading... ", 0);
+                                        if (Main.pl_url.indexOf("=m3u") >= 0) {
+                                            API.AsReqMode = true;
+                                            if (this.pl_url.indexOf("=m3u") >= 0) {
+                                                setTimeout(function() { API.Request(Main.pl_url); }, 3000)
                                             } else {
-                                                API[_$_2f23[69]](Main[_$_2f23[288]])
+                                                API.Request(Main.pl_url)
                                             }
                                         } else {
-                                            setTimeout(_$_2f23[436], 50)
+                                            setTimeout(function() { API.Request(Main.pl_url); }, 50)
                                         }
                                     }
                                 }
@@ -2675,305 +2712,323 @@ Main[_$_2f23[363]] = function () {
         }
     } catch (d) {}
 };
+
 StartSlideShow = function () {
-    Main[_$_2f23[147]] = true;
-    Main[_$_2f23[368]]();
-    setTimeout(_$_2f23[437], 20)
+    Main.block_info = true;
+    Main.selectNextChannel();
+    setTimeout(function(){ Main.PlayChannel(); }, 20)
 };
+
 StopSlideShow = function () {
-    if (Main[_$_2f23[438]] !== null) {
-        clearInterval(Main[_$_2f23[438]]);
-        Main[_$_2f23[438]] = null
+    if (Main.SlideShowInterval !== null) {
+        clearInterval(Main.SlideShowInterval);
+        Main.SlideShowInterval = null
     }
 };
-Main[_$_2f23[439]] = function () {
+
+Main.PlayNoFlashStream = function () {
     Foto = /\.(gif|jpg|jpeg|bmp|tiff|raw )$/i;
-    if (Foto[_$_2f23[417]](this[_$_2f23[287]]) != null) {
-        Main[_$_2f23[404]] = true
+    if (Foto.exec(this.url) != null) {
+        Main.Foto = true
     } else {
         StopSlideShow()
     };
-    if (API[_$_2f23[440]] > 0 && API[_$_2f23[441]] == 0) {
-        Main[_$_2f23[292]] = _$_2f23[4]
+    if (API.Ibuffer > 0 && API.Buffer == 0) {
+        Main.buffer = ""
     } else {
-        if (Main[_$_2f23[404]]) {
-            Main[_$_2f23[292]] = 0.5
+        if (Main.Foto) {
+            Main.buffer = 0.5
         } else {
-            if (Main[_$_2f23[292]] != _$_2f23[4]) {
-                Main[_$_2f23[292]] = (Main[_$_2f23[292]] > 20) ? 20 : (Main[_$_2f23[292]] < 0.5) ? 0.5 : Main[_$_2f23[292]];
-                if (Main[_$_2f23[293]] > 0) {
-                    Main[_$_2f23[293]] = (Main[_$_2f23[293]] > 50) ? 50 : (Main[_$_2f23[293]] < 10) ? 10 : Main[_$_2f23[293]]
+            if (Main.buffer != "") {
+                Main.buffer = (Main.buffer > 20) ? 20 : (Main.buffer < 0.5) ? 0.5 : Main.buffer;
+                if (Main.ibuffer > 0) {
+                    Main.ibuffer = (Main.ibuffer > 50) ? 50 : (Main.ibuffer < 10) ? 10 : Main.ibuffer
                 }
             } else {
-                if (API[_$_2f23[441]] > 0) {
-                    Main[_$_2f23[292]] = API[_$_2f23[441]];
-                    if (API[_$_2f23[440]] > 0) {
-                        Main[_$_2f23[293]] = API[_$_2f23[440]]
+                if (API.Buffer > 0) {
+                    Main.buffer = API.Buffer;
+                    if (API.Ibuffer > 0) {
+                        Main.ibuffer = API.Ibuffer
                     }
                 }
             }
         }
     };
-    getIdb(_$_2f23[442]);
-    var i = this[_$_2f23[287]];
-    i = i[_$_2f23[272]](_$_2f23[443], _$_2f23[444]);
-    if (i[_$_2f23[30]](_$_2f23[444]) >= 0) {
-        if (dPr(API[_$_2f23[445]]) != _$_2f23[4] && API[_$_2f23[445]][_$_2f23[30]](_$_2f23[266]) > 0) {
-            i = _$_2f23[7] + API[_$_2f23[445]] + _$_2f23[446] + i[_$_2f23[447]](7)
+    getIdb("screen_size");
+    var i = this.url;
+    i = i.replace("rtp://", "udp://");
+    if (i.indexOf("udp://") >= 0) {
+        if (dPr(API.Proxy) != "" && API.Proxy.indexOf(":") > 0) {
+            i = "http://" + API.Proxy + "/udp/" + i.substr(7)
         }
     } else {
-        if (!Main[_$_2f23[404]]) {
-            API[_$_2f23[146]] = false;
+        if (!Main.Foto) {
+            API.AsReqMode = false;
             try {
                 i = Super_parser(i)
             } catch (b) {
-                i = this[_$_2f23[287]]
+                i = this.url
             };
-            API[_$_2f23[146]] = true
+            API.AsReqMode = true
         }
     };
-    if (dPr(i) != _$_2f23[4]) {
-        if (i[_$_2f23[30]](_$_2f23[448]) >= 0) {
-            i = i + _$_2f23[449]
+    if (dPr(i) != "") {
+        if (i.indexOf(".m3u8") >= 0) {
+            i = i + "|COMPONENT=HLS"
         };
-        Player[_$_2f23[450]](i, 0)
+        Player.play(i, 0)
     } else {
-        Player[_$_2f23[401]]();
-        Display[_$_2f23[53]](_$_2f23[451]);
-        this[_$_2f23[104]][_$_2f23[358]]();
-        setTimeout(_$_2f23[415], 500)
+        Player.stopV();
+        Display.status("Empty link!");
+        this.prev_ch_array.pop();
+        setTimeout(function() { Main.Menu(); }, 500)
     }
 };
-Main[_$_2f23[410]] = function () {
-    Player[_$_2f23[452]] = false;
-    Player[_$_2f23[200]] = Player[_$_2f23[453]];
-    Main[_$_2f23[419]](_$_2f23[426]);
-    KeyHandler[_$_2f23[118]](2);
-    getIdn(_$_2f23[442]);
-    getIdb(_$_2f23[454]);
-    widgetAPI[_$_2f23[216]](getId(_$_2f23[454]), _$_2f23[4]);
-    var i = (this[_$_2f23[287]][_$_2f23[30]](_$_2f23[409]) >= 0) ? (_$_2f23[455] + this[_$_2f23[287]]) : (_$_2f23[456] + this[_$_2f23[287]]);
-    var o = _$_2f23[457];
-    o += _$_2f23[458];
-    o += _$_2f23[459] + i + _$_2f23[460];
-    widgetAPI[_$_2f23[216]](getId(_$_2f23[454]), o);
-    Player[_$_2f23[200]] = Player[_$_2f23[461]];
-    setTimeout(_$_2f23[462], 500)
+
+Main.PlayFlashStream = function () {
+    Player.next = false;
+    Player.state = Player.LOADING;
+    Main.saveHistory("live_history.dat");
+    KeyHandler.setFocus(2);
+    getIdn("screen_size");
+    getIdb("flashplayer");
+    widgetAPI.putInnerHTML(getId("flashplayer"), "");
+    var i = (this.url.indexOf(".flv") >= 0) ? ("flv=" + this.url) : ("file=" + this.url);
+    var o = "<object type=\"application/x-shockwave-flash\" id=\"rmtpplayerHD\" width=\"960\" height=\"540\">";
+    o += "<param name=\"movie\" value=\"nflashplayer.swf\" />";
+    o += "<param name=\"FlashVars\" value=\"" + i + "\" /></object>";
+    widgetAPI.putInnerHTML(getId("flashplayer"), o);
+    Player.state = Player.PLAYING_LIVE;
+    setTimeout(function() { Main.setPlayer(); }, 500)
 };
-Main[_$_2f23[463]] = function () {
-    Main[_$_2f23[464]] = window[_$_2f23[465]]
+
+Main.setPlayer = function () {
+    Main.player = window.rmtpplayerHD
 };
-Main[_$_2f23[400]] = function () {
-    delete Main[_$_2f23[464]];
-    getIdn(_$_2f23[454]);
-    Display[_$_2f23[142]]();
-    widgetAPI[_$_2f23[216]](getId(_$_2f23[454]), _$_2f23[4]);
-    Player[_$_2f23[200]] = Player[_$_2f23[201]]
+
+Main.stopFPlayer = function () {
+    delete Main.player;
+    getIdn("flashplayer");
+    Display.hidestatus();
+    widgetAPI.putInnerHTML(getId("flashplayer"), "");
+    Player.state = Player.STOPPED
 };
-Main[_$_2f23[466]] = function (q, j) {
+
+Main.readFile = function (q, j) {
     var p = new FileSystem();
-    var o = p[_$_2f23[62]](curWidget[_$_2f23[467]] + _$_2f23[468] + j, _$_2f23[469]);
+    var o = p.openCommonFile(curWidget.id + "/" + j, "r");
     if (!o) {
-        o = p[_$_2f23[62]](j, _$_2f23[469])
+        o = p.openCommonFile(j, "r")
     };
     if (o) {
         while (1) {
-            var i = o[_$_2f23[470]]();
+            var i = o.readLine();
             if (i == null) {
                 break
             };
-            q[_$_2f23[355]](i)
+            q.push(i)
         };
-        p[_$_2f23[471]](o)
+        p.closeCommonFile(o)
     }
 };
-Main[_$_2f23[472]] = function (q, j) {
+
+Main.writeFile = function (q, j) {
     var p = new FileSystem();
-    if (!p[_$_2f23[473]](curWidget[_$_2f23[467]])) {
-        p[_$_2f23[474]](curWidget[_$_2f23[467]])
+    if (!p.isValidCommonPath(curWidget.id)) {
+        p.createCommonDir(curWidget.id)
     };
-    var o = p[_$_2f23[62]](curWidget[_$_2f23[467]] + _$_2f23[468] + j, _$_2f23[475]);
+    var o = p.openCommonFile(curWidget.id + "/" + j, "w");
     if (o) {
-        for (var i = 0; i < q[_$_2f23[64]]; i++) {
-            o[_$_2f23[476]](q[i])
+        for (var i = 0; i < q.length; i++) {
+            o.writeLine(q[i])
         };
-        p[_$_2f23[471]](o)
+        p.closeCommonFile(o)
     }
 };
-Main[_$_2f23[419]] = function (q) {
-    var p = [dSp(dI(Main[_$_2f23[285]]) + _$_2f23[79] + dI(this[_$_2f23[287]]) + _$_2f23[79] + dI(this[_$_2f23[289]]) + _$_2f23[79] + dI(Ach(3)) + _$_2f23[477] + dI(this[_$_2f23[288]]) + _$_2f23[79] + this[_$_2f23[290]] + _$_2f23[79] + this[_$_2f23[291]] + _$_2f23[79] + this[_$_2f23[292]] + _$_2f23[79] + this[_$_2f23[293]] + _$_2f23[79] + this[_$_2f23[294]] + _$_2f23[79] + this[_$_2f23[295]] + _$_2f23[79] + dI(this[_$_2f23[296]]) + _$_2f23[79] + dI(this[_$_2f23[297]]))];
-    Main[_$_2f23[466]](p, q);
-    if (p[_$_2f23[64]] > 10) {
-        p[_$_2f23[358]]()
+
+Main.saveHistory = function (q) {
+    var p = [dSp(dI(Main.name) + "|" + dI(this.url) + "|" + dI(this.logo) + "|" + dI(Ach(3)) + "||" + dI(this.pl_url) + "|" + this.ssize + "|" + this.a_num + "|" + this.buffer + "|" + this.ibuffer + "|" + this.timeshift + "|" + this.region + "|" + dI(this.parser) + "|" + dI(this.search_on))];
+    Main.readFile(p, q);
+    if (p.length > 10) {
+        p.pop()
     };
-    var i = (this[_$_2f23[287]] != _$_2f23[4]) ? dI(this[_$_2f23[287]]) : dI(this[_$_2f23[288]]);
-    for (var o = 1; o < p[_$_2f23[64]]; o++) {
-        if (p[o][_$_2f23[30]](i) > 0) {
-            p[_$_2f23[478]](o, 1);
+    var i = (this.url != "") ? dI(this.url) : dI(this.pl_url);
+    for (var o = 1; o < p.length; o++) {
+        if (p[o].indexOf(i) > 0) {
+            p.splice(o, 1);
             break
         }
     };
-    Main[_$_2f23[472]](p, q)
+    Main.writeFile(p, q)
 };
-Main[_$_2f23[479]] = function (i) {
+
+Main.delHistory = function (i) {
     var o = [];
-    Main[_$_2f23[472]](o, i);
-    Main[_$_2f23[356]]()
+    Main.writeFile(o, i);
+    Main.PlayPrevPlaylist()
 };
-Main[_$_2f23[480]] = function () {
-    var i = [dSp(dI(Main[_$_2f23[285]]) + _$_2f23[79] + dI(this[_$_2f23[287]]) + _$_2f23[79] + dI(this[_$_2f23[289]]) + _$_2f23[79] + dI(Ach(3)) + _$_2f23[477] + dI(this[_$_2f23[288]]) + _$_2f23[79] + this[_$_2f23[290]] + _$_2f23[79] + this[_$_2f23[291]] + _$_2f23[79] + this[_$_2f23[292]] + _$_2f23[79] + this[_$_2f23[293]] + _$_2f23[79] + this[_$_2f23[294]] + _$_2f23[79] + this[_$_2f23[295]] + _$_2f23[79] + dI(this[_$_2f23[296]]) + _$_2f23[79] + dI(this[_$_2f23[297]]))];
-    Main[_$_2f23[466]](i, Main[_$_2f23[67]]);
-    Main[_$_2f23[472]](i, Main[_$_2f23[67]]);
-    Display[_$_2f23[53]](_$_2f23[481] + Main[_$_2f23[111]] + _$_2f23[185] + Main[_$_2f23[113]] + _$_2f23[482], 1500)
+
+Main.saveFavorites = function () {
+    var i = [dSp(dI(Main.name) + "|" + dI(this.url) + "|" + dI(this.logo) + "|" + dI(Ach(3)) + "||" + dI(this.pl_url) + "|" + this.ssize + "|" + this.a_num + "|" + this.buffer + "|" + this.ibuffer + "|" + this.timeshift + "|" + this.region + "|" + dI(this.parser) + "|" + dI(this.search_on))];
+    Main.readFile(i, Main.fav_url);
+    Main.writeFile(i, Main.fav_url);
+    Display.status("<b style=\"color:#CDCDCD\">Added to Favourites " + Main.fav_num + " - \"" + Main.fav_name + "\"</b>", 1500)
 };
-Main[_$_2f23[483]] = function () {
-    var i = this[_$_2f23[284]] - 1;
+
+Main.delFavorites = function () {
+    var i = this.ch_num - 1;
     var o = [];
-    Main[_$_2f23[466]](o, Main[_$_2f23[67]]);
-    o[_$_2f23[478]](i, 1);
-    Main[_$_2f23[472]](o, Main[_$_2f23[67]]);
-    this[_$_2f23[359]] = true;
-    if (o[_$_2f23[64]] == 0) {
-        Display[_$_2f23[53]](_$_2f23[484] + Main[_$_2f23[111]] + _$_2f23[185] + Main[_$_2f23[113]] + _$_2f23[485], 1500);
-        Main[_$_2f23[61]] = false;
-        Main[_$_2f23[159]] = false;
-        if (Main[_$_2f23[208]][_$_2f23[64]] == 0 && API[_$_2f23[68]][_$_2f23[30]](_$_2f23[209]) < 0) {
-            API[_$_2f23[68]] = _$_2f23[209];
-            setTimeout(_$_2f23[486], 3000)
+    Main.readFile(o, Main.fav_url);
+    o.splice(i, 1);
+    Main.writeFile(o, Main.fav_url);
+    this.DEL = true;
+    if (o.length == 0) {
+        Display.status("<b style=\"color:yellow\">Favourites folder " + Main.fav_num + " - \"" + Main.fav_name + "\" -  EMPTY !</b>", 1500);
+        Main.FAV = false;
+        Main.RED = false;
+        if (Main.prev_pl_array.length == 0 && API.XML_URL.indexOf("start.xml") < 0) {
+            API.XML_URL = "start.xml";
+            setTimeout(function() { API.Request(API.XML_URL); }, 3000)
         } else {
-            setTimeout(_$_2f23[487], 3000)
+            setTimeout(function() { Main.PlayPrevPlaylist(); }, 3000)
         }
     } else {
-        this[_$_2f23[151]] = false;
-        Main[_$_2f23[62]](Main[_$_2f23[67]])
+        this.playlist_prev = false;
+        Main.openCommonFile(Main.fav_url)
     }
 };
-Main[_$_2f23[488]] = function (p) {
-    var i = this[_$_2f23[284]] - 1;
+
+Main.moveFavorites = function (p) {
+    var i = this.ch_num - 1;
     var q = [];
-    Main[_$_2f23[466]](q, Main[_$_2f23[67]]);
-    if (q[_$_2f23[64]] > 1) {
-        p = (i == 0 && p == 1) ? -q[_$_2f23[64]] : (i == q[_$_2f23[64]] - 1 && p == -1) ? q[_$_2f23[64]] - 1 : p;
-        this[_$_2f23[359]] = true;
-        var o = q[_$_2f23[478]](i, 1);
-        q[_$_2f23[478]](i - p, 0, o[_$_2f23[298]]());
-        Main[_$_2f23[472]](q, Main[_$_2f23[67]]);
-        this[_$_2f23[151]] = false;
-        Main[_$_2f23[62]](Main[_$_2f23[67]]);
-        if (p == -1 || p == q[_$_2f23[64]] - 1) {
-            Main[_$_2f23[368]]()
+    Main.readFile(q, Main.fav_url);
+    if (q.length > 1) {
+        p = (i == 0 && p == 1) ? -q.length : (i == q.length - 1 && p == -1) ? q.length - 1 : p;
+        this.DEL = true;
+        var o = q.splice(i, 1);
+        q.splice(i - p, 0, o.toString());
+        Main.writeFile(q, Main.fav_url);
+        this.playlist_prev = false;
+        Main.openCommonFile(Main.fav_url);
+        if (p == -1 || p == q.length - 1) {
+            Main.selectNextChannel()
         } else {
-            Main[_$_2f23[369]]()
+            Main.selectPrevChannel()
         }
     }
 };
-Main[_$_2f23[62]] = function (p) {
+
+Main.openCommonFile = function (p) {
     var l = [];
-    Main[_$_2f23[466]](l, p);
-    if (l[_$_2f23[64]] == 0) {
-        if (p[_$_2f23[30]](_$_2f23[59]) > 0) {
-            if (Main[_$_2f23[208]][_$_2f23[64]] == 0 && API[_$_2f23[68]][_$_2f23[30]](_$_2f23[209]) < 0) {
-                Display[_$_2f23[53]](_$_2f23[489], 1500);
-                setTimeout(_$_2f23[490], 3500);
-                API[_$_2f23[68]] = _$_2f23[209];
-                setTimeout(_$_2f23[486], 7000)
+    Main.readFile(l, p);
+    if (l.length == 0) {
+        if (p.indexOf("fav.dat") > 0) {
+            if (Main.prev_pl_array.length == 0 && API.XML_URL.indexOf("start.xml") < 0) {
+                Display.status("<b style=\"color:yellow\">Your Favourites folder is EMPTY !</b>", 1500);
+                setTimeout(function() {
+					Display.status('Please change address in the settings');
+				}, 3500);
+                API.XML_URL = "start.xml";
+                setTimeout(function() { API.Request(API.XML_URL); }, 7000)
             } else {
-                Display[_$_2f23[53]](_$_2f23[491] + Main[_$_2f23[111]] + _$_2f23[492] + Main[_$_2f23[113]] + _$_2f23[493], 1500);
-                if (API[_$_2f23[68]][_$_2f23[30]](_$_2f23[59]) > 0) {
-                    Main[_$_2f23[110]]();
-                    Main[_$_2f23[466]](l, API[_$_2f23[68]])
+                Display.status("<b style=\"color:yellow\">Favourites folder" + Main.fav_num + " - " + Main.fav_name + " -  is EMPTY !</b>", 1500);
+                if (API.XML_URL.indexOf("fav.dat") > 0) {
+                    Main.SetFavSelectedPosition();
+                    Main.readFile(l, API.XML_URL)
                 } else {
-                    if (Main[_$_2f23[61]]) {
-                        Main[_$_2f23[61]] = false
+                    if (Main.FAV) {
+                        Main.FAV = false
                     }
                 };
-                if (API[_$_2f23[68]][_$_2f23[30]](_$_2f23[63]) >= 0) {
-                    this[_$_2f23[208]][_$_2f23[358]]();
-                    this[_$_2f23[151]] = true
+                if (API.XML_URL.indexOf("OpenFav") >= 0) {
+                    this.prev_pl_array.pop();
+                    this.playlist_prev = true
                 };
-                Selectbox[_$_2f23[494]] = Selectbox[_$_2f23[495]];
-                Selectbox[_$_2f23[100]] = Selectbox[_$_2f23[496]]
+                Selectbox.selected = Selectbox.pre_selected;
+                Selectbox.selected_page = Selectbox.pre_selected_page
             }
         } else {
-            Display[_$_2f23[53]](_$_2f23[497], 500)
+            Display.status("Empty!", 500)
         }
     } else {
         var q = [];
-        for (var o = 0; o < l[_$_2f23[64]]; o++) {
+        for (var o = 0; o < l.length; o++) {
             var i = l[o];
-            i = i[_$_2f23[305]](_$_2f23[79]);
+            i = i.split("|");
             for (var j = 0; j < 14; j++) {
                 if (i[j] == undefined) {
-                    i[j] = _$_2f23[4]
+                    i[j] = ""
                 }
             };
-            q[_$_2f23[355]](i)
+            q.push(i)
         };
-        Main[_$_2f23[66]](p, q)
+        Main.ReadPlArr(p, q)
     }
 };
-Main[_$_2f23[66]] = function (o, i, q, p) {
-    Main[_$_2f23[366]]();
-    API[_$_2f23[498]]();
-    API[_$_2f23[239]] = i;
-    if (p != undefined && p[_$_2f23[64]] > 2) {
-        API[_$_2f23[120]] = p;
-        if (q != undefined && q[_$_2f23[64]] > 0) {
-            API[_$_2f23[367]] = q
+
+Main.ReadPlArr = function (o, i, q, p) {
+    Main.SavePrevPlaylist();
+    API.ResetAll();
+    API.channels = i;
+    if (p != undefined && p.length > 2) {
+        API.categories = p;
+        if (q != undefined && q.length > 0) {
+            API.all_channels = q
         } else {
-            API[_$_2f23[367]] = i
+            API.all_channels = i
         }
     };
-    API[_$_2f23[68]] = o;
-    API[_$_2f23[499]]();
-    setTimeout(_$_2f23[500], 500)
+    API.XML_URL = o;
+    API.countPages();
+    setTimeout(function(){ Main.Menu(); }, 500)
 };
 
 function ScanUsbPort() {
-    Main[_$_2f23[324]] = _$_2f23[4];
+    Main.playlist_name = "";
     var bb = [];
-    var bd = _$_2f23[501];
-    var Z = _$_2f23[502];
-    var G = Main[_$_2f23[16]][_$_2f23[503]]();
+    var bd = "<font color=\"#00ccff\">";
+    var Z = "<font color=\"#ffff99\">";
+    var G = Main.St.GetUSBListSize();
     if (G && G != -1) {
         for (var z = 0; z < G; z++) {
-            var E = parseInt(Main[_$_2f23[16]][_$_2f23[504]](z), 10);
-            var R = Main[_$_2f23[16]][_$_2f23[505]](E);
-            var D = parseInt(Main[_$_2f23[16]][_$_2f23[506]](E), 10);
-            var u = Main[_$_2f23[16]][_$_2f23[507]](E);
+            var E = parseInt(Main.St.GetUSBDeviceID(z), 10);
+            var R = Main.St.GetUSBVendorName(E);
+            var D = parseInt(Main.St.GetUSBPartitionNum(E), 10);
+            var u = Main.St.GetUSBModelName(E);
             for (var y = 0; y < D; y++) {
-                var l = Main[_$_2f23[16]][_$_2f23[508]](E, y);
-                var j = ReSize(Main[_$_2f23[16]][_$_2f23[509]](E, y) * 1024);
-                var q = ReSize(Main[_$_2f23[16]][_$_2f23[510]](E, y) * 1024);
-                var s = _$_2f23[511] + Z + R + _$_2f23[512] + Z + u + _$_2f23[513] + Z + q + _$_2f23[514] + Z + j + _$_2f23[515] + Z + l + _$_2f23[516] + Z + D; + _$_2f23[517];
-                var o = _$_2f23[518] + l;
-                var p = bd + R + _$_2f23[492] + u + _$_2f23[519];
-                var i = [p, _$_2f23[4], _$_2f23[520], s, _$_2f23[4], o, _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[4]];
-                bb[_$_2f23[355]](i)
+                var l = Main.St.GetUSBMountPath(E, y);
+                var j = ReSize(Main.St.GetUSBAvailSize(E, y) * 1024);
+                var q = ReSize(Main.St.GetUSBTotalSize(E, y) * 1024);
+                var s = "<h3> Name : " + Z + R + "</font><br>  Model : " + Z + u + "</font><br>  The total size : " + Z + q + "</font><br>  Free size  : " + Z + j + "</font><br>  Mount Directory  : " + Z + l + "</font><br>  Partition number  : " + Z + D; + "</font></h3>";
+                var o = "$USB_DIR/" + l;
+                var p = bd + R + " - " + u + "</font>";
+                var i = [p, "", "usb_logo.png", s, "", o, "", "", "", "", "", "", "", ""];
+                bb.push(i)
             }
         };
-        Main[_$_2f23[66]](Main[_$_2f23[288]], bb);
-        API[_$_2f23[324]] = _$_2f23[521]
+        Main.ReadPlArr(Main.pl_url, bb);
+        API.playlist_name = "USB Memory HDD"
     } else {
-        Display[_$_2f23[53]](_$_2f23[522], 500)
+        Display.status("No USB devices has being found!", 500)
     }
 }
+
 function SearchPlToUSB() {
-    var j = _$_2f23[4];
-    var u = Main[_$_2f23[16]][_$_2f23[503]]();
+    var j = "";
+    var u = Main.St.GetUSBListSize();
     if (u && u != -1) {
         for (var D = 0; D < u; D++) {
-            var s = parseInt(Main[_$_2f23[16]][_$_2f23[504]](D), 10);
-            var l = parseInt(Main[_$_2f23[16]][_$_2f23[506]](s), 10);
+            var s = parseInt(Main.St.GetUSBDeviceID(D), 10);
+            var l = parseInt(Main.St.GetUSBPartitionNum(s), 10);
             for (var R = 0; R < l; R++) {
-                var q = Main[_$_2f23[16]][_$_2f23[508]](s, R);
-                var i = _$_2f23[518] + q;
+                var q = Main.St.GetUSBMountPath(s, R);
+                var i = "$USB_DIR/" + q;
                 var E = new FileSystem();
-                var p = E[_$_2f23[523]](i);
+                var p = E.readDir(i);
                 if (p) {
-                    for (var o = 0; o < p[_$_2f23[64]]; o++) {
-                        if (p[o][_$_2f23[285]] && Main[_$_2f23[288]][_$_2f23[447]](4) == p[o][_$_2f23[285]]) {
-                            j = _$_2f23[524] + q + _$_2f23[468] + Main[_$_2f23[288]][_$_2f23[447]](4);
+                    for (var o = 0; o < p.length; o++) {
+                        if (p[o].name && Main.pl_url.substr(4) == p[o].name) {
+                            j = "/dtv/usb/" + q + "/" + Main.pl_url.substr(4);
                             D = u;
                             break
                         }
@@ -2981,19 +3036,20 @@ function SearchPlToUSB() {
                 }
             }
         };
-        if (j == _$_2f23[4]) {
-            Display[_$_2f23[53]](_$_2f23[525], 500)
+        if (j == "") {
+            Display.status("Playlist not found!", 500)
         }
     } else {
-        Display[_$_2f23[53]](_$_2f23[522], 500)
+        Display.status("No USB devices has being found!", 500)
     };
     return j
 }
+
 function ReadUsbDirN() {
-    var p = _$_2f23[501];
-    var o = _$_2f23[526];
-    var R = _$_2f23[502];
-    var D = _$_2f23[527];
+    var p = "<font color=\"#00ccff\">";
+    var o = "<font color=\"#ffffcc\">";
+    var R = "<font color=\"#ffff99\">";
+    var D = "<font color=\"#00cc99\">";
     var u = [];
     var K = [];
     var J = [];
@@ -3008,78 +3064,78 @@ function ReadUsbDirN() {
     Foto = /\.(png|gif|jpg|jpeg|bmp|ico|tiff|mpo|raw)$/i;
     var Z = function (O, br, M, L, N, P) {
             bd++;
-            u = [br, M, L, N, _$_2f23[4], P, _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[4]];
-            O[_$_2f23[355]](u)
+            u = [br, M, L, N, "", P, "", "", "", "", "", "", "", ""];
+            O.push(u)
         };
-    var bm = Main[_$_2f23[288]][_$_2f23[30]](_$_2f23[528]);
+    var bm = Main.pl_url.indexOf("&page=");
     if (bm != -1) {
-        Main[_$_2f23[529]] = parseInt(Main[_$_2f23[288]][_$_2f23[530]](bm + 6), 10);
-        Main[_$_2f23[288]] = Main[_$_2f23[288]][_$_2f23[530]](0, bm)
+        Main.step_read_dir = parseInt(Main.pl_url.substring(bm + 6), 10);
+        Main.pl_url = Main.pl_url.substring(0, bm)
     };
     var q = new FileSystem();
-    var G = q[_$_2f23[523]](Main[_$_2f23[288]]);
+    var G = q.readDir(Main.pl_url);
     if (G) {
-        var bj = _$_2f23[4];
-        var bf = _$_2f23[4];
-        if (G[_$_2f23[64]] > ((50 * Main[_$_2f23[529]]) + 2)) {
-            if (Main[_$_2f23[529]] > 1) {
-                bf = Main[_$_2f23[288]] + _$_2f23[528] + (Main[_$_2f23[529]] - 1)
+        var bj = "";
+        var bf = "";
+        if (G.length > ((50 * Main.step_read_dir) + 2)) {
+            if (Main.step_read_dir > 1) {
+                bf = Main.pl_url + "&page=" + (Main.step_read_dir - 1)
             };
-            bj = Main[_$_2f23[288]] + _$_2f23[528] + (Main[_$_2f23[529]] + 1);
-            var bb = 50 * (Main[_$_2f23[529]] - 1);
-            var z = (50 * Main[_$_2f23[529]]) + 2
+            bj = Main.pl_url + "&page=" + (Main.step_read_dir + 1);
+            var bb = 50 * (Main.step_read_dir - 1);
+            var z = (50 * Main.step_read_dir) + 2
         } else {
-            if (Main[_$_2f23[529]] != 1) {
-                bj = Main[_$_2f23[288]] + _$_2f23[528] + (Main[_$_2f23[529]] - 1)
+            if (Main.step_read_dir != 1) {
+                bj = Main.pl_url + "&page=" + (Main.step_read_dir - 1)
             };
-            bb = 50 * (Main[_$_2f23[529]] - 1);
-            z = G[_$_2f23[64]];
-            Main[_$_2f23[529]] = 1
+            bb = 50 * (Main.step_read_dir - 1);
+            z = G.length;
+            Main.step_read_dir = 1
         };
-        var l = _$_2f23[4];
+        var l = "";
         for (var y = bb + 2; y < z; y++) {
-            var s = _$_2f23[4];
-            if (G[y][_$_2f23[285]]) {
-                s = G[y][_$_2f23[285]]
+            var s = "";
+            if (G[y].name) {
+                s = G[y].name
             };
-            if (s != _$_2f23[531] && s != _$_2f23[532] && l != s) {
-                var E = _$_2f23[533] + R + s + _$_2f23[519];
-                if (!G[y][_$_2f23[534]]) {
-                    E += _$_2f23[535] + D + _$_2f23[536];
-                    var j = G[y][_$_2f23[285]][_$_2f23[537]](/\.(\w+)$/i);
+            if (s != "." && s != ".." && l != s) {
+                var E = "<h3>Name : " + R + s + "</font>";
+                if (!G[y].isDir) {
+                    E += "<br> Type : " + D + "File </font>";
+                    var j = G[y].name.match(/\.(\w+)$/i);
                     if (j != null) {
-                        j = j[1][_$_2f23[242]]();
-                        E += _$_2f23[538] + R + j + _$_2f23[539]
+                        j = j[1].toLowerCase();
+                        E += " \"" + R + j + "</font>\""
                     } else {
-                        E += _$_2f23[540]
+                        E += " \" Without Extension \""
                     };
-                    if (G[y][_$_2f23[541]]) {
-                        E += _$_2f23[542] + R + ReSize(G[y][_$_2f23[541]]) + _$_2f23[519]
+                    if (G[y].size) {
+                        E += "<br> Size : " + R + ReSize(G[y].size) + "</font>"
                     };
-                    var bh = Main[_$_2f23[288]][_$_2f23[272]](_$_2f23[422], _$_2f23[543])
+                    var bh = Main.pl_url.replace("$USB_DIR", "/dtv/usb")
                 } else {
-                    E += _$_2f23[535] + p + _$_2f23[544]
+                    E += "<br> Type : " + p + " Folder </font>"
                 };
-                if (G[y][_$_2f23[545]]) {
-                    E += _$_2f23[546] + R + G[y][_$_2f23[545]] + _$_2f23[519]
+                if (G[y].mtime) {
+                    E += "<br> Creation Date : " + R + G[y].mtime + "</font>"
                 };
-                if (!G[y][_$_2f23[534]] && Playlist[_$_2f23[417]](s) != null) {
-                    Z(K, R + s + _$_2f23[519], _$_2f23[4], _$_2f23[547], E + _$_2f23[548], bh + _$_2f23[468] + s)
+                if (!G[y].isDir && Playlist.exec(s) != null) {
+                    Z(K, R + s + "</font>", "", "playlist.png", E + "</h3>", bh + "/" + s)
                 } else {
-                    if (!G[y][_$_2f23[534]] && Video[_$_2f23[417]](s) != null) {
-                        Z(J, R + s + _$_2f23[519], bh + _$_2f23[468] + s, _$_2f23[428], E + _$_2f23[548], _$_2f23[4])
+                    if (!G[y].isDir && Video.exec(s) != null) {
+                        Z(J, R + s + "</font>", bh + "/" + s, "film.png", E + "</h3>", "")
                     } else {
-                        if (!G[y][_$_2f23[534]] && Audio[_$_2f23[417]](s) != null) {
-                            Z(I, R + s + _$_2f23[519], bh + _$_2f23[468] + s, _$_2f23[549], E + _$_2f23[548], _$_2f23[4])
+                        if (!G[y].isDir && Audio.exec(s) != null) {
+                            Z(I, R + s + "</font>", bh + "/" + s, "music.png", E + "</h3>", "")
                         } else {
-                            if (!G[y][_$_2f23[534]] && Foto[_$_2f23[417]](s) != null) {
-                                Z(bk, R + s + _$_2f23[519], bh + _$_2f23[468] + s, _$_2f23[550], E + _$_2f23[548], _$_2f23[4])
+                            if (!G[y].isDir && Foto.exec(s) != null) {
+                                Z(bk, R + s + "</font>", bh + "/" + s, "foto.png", E + "</h3>", "")
                             } else {
-                                if (!G[y][_$_2f23[534]]) {
-                                    Z(bi, o + s + _$_2f23[519], bh + _$_2f23[468] + s, _$_2f23[551], E + _$_2f23[548], _$_2f23[4])
+                                if (!G[y].isDir) {
+                                    Z(bi, o + s + "</font>", bh + "/" + s, "file.png", E + "</h3>", "")
                                 } else {
-                                    if (G[y][_$_2f23[534]]) {
-                                        Z(bg, D + s + _$_2f23[519], _$_2f23[4], _$_2f23[431], E + _$_2f23[548], Main[_$_2f23[288]] + _$_2f23[468] + s)
+                                    if (G[y].isDir) {
+                                        Z(bg, D + s + "</font>", "", "blue_folder.png", E + "</h3>", Main.pl_url + "/" + s)
                                     }
                                 }
                             }
@@ -3090,38 +3146,51 @@ function ReadUsbDirN() {
             l = s
         }
     };
-    if (API[_$_2f23[324]] == _$_2f23[521]) {
-        Main[_$_2f23[324]] = Main[_$_2f23[285]]
+    if (API.playlist_name == "USB Memory HDD") {
+        Main.playlist_name = Main.name
     };
     if (bd > 0) {
-        var i = K[_$_2f23[552]](J, I, bk, bi, bg);
-        Main[_$_2f23[66]](Main[_$_2f23[288]], i);
-        API[_$_2f23[324]] = Main[_$_2f23[324]];
-        API[_$_2f23[334]] = bj;
-        API[_$_2f23[328]] = bf
+        var i = K.concat(J, I, bk, bi, bg);
+        Main.ReadPlArr(Main.pl_url, i);
+        API.playlist_name = Main.playlist_name;
+        API.next_page_url = bj;
+        API.prev_page_url = bf
     } else {
-        Display[_$_2f23[53]](_$_2f23[553], 500)
+        Display.status("Empty Folder!", 500)
     }
 }
+
 function ReSize(o) {
-    var i = (o >= 1073741824) ? (o / 1073741824)[_$_2f23[554]](2) + _$_2f23[555] : (o >= 1048576) ? (o / 1048576)[_$_2f23[554]](2) + _$_2f23[556] : (o >= 1024) ? (o / 1024)[_$_2f23[554]](2) + _$_2f23[557] : (o >= 0) ? o + _$_2f23[558] : (o < 0) ? (2 + o / 1073741824)[_$_2f23[554]](2) + _$_2f23[555] : _$_2f23[4];
+    var i = (o >= 1073741824)
+				? (o / 1073741824).toFixed(2) + " Gb"
+				: (o >= 1048576)
+					? (o / 1048576).toFixed(2) + " Mb"
+					: (o >= 1024)
+						? (o / 1024).toFixed(2) + " Kb"
+						: (o >= 0)
+							? o + " Byte"
+							: (o < 0)
+								? (2 + o / 1073741824).toFixed(2) + " Gb"
+								: "";
     return i
 }
-Main[_$_2f23[559]] = function () {
-    if (Main[_$_2f23[399]] == _$_2f23[78]) {
-        Main[_$_2f23[400]]()
+
+Main.onUnload = function () {
+    if (Main.PlayerMode == "0") {
+        Main.stopFPlayer()
     };
-    Player[_$_2f23[560]]();
-    alert(_$_2f23[561])
+    Player.deinit();
+    alert("DEINIT")
 };
 
 function StartTime() {
-    clearInterval(Main[_$_2f23[562]]);
-    Main[_$_2f23[562]] = setInterval(_$_2f23[563], 1000);
-    if (API[_$_2f23[137]] == 0) {
+    clearInterval(Main.IntervalUpdateTime);
+    Main.IntervalUpdateTime = setInterval(function() { SetTimeDate(); }, 1000);
+    if (API.Timemode == 0) {
         SyncInetTime()
     }
 }
+
 var T = {
     s: 0,
     m: 0,
@@ -3140,86 +3209,89 @@ var T = {
 function SyncInetTime() {
     var i = null;
     i = new XMLHttpRequest();
-    i[_$_2f23[564]] = function () {
-        if (i[_$_2f23[565]] == 4) {
-            var o = Math[_$_2f23[77]](Number(i[_$_2f23[566]]));
+    i.onreadystatechange = function () {
+        if (i.readyState == 4) {
+            var o = Math.round(Number(i.responseText));
             if (!isNaN(o) && o > 0) {
-                T[_$_2f23[567]] = o;
-                clearInterval(Main[_$_2f23[562]]);
-                Main[_$_2f23[562]] = setInterval(_$_2f23[568], 1000)
+                T.inetTime = o;
+                clearInterval(Main.IntervalUpdateTime);
+                Main.IntervalUpdateTime = setInterval(function() { SetTimeDate(); }, 1000)
             } else {
-                if (T[_$_2f23[569]] < 3) {
-                    T[_$_2f23[569]]++;
-                    setTimeout(_$_2f23[570], 60000)
+                if (T.Sync_step < 3) {
+                    T.Sync_step++;
+                    setTimeout(function() { SyncInetTime(); }, 60000)
                 } else {
-                    if (T[_$_2f23[569]] == 3) {
-                        T[_$_2f23[569]] = 0;
-                        setTimeout(_$_2f23[570], 30 * 60000);
-                        Display[_$_2f23[53]](_$_2f23[571], 500)
+                    if (T.Sync_step == 3) {
+                        T.Sync_step = 0;
+                        setTimeout(function() { SyncInetTime(); }, 30 * 60000);
+                        Display.status("Connection Error with NTP server!", 500)
                     }
                 }
             }
         }
     };
-    i[_$_2f23[574]](_$_2f23[572], _$_2f23[573], true);
-    i[_$_2f23[577]](_$_2f23[575], _$_2f23[576]);
-    i[_$_2f23[578]]()
+    i.open("GET", "http://wwp.greenwichmeantime.com/time/scripts/clock-8/x.php", true);
+    i.setRequestHeader("User-Agent", "Opera/9.80 (Windows NT 5.1; U; ru) Presto/2.9.168 Version/11.51");
+    i.send()
 }
+
 function getDT(o) {
     var i = new Date(o);
-    T[_$_2f23[579]] = i[_$_2f23[580]]();
-    T[_$_2f23[581]] = i[_$_2f23[582]]();
-    T[_$_2f23[583]] = i[_$_2f23[584]]();
-    T[_$_2f23[585]] = i[_$_2f23[586]]();
-    T[_$_2f23[587]] = i[_$_2f23[588]]();
-    T[_$_2f23[589]] = i[_$_2f23[590]]();
-    T[_$_2f23[591]] = i[_$_2f23[592]]()
+    T.year = i.getFullYear();
+    T.date = i.getDate();
+    T.month = i.getMonth();
+    T.day = i.getDay();
+    T.h = i.getHours();
+    T.m = i.getMinutes();
+    T.s = i.getSeconds()
 }
+
 function to(q, p, o, i) {
-    return (q > 9 ? q : (_$_2f23[78] + q)) + _$_2f23[266] + (p > 9 ? p : (_$_2f23[78] + p)) + ((Player[_$_2f23[200]] != Player[_$_2f23[461]] || i == 0) ? (_$_2f23[266] + (o > 9 ? o : (_$_2f23[78] + o))) : _$_2f23[4])
+    return (q > 9 ? q : ("0" + q)) + ":" + (p > 9 ? p : ("0" + p)) + ((Player.state != Player.PLAYING_LIVE || i == 0) ? (":" + (o > 9 ? o : ("0" + o))) : "")
 }
+
 function SetTimeDate() {
-    if (API[_$_2f23[137]] == 0 && T[_$_2f23[567]] > 0) {
-        T[_$_2f23[567]] += 1000;
-        var s = T[_$_2f23[567]] + API[_$_2f23[593]] * 3600000;
-        T[_$_2f23[594]] = parseInt(T[_$_2f23[567]] / 86400000);
+    if (API.Timemode == 0 && T.inetTime > 0) {
+        T.inetTime += 1000;
+        var s = T.inetTime + API.Timefix * 3600000;
+        T.y_t_days = parseInt(T.inetTime / 86400000);
         getDT(s)
     } else {
-        if (API[_$_2f23[137]] == 0 || API[_$_2f23[137]] == 1) {
-            s = Number(new Date()) + API[_$_2f23[593]] * 3600000;
-            T[_$_2f23[594]] = parseInt(new Date() / 86400000);
+        if (API.Timemode == 0 || API.Timemode == 1) {
+            s = Number(new Date()) + API.Timefix * 3600000;
+            T.y_t_days = parseInt(new Date() / 86400000);
             getDT(s)
         } else {
-            if (!Main[_$_2f23[28]]) {
-                var R = getId(_$_2f23[595]);
-                s = parseInt(R[_$_2f23[596]]() * 1000);
-                T[_$_2f23[594]] = parseInt(s / 86400000);
+            if (!Main.Emu) {
+                var R = getId("pluginTime");
+                s = parseInt(R.GetEpochTime() * 1000);
+                T.y_t_days = parseInt(s / 86400000);
                 getDT(s)
             }
         }
     };
-    if (Main[_$_2f23[597]][_$_2f23[64]] > 0 && Main[_$_2f23[598]] <= Main[_$_2f23[599]]) {
-        var D = parseInt((T[_$_2f23[587]] * 3600 + T[_$_2f23[589]] * 60 + T[_$_2f23[591]]) * 1000);
-        if (Main[_$_2f23[598]] < 24 * 3600000 && Main[_$_2f23[598]] > D) {
+    if (Main.ya_epg_info_arr.length > 0 && Main.epg_t1 <= Main.epg_t2) {
+        var D = parseInt((T.h * 3600 + T.m * 60 + T.s) * 1000);
+        if (Main.epg_t1 < 24 * 3600000 && Main.epg_t1 > D) {
             D += 24 * 3600000
         };
-        if (Main[_$_2f23[598]] < D && D <= Main[_$_2f23[599]]) {
-            if (D == Main[_$_2f23[599]]) {
-                Main[_$_2f23[599]] = 0;
-                Main[_$_2f23[598]] = 0;
+        if (Main.epg_t1 < D && D <= Main.epg_t2) {
+            if (D == Main.epg_t2) {
+                Main.epg_t2 = 0;
+                Main.epg_t1 = 0;
                 GetEpgInfo()
             } else {
-                var u = D - Main[_$_2f23[598]];
-                var l = Main[_$_2f23[599]] - Main[_$_2f23[598]];
+                var u = D - Main.epg_t1;
+                var l = Main.epg_t2 - Main.epg_t1;
                 TimeInfo(u, l)
             }
         } else {
-            if (D == Main[_$_2f23[599]] + 1000) {
-                Main[_$_2f23[599]] = 0;
-                Main[_$_2f23[598]] = 0;
+            if (D == Main.epg_t2 + 1000) {
+                Main.epg_t2 = 0;
+                Main.epg_t1 = 0;
                 GetEpgInfo()
             } else {
-                if (Main[_$_2f23[599]] < D) {
+                if (Main.epg_t2 < D) {
                     TimeInfo(1, 1)
                 } else {
                     TimeInfo(0, 0)
@@ -3227,68 +3299,71 @@ function SetTimeDate() {
             }
         }
     };
-    var s = to(T[_$_2f23[587]], T[_$_2f23[589]], T[_$_2f23[591]], 0);
-    getId(_$_2f23[214])[_$_2f23[600]] = s;
-    getId(_$_2f23[601])[_$_2f23[600]] = s;
-    var j = [_$_2f23[602], _$_2f23[603], _$_2f23[604], _$_2f23[605], _$_2f23[606], _$_2f23[607], _$_2f23[608]];
-    var q = [_$_2f23[609], _$_2f23[610], _$_2f23[611], _$_2f23[612], _$_2f23[613], _$_2f23[614], _$_2f23[615], _$_2f23[616], _$_2f23[617], _$_2f23[618], _$_2f23[619], _$_2f23[620]];
-    var p = j[T[_$_2f23[585]]];
-    var o = q[T[_$_2f23[583]]];
-    var i = p + _$_2f23[271] + T[_$_2f23[581]] + _$_2f23[271] + o;
-    getId(_$_2f23[212])[_$_2f23[600]] = i
+    var s = to(T.h, T.m, T.s, 0);
+    getId("widget_time").innerHTML = s;
+    getId("time").innerHTML = s;
+    var j = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    var q = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    var p = j[T.day];
+    var o = q[T.month];
+    var i = p + " " + T.date + " " + o;
+    getId("widget_date").innerHTML = i
 }
+
 function TimeInfo(j, q) {
     if (j >= 0 && q >= j) {
         var p = (j > 0) ? parseInt((100 * j) / q) : 0;
-        var o = Math[_$_2f23[621]](p * 5.45);
-        var i = _$_2f23[4];
-        getId(_$_2f23[622])[_$_2f23[123]][_$_2f23[230]] = o + _$_2f23[623];
-        i = (p > 9 ? p : (_$_2f23[78] + p)) + _$_2f23[624] + msecToStr(j);
-        i += _$_2f23[468] + msecToStr(q);
-        getId(_$_2f23[625])[_$_2f23[600]] = i
+        var o = Math.floor(p * 5.45);
+        var i = "";
+        getId("progressBar").style.width = o + "px";
+        i = (p > 9 ? p : ("0" + p)) + "% " + msecToStr(j);
+        i += "/" + msecToStr(q);
+        getId("timeInfo").innerHTML = i
     }
 }
+
 msecToStr = function (i, o) {
-    i = Math[_$_2f23[621]](i / 1000);
-    m = Math[_$_2f23[621]](i / 60);
+    i = Math.floor(i / 1000);
+    m = Math.floor(i / 60);
     i = i % 60;
-    h = Math[_$_2f23[621]](m / 60);
+    h = Math.floor(m / 60);
     m = m % 60;
     return to(h, m, i)
 };
+
 var API = {
-    XML_URL: _$_2f23[209],
-    star_url: _$_2f23[209],
-    help_url: _$_2f23[626],
-    GenUrl: _$_2f23[4],
-    GenT: _$_2f23[627],
+    XML_URL: "start.xml",
+    star_url: "start.xml",
+    help_url: "http://nebo.ddns.net/help/starthelp.xml",
+    GenUrl: "",
+    GenT: "500",
     Gen: false,
-    Proxy: _$_2f23[4],
-    Timefix: _$_2f23[78],
-    Timemode: _$_2f23[78],
-    Xcode: _$_2f23[78],
-    Size: _$_2f23[4],
-    Ph: _$_2f23[628],
-    Pw: _$_2f23[628],
-    a_size1: _$_2f23[629],
-    a_size2: _$_2f23[78],
-    a_size3: _$_2f23[78],
-    Forma: _$_2f23[78],
-    CODE: _$_2f23[630],
-    REG: _$_2f23[631],
-    Scode: _$_2f23[78],
-    Login: _$_2f23[4],
-    Pasword: _$_2f23[4],
-    Surl: _$_2f23[4],
-    Buffer: _$_2f23[78],
-    Ibuffer: _$_2f23[78],
-    Timeshift: _$_2f23[78],
-    Favname: _$_2f23[632],
-    Cityname: _$_2f23[633],
-    Pstyle: _$_2f23[411],
-    Mac: _$_2f23[411],
-    Header: _$_2f23[78],
-    Vquality: _$_2f23[634],
+    Proxy: "",
+    Timefix: "0",
+    Timemode: "0",
+    Xcode: "0",
+    Size: "",
+    Ph: "100",
+    Pw: "100",
+    a_size1: "2",
+    a_size2: "0",
+    a_size3: "0",
+    Forma: "0",
+    CODE: 213,
+    REG: "ru",
+    Scode: "0",
+    Login: "",
+    Pasword: "",
+    Surl: "",
+    Buffer: "0",
+    Ibuffer: "0",
+    Timeshift: "0",
+    Favname: " Main | IP-TV | Films | Series",
+    Cityname: "London",
+    Pstyle: "1",
+    Mac: "1",
+    Header: "0",
+    Vquality: "360p",
     channels: [],
     all_channels: [],
     chan_pages: 0,
@@ -3300,177 +3375,181 @@ var API = {
     categories: [],
     favorites: [],
     fav_start_channels: [],
-    search_string: _$_2f23[4],
-    next_page_url: _$_2f23[4],
-    prev_page_url: _$_2f23[4],
-    playlist_name: _$_2f23[4],
-    search_on: _$_2f23[4],
-    next_page_text: _$_2f23[4],
-    prev_page_text: _$_2f23[4],
-    fn: _$_2f23[4]
+    search_string: "",
+    next_page_url: "",
+    prev_page_url: "",
+    playlist_name: "",
+    search_on: "",
+    next_page_text: "",
+    prev_page_text: "",
+    fn: ""
 };
-API[_$_2f23[48]] = function () {
+
+API.init = function () {
     try {
-        Main[_$_2f23[14]] = Main[_$_2f23[12]][_$_2f23[15]]();
-        API[_$_2f23[635]] = parseInt(Main[_$_2f23[14]], 16) + _$_2f23[636];
+        Main.MAC = Main.Network.GetMAC();
+        API.fn = parseInt(Main.MAC, 16) + "291s.dat";
         var q = [];
-        Main[_$_2f23[466]](q, API[_$_2f23[635]]);
-        if (q[_$_2f23[64]] > 0) {
-            API[_$_2f23[60]] = (dPr(q[0]) != _$_2f23[4]) ? q[0] : API[_$_2f23[60]];
-            API[_$_2f23[637]] = (dPr(q[1]) != _$_2f23[4]) ? q[1] : _$_2f23[4];
-            API[_$_2f23[638]] = (dPr(q[2]) != _$_2f23[4]) ? q[2] : _$_2f23[4];
-            API[_$_2f23[639]] = (dPr(q[3]) != _$_2f23[4]) ? q[3] : _$_2f23[4];
-            API[_$_2f23[445]] = (dPr(q[4]) != _$_2f23[4]) ? q[4] : _$_2f23[4];
-            API[_$_2f23[211]] = (q[5] > 0 && q[5] < 10000) ? q[5] : _$_2f23[78];
-            API[_$_2f23[640]] = (q[6] < 10000 && q[6] > 0) ? q[6] : _$_2f23[78];
-            API[_$_2f23[641]] = (dPr(q[7]) != _$_2f23[4]) ? q[7] : API[_$_2f23[641]];
-            API[_$_2f23[642]] = (q[8] < 100000 && q[8] > 0) ? q[8] : _$_2f23[630];
-            API[_$_2f23[643]] = q[9];
-            API[_$_2f23[644]] = q[10][_$_2f23[272]](_$_2f23[645], _$_2f23[4]);
-            API[_$_2f23[137]] = q[11];
-            API[_$_2f23[593]] = q[12][_$_2f23[272]](_$_2f23[645], _$_2f23[4]);
-            API[_$_2f23[646]] = q[13];
-            API[_$_2f23[647]] = q[14];
-            API[_$_2f23[648]] = q[15];
-            API[_$_2f23[649]] = q[16];
-            API[_$_2f23[650]] = q[17];
-            API[_$_2f23[651]] = q[18];
-            API[_$_2f23[217]] = q[19];
-            API[_$_2f23[441]] = q[20];
-            API[_$_2f23[440]] = q[21];
-            API[_$_2f23[652]] = q[22];
-            API[_$_2f23[653]] = q[23];
-            API[_$_2f23[654]] = q[24];
-            API[_$_2f23[655]] = (q[25] == undefined) ? _$_2f23[634] : q[25];
-            API[_$_2f23[656]] = (dPr(q[26]) != _$_2f23[4]) ? q[26] : API[_$_2f23[656]]
+        Main.readFile(q, API.fn);
+        if (q.length > 0) {
+            API.star_url = (dPr(q[0]) != "") ? q[0] : API.star_url;
+            API.Surl = (dPr(q[1]) != "") ? q[1] : "";
+            API.Login = (dPr(q[2]) != "") ? q[2] : "";
+            API.Pasword = (dPr(q[3]) != "") ? q[3] : "";
+            API.Proxy = (dPr(q[4]) != "") ? q[4] : "";
+            API.Xcode = (q[5] > 0 && q[5] < 10000) ? q[5] : "0";
+            API.Scode = (q[6] < 10000 && q[6] > 0) ? q[6] : "0";
+            API.Favname = (dPr(q[7]) != "") ? q[7] : API.Favname;
+            API.CODE = (q[8] < 100000 && q[8] > 0) ? q[8] : 213;
+            API.REG = q[9];
+            API.Timeshift = q[10].replace("+", "");
+            API.Timemode = q[11];
+            API.Timefix = q[12].replace("+", "");
+            API.Size = q[13];
+            API.Ph = q[14];
+            API.Pw = q[15];
+            API.a_size1 = q[16];
+            API.a_size2 = q[17];
+            API.a_size3 = q[18];
+            API.Forma = q[19];
+            API.Buffer = q[20];
+            API.Ibuffer = q[21];
+            API.Pstyle = q[22];
+            API.Mac = q[23];
+            API.Header = q[24];
+            API.Vquality = (q[25] == undefined) ? "360p" : q[25];
+            API.Cityname = (dPr(q[26]) != "") ? q[26] : API.Cityname
         };
-        API[_$_2f23[130]] = [];
-        API[_$_2f23[65]] = [];
-        var p = API[_$_2f23[641]][_$_2f23[305]](_$_2f23[79]);
-        var u = (p[_$_2f23[64]] > 10) ? 10 : p[_$_2f23[64]];
+        API.favorites = [];
+        API.fav_start_channels = [];
+        var p = API.Favname.split("|");
+        var u = (p.length > 10) ? 10 : p.length;
         for (var D = 0; D < u; D++) {
-            var o = (D > 0) ? D : _$_2f23[4];
-            if (API[_$_2f23[640]] != _$_2f23[4] && parseInt(API[_$_2f23[640]], 10) > 0) {
-                var i = API[_$_2f23[640]] + o + _$_2f23[59]
+            var o = (D > 0) ? D : "";
+            if (API.Scode != "" && parseInt(API.Scode, 10) > 0) {
+                var i = API.Scode + o + "fav.dat"
             } else {
-                i = parseInt(Main[_$_2f23[14]], 16)[_$_2f23[298]]() + o + _$_2f23[59]
+                i = parseInt(Main.MAC, 16).toString() + o + "fav.dat"
             };
-            var l = [p[D], _$_2f23[4], _$_2f23[431], p[D], _$_2f23[4], i, _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[4]];
-            API[_$_2f23[65]][_$_2f23[355]](l);
+            var l = [p[D], "", "blue_folder.png", p[D], "", i, "", "", "", "", "", "", "", ""];
+            API.fav_start_channels.push(l);
             var G = [D, p[D], i];
-            API[_$_2f23[130]][_$_2f23[355]](G)
+            API.favorites.push(G)
         };
-        Main[_$_2f23[111]] = 1 + API[_$_2f23[130]][0][0];
-        Main[_$_2f23[113]] = API[_$_2f23[130]][0][1];
-        Main[_$_2f23[67]] = API[_$_2f23[130]][0][2];
-        Main[_$_2f23[112]] = Main[_$_2f23[111]];
-        Main[_$_2f23[114]] = Main[_$_2f23[113]];
+        Main.fav_num = 1 + API.favorites[0][0];
+        Main.fav_name = API.favorites[0][1];
+        Main.fav_url = API.favorites[0][2];
+        Main.temp_fav_num = Main.fav_num;
+        Main.temp_fav_name = Main.fav_name;
         q = [];
-        Main[_$_2f23[270]] = false;
-        Main[_$_2f23[466]](q, API[_$_2f23[642]] + _$_2f23[657]);
-        if (q[_$_2f23[64]] > 0) {
-            Main[_$_2f23[270]] = true;
-            var E = _$_2f23[658];
-            for (var D = 0; D < q[_$_2f23[64]]; D++) {
+        Main.ya_auto = false;
+        Main.readFile(q, API.CODE + "_ya_name_index_url.dat");
+        if (q.length > 0) {
+            Main.ya_auto = true;
+            var E = "<font style=\"color:#00ccff;font-weight:bolder\">";
+            for (var D = 0; D < q.length; D++) {
                 var s = q[D];
-                s = s[_$_2f23[305]](_$_2f23[79]);
-                Ya_name_index_obj[s[0][_$_2f23[242]]()] = s[1];
+                s = s.split("|");
+                Ya_name_index_obj[s[0].toLowerCase()] = s[1];
                 Ya_icon_index_url_obj[s[1]] = s[2];
-                Ya_icon_name_url_obj[s[0][_$_2f23[242]]()] = s[2]
+                Ya_icon_name_url_obj[s[0].toLowerCase()] = s[2]
             }
         };
-        setTimeout(_$_2f23[659], 50)
+        setTimeout(function() { StartTime(); }, 50)
     } catch (k) {
         return false
     };
     return true
 };
+
 GetYaBaseInfo = function () {
     tempArr = [];
-    var p = _$_2f23[4];
-    Main[_$_2f23[466]](tempArr, API[_$_2f23[642]] + _$_2f23[657]);
-    if (tempArr[_$_2f23[64]] > 0) {
-        var j = _$_2f23[658];
-        for (var q = 0; q < tempArr[_$_2f23[64]]; q++) {
+    var p = "";
+    Main.readFile(tempArr, API.CODE + "_ya_name_index_url.dat");
+    if (tempArr.length > 0) {
+        var j = "<font style=\"color:#00ccff;font-weight:bolder\">";
+        for (var q = 0; q < tempArr.length; q++) {
             var i = tempArr[q];
-            i = i[_$_2f23[305]](_$_2f23[79]);
-            p += _$_2f23[660] + (q + 1) + _$_2f23[661] + i[0] + _$_2f23[492] + j + i[1] + _$_2f23[519]
+            i = i.split("|");
+            p += "<br>" + (q + 1) + ") " + i[0] + " - " + j + i[1] + "</font>"
         };
-        Main[_$_2f23[283]] = true
+        Main.ya_base_info = true
     };
-    var o = _$_2f23[662];
-    if (parseInt(tempArr[_$_2f23[64]] / 10) * 10 == tempArr[_$_2f23[64]]) {
-        o = _$_2f23[663]
+    var o = "Channel";
+    if (parseInt(tempArr.length / 10) * 10 == tempArr.length) {
+        o = "Channels"
     };
-    p = _$_2f23[664] + j + API[_$_2f23[642]] + _$_2f23[665] + j + tempArr[_$_2f23[64]] + _$_2f23[666] + o + _$_2f23[667] + p;
-    Main[_$_2f23[313]](p)
+    p = "In the database of " + j + API.CODE + "</font> region " + j + tempArr.length + " </font> " + o + " : " + p;
+    Main.showinfoList(p)
 };
-API[_$_2f23[668]] = function () {
-    if (API[_$_2f23[239]][_$_2f23[64]] == 0) {
-        Display[_$_2f23[53]](_$_2f23[669]);
-        if (Main[_$_2f23[208]][_$_2f23[64]] == 0 && API[_$_2f23[68]] == _$_2f23[209]) {
-            setTimeout(_$_2f23[670], 2000)
+
+API.loadComplete = function () {
+    if (API.channels.length == 0) {
+        Display.status("<b style=\"color:yellow\">ERROR IN THE PLAYLIST!</b>");
+        if (Main.prev_pl_array.length == 0 && API.XML_URL == "start.xml") {
+            setTimeout(function() { getIdb('main'); SetupFormular(); }, 2000)
         } else {
-            setTimeout(_$_2f23[487], 500)
+            setTimeout(function() { Main.PlayPrevPlaylist(); }, 500)
         }
     } else {
-        Display[_$_2f23[142]]();
-        Main[_$_2f23[135]]()
+        Display.hidestatus();
+        Main.Menu()
     }
 };
-API[_$_2f23[69]] = function (o) {
+
+API.Request = function (o) {
     try {
-        Main[_$_2f23[102]] = false;
-        if (API[_$_2f23[146]] && Main[_$_2f23[296]] == _$_2f23[671]) {
-            KeyHandler[_$_2f23[118]](1)
+        Main.guide = false;
+        if (API.AsReqMode && Main.parser == "tsnakeman") {
+            KeyHandler.setFocus(1)
         } else {
-            if (API[_$_2f23[146]] && o[_$_2f23[30]](_$_2f23[672]) > 0) {
-                if (API[_$_2f23[673]] != _$_2f23[4] && Main[_$_2f23[140]] && o[_$_2f23[30]](_$_2f23[674]) > 0) {
-                    o += _$_2f23[675] + API[_$_2f23[673]]
+            if (API.AsReqMode && o.indexOf("://") > 0) {
+                if (API.search_string != "" && Main.search && o.indexOf("3.php") > 0) {
+                    o += "search=" + API.search_string
                 };
-                if (API[_$_2f23[673]] != _$_2f23[4] && Main[_$_2f23[140]] && o[_$_2f23[30]](_$_2f23[434]) > 0) {
-                    var i = _$_2f23[386];
-                    o += i + _$_2f23[675] + API[_$_2f23[673]] + _$_2f23[676]
+                if (API.search_string != "" && Main.search && o.indexOf("search.php") > 0) {
+                    var i = "?";
+                    o += i + "search=" + API.search_string + "&maxResults=50"
                 };
                 o = Super_Send(o);
-                alert(_$_2f23[677] + o)
+                alert("GETTING URL!!! >" + o)
             };
-            if (API[_$_2f23[678]] != null) {
-                API[_$_2f23[678]][_$_2f23[679]]();
-                API[_$_2f23[678]] = null
+            if (API.XHRObj != null) {
+                API.XHRObj.destroy();
+                API.XHRObj = null
             };
-            API[_$_2f23[678]] = new XMLHttpRequest();
-            if (API[_$_2f23[146]]) {
-                KeyHandler[_$_2f23[118]](1);
-                API[_$_2f23[680]] = setTimeout(_$_2f23[681], API[_$_2f23[682]]);
-                API[_$_2f23[678]][_$_2f23[564]] = function () {
-                    if (API[_$_2f23[678]][_$_2f23[565]] == 4) {
-                        API[_$_2f23[683]](o)
+            API.XHRObj = new XMLHttpRequest();
+            if (API.AsReqMode) {
+                KeyHandler.setFocus(1);
+                API.stReq_timeout = setTimeout(function() { API.stopRequest(); }, API.stReq_time);
+                API.XHRObj.onreadystatechange = function () {
+                    if (API.XHRObj.readyState == 4) {
+                        API.recieveData(o)
                     }
                 };
-                if (Main[_$_2f23[34]] && API[_$_2f23[678]][_$_2f23[684]]) {
-                    API[_$_2f23[678]][_$_2f23[684]](_$_2f23[685])
+                if (Main.seriesE && API.XHRObj.overrideMimeType) {
+                    API.XHRObj.overrideMimeType("text/xml")
                 }
             };
-            API[_$_2f23[678]][_$_2f23[574]](_$_2f23[572], o, API[_$_2f23[146]]);
-            if (!API[_$_2f23[146]] || API[_$_2f23[654]] == _$_2f23[411]) {
-                API[_$_2f23[678]][_$_2f23[577]](_$_2f23[686], _$_2f23[687]);
-                API[_$_2f23[678]][_$_2f23[577]](_$_2f23[688], _$_2f23[689]);
-                API[_$_2f23[678]][_$_2f23[577]](_$_2f23[690], _$_2f23[691]);
-                API[_$_2f23[678]][_$_2f23[577]](_$_2f23[575], _$_2f23[692]);
-                API[_$_2f23[678]][_$_2f23[577]](_$_2f23[693], _$_2f23[694]);
-                API[_$_2f23[678]][_$_2f23[577]](_$_2f23[695], _$_2f23[696])
+            API.XHRObj.open("GET", o, API.AsReqMode);
+            if (!API.AsReqMode || API.Header == "1") {
+                API.XHRObj.setRequestHeader("Accept-Encoding", "identity");
+                API.XHRObj.setRequestHeader("Accept-Language", "en-us,en;q=0.5");
+                API.XHRObj.setRequestHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
+                API.XHRObj.setRequestHeader("User-Agent", "Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.6) Gecko/20100627 Firefox/3.6.6");
+                API.XHRObj.setRequestHeader("Accept-Charset", "ISO-8859-1,utf-8;q=0.7,*;q=0.7");
+                API.XHRObj.setRequestHeader("Connection", "close")
             };
-            API[_$_2f23[678]][_$_2f23[578]](null);
-            if (!API[_$_2f23[146]]) {
-                if ((API[_$_2f23[678]][_$_2f23[53]] == 302 || API[_$_2f23[678]][_$_2f23[53]] == 303) && API[_$_2f23[678]][_$_2f23[698]](_$_2f23[697]) != null) {
-                    o = API[_$_2f23[678]][_$_2f23[698]](_$_2f23[697]);
-                    return API[_$_2f23[69]](o)
+            API.XHRObj.send(null);
+            if (!API.AsReqMode) {
+                if ((API.XHRObj.status == 302 || API.XHRObj.status == 303) && API.XHRObj.getResponseHeader("Location") != null) {
+                    o = API.XHRObj.getResponseHeader("Location");
+                    return API.Request(o)
                 } else {
-                    if (API[_$_2f23[678]][_$_2f23[565]] == 4 && API[_$_2f23[678]][_$_2f23[53]] == 200) {
-                        return API[_$_2f23[678]][_$_2f23[566]]
+                    if (API.XHRObj.readyState == 4 && API.XHRObj.status == 200) {
+                        return API.XHRObj.responseText
                     } else {
-                        return _$_2f23[4]
+                        return ""
                     }
                 }
             }
@@ -3479,84 +3558,96 @@ API[_$_2f23[69]] = function (o) {
 };
 
 function AGen() {
-    if (!Main[_$_2f23[136]] && KeyHandler[_$_2f23[261]] != 1 && !Player[_$_2f23[699]] && API[_$_2f23[146]]) {
+    if (!Main.FirstStart && KeyHandler.Focus != 1 && !Player.jump && API.AsReqMode) {
         var i = null;
         i = new XMLHttpRequest();
-        i[_$_2f23[564]] = function () {
-            if (i[_$_2f23[565]] == 4 && i[_$_2f23[53]] == 200) {
-                API[_$_2f23[700]] = true
+        i.onreadystatechange = function () {
+            if (i.readyState == 4 && i.status == 200) {
+                API.Gen = true
             }
         };
-        alert(_$_2f23[701] + i);
-        i[_$_2f23[574]](_$_2f23[572], API[_$_2f23[702]], true);
-        i[_$_2f23[577]](_$_2f23[575], _$_2f23[576]);
-        i[_$_2f23[578]]();
-        setTimeout(_$_2f23[703], parseInt(API[_$_2f23[704]]))
+        alert("AGEN URL =" + i);
+        i.open("GET", API.GenUrl, true);
+        i.setRequestHeader("User-Agent", "Opera/9.80 (Windows NT 5.1; U; ru) Presto/2.9.168 Version/11.51");
+        i.send();
+        setTimeout(function() {
+			if (API.Gen) {
+				if (API.GenT >= 1000)
+					API.GenT = API.GenT/2;
+				API.Gen = false;
+			} else if (API.GenT < 512000)
+				API.GenT = API.GenT*2;
+			AGen();
+		}, parseInt(API.GenT))
     }
 }
-API[_$_2f23[683]] = function (i) {
-    clearTimeout(API[_$_2f23[680]]);
-    if (API[_$_2f23[678]][_$_2f23[53]] == 200) {
-        if (i[_$_2f23[242]]()[_$_2f23[30]](_$_2f23[250]) >= 0 || i[_$_2f23[242]]()[_$_2f23[30]](_$_2f23[249]) >= 0 && API[_$_2f23[678]][_$_2f23[566]] != null && API[_$_2f23[678]][_$_2f23[566]] != _$_2f23[4]) {
-            API[_$_2f23[705]](API[_$_2f23[678]][_$_2f23[566]])
+
+API.recieveData = function (i) {
+    clearTimeout(API.stReq_timeout);
+    if (API.XHRObj.status == 200) {
+        if (i.toLowerCase().indexOf("=m3u") >= 0 || i.toLowerCase().indexOf(".m3u") >= 0 && API.XHRObj.responseText != null && API.XHRObj.responseText != "") {
+            API.getChannel_list(API.XHRObj.responseText)
         } else {
-            if (API[_$_2f23[678]][_$_2f23[706]] != null && API[_$_2f23[678]][_$_2f23[706]] != _$_2f23[4]) {
-                alert(_$_2f23[707]);
-                API[_$_2f23[705]](API[_$_2f23[678]][_$_2f23[706]])
+            if (API.XHRObj.responseXML != null && API.XHRObj.responseXML != "") {
+                alert("GETTING XML SOURCE!!!");
+                API.getChannel_list(API.XHRObj.responseXML)
             } else {
-                API[_$_2f23[239]] = [];
-                API[_$_2f23[668]]()
+                API.channels = [];
+                API.loadComplete()
             }
         }
     } else {
-        Display[_$_2f23[53]](_$_2f23[708]);
-        if (Main[_$_2f23[136]]) {
-            if (API[_$_2f23[68]][_$_2f23[30]](_$_2f23[209]) < 0) {
-                API[_$_2f23[68]] = _$_2f23[209];
-                setTimeout(_$_2f23[486], 3000)
+        Display.status("<b style=\"color:yellow\">Wrong address or an Error in the playlist! </b>");
+        if (Main.FirstStart) {
+            if (API.XML_URL.indexOf("start.xml") < 0) {
+                API.XML_URL = "start.xml";
+                setTimeout(function() { API.Request(API.XML_URL); }, 3000)
             } else {
-                setTimeout(_$_2f23[670], 3000)
+                setTimeout(function() { getIdb('main'); SetupFormular(); }, 3000)
             }
         } else {
-            setTimeout(_$_2f23[681], 500)
+            setTimeout(function() { API.stopRequest(); }, 500)
         }
     }
 };
-API[_$_2f23[709]] = function () {
-    clearTimeout(API[_$_2f23[680]]);
-    if (API[_$_2f23[678]] != null) {
-        API[_$_2f23[678]][_$_2f23[710]]();
-        API[_$_2f23[68]] = Main[_$_2f23[152]];
-        Main[_$_2f23[208]][_$_2f23[358]]();
-        API[_$_2f23[668]]()
+
+API.stopRequest = function () {
+    clearTimeout(API.stReq_timeout);
+    if (API.XHRObj != null) {
+        API.XHRObj.abort();
+        API.XML_URL = Main.pre_pl_url;
+        Main.prev_pl_array.pop();
+        API.loadComplete()
     }
 };
-API[_$_2f23[498]] = function () {
-    API[_$_2f23[711]] = 0;
-    API[_$_2f23[239]] = [];
-    API[_$_2f23[367]] = [];
-    API[_$_2f23[120]] = [];
-    if (!Main[_$_2f23[61]]) {
-        Selectbox[_$_2f23[494]] = 0;
-        Selectbox[_$_2f23[100]] = 0
+
+API.ResetAll = function () {
+    API.chan_counter = 0;
+    API.channels = [];
+    API.all_channels = [];
+    API.categories = [];
+    if (!Main.FAV) {
+        Selectbox.selected = 0;
+        Selectbox.selected_page = 0
     };
-    API[_$_2f23[324]] = _$_2f23[4];
-    API[_$_2f23[334]] = _$_2f23[4];
-    API[_$_2f23[328]] = _$_2f23[4];
-    API[_$_2f23[297]] = _$_2f23[4];
-    API[_$_2f23[333]] = _$_2f23[4];
-    API[_$_2f23[327]] = _$_2f23[4];
-    if (!Main[_$_2f23[359]]) {
-        Main[_$_2f23[98]]()
+    API.playlist_name = "";
+    API.next_page_url = "";
+    API.prev_page_url = "";
+    API.search_on = "";
+    API.next_page_text = "";
+    API.prev_page_text = "";
+    if (!Main.DEL) {
+        Main.ResetSelectedPosition()
     };
-    Main[_$_2f23[359]] = false
+    Main.DEL = false
 };
-API[_$_2f23[705]] = function (bk) {
+
+API.getChannel_list = function (bk) {
     var bj = function (bq, bp, bo) {
             try {
-                var bn = bq[_$_2f23[714]](bp)[0][_$_2f23[713]][0][_$_2f23[712]];
+                var bn = bq.getElementsByTagName(bp)[0].childNodes[0].nodeValue;
                 if (bn == null) {
-                    bn = _$_2f23[4]
+                    bn = ""
                 };
                 if (bo == 1) {
                     return dPr(bn, 1)
@@ -3564,87 +3655,87 @@ API[_$_2f23[705]] = function (bk) {
                     return lrdPr(bn)
                 }
             } catch (Y) {
-                return _$_2f23[4]
+                return ""
             }
         };
     var bi = function (bq, bp, bn) {
             try {
-                var bo = bq[_$_2f23[714]](bp)[0][_$_2f23[715]](bn)[_$_2f23[712]];
+                var bo = bq.getElementsByTagName(bp)[0].getAttributeNode(bn).nodeValue;
                 if (bo == null) {
-                    bo = _$_2f23[4]
+                    bo = ""
                 };
                 return lrdPr(bo)
             } catch (Y) {
-                return _$_2f23[4]
+                return ""
             }
         };
     try {
-        API[_$_2f23[498]]();
-        API[_$_2f23[120]][_$_2f23[355]](Array(_$_2f23[4], _$_2f23[716]));
+        API.ResetAll();
+        API.categories.push(Array("", "All Categories"));
         var bh = bk;
-        var bg = _$_2f23[4];
-        var p = _$_2f23[4];
-        var o = _$_2f23[4];
-        var i = _$_2f23[4];
-        var be = _$_2f23[4];
-        var bc = _$_2f23[4];
-        var ba = _$_2f23[4];
-        if (API[_$_2f23[68]][_$_2f23[242]]()[_$_2f23[30]](_$_2f23[448]) < 0) {
-            if (API[_$_2f23[68]][_$_2f23[242]]()[_$_2f23[30]](_$_2f23[249]) >= 0 || API[_$_2f23[68]][_$_2f23[242]]()[_$_2f23[30]](_$_2f23[250]) >= 0) {
+        var bg = "";
+        var p = "";
+        var o = "";
+        var i = "";
+        var be = "";
+        var bc = "";
+        var ba = "";
+        if (API.XML_URL.toLowerCase().indexOf(".m3u8") < 0) {
+            if (API.XML_URL.toLowerCase().indexOf(".m3u") >= 0 || API.XML_URL.toLowerCase().indexOf("=m3u") >= 0) {
                 var W = {};
                 var U = 1;
-                var Q = bh[_$_2f23[305]](_$_2f23[717]);
-                for (var q = 0; q < Q[_$_2f23[64]]; q++) {
-                    if ((Q[q][_$_2f23[30]](_$_2f23[718]) >= 0 && (Q[q + 1][_$_2f23[30]](_$_2f23[672]) > 0 || Q[q + 2][_$_2f23[30]](_$_2f23[672]) > 0 || Q[q + 1][_$_2f23[30]](_$_2f23[719]) > -1 || Q[q + 2][_$_2f23[30]](_$_2f23[719]) > -1)) || Q[q][_$_2f23[30]](_$_2f23[720]) >= 0) {
-                        var O = _$_2f23[4];
-                        var l = _$_2f23[4];
-                        var G = _$_2f23[4];
-                        var z = _$_2f23[4];
-                        var X = _$_2f23[4];
-                        var E = _$_2f23[4];
-                        var R = _$_2f23[4];
-                        var D = _$_2f23[4];
-                        var y = _$_2f23[4];
-                        var u = _$_2f23[4];
-                        var s = _$_2f23[4];
-                        Q[q] = Q[q][_$_2f23[272]](/'/g, _$_2f23[186]);
-                        s = parser(Q[q], _$_2f23[721], _$_2f23[271])[_$_2f23[272]](/"/g, _$_2f23[4]);
-                        s = (s >= 0.5 && s <= 20) ? s : (s >= 50 && s <= 2000) ? s / 100 : _$_2f23[4];
-                        l = lrdPr(parser(Q[q], _$_2f23[722], _$_2f23[186])[_$_2f23[272]](/"/g, _$_2f23[4]));
-                        G = parser(Q[q], _$_2f23[723], _$_2f23[271])[_$_2f23[272]](/["\+]/g, _$_2f23[4]);
-                        z = lrdPr(parser(Q[q], _$_2f23[724], _$_2f23[186])[_$_2f23[272]](/"/g, _$_2f23[4]))[_$_2f23[272]](/_/g, _$_2f23[271]);
-                        X = parser(Q[q], _$_2f23[725], _$_2f23[271])[_$_2f23[272]](/"/g, _$_2f23[4]);
-                        X = (X[_$_2f23[30]](_$_2f23[726]) >= 0 || X[_$_2f23[242]]()[_$_2f23[30]](_$_2f23[727]) >= 0 || X[_$_2f23[30]](_$_2f23[78]) == 0) ? _$_2f23[78] : (X[_$_2f23[30]](_$_2f23[728]) >= 0 || X[_$_2f23[242]]()[_$_2f23[30]](_$_2f23[729]) >= 0 || X[_$_2f23[30]](_$_2f23[411]) == 0) ? _$_2f23[411] : (X[_$_2f23[242]]()[_$_2f23[30]](_$_2f23[730]) >= 0 || X[_$_2f23[242]]()[_$_2f23[30]](_$_2f23[731]) >= 0 || X[_$_2f23[30]](_$_2f23[629]) == 0) ? _$_2f23[629] : (X[_$_2f23[242]]()[_$_2f23[30]](_$_2f23[732]) >= 0 || X[_$_2f23[242]]()[_$_2f23[30]](_$_2f23[733]) >= 0 || X[_$_2f23[30]](_$_2f23[734]) == 0) ? _$_2f23[734] : (X[_$_2f23[30]](_$_2f23[735]) >= 0 || X[_$_2f23[242]]()[_$_2f23[30]](_$_2f23[736]) >= 0 || X[_$_2f23[30]](_$_2f23[737]) == 0) ? _$_2f23[737] : (X[_$_2f23[242]]()[_$_2f23[30]](_$_2f23[738]) >= 0 || X[_$_2f23[30]](_$_2f23[739]) == 0) ? _$_2f23[739] : _$_2f23[4];
-                        (X[_$_2f23[242]]()[_$_2f23[30]](_$_2f23[740]) >= 0 || X[_$_2f23[30]](_$_2f23[741]) == 0) ? _$_2f23[741] : _$_2f23[4];
-                        D = parser(Q[q], _$_2f23[742], _$_2f23[271])[_$_2f23[272]](/"/g, _$_2f23[4]);
-                        D = (D != _$_2f23[4]) ? (parseInt(D) + 1)[_$_2f23[298]]() : _$_2f23[4];
+                var Q = bh.split("\x0A");
+                for (var q = 0; q < Q.length; q++) {
+                    if ((Q[q].indexOf("#EXTINF:") >= 0 && (Q[q + 1].indexOf("://") > 0 || Q[q + 2].indexOf("://") > 0 || Q[q + 1].indexOf("/dtv") > -1 || Q[q + 2].indexOf("/dtv") > -1)) || Q[q].indexOf("#EXTM3U") >= 0) {
+                        var O = "";
+                        var l = "";
+                        var G = "";
+                        var z = "";
+                        var X = "";
+                        var E = "";
+                        var R = "";
+                        var D = "";
+                        var y = "";
+                        var u = "";
+                        var s = "";
+                        Q[q] = Q[q].replace(/'/g, "\"");
+                        s = parser(Q[q], "cache=", " ").replace(/"/g, "");
+                        s = (s >= 0.5 && s <= 20) ? s : (s >= 50 && s <= 2000) ? s / 100 : "";
+                        l = lrdPr(parser(Q[q], "tvg-name=\"", "\"").replace(/"/g, ""));
+                        G = parser(Q[q], "tvg-shift=", " ").replace(/["\+]/g, "");
+                        z = lrdPr(parser(Q[q], "tvg-logo=\"", "\"").replace(/"/g, "")).replace(/_/g, " ");
+                        X = parser(Q[q], "aspect-ratio=", " ").replace(/"/g, "");
+                        X = (X.indexOf("16:9") >= 0 || X.toLowerCase().indexOf("16x9") >= 0 || X.indexOf("0") == 0) ? "0" : (X.indexOf("14:9") >= 0 || X.toLowerCase().indexOf("14x9") >= 0 || X.indexOf("1") == 0) ? "1" : (X.toLowerCase().indexOf("4:3z2") >= 0 || X.toLowerCase().indexOf("4x3z2") >= 0 || X.indexOf("2") == 0) ? "2" : (X.toLowerCase().indexOf("4:3z1") >= 0 || X.toLowerCase().indexOf("4x3z1") >= 0 || X.indexOf("3") == 0) ? "3" : (X.indexOf("4:3") >= 0 || X.toLowerCase().indexOf("4x3") >= 0 || X.indexOf("4") == 0) ? "4" : (X.toLowerCase().indexOf("x-zoom") >= 0 || X.indexOf("5") == 0) ? "5" : "";
+                        (X.toLowerCase().indexOf("auto") >= 0 || X.indexOf("6") == 0) ? "6" : "";
+                        D = parser(Q[q], "audio-track=", " ").replace(/"/g, "");
+                        D = (D != "") ? (parseInt(D) + 1).toString() : "";
                         if (q == 0) {
-                            p = (z != _$_2f23[4]) ? z : _$_2f23[4];
-                            o = (X != _$_2f23[4]) ? X : _$_2f23[4];
-                            i = (D != _$_2f23[4]) ? D : _$_2f23[4];
-                            be = (s != _$_2f23[4]) ? s : _$_2f23[4];
-                            bg = (G != _$_2f23[4]) ? G : _$_2f23[4]
+                            p = (z != "") ? z : "";
+                            o = (X != "") ? X : "";
+                            i = (D != "") ? D : "";
+                            be = (s != "") ? s : "";
+                            bg = (G != "") ? G : ""
                         } else {
-                            R = lrdPr(parser(Q[q], _$_2f23[743], _$_2f23[186])[_$_2f23[272]](/"/g, _$_2f23[4]));
-                            y = lrdPr(parser(Q[q], _$_2f23[744]));
+                            R = lrdPr(parser(Q[q], "group-title=\"", "\"").replace(/"/g, ""));
+                            y = lrdPr(parser(Q[q], ","));
                             try {
                                 var bl = FoundYaIndex[y]
                             } catch (p) {};
-                            var bf = (Q[q + 1][_$_2f23[30]](_$_2f23[672]) > 0 || Q[q + 1][_$_2f23[30]](_$_2f23[719]) > -1) ? Q[q + 1] : Q[q + 2];
+                            var bf = (Q[q + 1].indexOf("://") > 0 || Q[q + 1].indexOf("/dtv") > -1) ? Q[q + 1] : Q[q + 2];
                             bf = lrdPr(bf);
-                            z = (z != _$_2f23[4]) ? z : p;
-                            if (z != _$_2f23[4] && z[_$_2f23[30]](_$_2f23[672]) < 0 && z[_$_2f23[30]](_$_2f23[745]) < 0) {
-                                var bb = Ya_icon_name_url_obj[z[_$_2f23[242]]()];
-                                z = (bb != undefined) ? bb : _$_2f23[4]
+                            z = (z != "") ? z : p;
+                            if (z != "" && z.indexOf("://") < 0 && z.indexOf(".png") < 0) {
+                                var bb = Ya_icon_name_url_obj[z.toLowerCase()];
+                                z = (bb != undefined) ? bb : ""
                             };
-                            if (bf[_$_2f23[30]](_$_2f23[448]) < 0) {
-                                if (bf[_$_2f23[30]](_$_2f23[249]) > -1 || bf[_$_2f23[30]](_$_2f23[248]) > -1) {
-                                    z = (z == _$_2f23[4]) ? _$_2f23[431] : z;
-                                    if (R != _$_2f23[4]) {
-                                        l = _$_2f23[746] + R
+                            if (bf.indexOf(".m3u8") < 0) {
+                                if (bf.indexOf(".m3u") > -1 || bf.indexOf(".xml") > -1) {
+                                    z = (z == "") ? "blue_folder.png" : z;
+                                    if (R != "") {
+                                        l = "Category : " + R
                                     };
                                     u = bf;
-                                    bf = _$_2f23[4]
+                                    bf = ""
                                 }
                             };
                             try {
@@ -3653,24 +3744,24 @@ API[_$_2f23[705]] = function (bk) {
                                     z = FoundYaIco[l]
                                 }
                             } catch (p) {};
-                            if (bf != _$_2f23[4]) {
-                                X = (X != _$_2f23[4]) ? X : o;
-                                D = (D != _$_2f23[4]) ? D : i;
-                                G = (G != _$_2f23[4]) ? G : bg;
-                                s = (s != _$_2f23[4]) ? s : be
+                            if (bf != "") {
+                                X = (X != "") ? X : o;
+                                D = (D != "") ? D : i;
+                                G = (G != "") ? G : bg;
+                                s = (s != "") ? s : be
                             };
-                            if (R != _$_2f23[4]) {
+                            if (R != "") {
                                 E = W[R];
                                 if (E == undefined) {
                                     W[R] = U;
                                     E = U;
                                     var V = [U, R];
-                                    API[_$_2f23[120]][_$_2f23[355]](V);
+                                    API.categories.push(V);
                                     U++
                                 }
                             };
-                            var Z = [y, bf, z, l, E, u, X, D, s, _$_2f23[4], G, _$_2f23[4], _$_2f23[4], _$_2f23[4]];
-                            API[_$_2f23[239]][_$_2f23[355]](Z);
+                            var Z = [y, bf, z, l, E, u, X, D, s, "", G, "", "", ""];
+                            API.channels.push(Z);
                             q++
                         }
                     }
@@ -3678,262 +3769,275 @@ API[_$_2f23[705]] = function (bk) {
             } else {
                 if (bh) {
                     try {
-                        API[_$_2f23[324]] = bj(bh, _$_2f23[324]);
-                        API[_$_2f23[324]] = (API[_$_2f23[324]] == _$_2f23[4]) ? Main[_$_2f23[324]] : (API[_$_2f23[324]] == _$_2f23[747]) ? _$_2f23[4] : API[_$_2f23[324]];
-                        API[_$_2f23[334]] = bj(bh, _$_2f23[334]);
-                        API[_$_2f23[328]] = bj(bh, _$_2f23[328]);
-                        API[_$_2f23[297]] = bj(bh, _$_2f23[297]);
-                        API[_$_2f23[333]] = bi(bh, _$_2f23[334], _$_2f23[748]);
-                        API[_$_2f23[327]] = bi(bh, _$_2f23[328], _$_2f23[748]);
-                        var S = bh[_$_2f23[714]](_$_2f23[367]);
-                        if (S[_$_2f23[64]] > 0) {
-                            p = bj(S[0], _$_2f23[749]);
-                            o = bj(S[0], _$_2f23[750], 1);
-                            i = bj(S[0], _$_2f23[751], 1);
-                            be = bj(S[0], _$_2f23[752], 1);
-                            bg = bj(S[0], _$_2f23[753], 1);
-                            bc = bj(S[0], _$_2f23[754], 1);
-                            ba = bj(S[0], _$_2f23[755])
+                        API.playlist_name = bj(bh, "playlist_name");
+                        API.playlist_name = (API.playlist_name == "") ? Main.playlist_name : (API.playlist_name == "no_name") ? "" : API.playlist_name;
+                        API.next_page_url = bj(bh, "next_page_url");
+                        API.prev_page_url = bj(bh, "prev_page_url");
+                        API.search_on = bj(bh, "search_on");
+                        API.next_page_text = bi(bh, "next_page_url", "text");
+                        API.prev_page_text = bi(bh, "prev_page_url", "text");
+                        var S = bh.getElementsByTagName("all_channels");
+                        if (S.length > 0) {
+                            p = bj(S[0], "all_logo");
+                            o = bj(S[0], "all_size", 1);
+                            i = bj(S[0], "all_audiotrack_num", 1);
+                            be = bj(S[0], "all_buffer", 1);
+                            bg = bj(S[0], "all_timeshift", 1);
+                            bc = bj(S[0], "all_region", 1);
+                            ba = bj(S[0], "all_parser")
                         };
-                        var P = bh[_$_2f23[714]](_$_2f23[756]);
-                        for (var L = 0; L < P[_$_2f23[64]]; L++) {
-                            y = bj(P[L], _$_2f23[244]);
+                        var P = bh.getElementsByTagName("channel");
+                        for (var L = 0; L < P.length; L++) {
+                            y = bj(P[L], "title");
                             try {
                                 var bl = FoundYaIndex[y]
                             } catch (p) {};
-                            bf = bj(P[L], _$_2f23[757]);
-                            z = bj(P[L], _$_2f23[758]);
-                            var N = bj(P[L], _$_2f23[289]);
-                            l = bj(P[L], _$_2f23[759]);
+                            bf = bj(P[L], "stream_url");
+                            z = bj(P[L], "logo_30x30");
+                            var N = bj(P[L], "logo");
+                            l = bj(P[L], "description");
                             try {
                                 if (bl != undefined) {
                                     l = bl;
                                     z = FoundYaIco[l]
                                 }
                             } catch (p) {};
-                            var M = bj(P[L], _$_2f23[296]);
-                            M = (M != _$_2f23[4]) ? M : ba;
-                            E = bj(P[L], _$_2f23[760]);
-                            z = (z != _$_2f23[4]) ? z : (N != _$_2f23[4]) ? N : (p != _$_2f23[4]) ? p : _$_2f23[4];
-                            u = _$_2f23[4];
-                            var K = _$_2f23[4];
-                            X = _$_2f23[4];
-                            D = _$_2f23[4];
-                            s = _$_2f23[4];
-                            var J = _$_2f23[4];
-                            G = _$_2f23[4];
-                            var I = _$_2f23[4];
-                            if (bf != _$_2f23[4]) {
-                                X = bj(P[L], _$_2f23[541], 1);
-                                X = (X != _$_2f23[4]) ? X : o;
-                                D = bj(P[L], _$_2f23[761], 1);
-                                D = (D != _$_2f23[4]) ? D : i;
-                                s = bj(P[L], _$_2f23[292], 1);
-                                s = (s != _$_2f23[4]) ? s : be;
-                                J = bj(P[L], _$_2f23[293], 1);
-                                G = bj(P[L], _$_2f23[294], 1);
-                                G = (G != _$_2f23[4]) ? G : bg;
-                                I = bj(P[L], _$_2f23[295], 1);
-                                I = (I != _$_2f23[4]) ? I : bc
+                            var M = bj(P[L], "parser");
+                            M = (M != "") ? M : ba;
+                            E = bj(P[L], "category_id");
+                            z = (z != "") ? z : (N != "") ? N : (p != "") ? p : "";
+                            u = "";
+                            var K = "";
+                            X = "";
+                            D = "";
+                            s = "";
+                            var J = "";
+                            G = "";
+                            var I = "";
+                            if (bf != "") {
+                                X = bj(P[L], "size", 1);
+                                X = (X != "") ? X : o;
+                                D = bj(P[L], "audiotrack_num", 1);
+                                D = (D != "") ? D : i;
+                                s = bj(P[L], "buffer", 1);
+                                s = (s != "") ? s : be;
+                                J = bj(P[L], "ibuffer", 1);
+                                G = bj(P[L], "timeshift", 1);
+                                G = (G != "") ? G : bg;
+                                I = bj(P[L], "region", 1);
+                                I = (I != "") ? I : bc
                             } else {
-                                u = bj(P[L], _$_2f23[762]);
-                                K = bj(P[L], _$_2f23[297])
+                                u = bj(P[L], "playlist_url");
+                                K = bj(P[L], "search_on")
                             };
                             Z = [y, bf, z, l, E, u, X, D, s, J, G, I, M, K];
-                            API[_$_2f23[239]][_$_2f23[355]](Z)
+                            API.channels.push(Z)
                         };
                         try {
-                            var bm = bh[_$_2f23[714]](_$_2f23[763]);
-                            for (var bd = 0; bd < bm[_$_2f23[64]]; bd++) {
-                                var U = bj(bm[bd], _$_2f23[760]);
-                                var R = bj(bm[bd], _$_2f23[764]);
-                                if (U != _$_2f23[4] && R != _$_2f23[4]) {
+                            var bm = bh.getElementsByTagName("category");
+                            for (var bd = 0; bd < bm.length; bd++) {
+                                var U = bj(bm[bd], "category_id");
+                                var R = bj(bm[bd], "category_title");
+                                if (U != "" && R != "") {
                                     var V = [U, R];
-                                    API[_$_2f23[120]][_$_2f23[355]](V)
+                                    API.categories.push(V)
                                 }
                             }
                         } catch (F) {
-                            API[_$_2f23[120]] = []
+                            API.categories = []
                         }
                     } catch (F) {
-                        API[_$_2f23[239]] = []
+                        API.channels = []
                     }
                 }
             }
         }
     } catch (F) {
-        API[_$_2f23[239]] = []
+        API.channels = []
     };
-    API[_$_2f23[499]]();
-    if (API[_$_2f23[120]][_$_2f23[64]] > 2) {
-        API[_$_2f23[367]] = API[_$_2f23[239]]
+    API.countPages();
+    if (API.categories.length > 2) {
+        API.all_channels = API.channels
     };
-    API[_$_2f23[668]]()
+    API.loadComplete()
 };
-API[_$_2f23[765]] = function (p) {
-    API[_$_2f23[239]] = [];
-    Main[_$_2f23[98]]();
-    for (var i = 0; i < API[_$_2f23[367]][_$_2f23[64]]; i++) {
-        if (API[_$_2f23[367]][i][4] == p && p != _$_2f23[4]) {
-            API[_$_2f23[239]][_$_2f23[355]](API[_$_2f23[367]][i])
+
+API.setCategory = function (p) {
+    API.channels = [];
+    Main.ResetSelectedPosition();
+    for (var i = 0; i < API.all_channels.length; i++) {
+        if (API.all_channels[i][4] == p && p != "") {
+            API.channels.push(API.all_channels[i])
         } else {
-            if (p == _$_2f23[4]) {
-                API[_$_2f23[239]][_$_2f23[355]](API[_$_2f23[367]][i])
+            if (p == "") {
+                API.channels.push(API.all_channels[i])
             }
         }
     };
-    if (API[_$_2f23[239]][_$_2f23[64]] == 0) {
-        var o = [_$_2f23[766], _$_2f23[373], _$_2f23[4], _$_2f23[766], _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[4]];
-        API[_$_2f23[239]][_$_2f23[355]](o)
+    if (API.channels.length == 0) {
+        var o = ["This category is empty!", "stop", "", "This category is empty!", "", "", "", "", "", "", "", "", "", ""];
+        API.channels.push(o)
     };
-    API[_$_2f23[499]]()
+    API.countPages()
 };
-API[_$_2f23[499]] = function () {
-    if (API[_$_2f23[239]][_$_2f23[64]] > 0) {
-        API[_$_2f23[233]] = API[_$_2f23[239]][_$_2f23[64]];
-        API[_$_2f23[235]] = API[_$_2f23[239]][_$_2f23[64]] % 10;
-        if (API[_$_2f23[235]] == 0) {
-            API[_$_2f23[235]] = 10
+
+API.countPages = function () {
+    if (API.channels.length > 0) {
+        API.chan_pages = API.channels.length;
+        API.last_page_channels_counter = API.channels.length % 10;
+        if (API.last_page_channels_counter == 0) {
+            API.last_page_channels_counter = 10
         };
-        API[_$_2f23[233]] = (API[_$_2f23[235]] > 0 && API[_$_2f23[235]] < 5) ? Math[_$_2f23[77]](API[_$_2f23[233]] / 10) + 1 : Math[_$_2f23[77]](API[_$_2f23[233]] / 10)
+        API.chan_pages = (API.last_page_channels_counter > 0 && API.last_page_channels_counter < 5) ? Math.round(API.chan_pages / 10) + 1 : Math.round(API.chan_pages / 10)
     }
 };
+
 var Selectbox = {
     selected: 0,
     pre_selected: 0,
     url_selected: 0,
     select_list: [],
-    title: _$_2f23[4],
+    title: "",
     selected_page: 0,
     pre_selected_page: 0,
     pages: 0,
     last_page_counter: 0
 };
-Selectbox[_$_2f23[121]] = function (p, o) {
+
+Selectbox.setBox = function (p, o) {
     try {
-        if (this[_$_2f23[244]] != p) {
-            this[_$_2f23[494]] = 0;
-            this[_$_2f23[100]] = 0
+        if (this.title != p) {
+            this.selected = 0;
+            this.selected_page = 0
         };
-        if (p == _$_2f23[767]) {
-            this[_$_2f23[494]] = this[_$_2f23[403]];
-            this[_$_2f23[100]] = 0
+        if (p == "Select the Quality") {
+            this.selected = this.url_selected;
+            this.selected_page = 0
         };
-        this[_$_2f23[244]] = p;
-        this[_$_2f23[495]] = this[_$_2f23[494]];
-        this[_$_2f23[496]] = this[_$_2f23[100]];
-        this[_$_2f23[768]] = o;
-        this[_$_2f23[769]] = o[_$_2f23[64]] % 10;
-        if (this[_$_2f23[769]] == 0) {
-            this[_$_2f23[769]] = 10
+        this.title = p;
+        this.pre_selected = this.selected;
+        this.pre_selected_page = this.selected_page;
+        this.select_list = o;
+        this.last_page_counter = o.length % 10;
+        if (this.last_page_counter == 0) {
+            this.last_page_counter = 10
         };
-        this[_$_2f23[770]] = Math[_$_2f23[77]](o[_$_2f23[64]] / 10);
-        if (this[_$_2f23[769]] > 0 && this[_$_2f23[769]] < 5) {
-            this[_$_2f23[770]]++
+        this.pages = Math.round(o.length / 10);
+        if (this.last_page_counter > 0 && this.last_page_counter < 5) {
+            this.pages++
         };
-        Selectbox[_$_2f23[771]]()
+        Selectbox.updateBox()
     } catch (a) {}
 };
-Selectbox[_$_2f23[771]] = function () {
+
+Selectbox.updateBox = function () {
     try {
         var l = 10;
-        this[_$_2f23[100]] = (this[_$_2f23[100]] > this[_$_2f23[770]] - 1) ? 0 : (this[_$_2f23[100]] < 0) ? this[_$_2f23[770]] - 1 : this[_$_2f23[100]];
-        if (this[_$_2f23[100]] == this[_$_2f23[770]] - 1) {
-            l = this[_$_2f23[769]];
-            if (this[_$_2f23[494]] > this[_$_2f23[769]] - 1) {
-                this[_$_2f23[494]] = this[_$_2f23[769]] - 1
+        this.selected_page = (this.selected_page > this.pages - 1) ? 0 : (this.selected_page < 0) ? this.pages - 1 : this.selected_page;
+        if (this.selected_page == this.pages - 1) {
+            l = this.last_page_counter;
+            if (this.selected > this.last_page_counter - 1) {
+                this.selected = this.last_page_counter - 1
             }
         };
-        if (this[_$_2f23[100]] == this[_$_2f23[770]] && this[_$_2f23[769]] < l + 1) {
-            l = this[_$_2f23[769]]
+        if (this.selected_page == this.pages && this.last_page_counter < l + 1) {
+            l = this.last_page_counter
         };
-        var q = _$_2f23[772] + this[_$_2f23[244]] + _$_2f23[773];
+        var q = "<div><div style=\"text-align:center;width:100%;height:10px;padding:4px;font-size:20px;\">" + this.title + "</div><br>";
         for (var i = 0; i < l; i++) {
-            var p = 10 * this[_$_2f23[100]] + i;
-            var o = _$_2f23[4];
-            if (i == this[_$_2f23[494]]) {
-                o = _$_2f23[774]
+            var p = 10 * this.selected_page + i;
+            var o = "";
+            if (i == this.selected) {
+                o = "style=\"color:#ffffff; border: 2px solid #ffffff\" "
             };
-            var u = (this[_$_2f23[100]] > 0) ? this[_$_2f23[100]][_$_2f23[298]]() + (1 + i) + _$_2f23[661] : (1 + i) + _$_2f23[661];
-            if (this[_$_2f23[768]][p][1]) {
-                q += _$_2f23[775] + o + _$_2f23[776] + u + this[_$_2f23[768]][p][1] + _$_2f23[777]
+            var u = (this.selected_page > 0) ? this.selected_page.toString() + (1 + i) + ") " : (1 + i) + ") ";
+            if (this.select_list[p][1]) {
+                q += "<li " + o + ">" + u + this.select_list[p][1] + "</li>"
             }
         };
-        q += _$_2f23[778];
-        q += _$_2f23[779];
-        q += _$_2f23[780];
-        widgetAPI[_$_2f23[216]](getId(_$_2f23[124]), q);
-        getIdb(_$_2f23[124])
+        q += "<div style=\"height:25px;\"><div id=\"navi_button\"><img src=\"img/buttons/exit.png\"></img></div><span id=\"navi_helpertext\">Exit</span>";
+        q += "<div id=\"navi_button\"><img src=\"img/buttons/move.png\"></img></div><span id=\"navi_helpertext\">Move</span>";
+        q += "<div id=\"navi_button\"><img src=\"img/buttons/enter.png\"></img></div><span id=\"navi_helpertext\">Enter</span></div></div>";
+        widgetAPI.putInnerHTML(getId("selectbox"), q);
+        getIdb("selectbox")
     } catch (g) {}
 };
-Selectbox[_$_2f23[781]] = function () {
-    this[_$_2f23[494]]++;
-    if (this[_$_2f23[494]] >= 10 || (this[_$_2f23[100]] == this[_$_2f23[770]] - 1 && this[_$_2f23[494]] == this[_$_2f23[769]])) {
-        this[_$_2f23[494]] = 0;
-        this[_$_2f23[100]]++
+
+Selectbox.selectNextItem = function () {
+    this.selected++;
+    if (this.selected >= 10 || (this.selected_page == this.pages - 1 && this.selected == this.last_page_counter)) {
+        this.selected = 0;
+        this.selected_page++
     };
-    Selectbox[_$_2f23[771]]()
+    Selectbox.updateBox()
 };
-Selectbox[_$_2f23[782]] = function () {
-    this[_$_2f23[494]]--;
-    if (this[_$_2f23[100]] == 0 && this[_$_2f23[99]] < 0) {
-        this[_$_2f23[494]] = this[_$_2f23[769]] - 1;
-        this[_$_2f23[100]] = this[_$_2f23[770]] - 1
+
+Selectbox.selectPrevItem = function () {
+    this.selected--;
+    if (this.selected_page == 0 && this.selected_channel < 0) {
+        this.selected = this.last_page_counter - 1;
+        this.selected_page = this.pages - 1
     };
-    if (this[_$_2f23[494]] < 0) {
-        this[_$_2f23[494]] = 10;
-        this[_$_2f23[100]]--
+    if (this.selected < 0) {
+        this.selected = 10;
+        this.selected_page--
     };
-    Selectbox[_$_2f23[771]]()
+    Selectbox.updateBox()
 };
-Selectbox[_$_2f23[371]] = function () {
-    this[_$_2f23[100]]++;
-    Selectbox[_$_2f23[771]]()
+
+Selectbox.selectNextPage = function () {
+    this.selected_page++;
+    Selectbox.updateBox()
 };
-Selectbox[_$_2f23[372]] = function () {
-    this[_$_2f23[100]]--;
-    Selectbox[_$_2f23[771]]()
+
+Selectbox.selectPrevPage = function () {
+    this.selected_page--;
+    Selectbox.updateBox()
 };
-Selectbox[_$_2f23[783]] = function () {
-    var i = this[_$_2f23[768]][10 * this[_$_2f23[100]] + this[_$_2f23[494]]][0];
-    getIdn(_$_2f23[124]);
-    Main[_$_2f23[366]]();
-    API[_$_2f23[765]](i);
-    getIdb(_$_2f23[117]);
-    Main[_$_2f23[135]]()
+
+Selectbox.SelectCategory = function () {
+    var i = this.select_list[10 * this.selected_page + this.selected][0];
+    getIdn("selectbox");
+    Main.SavePrevPlaylist();
+    API.setCategory(i);
+    getIdb("rightHalf");
+    Main.Menu()
 };
-Selectbox[_$_2f23[784]] = function () {
-    var i = this[_$_2f23[768]][10 * this[_$_2f23[100]] + this[_$_2f23[494]]][0];
-    Main[_$_2f23[112]] = Main[_$_2f23[111]];
-    Main[_$_2f23[111]] = 1 + parseInt(i);
-    Main[_$_2f23[114]] = Main[_$_2f23[113]];
-    Main[_$_2f23[113]] = this[_$_2f23[768]][10 * this[_$_2f23[100]] + this[_$_2f23[494]]][1];
-    Main[_$_2f23[115]] = Main[_$_2f23[67]];
-    Main[_$_2f23[67]] = this[_$_2f23[768]][10 * this[_$_2f23[100]] + this[_$_2f23[494]]][2];
-    if (Main[_$_2f23[61]] && !Main[_$_2f23[159]]) {
-        Main[_$_2f23[62]](Main[_$_2f23[67]])
+
+Selectbox.SelectFav = function () {
+    var i = this.select_list[10 * this.selected_page + this.selected][0];
+    Main.temp_fav_num = Main.fav_num;
+    Main.fav_num = 1 + parseInt(i);
+    Main.temp_fav_name = Main.fav_name;
+    Main.fav_name = this.select_list[10 * this.selected_page + this.selected][1];
+    Main.temp_fav_url = Main.fav_url;
+    Main.fav_url = this.select_list[10 * this.selected_page + this.selected][2];
+    if (Main.FAV && !Main.RED) {
+        Main.openCommonFile(Main.fav_url)
     } else {
-        Main[_$_2f23[480]]()
+        Main.saveFavorites()
     };
-    if (Main[_$_2f23[159]]) {
-        Main[_$_2f23[110]]();
-        Main[_$_2f23[483]]();
-        KeyHandler[_$_2f23[118]](5)
+    if (Main.RED) {
+        Main.SetFavSelectedPosition();
+        Main.delFavorites();
+        KeyHandler.setFocus(5)
     } else {
-        KeyHandler[_$_2f23[118]](0)
+        KeyHandler.setFocus(0)
     };
-    getIdn(_$_2f23[124]);
-    getIdb(_$_2f23[117])
+    getIdn("selectbox");
+    getIdb("rightHalf")
 };
-Selectbox[_$_2f23[785]] = function () {
-    this[_$_2f23[403]] = this[_$_2f23[494]];
-    var i = this[_$_2f23[768]][10 * this[_$_2f23[100]] + this[_$_2f23[494]]][0];
+
+Selectbox.SelectSize = function () {
+    this.url_selected = this.selected;
+    var i = this.select_list[10 * this.selected_page + this.selected][0];
     i = decLongUrl(i);
-    getIdn(_$_2f23[124]);
-    Player[_$_2f23[786]] = Player[_$_2f23[787]];
-    Player[_$_2f23[450]](i, 0);
-    Player[_$_2f23[234]] = true
+    getIdn("selectbox");
+    Player.ch_t = Player.cur_time;
+    Player.play(i, 0);
+    Player.ch = true
 };
+
 var Display = {
     status_timer: null,
     status1_timer: null,
@@ -3941,189 +4045,202 @@ var Display = {
     index: 1,
     run: false
 };
-Display[_$_2f23[54]] = function () {
-    if (!this[_$_2f23[788]]) {
-        getIdb(_$_2f23[789]);
-        Display[_$_2f23[790]]();
-        this[_$_2f23[788]] = true;
-        Display[_$_2f23[791]]()
+
+Display.loadingshow = function () {
+    if (!this.run) {
+        getIdb("loading");
+        Display.loadingshowTimer();
+        this.run = true;
+        Display.loadingstep()
     }
 };
-Display[_$_2f23[145]] = function () {
-    this[_$_2f23[788]] = false;
-    clearTimeout(this[_$_2f23[792]]);
-    getIdn(_$_2f23[789])
+
+Display.loadinghide = function () {
+    this.run = false;
+    clearTimeout(this.loadingshow_timer);
+    getIdn("loading")
 };
-Display[_$_2f23[791]] = function () {
-    if (this[_$_2f23[793]] < 10) {
-        getId(_$_2f23[794])[_$_2f23[42]] = _$_2f23[795] + this[_$_2f23[793]] + _$_2f23[745]
+
+Display.loadingstep = function () {
+    if (this.index < 10) {
+        getId("imgAnim").src = "img/loading/loading_0" + this.index + ".png"
     } else {
-        getId(_$_2f23[794])[_$_2f23[42]] = _$_2f23[796] + this[_$_2f23[793]] + _$_2f23[745]
+        getId("imgAnim").src = "img/loading/loading_" + this.index + ".png"
     };
-    this[_$_2f23[793]]++;
-    if (this[_$_2f23[793]] > 8) {
-        this[_$_2f23[793]] = 1
+    this.index++;
+    if (this.index > 8) {
+        this.index = 1
     };
-    if (this[_$_2f23[788]]) {
-        setTimeout(_$_2f23[797], 200)
+    if (this.run) {
+        setTimeout(function() { Display.loadingstep(); }, 200)
     }
 };
-Display[_$_2f23[790]] = function () {
-    this[_$_2f23[792]] = setTimeout(_$_2f23[798], 60000)
+
+Display.loadingshowTimer = function () {
+    this.loadingshow_timer = setTimeout(function() { Player.ReturnMenu(); }, 60000)
 };
-Display[_$_2f23[799]] = function () {
-    if (KeyHandler[_$_2f23[261]] != 0) {
-        if (Player[_$_2f23[200]] == Player[_$_2f23[202]] || Player[_$_2f23[200]] == Player[_$_2f23[800]]) {
-            Main[_$_2f23[597]] = [];
-            Main[_$_2f23[598]] = 0;
-            Main[_$_2f23[599]] = 0;
-            getIdn(_$_2f23[801]);
-            getIdn(_$_2f23[802]);
-            if (Main[_$_2f23[34]]) {
-                getId(_$_2f23[803])[_$_2f23[123]][_$_2f23[126]] = _$_2f23[348];
-                getId(_$_2f23[625])[_$_2f23[123]][_$_2f23[126]] = _$_2f23[804];
-                getId(_$_2f23[405])[_$_2f23[123]][_$_2f23[126]] = _$_2f23[805];
-                getId(_$_2f23[601])[_$_2f23[123]][_$_2f23[126]] = _$_2f23[215]
+
+Display.showplayer = function () {
+    if (KeyHandler.Focus != 0) {
+        if (Player.state == Player.PLAYING_VOD || Player.state == Player.PAUSE_VOD) {
+            Main.ya_epg_info_arr = [];
+            Main.epg_t1 = 0;
+            Main.epg_t2 = 0;
+            getIdn("help_navi_l_player");
+            getIdn("p_epg_line");
+            if (Main.seriesE) {
+                getId("progressBarBG").style.left = "0px";
+                getId("timeInfo").style.left = "560px";
+                getId("resolution").style.left = "725px";
+                getId("time").style.left = "850px"
             } else {
-                getId(_$_2f23[803])[_$_2f23[123]][_$_2f23[126]] = _$_2f23[345];
-                getId(_$_2f23[625])[_$_2f23[123]][_$_2f23[126]] = _$_2f23[806];
-                getId(_$_2f23[405])[_$_2f23[123]][_$_2f23[126]] = _$_2f23[807];
-                getId(_$_2f23[601])[_$_2f23[123]][_$_2f23[126]] = _$_2f23[808]
+                getId("progressBarBG").style.left = "10px";
+                getId("timeInfo").style.left = "580px";
+                getId("resolution").style.left = "745px";
+                getId("time").style.left = "860px"
             };
-            getIdb(_$_2f23[809]);
-            getIdb(_$_2f23[810]);
-            getId(_$_2f23[811])[_$_2f23[123]][_$_2f23[122]] = _$_2f23[812];
-            if (Player[_$_2f23[200]] == Player[_$_2f23[800]]) {
-                getIdn(_$_2f23[813]);
-                getIdb(_$_2f23[814]);
-                if (Main[_$_2f23[34]]) {
-                    getId(_$_2f23[810])[_$_2f23[123]][_$_2f23[126]] = _$_2f23[815]
+            getIdb("p_info_line");
+            getIdb("help_navi_vod_player");
+            getId("statusbar").style.top = "68px";
+            if (Player.state == Player.PAUSE_VOD) {
+                getIdn("vod_pause");
+                getIdb("vod_play");
+                if (Main.seriesE) {
+                    getId("help_navi_vod_player").style.left = "39px"
                 } else {
-                    getId(_$_2f23[810])[_$_2f23[123]][_$_2f23[126]] = _$_2f23[816]
+                    getId("help_navi_vod_player").style.left = "48px"
                 }
             } else {
-                getIdb(_$_2f23[813]);
-                getIdn(_$_2f23[814]);
-                if (Main[_$_2f23[34]]) {
-                    getId(_$_2f23[810])[_$_2f23[123]][_$_2f23[126]] = _$_2f23[817]
+                getIdb("vod_pause");
+                getIdn("vod_play");
+                if (Main.seriesE) {
+                    getId("help_navi_vod_player").style.left = "30px"
                 } else {
-                    getId(_$_2f23[810])[_$_2f23[123]][_$_2f23[126]] = _$_2f23[818]
+                    getId("help_navi_vod_player").style.left = "40px"
                 };
-                if (Player[_$_2f23[819]]) {
-                    Display[_$_2f23[53]](_$_2f23[820], 1000)
+                if (Player.repeat) {
+                    Display.status("Repeat mode", 1000)
                 } else {
-                    if (Player[_$_2f23[452]]) {
-                        Display[_$_2f23[53]](_$_2f23[821], 1000)
+                    if (Player.next) {
+                        Display.status("Continuous playback", 1000)
                     }
                 }
             }
         } else {
-            if (Player[_$_2f23[200]] == Player[_$_2f23[461]]) {
-                getIdn(_$_2f23[810]);
-                getIdn(_$_2f23[809]);
-                getIdn(_$_2f23[802]);
-                if (Main[_$_2f23[34]]) {
-                    if (Main[_$_2f23[399]] == _$_2f23[411]) {
-                        getId(_$_2f23[801])[_$_2f23[123]][_$_2f23[126]] = _$_2f23[822]
+            if (Player.state == Player.PLAYING_LIVE) {
+                getIdn("help_navi_vod_player");
+                getIdn("p_info_line");
+                getIdn("p_epg_line");
+                if (Main.seriesE) {
+                    if (Main.PlayerMode == "1") {
+                        getId("help_navi_l_player").style.left = "70px"
                     } else {
-                        getId(_$_2f23[801])[_$_2f23[123]][_$_2f23[126]] = _$_2f23[823]
+                        getId("help_navi_l_player").style.left = "130px"
                     };
-                    getId(_$_2f23[803])[_$_2f23[123]][_$_2f23[126]] = _$_2f23[345];
-                    getId(_$_2f23[625])[_$_2f23[123]][_$_2f23[126]] = _$_2f23[824];
-                    getId(_$_2f23[405])[_$_2f23[123]][_$_2f23[126]] = _$_2f23[825];
-                    getId(_$_2f23[601])[_$_2f23[123]][_$_2f23[126]] = _$_2f23[215]
+                    getId("progressBarBG").style.left = "10px";
+                    getId("timeInfo").style.left = "595px";
+                    getId("resolution").style.left = "740px";
+                    getId("time").style.left = "850px"
                 } else {
-                    if (Main[_$_2f23[399]] == _$_2f23[411]) {
-                        getId(_$_2f23[801])[_$_2f23[123]][_$_2f23[126]] = _$_2f23[222]
+                    if (Main.PlayerMode == "1") {
+                        getId("help_navi_l_player").style.left = "80px"
                     } else {
-                        getId(_$_2f23[801])[_$_2f23[123]][_$_2f23[126]] = _$_2f23[826]
+                        getId("help_navi_l_player").style.left = "140px"
                     };
-                    getId(_$_2f23[803])[_$_2f23[123]][_$_2f23[126]] = _$_2f23[827];
-                    getId(_$_2f23[625])[_$_2f23[123]][_$_2f23[126]] = _$_2f23[828];
-                    getId(_$_2f23[405])[_$_2f23[123]][_$_2f23[126]] = _$_2f23[829];
-                    getId(_$_2f23[601])[_$_2f23[123]][_$_2f23[126]] = _$_2f23[808]
+                    getId("progressBarBG").style.left = "20px";
+                    getId("timeInfo").style.left = "605px";
+                    getId("resolution").style.left = "750px";
+                    getId("time").style.left = "860px"
                 };
-                getIdb(_$_2f23[801]);
-                if (Main[_$_2f23[399]] == _$_2f23[411]) {
-                    if (Main[_$_2f23[597]][_$_2f23[64]] > 0 && Main[_$_2f23[830]] == Main[_$_2f23[101]]) {
-                        getIdb(_$_2f23[809]);
-                        getIdb(_$_2f23[802]);
+                getIdb("help_navi_l_player");
+                if (Main.PlayerMode == "1") {
+                    if (Main.ya_epg_info_arr.length > 0 && Main.ya_prog_id == Main.chan_array_index) {
+                        getIdb("p_info_line");
+                        getIdb("p_epg_line");
                         var i = 302;
-                        if (Main[_$_2f23[34]]) {
+                        if (Main.seriesE) {
                             i = 280
                         };
-                        if (getId(_$_2f23[831])[_$_2f23[600]][_$_2f23[64]] > i) {
-                            getId(_$_2f23[811])[_$_2f23[123]][_$_2f23[122]] = _$_2f23[133]
+                        if (getId("epg_info").innerHTML.length > i) {
+                            getId("statusbar").style.top = "120px"
                         } else {
-                            getId(_$_2f23[811])[_$_2f23[123]][_$_2f23[122]] = _$_2f23[832]
+                            getId("statusbar").style.top = "100px"
                         }
                     } else {
-                        getId(_$_2f23[811])[_$_2f23[123]][_$_2f23[122]] = _$_2f23[822];
-                        setTimeout(_$_2f23[280], 400)
+                        getId("statusbar").style.top = "70px";
+                        setTimeout(function() { Main.UpdateChannelInfo(); }, 400)
                     }
                 }
             }
         };
-        if (Main[_$_2f23[399]] == _$_2f23[411]) {
-            getIdb(_$_2f23[405])
+        if (Main.PlayerMode == "1") {
+            getIdb("resolution")
         } else {
-            getIdn(_$_2f23[405])
+            getIdn("resolution")
         };
-        if (API[_$_2f23[652]] == _$_2f23[411]) {
-            getIdb(_$_2f23[833])
+        if (API.Pstyle == "1") {
+            getIdb("p_second_line")
         } else {
-            getIdn(_$_2f23[833])
+            getIdn("p_second_line")
         };
-        getIdn(_$_2f23[143]);
-        getIdb(_$_2f23[464]);
-        clearTimeout(this[_$_2f23[834]]);
-        if (Player[_$_2f23[200]] != Player[_$_2f23[800]]) {
-            Display[_$_2f23[835]]()
+        getIdn("statusbar1");
+        getIdb("player");
+        clearTimeout(this.infobar_timer);
+        if (Player.state != Player.PAUSE_VOD) {
+            Display.infobarTimer()
         }
     }
 };
-Display[_$_2f23[144]] = function () {
-    getIdn(_$_2f23[464]);
-    getId(_$_2f23[811])[_$_2f23[123]][_$_2f23[122]] = _$_2f23[345];
-    if (Main[_$_2f23[836]] != 0) {
-        Main[_$_2f23[836]] = 0;
+
+Display.hideplayer = function () {
+    getIdn("player");
+    getId("statusbar").style.top = "10px";
+    if (Main.epg_info_step != 0) {
+        Main.epg_info_step = 0;
         GetNextEpgInfo()
     }
 };
-Display[_$_2f23[835]] = function () {
-    this[_$_2f23[834]] = setTimeout(_$_2f23[837], 5000)
+
+Display.infobarTimer = function () {
+    this.infobar_timer = setTimeout(function() { Display.hideplayer(); }, 5000)
 };
-Display[_$_2f23[53]] = function (o, i) {
-    getIdn(_$_2f23[191]);
-    getIdb(_$_2f23[811]);
-    widgetAPI[_$_2f23[216]](getId(_$_2f23[53]), o);
-    clearTimeout(this[_$_2f23[838]]);
+
+Display.status = function (o, i) {
+    getIdn("version");
+    getIdb("statusbar");
+    widgetAPI.putInnerHTML(getId("status"), o);
+    clearTimeout(this.status_timer);
     if (i == undefined) {
-        Display[_$_2f23[839]](3000)
+        Display.statusTimer(3000)
     } else {
         if (i != 0) {
-            Display[_$_2f23[839]](i)
+            Display.statusTimer(i)
         }
     }
 };
-Display[_$_2f23[402]] = function (i) {
-    getIdb(_$_2f23[143]);
-    widgetAPI[_$_2f23[216]](getId(_$_2f23[402]), i);
-    clearTimeout(this[_$_2f23[840]]);
-    Display[_$_2f23[841]]()
+
+Display.status1 = function (i) {
+    getIdb("statusbar1");
+    widgetAPI.putInnerHTML(getId("status1"), i);
+    clearTimeout(this.status1_timer);
+    Display.status1Timer()
 };
-Display[_$_2f23[142]] = function () {
-    getIdn(_$_2f23[811]);
-    getIdb(_$_2f23[191])
+
+Display.hidestatus = function () {
+    getIdn("statusbar");
+    getIdb("version")
 };
-Display[_$_2f23[839]] = function (i) {
-    this[_$_2f23[838]] = setTimeout(_$_2f23[842], i)
+
+Display.statusTimer = function (i) {
+    this.status_timer = setTimeout(function() { Display.hidestatus(); }, i)
 };
-Display[_$_2f23[841]] = function () {
-    this[_$_2f23[840]] = setTimeout(_$_2f23[843], 3000)
+
+Display.status1Timer = function () {
+    this.status1_timer = setTimeout(function() { getIdn("statusbar1"); }, 3000)
 };
+
 var KeyHandler = {
-    NumberEntered: _$_2f23[4],
+    NumberEntered: "",
     ChSelectorTimeout: null,
     Menu: 0,
     Focus: 1,
@@ -4134,482 +4251,487 @@ var KeyHandler = {
 };
 
 function ShowMenuTV() {
-    if (KeyHandler[_$_2f23[135]] == 0) {
-        Main[_$_2f23[95]]();
-        pluginAPI[_$_2f23[844]](1);
-        if (Main[_$_2f23[845]] || Player[_$_2f23[200]] == Player[_$_2f23[201]]) {
-            KeyHandler[_$_2f23[135]] = 1
+    if (KeyHandler.Menu == 0) {
+        Main.registVOLTVKey();
+        pluginAPI.ShowTools(1);
+        if (Main.serieC || Player.state == Player.STOPPED) {
+            KeyHandler.Menu = 1
         }
     } else {
-        Main[_$_2f23[95]]();
-        pluginAPI[_$_2f23[844]](0);
-        KeyHandler[_$_2f23[135]] = 0
+        Main.registVOLTVKey();
+        pluginAPI.ShowTools(0);
+        KeyHandler.Menu = 0
     }
 }
+
 function SmartExit() {
-    widgetAPI[_$_2f23[846]](event);
-    if (Player[_$_2f23[200]] == Player[_$_2f23[201]]) {
-        if (KeyHandler[_$_2f23[847]]) {
-            widgetAPI[_$_2f23[848]]()
+    widgetAPI.blockNavigation(event);
+    if (Player.state == Player.STOPPED) {
+        if (KeyHandler.send_Return) {
+            widgetAPI.sendReturnEvent()
         };
-        KeyHandler[_$_2f23[847]] = true;
-        Display[_$_2f23[53]](_$_2f23[849], 2000);
-        setTimeout(_$_2f23[850], 2000)
+        KeyHandler.send_Return = true;
+        Display.status("<b style=\"color:yellow\">To quit - press \"EXIT\" again!</b>", 2000);
+        setTimeout(function() { KeyHandler.send_Return=false; }, 2000)
     } else {
-        Player[_$_2f23[851]]()
+        Player.ReturnMenu()
     }
 }
-KeyHandler[_$_2f23[118]] = function (i) {
-    KeyHandler[_$_2f23[261]] = i;
+
+KeyHandler.setFocus = function (i) {
+    KeyHandler.Focus = i;
     switch (i) {
     case 0:
-        getId(_$_2f23[853])[_$_2f23[852]]();
-        if (!Main[_$_2f23[31]]) {
-            pluginAPI[_$_2f23[91]](tvKey[_$_2f23[854]])
+        getId("MainMenu_Anchor").focus();
+        if (!Main.seriesC) {
+            pluginAPI.registKey(tvKey.KEY_TOOLS)
         };
         break;
     case 1:
-        getId(_$_2f23[855])[_$_2f23[852]]();
+        getId("LoadingPlayer_Anchor").focus();
         break;
     case 2:
-        getId(_$_2f23[856])[_$_2f23[852]]();
-        if (!Main[_$_2f23[31]]) {
-            pluginAPI[_$_2f23[87]](tvKey[_$_2f23[854]])
+        getId("LivePlayer_Anchor").focus();
+        if (!Main.seriesC) {
+            pluginAPI.unregistKey(tvKey.KEY_TOOLS)
         };
         break;
     case 3:
-        getId(_$_2f23[857])[_$_2f23[852]]();
-        if (!Main[_$_2f23[31]]) {
-            pluginAPI[_$_2f23[87]](tvKey[_$_2f23[854]])
+        getId("VODPlayer_Anchor").focus();
+        if (!Main.seriesC) {
+            pluginAPI.unregistKey(tvKey.KEY_TOOLS)
         };
         break;
     case 4:
-        getId(_$_2f23[858])[_$_2f23[852]]();
+        getId("Selectbox_Anchor").focus();
         break;
     case 5:
-        getId(_$_2f23[859])[_$_2f23[852]]();
+        getId("RedFav_Anchor").focus();
         break;
     case 6:
-        getId(_$_2f23[860])[_$_2f23[852]]();
+        getId("Guide_Anchor").focus();
         break;
     case 7:
-        getId(_$_2f23[861])[_$_2f23[852]]();
+        getId("Setup_Anchor").focus();
         break;
     default:
         break
     }
 };
-KeyHandler[_$_2f23[862]] = function () {
-    if (KeyHandler[_$_2f23[863]] > API[_$_2f23[239]][_$_2f23[64]]) {
-        Display[_$_2f23[53]](_$_2f23[864], 500)
+KeyHandler.KanalSelector = function () {
+    if (KeyHandler.NumberEntered > API.channels.length) {
+        Display.status("Input error", 500)
     } else {
-        if (KeyHandler[_$_2f23[863]] > 0) {
-            Main[_$_2f23[99]] = (KeyHandler[_$_2f23[863]] < 11) ? KeyHandler[_$_2f23[863]] - 1 : ((KeyHandler[_$_2f23[863]] % 10) > 0) ? (KeyHandler[_$_2f23[863]] % 10) - 1 : 9;
-            Main[_$_2f23[100]] = Math[_$_2f23[77]](KeyHandler[_$_2f23[863]] / 10);
-            if (Main[_$_2f23[99]] > 3) {
-                Main[_$_2f23[100]]--
+        if (KeyHandler.NumberEntered > 0) {
+            Main.selected_channel = (KeyHandler.NumberEntered < 11) ? KeyHandler.NumberEntered - 1 : ((KeyHandler.NumberEntered % 10) > 0) ? (KeyHandler.NumberEntered % 10) - 1 : 9;
+            Main.selected_page = Math.round(KeyHandler.NumberEntered / 10);
+            if (Main.selected_channel > 3) {
+                Main.selected_page--
             };
-            Main[_$_2f23[101]] = parseInt(KeyHandler[_$_2f23[863]] - 1);
-            if (Main[_$_2f23[148]]) {
-                Player[_$_2f23[851]]()
+            Main.chan_array_index = parseInt(KeyHandler.NumberEntered - 1);
+            if (Main.loading_pl) {
+                Player.ReturnMenu()
             } else {
-                Main[_$_2f23[147]] = true;
-                Main[_$_2f23[281]]();
-                setTimeout(_$_2f23[437], 20)
+                Main.block_info = true;
+                Main.UpdateChannelInfo();
+                setTimeout(function(){ Main.PlayChannel(); }, 20)
             }
         }
     };
-    KeyHandler[_$_2f23[863]] = _$_2f23[4]
+    KeyHandler.NumberEntered = ""
 };
-KeyHandler[_$_2f23[865]] = function (o) {
-    var i = _$_2f23[4];
+KeyHandler.Keys10 = function (o) {
+    var i = "";
     switch (o) {
-    case tvKey[_$_2f23[866]]:
-        i = _$_2f23[411];
+    case tvKey.KEY_1:
+        i = "1";
         break;
-    case tvKey[_$_2f23[867]]:
-        i = _$_2f23[629];
+    case tvKey.KEY_2:
+        i = "2";
         break;
-    case tvKey[_$_2f23[868]]:
-        i = _$_2f23[734];
+    case tvKey.KEY_3:
+        i = "3";
         break;
-    case tvKey[_$_2f23[869]]:
-        i = _$_2f23[737];
+    case tvKey.KEY_4:
+        i = "4";
         break;
-    case tvKey[_$_2f23[870]]:
-        i = _$_2f23[739];
+    case tvKey.KEY_5:
+        i = "5";
         break;
-    case tvKey[_$_2f23[871]]:
-        i = _$_2f23[741];
+    case tvKey.KEY_6:
+        i = "6";
         break;
-    case tvKey[_$_2f23[873]]:
-        i = _$_2f23[872];
+    case tvKey.KEY_7:
+        i = "7";
         break;
-    case tvKey[_$_2f23[875]]:
-        i = _$_2f23[874];
+    case tvKey.KEY_8:
+        i = "8";
         break;
-    case tvKey[_$_2f23[877]]:
-        i = _$_2f23[876];
+    case tvKey.KEY_9:
+        i = "9";
         break;
-    case tvKey[_$_2f23[878]]:
-        i = _$_2f23[78];
+    case tvKey.KEY_0:
+        i = "0";
         break;
     default:
         break
     };
-    KeyHandler[_$_2f23[863]] = KeyHandler[_$_2f23[863]] + i;
-    if (KeyHandler[_$_2f23[863]] != _$_2f23[4]) {
-        Display[_$_2f23[144]]();
-        if (Main[_$_2f23[399]] == _$_2f23[78] && Player[_$_2f23[200]] != Player[_$_2f23[201]]) {
-            Main[_$_2f23[464]][_$_2f23[879]](KeyHandler[_$_2f23[863]])
+    KeyHandler.NumberEntered = KeyHandler.NumberEntered + i;
+    if (KeyHandler.NumberEntered != "") {
+        Display.hideplayer();
+        if (Main.PlayerMode == "0" && Player.state != Player.STOPPED) {
+            Main.player.info(KeyHandler.NumberEntered)
         } else {
-            Display[_$_2f23[402]](KeyHandler[_$_2f23[863]])
+            Display.status1(KeyHandler.NumberEntered)
         };
-        clearTimeout(this[_$_2f23[880]]);
-        this[_$_2f23[880]] = setTimeout(_$_2f23[881], 2000)
+        clearTimeout(this.ChSelectorTimeout);
+        this.ChSelectorTimeout = setTimeout(function() { KeyHandler.KanalSelector(); }, 2000)
     }
 };
-KeyHandler[_$_2f23[882]] = function () {
-    var i = event[_$_2f23[883]];
+KeyHandler.RedFavKeyDown = function () {
+    var i = event.keyCode;
     switch (i) {
-    case tvKey[_$_2f23[884]]:
+    case tvKey.KEY_EXIT:
         SmartExit();
         break;
     case 106:
         ;
-    case tvKey[_$_2f23[885]]:
-        Main[_$_2f23[368]]();
+    case tvKey.KEY_DOWN:
+        Main.selectNextChannel();
         break;
     case 105:
         ;
-    case tvKey[_$_2f23[886]]:
-        Main[_$_2f23[369]]();
+    case tvKey.KEY_UP:
+        Main.selectPrevChannel();
         break;
-    case tvKey[_$_2f23[887]]:
-        Main[_$_2f23[372]]();
+    case tvKey.KEY_LEFT:
+        Main.selectPrevPage();
         break;
-    case tvKey[_$_2f23[888]]:
-        Main[_$_2f23[371]]();
+    case tvKey.KEY_RIGHT:
+        Main.selectNextPage();
         break;
-    case tvKey[_$_2f23[889]]:
-        Main[_$_2f23[483]]();
+    case tvKey.KEY_RED:
+        Main.delFavorites();
         break;
-    case tvKey[_$_2f23[890]]:
-        Main[_$_2f23[488]](1);
+    case tvKey.KEY_GREEN:
+        Main.moveFavorites(1);
         break;
-    case tvKey[_$_2f23[891]]:
-        Main[_$_2f23[488]](-1);
+    case tvKey.KEY_YELLOW:
+        Main.moveFavorites(-1);
         break;
-    case tvKey[_$_2f23[892]]:
-        if (API[_$_2f23[130]][_$_2f23[64]] > 1) {
-            Main[_$_2f23[128]]()
+    case tvKey.KEY_BLUE:
+        if (API.favorites.length > 1) {
+            Main.showFavSelector()
         };
         break;
-    case tvKey[_$_2f23[893]]:
-        widgetAPI[_$_2f23[846]](event);
-        Main[_$_2f23[159]] = false;
-        Main[_$_2f23[135]]();
+    case tvKey.KEY_RETURN:
+        widgetAPI.blockNavigation(event);
+        Main.RED = false;
+        Main.Menu();
         break;
-    case tvKey[_$_2f23[895]]:
-        widgetAPI[_$_2f23[846]](event);
-        if (Player[_$_2f23[200]] != Player[_$_2f23[201]]) {
-            Player[_$_2f23[401]]()
+    case tvKey.KEY_STOP:
+        widgetAPI.blockNavigation(event);
+        if (Player.state != Player.STOPPED) {
+            Player.stopV()
         };
-        setTimeout(_$_2f23[894], 100);
+        setTimeout(function() { getIdn('main'); }, 100);
         hideWeather();
         break;
     default:
         break
     }
 };
-KeyHandler[_$_2f23[896]] = function () {
-    var i = event[_$_2f23[883]];
+KeyHandler.GuideKeyDown = function () {
+    var i = event.keyCode;
     switch (i) {
     case 256:
         ;
     case 1057:
         ;
-    case tvKey[_$_2f23[893]]:
+    case tvKey.KEY_RETURN:
         ;
-    case tvKey[_$_2f23[92]]:
-        widgetAPI[_$_2f23[846]](event);
-        Main[_$_2f23[356]]();
-        if (Player[_$_2f23[200]] == Player[_$_2f23[461]]) {
-            this[_$_2f23[206]] = 1
+    case tvKey.KEY_GUIDE:
+        widgetAPI.blockNavigation(event);
+        Main.PlayPrevPlaylist();
+        if (Player.state == Player.PLAYING_LIVE) {
+            this.guide_step = 1
         };
         break;
-    case tvKey[_$_2f23[884]]:
+    case tvKey.KEY_EXIT:
         SmartExit();
         break;
     case 106:
         ;
-    case tvKey[_$_2f23[885]]:
-        Main[_$_2f23[368]]();
+    case tvKey.KEY_DOWN:
+        Main.selectNextChannel();
         break;
     case 105:
         ;
-    case tvKey[_$_2f23[886]]:
-        Main[_$_2f23[369]]();
+    case tvKey.KEY_UP:
+        Main.selectPrevChannel();
         break;
-    case tvKey[_$_2f23[887]]:
-        Main[_$_2f23[372]]();
+    case tvKey.KEY_LEFT:
+        Main.selectPrevPage();
         break;
-    case tvKey[_$_2f23[888]]:
-        Main[_$_2f23[371]]();
+    case tvKey.KEY_RIGHT:
+        Main.selectNextPage();
         break;
     case 68:
         ;
     case 1078:
         scrollDown();
-        Scrol(_$_2f23[343], 20);
+        Scrol("allInfo", 20);
         break;
     case 65:
         ;
     case 1080:
         scrollUp();
-        Scrol(_$_2f23[343], -20);
+        Scrol("allInfo", -20);
         break;
     default:
         break
     }
 };
-KeyHandler[_$_2f23[897]] = function () {
-    var o = event[_$_2f23[883]];
-    KeyHandler[_$_2f23[865]](o);
+KeyHandler.MainMenuKeyDown = function () {
+    var o = event.keyCode;
+    KeyHandler.Keys10(o);
     switch (o) {
-    case tvKey[_$_2f23[93]]:
-        if (!Main[_$_2f23[136]]) {
-            Main[_$_2f23[288]] = _$_2f23[421];
-            Main[_$_2f23[363]]()
+    case tvKey.KEY_SOURCE:
+        if (!Main.FirstStart) {
+            Main.pl_url = "ScanUSB";
+            Main.playlist()
         };
         break;
     case 1086:
         ;
     case 84:
-        if (API[_$_2f23[68]][_$_2f23[30]](_$_2f23[209]) != 0) {
-            Main[_$_2f23[364]] = true;
-            Main[_$_2f23[363]]()
+        if (API.XML_URL.indexOf("start.xml") != 0) {
+            Main.start = true;
+            Main.playlist()
         } else {
-            Main[_$_2f23[356]]()
+            Main.PlayPrevPlaylist()
         };
         break;
     case 256:
         ;
     case 1057:
         ;
-    case tvKey[_$_2f23[92]]:
-        widgetAPI[_$_2f23[846]](event);
-        if (Main[_$_2f23[108]] != Main[_$_2f23[101]]) {
-            this[_$_2f23[206]] = 0
+    case tvKey.KEY_GUIDE:
+        widgetAPI.blockNavigation(event);
+        if (Main.play_chan_array_index != Main.chan_array_index) {
+            this.guide_step = 0
         };
-        if (Main[_$_2f23[192]] && this[_$_2f23[206]] == 0 && Main[_$_2f23[898]][_$_2f23[64]] > 0) {
-            Main[_$_2f23[102]] = true;
-            Main[_$_2f23[66]](API[_$_2f23[68]], Main[_$_2f23[898]])
+        if (Main.yandextv_mode && this.guide_step == 0 && Main.ya_prog_info_arr.length > 0) {
+            Main.guide = true;
+            Main.ReadPlArr(API.XML_URL, Main.ya_prog_info_arr)
         } else {
-            if (Player[_$_2f23[200]] == Player[_$_2f23[461]] && this[_$_2f23[206]] == 1) {
-                this[_$_2f23[206]] = 0;
-                Main[_$_2f23[109]]();
-                getIdn(_$_2f23[162]);
-                Display[_$_2f23[142]]();
-                KeyHandler[_$_2f23[118]](2);
-                Display[_$_2f23[799]]()
+            if (Player.state == Player.PLAYING_LIVE && this.guide_step == 1) {
+                this.guide_step = 0;
+                Main.SetSelectedPosition();
+                getIdn("main");
+                Display.hidestatus();
+                KeyHandler.setFocus(2);
+                Display.showplayer()
             } else {
-                Display[_$_2f23[53]](_$_2f23[899], 500)
+                Display.status("There is no EPG!", 500)
             }
         };
         break;
-    case tvKey[_$_2f23[903]]:
-        confirm[_$_2f23[900]]();
-        Display[_$_2f23[53]](_$_2f23[901] + Main[_$_2f23[14]] + _$_2f23[902] + Main[_$_2f23[57]], 5000);
+    case tvKey.KEY_INFO:
+        confirm.openWindow();
+        Display.status("MAC = " + Main.MAC + " | Parser = " + Main.Supe_ext, 5000);
         break;
-    case tvKey[_$_2f23[854]]:
+    case tvKey.KEY_TOOLS:
         hideScroll();
-        if (!Main[_$_2f23[136]] && !Main[_$_2f23[103]]) {
-            if (Player[_$_2f23[200]] != Player[_$_2f23[201]]) {
-                Player[_$_2f23[401]]();
-                setTimeout(_$_2f23[894], 700);
-                Main[_$_2f23[263]](_$_2f23[904], 1500)
+        if (!Main.FirstStart && !Main.help_info) {
+            if (Player.state != Player.STOPPED) {
+                Player.stopV();
+                setTimeout(function() { getIdn('main'); }, 700);
+                Main.LoadTimer(function() { SetupFormular(); }, 1500)
             } else {
-                getIdn(_$_2f23[162]);
-                Main[_$_2f23[263]](_$_2f23[904], 600)
+                getIdn("main");
+                Main.LoadTimer(function() { SetupFormular(); }, 600)
             }
         };
         break;
     case 1118:
         ;
-    case tvKey[_$_2f23[905]]:
+    case tvKey.KEY_PANEL_MENU:
         ;
-    case tvKey[_$_2f23[90]]:
-        widgetAPI[_$_2f23[846]](event);
+    case tvKey.KEY_MENU:
+        widgetAPI.blockNavigation(event);
         ShowMenuTV();
         break;
     case 78:
         ;
     case 259:
-        if (!Main[_$_2f23[103]]) {
-            Main[_$_2f23[349]]()
+        if (!Main.help_info) {
+            Main.PlayPrevChannel()
         };
         break;
-    case tvKey[_$_2f23[884]]:
+    case tvKey.KEY_EXIT:
         SmartExit();
         break;
-    case tvKey[_$_2f23[893]]:
-        widgetAPI[_$_2f23[846]](event);
-        if (Player[_$_2f23[200]] != Player[_$_2f23[201]] && Main[_$_2f23[68]] == API[_$_2f23[68]]) {
-            this[_$_2f23[206]] = 0;
-            Main[_$_2f23[109]]();
-            getIdn(_$_2f23[162]);
-            Display[_$_2f23[142]]();
-            if (Player[_$_2f23[200]] == Player[_$_2f23[461]]) {
-                KeyHandler[_$_2f23[118]](2)
+    case tvKey.KEY_RETURN:
+        widgetAPI.blockNavigation(event);
+        if (Player.state != Player.STOPPED && Main.XML_URL == API.XML_URL) {
+            this.guide_step = 0;
+            Main.SetSelectedPosition();
+            getIdn("main");
+            Display.hidestatus();
+            if (Player.state == Player.PLAYING_LIVE) {
+                KeyHandler.setFocus(2)
             } else {
-                KeyHandler[_$_2f23[118]](3)
+                KeyHandler.setFocus(3)
             };
-            Display[_$_2f23[799]]();
+            Display.showplayer();
             hideWeather();
             hideTemp();
             hideScroll()
         } else {
-            Main[_$_2f23[356]]()
+            Main.PlayPrevPlaylist()
         };
         break;
     case 106:
         ;
-    case tvKey[_$_2f23[885]]:
-        Main[_$_2f23[368]]();
-        if (Main[_$_2f23[282]] == 0) {
-            document[_$_2f23[323]](_$_2f23[322])[_$_2f23[123]][_$_2f23[122]] = _$_2f23[222]
+    case tvKey.KEY_DOWN:
+        Main.selectNextChannel();
+        if (Main.scrolling == 0) {
+            document.getElementById("scroll_cursor").style.top = "80px"
         };
         break;
     case 105:
         ;
-    case tvKey[_$_2f23[886]]:
-        Main[_$_2f23[369]]();
-        if (Main[_$_2f23[282]] == 0) {
-            document[_$_2f23[323]](_$_2f23[322])[_$_2f23[123]][_$_2f23[122]] = _$_2f23[222]
+    case tvKey.KEY_UP:
+        Main.selectPrevChannel();
+        if (Main.scrolling == 0) {
+            document.getElementById("scroll_cursor").style.top = "80px"
         };
         break;
-    case tvKey[_$_2f23[887]]:
-        Main[_$_2f23[372]]();
+    case tvKey.KEY_LEFT:
+        Main.selectPrevPage();
         break;
-    case tvKey[_$_2f23[888]]:
-        Main[_$_2f23[371]]();
+    case tvKey.KEY_RIGHT:
+        Main.selectNextPage();
         break;
     case 612:
         ;
     case 309:
         ;
-    case tvKey[_$_2f23[907]]:
-        if (KeyHandler[_$_2f23[863]] != _$_2f23[4]) {
-            clearTimeout(this[_$_2f23[880]]);
-            KeyHandler[_$_2f23[862]]()
+    case tvKey.KEY_ENTER:
+        if (KeyHandler.NumberEntered != "") {
+            clearTimeout(this.ChSelectorTimeout);
+            KeyHandler.KanalSelector()
         } else {
-            if (Main[_$_2f23[103]]) {
-                Main[_$_2f23[906]]++
+            if (Main.help_info) {
+                Main.help_step++
             };
-            Main[_$_2f23[350]]()
+            Main.PlayChannel()
         };
         break;
-    case tvKey[_$_2f23[889]]:
+    case tvKey.KEY_RED:
         hideScroll();
-        if (!Main[_$_2f23[103]] && !Main[_$_2f23[61]] && API[_$_2f23[120]][_$_2f23[64]] > 2) {
-            Main[_$_2f23[116]]()
+        if (!Main.help_info && !Main.FAV && API.categories.length > 2) {
+            Main.showCategorySelector()
         } else {
-            if (API[_$_2f23[68]][_$_2f23[30]](_$_2f23[195]) > 0) {
-                Main[_$_2f23[479]](API[_$_2f23[68]])
+            if (API.XML_URL.indexOf("history.dat") > 0) {
+                Main.delHistory(API.XML_URL)
             } else {
-                Display[_$_2f23[53]](_$_2f23[370], 500)
+                Display.status("Not Available!", 500)
             }
         };
         break;
-    case tvKey[_$_2f23[890]]:
+    case tvKey.KEY_GREEN:
         hideScroll();
-        if (!Main[_$_2f23[61]] && !Main[_$_2f23[149]] && API[_$_2f23[68]][_$_2f23[30]](_$_2f23[194]) < 0) {
-            if (API[_$_2f23[130]][_$_2f23[64]] > 1) {
-                Main[_$_2f23[128]]()
+        if (!Main.FAV && !Main.block_fav && API.XML_URL.indexOf("Open") < 0) {
+            if (API.favorites.length > 1) {
+                Main.showFavSelector()
             } else {
-                Main[_$_2f23[480]]()
+                Main.saveFavorites()
             }
         } else {
-            Display[_$_2f23[53]](_$_2f23[370], 500)
+            Display.status("Not Available!", 500)
         };
         break;
-    case tvKey[_$_2f23[891]]:
+    case tvKey.KEY_YELLOW:
         hideScroll();
-        if (!Main[_$_2f23[149]] && API[_$_2f23[68]][_$_2f23[30]](_$_2f23[194]) < 0) {
-            if (API[_$_2f23[130]][_$_2f23[64]] < 2 && !Main[_$_2f23[61]]) {
-                Main[_$_2f23[61]] = true;
-                Main[_$_2f23[62]](Main[_$_2f23[67]])
+        if (!Main.block_fav && API.XML_URL.indexOf("Open") < 0) {
+            if (API.favorites.length < 2 && !Main.FAV) {
+                Main.FAV = true;
+                Main.openCommonFile(Main.fav_url)
             } else {
-                if (API[_$_2f23[130]][_$_2f23[64]] > 1) {
-                    Main[_$_2f23[61]] = true;
-                    Main[_$_2f23[128]]();
-                    alert(_$_2f23[908])
+                if (API.favorites.length > 1) {
+                    Main.FAV = true;
+                    Main.showFavSelector();
+                    alert("[[[[[[[[[[[[[[FAV]]]]]]]]]]]]]]]")
                 }
             }
         } else {
-            Display[_$_2f23[53]](_$_2f23[370], 500)
+            Display.status("Not Available!", 500)
         };
         break;
-    case tvKey[_$_2f23[892]]:
-        if (Main[_$_2f23[61]] && !Main[_$_2f23[149]]) {
-            Main[_$_2f23[159]] = true;
-            Main[_$_2f23[135]]()
+    case tvKey.KEY_BLUE:
+        if (Main.FAV && !Main.block_fav) {
+            Main.RED = true;
+            Main.Menu()
         } else {
-            if (Player[_$_2f23[200]] == Player[_$_2f23[201]]) {
-                if (Main[_$_2f23[232]]) {
-                    this[_$_2f23[357]] = true
+            if (Player.state == Player.STOPPED) {
+                if (Main.ret) {
+                    this.bl = true
                 };
-                Main[_$_2f23[356]]()
+                Main.PlayPrevPlaylist()
             }
         };
         break;
-    case tvKey[_$_2f23[909]]:
-        widgetAPI[_$_2f23[846]](event);
-        if (Main[_$_2f23[192]]) {
-            T[_$_2f23[300]]++;
-            if (T[_$_2f23[300]] > 5) {
-                T[_$_2f23[300]] = 0
+    case tvKey.KEY_FF:
+        widgetAPI.blockNavigation(event);
+        if (Main.yandextv_mode) {
+            T.delta++;
+            if (T.delta > 5) {
+                T.delta = 0
             };
             YandexGetUrl(GetYindex())
         } else {
             ListNextPage()
         };
         break;
-    case tvKey[_$_2f23[919]]:
-        widgetAPI[_$_2f23[846]](event);
-        if (Player[_$_2f23[910]] != 0) {
-            if (Player[_$_2f23[200]] == Player[_$_2f23[800]]) {
-                Player[_$_2f23[911]]()
+    case tvKey.KEY_PAUSE:
+        widgetAPI.blockNavigation(event);
+        if (Player.total_time != 0) {
+            if (Player.state == Player.PAUSE_VOD) {
+                Player.resumeVideo()
             } else {
-                Player[_$_2f23[912]]()
+                Player.pauseVideo()
             }
         } else {
-            if (Main[_$_2f23[192]]) {
-                c = (Main[_$_2f23[295]] != _$_2f23[4]) ? Main[_$_2f23[295]] : API[_$_2f23[642]];
-                Main[_$_2f23[346]] = _$_2f23[913] + c + _$_2f23[914] + Main[_$_2f23[915]] + _$_2f23[916];
-                Main[_$_2f23[301]]++;
+            if (Main.yandextv_mode) {
+                c = (Main.region != "") ? Main.region : API.CODE;
+                Main.lost_date = ": <font style='font-size:16px;color:white;'>scroll page</font><font style='font-size:16px;color:cyan;'> P-/P+ </font>: <font style='font-size:16px;color:white;'>region - </font><font style='font-size:16px;color:cyan;'>" + c
+				+ "</font> : <font style='font-size:16px;color:white;'>index - </font><font style='font-size:16px;color:cyan;'>"
+				+ Main.ch_index
+				+ "</font> :";
+                Main.Ya_flag_step++;
                 YandexGetUrl(GetYindex())
             } else {
-                if (API[_$_2f23[68]][_$_2f23[30]](_$_2f23[209]) == 0) {
-                    if (Main[_$_2f23[270]] && !Main[_$_2f23[283]]) {
+                if (API.XML_URL.indexOf("start.xml") == 0) {
+                    if (Main.ya_auto && !Main.ya_base_info) {
                         GetYaBaseInfo()
                     } else {
-                        if (!Main[_$_2f23[283]]) {
-                            Display[_$_2f23[53]](_$_2f23[917])
+                        if (!Main.ya_base_info) {
+                            Display.status("creating Yandex EPG from database")
                         };
-                        setTimeout(_$_2f23[918], 500)
+                        setTimeout(function() { GetYandexBase(); }, 500)
                     }
                 }
             }
         };
         break;
-    case tvKey[_$_2f23[920]]:
-        widgetAPI[_$_2f23[846]](event);
-        if (Main[_$_2f23[192]]) {
-            T[_$_2f23[300]]--;
-            if (T[_$_2f23[300]] < -6) {
-                T[_$_2f23[300]] = 0
+    case tvKey.KEY_RW:
+        widgetAPI.blockNavigation(event);
+        if (Main.yandextv_mode) {
+            T.delta--;
+            if (T.delta < -6) {
+                T.delta = 0
             };
             YandexGetUrl(GetYindex())
         } else {
@@ -4619,44 +4741,44 @@ KeyHandler[_$_2f23[897]] = function () {
     case 68:
         ;
     case 1078:
-        Scrol(_$_2f23[343], 20);
+        Scrol("allInfo", 20);
         scrollDown();
         break;
     case 65:
         ;
     case 1080:
-        Scrol(_$_2f23[343], -20);
+        Scrol("allInfo", -20);
         scrollUp();
         break;
-    case tvKey[_$_2f23[924]]:
-        widgetAPI[_$_2f23[846]](event);
-        if (Player[_$_2f23[200]] == Player[_$_2f23[800]]) {
-            Player[_$_2f23[911]]()
+    case tvKey.KEY_PLAY:
+        widgetAPI.blockNavigation(event);
+        if (Player.state == Player.PAUSE_VOD) {
+            Player.resumeVideo()
         } else {
-            if (Main[_$_2f23[192]]) {
-                if (!Main[_$_2f23[193]]) {
-                    Main[_$_2f23[193]] = true
+            if (Main.yandextv_mode) {
+                if (!Main.ya_all_day) {
+                    Main.ya_all_day = true
                 } else {
-                    Main[_$_2f23[193]] = false
+                    Main.ya_all_day = false
                 };
                 YandexGetUrl(GetYindex())
             } else {
-                if (Player[_$_2f23[200]] == Player[_$_2f23[201]]) {
-                    Main[_$_2f23[350]]()
+                if (Player.state == Player.STOPPED) {
+                    Main.PlayChannel()
                 } else {
-                    if (Player[_$_2f23[910]] != 0) {
-                        if (!Player[_$_2f23[452]] && !Player[_$_2f23[819]]) {
-                            Player[_$_2f23[452]] = true;
-                            Display[_$_2f23[53]](_$_2f23[921], 1000)
+                    if (Player.total_time != 0) {
+                        if (!Player.next && !Player.repeat) {
+                            Player.next = true;
+                            Display.status("Resume playback", 1000)
                         } else {
-                            if (Player[_$_2f23[452]] && !Player[_$_2f23[819]]) {
-                                Player[_$_2f23[819]] = true;
-                                Display[_$_2f23[53]](_$_2f23[922], 1000)
+                            if (Player.next && !Player.repeat) {
+                                Player.repeat = true;
+                                Display.status("Repeat playback", 1000)
                             } else {
-                                if (Player[_$_2f23[452]] && Player[_$_2f23[819]]) {
-                                    Player[_$_2f23[452]] = false;
-                                    Player[_$_2f23[819]] = false;
-                                    Display[_$_2f23[53]](_$_2f23[923], 1000)
+                                if (Player.next && Player.repeat) {
+                                    Player.next = false;
+                                    Player.repeat = false;
+                                    Display.status("All modes are disabled!", 1000)
                                 }
                             }
                         }
@@ -4665,25 +4787,25 @@ KeyHandler[_$_2f23[897]] = function () {
             }
         };
         break;
-    case tvKey[_$_2f23[895]]:
-        widgetAPI[_$_2f23[846]](event);
+    case tvKey.KEY_STOP:
+        widgetAPI.blockNavigation(event);
         showImageSet();
-        if (Main[_$_2f23[61]]) {
-            if (Player[_$_2f23[200]] != Player[_$_2f23[201]]) {
-                Player[_$_2f23[401]]()
+        if (Main.FAV) {
+            if (Player.state != Player.STOPPED) {
+                Player.stopV()
             };
-            setTimeout(_$_2f23[894], 100);
-            Main[_$_2f23[263]](_$_2f23[925], 600)
+            setTimeout(function() { getIdn('main'); }, 100);
+            Main.LoadTimer(function() { ChannelSetupFormular(); }, 600)
         } else {
-            if (!Main[_$_2f23[103]]) {
-                if (Player[_$_2f23[200]] != Player[_$_2f23[201]]) {
-                    Player[_$_2f23[401]]()
+            if (!Main.help_info) {
+                if (Player.state != Player.STOPPED) {
+                    Player.stopV()
                 };
-                setTimeout(_$_2f23[894], 100);
-                Main[_$_2f23[263]](_$_2f23[432], 600)
+                setTimeout(function() { getIdn('main'); }, 100);
+                Main.LoadTimer(function() { SearchFormular(); }, 600)
             } else {
-                if (Player[_$_2f23[200]] != Player[_$_2f23[201]]) {
-                    Player[_$_2f23[851]]()
+                if (Player.state != Player.STOPPED) {
+                    Player.ReturnMenu()
                 }
             }
         };
@@ -4691,158 +4813,158 @@ KeyHandler[_$_2f23[897]] = function () {
     case 1249:
         ;
     case 192:
-        widgetAPI[_$_2f23[846]](event);
-        Display[_$_2f23[53]](_$_2f23[901] + Main[_$_2f23[14]] + _$_2f23[902] + Main[_$_2f23[57]], 5000);
+        widgetAPI.blockNavigation(event);
+        Display.status("MAC = " + Main.MAC + " | Parser = " + Main.Supe_ext, 5000);
         break;
     case 1236:
         ;
     case 1089:
         ;
-    case tvKey[_$_2f23[927]]:
-        Player[_$_2f23[926]]();
+    case tvKey.KEY_SUBTITLE:
+        Player.SEFSetNextAudioStream();
         break;
     default:
         break
     }
 };
-KeyHandler[_$_2f23[928]] = function () {
-    var i = event[_$_2f23[883]];
-    KeyHandler[_$_2f23[865]](i);
+KeyHandler.LoadingPlayerKeyDown = function () {
+    var i = event.keyCode;
+    KeyHandler.Keys10(i);
     switch (i) {
-    case tvKey[_$_2f23[886]]:
+    case tvKey.KEY_UP:
         ;
     case 105:
         ;
     case 68:
         ;
     case 1078:
-        if (!Main[_$_2f23[148]]) {
-            Main[_$_2f23[147]] = true;
-            Main[_$_2f23[368]]();
-            setTimeout(_$_2f23[437], 50)
+        if (!Main.loading_pl) {
+            Main.block_info = true;
+            Main.selectNextChannel();
+            setTimeout(function(){ Main.PlayChannel(); }, 50)
         };
         break;
-    case tvKey[_$_2f23[885]]:
+    case tvKey.KEY_DOWN:
         ;
     case 106:
         ;
     case 65:
         ;
     case 1080:
-        if (!Main[_$_2f23[148]]) {
-            Main[_$_2f23[147]] = true;
-            Main[_$_2f23[369]]();
-            setTimeout(_$_2f23[437], 50)
+        if (!Main.loading_pl) {
+            Main.block_info = true;
+            Main.selectPrevChannel();
+            setTimeout(function(){ Main.PlayChannel(); }, 50)
         };
         break;
     case 78:
         ;
     case 259:
-        if (!Main[_$_2f23[148]]) {
-            Main[_$_2f23[349]]()
+        if (!Main.loading_pl) {
+            Main.PlayPrevChannel()
         };
         break;
-    case tvKey[_$_2f23[884]]:
-        widgetAPI[_$_2f23[846]](event);
-        if (!Main[_$_2f23[148]]) {
-            Player[_$_2f23[851]]()
+    case tvKey.KEY_EXIT:
+        widgetAPI.blockNavigation(event);
+        if (!Main.loading_pl) {
+            Player.ReturnMenu()
         } else {
-            API[_$_2f23[709]]()
+            API.stopRequest()
         };
         break;
-    case tvKey[_$_2f23[893]]:
-        widgetAPI[_$_2f23[846]](event);
-        if (!Main[_$_2f23[148]]) {
-            Player[_$_2f23[851]]()
+    case tvKey.KEY_RETURN:
+        widgetAPI.blockNavigation(event);
+        if (!Main.loading_pl) {
+            Player.ReturnMenu()
         };
         break;
-    case tvKey[_$_2f23[895]]:
-        widgetAPI[_$_2f23[846]](event);
-        if (!Main[_$_2f23[148]]) {
-            Player[_$_2f23[851]]()
+    case tvKey.KEY_STOP:
+        widgetAPI.blockNavigation(event);
+        if (!Main.loading_pl) {
+            Player.ReturnMenu()
         };
         break;
     default:
         break
     }
 };
-KeyHandler[_$_2f23[929]] = function () {
-    var i = event[_$_2f23[883]];
+KeyHandler.SelectboxKeyDown = function () {
+    var i = event.keyCode;
     switch (i) {
-    case tvKey[_$_2f23[885]]:
-        Selectbox[_$_2f23[781]]();
+    case tvKey.KEY_DOWN:
+        Selectbox.selectNextItem();
         break;
-    case tvKey[_$_2f23[886]]:
-        Selectbox[_$_2f23[782]]();
+    case tvKey.KEY_UP:
+        Selectbox.selectPrevItem();
         break;
-    case tvKey[_$_2f23[907]]:
-        if (Selectbox[_$_2f23[244]] == _$_2f23[930]) {
-            Selectbox[_$_2f23[785]]()
+    case tvKey.KEY_ENTER:
+        if (Selectbox.title == "Select Size") {
+            Selectbox.SelectSize()
         } else {
-            if (Selectbox[_$_2f23[244]] == _$_2f23[129]) {
-                Selectbox[_$_2f23[784]]()
+            if (Selectbox.title == "Select Favourites") {
+                Selectbox.SelectFav()
             } else {
-                Selectbox[_$_2f23[783]]()
+                Selectbox.SelectCategory()
             }
         };
         break;
-    case tvKey[_$_2f23[887]]:
-        Selectbox[_$_2f23[372]]();
+    case tvKey.KEY_LEFT:
+        Selectbox.selectPrevPage();
         break;
-    case tvKey[_$_2f23[888]]:
-        Selectbox[_$_2f23[371]]();
+    case tvKey.KEY_RIGHT:
+        Selectbox.selectNextPage();
         break;
-    case tvKey[_$_2f23[884]]:
+    case tvKey.KEY_EXIT:
         ;
-    case tvKey[_$_2f23[893]]:
-        widgetAPI[_$_2f23[846]](event);
-        if (API[_$_2f23[68]] != Main[_$_2f23[67]]) {
-            Main[_$_2f23[61]] = false
+    case tvKey.KEY_RETURN:
+        widgetAPI.blockNavigation(event);
+        if (API.XML_URL != Main.fav_url) {
+            Main.FAV = false
         };
-        getIdn(_$_2f23[124]);
-        getIdb(_$_2f23[117]);
-        if (Selectbox[_$_2f23[244]] == _$_2f23[930]) {
-            KeyHandler[_$_2f23[118]](3)
+        getIdn("selectbox");
+        getIdb("rightHalf");
+        if (Selectbox.title == "Select Size") {
+            KeyHandler.setFocus(3)
         } else {
-            if (!Main[_$_2f23[159]]) {
-                KeyHandler[_$_2f23[118]](0)
+            if (!Main.RED) {
+                KeyHandler.setFocus(0)
             } else {
-                KeyHandler[_$_2f23[118]](5)
+                KeyHandler.setFocus(5)
             }
         };
         break;
-    case tvKey[_$_2f23[890]]:
-        if (Selectbox[_$_2f23[244]] == _$_2f23[129]) {
-            Selectbox[_$_2f23[784]]()
+    case tvKey.KEY_GREEN:
+        if (Selectbox.title == "Select Favourites") {
+            Selectbox.SelectFav()
         };
         break;
-    case tvKey[_$_2f23[891]]:
-        if (Selectbox[_$_2f23[244]] == _$_2f23[129]) {
-            Selectbox[_$_2f23[784]]()
+    case tvKey.KEY_YELLOW:
+        if (Selectbox.title == "Select Favourites") {
+            Selectbox.SelectFav()
         };
         break;
-    case tvKey[_$_2f23[892]]:
-        if (Selectbox[_$_2f23[244]] == _$_2f23[129]) {
-            Selectbox[_$_2f23[784]]()
+    case tvKey.KEY_BLUE:
+        if (Selectbox.title == "Select Favourites") {
+            Selectbox.SelectFav()
         };
         break;
     default:
         break
     }
 };
-KeyHandler[_$_2f23[931]] = function () {
-    var i = event[_$_2f23[883]];
-    KeyHandler[_$_2f23[865]](i);
+KeyHandler.LivePlayerKeyDown = function () {
+    var i = event.keyCode;
+    KeyHandler.Keys10(i);
     switch (i) {
     case 1086:
         ;
     case 84:
-        if (Player[_$_2f23[541]] == 5) {
-            if (Main[_$_2f23[150]]) {
-                Main[_$_2f23[150]] = false
+        if (Player.size == 5) {
+            if (Main.SetZoom) {
+                Main.SetZoom = false
             } else {
-                Main[_$_2f23[150]] = true;
-                Display[_$_2f23[53]](_$_2f23[932], 0)
+                Main.SetZoom = true;
+                Display.status("<table><tr><td><img src=\"img/buttons/move_m.png\"></img></td><td>- Set Zoom</td></tr></table>", 0)
             }
         };
         break;
@@ -4850,490 +4972,494 @@ KeyHandler[_$_2f23[931]] = function () {
         ;
     case 256:
         ;
-    case tvKey[_$_2f23[92]]:
-        widgetAPI[_$_2f23[846]](event);
-        if (Main[_$_2f23[192]]) {
-            Display[_$_2f23[144]]();
-            Main[_$_2f23[135]]()
+    case tvKey.KEY_GUIDE:
+        widgetAPI.blockNavigation(event);
+        if (Main.yandextv_mode) {
+            Display.hideplayer();
+            Main.Menu()
         } else {
-            Display[_$_2f23[53]](_$_2f23[933], 500)
+            Display.status("NO EPG!", 500)
         };
         break;
-    case tvKey[_$_2f23[854]]:
-        if (Main[_$_2f23[845]]) {
-            widgetAPI[_$_2f23[846]](event)
+    case tvKey.KEY_TOOLS:
+        if (Main.serieC) {
+            widgetAPI.blockNavigation(event)
         };
         break;
     case 1118:
         ;
-    case tvKey[_$_2f23[905]]:
+    case tvKey.KEY_PANEL_MENU:
         ;
-    case tvKey[_$_2f23[90]]:
-        widgetAPI[_$_2f23[846]](event);
+    case tvKey.KEY_MENU:
+        widgetAPI.blockNavigation(event);
         ShowMenuTV();
         break;
-    case tvKey[_$_2f23[890]]:
-        if (Main[_$_2f23[399]] == _$_2f23[411]) {
-            Player[_$_2f23[926]]()
+    case tvKey.KEY_GREEN:
+        if (Main.PlayerMode == "1") {
+            Player.SEFSetNextAudioStream()
         } else {
-            Display[_$_2f23[53]](_$_2f23[370], 500)
+            Display.status("Not Available!", 500)
         };
         break;
     case 20:
-        if (Main[_$_2f23[399]] == _$_2f23[411]) {
-            Player[_$_2f23[926]]()
+        if (Main.PlayerMode == "1") {
+            Player.SEFSetNextAudioStream()
         } else {
-            Display[_$_2f23[53]](_$_2f23[370], 500)
+            Display.status("Not Available!", 500)
         };
         break;
-    case tvKey[_$_2f23[891]]:
-        Main[_$_2f23[95]]();
-        pluginAPI[_$_2f23[844]](1);
+    case tvKey.KEY_YELLOW:
+        Main.registVOLTVKey();
+        pluginAPI.ShowTools(1);
         break;
     case 78:
         ;
     case 259:
-        Main[_$_2f23[349]]();
+        Main.PlayPrevChannel();
         break;
-    case tvKey[_$_2f23[892]]:
+    case tvKey.KEY_BLUE:
         ;
     case 653:
         ;
     case 1249:
         ;
     case 1083:
-        widgetAPI[_$_2f23[846]](event);
-        if (Main[_$_2f23[399]] == _$_2f23[411]) {
-            if (Player[_$_2f23[541]] >= 6) {
-                Player[_$_2f23[934]](0, 1, 0)
+        widgetAPI.blockNavigation(event);
+        if (Main.PlayerMode == "1") {
+            if (Player.size >= 6) {
+                Player.setSize(0, 1, 0)
             } else {
-                Player[_$_2f23[934]](Player[_$_2f23[541]] + 1, 1, 0)
+                Player.setSize(Player.size + 1, 1, 0)
             };
-            Main[_$_2f23[150]] = false
+            Main.SetZoom = false
         } else {
-            Display[_$_2f23[53]](_$_2f23[370], 500)
+            Display.status("Not Available!", 500)
         };
         break;
     case 1219:
-        if (Main[_$_2f23[399]] == _$_2f23[411]) {
-            if (Player[_$_2f23[935]]() >= 2) {
-                Player[_$_2f23[936]](0)
+        if (Main.PlayerMode == "1") {
+            if (Player.get3DMode() >= 2) {
+                Player.change3DMode(0)
             } else {
-                Player[_$_2f23[936]](Player[_$_2f23[935]]() + 1)
+                Player.change3DMode(Player.get3DMode() + 1)
             }
         } else {
-            Display[_$_2f23[53]](_$_2f23[370], 500)
+            Display.status("Not Available!", 500)
         };
         break;
-    case tvKey[_$_2f23[886]]:
+    case tvKey.KEY_UP:
         ;
     case 105:
         ;
     case 68:
         ;
     case 1078:
-        if (Main[_$_2f23[150]]) {
-            if (Player[_$_2f23[647]] < 150) {
-                Player[_$_2f23[647]]++;
-                Player[_$_2f23[934]](Player[_$_2f23[541]], 1, 0)
+        if (Main.SetZoom) {
+            if (Player.Ph < 150) {
+                Player.Ph++;
+                Player.setSize(Player.size, 1, 0)
             }
         } else {
-            Main[_$_2f23[147]] = true;
-            Main[_$_2f23[368]]();
-            setTimeout(_$_2f23[437], 20)
+            Main.block_info = true;
+            Main.selectNextChannel();
+            setTimeout(function(){ Main.PlayChannel(); }, 20)
         };
         break;
-    case tvKey[_$_2f23[885]]:
+    case tvKey.KEY_DOWN:
         ;
     case 106:
         ;
     case 65:
         ;
     case 1080:
-        if (Main[_$_2f23[150]]) {
-            if (Player[_$_2f23[647]] > 50) {
-                Player[_$_2f23[647]]--;
-                Player[_$_2f23[934]](Player[_$_2f23[541]], 1, 0)
+        if (Main.SetZoom) {
+            if (Player.Ph > 50) {
+                Player.Ph--;
+                Player.setSize(Player.size, 1, 0)
             }
         } else {
-            Main[_$_2f23[147]] = true;
-            Main[_$_2f23[369]]();
-            setTimeout(_$_2f23[437], 20)
+            Main.block_info = true;
+            Main.selectPrevChannel();
+            setTimeout(function(){ Main.PlayChannel(); }, 20)
         };
         break;
-    case tvKey[_$_2f23[888]]:
-        if (Main[_$_2f23[150]]) {
-            if (Player[_$_2f23[648]] < 150) {
-                Player[_$_2f23[648]]++;
-                Player[_$_2f23[934]](Player[_$_2f23[541]], 1, 0)
+    case tvKey.KEY_RIGHT:
+        if (Main.SetZoom) {
+            if (Player.Pw < 150) {
+                Player.Pw++;
+                Player.setSize(Player.size, 1, 0)
             }
         } else {
             SetVolume(0)
         };
         break;
-    case tvKey[_$_2f23[887]]:
-        if (Main[_$_2f23[150]]) {
-            if (Player[_$_2f23[648]] > 50) {
-                Player[_$_2f23[648]]--;
-                Player[_$_2f23[934]](Player[_$_2f23[541]], 1, 0)
+    case tvKey.KEY_LEFT:
+        if (Main.SetZoom) {
+            if (Player.Pw > 50) {
+                Player.Pw--;
+                Player.setSize(Player.size, 1, 0)
             }
         } else {
             SetVolume(1)
         };
         break;
-    case tvKey[_$_2f23[903]]:
+    case tvKey.KEY_INFO:
         ;
-    case tvKey[_$_2f23[907]]:
-        if (KeyHandler[_$_2f23[863]] != _$_2f23[4]) {
-            clearTimeout(this[_$_2f23[880]]);
-            KeyHandler[_$_2f23[862]]()
+    case tvKey.KEY_ENTER:
+        if (KeyHandler.NumberEntered != "") {
+            clearTimeout(this.ChSelectorTimeout);
+            KeyHandler.KanalSelector()
         } else {
-            if (Main[_$_2f23[399]] == _$_2f23[78]) {
-                Main[_$_2f23[464]][_$_2f23[879]](_$_2f23[937])
+            if (Main.PlayerMode == "0") {
+                Main.player.info("Flash player")
             };
-            Display[_$_2f23[799]]()
+            Display.showplayer()
         };
         break;
     case 612:
         ;
     case 309:
         ;
-    case tvKey[_$_2f23[895]]:
+    case tvKey.KEY_STOP:
         ;
-    case tvKey[_$_2f23[884]]:
-        widgetAPI[_$_2f23[846]](event);
-        if (Main[_$_2f23[399]] == _$_2f23[78]) {
-            Main[_$_2f23[400]]();
-            Main[_$_2f23[135]]()
+    case tvKey.KEY_EXIT:
+        widgetAPI.blockNavigation(event);
+        if (Main.PlayerMode == "0") {
+            Main.stopFPlayer();
+            Main.Menu()
         } else {
-            Player[_$_2f23[851]]()
+            Player.ReturnMenu()
         };
         break;
-    case tvKey[_$_2f23[893]]:
-        widgetAPI[_$_2f23[846]](event);
-        if (Main[_$_2f23[399]] == _$_2f23[78]) {
-            Main[_$_2f23[400]]()
+    case tvKey.KEY_RETURN:
+        widgetAPI.blockNavigation(event);
+        if (Main.PlayerMode == "0") {
+            Main.stopFPlayer()
         } else {
-            Display[_$_2f23[144]]()
+            Display.hideplayer()
         };
-        Main[_$_2f23[135]]();
+        Main.Menu();
         break;
-    case tvKey[_$_2f23[924]]:
-        if (Main[_$_2f23[404]]) {
-            if (Main[_$_2f23[438]] == null) {
-                Main[_$_2f23[438]] = setInterval(_$_2f23[938], 8000);
-                Display[_$_2f23[53]](_$_2f23[939], 0)
+    case tvKey.KEY_PLAY:
+        if (Main.Foto) {
+            if (Main.SlideShowInterval == null) {
+                Main.SlideShowInterval = setInterval(function() { StartSlideShow(); }, 8000);
+                Display.status("Start SlideShow", 0)
             } else {
-                Display[_$_2f23[53]](_$_2f23[940], 500);
+                Display.status("Stop SlideShow", 500);
                 StopSlideShow()
             }
         } else {
-            if (Main[_$_2f23[399]] == _$_2f23[411]) {
-                Player[_$_2f23[450]](Player[_$_2f23[287]], 0)
+            if (Main.PlayerMode == "1") {
+                Player.play(Player.url, 0)
             } else {
-                Display[_$_2f23[53]](_$_2f23[370], 500)
+                Display.status("Not Available!", 500)
             }
         };
         break;
-    case tvKey[_$_2f23[909]]:
-        widgetAPI[_$_2f23[846]](event);
-        if (Main[_$_2f23[399]] == _$_2f23[411]) {
-            if (Main[_$_2f23[836]] <= Main[_$_2f23[597]][_$_2f23[64]] - 1) {
-                Main[_$_2f23[836]]++;
+    case tvKey.KEY_FF:
+        widgetAPI.blockNavigation(event);
+        if (Main.PlayerMode == "1") {
+            if (Main.epg_info_step <= Main.ya_epg_info_arr.length - 1) {
+                Main.epg_info_step++;
                 GetNextEpgInfo()
             } else {
-                Display[_$_2f23[53]](_$_2f23[941], 500)
+                Display.status("No data!", 500)
             }
         } else {
-            Display[_$_2f23[53]](_$_2f23[370], 500)
+            Display.status("Not Available!", 500)
         };
         break;
-    case tvKey[_$_2f23[919]]:
-        widgetAPI[_$_2f23[846]](event);
-        if (Main[_$_2f23[399]] == _$_2f23[411]) {
-            Main[_$_2f23[836]] = 0;
+    case tvKey.KEY_PAUSE:
+        widgetAPI.blockNavigation(event);
+        if (Main.PlayerMode == "1") {
+            Main.epg_info_step = 0;
             GetNextEpgInfo()
         } else {
-            Display[_$_2f23[53]](_$_2f23[370], 500)
+            Display.status("Not Available!", 500)
         };
         break;
-    case tvKey[_$_2f23[920]]:
-        widgetAPI[_$_2f23[846]](event);
-        if (Main[_$_2f23[399]] == _$_2f23[411]) {
-            if (Main[_$_2f23[836]] > 0) {
-                Main[_$_2f23[836]]--;
+    case tvKey.KEY_RW:
+        widgetAPI.blockNavigation(event);
+        if (Main.PlayerMode == "1") {
+            if (Main.epg_info_step > 0) {
+                Main.epg_info_step--;
                 GetNextEpgInfo()
             } else {
-                Display[_$_2f23[53]](_$_2f23[941], 500)
+                Display.status("No data!", 500)
             }
         } else {
-            Display[_$_2f23[53]](_$_2f23[370], 500)
+            Display.status("Not Available!", 500)
         };
         break;
     case 192:
-        if (this[_$_2f23[942]]) {
-            getIdn(_$_2f23[943]);
-            this[_$_2f23[942]] = false
+        if (this.black_line) {
+            getIdn("black_line_top");
+            this.black_line = false
         } else {
-            getIdb(_$_2f23[943]);
-            this[_$_2f23[942]] = true
+            getIdb("black_line_top");
+            this.black_line = true
         };
         break;
     case 650:
         ;
     case 1089:
         ;
-    case tvKey[_$_2f23[927]]:
-        if (Main[_$_2f23[399]] == _$_2f23[411]) {
-            Player[_$_2f23[926]]()
+    case tvKey.KEY_SUBTITLE:
+        if (Main.PlayerMode == "1") {
+            Player.SEFSetNextAudioStream()
         } else {
-            Display[_$_2f23[53]](_$_2f23[370], 500)
+            Display.status("Not Available!", 500)
         };
         break;
     default:
         break
     }
 };
-KeyHandler[_$_2f23[944]] = function () {
-    var i = event[_$_2f23[883]];
+KeyHandler.VODPlayerKeyDown = function () {
+    var i = event.keyCode;
     switch (i) {
-    case tvKey[_$_2f23[878]]:
-        Player[_$_2f23[945]](0);
-        Display[_$_2f23[53]](_$_2f23[946]);
+    case tvKey.KEY_0:
+        Player.PercentJump(0);
+        Display.status("0%");
         break;
-    case tvKey[_$_2f23[866]]:
-        Player[_$_2f23[945]](1);
+    case tvKey.KEY_1:
+        Player.PercentJump(1);
         break;
-    case tvKey[_$_2f23[867]]:
-        Player[_$_2f23[945]](2);
+    case tvKey.KEY_2:
+        Player.PercentJump(2);
         break;
-    case tvKey[_$_2f23[868]]:
-        Player[_$_2f23[945]](3);
+    case tvKey.KEY_3:
+        Player.PercentJump(3);
         break;
-    case tvKey[_$_2f23[869]]:
-        Player[_$_2f23[945]](4);
+    case tvKey.KEY_4:
+        Player.PercentJump(4);
         break;
-    case tvKey[_$_2f23[870]]:
-        Player[_$_2f23[945]](5);
+    case tvKey.KEY_5:
+        Player.PercentJump(5);
         break;
-    case tvKey[_$_2f23[871]]:
-        Player[_$_2f23[945]](6);
+    case tvKey.KEY_6:
+        Player.PercentJump(6);
         break;
-    case tvKey[_$_2f23[873]]:
-        Player[_$_2f23[945]](7);
+    case tvKey.KEY_7:
+        Player.PercentJump(7);
         break;
-    case tvKey[_$_2f23[875]]:
-        Player[_$_2f23[945]](8);
+    case tvKey.KEY_8:
+        Player.PercentJump(8);
         break;
-    case tvKey[_$_2f23[877]]:
-        Player[_$_2f23[945]](9);
+    case tvKey.KEY_9:
+        Player.PercentJump(9);
         break;
     case 1086:
         ;
     case 84:
-        if (Player[_$_2f23[541]] == 5) {
-            if (Main[_$_2f23[150]]) {
-                Main[_$_2f23[150]] = false
+        if (Player.size == 5) {
+            if (Main.SetZoom) {
+                Main.SetZoom = false
             } else {
-                Main[_$_2f23[150]] = true;
-                Display[_$_2f23[53]](_$_2f23[932], 0)
+                Main.SetZoom = true;
+                Display.status("<table><tr><td><img src=\"img/buttons/move_m.png\"></img></td><td>- Set Zoom</td></tr></table>", 0)
             }
         };
         break;
     case 78:
         ;
     case 259:
-        Main[_$_2f23[349]]();
+        Main.PlayPrevChannel();
         break;
     case 105:
         ;
     case 68:
         ;
     case 1078:
-        Main[_$_2f23[147]] = true;
-        Main[_$_2f23[368]]();
-        setTimeout(_$_2f23[437], 20);
+        Main.block_info = true;
+        Main.selectNextChannel();
+        setTimeout(function(){ Main.PlayChannel(); }, 20);
         break;
     case 106:
         ;
     case 65:
         ;
     case 1080:
-        Main[_$_2f23[147]] = true;
-        Main[_$_2f23[369]]();
-        setTimeout(_$_2f23[437], 20);
+        Main.block_info = true;
+        Main.selectPrevChannel();
+        setTimeout(function(){ Main.PlayChannel(); }, 20);
         break;
-    case tvKey[_$_2f23[854]]:
-        if (Main[_$_2f23[845]]) {
-            widgetAPI[_$_2f23[846]](event)
+    case tvKey.KEY_TOOLS:
+        if (Main.serieC) {
+            widgetAPI.blockNavigation(event)
         };
         break;
-    case tvKey[_$_2f23[903]]:
-        Display[_$_2f23[799]]();
+    case tvKey.KEY_INFO:
+        Display.showplayer();
         break;
     case 1118:
         ;
-    case tvKey[_$_2f23[905]]:
+    case tvKey.KEY_PANEL_MENU:
         ;
-    case tvKey[_$_2f23[90]]:
-        widgetAPI[_$_2f23[846]](event);
+    case tvKey.KEY_MENU:
+        widgetAPI.blockNavigation(event);
         ShowMenuTV();
         break;
-    case tvKey[_$_2f23[886]]:
-        if (Main[_$_2f23[150]]) {
-            if (Player[_$_2f23[647]] > 50) {
-                Player[_$_2f23[647]]++;
-                Player[_$_2f23[934]](Player[_$_2f23[541]], 1, 0)
+    case tvKey.KEY_UP:
+        if (Main.SetZoom) {
+            if (Player.Ph > 50) {
+                Player.Ph++;
+                Player.setSize(Player.size, 1, 0)
             }
         } else {
-            Player[_$_2f23[947]](2)
+            Player.MinutesJump(2)
         };
         break;
-    case tvKey[_$_2f23[885]]:
-        if (Main[_$_2f23[150]]) {
-            if (Player[_$_2f23[647]] > 50) {
-                Player[_$_2f23[647]]--;
-                Player[_$_2f23[934]](Player[_$_2f23[541]], 1, 0)
+    case tvKey.KEY_DOWN:
+        if (Main.SetZoom) {
+            if (Player.Ph > 50) {
+                Player.Ph--;
+                Player.setSize(Player.size, 1, 0)
             }
         } else {
-            Player[_$_2f23[947]](-2)
+            Player.MinutesJump(-2)
         };
         break;
-    case tvKey[_$_2f23[887]]:
-        if (Main[_$_2f23[150]]) {
-            if (Player[_$_2f23[648]] > 50) {
-                Player[_$_2f23[648]]--;
-                Player[_$_2f23[934]](Player[_$_2f23[541]], 1, 0)
+    case tvKey.KEY_LEFT:
+        if (Main.SetZoom) {
+            if (Player.Pw > 50) {
+                Player.Pw--;
+                Player.setSize(Player.size, 1, 0)
             }
         } else {
             SetVolume(1)
         };
         break;
-    case tvKey[_$_2f23[888]]:
-        if (Main[_$_2f23[150]]) {
-            if (Player[_$_2f23[648]] < 150) {
-                Player[_$_2f23[648]]++;
-                Player[_$_2f23[934]](Player[_$_2f23[541]], 1, 0)
+    case tvKey.KEY_RIGHT:
+        if (Main.SetZoom) {
+            if (Player.Pw < 150) {
+                Player.Pw++;
+                Player.setSize(Player.size, 1, 0)
             }
         } else {
             SetVolume(0)
         };
         break;
-    case tvKey[_$_2f23[892]]:
+    case tvKey.KEY_BLUE:
         ;
     case 653:
         ;
     case 1249:
         ;
     case 1083:
-        widgetAPI[_$_2f23[846]](event);
-        if (Main[_$_2f23[399]] == _$_2f23[411]) {
-            if (Player[_$_2f23[541]] >= 6) {
-                Player[_$_2f23[934]](0, 1, 0)
+        widgetAPI.blockNavigation(event);
+        if (Main.PlayerMode == "1") {
+            if (Player.size >= 6) {
+                Player.setSize(0, 1, 0)
             } else {
-                Player[_$_2f23[934]](Player[_$_2f23[541]] + 1, 1, 0)
+                Player.setSize(Player.size + 1, 1, 0)
             };
-            Main[_$_2f23[150]] = false
+            Main.SetZoom = false
         } else {
-            Display[_$_2f23[53]](_$_2f23[370], 500)
+            Display.status("Not Available!", 500)
         };
         break;
-    case tvKey[_$_2f23[907]]:
-        if (Player[_$_2f23[948]] != 0) {
-            Player[_$_2f23[949]]()
+    case tvKey.KEY_ENTER:
+        if (Player.save_time != 0) {
+            Player.PlaySaveTime()
         } else {
-            if (Player[_$_2f23[200]] == Player[_$_2f23[800]]) {
-                Player[_$_2f23[911]]()
+            if (Player.state == Player.PAUSE_VOD) {
+                Player.resumeVideo()
             } else {
-                Player[_$_2f23[912]]()
+                Player.pauseVideo()
             }
         };
         break;
-    case tvKey[_$_2f23[893]]:
-        widgetAPI[_$_2f23[846]](event);
-        if (Player[_$_2f23[910]] == 0) {
-            Player[_$_2f23[401]]()
+    case tvKey.KEY_RETURN:
+        widgetAPI.blockNavigation(event);
+        if (Player.total_time == 0) {
+            Player.stopV()
         };
-        Main[_$_2f23[135]]();
+        Main.Menu();
         break;
     case 612:
         ;
     case 309:
         ;
-    case tvKey[_$_2f23[895]]:
+    case tvKey.KEY_STOP:
         ;
-    case tvKey[_$_2f23[884]]:
-        widgetAPI[_$_2f23[846]](event);
-        Player[_$_2f23[851]]();
+    case tvKey.KEY_EXIT:
+        widgetAPI.blockNavigation(event);
+        Player.ReturnMenu();
         break;
-    case tvKey[_$_2f23[889]]:
-        if (Main[_$_2f23[58]][_$_2f23[64]] > 1) {
-            Main[_$_2f23[131]]();
-            Main[_$_2f23[263]](_$_2f23[950], 20000)
+    case tvKey.KEY_RED:
+        if (Main.url_arr.length > 1) {
+            Main.showSiseSelector();
+            Main.LoadTimer(function() {
+				getIdn('selectbox');
+				getIdb('rightHalf');
+				KeyHandler.setFocus(3);
+			}, 20000)
         } else {
-            Display[_$_2f23[53]](_$_2f23[370], 500)
+            Display.status("Not Available!", 500)
         };
         break;
-    case tvKey[_$_2f23[890]]:
-        if (Main[_$_2f23[23]] == 0 || Main[_$_2f23[23]] == 1) {
-            Main[_$_2f23[95]]();
-            pluginAPI[_$_2f23[844]](0)
+    case tvKey.KEY_GREEN:
+        if (Main.hardware_type == 0 || Main.hardware_type == 1) {
+            Main.registVOLTVKey();
+            pluginAPI.ShowTools(0)
         } else {
-            Player[_$_2f23[926]]()
+            Player.SEFSetNextAudioStream()
         };
         break;
-    case tvKey[_$_2f23[891]]:
-        Main[_$_2f23[95]]();
-        pluginAPI[_$_2f23[844]](1);
+    case tvKey.KEY_YELLOW:
+        Main.registVOLTVKey();
+        pluginAPI.ShowTools(1);
         break;
     case 1219:
-        if (Player[_$_2f23[935]]() >= 2) {
-            Player[_$_2f23[936]](0)
+        if (Player.get3DMode() >= 2) {
+            Player.change3DMode(0)
         } else {
-            Player[_$_2f23[936]](Player[_$_2f23[935]]() + 1)
+            Player.change3DMode(Player.get3DMode() + 1)
         };
         break;
-    case tvKey[_$_2f23[909]]:
-        widgetAPI[_$_2f23[846]](event);
-        Player[_$_2f23[947]](0.5);
+    case tvKey.KEY_FF:
+        widgetAPI.blockNavigation(event);
+        Player.MinutesJump(0.5);
         break;
-    case tvKey[_$_2f23[919]]:
-        widgetAPI[_$_2f23[846]](event);
-        if (Player[_$_2f23[200]] == Player[_$_2f23[800]]) {
-            Player[_$_2f23[911]]()
+    case tvKey.KEY_PAUSE:
+        widgetAPI.blockNavigation(event);
+        if (Player.state == Player.PAUSE_VOD) {
+            Player.resumeVideo()
         } else {
-            Player[_$_2f23[912]]()
+            Player.pauseVideo()
         };
         break;
-    case tvKey[_$_2f23[920]]:
-        widgetAPI[_$_2f23[846]](event);
-        Player[_$_2f23[947]](-0.5);
+    case tvKey.KEY_RW:
+        widgetAPI.blockNavigation(event);
+        Player.MinutesJump(-0.5);
         break;
     case 192:
-        if (this[_$_2f23[942]]) {
-            getIdn(_$_2f23[943]);
-            this[_$_2f23[942]] = false
+        if (this.black_line) {
+            getIdn("black_line_top");
+            this.black_line = false
         } else {
-            getIdb(_$_2f23[943]);
-            this[_$_2f23[942]] = true
+            getIdb("black_line_top");
+            this.black_line = true
         };
         break;
-    case tvKey[_$_2f23[924]]:
-        if (Player[_$_2f23[200]] == Player[_$_2f23[800]]) {
-            Player[_$_2f23[911]]()
+    case tvKey.KEY_PLAY:
+        if (Player.state == Player.PAUSE_VOD) {
+            Player.resumeVideo()
         } else {
-            if (!Player[_$_2f23[452]] && !Player[_$_2f23[819]]) {
-                Player[_$_2f23[452]] = true;
-                Display[_$_2f23[53]](_$_2f23[821], 1000)
+            if (!Player.next && !Player.repeat) {
+                Player.next = true;
+                Display.status("Continuous playback", 1000)
             } else {
-                if (Player[_$_2f23[452]] && !Player[_$_2f23[819]]) {
-                    Player[_$_2f23[819]] = true;
-                    Display[_$_2f23[53]](_$_2f23[922], 1000)
+                if (Player.next && !Player.repeat) {
+                    Player.repeat = true;
+                    Display.status("Repeat playback", 1000)
                 } else {
-                    if (Player[_$_2f23[452]] && Player[_$_2f23[819]]) {
-                        Player[_$_2f23[452]] = false;
-                        Player[_$_2f23[819]] = false;
-                        Display[_$_2f23[53]](_$_2f23[923], 1000)
+                    if (Player.next && Player.repeat) {
+                        Player.next = false;
+                        Player.repeat = false;
+                        Display.status("All modes are disabled!", 1000)
                     }
                 }
             }
@@ -5343,13 +5469,14 @@ KeyHandler[_$_2f23[944]] = function () {
         ;
     case 1089:
         ;
-    case tvKey[_$_2f23[927]]:
-        Player[_$_2f23[926]]();
+    case tvKey.KEY_SUBTITLE:
+        Player.SEFSetNextAudioStream();
         break;
     default:
         break
     }
 };
+
 var Player = {
     plugin: null,
     Screen3Dplugin: null,
@@ -5360,14 +5487,14 @@ var Player = {
     h: 0,
     Pw: 100,
     Ph: 100,
-    message: _$_2f23[4],
+    message: "",
     size: 0,
     STOPPED: 0,
     LOADING: 1,
     PLAYING_LIVE: 2,
     PLAYING_VOD: 3,
     PAUSE_VOD: 4,
-    statusmessage: _$_2f23[4],
+    statusmessage: "",
     total_time: 0,
     cur_time: 0,
     save_time: 0,
@@ -5378,54 +5505,56 @@ var Player = {
     jump: false,
     long_pause: false,
     mode3D: 0,
-    status3D: _$_2f23[4],
+    status3D: "",
     tnum: 0,
-    url: _$_2f23[4],
-    h_url: _$_2f23[4],
+    url: "",
+    h_url: "",
     serr: 0,
-    eerr: _$_2f23[4],
+    eerr: "",
     ch: false,
     ch_t: 0
 };
-Player[_$_2f23[48]] = function () {
+
+Player.init = function () {
     var o = true;
-    this[_$_2f23[200]] = this[_$_2f23[201]];
-    var i = getId(_$_2f23[951]);
-    var q = i[_$_2f23[952]]();
-    alert(_$_2f23[953] + q);
-    q = q[_$_2f23[305]](_$_2f23[954]);
-    if (q[1] && (q[1][_$_2f23[30]](_$_2f23[955]) != -1 || q[1][_$_2f23[30]](_$_2f23[956]) != -1 || q[1][_$_2f23[30]](_$_2f23[957]) != -1 || q[1][_$_2f23[30]](_$_2f23[958]) != -1)) {
-        this[_$_2f23[959]] = getId(_$_2f23[960])
+    this.state = this.STOPPED;
+    var i = getId("pluginObjectNNavi");
+    var q = i.GetFirmware();
+    alert("d= " + q);
+    q = q.split("-");
+    if (q[1] && (q[1].indexOf("2011") != -1 || q[1].indexOf("2012") != -1 || q[1].indexOf("2013") != -1 || q[1].indexOf("2014") != -1)) {
+        this.SefPlugin = getId("pluginObjectSef")
     };
-    if (this[_$_2f23[959]] != null) {
-        this[_$_2f23[961]] = true
+    if (this.SefPlugin != null) {
+        this.Sef = true
     } else {
-        this[_$_2f23[962]] = getId(_$_2f23[963])
+        this.plugin = getId("pluginPlayer")
     };
-    var p = getId(_$_2f23[964]);
-    if ((this[_$_2f23[962]] != null || this[_$_2f23[961]]) && p != null) {
-        this[_$_2f23[965]] = getId(_$_2f23[966]);
-        p[_$_2f23[967]]();
-        if (this[_$_2f23[962]]) {
-            this[_$_2f23[962]][_$_2f23[968]] = _$_2f23[969];
-            this[_$_2f23[962]][_$_2f23[970]] = _$_2f23[971];
-            this[_$_2f23[962]][_$_2f23[972]] = _$_2f23[973];
-            this[_$_2f23[962]][_$_2f23[974]] = _$_2f23[975];
-            this[_$_2f23[962]][_$_2f23[976]] = _$_2f23[977];
-            this[_$_2f23[962]][_$_2f23[978]] = _$_2f23[979];
-            this[_$_2f23[962]][_$_2f23[980]] = _$_2f23[981];
-            this[_$_2f23[962]][_$_2f23[982]] = _$_2f23[983]
+    var p = getId("pluginObjectTVMW");
+    if ((this.plugin != null || this.Sef) && p != null) {
+        this.Screen3Dplugin = getId("pluginObjectScreen3D");
+        p.SetMediaSource();
+        if (this.plugin) {
+            this.plugin.OnConnectionFailed = Player.OnConnectionFailed;
+            this.plugin.OnNetworkDisconnected = Player.OnNetworkDisconnected;
+            this.plugin.OnStreamNotFound = Player.OnStreamNotFound;
+            this.plugin.OnRenderError = Player.OnRenderError;
+            this.plugin.OnBufferingStart = Player.OnBufferingStart;
+            this.plugin.OnBufferingProgress = Player.OnBufferingProgress;
+            this.plugin.OnBufferingComplete = Player.OnBufferingComplete;
+            this.plugin.OnCurrentPlayTime = Player.OnCurrentPlayTime
         }
     } else {
         o = false
     };
     return o
 };
-Player[_$_2f23[935]] = function () {
+
+Player.get3DMode = function () {
     try {
-        if (this[_$_2f23[965]] != null) {
-            if (1 == this[_$_2f23[965]][_$_2f23[984]]() || this[_$_2f23[965]][_$_2f23[985]]() == 1) {
-                return this[_$_2f23[986]]
+        if (this.Screen3Dplugin != null) {
+            if (1 == this.Screen3Dplugin.Flag3DEffectSupport() || this.Screen3Dplugin.Flag3DTVConnect() == 1) {
+                return this.mode3D
             } else {
                 return 0
             }
@@ -5434,345 +5563,397 @@ Player[_$_2f23[935]] = function () {
         return 0
     }
 };
-Player[_$_2f23[936]] = function (i) {
-    if (this[_$_2f23[965]] != null) {
-        this[_$_2f23[986]] = i;
-        this[_$_2f23[987]] = _$_2f23[4];
-        if (1 == this[_$_2f23[965]][_$_2f23[984]]() || this[_$_2f23[965]][_$_2f23[985]]() == 1) {
+
+Player.change3DMode = function (i) {
+    if (this.Screen3Dplugin != null) {
+        this.mode3D = i;
+        this.status3D = "";
+        if (1 == this.Screen3Dplugin.Flag3DEffectSupport() || this.Screen3Dplugin.Flag3DTVConnect() == 1) {
             switch (i) {
             case 0:
-                this[_$_2f23[987]] = _$_2f23[988];
+                this.status3D = "3D OFF";
                 break;
             case 1:
-                this[_$_2f23[987]] = _$_2f23[989];
+                this.status3D = "SIDE - BY - SIDE";
                 break;
             case 2:
-                this[_$_2f23[987]] = _$_2f23[990];
+                this.status3D = "TOP - BOTTOM";
                 break
             };
-            if (Main[_$_2f23[31]]) {
-                if (this[_$_2f23[965]][_$_2f23[991]](i) == 1) {
-                    this[_$_2f23[965]][_$_2f23[992]](i)
+            if (Main.seriesC) {
+                if (this.Screen3Dplugin.Check3DEffectMode(i) == 1) {
+                    this.Screen3Dplugin.Set3DEffectMode(i)
                 }
             } else {
-                Player[_$_2f23[450]](Player[_$_2f23[287]], 0)
+                Player.play(Player.url, 0)
             }
         }
     }
 };
-Player[_$_2f23[968]] = function () {
-    Player[_$_2f23[993]](9)
+
+Player.OnConnectionFailed = function () {
+    Player.error(9)
 };
-Player[_$_2f23[970]] = function () {
-    Player[_$_2f23[993]](8)
+
+Player.OnNetworkDisconnected = function () {
+    Player.error(8)
 };
-Player[_$_2f23[972]] = function () {
-    Player[_$_2f23[993]](7)
+
+Player.OnStreamNotFound = function () {
+    Player.error(7)
 };
-Player[_$_2f23[974]] = function (i) {
-    Player[_$_2f23[993]](i)
+
+Player.OnRenderError = function (i) {
+    Player.error(i)
 };
-Player[_$_2f23[993]] = function (i) {
-    if (this[_$_2f23[200]] != this[_$_2f23[201]] && i >= 1) {
-        this[_$_2f23[994]] = (i == 1) ? _$_2f23[995] : (i == 2) ? _$_2f23[996] : (i == 3) ? _$_2f23[997] : (i == 4) ? _$_2f23[998] : (i == 5) ? _$_2f23[999] : (i == 6) ? _$_2f23[1000] : (i == 7) ? _$_2f23[1001] : (i == 8) ? _$_2f23[1002] : (i == 9) ? _$_2f23[1003] : this[_$_2f23[994]];
-        if (i < 7 && this[_$_2f23[1004]] < 3) {
-            this[_$_2f23[1004]]++;
+
+Player.error = function (i) {
+    if (this.state != this.STOPPED && i >= 1) {
+        this.eerr = (i == 1)
+			? "Unsupported container"
+			: (i == 2)
+				? "Unsupported video codec"
+				: (i == 3)
+					? "Unsupported audio codec"
+					: (i == 4)
+						? "Unsupported aspect ratio"
+						: (i == 5)
+							? "Unsupported refresh rate"
+							: (i == 6)
+								? "Corrupted stream!"
+								: (i == 7)
+									? "Missing File"
+									: (i == 8)
+										? "Disconnected network"
+										: (i == 9)
+											? "Connection failed"
+											: this.eerr;
+        if (i < 7 && this.serr < 3) {
+            this.serr++;
             if (i < 3 && i != 6) {
-                Player[_$_2f23[450]](this[_$_2f23[287]], 0)
+                Player.play(this.url, 0)
             }
         } else {
-            if (this[_$_2f23[994]] != _$_2f23[4]) {
-                Display[_$_2f23[53]](Player[_$_2f23[994]]);
-                setTimeout(_$_2f23[1005], 500)
+            if (this.eerr != "") {
+                Display.status(Player.eerr);
+                setTimeout(function() { Player.ReturnMenu(); }, 500)
             }
         }
     }
 };
-Player[_$_2f23[1006]] = function () {
-    if (this[_$_2f23[200]] != this[_$_2f23[453]] && this[_$_2f23[910]] == 0) {
+
+Player.AutoReStart = function () {
+    if (this.state != this.LOADING && this.total_time == 0) {
         var i = 10000;
-        if (Main[_$_2f23[845]] && this[_$_2f23[287]][_$_2f23[30]](_$_2f23[444]) >= 0) {
+        if (Main.serieC && this.url.indexOf("udp://") >= 0) {
             i = 15000
         };
-        Player[_$_2f23[1008]](_$_2f23[1007], i);
-        Display[_$_2f23[53]](_$_2f23[1009], 3000)
+        Player.BufferingTimer(function() { Player.play(Player.url,0); }, i);
+        Display.status("Auto Restart", 3000)
     }
 };
-Player[_$_2f23[976]] = function () {
-    if (this[_$_2f23[200]] != this[_$_2f23[201]]) {
-        Player[_$_2f23[1006]]();
-        if (!this[_$_2f23[699]] && !Main[_$_2f23[404]]) {
-            Display[_$_2f23[53]](_$_2f23[1010])
+
+Player.OnBufferingStart = function () {
+    if (this.state != this.STOPPED) {
+        Player.AutoReStart();
+        if (!this.jump && !Main.Foto) {
+            Display.status("Buffer : 1%")
         }
     }
 };
-Player[_$_2f23[978]] = function (i) {
-    if (this[_$_2f23[200]] != this[_$_2f23[201]]) {
-        if (!this[_$_2f23[699]] && !Main[_$_2f23[404]]) {
-            Display[_$_2f23[53]](_$_2f23[1011] + i + _$_2f23[1012], 5000)
+
+Player.OnBufferingProgress = function (i) {
+    if (this.state != this.STOPPED) {
+        if (!this.jump && !Main.Foto) {
+            Display.status("Buffer : " + i + "%", 5000)
         }
     }
 };
-Player[_$_2f23[980]] = function () {
-    clearTimeout(this[_$_2f23[1013]]);
-    if (this[_$_2f23[200]] != this[_$_2f23[201]]) {
-        if (this[_$_2f23[200]] == this[_$_2f23[453]]) {
-            Player[_$_2f23[1014]] = _$_2f23[4];
-            getId(_$_2f23[622])[_$_2f23[123]][_$_2f23[230]] = _$_2f23[348];
+
+Player.OnBufferingComplete = function () {
+    clearTimeout(this.buffering_timer);
+    if (this.state != this.STOPPED) {
+        if (this.state == this.LOADING) {
+            Player.message = "";
+            getId("progressBar").style.width = "0px";
             try {
-                this[_$_2f23[910]] = parseInt((this[_$_2f23[961]]) ? this[_$_2f23[959]][_$_2f23[1016]](_$_2f23[1015]) : Player[_$_2f23[962]][_$_2f23[1015]]())
+                this.total_time = parseInt((this.Sef)
+					? this.SefPlugin.Execute("GetDuration")
+					: Player.plugin.GetDuration())
             } catch (a) {
-                this[_$_2f23[910]] = 0
+                this.total_time = 0
             };
-            if (this[_$_2f23[910]] > 0 && this[_$_2f23[287]][_$_2f23[30]](_$_2f23[408]) != 0 && this[_$_2f23[287]][_$_2f23[30]](_$_2f23[448]) == -1 || this[_$_2f23[287]][_$_2f23[30]](_$_2f23[1017]) > 0) {
-                this[_$_2f23[200]] = this[_$_2f23[202]];
-                KeyHandler[_$_2f23[118]](3);
-                this[_$_2f23[1018]] = _$_2f23[429]
+            if (this.total_time > 0 && this.url.indexOf("mms://") != 0 && this.url.indexOf(".m3u8") == -1 || this.url.indexOf(".mp3") > 0) {
+                this.state = this.PLAYING_VOD;
+                KeyHandler.setFocus(3);
+                this.h_url = "vod_history.dat"
             } else {
-                this[_$_2f23[200]] = this[_$_2f23[461]];
-                KeyHandler[_$_2f23[118]](2);
-                this[_$_2f23[1018]] = _$_2f23[426]
+                this.state = this.PLAYING_LIVE;
+                KeyHandler.setFocus(2);
+                this.h_url = "live_history.dat"
             };
-            Player[_$_2f23[1019]]();
-            setTimeout(_$_2f23[1020], 1000);
-            if (!Main[_$_2f23[404]]) {
-                Player[_$_2f23[1021]]()
+            Player.GetResolution();
+            setTimeout(function() { Player.GetVideoSize(); }, 1000);
+            if (!Main.Foto) {
+                Player.GetAudioNum()
             };
-            if (this[_$_2f23[987]] != _$_2f23[4]) {
-                Player[_$_2f23[1014]] = this[_$_2f23[987]]
+            if (this.status3D != "") {
+                Player.message = this.status3D
             };
-            if (Main[_$_2f23[58]][_$_2f23[64]] > 1) {
-                Player[_$_2f23[1014]] += _$_2f23[1022]
+            if (Main.url_arr.length > 1) {
+                Player.message += "<tr><table><tr><td><img src=\"img/buttons/red_m.png\"></img></td><td>- Set Quality</td></tr></table></tr>"
             };
-            Main[_$_2f23[263]](_$_2f23[1023], 2000);
-            setTimeout(_$_2f23[1024], 3000);
-            Display[_$_2f23[145]]();
-            Display[_$_2f23[799]]()
+            Main.LoadTimer(function() {
+				if(Player.message != "")
+					Display.status("<table>" + Player.message + "</table>", 6000);
+				Main.saveHistory(Player.h_url);
+				if(Player.state == Player.PLAYING_VOD)
+					Player.getSaveTime();
+			}, 2000);
+            setTimeout(function() { Player.message = ""; }, 3000);
+            Display.loadinghide();
+            Display.showplayer()
         };
-        if (this[_$_2f23[699]]) {
-            Display[_$_2f23[799]]();
-            setTimeout(_$_2f23[1025], 1500);
-            this[_$_2f23[699]] = false
+        if (this.jump) {
+            Display.showplayer();
+            setTimeout(function() { Display.hideplayer(); }, 1500);
+            this.jump = false
         };
-        Display[_$_2f23[142]]()
+        Display.hidestatus()
     }
 };
-Player[_$_2f23[1008]] = function (o, i) {
-    clearTimeout(this[_$_2f23[1013]]);
-    this[_$_2f23[1013]] = setTimeout(o, i)
+
+Player.BufferingTimer = function (o, i) {
+    clearTimeout(this.buffering_timer);
+    this.buffering_timer = setTimeout(o, i)
 };
-Player[_$_2f23[1026]] = function () {
-    if (Main[_$_2f23[292]] != _$_2f23[4]) {
-        var i = parseInt((Main[_$_2f23[292]] * 1048576), 10);
-        var o = (Main[_$_2f23[293]] > 0) ? parseInt((Main[_$_2f23[292]] * i / 100), 10) : parseInt((i / 5), 10);
-        if (this[_$_2f23[961]]) {
-            this[_$_2f23[959]][_$_2f23[1016]](_$_2f23[1027], i);
-            this[_$_2f23[959]][_$_2f23[1016]](_$_2f23[1028], o);
-            this[_$_2f23[959]][_$_2f23[1016]](_$_2f23[1029], 20);
-            this[_$_2f23[959]][_$_2f23[1016]](_$_2f23[1030], o)
+
+Player.SetBuffer = function () {
+    if (Main.buffer != "") {
+        var i = parseInt((Main.buffer * 1048576), 10);
+        var o = (Main.ibuffer > 0) ? parseInt((Main.buffer * i / 100), 10) : parseInt((i / 5), 10);
+        if (this.Sef) {
+            this.SefPlugin.Execute("SetTotalBufferSize", i);
+            this.SefPlugin.Execute("SetInitialBuffer", o);
+            this.SefPlugin.Execute("SetInitialTimeOut", 20);
+            this.SefPlugin.Execute("SetPendingBuffer", o)
         } else {
-            this[_$_2f23[962]][_$_2f23[1027]](i);
-            this[_$_2f23[962]][_$_2f23[1028]](o);
-            this[_$_2f23[962]][_$_2f23[1029]](20);
-            this[_$_2f23[962]][_$_2f23[1030]](o)
+            this.plugin.SetTotalBufferSize(i);
+            this.plugin.SetInitialBuffer(o);
+            this.plugin.SetInitialTimeOut(20);
+            this.plugin.SetPendingBuffer(o)
         }
     }
 };
-Player[_$_2f23[851]] = function () {
-    Player[_$_2f23[401]]();
-    Main[_$_2f23[135]]()
+
+Player.ReturnMenu = function () {
+    Player.stopV();
+    Main.Menu()
 };
-Player[_$_2f23[560]] = function () {
-    Player[_$_2f23[373]]();
-    alert(_$_2f23[1031])
+
+Player.deinit = function () {
+    Player.stop();
+    alert("Player deinit")
 };
-Player[_$_2f23[373]] = function () {
-    clearTimeout(this[_$_2f23[1013]]);
-    this[_$_2f23[1014]] = _$_2f23[4];
-    this[_$_2f23[994]] = _$_2f23[4];
-    this[_$_2f23[475]] = 0;
-    this[_$_2f23[587]] = 0;
-    this[_$_2f23[648]] = parseInt(API[_$_2f23[648]]);
-    this[_$_2f23[647]] = parseInt(API[_$_2f23[647]]);
-    this[_$_2f23[1004]] = 0;
-    this[_$_2f23[1032]] = 0;
-    this[_$_2f23[910]] = 0;
-    this[_$_2f23[787]] = 0;
-    this[_$_2f23[948]] = 0;
-    this[_$_2f23[234]] = false;
-    this[_$_2f23[699]] = false;
-    this[_$_2f23[1033]] = false;
-    if (this[_$_2f23[200]] != this[_$_2f23[201]]) {
-        this[_$_2f23[200]] = this[_$_2f23[201]];
-        Player[_$_2f23[1034]]();
-        if (this[_$_2f23[961]]) {
-            this[_$_2f23[959]][_$_2f23[1016]](_$_2f23[1035]);
-            this[_$_2f23[959]][_$_2f23[1016]](_$_2f23[1036]);
-            this[_$_2f23[959]][_$_2f23[1037]]()
+
+Player.stop = function () {
+    clearTimeout(this.buffering_timer);
+    this.message = "";
+    this.eerr = "";
+    this.w = 0;
+    this.h = 0;
+    this.Pw = parseInt(API.Pw);
+    this.Ph = parseInt(API.Ph);
+    this.serr = 0;
+    this.tnum = 0;
+    this.total_time = 0;
+    this.cur_time = 0;
+    this.save_time = 0;
+    this.ch = false;
+    this.jump = false;
+    this.long_pause = false;
+    if (this.state != this.STOPPED) {
+        this.state = this.STOPPED;
+        Player.SaveUrl();
+        if (this.Sef) {
+            this.SefPlugin.Execute("Stop");
+            this.SefPlugin.Execute("ClearScreen");
+            this.SefPlugin.Close()
         } else {
-            if (this[_$_2f23[962]] != null) {
-                this[_$_2f23[962]][_$_2f23[1035]]();
-                this[_$_2f23[962]][_$_2f23[1036]]()
+            if (this.plugin != null) {
+                this.plugin.Stop();
+                this.plugin.ClearScreen()
             }
         }
     }
 };
-Player[_$_2f23[401]] = function () {
-    Player[_$_2f23[373]]();
-    this[_$_2f23[819]] = false;
-    this[_$_2f23[786]] = 0;
-    this[_$_2f23[986]] = 0;
-    this[_$_2f23[987]] = _$_2f23[4];
-    Selectbox[_$_2f23[403]] = 0;
-    Main[_$_2f23[597]] = [];
+
+Player.stopV = function () {
+    Player.stop();
+    this.repeat = false;
+    this.ch_t = 0;
+    this.mode3D = 0;
+    this.status3D = "";
+    Selectbox.url_selected = 0;
+    Main.ya_epg_info_arr = [];
     StopSlideShow();
-    Display[_$_2f23[145]]();
-    Display[_$_2f23[144]]();
-    Display[_$_2f23[142]]()
+    Display.loadinghide();
+    Display.hideplayer();
+    Display.hidestatus()
 };
-Player[_$_2f23[450]] = function (i, o) {
-    this[_$_2f23[287]] = i;
-    Player[_$_2f23[373]]();
-    Player[_$_2f23[200]] = Player[_$_2f23[453]];
-    KeyHandler[_$_2f23[118]](1);
-    if (!Main[_$_2f23[404]]) {
-        Display[_$_2f23[54]]()
+
+Player.play = function (i, o) {
+    this.url = i;
+    Player.stop();
+    Player.state = Player.LOADING;
+    KeyHandler.setFocus(1);
+    if (!Main.Foto) {
+        Display.loadingshow()
     };
-    if (this[_$_2f23[961]]) {
-        this[_$_2f23[1038]](this[_$_2f23[287]], o)
+    if (this.Sef) {
+        this.SEFPlay(this.url, o)
     } else {
-        if (this[_$_2f23[287]][_$_2f23[30]](_$_2f23[1017]) > 0) {
-            Main[_$_2f23[292]] = 0.5
+        if (this.url.indexOf(".mp3") > 0) {
+            Main.buffer = 0.5
         };
-        Player[_$_2f23[1026]]();
-        Player[_$_2f23[934]](0, 0, 1);
-        this[_$_2f23[962]][_$_2f23[1039]](this[_$_2f23[287]])
+        Player.SetBuffer();
+        Player.setSize(0, 0, 1);
+        this.plugin.Play(this.url)
     }
 };
-Player[_$_2f23[1034]] = function () {
-    if (this[_$_2f23[787]] > 120000) {
-        var i = [this[_$_2f23[287]] + _$_2f23[79] + this[_$_2f23[787]]];
-        Main[_$_2f23[466]](i, _$_2f23[1040]);
-        if (i[_$_2f23[64]] > 10) {
-            i[_$_2f23[358]]()
+
+Player.SaveUrl = function () {
+    if (this.cur_time > 120000) {
+        var i = [this.url + "|" + this.cur_time];
+        Main.readFile(i, "url.dat");
+        if (i.length > 10) {
+            i.pop()
         };
-        for (var o = 1; o < i[_$_2f23[64]]; o++) {
-            if (i[o][_$_2f23[30]](this[_$_2f23[287]]) == 0) {
-                i[_$_2f23[478]](o, 1);
+        for (var o = 1; o < i.length; o++) {
+            if (i[o].indexOf(this.url) == 0) {
+                i.splice(o, 1);
                 break
             }
         };
-        Main[_$_2f23[472]](i, _$_2f23[1040])
+        Main.writeFile(i, "url.dat")
     }
 };
-Player[_$_2f23[1041]] = function () {
-    if (this[_$_2f23[200]] == this[_$_2f23[202]] && this[_$_2f23[287]][_$_2f23[30]](_$_2f23[1042]) < 0 && this[_$_2f23[287]][_$_2f23[30]](_$_2f23[409]) < 0) {
-        if (this[_$_2f23[786]] > 0 && this[_$_2f23[234]]) {
-            this[_$_2f23[948]] = this[_$_2f23[786]];
-            Main[_$_2f23[263]](_$_2f23[1043], 7000);
-            setTimeout(_$_2f23[1044], 15000)
+
+Player.getSaveTime = function () {
+    if (this.state == this.PLAYING_VOD && this.url.indexOf("video/x-flv") < 0 && this.url.indexOf(".flv") < 0) {
+        if (this.ch_t > 0 && this.ch) {
+            this.save_time = this.ch_t;
+            Main.LoadTimer(function() { Display.status(" Resume ?", 5000); }, 7000);
+            setTimeout(function() { Player.save_time = 0; }, 15000)
         } else {
             var o = [];
-            Main[_$_2f23[466]](o, _$_2f23[1040]);
-            for (var p = 0; p < o[_$_2f23[64]]; p++) {
-                if (o[p][_$_2f23[30]](this[_$_2f23[287]]) == 0) {
+            Main.readFile(o, "url.dat");
+            for (var p = 0; p < o.length; p++) {
+                if (o[p].indexOf(this.url) == 0) {
                     var i = o[p];
-                    i = i[_$_2f23[305]](_$_2f23[79]);
-                    this[_$_2f23[948]] = i[1];
-                    Main[_$_2f23[263]](_$_2f23[1043], 7000);
-                    setTimeout(_$_2f23[1044], 20000);
+                    i = i.split("|");
+                    this.save_time = i[1];
+                    Main.LoadTimer(function() { Display.status(" Resume ?", 5000); }, 7000);
+                    setTimeout(function() { Player.save_time = 0; }, 20000);
                     break
                 }
             }
         }
     }
 };
-Player[_$_2f23[949]] = function () {
-    if (this[_$_2f23[200]] == this[_$_2f23[202]]) {
-        var i = (this[_$_2f23[948]] - this[_$_2f23[787]]) / 1000;
-        this[_$_2f23[1045]] = _$_2f23[1046];
-        if (i > 0 && !this[_$_2f23[699]]) {
-            Player[_$_2f23[1047]](i - 3)
+
+Player.PlaySaveTime = function () {
+    if (this.state == this.PLAYING_VOD) {
+        var i = (this.save_time - this.cur_time) / 1000;
+        this.statusmessage = "resume!";
+        if (i > 0 && !this.jump) {
+            Player.JumpForward(i - 3)
         };
-        Player[_$_2f23[948]] = 0;
-        Player[_$_2f23[1008]](_$_2f23[1048], 10000)
+        Player.save_time = 0;
+        Player.BufferingTimer(function() {
+			Display.status("resume failed!", 2000);
+			Player.play(Player.url, 0);
+		}, 10000)
     }
 };
-Player[_$_2f23[1019]] = function () {
-    if (this[_$_2f23[200]] != this[_$_2f23[201]]) {
-        if (this[_$_2f23[287]][_$_2f23[30]](_$_2f23[1017]) < 0 && this[_$_2f23[475]] == 0) {
+
+Player.GetResolution = function () {
+    if (this.state != this.STOPPED) {
+        if (this.url.indexOf(".mp3") < 0 && this.w == 0) {
             try {
-                if (this[_$_2f23[961]]) {
-                    var o = this[_$_2f23[959]][_$_2f23[1016]](_$_2f23[1049]);
-                    o = o[_$_2f23[305]](_$_2f23[79]);
-                    if (o[_$_2f23[64]] > 0) {
-                        this[_$_2f23[475]] = o[0];
-                        this[_$_2f23[587]] = o[1]
+                if (this.Sef) {
+                    var o = this.SefPlugin.Execute("GetVideoResolution");
+                    o = o.split("|");
+                    if (o.length > 0) {
+                        this.w = o[0];
+                        this.h = o[1]
                     }
                 } else {
-                    this[_$_2f23[587]] = this[_$_2f23[962]][_$_2f23[1050]]();
-                    this[_$_2f23[475]] = this[_$_2f23[962]][_$_2f23[1051]]()
+                    this.h = this.plugin.GetVideoHeight();
+                    this.w = this.plugin.GetVideoWidth()
                 }
             } catch (c) {
-                this[_$_2f23[475]] = 0;
-                this[_$_2f23[587]] = 0
+                this.w = 0;
+                this.h = 0
             }
         };
-        if (this[_$_2f23[475]] == 5) {
-            this[_$_2f23[587]] = 432;
-            this[_$_2f23[475]] = 540
+        if (this.w == 5) {
+            this.h = 432;
+            this.w = 540
         } else {
-            if (this[_$_2f23[475]] == 4) {
-                this[_$_2f23[587]] = 270;
-                this[_$_2f23[475]] = 480
+            if (this.w == 4) {
+                this.h = 270;
+                this.w = 480
             } else {
-                if (this[_$_2f23[475]] == 3) {
-                    this[_$_2f23[587]] = 288;
-                    this[_$_2f23[475]] = 384
+                if (this.w == 3) {
+                    this.h = 288;
+                    this.w = 384
                 } else {
-                    if (this[_$_2f23[475]] < 128 || this[_$_2f23[475]] == _$_2f23[4]) {
-                        this[_$_2f23[587]] = 0;
-                        this[_$_2f23[475]] = 0
+                    if (this.w < 128 || this.w == "") {
+                        this.h = 0;
+                        this.w = 0
                     }
                 }
             }
         };
-        var i = this[_$_2f23[475]] + _$_2f23[1052] + this[_$_2f23[587]];
-        if (this[_$_2f23[287]][_$_2f23[30]](_$_2f23[1017]) > 0) {
-            i = _$_2f23[1053]
+        var i = this.w + "X" + this.h;
+        if (this.url.indexOf(".mp3") > 0) {
+            i = "- MP3 -"
         };
-        widgetAPI[_$_2f23[216]](getId(_$_2f23[405]), i)
+        widgetAPI.putInnerHTML(getId("resolution"), i)
     }
 };
-Player[_$_2f23[1054]] = function () {
-    if (this[_$_2f23[200]] != this[_$_2f23[201]]) {
-        if (this[_$_2f23[475]] == 0 || this[_$_2f23[475]] == _$_2f23[4]) {
-            Player[_$_2f23[1019]]()
+
+Player.GetVideoSize = function () {
+    if (this.state != this.STOPPED) {
+        if (this.w == 0 || this.w == "") {
+            Player.GetResolution()
         };
-        if (Player[_$_2f23[986]] == 0 && !Main[_$_2f23[404]]) {
-            Player[_$_2f23[541]] = (Main[_$_2f23[290]] != _$_2f23[4]) ? parseInt(Main[_$_2f23[290]]) : (API[_$_2f23[646]] != _$_2f23[4]) ? parseInt(API[_$_2f23[646]]) : parseInt(this[_$_2f23[541]])
+        if (Player.mode3D == 0 && !Main.Foto) {
+            Player.size = (Main.ssize != "") ? parseInt(Main.ssize) : (API.Size != "") ? parseInt(API.Size) : parseInt(this.size)
         } else {
-            Player[_$_2f23[541]] = 0
+            Player.size = 0
         };
-        if (this[_$_2f23[287]][_$_2f23[30]](_$_2f23[1017]) < 0) {
-            setTimeout(_$_2f23[1055], 100)
+        if (this.url.indexOf(".mp3") < 0) {
+            setTimeout(function() { Player.setSize(Player.size, 1, 1); }, 100)
         }
     }
 };
-Player[_$_2f23[934]] = function (p, o, i) {
-    if (this[_$_2f23[200]] != this[_$_2f23[201]] && this[_$_2f23[200]] != this[_$_2f23[800]]) {
-        var q = this[_$_2f23[475]];
-        var l = this[_$_2f23[587]];
+
+Player.setSize = function (p, o, i) {
+    if (this.state != this.STOPPED && this.state != this.PAUSE_VOD) {
+        var q = this.w;
+        var l = this.h;
         if (o > 0) {
-            if (((q / l < 1.35 && API[_$_2f23[649]] < 6) || (q / l < 1.79 && q / l >= 1.35 && API[_$_2f23[650]] < 6) || (q / l >= 1.79 && API[_$_2f23[651]] < 6)) && i == 0) {
+            if (((q / l < 1.35 && API.a_size1 < 6) || (q / l < 1.79 && q / l >= 1.35 && API.a_size2 < 6) || (q / l >= 1.79 && API.a_size3 < 6)) && i == 0) {
                 if (p > 5) {
                     p = 0
                 }
             };
-            this[_$_2f23[541]] = p;
-            Main[_$_2f23[290]] = p[_$_2f23[298]]();
-            if (this[_$_2f23[475]] == 0 || this[_$_2f23[475]] == _$_2f23[4]) {
-                Player[_$_2f23[1019]]()
+            this.size = p;
+            Main.ssize = p.toString();
+            if (this.w == 0 || this.w == "") {
+                Player.GetResolution()
             }
         };
         var z, G, E, R, D, u, s, y, j;
@@ -5786,21 +5967,21 @@ Player[_$_2f23[934]] = function (p, o, i) {
         y = l;
         switch (p) {
         case 0:
-            if (q / l < 1.79 || this[_$_2f23[475]] == 0) {
-                j = _$_2f23[1056]
+            if (q / l < 1.79 || this.w == 0) {
+                j = "16x9 FULL"
             } else {
-                j = _$_2f23[1057];
+                j = "ORIGINAL";
                 R = 960 * l / q;
                 G = (540 - R) / 2
             };
             break;
         case 1:
             if (q == 0) {
-                j = _$_2f23[1058];
+                j = "w/h=1.67";
                 z = 30;
                 E = 900
             } else {
-                j = _$_2f23[729];
+                j = "14x9";
                 u = 0.0625 * l;
                 s = q;
                 y = 0.875 * l
@@ -5808,97 +5989,97 @@ Player[_$_2f23[934]] = function (p, o, i) {
             break;
         case 2:
             if (q == 0) {
-                j = _$_2f23[1059];
+                j = "w/h=1.56";
                 z = 60;
                 E = 840
             } else {
                 if (q / l < 1.35) {
-                    j = _$_2f23[1060];
+                    j = "4x3 ZOOM 2";
                     u = 0.115 * l;
                     s = q;
                     y = 0.77 * l
                 } else {
-                    return Player[_$_2f23[934]](5, o, i)
+                    return Player.setSize(5, o, i)
                 }
             };
             break;
         case 3:
             if (q == 0) {
-                j = _$_2f23[1061];
+                j = "w/h=1.45";
                 z = 90;
                 E = 780
             } else {
                 if (q / l < 1.35) {
-                    j = _$_2f23[1062];
+                    j = "4x3 ZOOM 1";
                     z = 60;
                     E = 840;
                     u = 0.0625 * l;
                     s = q;
                     y = 0.875 * l
                 } else {
-                    return Player[_$_2f23[934]](5, o, i)
+                    return Player.setSize(5, o, i)
                 }
             };
             break;
         case 4:
-            if (q / l < 1.35 || this[_$_2f23[475]] == 0) {
-                j = _$_2f23[736];
+            if (q / l < 1.35 || this.w == 0) {
+                j = "4x3";
                 z = 120;
                 E = 720
             } else {
-                return Player[_$_2f23[934]](5, o, i)
+                return Player.setSize(5, o, i)
             };
             break;
         case 5:
             if (q == 0) {
-                j = _$_2f23[1063];
+                j = "w/h=2";
                 G = 30;
                 R = 480
             } else {
-                if (Player[_$_2f23[648]] <= 100) {
-                    E = 9.6 * Player[_$_2f23[648]];
+                if (Player.Pw <= 100) {
+                    E = 9.6 * Player.Pw;
                     z = (960 - E) / 2
                 } else {
-                    s = q * (2 - Player[_$_2f23[648]] / 100);
-                    D = q * (Player[_$_2f23[648]] / 200 - 0.5)
+                    s = q * (2 - Player.Pw / 100);
+                    D = q * (Player.Pw / 200 - 0.5)
                 };
-                if (Player[_$_2f23[647]] <= 100) {
-                    R = 5.4 * Player[_$_2f23[647]];
+                if (Player.Ph <= 100) {
+                    R = 5.4 * Player.Ph;
                     G = (540 - R) / 2
                 } else {
-                    y = l * (2 - Player[_$_2f23[647]] / 100);
-                    u = l * (Player[_$_2f23[647]] / 200 - 0.5)
+                    y = l * (2 - Player.Ph / 100);
+                    u = l * (Player.Ph / 200 - 0.5)
                 };
-                j = _$_2f23[1064];
-                if (Main[_$_2f23[150]]) {
-                    j += _$_2f23[1065] + Player[_$_2f23[648]] + _$_2f23[1066] + Player[_$_2f23[647]] + _$_2f23[1012]
+                j = "X-ZOOM - set size: CH LIST";
+                if (Main.SetZoom) {
+                    j += " _ w=" + Player.Pw + "% _ h=" + Player.Ph + "%"
                 }
             };
             break;
         case 6:
             if (q == 0) {
-                return Player[_$_2f23[934]](0, 0, i)
+                return Player.setSize(0, 0, i)
             } else {
                 if (q / l < 1.35) {
-                    return Player[_$_2f23[934]](parseInt(API[_$_2f23[649]]), 0, i)
+                    return Player.setSize(parseInt(API.a_size1), 0, i)
                 } else {
                     if (q / l < 1.79) {
-                        return Player[_$_2f23[934]](parseInt(API[_$_2f23[650]]), 0, i)
+                        return Player.setSize(parseInt(API.a_size2), 0, i)
                     } else {
-                        return Player[_$_2f23[934]](parseInt(API[_$_2f23[651]]), 0, i)
+                        return Player.setSize(parseInt(API.a_size3), 0, i)
                     }
                 }
             };
             break;
         case 7:
             if (q / l >= 1.79) {
-                j = _$_2f23[1067];
+                j = "ORIGINAL ZOOM 1";
                 R = 960 * l / (q * 0.85);
                 G = (540 - R) / 2;
                 D = 0.075 * q;
                 s = 0.85 * q
             } else {
-                j = _$_2f23[1068];
+                j = "16x9 ZOOM 1";
                 D = 0.0625 * q;
                 u = 0.0625 * l;
                 s = 0.875 * q;
@@ -5907,13 +6088,13 @@ Player[_$_2f23[934]] = function (p, o, i) {
             break;
         case 8:
             if (q / l >= 1.79) {
-                j = _$_2f23[1069];
+                j = "ORIGINAL ZOOM 2";
                 R = 960 * l / (q * 0.75);
                 G = (540 - R) / 2;
                 D = 0.125 * q;
                 s = 0.75 * q
             } else {
-                j = _$_2f23[1070];
+                j = "16x9 ZOOM 2";
                 D = 0.125 * q;
                 u = 0.125 * l;
                 s = 0.75 * q;
@@ -5921,278 +6102,292 @@ Player[_$_2f23[934]] = function (p, o, i) {
             };
             break;
         default:
-            alert(_$_2f23[1071]);
-            j = _$_2f23[1072];
+            alert("Not specified");
+            j = "Not specified!";
             break
         };
-        if ((o == 1 || (this[_$_2f23[541]] == 6 && o == 0)) && i == 1) {
-            Player[_$_2f23[1014]] = _$_2f23[1073] + j + _$_2f23[1074] + Player[_$_2f23[1014]]
+        if ((o == 1 || (this.size == 6 && o == 0)) && i == 1) {
+            Player.message = "<tr><table><tr><td><img src=\"img/buttons/blue_m.png\"></img></td><td>- " + j + "</td></tr></table></tr>" + Player.message
         } else {
-            if ((o > 0 || (this[_$_2f23[541]] == 6 && o == 0 && i == 0)) && !Main[_$_2f23[404]]) {
-                Display[_$_2f23[53]](j)
+            if ((o > 0 || (this.size == 6 && o == 0 && i == 0)) && !Main.Foto) {
+                Display.status(j)
             }
         };
-        if (this[_$_2f23[961]]) {
-            this[_$_2f23[959]][_$_2f23[1016]](_$_2f23[1075], z, G, E, R);
-            this[_$_2f23[959]][_$_2f23[1016]](_$_2f23[1076], D, u, s, y)
+        if (this.Sef) {
+            this.SefPlugin.Execute("SetDisplayArea", z, G, E, R);
+            this.SefPlugin.Execute("SetCropArea", D, u, s, y)
         } else {
-            this[_$_2f23[962]][_$_2f23[1075]](z, G, E, R);
-            this[_$_2f23[962]][_$_2f23[1076]](D, u, s, y)
+            this.plugin.SetDisplayArea(z, G, E, R);
+            this.plugin.SetCropArea(D, u, s, y)
         }
     }
 };
-Player[_$_2f23[1047]] = function (i) {
-    if (this[_$_2f23[200]] == this[_$_2f23[202]]) {
-        Display[_$_2f23[53]](this[_$_2f23[1045]], 2000);
-        this[_$_2f23[699]] = true;
-        if (this[_$_2f23[961]]) {
-            this[_$_2f23[959]][_$_2f23[1016]](_$_2f23[1047], i)
+
+Player.JumpForward = function (i) {
+    if (this.state == this.PLAYING_VOD) {
+        Display.status(this.statusmessage, 2000);
+        this.jump = true;
+        if (this.Sef) {
+            this.SefPlugin.Execute("JumpForward", i)
         } else {
-            this[_$_2f23[962]][_$_2f23[1047]](i)
+            this.plugin.JumpForward(i)
         };
-        this[_$_2f23[1045]] = _$_2f23[4]
+        this.statusmessage = ""
     }
 };
-Player[_$_2f23[1077]] = function (o) {
-    if (this[_$_2f23[200]] == this[_$_2f23[202]]) {
+
+Player.JumpBackward = function (o) {
+    if (this.state == this.PLAYING_VOD) {
         if (o > 3) {
-            Display[_$_2f23[53]](this[_$_2f23[1045]], 2000)
+            Display.status(this.statusmessage, 2000)
         };
-        this[_$_2f23[699]] = true;
-        if (this[_$_2f23[961]]) {
-            if (this[_$_2f23[287]][_$_2f23[30]](_$_2f23[1017]) > 0) {
-                var i = (this[_$_2f23[787]] / 1000) - o;
-                Player[_$_2f23[450]](this[_$_2f23[287]], i)
+        this.jump = true;
+        if (this.Sef) {
+            if (this.url.indexOf(".mp3") > 0) {
+                var i = (this.cur_time / 1000) - o;
+                Player.play(this.url, i)
             } else {
-                this[_$_2f23[959]][_$_2f23[1016]](_$_2f23[1077], o)
+                this.SefPlugin.Execute("JumpBackward", o)
             }
         } else {
-            this[_$_2f23[962]][_$_2f23[1077]](o)
+            this.plugin.JumpBackward(o)
         };
-        this[_$_2f23[1045]] = _$_2f23[4]
+        this.statusmessage = ""
     }
 };
-Player[_$_2f23[947]] = function (q) {
-    if (this[_$_2f23[200]] == this[_$_2f23[202]] && !this[_$_2f23[699]]) {
-        var o = this[_$_2f23[787]] / 60000 * -1;
-        var i = this[_$_2f23[1078]] / 60000;
-        this[_$_2f23[1045]] = q + _$_2f23[1079];
-        var p = _$_2f23[4];
+
+Player.MinutesJump = function (q) {
+    if (this.state == this.PLAYING_VOD && !this.jump) {
+        var o = this.cur_time / 60000 * -1;
+        var i = this.delta_time / 60000;
+        this.statusmessage = q + " min.";
+        var p = "";
         if (q >= 0) {
-            this[_$_2f23[1045]] = _$_2f23[645] + this[_$_2f23[1045]];
+            this.statusmessage = "+" + this.statusmessage;
             if (q < i) {
-                Player[_$_2f23[1047]](q * 60)
+                Player.JumpForward(q * 60)
             } else {
-                this[_$_2f23[1078]] = 0;
-                Player[_$_2f23[1080]]()
+                this.delta_time = 0;
+                Player.TestTime()
             }
         } else {
             if (q > o) {
-                Player[_$_2f23[1077]](q * 60 * -1)
+                Player.JumpBackward(q * 60 * -1)
             } else {
-                this[_$_2f23[1078]] = 0;
-                Player[_$_2f23[1080]]()
+                this.delta_time = 0;
+                Player.TestTime()
             }
         }
     }
 };
-Player[_$_2f23[945]] = function (o) {
-    if (this[_$_2f23[200]] == this[_$_2f23[202]] && !this[_$_2f23[699]]) {
-        this[_$_2f23[1045]] = o * 10 + _$_2f23[1012];
-        var i = (this[_$_2f23[910]] * o / 10 - this[_$_2f23[787]]) / 1000;
+
+Player.PercentJump = function (o) {
+    if (this.state == this.PLAYING_VOD && !this.jump) {
+        this.statusmessage = o * 10 + "%";
+        var i = (this.total_time * o / 10 - this.cur_time) / 1000;
         if (i > 0) {
-            Player[_$_2f23[1047]](i)
+            Player.JumpForward(i)
         } else {
             if (i < 0) {
-                Player[_$_2f23[1077]](i * -1)
+                Player.JumpBackward(i * -1)
             }
         }
     }
 };
-Player[_$_2f23[911]] = function () {
-    if (this[_$_2f23[200]] == this[_$_2f23[800]]) {
-        Display[_$_2f23[53]](_$_2f23[1081], 500);
-        if (this[_$_2f23[961]]) {
-            this[_$_2f23[959]][_$_2f23[1016]](_$_2f23[1082])
+
+Player.resumeVideo = function () {
+    if (this.state == this.PAUSE_VOD) {
+        Display.status(" > > > ", 500);
+        if (this.Sef) {
+            this.SefPlugin.Execute("Resume")
         } else {
-            this[_$_2f23[962]][_$_2f23[1082]]()
+            this.plugin.Resume()
         };
-        this[_$_2f23[200]] = this[_$_2f23[202]];
-        if (this[_$_2f23[287]][_$_2f23[30]](_$_2f23[7]) >= 0 && Player[_$_2f23[1033]]) {
-            setTimeout(_$_2f23[1083], 100)
+        this.state = this.PLAYING_VOD;
+        if (this.url.indexOf("http://") >= 0 && Player.long_pause) {
+            setTimeout(function() { Player.MinutesJump(-0.05); }, 100)
         };
-        Display[_$_2f23[144]]();
-        clearTimeout(this[_$_2f23[1013]]);
-        this[_$_2f23[1033]] = false
+        Display.hideplayer();
+        clearTimeout(this.buffering_timer);
+        this.long_pause = false
     }
 };
-Player[_$_2f23[912]] = function () {
-    if (this[_$_2f23[200]] == this[_$_2f23[202]]) {
-        if (this[_$_2f23[961]]) {
-            this[_$_2f23[959]][_$_2f23[1016]](_$_2f23[1084])
+
+Player.pauseVideo = function () {
+    if (this.state == this.PLAYING_VOD) {
+        if (this.Sef) {
+            this.SefPlugin.Execute("Pause")
         } else {
-            this[_$_2f23[962]][_$_2f23[1084]]()
+            this.plugin.Pause()
         };
-        this[_$_2f23[200]] = this[_$_2f23[800]];
-        Display[_$_2f23[799]]();
-        Display[_$_2f23[53]](_$_2f23[1084], 0);
-        Player[_$_2f23[1034]]();
-        Player[_$_2f23[1008]](_$_2f23[1085], 30000)
+        this.state = this.PAUSE_VOD;
+        Display.showplayer();
+        Display.status("Pause", 0);
+        Player.SaveUrl();
+        Player.BufferingTimer(function() { Player.long_pause = true; }, 30000)
     }
 };
-Player[_$_2f23[982]] = function (i) {
-    if (this[_$_2f23[910]] > 0) {
-        this[_$_2f23[787]] = parseInt(i, 10);
-        TimeInfo(this[_$_2f23[787]], this[_$_2f23[910]]);
-        this[_$_2f23[1078]] = this[_$_2f23[910]] - this[_$_2f23[787]];
-        Player[_$_2f23[1080]]()
+
+Player.OnCurrentPlayTime = function (i) {
+    if (this.total_time > 0) {
+        this.cur_time = parseInt(i, 10);
+        TimeInfo(this.cur_time, this.total_time);
+        this.delta_time = this.total_time - this.cur_time;
+        Player.TestTime()
     }
 };
-Player[_$_2f23[1080]] = function () {
-    if (this[_$_2f23[1078]] == 0 && this[_$_2f23[910]] != 0 && this[_$_2f23[787]] != 0) {
-        if (this[_$_2f23[819]] && this[_$_2f23[452]]) {
-            Player[_$_2f23[450]](this[_$_2f23[287]])
+
+Player.TestTime = function () {
+    if (this.delta_time == 0 && this.total_time != 0 && this.cur_time != 0) {
+        if (this.repeat && this.next) {
+            Player.play(this.url)
         } else {
-            if (this[_$_2f23[452]]) {
-                Main[_$_2f23[147]] = true;
-                Main[_$_2f23[368]]();
-                setTimeout(_$_2f23[437], 20)
+            if (this.next) {
+                Main.block_info = true;
+                Main.selectNextChannel();
+                setTimeout(function(){ Main.PlayChannel(); }, 20)
             } else {
-                Player[_$_2f23[851]]()
+                Player.ReturnMenu()
             }
         }
     } else {
-        if (this[_$_2f23[1078]] == 0) {
-            Player[_$_2f23[851]]();
-            Display[_$_2f23[53]](_$_2f23[1086], 500)
+        if (this.delta_time == 0) {
+            Player.ReturnMenu();
+            Display.status("Connection failed!", 500)
         }
     }
 };
-Player[_$_2f23[1038]] = function (i, o) {
-    this[_$_2f23[959]][_$_2f23[194]](_$_2f23[1087], _$_2f23[1088], _$_2f23[1087]);
-    this[_$_2f23[959]][_$_2f23[1016]](_$_2f23[1089], i);
-    this[_$_2f23[959]][_$_2f23[1090]] = _$_2f23[1091];
-    if (Player[_$_2f23[935]]() != 0) {
-        if (Main[_$_2f23[292]] > 10) {
-            Main[_$_2f23[292]] = 10
+
+Player.SEFPlay = function (i, o) {
+    this.SefPlugin.Open("Player", "1.000", "Player");
+    this.SefPlugin.Execute("InitPlayer", i);
+    this.SefPlugin.OnEvent = Player.SefOnEvent;
+    if (Player.get3DMode() != 0) {
+        if (Main.buffer > 10) {
+            Main.buffer = 10
         };
-        this[_$_2f23[959]][_$_2f23[1016]](_$_2f23[1092], _$_2f23[629], _$_2f23[734], Player[_$_2f23[935]]())
+        this.SefPlugin.Execute("SetPlayerProperty", "2", "3", Player.get3DMode())
     } else {
-        if (this[_$_2f23[287]][_$_2f23[30]](_$_2f23[1017]) > 0) {
-            if (Main[_$_2f23[292]] > 0.5) {
-                Main[_$_2f23[292]] = 0.5
+        if (this.url.indexOf(".mp3") > 0) {
+            if (Main.buffer > 0.5) {
+                Main.buffer = 0.5
             };
-            this[_$_2f23[959]][_$_2f23[1016]](_$_2f23[1092], _$_2f23[739], _$_2f23[78], _$_2f23[78])
+            this.SefPlugin.Execute("SetPlayerProperty", "5", "0", "0")
         }
     };
-    Player[_$_2f23[1026]]();
-    Player[_$_2f23[934]](0, 0, 1);
-    this[_$_2f23[959]][_$_2f23[1016]](_$_2f23[1093], o)
+    Player.SetBuffer();
+    Player.setSize(0, 0, 1);
+    this.SefPlugin.Execute("StartPlayback", o)
 };
-Player[_$_2f23[1094]] = function (i, o) {
+
+Player.SefOnEvent = function (i, o) {
     switch (i) {
     case 1:
-        Player[_$_2f23[968]]();
+        Player.OnConnectionFailed();
         break;
     case 3:
-        Player[_$_2f23[972]]();
+        Player.OnStreamNotFound();
         break;
     case 4:
-        Player[_$_2f23[970]]();
+        Player.OnNetworkDisconnected();
         break;
     case 6:
-        Player[_$_2f23[974]](o);
+        Player.OnRenderError(o);
     case 11:
-        Player[_$_2f23[976]]();
+        Player.OnBufferingStart();
         break;
     case 13:
-        Player[_$_2f23[978]](o);
+        Player.OnBufferingProgress(o);
         break;
     case 12:
-        Player[_$_2f23[980]]();
+        Player.OnBufferingComplete();
         break;
     case 14:
-        Player[_$_2f23[982]](o);
+        Player.OnCurrentPlayTime(o);
         break
     }
 };
-Player[_$_2f23[926]] = function () {
-    if (this[_$_2f23[200]] != this[_$_2f23[201]]) {
-        if (!this[_$_2f23[961]]) {
-            Display[_$_2f23[53]](_$_2f23[1095], 500)
+
+Player.SEFSetNextAudioStream = function () {
+    if (this.state != this.STOPPED) {
+        if (!this.Sef) {
+            Display.status("Function is Not available!", 500)
         } else {
-            if (this[_$_2f23[1032]] < 2) {
-                Display[_$_2f23[53]](_$_2f23[1096], 500)
+            if (this.tnum < 2) {
+                Display.status("Only one sound track!", 500)
             } else {
-                var i = this[_$_2f23[959]][_$_2f23[1016]](_$_2f23[1097], 1);
+                var i = this.SefPlugin.Execute("GetCurrentStreamID", 1);
                 if (i >= 0) {
                     i++;
-                    if (i > (this[_$_2f23[1032]] - 1)) {
+                    if (i > (this.tnum - 1)) {
                         i = 0
                     };
-                    Player[_$_2f23[1098]](i, 1)
+                    Player.SetAudioStream(i, 1)
                 }
             }
         }
     }
 };
-Player[_$_2f23[1099]] = {
-    6384738: _$_2f23[1100],
-    6386285: _$_2f23[1101],
-    6388325: _$_2f23[1102],
-    6448492: _$_2f23[1103],
-    6452588: _$_2f23[1104],
-    6514793: _$_2f23[1105],
-    6647399: _$_2f23[1106],
-    6713957: _$_2f23[1107],
-    6776178: _$_2f23[1108],
-    6911073: _$_2f23[1109],
-    6975598: _$_2f23[1110],
-    7037306: _$_2f23[1111],
-    7040882: _$_2f23[1112],
-    7368562: _$_2f23[1113],
-    7501171: _$_2f23[1114],
-    7564399: _$_2f23[1115],
-    7564406: _$_2f23[1116],
-    7565409: _$_2f23[1117],
-    7565673: _$_2f23[1100],
-    7565936: _$_2f23[1118],
-    7567205: _$_2f23[1119],
-    7632242: _$_2f23[1120],
-    7695218: _$_2f23[1121],
-    7699042: _$_2f23[1122]
+
+Player.LangCodes = {
+    6384738: "Albenian",
+    6386285: "Armenian",
+    6388325: "Azerbaijan",
+    6448492: "Belorussian",
+    6452588: "Bulgar",
+    6514793: "Chinese",
+    6647399: "English",
+    6713957: "French",
+    6776178: "German",
+    6911073: "Italian",
+    6975598: "Japanese",
+    7037306: "Kazakh",
+    7040882: "Korian",
+    7368562: "Portuguese",
+    7501171: "Russian",
+    7564399: "Slovak",
+    7564406: "Slovenian",
+    7565409: "Spanish",
+    7565673: "Albenian",
+    7565936: "Serbian",
+    7567205: "Swedish",
+    7632242: "Turkish",
+    7695218: "Ukranian",
+    7699042: "Uzbek"
 };
-Player[_$_2f23[1098]] = function (q, o) {
-    if (this[_$_2f23[1032]] > q) {
-        Main[_$_2f23[291]] = (q + 1)[_$_2f23[298]]();
-        this[_$_2f23[959]][_$_2f23[1016]](_$_2f23[1123], 1, q);
-        var i = this[_$_2f23[959]][_$_2f23[1016]](_$_2f23[1124], 1, q);
-        var p = Player[_$_2f23[1099]][i];
-        p = (p == null) ? _$_2f23[1125] : p;
+
+Player.SetAudioStream = function (q, o) {
+    if (this.tnum > q) {
+        Main.a_num = (q + 1).toString();
+        this.SefPlugin.Execute("SetStreamID", 1, q);
+        var i = this.SefPlugin.Execute("GetStreamLanguageInfo", 1, q);
+        var p = Player.LangCodes[i];
+        p = (p == null) ? "Unknown" : p;
         if (o > 0) {
-            Display[_$_2f23[53]](p[_$_2f23[298]]() + _$_2f23[1126] + (q + 1)[_$_2f23[298]]())
+            Display.status(p.toString() + " audio track \u2116" + (q + 1).toString())
         } else {
-            Player[_$_2f23[1014]] += _$_2f23[1127] + p[_$_2f23[298]]() + _$_2f23[1126] + (q + 1)[_$_2f23[298]]() + _$_2f23[1128]
+            Player.message += "<tr><td>" + p.toString() + " audio track \u2116" + (q + 1).toString() + "</td></tr>"
         }
     } else {
-        Player[_$_2f23[1014]] += _$_2f23[1129]
+        Player.message += "<tr><td>Wrong \u2116 of audio track!</td></tr>"
     }
 };
-Player[_$_2f23[1021]] = function () {
-    if (this[_$_2f23[961]]) {
+
+Player.GetAudioNum = function () {
+    if (this.Sef) {
         try {
-            this[_$_2f23[1032]] = this[_$_2f23[959]][_$_2f23[1016]](_$_2f23[1130], 1)
+            this.tnum = this.SefPlugin.Execute("GetTotalNumOfStreamID", 1)
         } catch (a) {
-            this[_$_2f23[1032]] = 0
+            this.tnum = 0
         };
-        if (this[_$_2f23[1032]] > 1) {
-            if (Main[_$_2f23[291]] != _$_2f23[4]) {
-                Player[_$_2f23[1098]]((parseInt(Main[_$_2f23[291]]) - 1), 0)
+        if (this.tnum > 1) {
+            if (Main.a_num != "") {
+                Player.SetAudioStream((parseInt(Main.a_num) - 1), 0)
             } else {
-                if (Main[_$_2f23[23]] == 2) {
-                    Player[_$_2f23[1014]] += _$_2f23[1131]
+                if (Main.hardware_type == 2) {
+                    Player.message += "<tr><table><tr><td><img src=\"img/buttons/green_m.png\"></img></td><td> - Change audio track</td></tr></table></tr>"
                 } else {
-                    Player[_$_2f23[1014]] += _$_2f23[1132]
+                    Player.message += "<tr><td><img src=\"img/buttons/green_m.png\"></img> or \"AD/SUBT\" - Change audio track</td></tr>"
                 }
             }
         }
@@ -6200,253 +6395,268 @@ Player[_$_2f23[1021]] = function () {
 };
 
 function HelpSet() {
-    Main[_$_2f23[282]] = 0;
-    Display[_$_2f23[145]]();
-    Main[_$_2f23[192]] = false;
-    Main[_$_2f23[597]] = [];
-    clearTimeout(Main[_$_2f23[139]]);
-    getIdb(_$_2f23[163]);
-    getIdb(_$_2f23[176]);
-    getIdn(_$_2f23[164]);
-    getIdn(_$_2f23[165]);
-    getIdn(_$_2f23[166]);
-    getIdn(_$_2f23[167]);
-    getIdn(_$_2f23[168]);
-    getIdn(_$_2f23[170]);
-    getIdn(_$_2f23[171]);
-    getIdn(_$_2f23[173]);
-    getIdn(_$_2f23[174]);
-    getIdn(_$_2f23[177]);
-    getIdn(_$_2f23[178]);
-    getIdn(_$_2f23[179]);
-    getIdn(_$_2f23[180]);
-    getIdn(_$_2f23[181]);
-    getIdn(_$_2f23[155]);
-    getIdn(_$_2f23[156]);
-    getIdn(_$_2f23[157]);
-    getIdn(_$_2f23[204]);
-    getIdn(_$_2f23[161]);
-    if (Main[_$_2f23[34]]) {
-        getIdn(_$_2f23[163]);
-        getIdn(_$_2f23[176])
+    Main.scrolling = 0;
+    Display.loadinghide();
+    Main.yandextv_mode = false;
+    Main.ya_epg_info_arr = [];
+    clearTimeout(Main.load_timer);
+    getIdb("0_help");
+    getIdb("6_help");
+    getIdn("1_help");
+    getIdn("2_help");
+    getIdn("3_help");
+    getIdn("3.1_help");
+    getIdn("3.2_help");
+    getIdn("3.3_help");
+    getIdn("3.4_help");
+    getIdn("4.1_help");
+    getIdn("5_help");
+    getIdn("7_help");
+    getIdn("8_help");
+    getIdn("9_help");
+    getIdn("10_help");
+    getIdn("10.1_help");
+    getIdn("ya_date");
+    getIdn("ya_info");
+    getIdn("ya_help");
+    getIdn("background");
+    getIdn("channelList");
+    if (Main.seriesE) {
+        getIdn("0_help");
+        getIdn("6_help")
     };
-    getIdb(_$_2f23[154]);
-    getIdb(_$_2f23[162]);
-    widgetAPI[_$_2f23[216]](getId(_$_2f23[154]), _$_2f23[4])
+    getIdb("infoList");
+    getIdb("main");
+    widgetAPI.putInnerHTML(getId("infoList"), "")
 }
+
 SearchFormular = function () {
     showImageSet();
     var l = 7;
     var q = 30;
     var p = 44;
-    if (Main[_$_2f23[34]]) {
+    if (Main.seriesE) {
         l = 6;
         q = 28;
         p = 36
     };
-    if (API[_$_2f23[297]] != _$_2f23[4] && !Main[_$_2f23[141]]) {
-        Main[_$_2f23[140]] = true
+    if (API.search_on != "" && !Main.xxx) {
+        Main.search = true
     };
     HelpSet();
-    if (!Main[_$_2f23[34]]) {
-        getIdb(_$_2f23[183])
+    if (!Main.seriesE) {
+        getIdb("12_help")
     };
-    getIdn(_$_2f23[172]);
-    var s = _$_2f23[140];
-    if (Main[_$_2f23[140]] || Main[_$_2f23[141]]) {
-        s = _$_2f23[1133]
+    getIdn("4_help");
+    var s = "search";
+    if (Main.search || Main.xxx) {
+        s = "search_h"
     };
-    var o = _$_2f23[1134];
+    var o = "<div id=\"allInput\"><form>";
     hideScroll();
-    if (Main[_$_2f23[141]]) {
-        widgetAPI[_$_2f23[216]](getId(_$_2f23[191]), _$_2f23[1135]);
-        o += _$_2f23[1136] + s + _$_2f23[1137] + l + _$_2f23[1138]
+    if (Main.xxx) {
+        widgetAPI.putInnerHTML(getId("version"), "Enter code.");
+        o += "<span id=\"text_form0\">Access code to \"XXX\" (from 0 to 9999) : </span><input id=\"" + s + "\" type=\"text\" size=\"" + l + "\" maxlength=\"4\"></input>"
     } else {
-        if (Main[_$_2f23[140]]) {
-            widgetAPI[_$_2f23[216]](getId(_$_2f23[191]), _$_2f23[1139]);
-            o += _$_2f23[1140] + s + _$_2f23[1137] + q + _$_2f23[1141]
+        if (Main.search) {
+            widgetAPI.putInnerHTML(getId("version"), "Enter your Search here ");
+            o += "<span id=\"psearch\"> Find : </span><input id=\"" + s + "\" type=\"text\" size=\"" + q + "\" maxlength=\"200\"></input>"
         } else {
-            widgetAPI[_$_2f23[216]](getId(_$_2f23[191]), _$_2f23[1142]);
-            o += _$_2f23[1143] + s + _$_2f23[1137] + p + _$_2f23[1141]
+            widgetAPI.putInnerHTML(getId("version"), "Enter an address ");
+            o += "<span id=\"psearch\"> Address : </span><input id=\"" + s + "\" type=\"text\" size=\"" + p + "\" maxlength=\"200\"></input>"
         }
     };
-    o += _$_2f23[1144];
-    if (!Main[_$_2f23[141]] && !Main[_$_2f23[140]]) {
-        o += _$_2f23[1145]
+    o += "</form><form><span>\"ENTER\" - confirm input.</span></form><form><span>\"EXIT\" and \"RETURN\" - go back.</span></form>";
+    if (!Main.xxx && !Main.search) {
+        o += "<h3 style=\"padding-top:150px;text-align:center;\"> Warning !!!<br>If you provide URL of the playlist<br> and file extension doesnt contain \".xml\" or \".m3u\" ,<br>then put \"#\" in the front of URL.</h3>"
     };
-    o += _$_2f23[1146];
-    widgetAPI[_$_2f23[216]](getId(_$_2f23[154]), o);
+    o += "</div>";
+    widgetAPI.putInnerHTML(getId("infoList"), o);
     var i = new IMEShell(s, ime_callback);
-    if (Main[_$_2f23[1147]] && !Main[_$_2f23[34]]) {
-        i[_$_2f23[1148]](110, 75)
+    if (Main.Keyboard && !Main.seriesE) {
+        i.setKeypadPos(110, 75)
     } else {
-        i[_$_2f23[1148]](110, 75);
+        i.setKeypadPos(110, 75);
         try {
-            i[_$_2f23[1149]](-1, 53)
+            i.setQWERTYPos(-1, 53)
         } catch (p) {}
     };
-    if (!Main[_$_2f23[141]]) {
-        var j = (Main[_$_2f23[140]]) ? API[_$_2f23[673]] : (Main[_$_2f23[287]] != _$_2f23[4]) ? Main[_$_2f23[287]] : Main[_$_2f23[308]];
-        i[_$_2f23[1150]](j)
+    if (!Main.xxx) {
+        var j = (Main.search) ? API.search_string : (Main.url != "") ? Main.url : Main.protocol;
+        i.setString(j)
     };
-    i[_$_2f23[1151]](tvKey[_$_2f23[893]], function (u) {
-        widgetAPI[_$_2f23[846]](event);
-        if (Main[_$_2f23[141]]) {
-            Main[_$_2f23[208]][_$_2f23[358]]()
+    i.setKeyFunc(tvKey.KEY_RETURN, function (u) {
+        widgetAPI.blockNavigation(event);
+        if (Main.xxx) {
+            Main.prev_pl_array.pop()
         };
-        Main[_$_2f23[135]]();
+        Main.Menu();
         return false
     });
-    i[_$_2f23[1151]](tvKey[_$_2f23[884]], function (u) {
-        widgetAPI[_$_2f23[846]](event);
-        if (Main[_$_2f23[141]]) {
-            Main[_$_2f23[208]][_$_2f23[358]]()
+    i.setKeyFunc(tvKey.KEY_EXIT, function (u) {
+        widgetAPI.blockNavigation(event);
+        if (Main.xxx) {
+            Main.prev_pl_array.pop()
         };
-        Main[_$_2f23[135]]();
+        Main.Menu();
         return false
     });
-    i[_$_2f23[1152]](Search_ok);
-    getId(s)[_$_2f23[852]]()
+    i.setEnterFunc(Search_ok);
+    getId(s).focus()
 };
+
 Search_ok = function (o) {
-    var o = _$_2f23[140];
+    var o = "search";
     showImageSet();
-    if (Main[_$_2f23[140]] || Main[_$_2f23[141]]) {
-        o = _$_2f23[1133]
+    if (Main.search || Main.xxx) {
+        o = "search_h"
     };
-    var i = lrdPr(getId(o)[_$_2f23[1153]]);
-    if (i == _$_2f23[4]) {
-        Main[_$_2f23[135]]()
+    var i = lrdPr(getId(o).value);
+    if (i == "") {
+        Main.Menu()
     } else {
-        if (Main[_$_2f23[141]] && API[_$_2f23[211]] != i) {
-            Main[_$_2f23[208]][_$_2f23[358]]();
-            Main[_$_2f23[135]]();
-            Display[_$_2f23[53]](_$_2f23[243], 500)
+        if (Main.xxx && API.Xcode != i) {
+            Main.prev_pl_array.pop();
+            Main.Menu();
+            Display.status("Access denied!", 500)
         } else {
-            if (Main[_$_2f23[140]] || Main[_$_2f23[141]]) {
-                if (Main[_$_2f23[288]][_$_2f23[30]](_$_2f23[195]) > 0) {
-                    setTimeout(_$_2f23[1154], 1000)
+            if (Main.search || Main.xxx) {
+                if (Main.pl_url.indexOf("history.dat") > 0) {
+                    setTimeout(function() { Main.openCommonFile(Main.pl_url); }, 1000)
                 } else {
-                    API[_$_2f23[68]] = Main[_$_2f23[288]];
-                    Main[_$_2f23[148]] = true;
-                    setTimeout(_$_2f23[486], 500)
+                    API.XML_URL = Main.pl_url;
+                    Main.loading_pl = true;
+                    setTimeout(function() { API.Request(API.XML_URL); }, 500)
                 };
-                if (Main[_$_2f23[140]] && !Main[_$_2f23[141]]) {
-                    API[_$_2f23[673]] = i;
-                    Display[_$_2f23[53]](_$_2f23[1155], 0)
+                if (Main.search && !Main.xxx) {
+                    API.search_string = i;
+                    Display.status("<b style=\"color:#00ccff\">Please wait! Searching...</b>", 0)
                 } else {
-                    Main[_$_2f23[210]] = API[_$_2f23[211]];
-                    API[_$_2f23[211]] = _$_2f23[78];
-                    Display[_$_2f23[53]](_$_2f23[1156], 500)
+                    Main.Kill = API.Xcode;
+                    API.Xcode = "0";
+                    Display.status("<b style=\"color:#00ccff\">Access granted!</b>", 500)
                 };
-                KeyHandler[_$_2f23[118]](0)
+                KeyHandler.setFocus(0)
             } else {
-                if (i[_$_2f23[242]]()[_$_2f23[30]](_$_2f23[249]) > 0 || i[_$_2f23[242]]()[_$_2f23[30]](_$_2f23[248]) > 0 || i[_$_2f23[242]]()[_$_2f23[30]](_$_2f23[1157]) == 0) {
-                    if (i[_$_2f23[242]]()[_$_2f23[30]](_$_2f23[1157]) == 0) {
-                        i = i[_$_2f23[272]](_$_2f23[1157], _$_2f23[4])
+                if (i.toLowerCase().indexOf(".m3u") > 0 || i.toLowerCase().indexOf(".xml") > 0 || i.toLowerCase().indexOf("#") == 0) {
+                    if (i.toLowerCase().indexOf("#") == 0) {
+                        i = i.replace("#", "")
                     };
-                    Main[_$_2f23[288]] = i;
-                    Main[_$_2f23[287]] = _$_2f23[4]
+                    Main.pl_url = i;
+                    Main.url = ""
                 } else {
-                    Main[_$_2f23[287]] = i;
-                    Main[_$_2f23[288]] = _$_2f23[4]
+                    Main.url = i;
+                    Main.pl_url = ""
                 };
-                API[_$_2f23[324]] = _$_2f23[4];
-                Main[_$_2f23[285]] = _$_2f23[4];
-                KeyHandler[_$_2f23[118]](0);
-                Main[_$_2f23[350]]()
+                API.playlist_name = "";
+                Main.name = "";
+                KeyHandler.setFocus(0);
+                Main.PlayChannel()
             }
         }
     }
 };
 
 function RunImeS(j, p) {
-    var o = (j == _$_2f23[78]) ? j : (parseInt(j) - 1)[_$_2f23[298]]();
-    var i = (parseInt(j) + 1)[_$_2f23[298]]();
+    var o = (j == "0") ? j : (parseInt(j) - 1).toString();
+    var i = (parseInt(j) + 1).toString();
     var q = new IMEShell(j, ime_callback);
-    if (Main[_$_2f23[1147]] && !Main[_$_2f23[34]]) {
-        q[_$_2f23[1148]](110, 75)
+    if (Main.Keyboard && !Main.seriesE) {
+        q.setKeypadPos(110, 75)
     } else {
-        q[_$_2f23[1148]](110, 75);
+        q.setKeypadPos(110, 75);
         try {
-            q[_$_2f23[1149]](-1, 53)
+            q.setQWERTYPos(-1, 53)
         } catch (p) {}
     };
-    getId(j)[_$_2f23[852]]();
-    q[_$_2f23[1151]](tvKey[_$_2f23[886]], function (l) {
-        if (j != _$_2f23[78]) {
+    getId(j).focus();
+    q.setKeyFunc(tvKey.KEY_UP, function (l) {
+        if (j != "0") {
             SetStyle1(j);
-            Scrol(_$_2f23[1158], p[parseInt(o)]);
+            Scrol("allInput", p[parseInt(o)]);
             SetStyle2(o);
-            getId(o)[_$_2f23[852]]()
+            getId(o).focus()
         }
     });
-    q[_$_2f23[1151]](tvKey[_$_2f23[885]], function (l) {
-        if (p[parseInt(j)] != 0 || j == _$_2f23[78] || j == _$_2f23[411]) {
+    q.setKeyFunc(tvKey.KEY_DOWN, function (l) {
+        if (p[parseInt(j)] != 0 || j == "0" || j == "1") {
             SetStyle1(j);
-            Scrol(_$_2f23[1158], -p[parseInt(j)]);
+            Scrol("allInput", -p[parseInt(j)]);
             SetStyle2(i);
             RunImeS(i, p)
         }
     });
-    q[_$_2f23[1151]](tvKey[_$_2f23[893]], function (l) {
-        widgetAPI[_$_2f23[846]](event);
-        Main[_$_2f23[135]]();
+    q.setKeyFunc(tvKey.KEY_RETURN, function (l) {
+        widgetAPI.blockNavigation(event);
+        Main.Menu();
         return false
     });
-    q[_$_2f23[1151]](tvKey[_$_2f23[884]], function (l) {
-        widgetAPI[_$_2f23[846]](event);
-        Main[_$_2f23[135]]();
+    q.setKeyFunc(tvKey.KEY_EXIT, function (l) {
+        widgetAPI.blockNavigation(event);
+        Main.Menu();
         return false
     });
-    q[_$_2f23[1152]](SaveValue)
+    q.setEnterFunc(SaveValue)
 }
+
 ChannelSetupFormular = function () {
     showImageSet();
     var u = 52;
     var s = 6;
-    if (Main[_$_2f23[34]]) {
+    if (Main.seriesE) {
         u = 46;
         s = 5
     };
     HelpSet();
-    if (!Main[_$_2f23[34]]) {
-        getIdb(_$_2f23[172]);
-        getIdb(_$_2f23[182])
+    if (!Main.seriesE) {
+        getIdb("4_help");
+        getIdb("11_help")
     } else {
-        getIdn(_$_2f23[172])
+        getIdn("4_help")
     };
     var l = Ach(3);
-    if (l[_$_2f23[64]] >= 1000) {
-        l = _$_2f23[1159]
+    if (l.length >= 1000) {
+        l = "Edit impossible! Too big size."
     };
     var q = [];
-    var R = parseInt(l[_$_2f23[64]] / 100);
+    var R = parseInt(l.length / 100);
     for (var o = 0; o < R + 1; o++) {
-        q[o] = l[_$_2f23[530]](0, 100);
-        l = l[_$_2f23[272]](q[o], _$_2f23[4])
+        q[o] = l.substring(0, 100);
+        l = l.replace(q[o], "")
     };
-    var p = (Main[_$_2f23[287]] == _$_2f23[4]) ? _$_2f23[363] : _$_2f23[1160];
-    widgetAPI[_$_2f23[216]](getId(_$_2f23[191]), _$_2f23[1161] + p);
-    var j = _$_2f23[1162] + p + _$_2f23[1163] + u + _$_2f23[1164] + p + _$_2f23[1165] + u + _$_2f23[1166];
+    var p = (Main.url == "") ? "playlist" : "stream";
+    widgetAPI.putInnerHTML(getId("version"), "Editing options " + p);
+    var j = "<div id=\"allInput\"><form><span>Name " + p 
+	+ " : </span></form><form><input id=\"0\" type=\"text\" size=\"" + u 
+	+ "\" maxlength=\"200\"/></form><form><span>URL address " + p 
+	+ " : </span></form><form><input id=\"1\" type=\"text\" size=\"" + u 
+	+ "\" maxlength=\"200\"/></form><form><span>Description, additional information : </span></form>";
     for (var o = 2; o < R + 3; o++) {
-        j += _$_2f23[1167] + o + _$_2f23[1137] + u + _$_2f23[1168]
+        j += "<form><input id=\"" + o + "\" type=\"text\" size=\"" + u + "\" maxlength=\"200\"/></form>"
     };
-    j += _$_2f23[1169] + p + _$_2f23[1170] + (R + 3) + _$_2f23[1137] + u + _$_2f23[1168];
-    if (Main[_$_2f23[287]] != _$_2f23[4]) {
-        j += _$_2f23[1171] + (R + 4) + _$_2f23[1137] + s + _$_2f23[1172] + (R + 5) + _$_2f23[1173] + s + _$_2f23[1174] + (R + 6) + _$_2f23[1137] + s + _$_2f23[1175] + (R + 7) + _$_2f23[1173] + s + _$_2f23[1176] + (R + 8) + _$_2f23[1173] + s + _$_2f23[1177] + (R + 9) + _$_2f23[1173] + s + _$_2f23[1178]
+    j += "<form><span>Icons address " + p + " : </span></form><form><input id=\"" + (R + 3) + "\" type=\"text\" size=\"" + u + "\" maxlength=\"200\"/></form>";
+    if (Main.url != "") {
+        j += "<form><span>Starting aspect ratio :</span></form><form><span>\"0\"- 16X9 FULL or ORIGINAL , \"1\"- 14X9 ,</span></form><form><span>\"2\"- 4X3 ZOOM 2 , \"3\"- 4X3 ZOOM 1 ,\"4\"- 4X3 , </span></form><form><span id=\"text_form0\">\"5\"- X-ZOOM , \"6\"- AUTO . </span><input id=\"" + (R + 4) 
+		+ "\" type=\"text\" size=\"" + s + "\" maxlength=\"2\"/></form><form><span id=\"text_form0\">Audio track number ( 1, 2, 3 . . . ) : </span><input id=\"" + (R + 5) 
+		+ "\"  type=\"text\" size=\"" + s 
+		+ "\" maxlength=\"2\"/></form><form><span id=\"text_form0\">Shift time EPG ( +/-12 h.) : </span><input id=\"" + (R + 6) 
+		+ "\" type=\"text\" size=\"" + s 
+		+ "\" maxlength=\"4\"/></form><form><span>Total buffer size  0.5 - 20 ( Mb.).</span></form><form><span id=\"text_form0\">If it is not specified - \"auto\" : </span><input id=\"" + (R + 7) + "\"  type=\"text\" size=\"" + s 
+		+ "\" maxlength=\"3\"/></form><form><span>Start after buffer is  10 - 50 ( % ) .</span></form><form><span id=\"text_form0\">If it is not specified - \"auto\" : </span><input id=\"" + (R + 8) + "\"  type=\"text\" size=\"" + s 
+		+ "\" maxlength=\"3\"/></form><form><span id=\"text_form0\"> Yandex region code ( \"213\"- Moscow ) : </span><input id=\"" + (R + 9) + "\"  type=\"text\" size=\"" + s 
+		+ "\" maxlength=\"6\"/></form>"
     };
-    j += _$_2f23[1179];
-    widgetAPI[_$_2f23[216]](getId(_$_2f23[154]), j);
+    j += "<form></form><form></form><form></form><form></form><form></form><form></form><form></form></div>";
+    widgetAPI.putInnerHTML(getId("infoList"), j);
     var i = [0, 0];
-    SetString(_$_2f23[78], Main[_$_2f23[285]], 1);
-    var D = (Main[_$_2f23[288]] != _$_2f23[4]) ? Main[_$_2f23[288]] : (Main[_$_2f23[287]] != _$_2f23[4]) ? Main[_$_2f23[287]] : _$_2f23[4];
-    SetString(_$_2f23[411], D, 1);
+    SetString("0", Main.name, 1);
+    var D = (Main.pl_url != "") ? Main.pl_url : (Main.url != "") ? Main.url : "";
+    SetString("1", D, 1);
     if (R == 0) {
-        SetString(_$_2f23[629], q[0], 1);
+        SetString("2", q[0], 1);
         i[2] = 72
     } else {
-        SetString(_$_2f23[629], q[0], 1);
+        SetString("2", q[0], 1);
         i[2] = 36;
         for (var o = 1; o < R; o++) {
             SetString(o + 2, q[o], 1);
@@ -6455,99 +6665,102 @@ ChannelSetupFormular = function () {
         SetString(R + 2, q[R], 1);
         i[R + 2] = 72
     };
-    if (Main[_$_2f23[287]] != _$_2f23[4]) {
+    if (Main.url != "") {
         if (R == 0) {
-            SetString(_$_2f23[734], Main[_$_2f23[289]], 1)
+            SetString("3", Main.logo, 1)
         } else {
-            SetString(R + 3, Main[_$_2f23[289]], 1)
+            SetString(R + 3, Main.logo, 1)
         };
         i[R + 3] = 144;
-        SetString(R + 4, Main[_$_2f23[290]], 1);
+        SetString(R + 4, Main.ssize, 1);
         i[R + 4] = 36;
-        SetString(R + 5, Main[_$_2f23[291]], 1);
+        SetString(R + 5, Main.a_num, 1);
         i[R + 5] = 36;
-        SetString(R + 6, Main[_$_2f23[294]], 1);
+        SetString(R + 6, Main.timeshift, 1);
         i[R + 6] = 72;
-        SetString(R + 7, Main[_$_2f23[292]], 1);
+        SetString(R + 7, Main.buffer, 1);
         i[R + 7] = 72;
-        SetString(R + 8, Main[_$_2f23[293]], 1);
+        SetString(R + 8, Main.ibuffer, 1);
         i[R + 8] = 36;
-        SetString(R + 9, Main[_$_2f23[295]], 1);
+        SetString(R + 9, Main.region, 1);
         i[R + 9] = 0
     } else {
         if (R == 0) {
-            SetString(_$_2f23[734], Main[_$_2f23[289]], 1)
+            SetString("3", Main.logo, 1)
         } else {
-            SetString(R + 3, Main[_$_2f23[289]], 1)
+            SetString(R + 3, Main.logo, 1)
         };
         i[R + 3] = 0
     };
-    RunImeS(_$_2f23[78], i);
-    SetStyle2(_$_2f23[78])
+    RunImeS("0", i);
+    SetStyle2("0")
 };
+
 SaveValue = function () {
     try {
-        var E = lrdPr(getId(_$_2f23[78])[_$_2f23[1153]]);
-        if (Main[_$_2f23[287]] != _$_2f23[4]) {
-            var bf = lrdPr(getId(_$_2f23[411])[_$_2f23[1153]]);
-            var bd = _$_2f23[4]
+        var E = lrdPr(getId("0").value);
+        if (Main.url != "") {
+            var bf = lrdPr(getId("1").value);
+            var bd = ""
         } else {
-            bd = lrdPr(getId(_$_2f23[411])[_$_2f23[1153]]);
-            bf = _$_2f23[4]
+            bd = lrdPr(getId("1").value);
+            bf = ""
         };
-        if (Ach(3)[_$_2f23[64]] < 1000) {
-            var bb = parseInt(Ach(3)[_$_2f23[64]] / 100);
-            var o = _$_2f23[4];
+        if (Ach(3).length < 1000) {
+            var bb = parseInt(Ach(3).length / 100);
+            var o = "";
             for (var R = 0; R < bb + 1; R++) {
-                o += getId(2 + R)[_$_2f23[1153]]
+                o += getId(2 + R).value
             };
             o = lrdPr(o)
         } else {
             o = Ach(3);
             bb = 0
         };
-        var i = lrdPr(getId(bb + 3)[_$_2f23[1153]]);
-        if (Main[_$_2f23[287]] != _$_2f23[4]) {
-            var Z = dPr(getId(bb + 4)[_$_2f23[1153]]);
-            var s = dPr(getId(bb + 5)[_$_2f23[1153]]);
-            var y = dPr(getId(bb + 6)[_$_2f23[1153]]);
-            var p = dPr(getId(bb + 7)[_$_2f23[1153]]);
-            var D = dPr(getId(bb + 8)[_$_2f23[1153]]);
-            var l = dPr(getId(bb + 9)[_$_2f23[1153]])
+        var i = lrdPr(getId(bb + 3).value);
+        if (Main.url != "") {
+            var Z = dPr(getId(bb + 4).value);
+            var s = dPr(getId(bb + 5).value);
+            var y = dPr(getId(bb + 6).value);
+            var p = dPr(getId(bb + 7).value);
+            var D = dPr(getId(bb + 8).value);
+            var l = dPr(getId(bb + 9).value)
         } else {
-            Z = _$_2f23[4];
-            s = _$_2f23[4];
-            y = _$_2f23[4];
-            p = _$_2f23[4];
-            D = _$_2f23[4]
+            Z = "";
+            s = "";
+            y = "";
+            p = "";
+            D = ""
         };
-        var u = Main[_$_2f23[284]] - 1;
+        var u = Main.ch_num - 1;
         var z = [];
-        Main[_$_2f23[466]](z, Main[_$_2f23[67]]);
-        if (z[_$_2f23[64]] > 0) {
-            var q = dSp(dI(E) + _$_2f23[79] + dI(bf) + _$_2f23[79] + dI(i) + _$_2f23[79] + dI(o) + _$_2f23[477] + dI(bd) + _$_2f23[79] + dI(Z) + _$_2f23[79] + dI(s) + _$_2f23[79] + dI(p) + _$_2f23[79] + dI(D) + _$_2f23[79] + dI(y) + _$_2f23[79] + dI(l) + _$_2f23[79] + Main[_$_2f23[296]] + _$_2f23[79] + Main[_$_2f23[297]]);
-            z[_$_2f23[478]](u, 1, q);
-            Main[_$_2f23[472]](z, Main[_$_2f23[67]]);
-            Main[_$_2f23[151]] = false;
-            Main[_$_2f23[359]] = true;
-            Main[_$_2f23[61]] = true;
-            Main[_$_2f23[62]](Main[_$_2f23[67]])
+        Main.readFile(z, Main.fav_url);
+        if (z.length > 0) {
+            var q = dSp(dI(E) + "|" + dI(bf) + "|" + dI(i) + "|" + dI(o) + "||" + dI(bd) + "|" + dI(Z) + "|" + dI(s) + "|" + dI(p) + "|" + dI(D) + "|" + dI(y) + "|" + dI(l) + "|" + Main.parser + "|" + Main.search_on);
+            z.splice(u, 1, q);
+            Main.writeFile(z, Main.fav_url);
+            Main.playlist_prev = false;
+            Main.DEL = true;
+            Main.FAV = true;
+            Main.openCommonFile(Main.fav_url)
         };
-        Main[_$_2f23[135]]()
+        Main.Menu()
     } catch (n) {}
 };
+
 Scrol = function (o, i) {
-    Main[_$_2f23[282]] = Main[_$_2f23[282]] + i;
-    if (Main[_$_2f23[282]] == 0 || Main[_$_2f23[282]] < 0) {
-        getId(o)[_$_2f23[123]][_$_2f23[1180]] = Main[_$_2f23[282]] + _$_2f23[1181]
+    Main.scrolling = Main.scrolling + i;
+    if (Main.scrolling == 0 || Main.scrolling < 0) {
+        getId(o).style.margin = Main.scrolling + "px 0px 0px 0px "
     } else {
-        Main[_$_2f23[282]] = 0
+        Main.scrolling = 0
     }
 };
-KeyHandler[_$_2f23[1182]] = function () {
+
+KeyHandler.SetupKeyDown = function () {
     var l = function () {
-            var E = getId(Main[_$_2f23[1183]])[_$_2f23[1153]];
-            for (var R = 0; R < i[_$_2f23[64]]; R++) {
+            var E = getId(Main.setup_id).value;
+            for (var R = 0; R < i.length; R++) {
                 if (E == i[R]) {
                     return R;
                     break
@@ -6558,449 +6771,476 @@ KeyHandler[_$_2f23[1182]] = function () {
     var j = 0;
     var q = 0;
     var p = 0;
-    switch (Main[_$_2f23[1183]]) {
-    case _$_2f23[876]:
-        i = [_$_2f23[631], _$_2f23[1184], _$_2f23[1185]];
+    switch (Main.setup_id) {
+    case "9":
+        i = ["ru", "ua", "by"];
         q = 36;
         j = 36;
         break;
-    case _$_2f23[1210]:
-        i = [_$_2f23[1186], _$_2f23[1187], _$_2f23[1188], _$_2f23[1189], _$_2f23[1190], _$_2f23[1191], _$_2f23[1192], _$_2f23[1193], _$_2f23[1194], _$_2f23[1195], _$_2f23[1196], _$_2f23[1197], _$_2f23[78], _$_2f23[1198], _$_2f23[1199], _$_2f23[1200], _$_2f23[1201], _$_2f23[1202], _$_2f23[1203], _$_2f23[1204], _$_2f23[1205], _$_2f23[1206], _$_2f23[1207], _$_2f23[1208], _$_2f23[1209]];
+    case "10":
+        i = ["-12", "-11", "-10", "-9", "-8", "-7", "-6", "-5", "-4", "-3", "-2", "-1", "0", "+1", "+2", "+3", "+4", "+5", "+6", "+7", "+8", "+9", "+10", "+11", "+12"];
         q = 36;
         j = 36;
         break;
-    case _$_2f23[1214]:
-        i = [_$_2f23[1211], _$_2f23[1212], _$_2f23[1213]];
+    case "11":
+        i = ["auto-sync", "auto-unix", "manual"];
         q = 36;
         j = 36;
         break;
-    case _$_2f23[1215]:
-        i = [_$_2f23[1186], _$_2f23[1187], _$_2f23[1188], _$_2f23[1189], _$_2f23[1190], _$_2f23[1191], _$_2f23[1192], _$_2f23[1193], _$_2f23[1194], _$_2f23[1195], _$_2f23[1196], _$_2f23[1197], _$_2f23[78], _$_2f23[1198], _$_2f23[1199], _$_2f23[1200], _$_2f23[1201], _$_2f23[1202], _$_2f23[1203], _$_2f23[1204], _$_2f23[1205], _$_2f23[1206], _$_2f23[1207], _$_2f23[1208], _$_2f23[1209]];
+    case "12":
+        i = ["-12", "-11", "-10", "-9", "-8", "-7", "-6", "-5", "-4", "-3", "-2", "-1", "0", "+1", "+2", "+3", "+4", "+5", "+6", "+7", "+8", "+9", "+10", "+11", "+12"];
         q = 36;
         j = 36;
         break;
-    case _$_2f23[1224]:
-        i = [_$_2f23[1216], _$_2f23[1217], _$_2f23[1218], _$_2f23[1219], _$_2f23[1220], _$_2f23[1221], _$_2f23[1222], _$_2f23[1223]];
+    case "13":
+        i = ["16X9", "14X9", "4X3-ZOOM 2", "4X3-ZOOM 1", "4X3", "X-ZOOM", "AUTO", "Not installed"];
         q = 36;
         j = 36;
         break;
-    case _$_2f23[1225]:
+    case "14":
         for (var D = 0; D < 101; D++) {
-            i[D] = (D + 50)[_$_2f23[298]]()
+            i[D] = (D + 50).toString()
         };
         q = 36;
         j = 36;
         break;
-    case _$_2f23[1226]:
+    case "15":
         for (var D = 0; D < 101; D++) {
-            i[D] = (D + 50)[_$_2f23[298]]()
+            i[D] = (D + 50).toString()
         };
         q = 36;
         j = 36;
         break;
-    case _$_2f23[1229]:
-        i = [_$_2f23[1220], _$_2f23[1227], _$_2f23[1228], _$_2f23[1217], _$_2f23[1221]];
+    case "16":
+        i = ["4X3", "4X3 ZOOM 1", "4X3 ZOOM 2", "14X9", "X-ZOOM"];
         q = 36;
         j = 36;
         break;
-    case _$_2f23[1232]:
-        i = [_$_2f23[1216], _$_2f23[1230], _$_2f23[1231], _$_2f23[1217], _$_2f23[1221]];
+    case "17":
+        i = ["16X9", "16X9 ZOOM 1", "16X9 ZOOM 2", "14X9", "X-ZOOM"];
         q = 36;
         j = 36;
         break;
-    case _$_2f23[1235]:
-        i = [_$_2f23[1057], _$_2f23[1233], _$_2f23[1234]];
+    case "18":
+        i = ["ORIGINAL", "ORIG.ZOOM 1", "ORIG.ZOOM 2"];
         q = 36;
         j = 36;
         break;
-    case _$_2f23[1238]:
-        i = [_$_2f23[1236], _$_2f23[1237]];
+    case "19":
+        i = ["square", "rectangular"];
         q = 36;
         j = 36;
         break;
-    case _$_2f23[1241]:
-        i = [_$_2f23[1239], _$_2f23[1240]];
+    case "20":
+        i = ["on", "off"];
         q = 72;
         j = 36;
         break;
-    case _$_2f23[1247]:
-        i = [_$_2f23[78], _$_2f23[1242], _$_2f23[1243], _$_2f23[1244], _$_2f23[1245], _$_2f23[1246], _$_2f23[411], _$_2f23[629], _$_2f23[734], _$_2f23[737], _$_2f23[739], _$_2f23[741], _$_2f23[872], _$_2f23[874], _$_2f23[876], _$_2f23[1210], _$_2f23[1214], _$_2f23[1215], _$_2f23[1224], _$_2f23[1225], _$_2f23[1226], _$_2f23[1229], _$_2f23[1232], _$_2f23[1235], _$_2f23[1238], _$_2f23[1241]];
+    case "21":
+        i = ["0", "0.5", "0.6", "0.7", "0.8", "0.9", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"];
         q = 108;
         j = 72;
         break;
-    case _$_2f23[1254]:
-        i = [_$_2f23[78], _$_2f23[1210], _$_2f23[1226], _$_2f23[1241], _$_2f23[1248], _$_2f23[1249], _$_2f23[1250], _$_2f23[1251], _$_2f23[1252], _$_2f23[1253]];
+    case "22":
+        i = ["0", "10", "15", "20", "25", "30", "35", "40", "45", "50"];
         q = 36;
         j = 108;
         break;
-    case _$_2f23[1255]:
-        i = [_$_2f23[1239], _$_2f23[1240]];
+    case "23":
+        i = ["on", "off"];
         q = 36;
         j = 36;
         break;
-    case _$_2f23[1256]:
-        i = [_$_2f23[1239], _$_2f23[1240]];
+    case "24":
+        i = ["on", "off"];
         q = 36;
         j = 36;
         break;
-    case _$_2f23[1248]:
-        i = [_$_2f23[1239], _$_2f23[1240]];
+    case "25":
+        i = ["on", "off"];
         q = 36;
         j = 36;
         break;
-    case _$_2f23[1261]:
-        i = [_$_2f23[1257], _$_2f23[634], _$_2f23[1258], _$_2f23[1259], _$_2f23[1260]];
+    case "26":
+        i = ["240p", "360p", "480p", "720p", "1080p"];
         q = 36;
         j = 36;
         break;
-    case _$_2f23[1275]:
-        i = [_$_2f23[633], _$_2f23[1262], _$_2f23[1263], _$_2f23[1264], _$_2f23[1265], _$_2f23[1266], _$_2f23[1267], _$_2f23[1268], _$_2f23[1269], _$_2f23[1270], _$_2f23[1271], _$_2f23[1272], _$_2f23[1273], _$_2f23[1274]];
+    case "27":
+        i = ["London", "Moscow", "Berlin", "Paris", "Rome", "Dublin", "Madrid", "Lisbon", "Vienna", "Warsaw", "Kiev", "Prague", "Athens", "Ankara"];
         q = 0;
         j = 36;
         break;
-    case _$_2f23[1276]:
-        i = [_$_2f23[1239], _$_2f23[1240]];
+    case "28":
+        i = ["on", "off"];
         q = 0;
         j = 36;
         break
     };
-    var u = (parseInt(Main[_$_2f23[1183]]) - 1)[_$_2f23[298]]();
-    var s = (Main[_$_2f23[1183]] < 28) ? (parseInt(Main[_$_2f23[1183]]) + 1)[_$_2f23[298]]() : Main[_$_2f23[1183]];
-    event[_$_2f23[1277]]();
-    var o = event[_$_2f23[883]];
+    var u = (parseInt(Main.setup_id) - 1).toString();
+    var s = (Main.setup_id < 28) ? (parseInt(Main.setup_id) + 1).toString() : Main.setup_id;
+    event.preventDefault();
+    var o = event.keyCode;
     switch (o) {
-    case tvKey[_$_2f23[893]]:
+    case tvKey.KEY_RETURN:
         ;
-    case tvKey[_$_2f23[884]]:
+    case tvKey.KEY_EXIT:
         Return(0);
         break;
-    case tvKey[_$_2f23[907]]:
+    case tvKey.KEY_ENTER:
         onEnter();
         break;
-    case tvKey[_$_2f23[888]]:
+    case tvKey.KEY_RIGHT:
         p = l();
-        if (p < i[_$_2f23[64]] - 1) {
+        if (p < i.length - 1) {
             p++
         } else {
             p = 0
         };
-        SetString(Main[_$_2f23[1183]], i[p]);
+        SetString(Main.setup_id, i[p]);
         break;
-    case tvKey[_$_2f23[887]]:
+    case tvKey.KEY_LEFT:
         p = l();
         if (p > 0) {
             p--
         } else {
-            p = i[_$_2f23[64]] - 1
+            p = i.length - 1
         };
-        SetString(Main[_$_2f23[1183]], i[p]);
+        SetString(Main.setup_id, i[p]);
         break;
-    case tvKey[_$_2f23[886]]:
-        SetStyle1(Main[_$_2f23[1183]]);
-        Scrol(_$_2f23[1158], j);
+    case tvKey.KEY_UP:
+        SetStyle1(Main.setup_id);
+        Scrol("allInput", j);
         SetStyle2(u);
-        if (Main[_$_2f23[1183]] == 9) {
-            getId(_$_2f23[874])[_$_2f23[852]]()
+        if (Main.setup_id == 9) {
+            getId("8").focus()
         } else {
-            Main[_$_2f23[1183]] = u
+            Main.setup_id = u
         };
         break;
-    case tvKey[_$_2f23[885]]:
-        if (Main[_$_2f23[1183]] < 28) {
-            SetStyle1(Main[_$_2f23[1183]]);
-            Scrol(_$_2f23[1158], -q);
+    case tvKey.KEY_DOWN:
+        if (Main.setup_id < 28) {
+            SetStyle1(Main.setup_id);
+            Scrol("allInput", -q);
             SetStyle2(s)
         };
-        Main[_$_2f23[1183]] = s;
+        Main.setup_id = s;
         break;
     default:
         break
     };
     return false
 };
+
 ime_callback = function () {};
+
 RunIme = function (j) {
     var p = [0, 108, 72, 36, 36, 36, 36, 108, 36, 36];
-    if (API[_$_2f23[60]] == API[_$_2f23[68]]) {
+    if (API.star_url == API.XML_URL) {
         p[1] = 72
     };
-    if (Main[_$_2f23[288]] == _$_2f23[4]) {
+    if (Main.pl_url == "") {
         p[2] = 36
     };
-    var o = (j == _$_2f23[78]) ? j : (parseInt(j) - 1)[_$_2f23[298]]();
-    var i = (parseInt(j) + 1)[_$_2f23[298]]();
-    var q = new IMEShell(j, ime_callback, _$_2f23[1278]);
-    if (Main[_$_2f23[1147]] && !Main[_$_2f23[34]]) {
-        q[_$_2f23[1148]](110, 75)
+    var o = (j == "0") ? j : (parseInt(j) - 1).toString();
+    var i = (parseInt(j) + 1).toString();
+    var q = new IMEShell(j, ime_callback, "en");
+    if (Main.Keyboard && !Main.seriesE) {
+        q.setKeypadPos(110, 75)
     } else {
-        q[_$_2f23[1148]](110, 75);
+        q.setKeypadPos(110, 75);
         try {
-            q[_$_2f23[1149]](-1, 53)
+            q.setQWERTYPos(-1, 53)
         } catch (p) {}
     };
-    getId(j)[_$_2f23[852]]();
-    q[_$_2f23[1151]](tvKey[_$_2f23[886]], function (l) {
-        if (j != _$_2f23[78]) {
+    getId(j).focus();
+    q.setKeyFunc(tvKey.KEY_UP, function (l) {
+        if (j != "0") {
             SetStyle1(j);
-            Scrol(_$_2f23[1158], p[parseInt(j)]);
+            Scrol("allInput", p[parseInt(j)]);
             SetStyle2(o);
-            getId(o)[_$_2f23[852]]()
+            getId(o).focus()
         }
     });
-    q[_$_2f23[1151]](tvKey[_$_2f23[885]], function (l) {
+    q.setKeyFunc(tvKey.KEY_DOWN, function (l) {
         SetStyle1(j);
-        Scrol(_$_2f23[1158], -p[parseInt(i)]);
+        Scrol("allInput", -p[parseInt(i)]);
         SetStyle2(i);
-        if (j == _$_2f23[874]) {
-            Main[_$_2f23[1183]] = i;
-            KeyHandler[_$_2f23[118]](7)
+        if (j == "8") {
+            Main.setup_id = i;
+            KeyHandler.setFocus(7)
         } else {
             RunIme(i)
         }
     });
-    q[_$_2f23[1151]](tvKey[_$_2f23[893]], function (l) {
+    q.setKeyFunc(tvKey.KEY_RETURN, function (l) {
         Return(0);
         return false
     });
-    q[_$_2f23[1151]](tvKey[_$_2f23[884]], function (l) {
-        widgetAPI[_$_2f23[848]]()
+    q.setKeyFunc(tvKey.KEY_EXIT, function (l) {
+        widgetAPI.sendReturnEvent()
     });
-    q[_$_2f23[1152]](onEnter)
+    q.setEnterFunc(onEnter)
 };
+
 var SSize = {
-    0: _$_2f23[1216],
-    1: _$_2f23[1217],
-    2: _$_2f23[1218],
-    3: _$_2f23[1219],
-    4: _$_2f23[1220],
-    5: _$_2f23[1221],
-    6: _$_2f23[1222],
-    7: _$_2f23[1223]
+    0: "16X9",
+    1: "14X9",
+    2: "4X3-ZOOM 2",
+    3: "4X3-ZOOM 1",
+    4: "4X3",
+    5: "X-ZOOM",
+    6: "AUTO",
+    7: "Not installed"
 };
+
 var ASize1 = {
-    1: _$_2f23[1217],
-    5: _$_2f23[1221],
-    4: _$_2f23[1220],
-    3: _$_2f23[1227],
-    2: _$_2f23[1228]
+    1: "14X9",
+    5: "X-ZOOM",
+    4: "4X3",
+    3: "4X3 ZOOM 1",
+    2: "4X3 ZOOM 2"
 };
+
 var ASize2 = {
-    0: _$_2f23[1216],
-    1: _$_2f23[1217],
-    5: _$_2f23[1221],
-    7: _$_2f23[1230],
-    8: _$_2f23[1231]
+    0: "16X9",
+    1: "14X9",
+    5: "X-ZOOM",
+    7: "16X9 ZOOM 1",
+    8: "16X9 ZOOM 2"
 };
+
 var ASize3 = {
-    0: _$_2f23[1057],
-    7: _$_2f23[1233],
-    8: _$_2f23[1234]
+    0: "ORIGINAL",
+    7: "ORIG.ZOOM 1",
+    8: "ORIG.ZOOM 2"
 };
+
 var STimemode = {
-    0: _$_2f23[1211],
-    1: _$_2f23[1212],
-    2: _$_2f23[1213]
+    0: "auto-sync",
+    1: "auto-unix",
+    2: "manual"
 };
+
 SetupFormular = function () {
     var G = 43;
     var E = 14;
     var R = 5;
     var q = 48;
     var p = 48;
-    if (Main[_$_2f23[34]]) {
+    if (Main.seriesE) {
         G = 43;
         E = 14;
         R = 5;
         q = 48;
         p = 48
     };
-    Main[_$_2f23[136]] = true;
+    Main.FirstStart = true;
     showImageSet();
     HelpSet();
-    if (!Main[_$_2f23[34]]) {
-        getIdb(_$_2f23[172]);
-        getIdb(_$_2f23[182])
+    if (!Main.seriesE) {
+        getIdb("4_help");
+        getIdb("11_help")
     } else {
-        getIdn(_$_2f23[172])
+        getIdn("4_help")
     };
-    getIdb(_$_2f23[153]);
-    widgetAPI[_$_2f23[216]](getId(_$_2f23[191]), _$_2f23[1279] + Main[_$_2f23[14]]);
-    var l = _$_2f23[1280];
-    if (API[_$_2f23[68]][_$_2f23[64]] < 200) {
-        var o = API[_$_2f23[68]];
-        var i = _$_2f23[4];
-        if (API[_$_2f23[68]][_$_2f23[64]] > q) {
-            o = API[_$_2f23[68]][_$_2f23[447]](0, q);
-            var D = API[_$_2f23[68]][_$_2f23[447]](q);
-            var z = parseInt(D[_$_2f23[64]] / p);
+    getIdb("help_set_par");
+    widgetAPI.putInnerHTML(getId("version"), " Settings , MAC = " + Main.MAC);
+    var l = "</span></form><form style=\"color:#00ccff;font-size:17px;\"><span>";
+    if (API.XML_URL.length < 200) {
+        var o = API.XML_URL;
+        var i = "";
+        if (API.XML_URL.length > q) {
+            o = API.XML_URL.substr(0, q);
+            var D = API.XML_URL.substr(q);
+            var z = parseInt(D.length / p);
             for (var s = 0; s < z + 1; s++) {
-                var j = D[_$_2f23[530]](0, p);
-                D = D[_$_2f23[272]](j, _$_2f23[4]);
+                var j = D.substring(0, p);
+                D = D.replace(j, "");
                 i += l + j
             }
         }
     } else {
-        o = _$_2f23[4];
-        i = _$_2f23[1281]
+        o = "";
+        i = "</span></form><form style=\"color:#00ccff;font-size:20px;\"><span>Link is too long!"
     };
-    var u = _$_2f23[1282] + _$_2f23[1283] + _$_2f23[519] + _$_2f23[1284] + G + _$_2f23[1285];
-    u += _$_2f23[1286] + G + _$_2f23[1285];
-    u += _$_2f23[1287] + E + _$_2f23[1288] + E + _$_2f23[1289] + E + _$_2f23[1290] + R + _$_2f23[1291] + R + _$_2f23[1292] + G + _$_2f23[1293] + R + _$_2f23[1294];
-    widgetAPI[_$_2f23[216]](getId(_$_2f23[154]), u);
-    SetString(_$_2f23[78], API[_$_2f23[60]], 1);
-    SetString(_$_2f23[411], API[_$_2f23[637]], 1);
-    SetString(_$_2f23[629], API[_$_2f23[638]], 1);
-    SetString(_$_2f23[734], API[_$_2f23[639]], 1);
-    SetString(_$_2f23[737], API[_$_2f23[445]], 1);
-    var y = (API[_$_2f23[211]] == 0) ? _$_2f23[78] : (API[_$_2f23[211]][_$_2f23[64]] == 1) ? _$_2f23[1157] : (API[_$_2f23[211]][_$_2f23[64]] == 2) ? _$_2f23[1295] : (API[_$_2f23[211]][_$_2f23[64]] == 3) ? _$_2f23[1296] : _$_2f23[1297];
-    SetString(_$_2f23[739], y, 1);
-    SetString(_$_2f23[741], API[_$_2f23[640]], 1);
-    SetString(_$_2f23[872], API[_$_2f23[641]], 1);
-    SetString(_$_2f23[874], API[_$_2f23[642]], 1);
-    SetString(_$_2f23[876], API[_$_2f23[643]], 2);
-    y = (API[_$_2f23[644]][_$_2f23[30]](_$_2f23[954]) < 0 && API[_$_2f23[644]] != _$_2f23[78]) ? _$_2f23[645] + API[_$_2f23[644]] : API[_$_2f23[644]];
-    SetString(_$_2f23[1210], y, 2);
-    SetString(_$_2f23[1214], STimemode[parseInt(API[_$_2f23[137]])], 3);
-    y = (API[_$_2f23[593]][_$_2f23[30]](_$_2f23[954]) < 0 && API[_$_2f23[593]] != _$_2f23[78]) ? _$_2f23[645] + API[_$_2f23[593]] : API[_$_2f23[593]];
-    SetString(_$_2f23[1215], y, 2);
-    y = (API[_$_2f23[646]] == _$_2f23[4]) ? _$_2f23[872] : API[_$_2f23[646]];
-    SetString(_$_2f23[1224], SSize[parseInt(y)], 3);
-    SetString(_$_2f23[1225], API[_$_2f23[647]], 2);
-    SetString(_$_2f23[1226], API[_$_2f23[648]], 2);
-    SetString(_$_2f23[1229], ASize1[parseInt(API[_$_2f23[649]])], 3);
-    SetString(_$_2f23[1232], ASize2[parseInt(API[_$_2f23[650]])], 3);
-    SetString(_$_2f23[1235], ASize3[parseInt(API[_$_2f23[651]])], 3);
-    y = (API[_$_2f23[217]] == _$_2f23[78] || API[_$_2f23[217]] == _$_2f23[629]) ? _$_2f23[1236] : _$_2f23[1237];
-    SetString(_$_2f23[1238], y, 3);
-    y = (API[_$_2f23[217]] == _$_2f23[78] || API[_$_2f23[217]] == _$_2f23[411]) ? _$_2f23[1239] : _$_2f23[1240];
-    SetString(_$_2f23[1241], y, 2);
-    SetString(_$_2f23[1247], API[_$_2f23[441]], 2);
-    SetString(_$_2f23[1254], API[_$_2f23[440]], 2);
-    y = (API[_$_2f23[652]] == _$_2f23[411]) ? _$_2f23[1239] : _$_2f23[1240];
-    SetString(_$_2f23[1255], y, 2);
-    y = (API[_$_2f23[653]] == _$_2f23[411]) ? _$_2f23[1239] : _$_2f23[1240];
-    SetString(_$_2f23[1256], y, 2);
-    y = (API[_$_2f23[654]] == _$_2f23[411]) ? _$_2f23[1239] : _$_2f23[1240];
-    SetString(_$_2f23[1248], y, 2);
-    SetString(_$_2f23[1261], API[_$_2f23[655]], 2);
-    SetString(_$_2f23[1275], API[_$_2f23[656]], 1);
-    SetString(_$_2f23[1276], _$_2f23[1240], 2);
-    RunIme(_$_2f23[78]);
-    SetStyle2(_$_2f23[78])
+    var u = "<div id=\"allInput\"><form><span> URL of the current playlist : <font style=\"color:#00ccff;font-size:17px;\">\"" + "hidden link" + "</font>" + "\"</span></form><form><span> URL of the Main playlist : </span></form><form><input id=\"0\" type=\"text\" size=\"" + G + "\" maxlength=\"200\"></input></form>";
+    u += "<form><span> URL of the hidden playlist : </span></form><form><input id=\"1\" type=\"text\" size=\"" + G + "\" maxlength=\"200\"></input></form>";
+    u += "<form><span id=\"text_form3\"> Login for hidden playlist :</span><input id=\"2\" type=\"text\" size=\"" + E
+		+ "\" maxlength=\"40\"></input></form><form><span id=\"text_form3\">Pass for hidden playlist :</span><input id=\"3\" type=\"text\" size=\"" + E
+		+ "\" maxlength=\"40\"></input></form><form><span id=\"text_form3\">UDP proxy ( IP : port ) :</span><input id=\"4\" type=\"text\" size=\"" + E
+		+ "\" maxlength=\"40\"></input></form><form><span id=\"text_form0\">Access code to \"XXX\" ( 0 - 9999 ) : </span><input id=\"5\" type=\"text\" size=\"" + R
+		+ "\" maxlength=\"4\"></input></form><form><span id=\"text_form0\">Code of Fav. name  ( 0 - 9999 ) :</span><input id=\"6\" type=\"text\" size=\"" + R
+		+ "\" maxlength=\"4\"></input></form><form><span>Names of Fav. folders, any, order</span></form><form><span>( name 1 | name 2 | name 3 . . . ) : </span></form><form><input id=\"7\" type=\"text\" size=\"" + G
+		+ "\" maxlength=\"200\"></input></form><form><span id=\"text_form0\"> Yandex region code ( \"213\"- Moscow ) : </span><input id=\"8\" type=\"text\" size=\"" + R
+		+ "\" maxlength=\"7\"></input></form><form><span id=\"text_form1\">EPG from \"m.tv.yandex.</span><img src=\"img/buttons/lr_m.png\"></img><div id=\"9\"></div></form><form><span id=\"text_form1\">EPG Shift time (+/-12 h.)</span><img src=\"img/buttons/lr_m.png\"></img><div id=\"10\"></div></form><form><span id=\"text_form2\">Widget Time : </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"11\"></div></form><form><span id=\"text_form1\">Time zone for \"auto.\" ( +/-12 h.)</span><img src=\"img/buttons/lr_m.png\"></img><div id=\"12\"></div></form><form><span id=\"text_form2\">Starting video size : </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"13\"></div></form><form><span id=\"text_form1\">\"X-ZOOM\" height 50 - 150 ( % )</span><img src=\"img/buttons/lr_m.png\"></img><div id=\"14\"></div></form><form><span id=\"text_form1\">\"X-ZOOM\" width 50 - 150 ( % ) </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"15\"></div></form><form><span id=\"text_form2\">AUTO for w/h<1.35 </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"16\"></div></form><form><span id=\"text_form2\">AUTO for 1.34 < w/h <1.79 </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"17\"></div></form><form><span id=\"text_form2\">AUTO for  w/h > 1.78 </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"18\"></div></form><form><span id=\"text_form2\">Icons shape :</span><img src=\"img/buttons/lr_m.png\"></img><div id=\"19\"></div></form><form><span id=\"text_form1\">External icons :</span><img src=\"img/buttons/lr_m.png\"></img><div id=\"20\"></div></form><form><span>Total buffer size 0.5 - 20 ( Mb.).</span></form><form><span id=\"text_form1\">\"0\"- auto or from the playlist :</span><img src=\"img/buttons/lr_m.png\"></img><div id=\"21\"></div></form><form><span>Start playback after reading </span></form><form><span> from 10 to 50 ( % ) of total buffer size.</span></form><form><span id=\"text_form1\">\"0\"- auto or from the playlist :</span><img src=\"img/buttons/lr_m.png\"></img><div id=\"22\"></div></form><form><span id=\"text_form1\">Bottom help panel  </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"23\"></div></form><form><span id=\"text_form1\">Post MAC address </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"24\"></div></form><form><span id=\"text_form1\">Masking a TV browser </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"25\"></div></form><form><span id=\"text_form1\">Limit the video quality </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"26\"></div></form><form><span id=\"text_form1\">Choose Weather Forecast for </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"27\"></div></form><form><span id=\"text_form1\">Reset to default </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"28\"></div></form><form></form><form></form><form></form><form></form><form></form><form></form><form></form><form></form></div>";
+    widgetAPI.putInnerHTML(getId("infoList"), u);
+    SetString("0", API.star_url, 1);
+    SetString("1", API.Surl, 1);
+    SetString("2", API.Login, 1);
+    SetString("3", API.Pasword, 1);
+    SetString("4", API.Proxy, 1);
+    var y = (API.Xcode == 0) ? "0" : (API.Xcode.length == 1) ? "#" : (API.Xcode.length == 2) ? "##" : (API.Xcode.length == 3) ? "###" : "####";
+    SetString("5", y, 1);
+    SetString("6", API.Scode, 1);
+    SetString("7", API.Favname, 1);
+    SetString("8", API.CODE, 1);
+    SetString("9", API.REG, 2);
+    y = (API.Timeshift.indexOf("-") < 0 && API.Timeshift != "0") ? "+" + API.Timeshift : API.Timeshift;
+    SetString("10", y, 2);
+    SetString("11", STimemode[parseInt(API.Timemode)], 3);
+    y = (API.Timefix.indexOf("-") < 0 && API.Timefix != "0") ? "+" + API.Timefix : API.Timefix;
+    SetString("12", y, 2);
+    y = (API.Size == "") ? "7" : API.Size;
+    SetString("13", SSize[parseInt(y)], 3);
+    SetString("14", API.Ph, 2);
+    SetString("15", API.Pw, 2);
+    SetString("16", ASize1[parseInt(API.a_size1)], 3);
+    SetString("17", ASize2[parseInt(API.a_size2)], 3);
+    SetString("18", ASize3[parseInt(API.a_size3)], 3);
+    y = (API.Forma == "0" || API.Forma == "2") ? "square" : "rectangular";
+    SetString("19", y, 3);
+    y = (API.Forma == "0" || API.Forma == "1") ? "on" : "off";
+    SetString("20", y, 2);
+    SetString("21", API.Buffer, 2);
+    SetString("22", API.Ibuffer, 2);
+    y = (API.Pstyle == "1") ? "on" : "off";
+    SetString("23", y, 2);
+    y = (API.Mac == "1") ? "on" : "off";
+    SetString("24", y, 2);
+    y = (API.Header == "1") ? "on" : "off";
+    SetString("25", y, 2);
+    SetString("26", API.Vquality, 2);
+    SetString("27", API.Cityname, 1);
+    SetString("28", "off", 2);
+    RunIme("0");
+    SetStyle2("0")
 };
+
 SetString = function (p, o, i) {
-    if (o == _$_2f23[4]) {
-        o = _$_2f23[271]
+    if (o == "") {
+        o = " "
     };
-    widgetAPI[_$_2f23[216]](getId(p), o);
-    getId(p)[_$_2f23[1153]] = o;
+    widgetAPI.putInnerHTML(getId(p), o);
+    getId(p).value = o;
     if (i == 1) {
         SetStyle1(p)
     } else {
         if (i == 2) {
             SetStyle1(p);
-            getId(p)[_$_2f23[123]][_$_2f23[230]] = _$_2f23[1298]
+            getId(p).style.width = "52px"
         } else {
             if (i == 3) {
                 SetStyle1(p);
-                getId(p)[_$_2f23[123]][_$_2f23[230]] = _$_2f23[133]
+                getId(p).style.width = "120px"
             }
         }
     }
 };
+
 SetStyle1 = function (i) {
-    getId(i)[_$_2f23[123]][_$_2f23[275]] = _$_2f23[1299];
-    getId(i)[_$_2f23[123]][_$_2f23[204]] = _$_2f23[1300];
-    getId(i)[_$_2f23[123]][_$_2f23[1301]] = _$_2f23[1302]
+    getId(i).style.color = "black";
+    getId(i).style.background = "#999999";
+    getId(i).style.border = "2px solid #ffffff"
 };
+
 SetStyle2 = function (i) {
-    getId(i)[_$_2f23[123]][_$_2f23[275]] = _$_2f23[1303];
-    getId(i)[_$_2f23[123]][_$_2f23[204]] = _$_2f23[1304];
-    getId(i)[_$_2f23[123]][_$_2f23[1301]] = _$_2f23[1305]
+    getId(i).style.color = "blue";
+    getId(i).style.background = "#eeeeee";
+    getId(i).style.border = "2px solid #999999"
 };
+
 Return = function (i) {
-    widgetAPI[_$_2f23[846]](event);
-    if (API[_$_2f23[239]][_$_2f23[64]] > 0 && API[_$_2f23[68]] == Main[_$_2f23[152]] && i == 0) {
-        Main[_$_2f23[135]]()
+    widgetAPI.blockNavigation(event);
+    if (API.channels.length > 0 && API.XML_URL == Main.pre_pl_url && i == 0) {
+        Main.Menu()
     } else {
-        location[_$_2f23[1306]](true)
+        location.reload(true)
     }
 };
+
+/*Iejus i nustatymus?*/
 onEnter = function () {
     try {
-        var bi = getId(_$_2f23[1276])[_$_2f23[1153]];
-        if (bi == _$_2f23[1239]) {
-            var o = [_$_2f23[209], _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[4], _$_2f23[78], _$_2f23[78], _$_2f23[1307], _$_2f23[630], _$_2f23[631], _$_2f23[78], _$_2f23[78], _$_2f23[78], _$_2f23[4], _$_2f23[628], _$_2f23[628], _$_2f23[629], _$_2f23[78], _$_2f23[78], _$_2f23[78], _$_2f23[78], _$_2f23[78], _$_2f23[411], _$_2f23[411], _$_2f23[78], _$_2f23[634], _$_2f23[633]]
+        var bi = getId("28").value;
+        if (bi == "on") {
+            var o = ["start.xml", "", "", "", "", "0", "0", "Main|IP-TV|Films|Series", 213, "ru", "0", "0", "0", "", "100", "100", "2", "0", "0", "0", "0", "0", "1", "1", "0", "360p", "London"]
         } else {
-            var N = lrdPr(getId(_$_2f23[78])[_$_2f23[1153]]);
-            var bh = lrdPr(getId(_$_2f23[629])[_$_2f23[1153]]);
-            var bf = lrdPr(getId(_$_2f23[734])[_$_2f23[1153]]);
-            var bb = (dPr(bh) != _$_2f23[4] && dPr(bf) != _$_2f23[4]) ? lrdPr(getId(_$_2f23[411])[_$_2f23[1153]]) : bb = _$_2f23[4];
-            var Z = lrdPr(getId(_$_2f23[737])[_$_2f23[1153]]);
-            var y = dPr(getId(_$_2f23[739])[_$_2f23[1153]]);
-            y = (API[_$_2f23[211]] != 0 && (y == API[_$_2f23[211]] || y == Main[_$_2f23[198]][_$_2f23[447]](2))) ? _$_2f23[78] : (API[_$_2f23[211]] != 0) ? API[_$_2f23[211]] : y;
-            var E = dPr(getId(_$_2f23[741])[_$_2f23[1153]]);
-            var D = lrdPr(getId(_$_2f23[872])[_$_2f23[1153]]);
-            var s = dPr(getId(_$_2f23[874])[_$_2f23[1153]]);
-            var K = getId(_$_2f23[876])[_$_2f23[1153]];
-            var q = getId(_$_2f23[1210])[_$_2f23[1153]];
-            var l = getId(_$_2f23[1214])[_$_2f23[1153]];
+            var N = lrdPr(getId("0").value);
+            var bh = lrdPr(getId("2").value);
+            var bf = lrdPr(getId("3").value);
+            var bb = (dPr(bh) != "" && dPr(bf) != "") ? lrdPr(getId("1").value) : bb = "";
+            var Z = lrdPr(getId("4").value);
+            var y = dPr(getId("5").value);
+            y = (API.Xcode != 0 && (y == API.Xcode || y == Main.ver.substr(2))) ? "0" : (API.Xcode != 0) ? API.Xcode : y;
+            var E = dPr(getId("6").value);
+            var D = lrdPr(getId("7").value);
+            var s = dPr(getId("8").value);
+            var K = getId("9").value;
+            var q = getId("10").value;
+            var l = getId("11").value;
             for (var bg in STimemode) {
                 if (STimemode[bg] == l) {
-                    l = bg[_$_2f23[298]]();
+                    l = bg.toString();
                     break
                 }
             };
-            var bd = getId(_$_2f23[1215])[_$_2f23[1153]];
-            var p = getId(_$_2f23[1224])[_$_2f23[1153]];
+            var bd = getId("12").value;
+            var p = getId("13").value;
             for (var bg in SSize) {
                 if (SSize[bg] == p) {
-                    p = bg[_$_2f23[298]]();
+                    p = bg.toString();
                     break
                 }
             };
-            p = (p == _$_2f23[872]) ? _$_2f23[4] : p;
-            var z = getId(_$_2f23[1225])[_$_2f23[1153]];
-            var G = getId(_$_2f23[1226])[_$_2f23[1153]];
-            var R = getId(_$_2f23[1229])[_$_2f23[1153]];
+            p = (p == "7") ? "" : p;
+            var z = getId("14").value;
+            var G = getId("15").value;
+            var R = getId("16").value;
             for (var bg in ASize1) {
                 if (ASize1[bg] == R) {
-                    R = bg[_$_2f23[298]]();
+                    R = bg.toString();
                     break
                 }
             };
-            var u = getId(_$_2f23[1232])[_$_2f23[1153]];
+            var u = getId("17").value;
             for (var bg in ASize2) {
                 if (ASize2[bg] == u) {
-                    u = bg[_$_2f23[298]]();
+                    u = bg.toString();
                     break
                 }
             };
-            var br = getId(_$_2f23[1235])[_$_2f23[1153]];
+            var br = getId("18").value;
             for (var bg in ASize3) {
                 if (ASize3[bg] == br) {
-                    br = bg[_$_2f23[298]]();
+                    br = bg.toString();
                     break
                 }
             };
-            var M = getId(_$_2f23[1238])[_$_2f23[1153]];
-            var J = getId(_$_2f23[1241])[_$_2f23[1153]];
-            M = (M == _$_2f23[1236] && J == _$_2f23[1239]) ? _$_2f23[78] : (M == _$_2f23[1237] && J == _$_2f23[1239]) ? _$_2f23[411] : (M == _$_2f23[1236] && J == _$_2f23[1240]) ? _$_2f23[629] : _$_2f23[734];
-            var i = getId(_$_2f23[1247])[_$_2f23[1153]];
-            var L = getId(_$_2f23[1254])[_$_2f23[1153]];
-            var I = getId(_$_2f23[1255])[_$_2f23[1153]];
-            I = (I == _$_2f23[1239]) ? _$_2f23[411] : _$_2f23[78];
-            var bm = getId(_$_2f23[1256])[_$_2f23[1153]];
-            bm = (bm == _$_2f23[1239]) ? _$_2f23[411] : _$_2f23[78];
-            var bk = getId(_$_2f23[1248])[_$_2f23[1153]];
-            bk = (bk == _$_2f23[1239]) ? _$_2f23[411] : _$_2f23[78];
-            var bj = getId(_$_2f23[1261])[_$_2f23[1153]];
-            var bs = lrdPr(getId(_$_2f23[1275])[_$_2f23[1153]]);
+            var M = getId("19").value;
+            var J = getId("20").value;
+            M = (M == "square" && J == "on")
+				? "0"
+				: (M == "rectangular" && J == "on")
+					? "1"
+					: (M == "square" && J == "off")
+						? "2"
+						: "3";
+            var i = getId("21").value;
+            var L = getId("22").value;
+            var I = getId("23").value;
+            I = (I == "on") ? "1" : "0";
+            var bm = getId("24").value;
+            bm = (bm == "on") ? "1" : "0";
+            var bk = getId("25").value;
+            bk = (bk == "on") ? "1" : "0";
+            var bj = getId("26").value;
+            var bs = lrdPr(getId("27").value);
             o = [N, bb, bh, bf, Z, y, E, D, s, K, q, l, bd, p, z, G, R, u, br, M, i, L, I, bm, bk, bj, bs]
         };
-        Main[_$_2f23[472]](o, API[_$_2f23[635]]);
-        API[_$_2f23[48]]();
-        if (K != API[_$_2f23[643]]) {
+        Main.writeFile(o, API.fn);
+        API.init();
+        if (K != API.REG) {
             Return(1)
         } else {
             Return(0)
@@ -7010,90 +7250,153 @@ onEnter = function () {
 
 function setGen() {
     var i = [];
-    if (Main[_$_2f23[1308]]) {
-        i = [API[_$_2f23[702]], API[_$_2f23[704]]];
-        Main[_$_2f23[472]](i, _$_2f23[1309] + API[_$_2f23[635]])
+    if (Main.write) {
+        i = [API.GenUrl, API.GenT];
+        Main.writeFile(i, "01" + API.fn)
     } else {
-        Main[_$_2f23[466]](i, _$_2f23[1309] + API[_$_2f23[635]]);
-        if (i[_$_2f23[64]] > 0) {
-            API[_$_2f23[702]] = i[0];
-            API[_$_2f23[704]] = i[1]
+        Main.readFile(i, "01" + API.fn);
+        if (i.length > 0) {
+            API.GenUrl = i[0];
+            API.GenT = i[1]
         }
     };
-    if (dPr(API[_$_2f23[702]]) != _$_2f23[4] && dPr(API[_$_2f23[704]]) != _$_2f23[4]) {
+    if (dPr(API.GenUrl) != "" && dPr(API.GenT) != "") {
         AGen()
     }
 }
+
+/**
+ * Set the element with the specified id display style to 'block'
+ * @param {string} i The element id
+ * @return {Object}
+ */
 function getIdb(i) {
     try {
-        return getId(i)[_$_2f23[123]][_$_2f23[1310]] = _$_2f23[1311]
+        return getId(i).style.display = "block"
     } catch (b) {
-        return _$_2f23[4]
+        return ""
     }
 }
+
+/**
+ * Set the element with the specified id display style to 'none'
+ * @param {string} i The element id
+ * @return {Object}
+ */
 function getIdn(i) {
     try {
-        return getId(i)[_$_2f23[123]][_$_2f23[1310]] = _$_2f23[1312]
+        return getId(i).style.display = "none"
     } catch (b) {
-        return _$_2f23[4]
+        return ""
     }
 }
+
+/**
+ * Get the element with the specified id
+ * @param {string} i The element id
+ * @return {Object} The document element
+ */
 function getId(i) {
     try {
-        return document[_$_2f23[323]](i)
+        return document.getElementById(i)
     } catch (b) {
-        return _$_2f23[4]
+        return ""
     }
 }
+
+/**
+ * Get all elements with the specified tag name
+ * @param {string} i The elements tag name
+ * @return {Object} The document elements
+ */
 function getTN(i) {
     try {
-        return document[_$_2f23[714]](i)
+        return document.getElementsByTagName(i)
     } catch (b) {
-        return _$_2f23[4]
+        return ""
     }
 }
+
+/**
+ * Get all elements with the specified class name
+ * @param {string} i The elements class name
+ * @return {Object} The document elements
+ */
 function getCl(i) {
     try {
-        return document[_$_2f23[1313]](i)
+        return document.getElementsByClassName(i)
     } catch (b) {
-        return _$_2f23[4]
+        return ""
     }
 }
+
+/**
+ * Get API channel
+ * @param {number} i Channel info number (0 - name, 1 - url, 2 - logo, ...)
+ * @return
+ */
 function Ach(i) {
     try {
-        return API[_$_2f23[239]][Main[_$_2f23[101]]][i]
+        return API.channels[Main.chan_array_index][i]
     } catch (b) {
-        return _$_2f23[4]
+        return ""
     }
 }
+
+/**
+ * Remove '|' symbol from string
+ * @param {string} o
+ * @return {string}
+ */
 function dI(o) {
-    var i = (typeof o == _$_2f23[314] && o != _$_2f23[4]) ? o[_$_2f23[272]](/\|/g, _$_2f23[4]) : _$_2f23[4];
+    var i = (typeof o == "string" && o != "") ? o.replace(/\|/g, "") : "";
     return i
 }
+
+/**
+ * Remove '/>' or '>' (close tag's) from string
+ * @param {string} o
+ * @return {string}
+ */
 function dTg(o) {
-    var i = (typeof o == _$_2f23[314] && o != _$_2f23[4]) ? o[_$_2f23[272]](/<\/?[^>]+>/g, _$_2f23[4]) : _$_2f23[4];
+    var i = (typeof o == "string" && o != "") ? o.replace(/<\/?[^>]+>/g, "") : "";
     return i
 }
+
+/**
+ * Remove '\n', '\r' and '\t' (newlines, tabs) from string
+ * @param {string} o
+ * @return {string}
+ */
 function dSp(o) {
-    var i = (typeof o == _$_2f23[314] && o != _$_2f23[4]) ? o[_$_2f23[272]](/[\n\r\t]/g, _$_2f23[4]) : _$_2f23[4];
+    var i = (typeof o == "string" && o != "") ? o.replace(/[\n\r\t]/g, "") : "";
     return i
 }
+
+/**
+ * Remove whitespaces from string begin and end, then remove '\n', '\r' and '\t' (newlines, tabs)
+ * @param {string} o
+ * @return {string}
+ */
 function lrdPr(o) {
-    var i = (typeof o == _$_2f23[314] && o != _$_2f23[4]) ? o[_$_2f23[272]](/(^\s*)|(\s*)$/g, _$_2f23[4])[_$_2f23[272]](/[\n\r\t]/g, _$_2f23[4]) : _$_2f23[4];
+    var i = (typeof o == "string" && o != "") ? o.replace(/(^\s*)|(\s*)$/g, "").replace(/[\n\r\t]/g, "") : "";
     return i
 }
+
 function dPr(o, p) {
-    var i = (typeof o == _$_2f23[314] && o != _$_2f23[4]) ? o[_$_2f23[272]](/\s/g, _$_2f23[4]) : _$_2f23[4];
+    var i = (typeof o == "string" && o != "") ? o.replace(/\s/g, "") : "";
     if (p == 1) {
-        i = (!isNaN(i)) ? i : _$_2f23[4]
+        i = (!isNaN(i)) ? i : ""
     };
     return i
 }
+
 function xhrAbort() {
-    null != API[_$_2f23[678]] && (API[_$_2f23[678]][_$_2f23[710]](), API[_$_2f23[678]][_$_2f23[679]](), API[_$_2f23[678]] = null)
+    null != API.XHRObj && (API.XHRObj.abort(), API.XHRObj.destroy(), API.XHRObj = null)
 }
+
 function decodeURI(i) {
-    for (var o = 0; i[_$_2f23[30]](_$_2f23[1012]) >= 0 && 10 > o; o++) {
+    for (var o = 0; i.indexOf("%") >= 0 && 10 > o; o++) {
         try {
             i = decodeURIComponent(i)
         } catch (c) {
@@ -7106,65 +7409,68 @@ function decodeURI(i) {
     };
     return i
 }
+
 function signa(i) {
-    i = i[_$_2f23[272]](_$_2f23[1314], _$_2f23[4]);
-    b = _$_2f23[1315] + API[_$_2f23[69]](_$_2f23[1316] + i);
+    i = i.replace("s=", "");
+    b = "signature=" + API.Request("http://185.25.119.98/php/youtubesign/youtube.php?sig=" + i);
     return b
 }
+
 function PsR(i, o, p) {
     if (dPr(i) && void(0) !== o) {
         if (o) {
-            var q = i[_$_2f23[30]](o)
-        }; - 1 != q ? (i = i[_$_2f23[447]](q + o[_$_2f23[64]]), p && (q = i[_$_2f23[30]](p), -1 != q && (i = i[_$_2f23[447]](0, q)))) : i = _$_2f23[4]
+            var q = i.indexOf(o)
+        }; - 1 != q ? (i = i.substr(q + o.length), p && (q = i.indexOf(p), -1 != q && (i = i.substr(0, q)))) : i = ""
     };
     return i
 }
+
 function getYoutubeUrl1(i) {
-    var y = _$_2f23[4];
-    for (var o = 0; o < i[_$_2f23[64]]; o++) {
-        var p = PsR(i[o], _$_2f23[1317], _$_2f23[387]);
+    var y = "";
+    for (var o = 0; o < i.length; o++) {
+        var p = PsR(i[o], "itag%3D", "%26");
         if (p) {
-            var q = _$_2f23[4];
+            var q = "";
             switch (p) {
-            case _$_2f23[1319]:
-                q = _$_2f23[1318];
+            case "121":
+                q = "HD 1080p.mp4";
                 break;
-            case _$_2f23[1320]:
-                q = _$_2f23[1318];
+            case "37":
+                q = "HD 1080p.mp4";
                 break;
-            case _$_2f23[1322]:
-                q = _$_2f23[1321];
+            case "120":
+                q = "HD 720p.mp4";
                 break;
-            case _$_2f23[1254]:
-                q = _$_2f23[1321];
+            case "22":
+                q = "HD 720p.mp4";
                 break;
-            case _$_2f23[1324]:
-                q = _$_2f23[1323];
+            case "84":
+                q = "HD 720p.h264";
                 break;
-            case _$_2f23[1250]:
-                q = _$_2f23[1325];
+            case "35":
+                q = "480p.flv";
                 break;
-            case _$_2f23[1235]:
-                q = _$_2f23[1326];
+            case "18":
+                q = "360p.mp4";
                 break;
-            case _$_2f23[1328]:
-                q = _$_2f23[1327]
+            case "36":
+                q = "240p.mp4"
             };
             if (q) {
-                var j = i[o][_$_2f23[305]](_$_2f23[387]);
-                i[o] = _$_2f23[4];
-                for (var l = _$_2f23[4], s = _$_2f23[4], bx = 0; bx < j[_$_2f23[64]]; bx++) {
-                    if (j[bx] && (j[bx] = decodeURI(j[bx]), 0 == j[bx][_$_2f23[30]](_$_2f23[1329]) ? l = j[bx] : 0 == j[bx][_$_2f23[30]](_$_2f23[1330]) || 0 == j[bx][_$_2f23[30]](_$_2f23[1315]) ? s = j[bx] : 0 == j[bx][_$_2f23[30]](_$_2f23[1314]) && (s = signa(j[bx]))), l && (l[_$_2f23[30]](_$_2f23[1330]) > 0 || l[_$_2f23[30]](_$_2f23[1315]) > 0 || l[_$_2f23[30]](_$_2f23[1331]) > 0)) {
-                        if (l[_$_2f23[30]](_$_2f23[1331]) >= 0) {
-                            var u = l[_$_2f23[305]](_$_2f23[1331])[1];
-                            i[o] = u[0][_$_2f23[272]](_$_2f23[1329], _$_2f23[4]) + _$_2f23[388] + DYce(u[1][_$_2f23[305]](_$_2f23[388])[0])
+                var j = i[o].split("%26");
+                i[o] = "";
+                for (var l = "", s = "", bx = 0; bx < j.length; bx++) {
+                    if (j[bx] && (j[bx] = decodeURI(j[bx]), 0 == j[bx].indexOf("url=") ? l = j[bx] : 0 == j[bx].indexOf("sig=") || 0 == j[bx].indexOf("signature=") ? s = j[bx] : 0 == j[bx].indexOf("s=") && (s = signa(j[bx]))), l && (l.indexOf("sig=") > 0 || l.indexOf("signature=") > 0 || l.indexOf("&s=") > 0)) {
+                        if (l.indexOf("&s=") >= 0) {
+                            var u = l.split("&s=")[1];
+                            i[o] = u[0].replace("url=", "") + "&" + DYce(u[1].split("&")[0])
                         } else {
-                            i[o] = l[_$_2f23[272]](_$_2f23[1329], _$_2f23[4])[_$_2f23[272]](_$_2f23[1330], _$_2f23[1315])
+                            i[o] = l.replace("url=", "").replace("sig=", "signature=")
                         };
                         break
                     };
                     if (l && s) {
-                        i[o] = l[_$_2f23[272]](_$_2f23[1329], _$_2f23[4]) + _$_2f23[388] + s[_$_2f23[272]](_$_2f23[1330], _$_2f23[1315]);
+                        i[o] = l.replace("url=", "") + "&" + s.replace("sig=", "signature=");
                         break
                     }
                 };
@@ -7172,16 +7478,16 @@ function getYoutubeUrl1(i) {
                     continue
                 };
                 r = [i[o], q];
-                Main[_$_2f23[58]][_$_2f23[355]](r)
+                Main.url_arr.push(r)
             };
-            if (q[_$_2f23[30]](API[_$_2f23[655]]) > -1) {
+            if (q.indexOf(API.Vquality) > -1) {
                 y = i[o];
-                Selectbox[_$_2f23[403]] = Main[_$_2f23[58]][_$_2f23[64]] - 1
+                Selectbox.url_selected = Main.url_arr.length - 1
             };
-            if (Main[_$_2f23[58]][_$_2f23[64]] > 0 && y == _$_2f23[4]) {
-                y = Main[_$_2f23[58]][0][0]
+            if (Main.url_arr.length > 0 && y == "") {
+                y = Main.url_arr[0][0]
             };
-            if (_$_2f23[1327] == q) {
+            if ("240p.mp4" == q) {
                 break
             }
         } else {
@@ -7192,75 +7498,76 @@ function getYoutubeUrl1(i) {
     };
     return y
 }
+
 function getYoutubeUrl(G) {
-    var D = [_$_2f23[1332], _$_2f23[1333], _$_2f23[1334], _$_2f23[4]];
-    var l = _$_2f23[4];
-    var y = _$_2f23[4];
+    var D = ["&el=embedded", "&el=detailpage", "&el=vevo", ""];
+    var l = "";
+    var y = "";
     var ca = false;
-    for (var u = 0; u < D[_$_2f23[64]]; u++) {
+    for (var u = 0; u < D.length; u++) {
         var j = D[u];
-        var q = _$_2f23[1335] + G + j + _$_2f23[1336];
-        API[_$_2f23[146]] = false;
-        var l = API[_$_2f23[69]](q);
-        l = l[_$_2f23[537]](/url_encoded_fmt_stream_map=(.*?)&/);
+        var q = "http://www.youtube.com/get_video_info?&video_id=" + G + j + "&ps=default&eurl=&gl=US&hl=en";
+        API.AsReqMode = false;
+        var l = API.Request(q);
+        l = l.match(/url_encoded_fmt_stream_map=(.*?)&/);
         if (l != null) {
-            if (l[1][_$_2f23[30]](_$_2f23[1337]) >= 0) {
-                var i = l[1][_$_2f23[305]](_$_2f23[1338]);
-                if (decLongUrl(i[0])[_$_2f23[30]](_$_2f23[1339]) > -1) {
-                    i[_$_2f23[478]](0, 1)
+            if (l[1].indexOf("itag") >= 0) {
+                var i = l[1].split("%2C");
+                if (decLongUrl(i[0]).indexOf("itag=43") > -1) {
+                    i.splice(0, 1)
                 };
-                if (decLongUrl(i[1])[_$_2f23[30]](_$_2f23[1339]) > -1) {
-                    i[_$_2f23[478]](1, 1)
+                if (decLongUrl(i[1]).indexOf("itag=43") > -1) {
+                    i.splice(1, 1)
                 };
-                for (var s = 0; s < i[_$_2f23[64]]; s++) {
+                for (var s = 0; s < i.length; s++) {
                     i[s] = decLongUrl(i[s]);
-                    var E = parser(i[s], _$_2f23[1340], _$_2f23[388]);
-                    if (E != _$_2f23[4]) {
-                        var R = _$_2f23[4];
+                    var E = parser(i[s], "itag=", "&");
+                    if (E != "") {
+                        var R = "";
                         var o = [];
                         switch (E) {
-                        case _$_2f23[1254]:
-                            R = _$_2f23[1259];
+                        case "22":
+                            R = "720p";
                             break;
-                        case _$_2f23[1235]:
-                            R = _$_2f23[1258];
+                        case "18":
+                            R = "480p";
                             break;
-                        case _$_2f23[739]:
-                            R = _$_2f23[634];
+                        case "5":
+                            R = "360p";
                             break;
-                        case _$_2f23[1328]:
-                            R = _$_2f23[1257];
+                        case "36":
+                            R = "240p";
                             break
                         };
-                        if (R != _$_2f23[4]) {
-                            i[s] = i[s][_$_2f23[272]](_$_2f23[1340] + E + _$_2f23[388], _$_2f23[4]);
-                            if (i[s][_$_2f23[30]](_$_2f23[1341]) > 0) {
-                                var p = i[s][_$_2f23[305]](_$_2f23[1341]);
+                        if (R != "") {
+                            i[s] = i[s].replace("itag=" + E + "&", "");
+                            if (i[s].indexOf("&url=") > 0) {
+                                var p = i[s].split("&url=");
                                 i[s] = p[1]
                             } else {
-                                i[s] = i[s][_$_2f23[272]](_$_2f23[1329], _$_2f23[4])
+                                i[s] = i[s].replace("url=", "")
                             };
                             o = [i[s], R];
-                            Main[_$_2f23[58]][_$_2f23[355]](o);
-                            if (Main[_$_2f23[198]] > 2.53 && R[_$_2f23[30]](API[_$_2f23[655]]) > -1) {
+                            Main.url_arr.push(o);
+                            if (Main.ver > 2.53 && R.indexOf(API.Vquality) > -1) {
                                 ca = true;
                                 y = i[s];
-                                Selectbox[_$_2f23[403]] = Main[_$_2f23[58]][_$_2f23[64]] - 1
+                                Selectbox.url_selected = Main.url_arr.length - 1
                             };
                             if (ca == false) {
-                                if (R[_$_2f23[30]](API[_$_2f23[655]]) < 0) {
+                                if (R.indexOf(API.Vquality) < 0) {
                                     y = i[s];
                                     ca = true
                                 }
                             }
                         };
-                        if (R == _$_2f23[1257]) {
+                        if (R == "240p") {
                             break
                         }
                     }
                 };
-                if (Main[_$_2f23[58]][_$_2f23[64]] > 0 && y == _$_2f23[4]) {
-                    y = Main[_$_2f23[58]][1][1]
+                if (Main.url_arr.length > 0 && y == "") {
+                    y = Main.url_arr[1][1]
                 }
             };
             break
@@ -7268,53 +7575,54 @@ function getYoutubeUrl(G) {
     };
     return y
 }
+
 function getVkUrl(D) {
-    var u = _$_2f23[4];
-    var q = _$_2f23[4];
+    var u = "";
+    var q = "";
     var i = [];
-    D = D[_$_2f23[272]](_$_2f23[1342], _$_2f23[1343]);
-    q = API[_$_2f23[69]](D);
-    var l = q[_$_2f23[537]](/var video_host = [\s\S]*(?=var video_title)/);
+    D = D.replace("vkontakte.ru", "vk.com");
+    q = API.Request(D);
+    var l = q.match(/var video_host = [\s\S]*(?=var video_title)/);
     if (l != null) {
-        var p = l[0][_$_2f23[272]](/[';]/g, _$_2f23[4])[_$_2f23[305]](_$_2f23[717]);
-        if (p[_$_2f23[64]] == 6) {
+        var p = l[0].replace(/[';]/g, "").split("\x0A");
+        if (p.length == 6) {
             for (j = 0; j < 5; j++) {
-                p[j] = dPr(p[j][_$_2f23[305]](_$_2f23[1344])[1])
+                p[j] = dPr(p[j].split("=")[1])
             };
             if (p[4] == 0 && p[3] == 0 && p[1] == 0) {
-                u = _$_2f23[7] + p[0] + _$_2f23[1345] + p[2] + parser(q, _$_2f23[1346], _$_2f23[388]) + _$_2f23[1347]
+                u = "http://" + p[0] + "/assets/video/" + p[2] + parser(q, "vkid=", "&") + ".vk.flv"
             } else {
                 if (p[4] == 0 && p[3] == 0) {
-                    u = p[0] + _$_2f23[1348] + p[1] + _$_2f23[1349] + p[2] + _$_2f23[409]
+                    u = p[0] + "u" + p[1] + "/videos/" + p[2] + ".flv"
                 } else {
                     for (var j = parseInt(p[4]); j > -1; j--) {
                         switch (j) {
                         case 3:
-                            o = _$_2f23[1350];
-                            s = _$_2f23[1351];
+                            o = "720.mp4";
+                            s = "720p.mp4";
                             break;
                         case 2:
-                            o = _$_2f23[1352];
-                            s = _$_2f23[1353];
+                            o = "480.mp4";
+                            s = "480p.mp4";
                             break;
                         case 1:
-                            o = _$_2f23[1354];
-                            s = _$_2f23[1326];
+                            o = "360.mp4";
+                            s = "360p.mp4";
                             break;
                         case 0:
-                            var o = _$_2f23[1355];
-                            var s = _$_2f23[1327];
+                            var o = "240.mp4";
+                            var s = "240p.mp4";
                             break
                         };
-                        i = [p[0] + _$_2f23[1348] + p[1] + _$_2f23[1349] + p[2] + _$_2f23[531] + o, s];
-                        Main[_$_2f23[58]][_$_2f23[355]](i);
-                        if (s[_$_2f23[30]](API[_$_2f23[655]]) > -1) {
+                        i = [p[0] + "u" + p[1] + "/videos/" + p[2] + "." + o, s];
+                        Main.url_arr.push(i);
+                        if (s.indexOf(API.Vquality) > -1) {
                             u = i[0];
-                            Selectbox[_$_2f23[403]] = Main[_$_2f23[58]][_$_2f23[64]] - 1
+                            Selectbox.url_selected = Main.url_arr.length - 1
                         }
                     };
-                    if (Main[_$_2f23[58]][_$_2f23[64]] > 0 && u == _$_2f23[4]) {
-                        u = Main[_$_2f23[58]][0][0]
+                    if (Main.url_arr.length > 0 && u == "") {
+                        u = Main.url_arr[0][0]
                     }
                 }
             }
@@ -7322,870 +7630,924 @@ function getVkUrl(D) {
     };
     return u
 }
+
 function getRuTubeUrl(D) {
-    var u = _$_2f23[4];
-    var q = _$_2f23[4];
+    var u = "";
+    var q = "";
     var i = [];
     var ca = false;
-    q = API[_$_2f23[69]](_$_2f23[1356] + D + _$_2f23[1357]);
-    D = q[_$_2f23[537]](/embed\/(.*?)"/);
-    q = API[_$_2f23[69]](_$_2f23[1358] + D[1]);
-    q = q[_$_2f23[305]](_$_2f23[1359]);
-    D = q[1][_$_2f23[537]](/"(.*?)"},/);
-    q = API[_$_2f23[69]](D[1]);
-    f = q[_$_2f23[537]](/http:\/\/(.*?)\n/g);
-    f[_$_2f23[1360]]();
-    for (var j = 0; j < f[_$_2f23[64]]; j++) {
+    q = API.Request("http://rutube.ru/api/oembed/?url=" + D + "&format=xml");
+    D = q.match(/embed\/(.*?)"/);
+    q = API.Request("http://rutube.ru/play/embed/" + D[1]);
+    q = q.split("\"m3u8\":");
+    D = q[1].match(/"(.*?)"},/);
+    q = API.Request(D[1]);
+    f = q.match(/http:\/\/(.*?)\n/g);
+    f.reverse();
+    for (var j = 0; j < f.length; j++) {
         switch (j) {
         case 0:
             v = f[0];
-            g = _$_2f23[1259];
+            g = "720p";
             break;
         case 1:
             v = f[1];
-            g = _$_2f23[1258];
+            g = "480p";
             break;
         case 2:
             v = f[2];
-            g = _$_2f23[634];
+            g = "360p";
             break;
         case 3:
             v = f[3];
-            g = _$_2f23[1257];
+            g = "240p";
             break
         };
-        i = [v + _$_2f23[449], g];
-        Main[_$_2f23[58]][_$_2f23[355]](i);
-        if (Main[_$_2f23[198]] > 2.53 && g[_$_2f23[30]](API[_$_2f23[655]]) > -1) {
+        i = [v + "|COMPONENT=HLS", g];
+        Main.url_arr.push(i);
+        if (Main.ver > 2.53 && g.indexOf(API.Vquality) > -1) {
             ca = true;
-            u = v + _$_2f23[449];
-            Selectbox[_$_2f23[403]] = Main[_$_2f23[58]][_$_2f23[64]] - 1
+            u = v + "|COMPONENT=HLS";
+            Selectbox.url_selected = Main.url_arr.length - 1
         };
         if (ca == false) {
-            if (g[_$_2f23[30]](API[_$_2f23[655]]) < 0) {
-                u = v + _$_2f23[449];
+            if (g.indexOf(API.Vquality) < 0) {
+                u = v + "|COMPONENT=HLS";
                 ca = true
             }
         }
     };
-    if (Main[_$_2f23[58]][_$_2f23[64]] > 0 && u == _$_2f23[4]) {
-        u = Main[_$_2f23[58]][0][0]
+    if (Main.url_arr.length > 0 && u == "") {
+        u = Main.url_arr[0][0]
     };
     return u
 }
+
 function EUROGetEPG(x) {
-    Main[_$_2f23[313]](_$_2f23[1361]);
-    var i = _$_2f23[4];
-    var j = _$_2f23[4];
+    Main.showinfoList("Loading EPG...");
+    var i = "";
+    var j = "";
     UKAbort();
-    Main[_$_2f23[1362]] = setTimeout(_$_2f23[1363], 3000);
-    Main[_$_2f23[1364]] = new XMLHttpRequest();
-    Main[_$_2f23[1364]][_$_2f23[564]] = function () {
-        if (Main[_$_2f23[1364]][_$_2f23[565]] == 4 && Main[_$_2f23[1364]][_$_2f23[53]] == 200) {
-            clearTimeout(Main[_$_2f23[1362]]);
-            i = Main[_$_2f23[1364]][_$_2f23[566]];
-            if (!Main[_$_2f23[102]]) {
-                Main[_$_2f23[313]](_$_2f23[1365]);
-                var Q = i[_$_2f23[305]](_$_2f23[717]);
-                alert(_$_2f23[1366] + Q[1]);
-                var bV = _$_2f23[1367];
-                var bG = _$_2f23[1368];
-                var bW = _$_2f23[1369];
-                var bF = _$_2f23[1370];
-                var bC = _$_2f23[1371];
+    Main.Ya_ready_timeout = setTimeout(function() { ukErr(); }, 3000);
+    Main.YaHTTP = new XMLHttpRequest();
+    Main.YaHTTP.onreadystatechange = function () {
+        if (Main.YaHTTP.readyState == 4 && Main.YaHTTP.status == 200) {
+            clearTimeout(Main.Ya_ready_timeout);
+            i = Main.YaHTTP.responseText;
+            if (!Main.guide) {
+                Main.showinfoList("Loaded!");
+                var Q = i.split("\x0A");
+                alert("J = " + Q[1]);
+                var bV = "<li><font style=\"color:#00ccff;\">";
+                var bG = "<li><font style=\"color:#ffcc00;\">";
+                var bW = "<li><font style=\"color:#ffeeee;\">";
+                var bF = "</font><font style=\"color:#CCCCCC;\">";
+                var bC = "</font></li>";
                 var bA;
-                var bJ = _$_2f23[1372];
+                var bJ = "<ul>";
                 var q = new Date();
-                var bx = addZero(q[_$_2f23[588]]());
-                var bD = addZero(q[_$_2f23[590]]());
-                for (bA = 0; bA < Q[_$_2f23[64]]; bA++) {
-                    var bH = Q[bA][_$_2f23[305]](_$_2f23[79]);
-                    var bU = bH[0][_$_2f23[305]](_$_2f23[271]);
+                var bx = addZero(q.getHours());
+                var bD = addZero(q.getMinutes());
+                for (bA = 0; bA < Q.length; bA++) {
+                    var bH = Q[bA].split("|");
+                    var bU = bH[0].split(" ");
                     var bz = bU[0];
                     var bB = bU[1];
-                    bJ += bV + bB + bF + _$_2f23[1373] + bH[1] + bC
+                    bJ += bV + bB + bF + "  " + bH[1] + bC
                 };
-                bJ += _$_2f23[1374];
-                Main[_$_2f23[313]](bJ)
+                bJ += "</ul>";
+                Main.showinfoList(bJ)
             }
         }
     };
-    Main[_$_2f23[1364]][_$_2f23[574]](_$_2f23[572], x + j, true);
-    Main[_$_2f23[1364]][_$_2f23[577]](_$_2f23[575], _$_2f23[576]);
-    Main[_$_2f23[1364]][_$_2f23[578]](null)
+    Main.YaHTTP.open("GET", x + j, true);
+    Main.YaHTTP.setRequestHeader("User-Agent", "Opera/9.80 (Windows NT 5.1; U; ru) Presto/2.9.168 Version/11.51");
+    Main.YaHTTP.send(null)
 }
+
 UKGetUrl = function (i, z) {
-    var j = _$_2f23[4];
+    var j = "";
     var bb = z;
-    if (bb[_$_2f23[30]](_$_2f23[1375]) >= 0) {
-        alert(_$_2f23[1376]);
-        b = _$_2f23[1377] + z;
-        Main[_$_2f23[915]] = i;
-        alert(_$_2f23[1378] + b);
-        Main[_$_2f23[1379]] = [];
-        Main[_$_2f23[1380]] = [];
+    if (bb.indexOf("it-") >= 0) {
+        alert("__________This is run");
+        b = "http://nebo.ddns.net:8881/epg_ita_temp.php?ch=" + z;
+        Main.ch_index = i;
+        alert("_________________b: " + b);
+        Main.uk_prog_info_arr = [];
+        Main.temp_uk_epg_info_arr = [];
         ITAParsing(b, i)
     } else {
-        b = _$_2f23[1381] + z + _$_2f23[1382];
-        Main[_$_2f23[915]] = i;
-        alert(_$_2f23[1383] + b);
-        Main[_$_2f23[1379]] = [];
-        Main[_$_2f23[1380]] = [];
+        b = "http://bleb.org/tv/channel.html?ch=" + z + "&all";
+        Main.ch_index = i;
+        alert("_____2____________b: " + b);
+        Main.uk_prog_info_arr = [];
+        Main.temp_uk_epg_info_arr = [];
         UKParsing(b, i)
     }
 };
 
 function UKParsing(o, l) {
-    Main[_$_2f23[313]](_$_2f23[1384]);
-    var i = _$_2f23[4];
-    var j = _$_2f23[4];
-    if (T[_$_2f23[300]] < -6) {
-        T[_$_2f23[300]] = 0
+    Main.showinfoList("Loading UK EPG...");
+    var i = "";
+    var j = "";
+    if (T.delta < -6) {
+        T.delta = 0
     };
-    var q = parseInt(T[_$_2f23[594]] + T[_$_2f23[300]]);
-    if (!Main[_$_2f23[102]]) {
+    var q = parseInt(T.y_t_days + T.delta);
+    if (!Main.guide) {
         o = o + q
     };
     UKAbort();
-    Main[_$_2f23[1362]] = setTimeout(_$_2f23[1363], 3000);
-    Main[_$_2f23[1364]] = new XMLHttpRequest();
-    Main[_$_2f23[1364]][_$_2f23[564]] = function () {
-        if (Main[_$_2f23[1364]][_$_2f23[565]] == 4 && Main[_$_2f23[1364]][_$_2f23[53]] == 200) {
-            clearTimeout(Main[_$_2f23[1362]]);
-            i = Main[_$_2f23[1364]][_$_2f23[566]];
-            if (!Main[_$_2f23[102]]) {
-                Main[_$_2f23[313]](_$_2f23[1365]);
-                var S = i[_$_2f23[305]](_$_2f23[1385]);
-                var V = S[1][_$_2f23[305]](_$_2f23[1386]);
-                for (var I = 1; I < V[_$_2f23[64]]; I++) {
+    Main.Ya_ready_timeout = setTimeout(function() { ukErr(); }, 3000);
+    Main.YaHTTP = new XMLHttpRequest();
+    Main.YaHTTP.onreadystatechange = function () {
+        if (Main.YaHTTP.readyState == 4 && Main.YaHTTP.status == 200) {
+            clearTimeout(Main.Ya_ready_timeout);
+            i = Main.YaHTTP.responseText;
+            if (!Main.guide) {
+                Main.showinfoList("Loaded!");
+                var S = i.split("<table class=\"listings\">");
+                var V = S[1].split("<tr>");
+                for (var I = 1; I < V.length; I++) {
                     i = V[I];
-                    var br = parser(i, _$_2f23[1387], _$_2f23[82]);
-                    var O = parser(i, _$_2f23[1387], _$_2f23[1388]);
-                    O = O[_$_2f23[530]](5);
-                    var W = dSp(br + _$_2f23[79] + O);
-                    Main[_$_2f23[1380]][_$_2f23[355]](W)
+                    var br = parser(i, "<b>", "</b>");
+                    var O = parser(i, "<b>", "</b>&nbsp;");
+                    O = O.substring(5);
+                    var W = dSp(br + "|" + O);
+                    Main.temp_uk_epg_info_arr.push(W)
                 };
-                var bV = _$_2f23[1367];
-                var bG = _$_2f23[1368];
-                var bW = _$_2f23[1369];
-                var bF = _$_2f23[1370];
-                var bC = _$_2f23[1371];
-                var bw = Main[_$_2f23[1380]];
+                var bV = "<li><font style=\"color:#00ccff;\">";
+                var bG = "<li><font style=\"color:#ffcc00;\">";
+                var bW = "<li><font style=\"color:#ffeeee;\">";
+                var bF = "</font><font style=\"color:#CCCCCC;\">";
+                var bC = "</font></li>";
+                var bw = Main.temp_uk_epg_info_arr;
                 var bA;
-                var bJ = _$_2f23[1372];
+                var bJ = "<ul>";
                 var q = new Date();
-                var bx = addZero(q[_$_2f23[588]]());
-                var bD = addZero(q[_$_2f23[590]]());
-                for (bA = 0; bA < bw[_$_2f23[64]]; bA++) {
-                    var bH = bw[bA][_$_2f23[305]](_$_2f23[79]);
+                var bx = addZero(q.getHours());
+                var bD = addZero(q.getMinutes());
+                for (bA = 0; bA < bw.length; bA++) {
+                    var bH = bw[bA].split("|");
                     var bz = bH[0];
                     var bB = bH[1];
-                    var bI = bH[0][_$_2f23[305]](_$_2f23[266]);
+                    var bI = bH[0].split(":");
                     var by = bI[0];
                     var bE = bI[1];
                     if (by <= bx) {
                         if (by == bx && bE <= bD) {
-                            bJ = bG + bz + bF + _$_2f23[1373] + bB + bC
+                            bJ = bG + bz + bF + "  " + bB + bC
                         } else {
-                            bJ += bW + bz + bF + _$_2f23[1373] + bB + bC
+                            bJ += bW + bz + bF + "  " + bB + bC
                         }
                     } else {
-                        bJ += bV + bz + bF + _$_2f23[1373] + bB + bC
+                        bJ += bV + bz + bF + "  " + bB + bC
                     }
                 };
-                bJ += _$_2f23[1374];
-                Main[_$_2f23[313]](bJ)
+                bJ += "</ul>";
+                Main.showinfoList(bJ)
             }
         }
     };
-    Main[_$_2f23[1364]][_$_2f23[574]](_$_2f23[572], o + j, true);
-    Main[_$_2f23[1364]][_$_2f23[577]](_$_2f23[575], _$_2f23[576]);
-    Main[_$_2f23[1364]][_$_2f23[578]](null)
+    Main.YaHTTP.open("GET", o + j, true);
+    Main.YaHTTP.setRequestHeader("User-Agent", "Opera/9.80 (Windows NT 5.1; U; ru) Presto/2.9.168 Version/11.51");
+    Main.YaHTTP.send(null)
 }
+
 function ITAParsing(o, l) {
-    Main[_$_2f23[313]](_$_2f23[1389]);
-    var i = _$_2f23[4];
-    var j = _$_2f23[4];
-    if (T[_$_2f23[300]] < -6) {
-        T[_$_2f23[300]] = 0
+    Main.showinfoList("Loading ITA EPG...");
+    var i = "";
+    var j = "";
+    if (T.delta < -6) {
+        T.delta = 0
     };
-    var q = parseInt(T[_$_2f23[594]] + T[_$_2f23[300]]);
-    if (!Main[_$_2f23[102]]) {
+    var q = parseInt(T.y_t_days + T.delta);
+    if (!Main.guide) {
         o = o + q
     };
     UKAbort();
-    Main[_$_2f23[1362]] = setTimeout(_$_2f23[1363], 3000);
-    Main[_$_2f23[1364]] = new XMLHttpRequest();
-    Main[_$_2f23[1364]][_$_2f23[564]] = function () {
-        if (Main[_$_2f23[1364]][_$_2f23[565]] == 4 && Main[_$_2f23[1364]][_$_2f23[53]] == 200) {
-            clearTimeout(Main[_$_2f23[1362]]);
-            i = Main[_$_2f23[1364]][_$_2f23[566]];
-            if (!Main[_$_2f23[102]]) {
-                Main[_$_2f23[313]](_$_2f23[1365]);
-                var V = i[_$_2f23[305]](_$_2f23[1390]);
-                for (var I = 0; I < V[_$_2f23[64]]; I++) {
+    Main.Ya_ready_timeout = setTimeout(function() { ukErr(); }, 3000);
+    Main.YaHTTP = new XMLHttpRequest();
+    Main.YaHTTP.onreadystatechange = function () {
+        if (Main.YaHTTP.readyState == 4 && Main.YaHTTP.status == 200) {
+            clearTimeout(Main.Ya_ready_timeout);
+            i = Main.YaHTTP.responseText;
+            if (!Main.guide) {
+                Main.showinfoList("Loaded!");
+                var V = i.split("<div class=\"gen dataz\">");
+                for (var I = 0; I < V.length; I++) {
                     i = V[I];
-                    alert(_$_2f23[1391] + i);
-                    var O = parser(i, _$_2f23[1387], _$_2f23[82]);
+                    alert("Array MA" + i);
+                    var O = parser(i, "<b>", "</b>");
                     i = V[I + 1];
-                    var br = parser(i, _$_2f23[1392], _$_2f23[1393]);
-                    var W = dSp(O + _$_2f23[79] + br);
-                    Main[_$_2f23[1380]][_$_2f23[355]](W)
+                    var br = parser(i, "\">", "</a>");
+                    var W = dSp(O + "|" + br);
+                    Main.temp_uk_epg_info_arr.push(W)
                 };
-                var bV = _$_2f23[1367];
-                var bG = _$_2f23[1368];
-                var bW = _$_2f23[1369];
-                var bF = _$_2f23[1370];
-                var bC = _$_2f23[1371];
-                var bw = Main[_$_2f23[1380]];
+                var bV = "<li><font style=\"color:#00ccff;\">";
+                var bG = "<li><font style=\"color:#ffcc00;\">";
+                var bW = "<li><font style=\"color:#ffeeee;\">";
+                var bF = "</font><font style=\"color:#CCCCCC;\">";
+                var bC = "</font></li>";
+                var bw = Main.temp_uk_epg_info_arr;
                 var bA;
-                var bJ = _$_2f23[1372];
+                var bJ = "<ul>";
                 var q = new Date();
-                var bx = addZero(q[_$_2f23[588]]());
-                var bD = addZero(q[_$_2f23[590]]());
-                for (bA = 0; bA < bw[_$_2f23[64]]; bA++) {
-                    var bH = bw[bA][_$_2f23[305]](_$_2f23[79]);
+                var bx = addZero(q.getHours());
+                var bD = addZero(q.getMinutes());
+                for (bA = 0; bA < bw.length; bA++) {
+                    var bH = bw[bA].split("|");
                     var bz = bH[0];
                     var bB = bH[1];
-                    var bI = bH[1][_$_2f23[305]](_$_2f23[266]);
+                    var bI = bH[1].split(":");
                     var by = bI[0];
                     var bE = bI[1];
                     if (by <= bx) {
                         if (by == bx && bE <= bD) {
-                            bJ = bG + bz + bF + _$_2f23[1373] + bB + bC
+                            bJ = bG + bz + bF + "  " + bB + bC
                         } else {
-                            bJ += bW + bz + bF + _$_2f23[1373] + bB + bC
+                            bJ += bW + bz + bF + "  " + bB + bC
                         }
                     } else {
-                        bJ += bV + bz + bF + _$_2f23[1373] + bB + bC
+                        bJ += bV + bz + bF + "  " + bB + bC
                     }
                 };
-                bJ += _$_2f23[1374];
-                Main[_$_2f23[313]](bJ)
+                bJ += "</ul>";
+                Main.showinfoList(bJ)
             }
         }
     };
-    Main[_$_2f23[1364]][_$_2f23[574]](_$_2f23[572], o + j, true);
-    Main[_$_2f23[1364]][_$_2f23[577]](_$_2f23[575], _$_2f23[576]);
-    Main[_$_2f23[1364]][_$_2f23[578]](null)
+    Main.YaHTTP.open("GET", o + j, true);
+    Main.YaHTTP.setRequestHeader("User-Agent", "Opera/9.80 (Windows NT 5.1; U; ru) Presto/2.9.168 Version/11.51");
+    Main.YaHTTP.send(null)
 }
+
 YandexGetUrl = function (i) {
     var bt = new Date();
-    var j = _$_2f23[4];
-    if (Main[_$_2f23[301]] > 0 && Main[_$_2f23[301]] < 5) {
-        var l = [_$_2f23[4], _$_2f23[739], _$_2f23[737], _$_2f23[734], _$_2f23[872]];
-        j = _$_2f23[1394] + l[Main[_$_2f23[301]]]
+    var j = "";
+    if (Main.Ya_flag_step > 0 && Main.Ya_flag_step < 5) {
+        var l = ["", "5", "4", "3", "7"];
+        j = "&flag=" + l[Main.Ya_flag_step]
     } else {
-        Main[_$_2f23[301]] = 0
+        Main.Ya_flag_step = 0
     };
-    if (i[_$_2f23[30]](_$_2f23[316]) > 0 && i[_$_2f23[30]](_$_2f23[1395]) > 0) {
+    if (i.indexOf("/m.tv.yandex.") > 0 && i.indexOf("/program/") > 0) {
         var o = i
     } else {
-        if (i[_$_2f23[30]](_$_2f23[316]) > 0 && i[_$_2f23[30]](_$_2f23[1396]) > 0) {
-            i = i[_$_2f23[447]](i[_$_2f23[30]](_$_2f23[1397]));
-            i = i[_$_2f23[447]](22);
-            var p = i[_$_2f23[447]](0, i[_$_2f23[30]](_$_2f23[468]));
-            i = i[_$_2f23[447]](i[_$_2f23[30]](_$_2f23[1396]));
-            var q = (i[_$_2f23[30]](_$_2f23[388]) < 0) ? i[_$_2f23[64]] : i[_$_2f23[30]](_$_2f23[388]);
-            i = i[_$_2f23[530]](8, q)
+        if (i.indexOf("/m.tv.yandex.") > 0 && i.indexOf("channel=") > 0) {
+            i = i.substr(i.indexOf("http:"));
+            i = i.substr(22);
+            var p = i.substr(0, i.indexOf("/"));
+            i = i.substr(i.indexOf("channel="));
+            var q = (i.indexOf("&") < 0) ? i.length : i.indexOf("&");
+            i = i.substring(8, q)
         } else {
-            p = (Main[_$_2f23[295]] != _$_2f23[4]) ? Main[_$_2f23[295]] : API[_$_2f23[642]]
+            p = (Main.region != "") ? Main.region : API.CODE
         };
-        if (T[_$_2f23[300]] == 0) {
-            o = _$_2f23[1398] + API[_$_2f23[643]] + _$_2f23[468] + p + _$_2f23[1399] + i + _$_2f23[1400];
-            Main[_$_2f23[346]] = _$_2f23[1401] + bt[_$_2f23[1402]]() + _$_2f23[1403]
+        if (T.delta == 0) {
+            o = "https://m.tv.yandex." + API.REG + "/" + p + "/channels/" + i + "?period=all-day";
+            Main.lost_date = ": <font style='font-size:16px;color:cyan;'>" + bt.toDateString() + "</font> : <font style='font-size:16px;color:white;'>scroll page</font><font style='font-size:16px;color:cyan;'> P-/P+ </font> :"
         } else {
-            if (T[_$_2f23[300]] > 0) {
-                var bu = formatDate(bt[_$_2f23[1404]](bt[_$_2f23[582]]() + T[_$_2f23[300]]));
-                o = _$_2f23[1398] + API[_$_2f23[643]] + _$_2f23[468] + p + _$_2f23[1399] + i + _$_2f23[386] + _$_2f23[1405] + bu + _$_2f23[1406];
-                Main[_$_2f23[346]] = _$_2f23[1401] + bu + _$_2f23[1403]
+            if (T.delta > 0) {
+                var bu = formatDate(bt.setDate(bt.getDate() + T.delta));
+                o = "https://m.tv.yandex." + API.REG + "/" + p + "/channels/" + i + "?" + "date=" + bu + "&period=all-day";
+                Main.lost_date = ": <font style='font-size:16px;color:cyan;'>" + bu + "</font> : <font style='font-size:16px;color:white;'>scroll page</font><font style='font-size:16px;color:cyan;'> P-/P+ </font> :"
             };
-            if (T[_$_2f23[300]] < 0) {
-                var bv = formatDate(bt[_$_2f23[1404]](bt[_$_2f23[582]]() + T[_$_2f23[300]]));
-                o = _$_2f23[1398] + API[_$_2f23[643]] + _$_2f23[468] + p + _$_2f23[1399] + i + _$_2f23[386] + _$_2f23[1405] + bv + _$_2f23[1406];
-                Main[_$_2f23[346]] = _$_2f23[1401] + bv + _$_2f23[1403]
+            if (T.delta < 0) {
+                var bv = formatDate(bt.setDate(bt.getDate() + T.delta));
+                o = "https://m.tv.yandex." + API.REG + "/" + p + "/channels/" + i + "?" + "date=" + bv + "&period=all-day";
+                Main.lost_date = ": <font style='font-size:16px;color:cyan;'>" + bv + "</font> : <font style='font-size:16px;color:white;'>scroll page</font><font style='font-size:16px;color:cyan;'> P-/P+ </font> :"
             }
         };
-        Main[_$_2f23[915]] = i;
-        alert(_$_2f23[1378] + o);
-        Main[_$_2f23[898]] = []
+        Main.ch_index = i;
+        alert("_________________b: " + o);
+        Main.ya_prog_info_arr = []
     };
-    Main[_$_2f23[1407]] = [];
+    Main.temp_ya_epg_info_arr = [];
     YandexParsing(o, p, i, j)
 };
 
 function formatDate(bt) {
     var q = new Date(bt),
-        bY = _$_2f23[4] + (q[_$_2f23[584]]() + 1),
-        bX = _$_2f23[4] + q[_$_2f23[582]](),
-        bZ = q[_$_2f23[580]]();
-    if (bY[_$_2f23[64]] < 2) {
-        bY = _$_2f23[78] + bY
+        bY = "" + (q.getMonth() + 1),
+        bX = "" + q.getDate(),
+        bZ = q.getFullYear();
+    if (bY.length < 2) {
+        bY = "0" + bY
     };
-    if (bX[_$_2f23[64]] < 2) {
-        bX = _$_2f23[78] + bX
+    if (bX.length < 2) {
+        bX = "0" + bX
     };
-    return [bZ, bY, bX][_$_2f23[1408]](_$_2f23[954])
+    return [bZ, bY, bX].join("-")
 }
+
 function YaAbort() {
-    clearTimeout(Main[_$_2f23[1362]]);
-    if (Main[_$_2f23[1364]] != null) {
-        Main[_$_2f23[1364]][_$_2f23[710]]();
-        Main[_$_2f23[1364]] = null
+    clearTimeout(Main.Ya_ready_timeout);
+    if (Main.YaHTTP != null) {
+        Main.YaHTTP.abort();
+        Main.YaHTTP = null
     }
 }
+
 function Err() {
     YaAbort();
-    Main[_$_2f23[192]] = false;
-    Main[_$_2f23[313]](_$_2f23[1409])
+    Main.yandextv_mode = false;
+    Main.showinfoList("Nothing Found!")
 }
+
 function UKAbort() {
-    clearTimeout(Main[_$_2f23[1362]]);
-    if (Main[_$_2f23[1364]] != null) {
-        Main[_$_2f23[1364]][_$_2f23[710]]();
-        Main[_$_2f23[1364]] = null
+    clearTimeout(Main.Ya_ready_timeout);
+    if (Main.YaHTTP != null) {
+        Main.YaHTTP.abort();
+        Main.YaHTTP = null
     }
 }
+
 function ukErr() {
     UKAbort();
-    Main[_$_2f23[192]] = false;
-    Main[_$_2f23[313]](_$_2f23[1409])
+    Main.yandextv_mode = false;
+    Main.showinfoList("Nothing Found!")
 }
+
 function addZero(u) {
     if (u < 10) {
-        u = _$_2f23[78] + u
+        u = "0" + u
     };
     return u
 }
+
 function YandexParsing(o, p, l, j) {
-    Main[_$_2f23[313]](_$_2f23[1361]);
-    var i = _$_2f23[4];
-    if (T[_$_2f23[300]] < -6) {
-        T[_$_2f23[300]] = 0
+    Main.showinfoList("Loading EPG...");
+    var i = "";
+    if (T.delta < -6) {
+        T.delta = 0
     };
-    var q = parseInt(T[_$_2f23[594]] + T[_$_2f23[300]]);
-    if (!Main[_$_2f23[102]]) {
+    var q = parseInt(T.y_t_days + T.delta);
+    if (!Main.guide) {
         o = o + q
     };
     YaAbort();
-    Main[_$_2f23[1362]] = setTimeout(_$_2f23[1410], 3000);
-    Main[_$_2f23[1364]] = new XMLHttpRequest();
-    Main[_$_2f23[1364]][_$_2f23[564]] = function () {
-        if (Main[_$_2f23[1364]][_$_2f23[565]] == 4 && Main[_$_2f23[1364]][_$_2f23[53]] == 200) {
-            clearTimeout(Main[_$_2f23[1362]]);
-            i = Main[_$_2f23[1364]][_$_2f23[566]];
-            if (!Main[_$_2f23[102]]) {
-                Main[_$_2f23[313]](_$_2f23[1365]);
-                var S = i[_$_2f23[305]](_$_2f23[1411]);
-                for (var I = 1; I < S[_$_2f23[64]]; I++) {
+    Main.Ya_ready_timeout = setTimeout(function() { Err(); }, 3000);
+    Main.YaHTTP = new XMLHttpRequest();
+    Main.YaHTTP.onreadystatechange = function () {
+        if (Main.YaHTTP.readyState == 4 && Main.YaHTTP.status == 200) {
+            clearTimeout(Main.Ya_ready_timeout);
+            i = Main.YaHTTP.responseText;
+            if (!Main.guide) {
+                Main.showinfoList("Loaded!");
+                var S = i.split("<span class=\"tv-event__time\">");
+                for (var I = 1; I < S.length; I++) {
                     i = S[I];
-                    var br = parser(i, _$_2f23[1412], _$_2f23[1413]);
-                    if (br == _$_2f23[4]) {
+                    var br = parser(i, "<span class=\"tv-event__time-text\">", "</span>");
+                    if (br == "") {
                         Err();
                         return
                     };
-                    var O = parser(i, _$_2f23[1414], _$_2f23[1413]);
-                    if (O == _$_2f23[4]) {
+                    var O = parser(i, "<span class=\"tv-event-title\">", "</span>");
+                    if (O == "") {
                         Err();
                         return
                     };
-                    var W = dSp(br + _$_2f23[79] + O);
-                    Main[_$_2f23[1407]][_$_2f23[355]](W)
+                    var W = dSp(br + "|" + O);
+                    Main.temp_ya_epg_info_arr.push(W)
                 };
-                var bV = _$_2f23[1367];
-                var bG = _$_2f23[1368];
-                var bW = _$_2f23[1369];
-                var bF = _$_2f23[1370];
-                var bC = _$_2f23[1371];
-                var bw = Main[_$_2f23[1407]];
+                var bV = "<li><font style=\"color:#00ccff;\">";
+                var bG = "<li><font style=\"color:#ffcc00;\">";
+                var bW = "<li><font style=\"color:#ffeeee;\">";
+                var bF = "</font><font style=\"color:#CCCCCC;\">";
+                var bC = "</font></li>";
+                var bw = Main.temp_ya_epg_info_arr;
                 var bA;
-                var bJ = _$_2f23[1372];
+                var bJ = "<ul>";
                 var q = new Date();
-                var bx = addZero(q[_$_2f23[588]]());
-                var bD = addZero(q[_$_2f23[590]]());
-                for (bA = 0; bA < bw[_$_2f23[64]]; bA++) {
-                    var bH = bw[bA][_$_2f23[305]](_$_2f23[79]);
+                var bx = addZero(q.getHours());
+                var bD = addZero(q.getMinutes());
+                for (bA = 0; bA < bw.length; bA++) {
+                    var bH = bw[bA].split("|");
                     var bz = bH[0];
                     var bB = bH[1];
-                    var bI = bH[0][_$_2f23[305]](_$_2f23[266]);
+                    var bI = bH[0].split(":");
                     var by = bI[0];
                     var bE = bI[1];
                     if (by <= bx) {
                         if (by == bx && bE <= bD) {
-                            bJ = bG + bz + bF + _$_2f23[1373] + bB + bC
+                            bJ = bG + bz + bF + "  " + bB + bC
                         } else {
-                            bJ += bW + bz + bF + _$_2f23[1373] + bB + bC
+                            bJ += bW + bz + bF + "  " + bB + bC
                         }
                     } else {
-                        bJ += bV + bz + bF + _$_2f23[1373] + bB + bC
+                        bJ += bV + bz + bF + "  " + bB + bC
                     }
                 };
-                bJ += _$_2f23[1374];
-                Main[_$_2f23[313]](bJ);
-                if (Main[_$_2f23[1407]][_$_2f23[64]] > 0) {
-                    if (Player[_$_2f23[200]] == Player[_$_2f23[201]] || (Player[_$_2f23[200]] == Player[_$_2f23[461]] && Main[_$_2f23[108]] == Main[_$_2f23[101]])) {
-                        Main[_$_2f23[830]] = Main[_$_2f23[101]];
-                        Main[_$_2f23[597]] = Main[_$_2f23[1407]];
+                bJ += "</ul>";
+                Main.showinfoList(bJ);
+                if (Main.temp_ya_epg_info_arr.length > 0) {
+                    if (Player.state == Player.STOPPED || (Player.state == Player.PLAYING_LIVE && Main.play_chan_array_index == Main.chan_array_index)) {
+                        Main.ya_prog_id = Main.chan_array_index;
+                        Main.ya_epg_info_arr = Main.temp_ya_epg_info_arr;
                         GetEpgInfo()
                     }
                 }
             }
         }
     };
-    Main[_$_2f23[1364]][_$_2f23[574]](_$_2f23[572], o + j, true);
-    Main[_$_2f23[1364]][_$_2f23[577]](_$_2f23[575], _$_2f23[576]);
-    Main[_$_2f23[1364]][_$_2f23[578]](null)
+    Main.YaHTTP.open("GET", o + j, true);
+    Main.YaHTTP.setRequestHeader("User-Agent", "Opera/9.80 (Windows NT 5.1; U; ru) Presto/2.9.168 Version/11.51");
+    Main.YaHTTP.send(null)
 }
+
 var Ya_name_index_obj = {};
 var Ya_icon_index_url_obj = {};
 var Ya_icon_name_url_obj = {};
 
 function GetYandexBase() {
     var o = [];
-    Main[_$_2f23[466]](o, API[_$_2f23[642]] + _$_2f23[657]);
-    if (o[_$_2f23[64]] > 0) {
-        Display[_$_2f23[53]](_$_2f23[1415]);
+    Main.readFile(o, API.CODE + "_ya_name_index_url.dat");
+    if (o.length > 0) {
+        Display.status("Deleting Yandex database");
         o = [];
-        Main[_$_2f23[472]](o, API[_$_2f23[642]] + _$_2f23[657]);
-        setTimeout(_$_2f23[1416], 3000)
+        Main.writeFile(o, API.CODE + "_ya_name_index_url.dat");
+        setTimeout(function() { location.reload(true); }, 3000)
     } else {
-        var j = _$_2f23[4];
-        API[_$_2f23[146]] = false;
-        j = API[_$_2f23[69]](_$_2f23[1417] + API[_$_2f23[643]] + _$_2f23[468] + API[_$_2f23[642]] + _$_2f23[1418]);
-        API[_$_2f23[146]] = true;
-        var R = _$_2f23[1419];
-        if (j != _$_2f23[4]) {
-            R = _$_2f23[1420];
-            var E = _$_2f23[658];
-            var p = j[_$_2f23[30]](_$_2f23[1421]);
-            j = j[_$_2f23[447]](p);
-            p = j[_$_2f23[30]](_$_2f23[1422]);
-            j = j[_$_2f23[447]](0, p);
-            var q = j[_$_2f23[537]](/(http:?[^>]+orig)|(alt="?[^>]+")|(data-id="?[^>]+")/g);
+        var j = "";
+        API.AsReqMode = false;
+        j = API.Request("https://tv.yandex." + API.REG + "/" + API.CODE + "/channels");
+        API.AsReqMode = true;
+        var R = "connection";
+        if (j != "") {
+            R = "structure";
+            var E = "<font style=\"color:#00ccff;font-weight:bolder\">";
+            var p = j.indexOf("<img class=\"b-icon\" src=\"");
+            j = j.substr(p);
+            p = j.indexOf("<td class=\"l-suplayout__rotator\">");
+            j = j.substr(0, p);
+            var q = j.match(/(http:?[^>]+orig)|(alt="?[^>]+")|(data-id="?[^>]+")/g);
             o = [];
             if (q != null) {
-                Main[_$_2f23[270]] = false;
-                var D = q[_$_2f23[64]] - 3;
+                Main.ya_auto = false;
+                var D = q.length - 3;
                 var l = 0;
                 for (var s = 0; s < D; s = s + 3) {
-                    var G = _$_2f23[4];
-                    var i = _$_2f23[4];
-                    var u = _$_2f23[4];
-                    if (q[s][_$_2f23[30]](_$_2f23[1423]) >= 0 && q[s + 1][_$_2f23[30]](_$_2f23[1424]) >= 0 && q[s + 2][_$_2f23[30]](_$_2f23[1425]) >= 0) {
+                    var G = "";
+                    var i = "";
+                    var u = "";
+                    if (q[s].indexOf("https:") >= 0 && q[s + 1].indexOf("alt=") >= 0 && q[s + 2].indexOf("data-id=") >= 0) {
                         G = q[s];
-                        u = q[s + 1][_$_2f23[272]](_$_2f23[1424], _$_2f23[4])[_$_2f23[272]](/"/g, _$_2f23[4]);
-                        i = q[s + 2][_$_2f23[272]](_$_2f23[1425], _$_2f23[4])[_$_2f23[272]](/"/g, _$_2f23[4])
+                        u = q[s + 1].replace("alt=", "").replace(/"/g, "");
+                        i = q[s + 2].replace("data-id=", "").replace(/"/g, "")
                     } else {
-                        if (q[s][_$_2f23[30]](_$_2f23[1424]) >= 0 && q[s + 1][_$_2f23[30]](_$_2f23[1425]) >= 0) {
-                            G = _$_2f23[268];
-                            u = q[s][_$_2f23[272]](_$_2f23[1424], _$_2f23[4])[_$_2f23[272]](/"/g, _$_2f23[4]);
-                            i = q[s + 1][_$_2f23[272]](_$_2f23[1425], _$_2f23[4])[_$_2f23[272]](/"/g, _$_2f23[4]);
+                        if (q[s].indexOf("alt=") >= 0 && q[s + 1].indexOf("data-id=") >= 0) {
+                            G = "logos/image.png";
+                            u = q[s].replace("alt=", "").replace(/"/g, "");
+                            i = q[s + 1].replace("data-id=", "").replace(/"/g, "");
                             s = s - 1;
                             D = D - 1
                         }
                     };
-                    if (i != _$_2f23[4]) {
+                    if (i != "") {
                         l++;
-                        o[_$_2f23[355]](u + _$_2f23[79] + i + _$_2f23[79] + G);
-                        Ya_name_index_obj[u[_$_2f23[242]]()] = i;
+                        o.push(u + "|" + i + "|" + G);
+                        Ya_name_index_obj[u.toLowerCase()] = i;
                         Ya_icon_index_url_obj[i] = G;
-                        Ya_icon_name_url_obj[u[_$_2f23[242]]()] = G
+                        Ya_icon_name_url_obj[u.toLowerCase()] = G
                     }
                 };
-                if (o[_$_2f23[64]] > 0) {
-                    Main[_$_2f23[472]](o, API[_$_2f23[642]] + _$_2f23[657]);
-                    Main[_$_2f23[270]] = true
+                if (o.length > 0) {
+                    Main.writeFile(o, API.CODE + "_ya_name_index_url.dat");
+                    Main.ya_auto = true
                 };
                 GetYaBaseInfo()
             }
         };
-        if (!Main[_$_2f23[270]]) {
-            Display[_$_2f23[53]](_$_2f23[1426] + R)
+        if (!Main.ya_auto) {
+            Display.status("Error " + R)
         }
     }
 }
+
 GetUkEpgInfo = function () {
-    alert(_$_2f23[1427]);
-    if (Main[_$_2f23[1428]][_$_2f23[64]] > 0) {
-        var bG = _$_2f23[1429];
-        var bF = _$_2f23[1430];
-        var bC = _$_2f23[1371];
-        var bw = Main[_$_2f23[1428]];
+    alert("___Get-UK-EPGInfo is running");
+    if (Main.uk_epg_info_arr.length > 0) {
+        var bG = "<li><font style=\"color:#ffcc00;font-size:20px;font-weight:bold;\">";
+        var bF = "</font><font style=\"color:#CCCCCC;font-size:20px;font-weight:bold;\">";
+        var bC = "</font></li>";
+        var bw = Main.uk_epg_info_arr;
         var bA;
-        var bJ = _$_2f23[4];
+        var bJ = "";
         var q = new Date();
-        var bx = addZero(q[_$_2f23[588]]());
-        var bD = addZero(q[_$_2f23[590]]());
-        alert(_$_2f23[1431] + bx + _$_2f23[266] + bD);
-        for (bA = 0; bA < bw[_$_2f23[64]]; bA++) {
-            var bH = bw[bA][_$_2f23[305]](_$_2f23[79]);
+        var bx = addZero(q.getHours());
+        var bD = addZero(q.getMinutes());
+        alert("TIME _ HOURS_ MIN " + bx + ":" + bD);
+        for (bA = 0; bA < bw.length; bA++) {
+            var bH = bw[bA].split("|");
             var bz = bH[0];
             var bB = bH[1];
-            var bI = bH[0][_$_2f23[305]](_$_2f23[266]);
+            var bI = bH[0].split(":");
             var by = bI[0];
             var bE = bI[1];
             if (by <= bx) {
                 if (by == bx && bE <= bD) {
-                    bJ += bG + bz + bF + _$_2f23[1373] + bB + bC
+                    bJ += bG + bz + bF + "  " + bB + bC
                 }
             }
         };
-        widgetAPI[_$_2f23[216]](getId(_$_2f23[831]), bJ)
+        widgetAPI.putInnerHTML(getId("epg_info"), bJ)
     }
 };
+
 GetEpgInfo = function () {
-    if (Main[_$_2f23[597]][_$_2f23[64]] > 0) {
-        var bG = _$_2f23[1429];
-        var bF = _$_2f23[1430];
-        var bC = _$_2f23[1371];
-        var bw = Main[_$_2f23[597]];
+    if (Main.ya_epg_info_arr.length > 0) {
+        var bG = "<li><font style=\"color:#ffcc00;font-size:20px;font-weight:bold;\">";
+        var bF = "</font><font style=\"color:#CCCCCC;font-size:20px;font-weight:bold;\">";
+        var bC = "</font></li>";
+        var bw = Main.ya_epg_info_arr;
         var bA;
-        var bJ = _$_2f23[4];
+        var bJ = "";
         var q = new Date();
-        var bx = addZero(q[_$_2f23[588]]());
-        var bD = addZero(q[_$_2f23[590]]());
-        alert(_$_2f23[1431] + bx + _$_2f23[266] + bD);
-        for (bA = 0; bA < bw[_$_2f23[64]]; bA++) {
-            var bH = bw[bA][_$_2f23[305]](_$_2f23[79]);
+        var bx = addZero(q.getHours());
+        var bD = addZero(q.getMinutes());
+        alert("TIME _ HOURS_ MIN " + bx + ":" + bD);
+        for (bA = 0; bA < bw.length; bA++) {
+            var bH = bw[bA].split("|");
             var bz = bH[0];
             var bB = bH[1];
-            var bI = bH[0][_$_2f23[305]](_$_2f23[266]);
+            var bI = bH[0].split(":");
             var by = bI[0];
             var bE = bI[1];
             if (by <= bx) {
                 if (by == bx && bE <= bD) {
-                    bJ += bG + bz + bF + _$_2f23[1373] + bB + bC
+                    bJ += bG + bz + bF + "  " + bB + bC
                 }
             }
         };
-        widgetAPI[_$_2f23[216]](getId(_$_2f23[831]), bJ);
-        Display[_$_2f23[799]]()
+        widgetAPI.putInnerHTML(getId("epg_info"), bJ);
+        Display.showplayer()
     }
 };
+
 GetNextEpgInfo = function () {
-    if (Main[_$_2f23[597]][_$_2f23[64]] > 0) {
-        if (Main[_$_2f23[836]] == 1 && Main[_$_2f23[1432]] == _$_2f23[4]) {
-            Main[_$_2f23[1432]] = getId(_$_2f23[831])[_$_2f23[600]]
+    if (Main.ya_epg_info_arr.length > 0) {
+        if (Main.epg_info_step == 1 && Main.temp_epg_info == "") {
+            Main.temp_epg_info = getId("epg_info").innerHTML
         };
-        if (Main[_$_2f23[836]] > 0 && Main[_$_2f23[836]] <= Main[_$_2f23[597]][_$_2f23[64]]) {
-            var i = Main[_$_2f23[597]][Main[_$_2f23[836]] - 1][_$_2f23[305]](_$_2f23[79]);
+        if (Main.epg_info_step > 0 && Main.epg_info_step <= Main.ya_epg_info_arr.length) {
+            var i = Main.ya_epg_info_arr[Main.epg_info_step - 1].split("|");
             var q = i[0];
             var p = i[1];
-            if (dPr(q) != _$_2f23[4] && dPr(p) != _$_2f23[4]) {
-                var o = q + _$_2f23[1433] + p + _$_2f23[519]
+            if (dPr(q) != "" && dPr(p) != "") {
+                var o = q + "<font style='color:#00ccff;font-weight:bolder;padding-left:10px;'>" + p + "</font>"
             }
         } else {
-            if (Main[_$_2f23[1432]] != _$_2f23[4]) {
-                o = Main[_$_2f23[1432]];
-                Main[_$_2f23[1432]] = _$_2f23[4]
+            if (Main.temp_epg_info != "") {
+                o = Main.temp_epg_info;
+                Main.temp_epg_info = ""
             }
         };
-        widgetAPI[_$_2f23[216]](getId(_$_2f23[831]), o);
-        if (Main[_$_2f23[836]] > 0) {
-            Display[_$_2f23[799]]()
+        widgetAPI.putInnerHTML(getId("epg_info"), o);
+        if (Main.epg_info_step > 0) {
+            Display.showplayer()
         }
     }
 };
 
 function Super_Send(i) {
-    if (i[_$_2f23[30]](_$_2f23[1434]) >= 0 && API[_$_2f23[673]] != _$_2f23[4] && Main[_$_2f23[140]]) {
-        i = i[_$_2f23[272]](_$_2f23[675], _$_2f23[1435])
+    if (i.indexOf("http://nebo.") >= 0 && API.search_string != "" && Main.search) {
+        i = i.replace("search=", "q=")
     };
-    if (i[_$_2f23[30]](_$_2f23[1436]) >= 0 && API[_$_2f23[673]] != _$_2f23[4] && Main[_$_2f23[140]]) {
-        i = i[_$_2f23[272]](_$_2f23[675], _$_2f23[1437])
+    if (i.indexOf("http://tvqb.ru/") >= 0 && API.search_string != "" && Main.search) {
+        i = i.replace("search=", "user=")
     };
     return i
 }
+
 function GetHash(p, o, l) {
-    var i = _$_2f23[4];
-    if (l != _$_2f23[4]) {
-        var j = decLongUrl(API[_$_2f23[69]](p + _$_2f23[1438] + l + _$_2f23[1341] + o))
+    var i = "";
+    if (l != "") {
+        var j = decLongUrl(API.Request(p + "action=get_test_url&s_key=" + l + "&url=" + o))
     } else {
         j = p
     };
-    j = j[_$_2f23[305]](_$_2f23[79]);
-    if (j[0] != _$_2f23[4]) {
-        var q = API[_$_2f23[69]](j[0]);
+    j = j.split("|");
+    if (j[0] != "") {
+        var q = API.Request(j[0]);
         q = parser(q, j[1], j[2]);
-        alert(_$_2f23[1439] + q);
-        if (l != _$_2f23[4]) {
-            i = API[_$_2f23[69]](p + _$_2f23[1440] + l + _$_2f23[1441] + q + _$_2f23[1341] + o)
+        alert("hash =" + q);
+        if (l != "") {
+            i = API.Request(p + "action=get_result_url_hash&s_key=" + l + "&hash=" + q + "&url=" + o)
         } else {
-            i = o[_$_2f23[272]](_$_2f23[1442], q)
+            i = o.replace("md5hash", q)
         }
     } else {
         i = o
     };
     return i
 }
+
 function parser(j, p, o) {
-    var i = _$_2f23[4];
-    if (dPr(j) != _$_2f23[4] && p != undefined) {
-        var q = j[_$_2f23[30]](p);
+    var i = "";
+    if (dPr(j) != "" && p != undefined) {
+        var q = j.indexOf(p);
         if (q >= 0) {
-            j = j[_$_2f23[447]](q + p[_$_2f23[64]]);
+            j = j.substr(q + p.length);
             if (o == undefined) {
                 return j
             };
-            q = j[_$_2f23[30]](o);
+            q = j.indexOf(o);
             if (q >= 0) {
-                i = j[_$_2f23[447]](0, q)
+                i = j.substr(0, q)
             }
         }
     };
     return i
 }
+
 function decLongUrl(i) {
-    if (dPr(i) != _$_2f23[4] && i[_$_2f23[30]](_$_2f23[1012]) >= 0) {
-        while (i[_$_2f23[30]](_$_2f23[1012]) >= 0) {
+    if (dPr(i) != "" && i.indexOf("%") >= 0) {
+        while (i.indexOf("%") >= 0) {
             i = decodeURIComponent(i)
         }
     };
     return i
 }
+
 function Super_parser(j) {
     var p = j;
-    if (j[_$_2f23[30]](_$_2f23[1343]) > 0 || j[_$_2f23[30]](_$_2f23[1443]) > 0 || j[_$_2f23[30]](_$_2f23[1444]) > 0 || j[_$_2f23[30]](_$_2f23[1445]) > 0 || j[_$_2f23[30]](_$_2f23[1446]) > 0) {
+    if (j.indexOf("vk.com") > 0 || j.indexOf("vk.com/video_ext.php?") > 0 || j.indexOf("/vkontakte.php?video") > 0 || j.indexOf("vkontakte.ru/video_ext.php") > 0 || j.indexOf("/vkontakte/vk_kinohranilishe.php?id=") > 0) {
         p = getVkUrl(j)
     } else {
-        if (j[_$_2f23[30]](_$_2f23[1447]) > 0) {
-            var u = j[_$_2f23[447]](j[_$_2f23[30]](_$_2f23[1344]) + 1);
+        if (j.indexOf("youtube.com/watch?v=") > 0) {
+            var u = j.substr(j.indexOf("=") + 1);
             p = lrdPr(getYoutubeUrl(u))
         } else {
-            if (j[_$_2f23[30]](_$_2f23[1448]) >= 0) {
-                var q = j[_$_2f23[447]](j[_$_2f23[30]](_$_2f23[1449]) + 6);
+            if (j.indexOf("youtube.com/embed") >= 0) {
+                var q = j.substr(j.indexOf("embed/") + 6);
                 p = getYoutubeUrl(q)
             }
         }
     };
     try {
-        if (p == j || p[_$_2f23[30]](_$_2f23[1450]) > 0 || p[_$_2f23[30]](_$_2f23[1442]) > 0 || p[_$_2f23[30]](_$_2f23[1451]) > 0) {
+        if (p == j || p.indexOf(".html") > 0 || p.indexOf("md5hash") > 0 || p.indexOf("md4hash") > 0) {
             p = Super_parser_external(j)
         }
     } catch (p) {};
     return p
 }
+
 function showImage() {
-    var ci = document[_$_2f23[323]](_$_2f23[1452]);
-    ci[_$_2f23[123]][_$_2f23[203]] = _$_2f23[1453];
-    ci[_$_2f23[123]][_$_2f23[1454]] = _$_2f23[1455]
+    var ci = document.getElementById("start_logo");
+    ci.style.backgroundImage = "url(http://neb0.no-ip.biz:8881/pic/IPTVxBG.jpg)";
+    ci.style.visibility = "visible"
 }
+
 function showImageSet() {
-    var ci = document[_$_2f23[323]](_$_2f23[1452]);
-    ci[_$_2f23[123]][_$_2f23[203]] = _$_2f23[1456];
-    ci[_$_2f23[123]][_$_2f23[1454]] = _$_2f23[1455]
+    var ci = document.getElementById("start_logo");
+    ci.style.backgroundImage = "url(http://neb0.no-ip.biz:8881/pic/set-bg.jpg)";
+    ci.style.visibility = "visible"
 }
+
 function hideImage() {
-    var cb = document[_$_2f23[323]](_$_2f23[1452]);
-    cb[_$_2f23[123]][_$_2f23[1454]] = _$_2f23[1457]
+    var cb = document.getElementById("start_logo");
+    cb.style.visibility = "hidden"
 }
+
 function showScroll() {
-    var ce = document[_$_2f23[323]](_$_2f23[1458]);
-    var cd = document[_$_2f23[323]](_$_2f23[322]);
-    var cc = document[_$_2f23[323]](_$_2f23[1459]);
-    ce[_$_2f23[123]][_$_2f23[1454]] = _$_2f23[1455];
-    cc[_$_2f23[123]][_$_2f23[1454]] = _$_2f23[1455];
-    cd[_$_2f23[123]][_$_2f23[1454]] = _$_2f23[1455];
-    document[_$_2f23[323]](_$_2f23[322])[_$_2f23[123]][_$_2f23[122]] = _$_2f23[222]
+    var ce = document.getElementById("scroll");
+    var cd = document.getElementById("scroll_cursor");
+    var cc = document.getElementById("scroll_line");
+    ce.style.visibility = "visible";
+    cc.style.visibility = "visible";
+    cd.style.visibility = "visible";
+    document.getElementById("scroll_cursor").style.top = "80px"
 }
+
 function hideScroll() {
-    var ce = document[_$_2f23[323]](_$_2f23[1458]);
-    var cd = document[_$_2f23[323]](_$_2f23[322]);
-    var cc = document[_$_2f23[323]](_$_2f23[1459]);
-    cd[_$_2f23[123]][_$_2f23[1454]] = _$_2f23[1457];
-    ce[_$_2f23[123]][_$_2f23[1454]] = _$_2f23[1457];
-    cc[_$_2f23[123]][_$_2f23[1454]] = _$_2f23[1457]
+    var ce = document.getElementById("scroll");
+    var cd = document.getElementById("scroll_cursor");
+    var cc = document.getElementById("scroll_line");
+    cd.style.visibility = "hidden";
+    ce.style.visibility = "hidden";
+    cc.style.visibility = "hidden"
 }
+
 var xmlHttp = null;
 
 function showWeather() {
-    var C = _$_2f23[1460] + API[_$_2f23[656]];
+    var C = "http://nebo.ddns.net:8881/weather_new.php?city=" + API.Cityname;
     xmlHttp = new XMLHttpRequest();
-    xmlHttp[_$_2f23[564]] = ProcessRequest;
-    xmlHttp[_$_2f23[574]](_$_2f23[572], C, true);
-    xmlHttp[_$_2f23[578]](null);
-    var cg = document[_$_2f23[323]](_$_2f23[214]);
-    cg[_$_2f23[123]][_$_2f23[1454]] = _$_2f23[1455]
+    xmlHttp.onreadystatechange = ProcessRequest;
+    xmlHttp.open("GET", C, true);
+    xmlHttp.send(null);
+    var cg = document.getElementById("widget_time");
+    cg.style.visibility = "visible"
 }
+
 function hideWeather() {
-    var ch = document[_$_2f23[323]](_$_2f23[1461]);
-    ch[_$_2f23[123]][_$_2f23[1454]] = _$_2f23[1457];
-    var cf = document[_$_2f23[323]](_$_2f23[1462]);
-    cf[_$_2f23[123]][_$_2f23[1454]] = _$_2f23[1457];
-    var cg = document[_$_2f23[323]](_$_2f23[214]);
-    cg[_$_2f23[123]][_$_2f23[1454]] = _$_2f23[1457]
+    var ch = document.getElementById("weather_icons");
+    ch.style.visibility = "hidden";
+    var cf = document.getElementById("temp");
+    cf.style.visibility = "hidden";
+    var cg = document.getElementById("widget_time");
+    cg.style.visibility = "hidden"
 }
+
 function showTemp() {
     var z = 8800;
-    a = Main[_$_2f23[308]];
-    var ck = a + Main[_$_2f23[376]] + _$_2f23[266] + eval(Main[_$_2f23[377]] + z) + _$_2f23[1463] + API[_$_2f23[656]];
+    a = Main.protocol;
+    var ck = a + Main.hurl + ":" + eval(Main.trp + z) + "/weather_temp_new.php?city=" + API.Cityname;
     xmlHttp1 = new XMLHttpRequest();
-    xmlHttp1[_$_2f23[564]] = ProcessRequest1;
-    xmlHttp1[_$_2f23[574]](_$_2f23[572], ck, true);
-    xmlHttp1[_$_2f23[578]](null)
+    xmlHttp1.onreadystatechange = ProcessRequest1;
+    xmlHttp1.open("GET", ck, true);
+    xmlHttp1.send(null)
 }
+
 function hideTemp() {
-    var cf = document[_$_2f23[323]](_$_2f23[1462]);
-    cf[_$_2f23[123]][_$_2f23[1454]] = _$_2f23[1457]
+    var cf = document.getElementById("temp");
+    cf.style.visibility = "hidden"
 }
+
 function scrollUp() {
-    var bj = document[_$_2f23[323]](_$_2f23[322])[_$_2f23[123]][_$_2f23[122]];
+    var bj = document.getElementById("scroll_cursor").style.top;
     var q = parseInt(bj);
     if (q < 460) {
-        t = Math[_$_2f23[1464]](q + 20);
-        alert(_$_2f23[1465] + Main[_$_2f23[282]]);
-        document[_$_2f23[323]](_$_2f23[322])[_$_2f23[123]][_$_2f23[122]] = t + _$_2f23[623]
+        t = Math.abs(q + 20);
+        alert("new top=" + Main.scrolling);
+        document.getElementById("scroll_cursor").style.top = t + "px"
     } else {
-        document[_$_2f23[323]](_$_2f23[322])[_$_2f23[123]][_$_2f23[122]] = _$_2f23[1466]
+        document.getElementById("scroll_cursor").style.top = "460px"
     }
 }
+
 function scrollDown() {
-    var bj = document[_$_2f23[323]](_$_2f23[322])[_$_2f23[123]][_$_2f23[122]];
+    var bj = document.getElementById("scroll_cursor").style.top;
     var q = parseInt(bj);
     if (q > 80) {
-        t = Math[_$_2f23[1464]](q - 20);
-        alert(_$_2f23[1465] + Main[_$_2f23[282]]);
-        document[_$_2f23[323]](_$_2f23[322])[_$_2f23[123]][_$_2f23[122]] = t + _$_2f23[623]
+        t = Math.abs(q - 20);
+        alert("new top=" + Main.scrolling);
+        document.getElementById("scroll_cursor").style.top = t + "px"
     } else {
-        document[_$_2f23[323]](_$_2f23[322])[_$_2f23[123]][_$_2f23[122]] = _$_2f23[222]
+        document.getElementById("scroll_cursor").style.top = "80px"
     }
 }
+
+/**
+ * Processing weather response
+ * @return {string} response text
+ */
 function ProcessRequest() {
-    if (xmlHttp[_$_2f23[565]] == 4 && xmlHttp[_$_2f23[53]] == 200) {
-        if (xmlHttp[_$_2f23[566]] == _$_2f23[1467]) {
-            Display[_$_2f23[53]](_$_2f23[1468] + xmlHttp[_$_2f23[566]] + _$_2f23[82], 3000)
+    if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+        if (xmlHttp.responseText == "ACCESS DENIED") {
+            Display.status("<b style=\"color:yellow\">" + xmlHttp.responseText + "</b>", 3000)
         } else {
-            var ci = document[_$_2f23[323]](_$_2f23[1461]);
-            var i = xmlHttp[_$_2f23[566]];
-            ci[_$_2f23[123]][_$_2f23[203]] = _$_2f23[1469] + i + _$_2f23[1470];
-            ci[_$_2f23[123]][_$_2f23[1454]] = _$_2f23[1455];
-            return xmlHttp[_$_2f23[566]]
+            var ci = document.getElementById("weather_icons");
+            var i = xmlHttp.responseText;
+            ci.style.backgroundImage = "url(" + i + ")";
+            ci.style.visibility = "visible";
+            return xmlHttp.responseText
         }
     }
 }
+
+/**
+ * Processing temperature response
+ * @return {string} response text
+ */
 function ProcessRequest1() {
-    if (xmlHttp1[_$_2f23[565]] == 4 && xmlHttp1[_$_2f23[53]] == 200) {
-        if (xmlHttp1[_$_2f23[566]] == _$_2f23[1467]) {
-            Display[_$_2f23[53]](_$_2f23[1468] + xmlHttp1[_$_2f23[566]] + _$_2f23[82], 3000)
+    if (xmlHttp1.readyState == 4 && xmlHttp1.status == 200) {
+        if (xmlHttp1.responseText == "ACCESS DENIED") {
+            Display.status("<b style=\"color:yellow\">" + xmlHttp1.responseText + "</b>", 3000)
         } else {
-            var cj = document[_$_2f23[323]](_$_2f23[1462]);
-            var o = xmlHttp1[_$_2f23[566]];
-            cj[_$_2f23[600]] = _$_2f23[1471] + API[_$_2f23[656]] + _$_2f23[1472] + o + _$_2f23[1473];
-            cj[_$_2f23[123]][_$_2f23[1454]] = _$_2f23[1455];
-            return xmlHttp1[_$_2f23[566]]
+            var cj = document.getElementById("temp");
+            var o = xmlHttp1.responseText;
+            cj.innerHTML = "<p><b style=\"color:#FFFFFF;font-size:14px;\">" + API.Cityname + "</b> " + o + "</p>";
+            cj.style.visibility = "visible";
+            return xmlHttp1.responseText
         }
     }
 }
+
 function popAlert() {
-    alert(_$_2f23[1474])
+    alert("Hello! I am an alert box!")
 }
+
 var confirm;
-confirm[_$_2f23[900]] = function () {
-    this[_$_2f23[1475]]();
-    this[_$_2f23[1478]](_$_2f23[1476], _$_2f23[1477]);
-    this[_$_2f23[1479]](_$_2f23[1239]);
-    this[_$_2f23[118]](_$_2f23[1480])
+
+confirm.openWindow = function () {
+    this.setWindowPosition();
+    this.setContents("confirm_text", "<img src=\"http://nebo.ddns.net:8881/pic/bg.jpg\" ></img><br><b style=\"color:EF5C0C;font-size:14px\">Welcome to IPTV<i>x </i>World!!!</b><br><i style=\"font-size:12px\">Courtesy of Multiviewer.TV</i><br><b style=\"color:EF5C0C;\">www.multiviewer.tv</b>");
+    this.turnPopup("on");
+    this.setFocus("btn_ok")
 };
-confirm[_$_2f23[1481]] = function () {
-    this[_$_2f23[1482]]();
-    this[_$_2f23[1478]](_$_2f23[1476], _$_2f23[1483]);
-    this[_$_2f23[1479]](_$_2f23[1239]);
-    this[_$_2f23[118]](_$_2f23[1480])
+
+confirm.popWindow = function () {
+    this.setWindowPosition1();
+    this.setContents("confirm_text", "<img src=\"http://nebo.ddns.net:8881/pic/bg-update.jpg\" ></img>");
+    this.turnPopup("on");
+    this.setFocus("btn_ok")
 };
-confirm[_$_2f23[1475]] = function () {
+
+confirm.setWindowPosition = function () {
     var bN = 445;
     var bK = 360;
-    var bL = Math[_$_2f23[621]]((960 - bN) / 2);
-    var bM = Math[_$_2f23[621]]((540 - bK) / 2);
-    if (Main[_$_2f23[34]]) {
-        document[_$_2f23[323]](_$_2f23[1484])[_$_2f23[123]][_$_2f23[126]] = 260;
-        document[_$_2f23[323]](_$_2f23[1484])[_$_2f23[123]][_$_2f23[122]] = 100
+    var bL = Math.floor((960 - bN) / 2);
+    var bM = Math.floor((540 - bK) / 2);
+    if (Main.seriesE) {
+        document.getElementById("confirm").style.left = 260;
+        document.getElementById("confirm").style.top = 100
     } else {
-        document[_$_2f23[323]](_$_2f23[1486])[_$_2f23[123]][_$_2f23[1485]] = _$_2f23[1487];
-        document[_$_2f23[323]](_$_2f23[1484])[_$_2f23[123]][_$_2f23[122]] = bM
+        document.getElementById("b_ok").style.backgroundColor = "#5fbaff";
+        document.getElementById("confirm").style.top = bM
     }
 };
-confirm[_$_2f23[1482]] = function () {
+
+confirm.setWindowPosition1 = function () {
     var bN = 445;
     var bK = 360;
-    var bL = Math[_$_2f23[621]]((960 - bN) / 2);
-    var bM = Math[_$_2f23[621]]((540 - bK) / 2);
-    if (Main[_$_2f23[34]]) {
-        document[_$_2f23[323]](_$_2f23[1484])[_$_2f23[123]][_$_2f23[126]] = 260;
-        document[_$_2f23[323]](_$_2f23[1484])[_$_2f23[123]][_$_2f23[122]] = 100
+    var bL = Math.floor((960 - bN) / 2);
+    var bM = Math.floor((540 - bK) / 2);
+    if (Main.seriesE) {
+        document.getElementById("confirm").style.left = 260;
+        document.getElementById("confirm").style.top = 100
     } else {
-        document[_$_2f23[323]](_$_2f23[1486])[_$_2f23[123]][_$_2f23[1485]] = _$_2f23[1487];
-        document[_$_2f23[323]](_$_2f23[1484])[_$_2f23[123]][_$_2f23[122]] = bM
+        document.getElementById("b_ok").style.backgroundColor = "#5fbaff";
+        document.getElementById("confirm").style.top = bM
     }
 };
-confirm[_$_2f23[1479]] = function (bO) {
-    if (bO == _$_2f23[1239]) {
-        document[_$_2f23[323]](_$_2f23[1484])[_$_2f23[123]][_$_2f23[1454]] = _$_2f23[1455]
+
+confirm.turnPopup = function (bO) {
+    if (bO == "on") {
+        document.getElementById("confirm").style.visibility = "visible"
     } else {
-        if (bO == _$_2f23[1240]) {
-            document[_$_2f23[323]](_$_2f23[1484])[_$_2f23[123]][_$_2f23[1454]] = _$_2f23[1457]
+        if (bO == "off") {
+            document.getElementById("confirm").style.visibility = "hidden"
         }
     }
 };
-confirm[_$_2f23[118]] = function () {
-    var bP = document[_$_2f23[323]](_$_2f23[1480]);
+
+confirm.setFocus = function () {
+    var bP = document.getElementById("btn_ok");
     if (bP) {
-        bP[_$_2f23[852]]()
+        bP.focus()
     }
 };
-confirm[_$_2f23[1488]] = function (bP) {
-    if (bP[_$_2f23[1489]](_$_2f23[467]) == _$_2f23[1480]) {
-        document[_$_2f23[323]](_$_2f23[1486])[_$_2f23[123]][_$_2f23[1485]] = _$_2f23[1490]
+
+confirm.setByttonStyleOnFocus = function (bP) {
+    if (bP.getAttribute("id") == "btn_ok") {
+        document.getElementById("b_ok").style.backgroundColor = "#0866aa"
     } else {
-        document[_$_2f23[323]](_$_2f23[1491])[_$_2f23[123]][_$_2f23[1485]] = _$_2f23[1490]
+        document.getElementById("b_canc").style.backgroundColor = "#0866aa"
     }
 };
-confirm[_$_2f23[1492]] = function (bP) {
-    if (bP[_$_2f23[1489]](_$_2f23[467]) == _$_2f23[1480]) {
-        document[_$_2f23[323]](_$_2f23[1486])[_$_2f23[123]][_$_2f23[1485]] = _$_2f23[1487]
+
+confirm.setByttonStyleOnBlur = function (bP) {
+    if (bP.getAttribute("id") == "btn_ok") {
+        document.getElementById("b_ok").style.backgroundColor = "#5fbaff"
     } else {
-        document[_$_2f23[323]](_$_2f23[1491])[_$_2f23[123]][_$_2f23[1485]] = _$_2f23[1487]
+        document.getElementById("b_canc").style.backgroundColor = "#5fbaff"
     }
 };
-confirm[_$_2f23[1493]] = function (bQ) {
-    var bR = event[_$_2f23[883]];
-    var widgetAPI = new Common[_$_2f23[1]][_$_2f23[0]]();
-    alert(_$_2f23[1494] + bR);
+
+confirm.KeyDown = function (bQ) {
+    var bR = event.keyCode;
+    var widgetAPI = new Common.API.Widget();
+    alert("Options Key code : " + bR);
     switch (bR) {
     case (88):
-        widgetAPI[_$_2f23[846]](event);
-        setTimeout(_$_2f23[500], 200);
+        widgetAPI.blockNavigation(event);
+        setTimeout(function(){ Main.Menu(); }, 200);
     case (45):
-        this[_$_2f23[1495]]();
+        this.closeWindow();
         break;
     case (29443):
-        if (bQ[_$_2f23[1489]](_$_2f23[467]) == _$_2f23[1496]) {
-            this[_$_2f23[1479]](_$_2f23[1240])
+        if (bQ.getAttribute("id") == "btn_canc") {
+            this.turnPopup("off")
         };
-        if (bQ[_$_2f23[1489]](_$_2f23[467]) == _$_2f23[1480]) {
-            this[_$_2f23[1495]]()
+        if (bQ.getAttribute("id") == "btn_ok") {
+            this.closeWindow()
         };
         break;
     case (5):
-        this[_$_2f23[1497]](bQ);
+        this.selectButton(bQ);
         break;
     case (4):
-        this[_$_2f23[1497]](bQ);
+        this.selectButton(bQ);
         break
     }
 };
-confirm[_$_2f23[1495]] = function () {
-    this[_$_2f23[1479]](_$_2f23[1240]);
-    setTimeout(_$_2f23[500], 200)
+
+confirm.closeWindow = function () {
+    this.turnPopup("off");
+    setTimeout(Main.Menu(), 200)
 };
-confirm[_$_2f23[1497]] = function (bP) {
-    if (bP[_$_2f23[1489]](_$_2f23[467]) == _$_2f23[1480]) {
-        this[_$_2f23[118]](_$_2f23[1496])
+
+confirm.selectButton = function (bP) {
+    if (bP.getAttribute("id") == "btn_ok") {
+        this.setFocus("btn_canc")
     } else {
-        this[_$_2f23[118]](_$_2f23[1480])
+        this.setFocus("btn_ok")
     }
 };
-confirm[_$_2f23[1478]] = function (bT, bS) {
-    var bP = document[_$_2f23[323]](bT);
-    widgetAPI[_$_2f23[216]](bP, bS)
+
+confirm.setContents = function (bT, bS) {
+    var bP = document.getElementById(bT);
+    widgetAPI.putInnerHTML(bP, bS)
 }
