@@ -641,28 +641,28 @@ Main.UpdateChannelInfo = function () {
     Main.ya_base_info = false;
     this.chan_array_index = 10 * this.selected_page + this.selected_channel;
     this.ch_num = this.chan_array_index + 1;
-    this.name = Ach(0);
+    this.name = GetChannelInfo(0);
     if (!Main.s_url) {
-        this.url = Ach(1);
-        this.pl_url = Ach(5);
+        this.url = GetChannelInfo(1);
+        this.pl_url = GetChannelInfo(5);
     }
-    this.logo = Ach(2);
+    this.logo = GetChannelInfo(2);
     if (Player.state == Player.STOPPED) {
-        this.ssize = Ach(6);
-        this.a_num = Ach(7);
+        this.ssize = GetChannelInfo(6);
+        this.a_num = GetChannelInfo(7);
     }
-    this.buffer = Ach(8);
-    this.ibuffer = Ach(9);
-    this.timeshift = Ach(10);
-    this.region = Ach(11);
-    this.parser = decLongUrl(Ach(12));
-    this.search_on = Ach(13);
+    this.buffer = GetChannelInfo(8);
+    this.ibuffer = GetChannelInfo(9);
+    this.timeshift = GetChannelInfo(10);
+    this.region = GetChannelInfo(11);
+    this.parser = decLongUrl(GetChannelInfo(12));
+    this.search_on = GetChannelInfo(13);
     if (!Main.block_info && KeyHandler.Focus != 5 && KeyHandler.Focus != 1) {
         var i = "";
         if (this.url != "") {
             var y = this.url.toString();
             alert("this.url= " + y);
-            i = GetYindex();
+            // removed : i = GetYindex();
         };
         if (i != "") {
             Main.yandextv_mode = true;
@@ -670,15 +670,15 @@ Main.UpdateChannelInfo = function () {
             T.delta = 0;
             Main.Ya_flag_step = 0;
             if (!Main.FirstStart) {
-                YandexGetUrl(i);
+				// removed : YandexGetUrl(i);
             } else {
-                Main.LoadTimer(function() { YandexGetUrl(GetYindex()); }, 1000);
+                // removed : Main.LoadTimer(function() { YandexGetUrl(GetYindex()); }, 1000);
             }
         } else {
             this.yandextv_mode = false;
-            var z = Ach(3).toString();
-            alert("Ach(3)= " + z);
-            if (Ach(3) != "" && z.indexOf("epg_url:") >= 0) {
+            var z = GetChannelInfo(3).toString();
+            alert("GetChannelInfo(3)= " + z);
+            if (GetChannelInfo(3) != "" && z.indexOf("epg_url:") >= 0) {
                 var w = z.split("|");
                 alert("cutted ee[0] =" + w[0]);
                 var A = w[0].split(":");
@@ -687,9 +687,9 @@ Main.UpdateChannelInfo = function () {
                 alert("request =" + x);
                 EUROGetEPG(x);
             } else {
-                Main.showinfoList(Ach(3));
+                Main.showinfoList(GetChannelInfo(3));
                 if (typeof z == "string" && z != "" && z.indexOf("<") != 0) {
-                    UKGetUrl(i, z);
+                    // removed : UKGetUrl(i, z);
                 }
             }
         }
@@ -697,19 +697,10 @@ Main.UpdateChannelInfo = function () {
     this.block_info = false;
 };
 
-GetYindex = function () {
-    var i = (Ach(3) != "" && Ach(3).indexOf("/m.tv.yandex.") > 0) ? Ach(3) : (!isNaN(Ach(3)) && Ach(3) > 0 && Ach(3) < 2000) ? Ach(3) : (Main.ya_auto && Main.name != "") ? Ya_name_index_obj[Main.name.toLowerCase().replace(/\_/g, " ")] : "";
-    if (i == undefined) {
-        i = "";
-    }
-    alert("Yindex= " + i);
-    return i;
-};
-
 Main.UpdatePlayerStatusbar = function () {
     widgetAPI.putInnerHTML(getId("ch_number"), this.ch_num);
     widgetAPI.putInnerHTML(getId("ch_name"), Main.name);
-    var i = (Main.logo != "") ? getLogo1(Main.pl_url, Main.logo) : getLogo2(Main.name, Ach(3), Main.pl_url);
+    var i = (Main.logo != "") ? getLogo1(Main.pl_url, Main.logo) : getLogo2(Main.name, GetChannelInfo(3), Main.pl_url);
     LogoStyle("ch_img", i, 0);
 };
 
@@ -1083,8 +1074,8 @@ Main.PlayChannel = function () {
                 Main.url_arr = [];
                 Main.url_selected = 0;
                 Main.Foto = false;
-                Main.ssize = Ach(6);
-                Main.a_num = Ach(7);
+                Main.ssize = GetChannelInfo(6);
+                Main.a_num = GetChannelInfo(7);
                 Main.SavePrevChannel();
                 Main.SaveSelectedPosition();
                 Main.XML_URL = API.XML_URL;
@@ -1350,7 +1341,7 @@ Main.writeFile = function (q, j) {
 };
 
 Main.saveHistory = function (q) {
-    var p = [dSp(dI(Main.name) + "|" + dI(this.url) + "|" + dI(this.logo) + "|" + dI(Ach(3)) + "||" + dI(this.pl_url) + "|" + this.ssize + "|" + this.a_num + "|" + this.buffer + "|" + this.ibuffer + "|" + this.timeshift + "|" + this.region + "|" + dI(this.parser) + "|" + dI(this.search_on))];
+    var p = [dSp(dI(Main.name) + "|" + dI(this.url) + "|" + dI(this.logo) + "|" + dI(GetChannelInfo(3)) + "||" + dI(this.pl_url) + "|" + this.ssize + "|" + this.a_num + "|" + this.buffer + "|" + this.ibuffer + "|" + this.timeshift + "|" + this.region + "|" + dI(this.parser) + "|" + dI(this.search_on))];
     Main.readFile(p, q);
     if (p.length > 10) {
         p.pop();
@@ -1372,7 +1363,7 @@ Main.delHistory = function (i) {
 };
 
 Main.saveFavorites = function () {
-    var i = [dSp(dI(Main.name) + "|" + dI(this.url) + "|" + dI(this.logo) + "|" + dI(Ach(3)) + "||" + dI(this.pl_url) + "|" + this.ssize + "|" + this.a_num + "|" + this.buffer + "|" + this.ibuffer + "|" + this.timeshift + "|" + this.region + "|" + dI(this.parser) + "|" + dI(this.search_on))];
+    var i = [dSp(dI(Main.name) + "|" + dI(this.url) + "|" + dI(this.logo) + "|" + dI(GetChannelInfo(3)) + "||" + dI(this.pl_url) + "|" + this.ssize + "|" + this.a_num + "|" + this.buffer + "|" + this.ibuffer + "|" + this.timeshift + "|" + this.region + "|" + dI(this.parser) + "|" + dI(this.search_on))];
     Main.readFile(i, Main.fav_url);
     Main.writeFile(i, Main.fav_url);
     Display.status("<b style=\"color:#CDCDCD\">Added to Favourites " + Main.fav_num + " - \"" + Main.fav_name + "\"</b>", 1500);
@@ -3193,7 +3184,7 @@ KeyHandler.MainMenuKeyDown = function () {
             if (T.delta > 5) {
                 T.delta = 0;
             }
-            YandexGetUrl(GetYindex());
+            // removed : YandexGetUrl(GetYindex());
         } else {
             ListNextPage();
         }
@@ -3214,7 +3205,7 @@ KeyHandler.MainMenuKeyDown = function () {
 				+ Main.ch_index
 				+ "</font> :";
                 Main.Ya_flag_step++;
-                YandexGetUrl(GetYindex());
+                // removed : YandexGetUrl(GetYindex());
             } else {
                 if (API.XML_URL.indexOf("start.xml") == 0) {
                     if (Main.ya_auto && !Main.ya_base_info) {
@@ -3223,7 +3214,7 @@ KeyHandler.MainMenuKeyDown = function () {
                         if (!Main.ya_base_info) {
                             Display.status("creating Yandex EPG from database");
                         }
-                        setTimeout(function() { GetYandexBase(); }, 500);
+                        // removed : setTimeout(function() { GetYandexBase(); }, 500);
                     }
                 }
             }
@@ -3236,7 +3227,7 @@ KeyHandler.MainMenuKeyDown = function () {
             if (T.delta < -6) {
                 T.delta = 0;
             }
-            YandexGetUrl(GetYindex());
+            // removed : YandexGetUrl(GetYindex());
         } else {
             ListPrevPage();
         }
@@ -3264,7 +3255,7 @@ KeyHandler.MainMenuKeyDown = function () {
                 } else {
                     Main.ya_all_day = false;
                 }
-                YandexGetUrl(GetYindex());
+                // removed : YandexGetUrl(GetYindex());
             } else {
                 if (Player.state == Player.STOPPED) {
                     Main.PlayChannel();
@@ -5117,7 +5108,7 @@ ChannelSetupFormular = function () {
     } else {
         getIdn("4_help");
     }
-    var l = Ach(3);
+    var l = GetChannelInfo(3);
     if (l.length >= 1000) {
         l = "Edit impossible! Too big size.";
     }
@@ -5209,15 +5200,15 @@ SaveValue = function () {
             bd = lrdPr(getId("1").value);
             bf = "";
         }
-        if (Ach(3).length < 1000) {
-            var bb = parseInt(Ach(3).length / 100);
+        if (GetChannelInfo(3).length < 1000) {
+            var bb = parseInt(GetChannelInfo(3).length / 100);
             var o = "";
             for (var R = 0; R < bb + 1; R++) {
                 o += getId(2 + R).value;
             }
             o = lrdPr(o);
         } else {
-            o = Ach(3);
+            o = GetChannelInfo(3);
             bb = 0;
         }
         var i = lrdPr(getId(bb + 3).value);
@@ -5838,7 +5829,7 @@ function getCl(i) {
  * @param {number} i Channel info number (0 - name, 1 - url, 2 - logo, ...)
  * @return
  */
-function Ach(i) {
+function GetChannelInfo(i) {
     try {
         return API.channels[Main.chan_array_index][i];
     } catch (b) {
@@ -6082,61 +6073,6 @@ function getYoutubeUrl(G) {
     return y;
 }
 
-function getVkUrl(D) {
-    var u = "";
-    var q = "";
-    var i = [];
-    D = D.replace("vkontakte.ru", "vk.com");
-    q = API.Request(D);
-    var l = q.match(/var video_host = [\s\S]*(?=var video_title)/);
-    if (l != null) {
-        var p = l[0].replace(/[';]/g, "").split("\x0A");
-        if (p.length == 6) {
-            for (j = 0; j < 5; j++) {
-                p[j] = dPr(p[j].split("=")[1]);
-            }
-            if (p[4] == 0 && p[3] == 0 && p[1] == 0) {
-                u = "http://" + p[0] + "/assets/video/" + p[2] + parser(q, "vkid=", "&") + ".vk.flv";
-            } else {
-                if (p[4] == 0 && p[3] == 0) {
-                    u = p[0] + "u" + p[1] + "/videos/" + p[2] + ".flv";
-                } else {
-                    for (var j = parseInt(p[4]); j > -1; j--) {
-                        switch (j) {
-                        case 3:
-                            o = "720.mp4";
-                            s = "720p.mp4";
-                            break;
-                        case 2:
-                            o = "480.mp4";
-                            s = "480p.mp4";
-                            break;
-                        case 1:
-                            o = "360.mp4";
-                            s = "360p.mp4";
-                            break;
-                        case 0:
-                            var o = "240.mp4";
-                            var s = "240p.mp4";
-                            break
-                        }
-                        i = [p[0] + "u" + p[1] + "/videos/" + p[2] + "." + o, s];
-                        Main.url_arr.push(i);
-                        if (s.indexOf(API.Vquality) > -1) {
-                            u = i[0];
-                            Selectbox.url_selected = Main.url_arr.length - 1;
-                        }
-                    }
-                    if (Main.url_arr.length > 0 && u == "") {
-                        u = Main.url_arr[0][0];
-                    }
-                }
-            }
-        }
-    }
-    return u;
-}
-
 function getRuTubeUrl(D) {
     var u = "";
     var q = "";
@@ -6193,8 +6129,8 @@ function EUROGetEPG(x) {
     Main.showinfoList("Loading EPG...");
     var i = "";
     var j = "";
-    UKAbort();
-    Main.Ya_ready_timeout = setTimeout(function() { ukErr(); }, 3000);
+    YaAbort();
+    Main.Ya_ready_timeout = setTimeout(function() { Err(); }, 3000);
     Main.YaHTTP = new XMLHttpRequest();
     Main.YaHTTP.onreadystatechange = function () {
         if (Main.YaHTTP.readyState == 4 && Main.YaHTTP.status == 200) {
@@ -6231,222 +6167,6 @@ function EUROGetEPG(x) {
     Main.YaHTTP.send(null);
 }
 
-UKGetUrl = function (i, z) {
-    var j = "";
-    var bb = z;
-    if (bb.indexOf("it-") >= 0) {
-        alert("__________This is run");
-        b = "http://nebo.ddns.net:8881/epg_ita_temp.php?ch=" + z;
-        Main.ch_index = i;
-        alert("_________________b: " + b);
-        Main.uk_prog_info_arr = [];
-        Main.temp_uk_epg_info_arr = [];
-        ITAParsing(b, i);
-    } else {
-        b = "http://bleb.org/tv/channel.html?ch=" + z + "&all";
-        Main.ch_index = i;
-        alert("_____2____________b: " + b);
-        Main.uk_prog_info_arr = [];
-        Main.temp_uk_epg_info_arr = [];
-        UKParsing(b, i);
-    }
-};
-
-function UKParsing(o, l) {
-    Main.showinfoList("Loading UK EPG...");
-    var i = "";
-    var j = "";
-    if (T.delta < -6) {
-        T.delta = 0;
-    }
-    var q = parseInt(T.y_t_days + T.delta);
-    if (!Main.guide) {
-        o = o + q;
-    }
-    UKAbort();
-    Main.Ya_ready_timeout = setTimeout(function() { ukErr(); }, 3000);
-    Main.YaHTTP = new XMLHttpRequest();
-    Main.YaHTTP.onreadystatechange = function () {
-        if (Main.YaHTTP.readyState == 4 && Main.YaHTTP.status == 200) {
-            clearTimeout(Main.Ya_ready_timeout);
-            i = Main.YaHTTP.responseText;
-            if (!Main.guide) {
-                Main.showinfoList("Loaded!");
-                var S = i.split("<table class=\"listings\">");
-                var V = S[1].split("<tr>");
-                for (var I = 1; I < V.length; I++) {
-                    i = V[I];
-                    var br = parser(i, "<b>", "</b>");
-                    var O = parser(i, "<b>", "</b>&nbsp;");
-                    O = O.substring(5);
-                    var W = dSp(br + "|" + O);
-                    Main.temp_uk_epg_info_arr.push(W);
-                }
-                var bV = "<li><font style=\"color:#00ccff;\">";
-                var bG = "<li><font style=\"color:#ffcc00;\">";
-                var bW = "<li><font style=\"color:#ffeeee;\">";
-                var bF = "</font><font style=\"color:#CCCCCC;\">";
-                var bC = "</font></li>";
-                var bw = Main.temp_uk_epg_info_arr;
-                var bA;
-                var bJ = "<ul>";
-                var q = new Date();
-                var bx = addZero(q.getHours());
-                var bD = addZero(q.getMinutes());
-                for (bA = 0; bA < bw.length; bA++) {
-                    var bH = bw[bA].split("|");
-                    var bz = bH[0];
-                    var bB = bH[1];
-                    var bI = bH[0].split(":");
-                    var by = bI[0];
-                    var bE = bI[1];
-                    if (by <= bx) {
-                        if (by == bx && bE <= bD) {
-                            bJ = bG + bz + bF + "  " + bB + bC;
-                        } else {
-                            bJ += bW + bz + bF + "  " + bB + bC;
-                        }
-                    } else {
-                        bJ += bV + bz + bF + "  " + bB + bC;
-                    }
-                }
-                bJ += "</ul>";
-                Main.showinfoList(bJ);
-            }
-        }
-    }
-    Main.YaHTTP.open("GET", o + j, true);
-    Main.YaHTTP.setRequestHeader("User-Agent", "Opera/9.80 (Windows NT 5.1; U; ru) Presto/2.9.168 Version/11.51");
-    Main.YaHTTP.send(null);
-}
-
-function ITAParsing(o, l) {
-    Main.showinfoList("Loading ITA EPG...");
-    var i = "";
-    var j = "";
-    if (T.delta < -6) {
-        T.delta = 0;
-    }
-    var q = parseInt(T.y_t_days + T.delta);
-    if (!Main.guide) {
-        o = o + q;
-    }
-    UKAbort();
-    Main.Ya_ready_timeout = setTimeout(function() { ukErr(); }, 3000);
-    Main.YaHTTP = new XMLHttpRequest();
-    Main.YaHTTP.onreadystatechange = function () {
-        if (Main.YaHTTP.readyState == 4 && Main.YaHTTP.status == 200) {
-            clearTimeout(Main.Ya_ready_timeout);
-            i = Main.YaHTTP.responseText;
-            if (!Main.guide) {
-                Main.showinfoList("Loaded!");
-                var V = i.split("<div class=\"gen dataz\">");
-                for (var I = 0; I < V.length; I++) {
-                    i = V[I];
-                    alert("Array MA" + i);
-                    var O = parser(i, "<b>", "</b>");
-                    i = V[I + 1];
-                    var br = parser(i, "\">", "</a>");
-                    var W = dSp(O + "|" + br);
-                    Main.temp_uk_epg_info_arr.push(W);
-                }
-                var bV = "<li><font style=\"color:#00ccff;\">";
-                var bG = "<li><font style=\"color:#ffcc00;\">";
-                var bW = "<li><font style=\"color:#ffeeee;\">";
-                var bF = "</font><font style=\"color:#CCCCCC;\">";
-                var bC = "</font></li>";
-                var bw = Main.temp_uk_epg_info_arr;
-                var bA;
-                var bJ = "<ul>";
-                var q = new Date();
-                var bx = addZero(q.getHours());
-                var bD = addZero(q.getMinutes());
-                for (bA = 0; bA < bw.length; bA++) {
-                    var bH = bw[bA].split("|");
-                    var bz = bH[0];
-                    var bB = bH[1];
-                    var bI = bH[1].split(":");
-                    var by = bI[0];
-                    var bE = bI[1];
-                    if (by <= bx) {
-                        if (by == bx && bE <= bD) {
-                            bJ = bG + bz + bF + "  " + bB + bC;
-                        } else {
-                            bJ += bW + bz + bF + "  " + bB + bC;
-                        }
-                    } else {
-                        bJ += bV + bz + bF + "  " + bB + bC;
-                    }
-                }
-                bJ += "</ul>";
-                Main.showinfoList(bJ);
-            }
-        }
-    }
-    Main.YaHTTP.open("GET", o + j, true);
-    Main.YaHTTP.setRequestHeader("User-Agent", "Opera/9.80 (Windows NT 5.1; U; ru) Presto/2.9.168 Version/11.51");
-    Main.YaHTTP.send(null);
-}
-
-YandexGetUrl = function (i) {
-    var bt = new Date();
-    var j = "";
-    if (Main.Ya_flag_step > 0 && Main.Ya_flag_step < 5) {
-        var l = ["", "5", "4", "3", "7"];
-        j = "&flag=" + l[Main.Ya_flag_step];
-    } else {
-        Main.Ya_flag_step = 0;
-    }
-    if (i.indexOf("/m.tv.yandex.") > 0 && i.indexOf("/program/") > 0) {
-        var o = i;
-    } else {
-        if (i.indexOf("/m.tv.yandex.") > 0 && i.indexOf("channel=") > 0) {
-            i = i.substr(i.indexOf("http:"));
-            i = i.substr(22);
-            var p = i.substr(0, i.indexOf("/"));
-            i = i.substr(i.indexOf("channel="));
-            var q = (i.indexOf("&") < 0) ? i.length : i.indexOf("&");
-            i = i.substring(8, q);
-        } else {
-            p = (Main.region != "") ? Main.region : API.CODE;
-        }
-        if (T.delta == 0) {
-            o = "https://m.tv.yandex." + API.REG + "/" + p + "/channels/" + i + "?period=all-day";
-            Main.lost_date = ": <font style='font-size:16px;color:cyan;'>" + bt.toDateString() + "</font> : <font style='font-size:16px;color:white;'>scroll page</font><font style='font-size:16px;color:cyan;'> P-/P+ </font> :";
-        } else {
-            if (T.delta > 0) {
-                var bu = formatDate(bt.setDate(bt.getDate() + T.delta));
-                o = "https://m.tv.yandex." + API.REG + "/" + p + "/channels/" + i + "?" + "date=" + bu + "&period=all-day";
-                Main.lost_date = ": <font style='font-size:16px;color:cyan;'>" + bu + "</font> : <font style='font-size:16px;color:white;'>scroll page</font><font style='font-size:16px;color:cyan;'> P-/P+ </font> :";
-            }
-            if (T.delta < 0) {
-                var bv = formatDate(bt.setDate(bt.getDate() + T.delta));
-                o = "https://m.tv.yandex." + API.REG + "/" + p + "/channels/" + i + "?" + "date=" + bv + "&period=all-day";
-                Main.lost_date = ": <font style='font-size:16px;color:cyan;'>" + bv + "</font> : <font style='font-size:16px;color:white;'>scroll page</font><font style='font-size:16px;color:cyan;'> P-/P+ </font> :";
-            }
-        }
-        Main.ch_index = i;
-        alert("_________________b: " + o);
-        Main.ya_prog_info_arr = [];
-    }
-    Main.temp_ya_epg_info_arr = [];
-    YandexParsing(o, p, i, j);
-};
-
-function formatDate(bt) {
-    var q = new Date(bt),
-        bY = "" + (q.getMonth() + 1),
-        bX = "" + q.getDate(),
-        bZ = q.getFullYear();
-    if (bY.length < 2) {
-        bY = "0" + bY;
-    }
-    if (bX.length < 2) {
-        bX = "0" + bX;
-    }
-    return [bZ, bY, bX].join("-");
-}
-
 function YaAbort() {
     clearTimeout(Main.Ya_ready_timeout);
     if (Main.YaHTTP != null) {
@@ -6461,20 +6181,6 @@ function Err() {
     Main.showinfoList("Nothing Found!");
 }
 
-function UKAbort() {
-    clearTimeout(Main.Ya_ready_timeout);
-    if (Main.YaHTTP != null) {
-        Main.YaHTTP.abort();
-        Main.YaHTTP = null;
-    }
-}
-
-function ukErr() {
-    UKAbort();
-    Main.yandextv_mode = false;
-    Main.showinfoList("Nothing Found!");
-}
-
 function addZero(u) {
     if (u < 10) {
         u = "0" + u;
@@ -6482,184 +6188,9 @@ function addZero(u) {
     return u;
 }
 
-function YandexParsing(o, p, l, j) {
-    Main.showinfoList("Loading EPG...");
-    var i = "";
-    if (T.delta < -6) {
-        T.delta = 0;
-    }
-    var q = parseInt(T.y_t_days + T.delta);
-    if (!Main.guide) {
-        o = o + q;
-    }
-    YaAbort();
-    Main.Ya_ready_timeout = setTimeout(function() { Err(); }, 3000);
-    Main.YaHTTP = new XMLHttpRequest();
-    Main.YaHTTP.onreadystatechange = function () {
-        if (Main.YaHTTP.readyState == 4 && Main.YaHTTP.status == 200) {
-            clearTimeout(Main.Ya_ready_timeout);
-            i = Main.YaHTTP.responseText;
-            if (!Main.guide) {
-                Main.showinfoList("Loaded!");
-                var S = i.split("<span class=\"tv-event__time\">");
-                for (var I = 1; I < S.length; I++) {
-                    i = S[I];
-                    var br = parser(i, "<span class=\"tv-event__time-text\">", "</span>");
-                    if (br == "") {
-                        Err();
-                        return;
-                    }
-                    var O = parser(i, "<span class=\"tv-event-title\">", "</span>");
-                    if (O == "") {
-                        Err();
-                        return;
-                    }
-                    var W = dSp(br + "|" + O);
-                    Main.temp_ya_epg_info_arr.push(W);
-                }
-                var bV = "<li><font style=\"color:#00ccff;\">";
-                var bG = "<li><font style=\"color:#ffcc00;\">";
-                var bW = "<li><font style=\"color:#ffeeee;\">";
-                var bF = "</font><font style=\"color:#CCCCCC;\">";
-                var bC = "</font></li>";
-                var bw = Main.temp_ya_epg_info_arr;
-                var bA;
-                var bJ = "<ul>";
-                var q = new Date();
-                var bx = addZero(q.getHours());
-                var bD = addZero(q.getMinutes());
-                for (bA = 0; bA < bw.length; bA++) {
-                    var bH = bw[bA].split("|");
-                    var bz = bH[0];
-                    var bB = bH[1];
-                    var bI = bH[0].split(":");
-                    var by = bI[0];
-                    var bE = bI[1];
-                    if (by <= bx) {
-                        if (by == bx && bE <= bD) {
-                            bJ = bG + bz + bF + "  " + bB + bC;
-                        } else {
-                            bJ += bW + bz + bF + "  " + bB + bC;
-                        }
-                    } else {
-                        bJ += bV + bz + bF + "  " + bB + bC;
-                    }
-                }
-                bJ += "</ul>";
-                Main.showinfoList(bJ);
-                if (Main.temp_ya_epg_info_arr.length > 0) {
-                    if (Player.state == Player.STOPPED || (Player.state == Player.PLAYING_LIVE && Main.play_chan_array_index == Main.chan_array_index)) {
-                        Main.ya_prog_id = Main.chan_array_index;
-                        Main.ya_epg_info_arr = Main.temp_ya_epg_info_arr;
-                        GetEpgInfo();
-                    }
-                }
-            }
-        }
-    }
-    Main.YaHTTP.open("GET", o + j, true);
-    Main.YaHTTP.setRequestHeader("User-Agent", "Opera/9.80 (Windows NT 5.1; U; ru) Presto/2.9.168 Version/11.51");
-    Main.YaHTTP.send(null);
-}
-
 var Ya_name_index_obj = {};
 var Ya_icon_index_url_obj = {};
 var Ya_icon_name_url_obj = {};
-
-function GetYandexBase() {
-    var o = [];
-    Main.readFile(o, API.CODE + "_ya_name_index_url.dat");
-    if (o.length > 0) {
-        Display.status("Deleting Yandex database");
-        o = [];
-        Main.writeFile(o, API.CODE + "_ya_name_index_url.dat");
-        setTimeout(function() { location.reload(true); }, 3000);
-    } else {
-        var j = "";
-        API.AsReqMode = false;
-        j = API.Request("https://tv.yandex." + API.REG + "/" + API.CODE + "/channels");
-        API.AsReqMode = true;
-        var R = "connection";
-        if (j != "") {
-            R = "structure";
-            var E = "<font style=\"color:#00ccff;font-weight:bolder\">";
-            var p = j.indexOf("<img class=\"b-icon\" src=\"");
-            j = j.substr(p);
-            p = j.indexOf("<td class=\"l-suplayout__rotator\">");
-            j = j.substr(0, p);
-            var q = j.match(/(http:?[^>]+orig)|(alt="?[^>]+")|(data-id="?[^>]+")/g);
-            o = [];
-            if (q != null) {
-                Main.ya_auto = false;
-                var D = q.length - 3;
-                var l = 0;
-                for (var s = 0; s < D; s = s + 3) {
-                    var G = "";
-                    var i = "";
-                    var u = "";
-                    if (q[s].indexOf("https:") >= 0 && q[s + 1].indexOf("alt=") >= 0 && q[s + 2].indexOf("data-id=") >= 0) {
-                        G = q[s];
-                        u = q[s + 1].replace("alt=", "").replace(/"/g, "");
-                        i = q[s + 2].replace("data-id=", "").replace(/"/g, "");
-                    } else {
-                        if (q[s].indexOf("alt=") >= 0 && q[s + 1].indexOf("data-id=") >= 0) {
-                            G = "logos/image.png";
-                            u = q[s].replace("alt=", "").replace(/"/g, "");
-                            i = q[s + 1].replace("data-id=", "").replace(/"/g, "");
-                            s = s - 1;
-                            D = D - 1;
-                        }
-                    }
-                    if (i != "") {
-                        l++;
-                        o.push(u + "|" + i + "|" + G);
-                        Ya_name_index_obj[u.toLowerCase()] = i;
-                        Ya_icon_index_url_obj[i] = G;
-                        Ya_icon_name_url_obj[u.toLowerCase()] = G;
-                    }
-                }
-                if (o.length > 0) {
-                    Main.writeFile(o, API.CODE + "_ya_name_index_url.dat");
-                    Main.ya_auto = true;
-                }
-                GetYaBaseInfo();
-            }
-        }
-        if (!Main.ya_auto) {
-            Display.status("Error " + R);
-        }
-    }
-}
-
-GetUkEpgInfo = function () {
-    alert("___Get-UK-EPGInfo is running");
-    if (Main.uk_epg_info_arr.length > 0) {
-        var bG = "<li><font style=\"color:#ffcc00;font-size:20px;font-weight:bold;\">";
-        var bF = "</font><font style=\"color:#CCCCCC;font-size:20px;font-weight:bold;\">";
-        var bC = "</font></li>";
-        var bw = Main.uk_epg_info_arr;
-        var bA;
-        var bJ = "";
-        var q = new Date();
-        var bx = addZero(q.getHours());
-        var bD = addZero(q.getMinutes());
-        alert("TIME _ HOURS_ MIN " + bx + ":" + bD);
-        for (bA = 0; bA < bw.length; bA++) {
-            var bH = bw[bA].split("|");
-            var bz = bH[0];
-            var bB = bH[1];
-            var bI = bH[0].split(":");
-            var by = bI[0];
-            var bE = bI[1];
-            if (by <= bx) {
-                if (by == bx && bE <= bD) {
-                    bJ += bG + bz + bF + "  " + bB + bC;
-                }
-            }
-        }
-        widgetAPI.putInnerHTML(getId("epg_info"), bJ);
-    }
-};
 
 GetEpgInfo = function () {
     if (Main.ya_epg_info_arr.length > 0) {
@@ -6779,7 +6310,7 @@ function decLongUrl(i) {
 function Super_parser(j) {
     var p = j;
     if (j.indexOf("vk.com") > 0 || j.indexOf("vk.com/video_ext.php?") > 0 || j.indexOf("/vkontakte.php?video") > 0 || j.indexOf("vkontakte.ru/video_ext.php") > 0 || j.indexOf("/vkontakte/vk_kinohranilishe.php?id=") > 0) {
-        p = getVkUrl(j);
+        // removed : p = getVkUrl(j);
     } else {
         if (j.indexOf("youtube.com/watch?v=") > 0) {
             var u = j.substr(j.indexOf("=") + 1);
