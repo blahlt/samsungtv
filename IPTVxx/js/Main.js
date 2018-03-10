@@ -127,7 +127,7 @@ Main.onLoad = function () {
         this.hardware = pluginTv.GetProductCode(1);
 
         if (this.hardware == "LN40B650_KOR") {
-            Main.Emu = true;
+            // enabled for emulator: Main.Emu = true;
         } else {
             if (this.hardware.indexOf("C") > 1) {
                 Main.seriesC = true;
