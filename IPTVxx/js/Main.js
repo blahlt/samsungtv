@@ -528,7 +528,7 @@ Main.updatePage = function () {
             } else {
                 widgetAPI.putInnerHTML(getId("number" + q), o + 1);
             }
-            var i = (dPr(API.channels[o][2]) != "") ? getLogo1(dPr(API.channels[o][5]), dPr(API.channels[o][2])) : getLogo2(lrdPr(API.channels[o][0]), API.channels[o][3], dPr(API.channels[o][5]));
+            var i = (dPr(API.channels[o][2]) != "") ? getLogo1(dPr(API.channels[o][5]), dPr(API.channels[o][2])) : getLogo2(trimString(API.channels[o][0]), API.channels[o][3], dPr(API.channels[o][5]));
             LogoStyle("img" + q, i, 1);
             var u = (API.channels[o][0].toLowerCase().indexOf("Install the original version") >= 0) ? "Access denied!" : API.channels[o][0];
             widgetAPI.putInnerHTML(getId("title" + q), u);
@@ -580,7 +580,7 @@ getLogo1 = function (p, o) {
 };
 
 getLogo2 = function (o, i, q) {
-    o = lrdPr(o);
+    o = trimString(o);
     var p = "";
     if (API.XML_URL.indexOf("help") > 0) {
         p = "logos/help.png";
@@ -592,11 +592,11 @@ getLogo2 = function (o, i, q) {
                 if (Main.ya_auto && !isNaN(i) && i > 0 && i < 2000) {
                     p = Ya_icon_index_url_obj[i];
                 }
-                if (Main.ya_auto && lrdPr(o) != "" && (p == undefined || isNaN(i) || i < 1 || i > 1999)) {
-                    p = Ya_icon_name_url_obj[lrdPr(o).toLowerCase().replace(/\_/g, " ")];
+                if (Main.ya_auto && trimString(o) != "" && (p == undefined || isNaN(i) || i < 1 || i > 1999)) {
+                    p = Ya_icon_name_url_obj[trimString(o).toLowerCase().replace(/\_/g, " ")];
                 }
                 if (p == undefined || !Main.ya_auto) {
-                    p = (lrdPr(o) != "" && dPr(i) != "") ? "logos/blue_folder.png" : "logos/image.png";
+                    p = (trimString(o) != "" && dPr(i) != "") ? "logos/blue_folder.png" : "logos/image.png";
                 }
             } else {
                 p = "logos/image.png";
@@ -1257,7 +1257,7 @@ Main.PlayNoFlashStream = function () {
         if (!Main.Foto) {
             API.AsReqMode = false;
             try {
-                i = Super_parser(i);
+                // removed : i = Super_parser(i);
             } catch (b) {
                 i = this.url;
             }
@@ -1991,63 +1991,48 @@ API.loadComplete = function () {
     }
 };
 
-API.Request = function (o) {
+API.Request = function (url) {
     try {
         Main.guide = false;
-        if (API.AsReqMode && Main.parser == "tsnakeman") {
-            KeyHandler.setFocus(1);
-        } else {
-            if (API.AsReqMode && o.indexOf("://") > 0) {
-                if (API.search_string != "" && Main.search && o.indexOf("3.php") > 0) {
-                    o += "search=" + API.search_string;
-                }
-                if (API.search_string != "" && Main.search && o.indexOf("search.php") > 0) {
-                    var i = "?";
-                    o += i + "search=" + API.search_string + "&maxResults=50";
-                }
-                o = Super_Send(o);
-                alert("GETTING URL!!! >" + o);
-            }
-            if (API.XHRObj != null) {
-                API.XHRObj.destroy();
-                API.XHRObj = null;
-            }
-            API.XHRObj = new XMLHttpRequest();
-            if (API.AsReqMode) {
-                KeyHandler.setFocus(1);
-                API.stReq_timeout = setTimeout(function() { API.stopRequest(); }, API.stReq_time);
-                API.XHRObj.onreadystatechange = function () {
-                    if (API.XHRObj.readyState == 4) {
-                        API.recieveData(o);
-                    }
-                }
-                if (Main.seriesE && API.XHRObj.overrideMimeType) {
-                    API.XHRObj.overrideMimeType("text/xml");
-                }
-            }
-            API.XHRObj.open("GET", o, API.AsReqMode);
-            if (!API.AsReqMode || API.Header == "1") {
-                API.XHRObj.setRequestHeader("Accept-Encoding", "identity");
-                API.XHRObj.setRequestHeader("Accept-Language", "en-us,en;q=0.5");
-                API.XHRObj.setRequestHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
-                API.XHRObj.setRequestHeader("User-Agent", "Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.6) Gecko/20100627 Firefox/3.6.6");
-                API.XHRObj.setRequestHeader("Accept-Charset", "ISO-8859-1,utf-8;q=0.7,*;q=0.7");
-                API.XHRObj.setRequestHeader("Connection", "close");
-            }
-            API.XHRObj.send(null);
-            if (!API.AsReqMode) {
-                if ((API.XHRObj.status == 302 || API.XHRObj.status == 303) && API.XHRObj.getResponseHeader("Location") != null) {
-                    o = API.XHRObj.getResponseHeader("Location");
-                    return API.Request(o);
-                } else {
-                    if (API.XHRObj.readyState == 4 && API.XHRObj.status == 200) {
-                        return API.XHRObj.responseText;
-                    } else {
-                        return "";
-                    }
-                }
-            }
-        }
+		if (API.XHRObj != null) {
+			API.XHRObj.destroy();
+			API.XHRObj = null;
+		}
+		API.XHRObj = new XMLHttpRequest();
+		if (API.AsReqMode) {
+			KeyHandler.setFocus(1);
+			API.stReq_timeout = setTimeout(function() { API.stopRequest(); }, API.stReq_time);
+			API.XHRObj.onreadystatechange = function () {
+				if (API.XHRObj.readyState == 4) {
+					API.recieveMenuData(url);
+				}
+			}
+			if (Main.seriesE && API.XHRObj.overrideMimeType) {
+				API.XHRObj.overrideMimeType("text/xml");
+			}
+		}
+		API.XHRObj.open("GET", url, API.AsReqMode);
+		if (!API.AsReqMode || API.Header == "1") {
+			API.XHRObj.setRequestHeader("Accept-Encoding", "identity");
+			API.XHRObj.setRequestHeader("Accept-Language", "en-us,en;q=0.5");
+			API.XHRObj.setRequestHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
+			API.XHRObj.setRequestHeader("User-Agent", "Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.6) Gecko/20100627 Firefox/3.6.6");
+			API.XHRObj.setRequestHeader("Accept-Charset", "ISO-8859-1,utf-8;q=0.7,*;q=0.7");
+			API.XHRObj.setRequestHeader("Connection", "close");
+		}
+		API.XHRObj.send(null);
+		if (!API.AsReqMode) {
+			if ((API.XHRObj.status == 302 || API.XHRObj.status == 303) && API.XHRObj.getResponseHeader("Location") != null) {
+				url = API.XHRObj.getResponseHeader("Location");
+				return API.Request(url);
+			} else {
+				if (API.XHRObj.readyState == 4 && API.XHRObj.status == 200) {
+					return API.XHRObj.responseText;
+				} else {
+					return "";
+				}
+			}
+		}
     } catch (c) {}
 };
 
@@ -2076,10 +2061,10 @@ function AGen() {
     }
 }
 
-API.recieveData = function (i) {
+API.recieveMenuData = function (url) {
     clearTimeout(API.stReq_timeout);
     if (API.XHRObj.status == 200) {
-        if (i.toLowerCase().indexOf("=m3u") >= 0 || i.toLowerCase().indexOf(".m3u") >= 0 && API.XHRObj.responseText != null && API.XHRObj.responseText != "") {
+        if (url.toLowerCase().indexOf("=m3u") >= 0 || url.toLowerCase().indexOf(".m3u") >= 0 && API.XHRObj.responseText != null && API.XHRObj.responseText != "") {
             API.getChannel_list(API.XHRObj.responseText);
         } else {
             if (API.XHRObj.responseXML != null && API.XHRObj.responseXML != "") {
@@ -2148,7 +2133,7 @@ API.getChannel_list = function (bk) {
                 if (bo == 1) {
                     return dPr(bn, 1);
                 } else {
-                    return lrdPr(bn);
+                    return trimString(bn);
                 }
             } catch (Y) {
                 return "";
@@ -2160,7 +2145,7 @@ API.getChannel_list = function (bk) {
                 if (bo == null) {
                     bo = "";
                 }
-                return lrdPr(bo);
+                return trimString(bo);
             } catch (Y) {
                 return "";
             }
@@ -2177,58 +2162,81 @@ API.getChannel_list = function (bk) {
         var bc = "";
         var ba = "";
         if (API.XML_URL.toLowerCase().indexOf(".m3u8") < 0) {
+			// m3u parser
             if (API.XML_URL.toLowerCase().indexOf(".m3u") >= 0 || API.XML_URL.toLowerCase().indexOf("=m3u") >= 0) {
                 var W = {};
-                var U = 1;
-                var Q = bh.split("\x0A");
-                for (var q = 0; q < Q.length; q++) {
-                    if ((Q[q].indexOf("#EXTINF:") >= 0 && (Q[q + 1].indexOf("://") > 0 || Q[q + 2].indexOf("://") > 0 || Q[q + 1].indexOf("/dtv") > -1 || Q[q + 2].indexOf("/dtv") > -1)) || Q[q].indexOf("#EXTM3U") >= 0) {
-                        var O = "";
-                        var l = "";
-                        var G = "";
-                        var z = "";
-                        var X = "";
+                var channelGroupIndex = 1;
+                var lines = bh.split("\x0A"); // new line, (LF, 0x0A, \n)
+                for (var lineIndex = 0; lineIndex < lines.length; lineIndex++) {
+                    if ((lines[lineIndex].indexOf("#EXTINF:") >= 0 && (lines[lineIndex + 1].indexOf("://") > 0 || lines[lineIndex + 2].indexOf("://") > 0
+						|| lines[lineIndex + 1].indexOf("/dtv") > -1 || lines[lineIndex + 2].indexOf("/dtv") > -1)) || lines[lineIndex].indexOf("#EXTM3U") >= 0) {
                         var E = "";
-                        var R = "";
-                        var D = "";
                         var y = "";
                         var u = "";
-                        var s = "";
-                        Q[q] = Q[q].replace(/'/g, "\"");
-                        s = parser(Q[q], "cache=", " ").replace(/"/g, "");
-                        s = (s >= 0.5 && s <= 20) ? s : (s >= 50 && s <= 2000) ? s / 100 : "";
-                        l = lrdPr(parser(Q[q], "tvg-name=\"", "\"").replace(/"/g, ""));
-                        G = parser(Q[q], "tvg-shift=", " ").replace(/["\+]/g, "");
-                        z = lrdPr(parser(Q[q], "tvg-logo=\"", "\"").replace(/"/g, "")).replace(/_/g, " ");
-                        X = parser(Q[q], "aspect-ratio=", " ").replace(/"/g, "");
-                        X = (X.indexOf("16:9") >= 0 || X.toLowerCase().indexOf("16x9") >= 0 || X.indexOf("0") == 0) ? "0" : (X.indexOf("14:9") >= 0 || X.toLowerCase().indexOf("14x9") >= 0 || X.indexOf("1") == 0) ? "1" : (X.toLowerCase().indexOf("4:3z2") >= 0 || X.toLowerCase().indexOf("4x3z2") >= 0 || X.indexOf("2") == 0) ? "2" : (X.toLowerCase().indexOf("4:3z1") >= 0 || X.toLowerCase().indexOf("4x3z1") >= 0 || X.indexOf("3") == 0) ? "3" : (X.indexOf("4:3") >= 0 || X.toLowerCase().indexOf("4x3") >= 0 || X.indexOf("4") == 0) ? "4" : (X.toLowerCase().indexOf("x-zoom") >= 0 || X.indexOf("5") == 0) ? "5" : "";
-                        (X.toLowerCase().indexOf("auto") >= 0 || X.indexOf("6") == 0) ? "6" : "";
-                        D = parser(Q[q], "audio-track=", " ").replace(/"/g, "");
-                        D = (D != "") ? (parseInt(D) + 1).toString() : "";
-                        if (q == 0) {
-                            p = (z != "") ? z : "";
-                            o = (X != "") ? X : "";
-                            i = (D != "") ? D : "";
-                            be = (s != "") ? s : "";
-                            bg = (G != "") ? G : "";
+						
+						var channelCache = "";
+						var channelCode = "";
+						var channelTimeShift = "";
+						var channelLogo = "";
+						var channelAspectRatio = "";
+						var channelAudioTrack = "";
+						var channelGroup = "";
+						
+                        lines[lineIndex] = lines[lineIndex].replace(/'/g, "\"");
+						
+                        channelCache = parser(lines[lineIndex], "cache=", " ").replace(/"/g, "");
+                        channelCache = (channelCache >= 0.5 && channelCache <= 20) ? channelCache : (channelCache >= 50 && channelCache <= 2000) ? channelCache / 100 : "";
+						
+                        channelCode = trimString(parser(lines[lineIndex], "tvg-name=\"", "\"").replace(/"/g, ""));
+						
+                        channelTimeShift = parser(lines[lineIndex], "tvg-shift=", " ").replace(/["\+]/g, "");
+						
+                        channelLogo = trimString(parser(lines[lineIndex], "tvg-logo=\"", "\"").replace(/"/g, "")).replace(/_/g, " ");
+						
+                        channelAspectRatio = parser(lines[lineIndex], "aspect-ratio=", " ").replace(/"/g, "");
+                        channelAspectRatio = (channelAspectRatio.indexOf("16:9") >= 0 || channelAspectRatio.toLowerCase().indexOf("16x9") >= 0 || channelAspectRatio.indexOf("0") == 0)
+							? "0"
+							: (channelAspectRatio.indexOf("14:9") >= 0 || channelAspectRatio.toLowerCase().indexOf("14x9") >= 0 || channelAspectRatio.indexOf("1") == 0)
+								? "1"
+								: (channelAspectRatio.toLowerCase().indexOf("4:3z2") >= 0 || channelAspectRatio.toLowerCase().indexOf("4x3z2") >= 0 || channelAspectRatio.indexOf("2") == 0)
+									? "2"
+									: (channelAspectRatio.toLowerCase().indexOf("4:3z1") >= 0 || channelAspectRatio.toLowerCase().indexOf("4x3z1") >= 0 || channelAspectRatio.indexOf("3") == 0)
+										? "3"
+										: (channelAspectRatio.indexOf("4:3") >= 0 || channelAspectRatio.toLowerCase().indexOf("4x3") >= 0 || channelAspectRatio.indexOf("4") == 0)
+											? "4"
+											: (channelAspectRatio.toLowerCase().indexOf("x-zoom") >= 0 || channelAspectRatio.indexOf("5") == 0)
+												? "5"
+												: (channelAspectRatio.toLowerCase().indexOf("auto") >= 0 || channelAspectRatio.indexOf("6") == 0)
+													? "6"
+													: "";
+
+                        channelAudioTrack = parser(lines[lineIndex], "audio-track=", " ").replace(/"/g, "");
+                        channelAudioTrack = (channelAudioTrack != "") ? (parseInt(channelAudioTrack) + 1).toString() : "";
+						
+                        if (lineIndex == 0) {
+                            p = (channelLogo != "") ? channelLogo : "";
+                            o = (channelAspectRatio != "") ? channelAspectRatio : "";
+                            i = (channelAudioTrack != "") ? channelAudioTrack : "";
+                            be = (channelCache != "") ? channelCache : "";
+                            bg = (channelTimeShift != "") ? channelTimeShift : "";
                         } else {
-                            R = lrdPr(parser(Q[q], "group-title=\"", "\"").replace(/"/g, ""));
-                            y = lrdPr(parser(Q[q], ","));
+                            channelGroup = trimString(parser(lines[lineIndex], "group-title=\"", "\"").replace(/"/g, ""));
+                            y = trimString(parser(lines[lineIndex], ","));
                             try {
                                 var bl = FoundYaIndex[y]
                             } catch (p) {}
-                            var bf = (Q[q + 1].indexOf("://") > 0 || Q[q + 1].indexOf("/dtv") > -1) ? Q[q + 1] : Q[q + 2];
-                            bf = lrdPr(bf);
-                            z = (z != "") ? z : p;
-                            if (z != "" && z.indexOf("://") < 0 && z.indexOf(".png") < 0) {
-                                var bb = Ya_icon_name_url_obj[z.toLowerCase()];
-                                z = (bb != undefined) ? bb : "";
+                            var bf = (lines[lineIndex + 1].indexOf("://") > 0 || lines[lineIndex + 1].indexOf("/dtv") > -1) ? lines[lineIndex + 1] : lines[lineIndex + 2];
+                            bf = trimString(bf);
+                            channelLogo = (channelLogo != "") ? channelLogo : p;
+                            if (channelLogo != "" && channelLogo.indexOf("://") < 0 && channelLogo.indexOf(".png") < 0) {
+                                var bb = Ya_icon_name_url_obj[channelLogo.toLowerCase()];
+                                channelLogo = (bb != undefined) ? bb : "";
                             }
                             if (bf.indexOf(".m3u8") < 0) {
                                 if (bf.indexOf(".m3u") > -1 || bf.indexOf(".xml") > -1) {
-                                    z = (z == "") ? "blue_folder.png" : z;
-                                    if (R != "") {
-                                        l = "Category : " + R;
+                                    channelLogo = (channelLogo == "") ? "blue_folder.png" : channelLogo;
+                                    if (channelGroup != "") {
+                                        channelCode = "Category : " + channelGroup;
                                     }
                                     u = bf;
                                     bf = "";
@@ -2236,29 +2244,29 @@ API.getChannel_list = function (bk) {
                             }
                             try {
                                 if (bl != undefined) {
-                                    l = bl;
-                                    z = FoundYaIco[l];
+                                    channelCode = bl;
+                                    channelLogo = FoundYaIco[channelCode];
                                 }
                             } catch (p) {}
                             if (bf != "") {
-                                X = (X != "") ? X : o;
-                                D = (D != "") ? D : i;
-                                G = (G != "") ? G : bg;
-                                s = (s != "") ? s : be;
+                                channelAspectRatio = (channelAspectRatio != "") ? channelAspectRatio : o;
+                                channelAudioTrack = (channelAudioTrack != "") ? channelAudioTrack : i;
+                                channelTimeShift = (channelTimeShift != "") ? channelTimeShift : bg;
+                                channelCache = (channelCache != "") ? channelCache : be;
                             }
-                            if (R != "") {
-                                E = W[R];
+                            if (channelGroup != "") {
+                                E = W[channelGroup];
                                 if (E == undefined) {
-                                    W[R] = U;
-                                    E = U;
-                                    var V = [U, R];
+                                    W[channelGroup] = channelGroupIndex;
+                                    E = channelGroupIndex;
+                                    var V = [channelGroupIndex, channelGroup];
                                     API.categories.push(V);
-                                    U++;
+                                    channelGroupIndex++;
                                 }
                             }
-                            var Z = [y, bf, z, l, E, u, X, D, s, "", G, "", "", ""];
+                            var Z = [y, bf, channelLogo, channelCode, E, u, channelAspectRatio, channelAudioTrack, channelCache, "", channelTimeShift, "", "", ""];
                             API.channels.push(Z);
-                            q++;
+                            lineIndex++;
                         }
                     }
                 }
@@ -4998,7 +5006,7 @@ Search_ok = function (o) {
     if (Main.search || Main.xxx) {
         o = "search_h";
     }
-    var i = lrdPr(getId(o).value);
+    var i = trimString(getId(o).value);
     if (i == "") {
         Main.Menu();
     } else {
@@ -5185,12 +5193,12 @@ ChannelSetupFormular = function () {
 
 SaveValue = function () {
     try {
-        var E = lrdPr(getId("0").value);
+        var E = trimString(getId("0").value);
         if (Main.url != "") {
-            var bf = lrdPr(getId("1").value);
+            var bf = trimString(getId("1").value);
             var bd = "";
         } else {
-            bd = lrdPr(getId("1").value);
+            bd = trimString(getId("1").value);
             bf = "";
         }
         if (GetChannelInfo(3).length < 1000) {
@@ -5199,12 +5207,12 @@ SaveValue = function () {
             for (var R = 0; R < bb + 1; R++) {
                 o += getId(2 + R).value;
             }
-            o = lrdPr(o);
+            o = trimString(o);
         } else {
             o = GetChannelInfo(3);
             bb = 0;
         }
-        var i = lrdPr(getId(bb + 3).value);
+        var i = trimString(getId(bb + 3).value);
         if (Main.url != "") {
             var Z = dPr(getId(bb + 4).value);
             var s = dPr(getId(bb + 5).value);
@@ -5223,7 +5231,7 @@ SaveValue = function () {
         var z = [];
         Main.readFile(z, Main.fav_url);
         if (z.length > 0) {
-            var q = dSp(dI(E) + "|" + dI(bf) + "|" + dI(i) + "|" + dI(o) + "||" + dI(bd) + "|" + dI(Z) + "|" + dI(s) + "|" + dI(p) + "|" + dI(D) + "|" + dI(y) + "|" + dI(l) + "|" + Main.parser + "|" + Main.search_on);
+            var q = dSp(dI(E) + "|" + dI(bf) + "|" + dI(i) + "|" + dI(o) + "||" + dI(bd) + "|" + dI(Z) + "|" + dI(s) + "|" + dI(p) + "|" + dI(D) + "|" + dI(y) + "|" + dI(l) + "|" + Main.search_on);
             z.splice(u, 1, q);
             Main.writeFile(z, Main.fav_url);
             Main.playlist_prev = false;
@@ -5558,15 +5566,15 @@ onEnter = function () {
         if (bi == "on") {
             var o = ["start.xml", "", "", "", "", "0", "0", "Main|IP-TV|Films|Series", 213, "ru", "0", "0", "0", "", "100", "100", "2", "0", "0", "0", "0", "0", "1", "1", "0", "360p", "London"];
         } else {
-            var N = lrdPr(getId("0").value);
-            var bh = lrdPr(getId("2").value);
-            var bf = lrdPr(getId("3").value);
-            var bb = (dPr(bh) != "" && dPr(bf) != "") ? lrdPr(getId("1").value) : bb = "";
-            var Z = lrdPr(getId("4").value);
+            var N = trimString(getId("0").value);
+            var bh = trimString(getId("2").value);
+            var bf = trimString(getId("3").value);
+            var bb = (dPr(bh) != "" && dPr(bf) != "") ? trimString(getId("1").value) : bb = "";
+            var Z = trimString(getId("4").value);
             var y = dPr(getId("5").value);
             y = (API.Xcode != 0 && (y == API.Xcode || y == Main.ver.substr(2))) ? "0" : (API.Xcode != 0) ? API.Xcode : y;
             var E = dPr(getId("6").value);
-            var D = lrdPr(getId("7").value);
+            var D = trimString(getId("7").value);
             var s = dPr(getId("8").value);
             var K = getId("9").value;
             var q = getId("10").value;
@@ -5627,7 +5635,7 @@ onEnter = function () {
             var bk = getId("25").value;
             bk = (bk == "on") ? "1" : "0";
             var bj = getId("26").value;
-            var bs = lrdPr(getId("27").value);
+            var bs = trimString(getId("27").value);
             o = [N, bb, bh, bf, Z, y, E, D, s, K, q, l, bd, p, z, G, R, u, br, M, i, L, I, bm, bk, bj, bs];
         }
         Main.writeFile(o, API.fn);
@@ -5770,7 +5778,7 @@ function dSp(o) {
  * @param {string} o
  * @return {string}
  */
-function lrdPr(o) {
+function trimString(o) {
     var i = (typeof o == "string" && o != "") ? o.replace(/(^\s*)|(\s*)$/g, "").replace(/[\n\r\t]/g, "") : "";
     return i;
 }
@@ -5818,209 +5826,6 @@ function PsR(i, o, p) {
         }; - 1 != q ? (i = i.substr(q + o.length), p && (q = i.indexOf(p), -1 != q && (i = i.substr(0, q)))) : i = "";
     }
     return i;
-}
-
-function getYoutubeUrl1(i) {
-    var y = "";
-    for (var o = 0; o < i.length; o++) {
-        var p = PsR(i[o], "itag%3D", "%26");
-        if (p) {
-            var q = "";
-            switch (p) {
-            case "121":
-                q = "HD 1080p.mp4";
-                break;
-            case "37":
-                q = "HD 1080p.mp4";
-                break;
-            case "120":
-                q = "HD 720p.mp4";
-                break;
-            case "22":
-                q = "HD 720p.mp4";
-                break;
-            case "84":
-                q = "HD 720p.h264";
-                break;
-            case "35":
-                q = "480p.flv";
-                break;
-            case "18":
-                q = "360p.mp4";
-                break;
-            case "36":
-                q = "240p.mp4"
-            };
-            if (q) {
-                var j = i[o].split("%26");
-                i[o] = "";
-                for (var l = "", s = "", bx = 0; bx < j.length; bx++) {
-                    if (j[bx] && (j[bx] = decodeURI(j[bx]), 0 == j[bx].indexOf("url=") ? l = j[bx] : 0 == j[bx].indexOf("sig=") || 0 == j[bx].indexOf("signature=") ? s = j[bx] : 0 == j[bx].indexOf("s=") && (s = signa(j[bx]))), l && (l.indexOf("sig=") > 0 || l.indexOf("signature=") > 0 || l.indexOf("&s=") > 0)) {
-                        if (l.indexOf("&s=") >= 0) {
-                            var u = l.split("&s=")[1];
-                            i[o] = u[0].replace("url=", "") + "&" + DYce(u[1].split("&")[0]);
-                        } else {
-                            i[o] = l.replace("url=", "").replace("sig=", "signature=");
-                        }
-                        break;
-                    }
-                    if (l && s) {
-                        i[o] = l.replace("url=", "") + "&" + s.replace("sig=", "signature=");
-                        break;
-                    }
-                }
-                if (!i[o]) {
-                    continue;
-                }
-                r = [i[o], q];
-                Main.url_arr.push(r);
-            }
-            if (q.indexOf(API.Vquality) > -1) {
-                y = i[o];
-                Selectbox.url_selected = Main.url_arr.length - 1;
-            }
-            if (Main.url_arr.length > 0 && y == "") {
-                y = Main.url_arr[0][0];
-            }
-            if ("240p.mp4" == q) {
-                break;
-            }
-        } else {
-            if (o > 3) {
-                break;
-            }
-        }
-    }
-    return y;
-}
-
-function getYoutubeUrl(G) {
-    var D = ["&el=embedded", "&el=detailpage", "&el=vevo", ""];
-    var l = "";
-    var y = "";
-    var ca = false;
-    for (var u = 0; u < D.length; u++) {
-        var j = D[u];
-        var q = "http://www.youtube.com/get_video_info?&video_id=" + G + j + "&ps=default&eurl=&gl=US&hl=en";
-        API.AsReqMode = false;
-        var l = API.Request(q);
-        l = l.match(/url_encoded_fmt_stream_map=(.*?)&/);
-        if (l != null) {
-            if (l[1].indexOf("itag") >= 0) {
-                var i = l[1].split("%2C");
-                if (decLongUrl(i[0]).indexOf("itag=43") > -1) {
-                    i.splice(0, 1);
-                }
-                if (decLongUrl(i[1]).indexOf("itag=43") > -1) {
-                    i.splice(1, 1);
-                }
-                for (var s = 0; s < i.length; s++) {
-                    i[s] = decLongUrl(i[s]);
-                    var E = parser(i[s], "itag=", "&");
-                    if (E != "") {
-                        var R = "";
-                        var o = [];
-                        switch (E) {
-                        case "22":
-                            R = "720p";
-                            break;
-                        case "18":
-                            R = "480p";
-                            break;
-                        case "5":
-                            R = "360p";
-                            break;
-                        case "36":
-                            R = "240p";
-                            break
-                        }
-                        if (R != "") {
-                            i[s] = i[s].replace("itag=" + E + "&", "");
-                            if (i[s].indexOf("&url=") > 0) {
-                                var p = i[s].split("&url=");
-                                i[s] = p[1];
-                            } else {
-                                i[s] = i[s].replace("url=", "");
-                            }
-                            o = [i[s], R];
-                            Main.url_arr.push(o);
-                            if (Main.ver > 2.53 && R.indexOf(API.Vquality) > -1) {
-                                ca = true;
-                                y = i[s];
-                                Selectbox.url_selected = Main.url_arr.length - 1;
-                            }
-                            if (ca == false) {
-                                if (R.indexOf(API.Vquality) < 0) {
-                                    y = i[s];
-                                    ca = true;
-                                }
-                            }
-                        }
-                        if (R == "240p") {
-                            break;
-                        }
-                    }
-                }
-                if (Main.url_arr.length > 0 && y == "") {
-                    y = Main.url_arr[1][1];
-                }
-            }
-            break;
-        }
-    }
-    return y;
-}
-
-function getRuTubeUrl(D) {
-    var u = "";
-    var q = "";
-    var i = [];
-    var ca = false;
-    q = API.Request("http://rutube.ru/api/oembed/?url=" + D + "&format=xml");
-    D = q.match(/embed\/(.*?)"/);
-    q = API.Request("http://rutube.ru/play/embed/" + D[1]);
-    q = q.split("\"m3u8\":");
-    D = q[1].match(/"(.*?)"},/);
-    q = API.Request(D[1]);
-    f = q.match(/http:\/\/(.*?)\n/g);
-    f.reverse();
-    for (var j = 0; j < f.length; j++) {
-        switch (j) {
-        case 0:
-            v = f[0];
-            g = "720p";
-            break;
-        case 1:
-            v = f[1];
-            g = "480p";
-            break;
-        case 2:
-            v = f[2];
-            g = "360p";
-            break;
-        case 3:
-            v = f[3];
-            g = "240p";
-            break
-        }
-        i = [v + "|COMPONENT=HLS", g];
-        Main.url_arr.push(i);
-        if (Main.ver > 2.53 && g.indexOf(API.Vquality) > -1) {
-            ca = true;
-            u = v + "|COMPONENT=HLS";
-            Selectbox.url_selected = Main.url_arr.length - 1;
-        }
-        if (ca == false) {
-            if (g.indexOf(API.Vquality) < 0) {
-                u = v + "|COMPONENT=HLS";
-                ca = true;
-            }
-        }
-    }
-    if (Main.url_arr.length > 0 && u == "") {
-        u = Main.url_arr[0][0];
-    }
-    return u;
 }
 
 function EUROGetEPG(x) {
@@ -6145,16 +5950,6 @@ GetNextEpgInfo = function () {
     }
 };
 
-function Super_Send(i) {
-    if (i.indexOf("http://nebo.") >= 0 && API.search_string != "" && Main.search) {
-        i = i.replace("search=", "q=");
-    }
-    if (i.indexOf("http://tvqb.ru/") >= 0 && API.search_string != "" && Main.search) {
-        i = i.replace("search=", "user=");
-    }
-    return i;
-}
-
 function GetHash(p, o, l) {
     var i = "";
     if (l != "") {
@@ -6203,29 +5998,6 @@ function decLongUrl(i) {
         }
     }
     return i;
-}
-
-function Super_parser(j) {
-    var p = j;
-    if (j.indexOf("vk.com") > 0 || j.indexOf("vk.com/video_ext.php?") > 0 || j.indexOf("/vkontakte.php?video") > 0 || j.indexOf("vkontakte.ru/video_ext.php") > 0 || j.indexOf("/vkontakte/vk_kinohranilishe.php?id=") > 0) {
-        // removed : p = getVkUrl(j);
-    } else {
-        if (j.indexOf("youtube.com/watch?v=") > 0) {
-            var u = j.substr(j.indexOf("=") + 1);
-            p = lrdPr(getYoutubeUrl(u));
-        } else {
-            if (j.indexOf("youtube.com/embed") >= 0) {
-                var q = j.substr(j.indexOf("embed/") + 6);
-                p = getYoutubeUrl(q);
-            }
-        }
-    }
-    try {
-        if (p == j || p.indexOf(".html") > 0 || p.indexOf("md5hash") > 0 || p.indexOf("md4hash") > 0) {
-            p = Super_parser_external(j);
-        }
-    } catch (p) {}
-    return p;
 }
 
 function showImage() {
