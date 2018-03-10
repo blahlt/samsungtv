@@ -269,29 +269,6 @@ Main.SetFavSelectedPosition = function () {
     Main.fav_url = Main.temp_fav_url;
 };
 
-Main.showCategorySelector = function () {
-    getIdn("rightHalf");
-    KeyHandler.setFocus(4);
-    Selectbox.setBox("CATEGORIES", API.categories);
-    getId("selectbox").style.top = "60px";
-    getId("selectbox").style.left = "550px";
-};
-
-Main.showFavSelector = function () {
-    getIdn("rightHalf");
-    KeyHandler.setFocus(4);
-    Selectbox.setBox("Select Favourites", API.favorites);
-    getId("selectbox").style.top = "60px";
-    getId("selectbox").style.left = "550px";
-};
-
-Main.showSiseSelector = function () {
-    KeyHandler.setFocus(4);
-    Selectbox.setBox("Size Selector", Main.url_arr);
-    getId("selectbox").style.top = "120px";
-    getId("selectbox").style.left = "330px";
-};
-
 Main.Menu = function () {
     if (Main.FirstStart) {
         if ((API.Timemode == 0 || API.Timemode == 1)) {
@@ -316,7 +293,7 @@ Main.Menu = function () {
     this.SetZoom = false;
     this.playlist_prev = true;
     this.pre_pl_url = API.XML_URL;
-    getIdn("selectbox");
+    // removed : getIdn("selectbox");
     getIdn("help_set_par");
     getIdb("rightHalf");
     getIdn("infoList");
@@ -324,15 +301,7 @@ Main.Menu = function () {
     getIdn("ya_info");
     getIdn("ya_help");
     Main.UpdateHelpBar();
-    if (this.RED) {
-        KeyHandler.setFocus(5);
-    } else {
-        if (Main.guide) {
-            KeyHandler.setFocus(6);
-        } else {
-            KeyHandler.setFocus(0);
-        }
-    }
+    KeyHandler.setFocus(0);
     Main.updatePage();
     getIdb("channelList");
     getIdb("main");
@@ -959,104 +928,14 @@ Main.PlayChannel = function () {
     try {
         clearTimeout(this.load_timer);
         if (this.pl_url != "" && this.pl_url.indexOf("stop") != 0) {
-            if (this.pl_url.indexOf("rulenone") >= 0) {
-                var B = Main.MAC;
-                var z = 8800;
-                a = Main.protocol;
-                r = Main.txt;
-                var o = r.replace("mac=", "txt=");
-                var C = a + Main.hurl + ":" + eval(Main.trp + z) + "/sh/request.php?" + o + B;
-                this.pl_url = C;
-            } else {
-                if (this.pl_url.indexOf("boom") >= 0) {
-                    var B = Main.MAC;
-                    var z = 8800;
-                    a = Main.protocol;
-                    r = Main.txt;
-                    var o = r.replace("mac=", "txt=");
-                    var C = a + Main.hurl + ":" + eval(Main.trp + z) + "/sh/vip_pls.php?" + o + B;
-                    this.pl_url = C;
-                } else {
-                    if (this.pl_url.indexOf("svoj") >= 0) {
-                        var B = Main.MAC;
-                        var z = 8800;
-                        a = Main.protocol;
-                        r = Main.txt;
-                        var o = r.replace("mac=", "txt=");
-                        var C = a + Main.hurl + ":" + eval(Main.trp + z) + "/sh/mojsvoy_pls.php?" + o + B;
-                        this.pl_url = C;
-                    } else {
-                        if (this.pl_url.indexOf("tablemix") >= 0) {
-                            var B = Main.MAC;
-                            var z = 8800;
-                            a = Main.protocol;
-                            r = Main.txt;
-                            var o = r.replace("mac=", "txt=");
-                            var C = a + Main.hurl + ":" + eval(Main.trp + z) + "/sh/euromix.php?" + o + B;
-                            this.pl_url = C;
-                        } else {
-                            if (this.pl_url.indexOf("=m3u") >= 0) {
-                                a = this.pl_url;
-                                var o = a.replace("%3F", "?");
-                                var p = o.replace("%26", "&");
-                                var q = p.replace("%26", "&");
-                                var C = q;
-                                this.pl_url = C;
-                            } else {
-                                if (this.pl_url.indexOf("tableeng") >= 0) {
-                                    var B = Main.MAC;
-                                    var z = 8800;
-                                    a = Main.protocol;
-                                    r = Main.txt;
-                                    var o = r.replace("mac=", "txt=");
-                                    var C = a + Main.hurl + ":" + eval(Main.trp + z) + "/sh/englishmix.php?" + o + B;
-                                    this.pl_url = C;
-                                } else {
-                                    if (this.pl_url.indexOf("tablefilms") >= 0) {
-                                        var B = Main.MAC;
-                                        var z = 8800;
-                                        a = Main.protocol;
-                                        r = Main.txt;
-                                        var o = r.replace("mac=", "txt=");
-                                        var C = a + Main.hurl + ":" + eval(Main.trp + z) + "/sh/bigpeople.php?" + o + B;
-                                        this.pl_url = C;
-                                    } else {
-                                        if (this.pl_url.indexOf("tablekidz") >= 0) {
-                                            var B = Main.MAC;
-                                            var z = 8800;
-                                            a = Main.protocol;
-                                            r = Main.txt;
-                                            var o = r.replace("mac=", "txt=");
-                                            var C = a + Main.hurl + ":" + eval(Main.trp + z) + "/sh/smallpeople.php?" + o + B;
-                                            this.pl_url = C;
-                                        } else {
-                                            if (this.pl_url.indexOf("tablevod") >= 0) {
-                                                var B = Main.MAC;
-                                                var z = 8800;
-                                                a = Main.protocol;
-                                                r = Main.txt;
-                                                var o = r.replace("mac=", "txt=");
-                                                var C = a + Main.hurl + ":" + eval(Main.trp + z) + "/sh/vodmix.php?" + o + B;
-                                                this.pl_url = C;
-                                            } else {
-                                                if (this.pl_url.indexOf("tableyt") >= 0) {
-                                                    var B = Main.MAC;
-                                                    var z = 8800;
-                                                    a = Main.protocol;
-                                                    r = Main.txt;
-                                                    var o = r.replace("mac=", "txt=");
-                                                    var C = a + Main.hurl + ":" + eval(Main.trp + z) + "/sh/youtube.php?" + o + B;
-                                                    this.pl_url = C;
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+			if (this.pl_url.indexOf("=m3u") >= 0) {
+				a = this.pl_url;
+				var o = a.replace("%3F", "?");
+				var p = o.replace("%26", "&");
+				var q = p.replace("%26", "&");
+				var C = q;
+				this.pl_url = C;
+			}
             Main.playlist();
         } else {
             if (this.url != "" && this.url.indexOf("stop") != 0) {
@@ -1132,76 +1011,61 @@ Main.playlist = function () {
         }
         this.start = false;
         this.search = false;
-        if (Main.pl_url.indexOf("usb/") == 0) {
-            var o = SearchPlToUSB();
-            if (o != "") {
-                API.XML_URL = o;
-                API.Request(o);
-            }
-        } else {
-            if (Main.pl_url.indexOf("ScanUSB") == 0) {
-                ScanUsbPort();
-            } else {
-                if (Main.pl_url.indexOf("$USB_DIR") == 0) {
-                    ReadUsbDirN();
-                } else {
-                    if (Main.pl_url == "OpenHistory") {
-                        var i = [
-                            ["IP-TV, WEB-TV CHANNELS", "", "image.png", "IP-TV, WEB-TV CHANNELS", "", "live_history.dat", "", "", "", "", "", "", "", ""],
-                            ["FILMS, VIDEOS", "", "film.png", "FILMS, VIDEOS", "", "vod_history.dat", "", "", "", "", "", "", "", ""],
-                            ["PLAYLISTs, FILE LISTs", "", "blue_folder.png", "PLAYLISTs, FILE LISTs", "", "pl_history.dat", "", "", "", "", "", "", "", ""]
-                        ];
-                        Main.ReadPlArr("OpenHistory", i);
-                    } else {
-                        if (Main.pl_url.indexOf("history.dat") >= 0) {
-                            if (API.Xcode != 0) {
-                                this.xxx = true;
-                                setTimeout(function() { SearchFormular(); }, 500);
-                            } else {
-                                Main.openCommonFile(Main.pl_url);
-                            }
-                        } else {
-                            if (Main.pl_url.indexOf("OpenFav") == 0) {
-                                if (API.fav_start_channels.length > 1) {
-                                    Main.ReadPlArr("OpenFav", API.fav_start_channels);
-                                } else {
-                                    Main.FAV = true;
-                                    Main.openCommonFile(Main.fav_url);
-                                }
-                            } else {
-                                if (Main.pl_url.indexOf("fav.dat") > 0) {
-                                    Main.fav_num = Main.ch_num;
-                                    Main.fav_name = Main.name;
-                                    Main.FAV = true;
-                                    Main.openCommonFile(Main.pl_url);
-                                } else {
-                                    if (this.xxx || Main.name.indexOf("-=SEARCH=-") == 0 || this.pl_url.indexOf("ytv3/3.php") >= 0 || this.pl_url.indexOf("search.php") >= 0 || this.search_on != "") {
-                                        if (!this.xxx) {
-                                            Main.search = true;
-                                        }
-                                        setTimeout(function() { SearchFormular(); }, 500);
-                                    } else {
-                                        API.XML_URL = this.pl_url;
-                                        this.loading_pl = true;
-                                        Display.status("Reading... ", 0);
-                                        if (Main.pl_url.indexOf("=m3u") >= 0) {
-                                            API.AsReqMode = true;
-                                            if (this.pl_url.indexOf("=m3u") >= 0) {
-                                                setTimeout(function() { API.Request(Main.pl_url); }, 3000);
-                                            } else {
-                                                API.Request(Main.pl_url);
-                                            }
-                                        } else {
-                                            setTimeout(function() { API.Request(Main.pl_url); }, 50);
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
+
+		if (Main.pl_url == "OpenHistory") {
+			var i = [
+				["IP-TV, WEB-TV CHANNELS", "", "image.png", "IP-TV, WEB-TV CHANNELS", "", "live_history.dat", "", "", "", "", "", "", "", ""],
+				["FILMS, VIDEOS", "", "film.png", "FILMS, VIDEOS", "", "vod_history.dat", "", "", "", "", "", "", "", ""],
+				["PLAYLISTs, FILE LISTs", "", "blue_folder.png", "PLAYLISTs, FILE LISTs", "", "pl_history.dat", "", "", "", "", "", "", "", ""]
+			];
+			Main.ReadPlArr("OpenHistory", i);
+		} else {
+			if (Main.pl_url.indexOf("history.dat") >= 0) {
+				if (API.Xcode != 0) {
+					this.xxx = true;
+					// removed : setTimeout(function() { SearchFormular(); }, 500);
+				} else {
+					Main.openCommonFile(Main.pl_url);
+				}
+			} else {
+				if (Main.pl_url.indexOf("OpenFav") == 0) {
+					if (API.fav_start_channels.length > 1) {
+						Main.ReadPlArr("OpenFav", API.fav_start_channels);
+					} else {
+						Main.FAV = true;
+						Main.openCommonFile(Main.fav_url);
+					}
+				} else {
+					if (Main.pl_url.indexOf("fav.dat") > 0) {
+						Main.fav_num = Main.ch_num;
+						Main.fav_name = Main.name;
+						Main.FAV = true;
+						Main.openCommonFile(Main.pl_url);
+					} else {
+						if (this.xxx || Main.name.indexOf("-=SEARCH=-") == 0 || this.pl_url.indexOf("ytv3/3.php") >= 0 || this.pl_url.indexOf("search.php") >= 0 || this.search_on != "") {
+							if (!this.xxx) {
+								Main.search = true;
+							}
+							// removed : setTimeout(function() { SearchFormular(); }, 500);
+						} else {
+							API.XML_URL = this.pl_url;
+							this.loading_pl = true;
+							Display.status("Reading... ", 0);
+							if (Main.pl_url.indexOf("=m3u") >= 0) {
+								API.AsReqMode = true;
+								if (this.pl_url.indexOf("=m3u") >= 0) {
+									setTimeout(function() { API.Request(Main.pl_url); }, 3000);
+								} else {
+									API.Request(Main.pl_url);
+								}
+							} else {
+								setTimeout(function() { API.Request(Main.pl_url); }, 50);
+							}
+						}
+					}
+				}
+			}
+		}
     } catch (d) {}
 };
 
@@ -1436,8 +1300,8 @@ Main.openCommonFile = function (p) {
                     this.prev_pl_array.pop();
                     this.playlist_prev = true;
                 }
-                Selectbox.selected = Selectbox.pre_selected;
-                Selectbox.selected_page = Selectbox.pre_selected_page;
+                // removed : Selectbox.selected = Selectbox.pre_selected;
+                // removed : Selectbox.selected_page = Selectbox.pre_selected_page;
             }
         } else {
             Display.status("Empty!", 500);
@@ -1474,183 +1338,6 @@ Main.ReadPlArr = function (o, i, q, p) {
     API.countPages();
     setTimeout(function(){ Main.Menu(); }, 500);
 };
-
-function ScanUsbPort() {
-    Main.playlist_name = "";
-    var bb = [];
-    var bd = "<font color=\"#00ccff\">";
-    var Z = "<font color=\"#ffff99\">";
-    var G = Main.St.GetUSBListSize();
-    if (G && G != -1) {
-        for (var z = 0; z < G; z++) {
-            var E = parseInt(Main.St.GetUSBDeviceID(z), 10);
-            var R = Main.St.GetUSBVendorName(E);
-            var D = parseInt(Main.St.GetUSBPartitionNum(E), 10);
-            var u = Main.St.GetUSBModelName(E);
-            for (var y = 0; y < D; y++) {
-                var l = Main.St.GetUSBMountPath(E, y);
-                var j = ReSize(Main.St.GetUSBAvailSize(E, y) * 1024);
-                var q = ReSize(Main.St.GetUSBTotalSize(E, y) * 1024);
-                var s = "<h3> Name : " + Z + R + "</font><br>  Model : " + Z + u + "</font><br>  The total size : " + Z + q + "</font><br>  Free size  : " + Z + j + "</font><br>  Mount Directory  : " + Z + l + "</font><br>  Partition number  : " + Z + D; + "</font></h3>";
-                var o = "$USB_DIR/" + l;
-                var p = bd + R + " - " + u + "</font>";
-                var i = [p, "", "usb_logo.png", s, "", o, "", "", "", "", "", "", "", ""];
-                bb.push(i);
-            }
-        }
-        Main.ReadPlArr(Main.pl_url, bb);
-        API.playlist_name = "USB Memory HDD";
-    } else {
-        Display.status("No USB devices has being found!", 500);
-    }
-}
-
-function SearchPlToUSB() {
-    var j = "";
-    var u = Main.St.GetUSBListSize();
-    if (u && u != -1) {
-        for (var D = 0; D < u; D++) {
-            var s = parseInt(Main.St.GetUSBDeviceID(D), 10);
-            var l = parseInt(Main.St.GetUSBPartitionNum(s), 10);
-            for (var R = 0; R < l; R++) {
-                var q = Main.St.GetUSBMountPath(s, R);
-                var i = "$USB_DIR/" + q;
-                var E = new FileSystem();
-                var p = E.readDir(i);
-                if (p) {
-                    for (var o = 0; o < p.length; o++) {
-                        if (p[o].name && Main.pl_url.substr(4) == p[o].name) {
-                            j = "/dtv/usb/" + q + "/" + Main.pl_url.substr(4);
-                            D = u;
-                            break;
-                        }
-                    }
-                }
-            }
-        }
-        if (j == "") {
-            Display.status("Playlist not found!", 500);
-        }
-    } else {
-        Display.status("No USB devices has being found!", 500);
-    }
-    return j;
-}
-
-function ReadUsbDirN() {
-    var p = "<font color=\"#00ccff\">";
-    var o = "<font color=\"#ffffcc\">";
-    var R = "<font color=\"#ffff99\">";
-    var D = "<font color=\"#00cc99\">";
-    var u = [];
-    var K = [];
-    var J = [];
-    var I = [];
-    var bk = [];
-    var bi = [];
-    var bg = [];
-    var bd = 0;
-    Playlist = /\.(m3u|xml)$/i;
-    Video = /\.(avi|asf|3gp|3g2|3gp2|3gpp|flv|mp4|mp4v|m4v|m2v|m2ts|m2t|mp2v|mov|mpg|mpe|mpeg|mkv|swf|mts|wm|wmv|vob|vro|f4v|ts|tts)$/i;
-    Audio = /\.(mp3|mp4a|dts|ac3|wav|wma|flac)$/i;
-    Foto = /\.(png|gif|jpg|jpeg|bmp|ico|tiff|mpo|raw)$/i;
-    var Z = function (O, br, M, L, N, P) {
-            bd++;
-            u = [br, M, L, N, "", P, "", "", "", "", "", "", "", ""];
-            O.push(u)
-        };
-    var bm = Main.pl_url.indexOf("&page=");
-    if (bm != -1) {
-        Main.step_read_dir = parseInt(Main.pl_url.substring(bm + 6), 10);
-        Main.pl_url = Main.pl_url.substring(0, bm);
-    }
-    var q = new FileSystem();
-    var G = q.readDir(Main.pl_url);
-    if (G) {
-        var bj = "";
-        var bf = "";
-        if (G.length > ((50 * Main.step_read_dir) + 2)) {
-            if (Main.step_read_dir > 1) {
-                bf = Main.pl_url + "&page=" + (Main.step_read_dir - 1);
-            }
-            bj = Main.pl_url + "&page=" + (Main.step_read_dir + 1);
-            var bb = 50 * (Main.step_read_dir - 1);
-            var z = (50 * Main.step_read_dir) + 2;
-        } else {
-            if (Main.step_read_dir != 1) {
-                bj = Main.pl_url + "&page=" + (Main.step_read_dir - 1);
-            }
-            bb = 50 * (Main.step_read_dir - 1);
-            z = G.length;
-            Main.step_read_dir = 1;
-        }
-        var l = "";
-        for (var y = bb + 2; y < z; y++) {
-            var s = "";
-            if (G[y].name) {
-                s = G[y].name;
-            }
-            if (s != "." && s != ".." && l != s) {
-                var E = "<h3>Name : " + R + s + "</font>";
-                if (!G[y].isDir) {
-                    E += "<br> Type : " + D + "File </font>";
-                    var j = G[y].name.match(/\.(\w+)$/i);
-                    if (j != null) {
-                        j = j[1].toLowerCase();
-                        E += " \"" + R + j + "</font>\"";
-                    } else {
-                        E += " \" Without Extension \"";
-                    }
-                    if (G[y].size) {
-                        E += "<br> Size : " + R + ReSize(G[y].size) + "</font>";
-                    }
-                    var bh = Main.pl_url.replace("$USB_DIR", "/dtv/usb");
-                } else {
-                    E += "<br> Type : " + p + " Folder </font>";
-                }
-                if (G[y].mtime) {
-                    E += "<br> Creation Date : " + R + G[y].mtime + "</font>";
-                }
-                if (!G[y].isDir && Playlist.exec(s) != null) {
-                    Z(K, R + s + "</font>", "", "playlist.png", E + "</h3>", bh + "/" + s);
-                } else {
-                    if (!G[y].isDir && Video.exec(s) != null) {
-                        Z(J, R + s + "</font>", bh + "/" + s, "film.png", E + "</h3>", "");
-                    } else {
-                        if (!G[y].isDir && Audio.exec(s) != null) {
-                            Z(I, R + s + "</font>", bh + "/" + s, "music.png", E + "</h3>", "");
-                        } else {
-                            if (!G[y].isDir && Foto.exec(s) != null) {
-                                Z(bk, R + s + "</font>", bh + "/" + s, "foto.png", E + "</h3>", "");
-                            } else {
-                                if (!G[y].isDir) {
-                                    Z(bi, o + s + "</font>", bh + "/" + s, "file.png", E + "</h3>", "");
-                                } else {
-                                    if (G[y].isDir) {
-                                        Z(bg, D + s + "</font>", "", "blue_folder.png", E + "</h3>", Main.pl_url + "/" + s);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            l = s;
-        }
-    }
-    if (API.playlist_name == "USB Memory HDD") {
-        Main.playlist_name = Main.name;
-    }
-    if (bd > 0) {
-        var i = K.concat(J, I, bk, bi, bg);
-        Main.ReadPlArr(Main.pl_url, i);
-        API.playlist_name = Main.playlist_name;
-        API.next_page_url = bj;
-        API.prev_page_url = bf;
-    } else {
-        Display.status("Empty Folder!", 500);
-    }
-}
 
 function ReSize(o) {
     var i = (o >= 1073741824)
@@ -1825,7 +1512,8 @@ msecToStr = function (i, o) {
 
 var API = {
     XML_URL: "start.xml",
-    star_url: "https://raw.githubusercontent.com/blahlt/samsungtv/master/data/skynet20161003.m3u",
+    //star_url: "https://raw.githubusercontent.com/blahlt/samsungtv/master/data/skynet20161003.m3u",
+	star_url: "https://raw.githubusercontent.com/blahlt/samsungtv/master/data/de-m3uplaylist-2018-03-10-1.m3u",
     help_url: "http://nebo.ddns.net/help/starthelp.xml",
     GenUrl: "", // Menu(?) generation url
     GenT: "500", // Menu(?) generation timer
@@ -2107,10 +1795,10 @@ API.ResetAll = function () {
     API.channels = [];
     API.all_channels = [];
     API.categories = [];
-    if (!Main.FAV) {
-        Selectbox.selected = 0;
-        Selectbox.selected_page = 0;
-    }
+    // removed: if (!Main.FAV) {
+    //    Selectbox.selected = 0;
+    //    Selectbox.selected_page = 0;
+    //}
     API.playlist_name = "";
     API.next_page_url = "";
     API.prev_page_url = "";
@@ -2222,9 +1910,6 @@ API.getChannel_list = function (bk) {
                         } else {
                             channelGroup = trimString(parser(lines[lineIndex], "group-title=\"", "\"").replace(/"/g, ""));
                             y = trimString(parser(lines[lineIndex], ","));
-                            try {
-                                var bl = FoundYaIndex[y]
-                            } catch (p) {}
                             var bf = (lines[lineIndex + 1].indexOf("://") > 0 || lines[lineIndex + 1].indexOf("/dtv") > -1) ? lines[lineIndex + 1] : lines[lineIndex + 2];
                             bf = trimString(bf);
                             channelLogo = (channelLogo != "") ? channelLogo : p;
@@ -2242,12 +1927,6 @@ API.getChannel_list = function (bk) {
                                     bf = "";
                                 }
                             }
-                            try {
-                                if (bl != undefined) {
-                                    channelCode = bl;
-                                    channelLogo = FoundYaIco[channelCode];
-                                }
-                            } catch (p) {}
                             if (bf != "") {
                                 channelAspectRatio = (channelAspectRatio != "") ? channelAspectRatio : o;
                                 channelAudioTrack = (channelAudioTrack != "") ? channelAudioTrack : i;
@@ -2310,152 +1989,6 @@ API.countPages = function () {
         }
         API.chan_pages = (API.last_page_channels_counter > 0 && API.last_page_channels_counter < 5) ? Math.round(API.chan_pages / 10) + 1 : Math.round(API.chan_pages / 10);
     }
-};
-
-var Selectbox = {
-    selected: 0,
-    pre_selected: 0,
-    url_selected: 0,
-    select_list: [],
-    title: "",
-    selected_page: 0,
-    pre_selected_page: 0,
-    pages: 0,
-    last_page_counter: 0
-};
-
-Selectbox.setBox = function (p, o) {
-    try {
-        if (this.title != p) {
-            this.selected = 0;
-            this.selected_page = 0
-        }
-        if (p == "Select the Quality") {
-            this.selected = this.url_selected;
-            this.selected_page = 0;
-        }
-        this.title = p;
-        this.pre_selected = this.selected;
-        this.pre_selected_page = this.selected_page;
-        this.select_list = o;
-        this.last_page_counter = o.length % 10;
-        if (this.last_page_counter == 0) {
-            this.last_page_counter = 10;
-        }
-        this.pages = Math.round(o.length / 10);
-        if (this.last_page_counter > 0 && this.last_page_counter < 5) {
-            this.pages++;
-        }
-        Selectbox.updateBox();
-    } catch (a) {}
-};
-
-Selectbox.updateBox = function () {
-    try {
-        var l = 10;
-        this.selected_page = (this.selected_page > this.pages - 1) ? 0 : (this.selected_page < 0) ? this.pages - 1 : this.selected_page;
-        if (this.selected_page == this.pages - 1) {
-            l = this.last_page_counter;
-            if (this.selected > this.last_page_counter - 1) {
-                this.selected = this.last_page_counter - 1;
-            }
-        }
-        if (this.selected_page == this.pages && this.last_page_counter < l + 1) {
-            l = this.last_page_counter;
-        }
-        var q = "<div><div style=\"text-align:center;width:100%;height:10px;padding:4px;font-size:20px;\">" + this.title + "</div><br>";
-        for (var i = 0; i < l; i++) {
-            var p = 10 * this.selected_page + i;
-            var o = "";
-            if (i == this.selected) {
-                o = "style=\"color:#ffffff; border: 2px solid #ffffff\" ";
-            }
-            var u = (this.selected_page > 0) ? this.selected_page.toString() + (1 + i) + ") " : (1 + i) + ") ";
-            if (this.select_list[p][1]) {
-                q += "<li " + o + ">" + u + this.select_list[p][1] + "</li>";
-            }
-        }
-        q += "<div style=\"height:25px;\"><div id=\"navi_button\"><img src=\"img/buttons/exit.png\"></img></div><span id=\"navi_helpertext\">Exit</span>";
-        q += "<div id=\"navi_button\"><img src=\"img/buttons/move.png\"></img></div><span id=\"navi_helpertext\">Move</span>";
-        q += "<div id=\"navi_button\"><img src=\"img/buttons/enter.png\"></img></div><span id=\"navi_helpertext\">Enter</span></div></div>";
-        widgetAPI.putInnerHTML(getId("selectbox"), q);
-        getIdb("selectbox");
-    } catch (g) {}
-};
-
-Selectbox.selectNextItem = function () {
-    this.selected++;
-    if (this.selected >= 10 || (this.selected_page == this.pages - 1 && this.selected == this.last_page_counter)) {
-        this.selected = 0;
-        this.selected_page++;
-    }
-    Selectbox.updateBox();
-};
-
-Selectbox.selectPrevItem = function () {
-    this.selected--;
-    if (this.selected_page == 0 && this.selected_channel < 0) {
-        this.selected = this.last_page_counter - 1;
-        this.selected_page = this.pages - 1;
-    }
-    if (this.selected < 0) {
-        this.selected = 10;
-        this.selected_page--;
-    }
-    Selectbox.updateBox();
-};
-
-Selectbox.selectNextPage = function () {
-    this.selected_page++;
-    Selectbox.updateBox();
-};
-
-Selectbox.selectPrevPage = function () {
-    this.selected_page--;
-    Selectbox.updateBox();
-};
-
-Selectbox.SelectCategory = function () {
-    var i = this.select_list[10 * this.selected_page + this.selected][0];
-    getIdn("selectbox");
-    Main.SavePrevPlaylist();
-    API.setCategory(i);
-    getIdb("rightHalf");
-    Main.Menu();
-};
-
-Selectbox.SelectFav = function () {
-    var i = this.select_list[10 * this.selected_page + this.selected][0];
-    Main.temp_fav_num = Main.fav_num;
-    Main.fav_num = 1 + parseInt(i);
-    Main.temp_fav_name = Main.fav_name;
-    Main.fav_name = this.select_list[10 * this.selected_page + this.selected][1];
-    Main.temp_fav_url = Main.fav_url;
-    Main.fav_url = this.select_list[10 * this.selected_page + this.selected][2];
-    if (Main.FAV && !Main.RED) {
-        Main.openCommonFile(Main.fav_url);
-    } else {
-        Main.saveFavorites();
-    }
-    if (Main.RED) {
-        Main.SetFavSelectedPosition();
-        Main.delFavorites();
-        KeyHandler.setFocus(5);
-    } else {
-        KeyHandler.setFocus(0);
-    }
-    getIdn("selectbox");
-    getIdb("rightHalf");
-};
-
-Selectbox.SelectSize = function () {
-    this.url_selected = this.selected;
-    var i = this.select_list[10 * this.selected_page + this.selected][0];
-    i = decLongUrl(i);
-    getIdn("selectbox");
-    Player.ch_t = Player.cur_time;
-    Player.play(i, 0);
-    Player.ch = true;
 };
 
 var Display = {
@@ -2722,18 +2255,6 @@ KeyHandler.setFocus = function (i) {
             pluginAPI.unregistKey(tvKey.KEY_TOOLS);
         }
         break;
-    case 4:
-        getId("Selectbox_Anchor").focus();
-        break;
-    case 5:
-        getId("RedFav_Anchor").focus();
-        break;
-    case 6:
-        getId("Guide_Anchor").focus();
-        break;
-    case 7:
-        getId("Setup_Anchor").focus();
-        break;
     default:
         break;
     }
@@ -2810,110 +2331,7 @@ KeyHandler.Keys10 = function (o) {
         this.ChSelectorTimeout = setTimeout(function() { KeyHandler.KanalSelector(); }, 2000);
     }
 };
-KeyHandler.RedFavKeyDown = function () {
-    var i = event.keyCode;
-    switch (i) {
-    case tvKey.KEY_EXIT:
-        SmartExit();
-        break;
-    case 106:
-        ;
-    case tvKey.KEY_DOWN:
-        Main.selectNextChannel();
-        break;
-    case 105:
-        ;
-    case tvKey.KEY_UP:
-        Main.selectPrevChannel();
-        break;
-    case tvKey.KEY_LEFT:
-        Main.selectPrevPage();
-        break;
-    case tvKey.KEY_RIGHT:
-        Main.selectNextPage();
-        break;
-    case tvKey.KEY_RED:
-        Main.delFavorites();
-        break;
-    case tvKey.KEY_GREEN:
-        Main.moveFavorites(1);
-        break;
-    case tvKey.KEY_YELLOW:
-        Main.moveFavorites(-1);
-        break;
-    case tvKey.KEY_BLUE:
-        if (API.favorites.length > 1) {
-            Main.showFavSelector();
-        }
-        break;
-    case tvKey.KEY_RETURN:
-        widgetAPI.blockNavigation(event);
-        Main.RED = false;
-        Main.Menu();
-        break;
-    case tvKey.KEY_STOP:
-        widgetAPI.blockNavigation(event);
-        if (Player.state != Player.STOPPED) {
-            Player.stopV();
-        }
-        setTimeout(function() { getIdn('main'); }, 100);
-        hideWeather();
-        break;
-    default:
-        break
-    }
-};
-KeyHandler.GuideKeyDown = function () {
-    var i = event.keyCode;
-    switch (i) {
-    case 256:
-        ;
-    case 1057:
-        ;
-    case tvKey.KEY_RETURN:
-        ;
-    case tvKey.KEY_GUIDE:
-        widgetAPI.blockNavigation(event);
-        Main.PlayPrevPlaylist();
-        if (Player.state == Player.PLAYING_LIVE) {
-            this.guide_step = 1;
-        }
-        break;
-    case tvKey.KEY_EXIT:
-        SmartExit();
-        break;
-    case 106:
-        ;
-    case tvKey.KEY_DOWN:
-        Main.selectNextChannel();
-        break;
-    case 105:
-        ;
-    case tvKey.KEY_UP:
-        Main.selectPrevChannel();
-        break;
-    case tvKey.KEY_LEFT:
-        Main.selectPrevPage();
-        break;
-    case tvKey.KEY_RIGHT:
-        Main.selectNextPage();
-        break;
-    case 68:
-        ;
-    case 1078:
-        scrollDown();
-        Scrol("allInfo", 20);
-        break;
-    case 65:
-        ;
-    case 1080:
-        scrollUp();
-        Scrol("allInfo", -20);
-        break;
-    default:
-        break
-    }
-};
+
 KeyHandler.MainMenuKeyDown = function () {
     var o = event.keyCode;
     KeyHandler.Keys10(o);
@@ -3043,7 +2461,7 @@ KeyHandler.MainMenuKeyDown = function () {
     case tvKey.KEY_RED:
         hideScroll();
         if (!Main.help_info && !Main.FAV && API.categories.length > 2) {
-            Main.showCategorySelector();
+            // removed : Main.showCategorySelector();
         } else {
             if (API.XML_URL.indexOf("history.dat") > 0) {
                 Main.delHistory(API.XML_URL);
@@ -3056,7 +2474,7 @@ KeyHandler.MainMenuKeyDown = function () {
         hideScroll();
         if (!Main.FAV && !Main.block_fav && API.XML_URL.indexOf("Open") < 0) {
             if (API.favorites.length > 1) {
-                Main.showFavSelector();
+                // removed : Main.showFavSelector();
             } else {
                 Main.saveFavorites();
             }
@@ -3073,7 +2491,7 @@ KeyHandler.MainMenuKeyDown = function () {
             } else {
                 if (API.favorites.length > 1) {
                     Main.FAV = true;
-                    Main.showFavSelector();
+                    // removed : Main.showFavSelector();
                     alert("[[[[[[[[[[[[[[FAV]]]]]]]]]]]]]]]");
                 }
             }
@@ -3206,14 +2624,14 @@ KeyHandler.MainMenuKeyDown = function () {
                 Player.stopV();
             }
             setTimeout(function() { getIdn('main'); }, 100);
-            Main.LoadTimer(function() { ChannelSetupFormular(); }, 600);
+            // removed Main.LoadTimer(function() { ChannelSetupFormular(); }, 600);
         } else {
             if (!Main.help_info) {
                 if (Player.state != Player.STOPPED) {
                     Player.stopV();
                 }
                 setTimeout(function() { getIdn('main'); }, 100);
-                Main.LoadTimer(function() { SearchFormular(); }, 600);
+                // removed : Main.LoadTimer(function() { SearchFormular(); }, 600);
             } else {
                 if (Player.state != Player.STOPPED) {
                     Player.ReturnMenu();
@@ -3299,70 +2717,7 @@ KeyHandler.LoadingPlayerKeyDown = function () {
         break
     }
 };
-KeyHandler.SelectboxKeyDown = function () {
-    var i = event.keyCode;
-    switch (i) {
-    case tvKey.KEY_DOWN:
-        Selectbox.selectNextItem();
-        break;
-    case tvKey.KEY_UP:
-        Selectbox.selectPrevItem();
-        break;
-    case tvKey.KEY_ENTER:
-        if (Selectbox.title == "Select Size") {
-            Selectbox.SelectSize();
-        } else {
-            if (Selectbox.title == "Select Favourites") {
-                Selectbox.SelectFav();
-            } else {
-                Selectbox.SelectCategory();
-            }
-        }
-        break;
-    case tvKey.KEY_LEFT:
-        Selectbox.selectPrevPage();
-        break;
-    case tvKey.KEY_RIGHT:
-        Selectbox.selectNextPage();
-        break;
-    case tvKey.KEY_EXIT:
-        ;
-    case tvKey.KEY_RETURN:
-        widgetAPI.blockNavigation(event);
-        if (API.XML_URL != Main.fav_url) {
-            Main.FAV = false;
-        }
-        getIdn("selectbox");
-        getIdb("rightHalf");
-        if (Selectbox.title == "Select Size") {
-            KeyHandler.setFocus(3);
-        } else {
-            if (!Main.RED) {
-                KeyHandler.setFocus(0);
-            } else {
-                KeyHandler.setFocus(5);
-            }
-        }
-        break;
-    case tvKey.KEY_GREEN:
-        if (Selectbox.title == "Select Favourites") {
-            Selectbox.SelectFav();
-        }
-        break;
-    case tvKey.KEY_YELLOW:
-        if (Selectbox.title == "Select Favourites") {
-            Selectbox.SelectFav();
-        }
-        break;
-    case tvKey.KEY_BLUE:
-        if (Selectbox.title == "Select Favourites") {
-            Selectbox.SelectFav();
-        }
-        break;
-    default:
-        break
-    }
-};
+
 KeyHandler.LivePlayerKeyDown = function () {
     var i = event.keyCode;
     KeyHandler.Keys10(i);
@@ -3801,9 +3156,9 @@ KeyHandler.VODPlayerKeyDown = function () {
         break;
     case tvKey.KEY_RED:
         if (Main.url_arr.length > 1) {
-            Main.showSiseSelector();
+            // removed : Main.showSiseSelector();
             Main.LoadTimer(function() {
-				getIdn('selectbox');
+				// removed: getIdn('selectbox');
 				getIdb('rightHalf');
 				KeyHandler.setFocus(3);
 			}, 20000);
@@ -4205,7 +3560,7 @@ Player.stopV = function () {
     this.ch_t = 0;
     this.mode3D = 0;
     this.status3D = "";
-    Selectbox.url_selected = 0;
+    // removed : Selectbox.url_selected = 0;
     Main.ya_epg_info_arr = [];
     StopSlideShow();
     Display.loadinghide();
@@ -4805,360 +4160,6 @@ Player.GetAudioNum = function () {
     }
 };
 
-function HelpSet() {
-    Main.scrolling = 0;
-    Display.loadinghide();
-    Main.yandextv_mode = false;
-    Main.ya_epg_info_arr = [];
-    clearTimeout(Main.load_timer);
-    getIdb("0_help");
-    getIdb("6_help");
-    getIdn("1_help");
-    getIdn("2_help");
-    getIdn("3_help");
-    getIdn("3.1_help");
-    getIdn("3.2_help");
-    getIdn("3.3_help");
-    getIdn("3.4_help");
-    getIdn("4.1_help");
-    getIdn("5_help");
-    getIdn("7_help");
-    getIdn("8_help");
-    getIdn("9_help");
-    getIdn("10_help");
-    getIdn("10.1_help");
-    getIdn("ya_date");
-    getIdn("ya_info");
-    getIdn("ya_help");
-    getIdn("background");
-    getIdn("channelList");
-    if (Main.seriesE) {
-        getIdn("0_help");
-        getIdn("6_help");
-    }
-    getIdb("infoList");
-    getIdb("main");
-    widgetAPI.putInnerHTML(getId("infoList"), "");
-}
-
-SearchFormular = function () {
-    showImageSet();
-    var l = 7;
-    var q = 30;
-    var p = 44;
-    if (Main.seriesE) {
-        l = 6;
-        q = 28;
-        p = 36;
-    }
-    if (API.search_on != "" && !Main.xxx) {
-        Main.search = true;
-    }
-    HelpSet();
-    if (!Main.seriesE) {
-        getIdb("12_help");
-    }
-    getIdn("4_help");
-    var s = "search";
-    if (Main.search || Main.xxx) {
-        s = "search_h";
-    }
-    var o = "<div id=\"allInput\"><form>";
-    hideScroll();
-    if (Main.xxx) {
-        widgetAPI.putInnerHTML(getId("version"), "Enter code.");
-        o += "<span id=\"text_form0\">Access code to \"XXX\" (from 0 to 9999) : </span><input id=\"" + s + "\" type=\"text\" size=\"" + l + "\" maxlength=\"4\"></input>";
-    } else {
-        if (Main.search) {
-            widgetAPI.putInnerHTML(getId("version"), "Enter your Search here ");
-            o += "<span id=\"psearch\"> Find : </span><input id=\"" + s + "\" type=\"text\" size=\"" + q + "\" maxlength=\"200\"></input>";
-        } else {
-            widgetAPI.putInnerHTML(getId("version"), "Enter an address ");
-            o += "<span id=\"psearch\"> Address : </span><input id=\"" + s + "\" type=\"text\" size=\"" + p + "\" maxlength=\"200\"></input>";
-        }
-    }
-    o += "</form><form><span>\"ENTER\" - confirm input.</span></form><form><span>\"EXIT\" and \"RETURN\" - go back.</span></form>";
-    if (!Main.xxx && !Main.search) {
-        o += "<h3 style=\"padding-top:150px;text-align:center;\"> Warning !!!<br>If you provide URL of the playlist<br> and file extension doesnt contain \".xml\" or \".m3u\" ,<br>then put \"#\" in the front of URL.</h3>";
-    }
-    o += "</div>";
-    widgetAPI.putInnerHTML(getId("infoList"), o);
-    var i = new IMEShell(s, ime_callback);
-    if (Main.Keyboard && !Main.seriesE) {
-        i.setKeypadPos(110, 75);
-    } else {
-        i.setKeypadPos(110, 75);
-        try {
-            i.setQWERTYPos(-1, 53);
-        } catch (p) {}
-    }
-    if (!Main.xxx) {
-        var j = (Main.search) ? API.search_string : (Main.url != "") ? Main.url : Main.protocol;
-        i.setString(j);
-    }
-    i.setKeyFunc(tvKey.KEY_RETURN, function (u) {
-        widgetAPI.blockNavigation(event);
-        if (Main.xxx) {
-            Main.prev_pl_array.pop();
-        }
-        Main.Menu();
-        return false;
-    });
-    i.setKeyFunc(tvKey.KEY_EXIT, function (u) {
-        widgetAPI.blockNavigation(event);
-        if (Main.xxx) {
-            Main.prev_pl_array.pop();
-        }
-        Main.Menu();
-        return false;
-    });
-    i.setEnterFunc(Search_ok);
-    getId(s).focus();
-};
-
-Search_ok = function (o) {
-    var o = "search";
-    showImageSet();
-    if (Main.search || Main.xxx) {
-        o = "search_h";
-    }
-    var i = trimString(getId(o).value);
-    if (i == "") {
-        Main.Menu();
-    } else {
-        if (Main.xxx && API.Xcode != i) {
-            Main.prev_pl_array.pop();
-            Main.Menu();
-            Display.status("Access denied!", 500);
-        } else {
-            if (Main.search || Main.xxx) {
-                if (Main.pl_url.indexOf("history.dat") > 0) {
-                    setTimeout(function() { Main.openCommonFile(Main.pl_url); }, 1000);
-                } else {
-                    API.XML_URL = Main.pl_url;
-                    Main.loading_pl = true;
-                    setTimeout(function() { API.Request(API.XML_URL); }, 500);
-                }
-                if (Main.search && !Main.xxx) {
-                    API.search_string = i;
-                    Display.status("<b style=\"color:#00ccff\">Please wait! Searching...</b>", 0);
-                } else {
-                    Main.Kill = API.Xcode;
-                    API.Xcode = "0";
-                    Display.status("<b style=\"color:#00ccff\">Access granted!</b>", 500);
-                }
-                KeyHandler.setFocus(0);
-            } else {
-                if (i.toLowerCase().indexOf(".m3u") > 0 || i.toLowerCase().indexOf(".xml") > 0 || i.toLowerCase().indexOf("#") == 0) {
-                    if (i.toLowerCase().indexOf("#") == 0) {
-                        i = i.replace("#", "");
-                    }
-                    Main.pl_url = i;
-                    Main.url = "";
-                } else {
-                    Main.url = i;
-                    Main.pl_url = "";
-                }
-                API.playlist_name = "";
-                Main.name = "";
-                KeyHandler.setFocus(0);
-                Main.PlayChannel();
-            }
-        }
-    }
-};
-
-function RunImeS(j, p) {
-    var o = (j == "0") ? j : (parseInt(j) - 1).toString();
-    var i = (parseInt(j) + 1).toString();
-    var q = new IMEShell(j, ime_callback);
-    if (Main.Keyboard && !Main.seriesE) {
-        q.setKeypadPos(110, 75);
-    } else {
-        q.setKeypadPos(110, 75);
-        try {
-            q.setQWERTYPos(-1, 53);
-        } catch (p) {}
-    }
-    getId(j).focus();
-    q.setKeyFunc(tvKey.KEY_UP, function (l) {
-        if (j != "0") {
-            SetStyle1(j);
-            Scrol("allInput", p[parseInt(o)]);
-            SetStyle2(o);
-            getId(o).focus();
-        }
-    });
-    q.setKeyFunc(tvKey.KEY_DOWN, function (l) {
-        if (p[parseInt(j)] != 0 || j == "0" || j == "1") {
-            SetStyle1(j);
-            Scrol("allInput", -p[parseInt(j)]);
-            SetStyle2(i);
-            RunImeS(i, p);
-        }
-    });
-    q.setKeyFunc(tvKey.KEY_RETURN, function (l) {
-        widgetAPI.blockNavigation(event);
-        Main.Menu();
-        return false;
-    });
-    q.setKeyFunc(tvKey.KEY_EXIT, function (l) {
-        widgetAPI.blockNavigation(event);
-        Main.Menu();
-        return false;
-    });
-    q.setEnterFunc(SaveValue);
-}
-
-ChannelSetupFormular = function () {
-    showImageSet();
-    var u = 52;
-    var s = 6;
-    if (Main.seriesE) {
-        u = 46;
-        s = 5;
-    };
-    HelpSet();
-    if (!Main.seriesE) {
-        getIdb("4_help");
-        getIdb("11_help");
-    } else {
-        getIdn("4_help");
-    }
-    var l = GetChannelInfo(3);
-    if (l.length >= 1000) {
-        l = "Edit impossible! Too big size.";
-    }
-    var q = [];
-    var R = parseInt(l.length / 100);
-    for (var o = 0; o < R + 1; o++) {
-        q[o] = l.substring(0, 100);
-        l = l.replace(q[o], "");
-    }
-    var p = (Main.url == "") ? "playlist" : "stream";
-    widgetAPI.putInnerHTML(getId("version"), "Editing options " + p);
-    var j = "<div id=\"allInput\"><form><span>Name " + p 
-	+ " : </span></form><form><input id=\"0\" type=\"text\" size=\"" + u 
-	+ "\" maxlength=\"200\"/></form><form><span>URL address " + p 
-	+ " : </span></form><form><input id=\"1\" type=\"text\" size=\"" + u 
-	+ "\" maxlength=\"200\"/></form><form><span>Description, additional information : </span></form>";
-    for (var o = 2; o < R + 3; o++) {
-        j += "<form><input id=\"" + o + "\" type=\"text\" size=\"" + u + "\" maxlength=\"200\"/></form>";
-    }
-    j += "<form><span>Icons address " + p + " : </span></form><form><input id=\"" + (R + 3) + "\" type=\"text\" size=\"" + u + "\" maxlength=\"200\"/></form>";
-    if (Main.url != "") {
-        j += "<form><span>Starting aspect ratio :</span></form><form><span>\"0\"- 16X9 FULL or ORIGINAL , \"1\"- 14X9 ,</span></form><form><span>\"2\"- 4X3 ZOOM 2 , \"3\"- 4X3 ZOOM 1 ,\"4\"- 4X3 , </span></form><form><span id=\"text_form0\">\"5\"- X-ZOOM , \"6\"- AUTO . </span><input id=\"" + (R + 4) 
-		+ "\" type=\"text\" size=\"" + s + "\" maxlength=\"2\"/></form><form><span id=\"text_form0\">Audio track number ( 1, 2, 3 . . . ) : </span><input id=\"" + (R + 5) 
-		+ "\"  type=\"text\" size=\"" + s 
-		+ "\" maxlength=\"2\"/></form><form><span id=\"text_form0\">Shift time EPG ( +/-12 h.) : </span><input id=\"" + (R + 6) 
-		+ "\" type=\"text\" size=\"" + s 
-		+ "\" maxlength=\"4\"/></form><form><span>Total buffer size  0.5 - 20 ( Mb.).</span></form><form><span id=\"text_form0\">If it is not specified - \"auto\" : </span><input id=\"" + (R + 7) + "\"  type=\"text\" size=\"" + s 
-		+ "\" maxlength=\"3\"/></form><form><span>Start after buffer is  10 - 50 ( % ) .</span></form><form><span id=\"text_form0\">If it is not specified - \"auto\" : </span><input id=\"" + (R + 8) + "\"  type=\"text\" size=\"" + s 
-		+ "\" maxlength=\"3\"/></form><form><span id=\"text_form0\"> Yandex region code ( \"213\"- Moscow ) : </span><input id=\"" + (R + 9) + "\"  type=\"text\" size=\"" + s 
-		+ "\" maxlength=\"6\"/></form>";
-    }
-    j += "<form></form><form></form><form></form><form></form><form></form><form></form><form></form></div>";
-    widgetAPI.putInnerHTML(getId("infoList"), j);
-    var i = [0, 0];
-    SetString("0", Main.name, 1);
-    var D = (Main.pl_url != "") ? Main.pl_url : (Main.url != "") ? Main.url : "";
-    SetString("1", D, 1);
-    if (R == 0) {
-        SetString("2", q[0], 1);
-        i[2] = 72;
-    } else {
-        SetString("2", q[0], 1);
-        i[2] = 36;
-        for (var o = 1; o < R; o++) {
-            SetString(o + 2, q[o], 1);
-            i[o + 2] = 36;
-        }
-        SetString(R + 2, q[R], 1);
-        i[R + 2] = 72;
-    }
-    if (Main.url != "") {
-        if (R == 0) {
-            SetString("3", Main.logo, 1);
-        } else {
-            SetString(R + 3, Main.logo, 1);
-        }
-        i[R + 3] = 144;
-        SetString(R + 4, Main.ssize, 1);
-        i[R + 4] = 36;
-        SetString(R + 5, Main.a_num, 1);
-        i[R + 5] = 36;
-        SetString(R + 6, Main.timeshift, 1);
-        i[R + 6] = 72;
-        SetString(R + 7, Main.buffer, 1);
-        i[R + 7] = 72;
-        SetString(R + 8, Main.ibuffer, 1);
-        i[R + 8] = 36;
-        SetString(R + 9, Main.region, 1);
-        i[R + 9] = 0;
-    } else {
-        if (R == 0) {
-            SetString("3", Main.logo, 1);
-        } else {
-            SetString(R + 3, Main.logo, 1);
-        }
-        i[R + 3] = 0;
-    }
-    RunImeS("0", i);
-    SetStyle2("0");
-};
-
-SaveValue = function () {
-    try {
-        var E = trimString(getId("0").value);
-        if (Main.url != "") {
-            var bf = trimString(getId("1").value);
-            var bd = "";
-        } else {
-            bd = trimString(getId("1").value);
-            bf = "";
-        }
-        if (GetChannelInfo(3).length < 1000) {
-            var bb = parseInt(GetChannelInfo(3).length / 100);
-            var o = "";
-            for (var R = 0; R < bb + 1; R++) {
-                o += getId(2 + R).value;
-            }
-            o = trimString(o);
-        } else {
-            o = GetChannelInfo(3);
-            bb = 0;
-        }
-        var i = trimString(getId(bb + 3).value);
-        if (Main.url != "") {
-            var Z = dPr(getId(bb + 4).value);
-            var s = dPr(getId(bb + 5).value);
-            var y = dPr(getId(bb + 6).value);
-            var p = dPr(getId(bb + 7).value);
-            var D = dPr(getId(bb + 8).value);
-            var l = dPr(getId(bb + 9).value);
-        } else {
-            Z = "";
-            s = "";
-            y = "";
-            p = "";
-            D = "";
-        }
-        var u = Main.ch_num - 1;
-        var z = [];
-        Main.readFile(z, Main.fav_url);
-        if (z.length > 0) {
-            var q = dSp(dI(E) + "|" + dI(bf) + "|" + dI(i) + "|" + dI(o) + "||" + dI(bd) + "|" + dI(Z) + "|" + dI(s) + "|" + dI(p) + "|" + dI(D) + "|" + dI(y) + "|" + dI(l) + "|" + Main.search_on);
-            z.splice(u, 1, q);
-            Main.writeFile(z, Main.fav_url);
-            Main.playlist_prev = false;
-            Main.DEL = true;
-            Main.FAV = true;
-            Main.openCommonFile(Main.fav_url);
-        }
-        Main.Menu();
-    } catch (n) {}
-};
-
 Scrol = function (o, i) {
     Main.scrolling = Main.scrolling + i;
     if (Main.scrolling == 0 || Main.scrolling < 0) {
@@ -5168,231 +4169,7 @@ Scrol = function (o, i) {
     }
 };
 
-KeyHandler.SetupKeyDown = function () {
-    var l = function () {
-            var E = getId(Main.setup_id).value;
-            for (var R = 0; R < i.length; R++) {
-                if (E == i[R]) {
-                    return R;
-                    break;
-                }
-            }
-        };
-    var i = [];
-    var j = 0;
-    var q = 0;
-    var p = 0;
-    switch (Main.setup_id) {
-    case "9":
-        i = ["ru", "ua", "by"];
-        q = 36;
-        j = 36;
-        break;
-    case "10":
-        i = ["-12", "-11", "-10", "-9", "-8", "-7", "-6", "-5", "-4", "-3", "-2", "-1", "0", "+1", "+2", "+3", "+4", "+5", "+6", "+7", "+8", "+9", "+10", "+11", "+12"];
-        q = 36;
-        j = 36;
-        break;
-    case "11":
-        i = ["auto-sync", "auto-unix", "manual"];
-        q = 36;
-        j = 36;
-        break;
-    case "12":
-        i = ["-12", "-11", "-10", "-9", "-8", "-7", "-6", "-5", "-4", "-3", "-2", "-1", "0", "+1", "+2", "+3", "+4", "+5", "+6", "+7", "+8", "+9", "+10", "+11", "+12"];
-        q = 36;
-        j = 36;
-        break;
-    case "13":
-        i = ["16X9", "14X9", "4X3-ZOOM 2", "4X3-ZOOM 1", "4X3", "X-ZOOM", "AUTO", "Not installed"];
-        q = 36;
-        j = 36;
-        break;
-    case "14":
-        for (var D = 0; D < 101; D++) {
-            i[D] = (D + 50).toString();
-        }
-        q = 36;
-        j = 36;
-        break;
-    case "15":
-        for (var D = 0; D < 101; D++) {
-            i[D] = (D + 50).toString();
-        }
-        q = 36;
-        j = 36;
-        break;
-    case "16":
-        i = ["4X3", "4X3 ZOOM 1", "4X3 ZOOM 2", "14X9", "X-ZOOM"];
-        q = 36;
-        j = 36;
-        break;
-    case "17":
-        i = ["16X9", "16X9 ZOOM 1", "16X9 ZOOM 2", "14X9", "X-ZOOM"];
-        q = 36;
-        j = 36;
-        break;
-    case "18":
-        i = ["ORIGINAL", "ORIG.ZOOM 1", "ORIG.ZOOM 2"];
-        q = 36;
-        j = 36;
-        break;
-    case "19":
-        i = ["square", "rectangular"];
-        q = 36;
-        j = 36;
-        break;
-    case "20":
-        i = ["on", "off"];
-        q = 72;
-        j = 36;
-        break;
-    case "21":
-        i = ["0", "0.5", "0.6", "0.7", "0.8", "0.9", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"];
-        q = 108;
-        j = 72;
-        break;
-    case "22":
-        i = ["0", "10", "15", "20", "25", "30", "35", "40", "45", "50"];
-        q = 36;
-        j = 108;
-        break;
-    case "23":
-        i = ["on", "off"];
-        q = 36;
-        j = 36;
-        break;
-    case "24":
-        i = ["on", "off"];
-        q = 36;
-        j = 36;
-        break;
-    case "25":
-        i = ["on", "off"];
-        q = 36;
-        j = 36;
-        break;
-    case "26":
-        i = ["240p", "360p", "480p", "720p", "1080p"];
-        q = 36;
-        j = 36;
-        break;
-    case "27":
-        i = ["London", "Moscow", "Berlin", "Paris", "Rome", "Dublin", "Madrid", "Lisbon", "Vienna", "Warsaw", "Kiev", "Prague", "Athens", "Ankara"];
-        q = 0;
-        j = 36;
-        break;
-    case "28":
-        i = ["on", "off"];
-        q = 0;
-        j = 36;
-        break
-    };
-    var u = (parseInt(Main.setup_id) - 1).toString();
-    var s = (Main.setup_id < 28) ? (parseInt(Main.setup_id) + 1).toString() : Main.setup_id;
-    event.preventDefault();
-    var o = event.keyCode;
-    switch (o) {
-    case tvKey.KEY_RETURN:
-        ;
-    case tvKey.KEY_EXIT:
-        Return(0);
-        break;
-    case tvKey.KEY_ENTER:
-        onEnter();
-        break;
-    case tvKey.KEY_RIGHT:
-        p = l();
-        if (p < i.length - 1) {
-            p++;
-        } else {
-            p = 0;
-        }
-        SetString(Main.setup_id, i[p]);
-        break;
-    case tvKey.KEY_LEFT:
-        p = l();
-        if (p > 0) {
-            p--;
-        } else {
-            p = i.length - 1;
-        }
-        SetString(Main.setup_id, i[p]);
-        break;
-    case tvKey.KEY_UP:
-        SetStyle1(Main.setup_id);
-        Scrol("allInput", j);
-        SetStyle2(u);
-        if (Main.setup_id == 9) {
-            getId("8").focus();
-        } else {
-            Main.setup_id = u;
-        }
-        break;
-    case tvKey.KEY_DOWN:
-        if (Main.setup_id < 28) {
-            SetStyle1(Main.setup_id);
-            Scrol("allInput", -q);
-            SetStyle2(s);
-        }
-        Main.setup_id = s;
-        break;
-    default:
-        break;
-    };
-    return false;
-};
-
 ime_callback = function () {};
-
-RunIme = function (j) {
-    var p = [0, 108, 72, 36, 36, 36, 36, 108, 36, 36];
-    if (API.star_url == API.XML_URL) {
-        p[1] = 72;
-    }
-    if (Main.pl_url == "") {
-        p[2] = 36;
-    }
-    var o = (j == "0") ? j : (parseInt(j) - 1).toString();
-    var i = (parseInt(j) + 1).toString();
-    var q = new IMEShell(j, ime_callback, "en");
-    if (Main.Keyboard && !Main.seriesE) {
-        q.setKeypadPos(110, 75);
-    } else {
-        q.setKeypadPos(110, 75);
-        try {
-            q.setQWERTYPos(-1, 53);
-        } catch (p) {}
-    }
-    getId(j).focus();
-    q.setKeyFunc(tvKey.KEY_UP, function (l) {
-        if (j != "0") {
-            SetStyle1(j);
-            Scrol("allInput", p[parseInt(j)]);
-            SetStyle2(o);
-            getId(o).focus();
-        }
-    });
-    q.setKeyFunc(tvKey.KEY_DOWN, function (l) {
-        SetStyle1(j);
-        Scrol("allInput", -p[parseInt(i)]);
-        SetStyle2(i);
-        if (j == "8") {
-            Main.setup_id = i;
-            KeyHandler.setFocus(7);
-        } else {
-            RunIme(i);
-        }
-    });
-    q.setKeyFunc(tvKey.KEY_RETURN, function (l) {
-        Return(0);
-        return false;
-    });
-    q.setKeyFunc(tvKey.KEY_EXIT, function (l) {
-        widgetAPI.sendReturnEvent();
-    });
-    q.setEnterFunc(onEnter);
-};
 
 var SSize = {
     0: "16X9",
@@ -5464,104 +4241,6 @@ SetStyle2 = function (i) {
     getId(i).style.color = "blue";
     getId(i).style.background = "#eeeeee";
     getId(i).style.border = "2px solid #999999";
-};
-
-Return = function (i) {
-    widgetAPI.blockNavigation(event);
-    if (API.channels.length > 0 && API.XML_URL == Main.pre_pl_url && i == 0) {
-        Main.Menu();
-    } else {
-        location.reload(true);
-    }
-};
-
-/*Iejus i nustatymus?*/
-onEnter = function () {
-    try {
-        var bi = getId("28").value;
-        if (bi == "on") {
-            var o = ["start.xml", "", "", "", "", "0", "0", "Main|IP-TV|Films|Series", 213, "ru", "0", "0", "0", "", "100", "100", "2", "0", "0", "0", "0", "0", "1", "1", "0", "360p", "London"];
-        } else {
-            var N = trimString(getId("0").value);
-            var bh = trimString(getId("2").value);
-            var bf = trimString(getId("3").value);
-            var bb = (dPr(bh) != "" && dPr(bf) != "") ? trimString(getId("1").value) : bb = "";
-            var Z = trimString(getId("4").value);
-            var y = dPr(getId("5").value);
-            y = (API.Xcode != 0 && (y == API.Xcode || y == Main.ver.substr(2))) ? "0" : (API.Xcode != 0) ? API.Xcode : y;
-            var E = dPr(getId("6").value);
-            var D = trimString(getId("7").value);
-            var s = dPr(getId("8").value);
-            var K = getId("9").value;
-            var q = getId("10").value;
-            var l = getId("11").value;
-            for (var bg in STimemode) {
-                if (STimemode[bg] == l) {
-                    l = bg.toString();
-                    break;
-                }
-            }
-            var bd = getId("12").value;
-            var p = getId("13").value;
-            for (var bg in SSize) {
-                if (SSize[bg] == p) {
-                    p = bg.toString();
-                    break;
-                }
-            }
-            p = (p == "7") ? "" : p;
-            var z = getId("14").value;
-            var G = getId("15").value;
-            var R = getId("16").value;
-            for (var bg in ASize1) {
-                if (ASize1[bg] == R) {
-                    R = bg.toString();
-                    break;
-                }
-            }
-            var u = getId("17").value;
-            for (var bg in ASize2) {
-                if (ASize2[bg] == u) {
-                    u = bg.toString();
-                    break;
-                }
-            }
-            var br = getId("18").value;
-            for (var bg in ASize3) {
-                if (ASize3[bg] == br) {
-                    br = bg.toString();
-                    break;
-                }
-            }
-            var M = getId("19").value;
-            var J = getId("20").value;
-            M = (M == "square" && J == "on")
-				? "0"
-				: (M == "rectangular" && J == "on")
-					? "1"
-					: (M == "square" && J == "off")
-						? "2"
-						: "3";
-            var i = getId("21").value;
-            var L = getId("22").value;
-            var I = getId("23").value;
-            I = (I == "on") ? "1" : "0";
-            var bm = getId("24").value;
-            bm = (bm == "on") ? "1" : "0";
-            var bk = getId("25").value;
-            bk = (bk == "on") ? "1" : "0";
-            var bj = getId("26").value;
-            var bs = trimString(getId("27").value);
-            o = [N, bb, bh, bf, Z, y, E, D, s, K, q, l, bd, p, z, G, R, u, br, M, i, L, I, bm, bk, bj, bs];
-        }
-        Main.writeFile(o, API.fn);
-        API.init();
-        if (K != API.REG) {
-            Return(1);
-        } else {
-            Return(0);
-        }
-    } catch (H) {}
 };
 
 function setGen() {

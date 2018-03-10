@@ -11,7 +11,6 @@
         <script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/Util/Language.js"></script>
         <script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/Util/Include.js"></script>
         <script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/Plugin/Define.js"></script>
-        <script type="text/javascript" language="javascript" src="js/Guide.js"></script>
 		<script type="text/javascript" language="javascript" src="js/Main.js"></script>
 		<object id="pluginObjectSef" border=0 classid="clsid:SAMSUNG-INFOLINK-SEF"></object>
         <object id="pluginPlayer" border=0 classid="clsid:SAMSUNG-INFOLINK-PLAYER"></object>
@@ -35,9 +34,6 @@
         <a href='javascript:void(0);' id='LivePlayer_Anchor' onkeydown='KeyHandler.LivePlayerKeyDown();'></a>
         <a href='javascript:void(0);' id='VODPlayer_Anchor' onkeydown='KeyHandler.VODPlayerKeyDown();'></a>
         <a href='javascript:void(0);' id='Selectbox_Anchor' onkeydown='KeyHandler.SelectboxKeyDown();'></a>
-        <a href='javascript:void(0);' id='RedFav_Anchor' onkeydown='KeyHandler.RedFavKeyDown();'></a>
-        <a href='javascript:void(0);' id='Guide_Anchor' onkeydown='KeyHandler.GuideKeyDown();'></a>
-		<a href='javascript:void(0);' id='Setup_Anchor' onkeydown='KeyHandler.SetupKeyDown();'></a>
  <div id="start_logo" ></div>
 
      <div id="main" style="display:none;">
@@ -187,7 +183,6 @@
         <div id="statusbar" style="display:none;"><span id="status"></span></div>
         <div id="statusbar1" style="display:none;"><span id="status1"></span></div>
         <div id="flashplayer" style="display:none;"></div>
-        <div id="selectbox" style="display:none;"></div>
         <div id="loading" style="display:none;"><img id='imgAnim'></img></div>
 		<div id="weather">
 			<div id="weather_icons"></div><span id="city_name"></span><span id="temp"></span><span id="widget_time"></span>
@@ -196,18 +191,5 @@
             <div id="scroll_line"></div>
 			<img id="scroll_cursor" src="img/cursor.png" style="width:12px;height:12px;">
 		</div>
-
-		<div id="confirm" >
-            <div id="confirm_text"></div>
-            <div class="confirm_btns">
-                <div id="b_ok"><table><tr><td height='20px' style="text-align:center">Ok</td></tr></table>
-                  <a href='javascript: void(0);'  onfocus='javascript:confirm.setByttonStyleOnFocus(this)' onblur='javascript:confirm.setByttonStyleOnBlur(this)' onkeydown='javascript:confirm.KeyDown(this);'   id='btn_ok'></a>
-                </div>
-                <div id="b_canc"><table><tr><td height='20px'>Cancel</td></tr></table>
-                  <a href='javascript: void(0);'  onfocus='javascript:confirm.setByttonStyleOnFocus(this)' onblur='javascript:confirm.setByttonStyleOnBlur(this)' onkeydown='javascript:confirm.KeyDown(this);'   id='btn_canc'></a>
-                </div>
-            </div>
-        </div>
-
 </body>
 </html>
