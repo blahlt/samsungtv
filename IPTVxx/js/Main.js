@@ -144,7 +144,7 @@ Main.onLoad = function () {
         }
         if (Main.Emu) {
             alert("############## NOT FOR EMULATOR !!! ################");
-            setTimeout(function(){ Location.reload(true); }, 2000);
+            setTimeout(function(){ location.reload(true); }, 2000);
         } else {
             if (API.init() && Player.init()) {
                 window.onShow = Main.onShowEventTVKey;
