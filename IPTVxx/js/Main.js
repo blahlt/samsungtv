@@ -95,7 +95,6 @@ var Main = {
     seriesE: false,
     seriesD: false,
     Tsnake: true,
-    Supe_ext: true,
     FirstStart: true,
     Update_Page: false,
     SetZoom: false,
@@ -158,26 +157,24 @@ Main.onLoad = function () {
 };
 
 Main.InitScript = function () {
-    if (Main.Supe_ext) { // always true
-        Main.url_arr = [];
-        if (API.star_url.indexOf("fav.dat") > 0) {
-            Main.FAV = true;
-            Main.openCommonFile(API.star_url);
-        } else {
-            if (API.star_url.indexOf("OpenFav") == 0) {
-                if (API.fav_start_channels.length > 1) {
-                    Main.ReadPlArr("OpenFav", API.fav_start_channels);
-                } else {
-                    Main.FAV = true;
-                    Main.openCommonFile(Main.fav_url);
-                }
-            } else {
-                API.XML_URL = API.star_url;
-                API.Request(API.star_url);
-            }
-        }
-        setTimeout(function(){ setGen(); }, 5000);
-    }
+	Main.url_arr = [];
+	if (API.star_url.indexOf("fav.dat") > 0) {
+		Main.FAV = true;
+		Main.openCommonFile(API.star_url);
+	} else {
+		if (API.star_url.indexOf("OpenFav") == 0) {
+			if (API.fav_start_channels.length > 1) {
+				Main.ReadPlArr("OpenFav", API.fav_start_channels);
+			} else {
+				Main.FAV = true;
+				Main.openCommonFile(Main.fav_url);
+			}
+		} else {
+			API.XML_URL = API.star_url;
+			API.Request(API.star_url);
+		}
+	}
+	setTimeout(function(){ setGen(); }, 5000);
     showWeather();
     showTemp();
     setTimeout(function(){ showScroll(); }, 800);
@@ -3033,7 +3030,7 @@ KeyHandler.MainMenuKeyDown = function () {
         break;
     case tvKey.KEY_INFO:
         //removed : confirm.openWindow();
-        Display.status("MAC = " + Main.MAC + " | Parser = " + Main.Supe_ext, 5000);
+        Display.status("MAC = " + Main.MAC, 5000);
         break;
     case tvKey.KEY_TOOLS:
         hideScroll();
@@ -3308,7 +3305,7 @@ KeyHandler.MainMenuKeyDown = function () {
         ;
     case 192:
         widgetAPI.blockNavigation(event);
-        Display.status("MAC = " + Main.MAC + " | Parser = " + Main.Supe_ext, 5000);
+        Display.status("MAC = " + Main.MAC, 5000);
         break;
     case 1236:
         ;
