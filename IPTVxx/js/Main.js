@@ -3267,7 +3267,6 @@ var Player = {
     delta_time: 0,
     next: false,
     repeat: false,
-    Sef: false,
     jump: false,
     long_pause: false,
     mode3D: 0,
@@ -3282,38 +3281,21 @@ var Player = {
 };
 
 Player.init = function () {
-    var o = true;
+    var playerInitStatus = true;
     this.state = this.STOPPED;
     var i = getId("pluginObjectNNavi");
-    var q = i.GetFirmware();
-    alert("d= " + q);
-    q = q.split("-");
-    if (q[1] && (q[1].indexOf("2011") != -1 || q[1].indexOf("2012") != -1 || q[1].indexOf("2013") != -1 || q[1].indexOf("2014") != -1)) {
-        this.SefPlugin = getId("pluginObjectSef");
-    }
-    if (this.SefPlugin != null) {
-        this.Sef = true;
-    } else {
-        this.plugin = getId("pluginPlayer");
-    }
+    var firmware = i.GetFirmware();
+    alert("firmware= " + firmware);
+    
+	this.SefPlugin = getId("pluginObjectSef");
     var p = getId("pluginObjectTVMW");
-    if ((this.plugin != null || this.Sef) && p != null) {
+    if (p != null) {
         this.Screen3Dplugin = getId("pluginObjectScreen3D");
         p.SetMediaSource();
-        if (this.plugin) {
-            this.plugin.OnConnectionFailed = Player.OnConnectionFailed;
-            this.plugin.OnNetworkDisconnected = Player.OnNetworkDisconnected;
-            this.plugin.OnStreamNotFound = Player.OnStreamNotFound;
-            this.plugin.OnRenderError = Player.OnRenderError;
-            this.plugin.OnBufferingStart = Player.OnBufferingStart;
-            this.plugin.OnBufferingProgress = Player.OnBufferingProgress;
-            this.plugin.OnBufferingComplete = Player.OnBufferingComplete;
-            this.plugin.OnCurrentPlayTime = Player.OnCurrentPlayTime;
-        }
     } else {
-        o = false;
+        playerInitStatus = false;
     }
-    return o;
+    return playerInitStatus;
 };
 
 Player.get3DMode = function () {
@@ -3443,9 +3425,7 @@ Player.OnBufferingComplete = function () {
             Player.message = "";
             getId("progressBar").style.width = "0px";
             try {
-                this.total_time = parseInt((this.Sef)
-					? this.SefPlugin.Execute("GetDuration")
-					: Player.plugin.GetDuration());
+                this.total_time = this.SefPlugin.Execute("GetDuration");
             } catch (a) {
                 this.total_time = 0;
             }
@@ -3498,17 +3478,10 @@ Player.SetBuffer = function () {
     if (Main.buffer != "") {
         var i = parseInt((Main.buffer * 1048576), 10);
         var o = (Main.ibuffer > 0) ? parseInt((Main.buffer * i / 100), 10) : parseInt((i / 5), 10);
-        if (this.Sef) {
-            this.SefPlugin.Execute("SetTotalBufferSize", i);
-            this.SefPlugin.Execute("SetInitialBuffer", o);
-            this.SefPlugin.Execute("SetInitialTimeOut", 20);
-            this.SefPlugin.Execute("SetPendingBuffer", o);
-        } else {
-            this.plugin.SetTotalBufferSize(i);
-            this.plugin.SetInitialBuffer(o);
-            this.plugin.SetInitialTimeOut(20);
-            this.plugin.SetPendingBuffer(o);
-        }
+		this.SefPlugin.Execute("SetTotalBufferSize", i);
+		this.SefPlugin.Execute("SetInitialBuffer", o);
+		this.SefPlugin.Execute("SetInitialTimeOut", 20);
+		this.SefPlugin.Execute("SetPendingBuffer", o);
     }
 };
 
@@ -3541,16 +3514,9 @@ Player.stop = function () {
     if (this.state != this.STOPPED) {
         this.state = this.STOPPED;
         Player.SaveUrl();
-        if (this.Sef) {
-            this.SefPlugin.Execute("Stop");
-            this.SefPlugin.Execute("ClearScreen");
-            this.SefPlugin.Close();
-        } else {
-            if (this.plugin != null) {
-                this.plugin.Stop();
-                this.plugin.ClearScreen();
-            }
-        }
+		this.SefPlugin.Execute("Stop");
+		this.SefPlugin.Execute("ClearScreen");
+		this.SefPlugin.Close();
     }
 };
 
@@ -3576,16 +3542,7 @@ Player.play = function (i, o) {
     if (!Main.Foto) {
         Display.loadingshow();
     }
-    if (this.Sef) {
-        this.SEFPlay(this.url, o);
-    } else {
-        if (this.url.indexOf(".mp3") > 0) {
-            Main.buffer = 0.5;
-        }
-        Player.SetBuffer();
-        Player.setSize(0, 0, 1);
-        this.plugin.Play(this.url);
-    }
+	this.SEFPlay(this.url, o);
 };
 
 Player.SaveUrl = function () {
@@ -3647,17 +3604,12 @@ Player.GetResolution = function () {
     if (this.state != this.STOPPED) {
         if (this.url.indexOf(".mp3") < 0 && this.w == 0) {
             try {
-                if (this.Sef) {
-                    var o = this.SefPlugin.Execute("GetVideoResolution");
-                    o = o.split("|");
-                    if (o.length > 0) {
-                        this.w = o[0];
-                        this.h = o[1];
-                    }
-                } else {
-                    this.h = this.plugin.GetVideoHeight();
-                    this.w = this.plugin.GetVideoWidth();
-                }
+				var o = this.SefPlugin.Execute("GetVideoResolution");
+				o = o.split("|");
+				if (o.length > 0) {
+					this.w = o[0];
+					this.h = o[1];
+				}
             } catch (c) {
                 this.w = 0;
                 this.h = 0;
@@ -3879,13 +3831,8 @@ Player.setSize = function (p, o, i) {
                 Display.status(j);
             }
         }
-        if (this.Sef) {
-            this.SefPlugin.Execute("SetDisplayArea", z, G, E, R);
-            this.SefPlugin.Execute("SetCropArea", D, u, s, y);
-        } else {
-            this.plugin.SetDisplayArea(z, G, E, R);
-            this.plugin.SetCropArea(D, u, s, y);
-        }
+		this.SefPlugin.Execute("SetDisplayArea", z, G, E, R);
+		this.SefPlugin.Execute("SetCropArea", D, u, s, y);
     }
 };
 
@@ -3893,11 +3840,7 @@ Player.JumpForward = function (i) {
     if (this.state == this.PLAYING_VOD) {
         Display.status(this.statusmessage, 2000);
         this.jump = true;
-        if (this.Sef) {
-            this.SefPlugin.Execute("JumpForward", i);
-        } else {
-            this.plugin.JumpForward(i);
-        }
+		this.SefPlugin.Execute("JumpForward", i);
         this.statusmessage = "";
     }
 };
@@ -3908,16 +3851,12 @@ Player.JumpBackward = function (o) {
             Display.status(this.statusmessage, 2000);
         }
         this.jump = true;
-        if (this.Sef) {
-            if (this.url.indexOf(".mp3") > 0) {
-                var i = (this.cur_time / 1000) - o;
-                Player.play(this.url, i);
-            } else {
-                this.SefPlugin.Execute("JumpBackward", o);
-            }
-        } else {
-            this.plugin.JumpBackward(o);
-        }
+		if (this.url.indexOf(".mp3") > 0) {
+			var i = (this.cur_time / 1000) - o;
+			Player.play(this.url, i);
+		} else {
+			this.SefPlugin.Execute("JumpBackward", o);
+		}
         this.statusmessage = "";
     }
 };
@@ -3964,11 +3903,7 @@ Player.PercentJump = function (o) {
 Player.resumeVideo = function () {
     if (this.state == this.PAUSE_VOD) {
         Display.status(" > > > ", 500);
-        if (this.Sef) {
-            this.SefPlugin.Execute("Resume");
-        } else {
-            this.plugin.Resume();
-        }
+		this.SefPlugin.Execute("Resume");
         this.state = this.PLAYING_VOD;
         if (this.url.indexOf("http://") >= 0 && Player.long_pause) {
             setTimeout(function() { Player.MinutesJump(-0.05); }, 100);
@@ -3981,11 +3916,7 @@ Player.resumeVideo = function () {
 
 Player.pauseVideo = function () {
     if (this.state == this.PLAYING_VOD) {
-        if (this.Sef) {
-            this.SefPlugin.Execute("Pause");
-        } else {
-            this.plugin.Pause();
-        }
+		this.SefPlugin.Execute("Pause");
         this.state = this.PAUSE_VOD;
         Display.showplayer();
         Display.status("Pause", 0);
