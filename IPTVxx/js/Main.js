@@ -633,6 +633,7 @@ Main.updateChannel = function () {
     }
 };
 
+// update right side block
 Main.UpdateChannelInfo = function () {
     Main.scrolling = 0;
     Main.ya_base_info = false;
@@ -1978,7 +1979,9 @@ API.loadComplete = function () {
     if (API.channels.length == 0) {
         Display.status("<b style=\"color:yellow\">ERROR IN THE PLAYLIST!</b>");
         if (Main.prev_pl_array.length == 0 && API.XML_URL == "start.xml") {
-            setTimeout(function() { getIdb('main'); SetupFormular(); }, 2000);
+            setTimeout(function() {
+				getIdb('main');
+			}, 2000);
         } else {
             setTimeout(function() { Main.PlayPrevPlaylist(); }, 500);
         }
@@ -2094,7 +2097,9 @@ API.recieveData = function (i) {
                 API.XML_URL = "start.xml";
                 setTimeout(function() { API.Request(API.XML_URL); }, 3000);
             } else {
-                setTimeout(function() { getIdb('main'); SetupFormular(); }, 3000);
+                setTimeout(function() {
+					getIdb('main');
+				}, 3000);
             }
         } else {
             setTimeout(function() { API.stopRequest(); }, 500);
@@ -2831,6 +2836,8 @@ KeyHandler.KanalSelector = function () {
     }
     KeyHandler.NumberEntered = "";
 };
+
+// Choose number with more than one digit
 KeyHandler.Keys10 = function (o) {
     var i = "";
     switch (o) {
@@ -3033,17 +3040,6 @@ KeyHandler.MainMenuKeyDown = function () {
         Display.status("MAC = " + Main.MAC, 5000);
         break;
     case tvKey.KEY_TOOLS:
-        hideScroll();
-        if (!Main.FirstStart && !Main.help_info) {
-            if (Player.state != Player.STOPPED) {
-                Player.stopV();
-                setTimeout(function() { getIdn('main'); }, 700);
-                Main.LoadTimer(function() { SetupFormular(); }, 1500);
-            } else {
-                getIdn("main");
-                Main.LoadTimer(function() { SetupFormular(); }, 600);
-            }
-        }
         break;
     case 1118:
         ;
@@ -5511,101 +5507,6 @@ var STimemode = {
     0: "auto-sync",
     1: "auto-unix",
     2: "manual"
-};
-
-SetupFormular = function () {
-    var G = 43;
-    var E = 14;
-    var R = 5;
-    var q = 48;
-    var p = 48;
-    if (Main.seriesE) {
-        G = 43;
-        E = 14;
-        R = 5;
-        q = 48;
-        p = 48;
-    }
-    Main.FirstStart = true;
-    showImageSet();
-    HelpSet();
-    if (!Main.seriesE) {
-        getIdb("4_help");
-        getIdb("11_help");
-    } else {
-        getIdn("4_help");
-    }
-    getIdb("help_set_par");
-    widgetAPI.putInnerHTML(getId("version"), " Settings , MAC = " + Main.MAC);
-    var l = "</span></form><form style=\"color:#00ccff;font-size:17px;\"><span>";
-    if (API.XML_URL.length < 200) {
-        var o = API.XML_URL;
-        var i = "";
-        if (API.XML_URL.length > q) {
-            o = API.XML_URL.substr(0, q);
-            var D = API.XML_URL.substr(q);
-            var z = parseInt(D.length / p);
-            for (var s = 0; s < z + 1; s++) {
-                var j = D.substring(0, p);
-                D = D.replace(j, "");
-                i += l + j;
-            }
-        }
-    } else {
-        o = "";
-        i = "</span></form><form style=\"color:#00ccff;font-size:20px;\"><span>Link is too long!";
-    }
-    var u = "<div id=\"allInput\"><form><span> URL of the current playlist : <font style=\"color:#00ccff;font-size:17px;\">\"" + "hidden link" + "</font>" + "\"</span></form><form><span> URL of the Main playlist : </span></form><form><input id=\"0\" type=\"text\" size=\"" + G + "\" maxlength=\"200\"></input></form>";
-    u += "<form><span> URL of the hidden playlist : </span></form><form><input id=\"1\" type=\"text\" size=\"" + G + "\" maxlength=\"200\"></input></form>";
-    u += "<form><span id=\"text_form3\"> Login for hidden playlist :</span><input id=\"2\" type=\"text\" size=\"" + E
-		+ "\" maxlength=\"40\"></input></form><form><span id=\"text_form3\">Pass for hidden playlist :</span><input id=\"3\" type=\"text\" size=\"" + E
-		+ "\" maxlength=\"40\"></input></form><form><span id=\"text_form3\">UDP proxy ( IP : port ) :</span><input id=\"4\" type=\"text\" size=\"" + E
-		+ "\" maxlength=\"40\"></input></form><form><span id=\"text_form0\">Access code to \"XXX\" ( 0 - 9999 ) : </span><input id=\"5\" type=\"text\" size=\"" + R
-		+ "\" maxlength=\"4\"></input></form><form><span id=\"text_form0\">Code of Fav. name  ( 0 - 9999 ) :</span><input id=\"6\" type=\"text\" size=\"" + R
-		+ "\" maxlength=\"4\"></input></form><form><span>Names of Fav. folders, any, order</span></form><form><span>( name 1 | name 2 | name 3 . . . ) : </span></form><form><input id=\"7\" type=\"text\" size=\"" + G
-		+ "\" maxlength=\"200\"></input></form><form><span id=\"text_form0\"> Yandex region code ( \"213\"- Moscow ) : </span><input id=\"8\" type=\"text\" size=\"" + R
-		+ "\" maxlength=\"7\"></input></form><form><span id=\"text_form1\">EPG from \"m.tv.yandex.</span><img src=\"img/buttons/lr_m.png\"></img><div id=\"9\"></div></form><form><span id=\"text_form1\">EPG Shift time (+/-12 h.)</span><img src=\"img/buttons/lr_m.png\"></img><div id=\"10\"></div></form><form><span id=\"text_form2\">Widget Time : </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"11\"></div></form><form><span id=\"text_form1\">Time zone for \"auto.\" ( +/-12 h.)</span><img src=\"img/buttons/lr_m.png\"></img><div id=\"12\"></div></form><form><span id=\"text_form2\">Starting video size : </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"13\"></div></form><form><span id=\"text_form1\">\"X-ZOOM\" height 50 - 150 ( % )</span><img src=\"img/buttons/lr_m.png\"></img><div id=\"14\"></div></form><form><span id=\"text_form1\">\"X-ZOOM\" width 50 - 150 ( % ) </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"15\"></div></form><form><span id=\"text_form2\">AUTO for w/h<1.35 </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"16\"></div></form><form><span id=\"text_form2\">AUTO for 1.34 < w/h <1.79 </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"17\"></div></form><form><span id=\"text_form2\">AUTO for  w/h > 1.78 </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"18\"></div></form><form><span id=\"text_form2\">Icons shape :</span><img src=\"img/buttons/lr_m.png\"></img><div id=\"19\"></div></form><form><span id=\"text_form1\">External icons :</span><img src=\"img/buttons/lr_m.png\"></img><div id=\"20\"></div></form><form><span>Total buffer size 0.5 - 20 ( Mb.).</span></form><form><span id=\"text_form1\">\"0\"- auto or from the playlist :</span><img src=\"img/buttons/lr_m.png\"></img><div id=\"21\"></div></form><form><span>Start playback after reading </span></form><form><span> from 10 to 50 ( % ) of total buffer size.</span></form><form><span id=\"text_form1\">\"0\"- auto or from the playlist :</span><img src=\"img/buttons/lr_m.png\"></img><div id=\"22\"></div></form><form><span id=\"text_form1\">Bottom help panel  </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"23\"></div></form><form><span id=\"text_form1\">Post MAC address </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"24\"></div></form><form><span id=\"text_form1\">Masking a TV browser </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"25\"></div></form><form><span id=\"text_form1\">Limit the video quality </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"26\"></div></form><form><span id=\"text_form1\">Choose Weather Forecast for </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"27\"></div></form><form><span id=\"text_form1\">Reset to default </span><img src=\"img/buttons/lr_m.png\"></img><div id=\"28\"></div></form><form></form><form></form><form></form><form></form><form></form><form></form><form></form><form></form></div>";
-    widgetAPI.putInnerHTML(getId("infoList"), u);
-    SetString("0", API.star_url, 1);
-    SetString("1", API.Surl, 1);
-    SetString("2", API.Login, 1);
-    SetString("3", API.Pasword, 1);
-    SetString("4", API.Proxy, 1);
-    var y = (API.Xcode == 0) ? "0" : (API.Xcode.length == 1) ? "#" : (API.Xcode.length == 2) ? "##" : (API.Xcode.length == 3) ? "###" : "####";
-    SetString("5", y, 1);
-    SetString("6", API.Scode, 1);
-    SetString("7", API.Favname, 1);
-    SetString("8", API.CODE, 1);
-    SetString("9", API.REG, 2);
-    y = (API.Timeshift.indexOf("-") < 0 && API.Timeshift != "0") ? "+" + API.Timeshift : API.Timeshift;
-    SetString("10", y, 2);
-    SetString("11", STimemode[parseInt(API.Timemode)], 3);
-    y = (API.Timefix.indexOf("-") < 0 && API.Timefix != "0") ? "+" + API.Timefix : API.Timefix;
-    SetString("12", y, 2);
-    y = (API.Size == "") ? "7" : API.Size;
-    SetString("13", SSize[parseInt(y)], 3);
-    SetString("14", API.Ph, 2);
-    SetString("15", API.Pw, 2);
-    SetString("16", ASize1[parseInt(API.a_size1)], 3);
-    SetString("17", ASize2[parseInt(API.a_size2)], 3);
-    SetString("18", ASize3[parseInt(API.a_size3)], 3);
-    y = (API.Forma == "0" || API.Forma == "2") ? "square" : "rectangular";
-    SetString("19", y, 3);
-    y = (API.Forma == "0" || API.Forma == "1") ? "on" : "off";
-    SetString("20", y, 2);
-    SetString("21", API.Buffer, 2);
-    SetString("22", API.Ibuffer, 2);
-    y = (API.Pstyle == "1") ? "on" : "off";
-    SetString("23", y, 2);
-    y = (API.Mac == "1") ? "on" : "off";
-    SetString("24", y, 2);
-    y = (API.Header == "1") ? "on" : "off";
-    SetString("25", y, 2);
-    SetString("26", API.Vquality, 2);
-    SetString("27", API.Cityname, 1);
-    SetString("28", "off", 2);
-    RunIme("0");
-    SetStyle2("0");
 };
 
 SetString = function (p, o, i) {
