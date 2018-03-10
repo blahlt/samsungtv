@@ -1825,7 +1825,7 @@ msecToStr = function (i, o) {
 
 var API = {
     XML_URL: "start.xml",
-    star_url: "start.xml",
+    star_url: "https://raw.githubusercontent.com/blahlt/samsungtv/master/data/skynet20161003.m3u",
     help_url: "http://nebo.ddns.net/help/starthelp.xml",
     GenUrl: "", // Menu(?) generation url
     GenT: "500", // Menu(?) generation timer
@@ -2068,7 +2068,7 @@ API.recieveMenuData = function (url) {
             API.getChannel_list(API.XHRObj.responseText);
         } else {
             if (API.XHRObj.responseXML != null && API.XHRObj.responseXML != "") {
-                alert("GETTING XML SOURCE!!!");
+                //alert("GETTING XML SOURCE!!!");
                 API.getChannel_list(API.XHRObj.responseXML);
             } else {
                 API.channels = [];
@@ -2268,90 +2268,6 @@ API.getChannel_list = function (bk) {
                             API.channels.push(Z);
                             lineIndex++;
                         }
-                    }
-                }
-            } else {
-                if (bh) {
-                    try {
-                        API.playlist_name = bj(bh, "playlist_name");
-                        API.playlist_name = (API.playlist_name == "") ? Main.playlist_name : (API.playlist_name == "no_name") ? "" : API.playlist_name;
-                        API.next_page_url = bj(bh, "next_page_url");
-                        API.prev_page_url = bj(bh, "prev_page_url");
-                        API.search_on = bj(bh, "search_on");
-                        API.next_page_text = bi(bh, "next_page_url", "text");
-                        API.prev_page_text = bi(bh, "prev_page_url", "text");
-                        var S = bh.getElementsByTagName("all_channels");
-                        if (S.length > 0) {
-                            p = bj(S[0], "all_logo");
-                            o = bj(S[0], "all_size", 1);
-                            i = bj(S[0], "all_audiotrack_num", 1);
-                            be = bj(S[0], "all_buffer", 1);
-                            bg = bj(S[0], "all_timeshift", 1);
-                            bc = bj(S[0], "all_region", 1);
-                            ba = bj(S[0], "all_parser");
-                        }
-                        var P = bh.getElementsByTagName("channel");
-                        for (var L = 0; L < P.length; L++) {
-                            y = bj(P[L], "title");
-                            try {
-                                var bl = FoundYaIndex[y];
-                            } catch (p) {}
-                            bf = bj(P[L], "stream_url");
-                            z = bj(P[L], "logo_30x30");
-                            var N = bj(P[L], "logo");
-                            l = bj(P[L], "description");
-                            try {
-                                if (bl != undefined) {
-                                    l = bl;
-                                    z = FoundYaIco[l];
-                                }
-                            } catch (p) {}
-                            var M = bj(P[L], "parser");
-                            M = (M != "") ? M : ba;
-                            E = bj(P[L], "category_id");
-                            z = (z != "") ? z : (N != "") ? N : (p != "") ? p : "";
-                            u = "";
-                            var K = "";
-                            X = "";
-                            D = "";
-                            s = "";
-                            var J = "";
-                            G = "";
-                            var I = "";
-                            if (bf != "") {
-                                X = bj(P[L], "size", 1);
-                                X = (X != "") ? X : o;
-                                D = bj(P[L], "audiotrack_num", 1);
-                                D = (D != "") ? D : i;
-                                s = bj(P[L], "buffer", 1);
-                                s = (s != "") ? s : be;
-                                J = bj(P[L], "ibuffer", 1);
-                                G = bj(P[L], "timeshift", 1);
-                                G = (G != "") ? G : bg;
-                                I = bj(P[L], "region", 1);
-                                I = (I != "") ? I : bc;
-                            } else {
-                                u = bj(P[L], "playlist_url");
-                                K = bj(P[L], "search_on");
-                            }
-                            Z = [y, bf, z, l, E, u, X, D, s, J, G, I, M, K];
-                            API.channels.push(Z);
-                        }
-                        try {
-                            var bm = bh.getElementsByTagName("category");
-                            for (var bd = 0; bd < bm.length; bd++) {
-                                var U = bj(bm[bd], "category_id");
-                                var R = bj(bm[bd], "category_title");
-                                if (U != "" && R != "") {
-                                    var V = [U, R];
-                                    API.categories.push(V);
-                                }
-                            }
-                        } catch (F) {
-                            API.categories = [];
-                        }
-                    } catch (F) {
-                        API.channels = [];
                     }
                 }
             }
