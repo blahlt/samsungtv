@@ -6544,10 +6544,10 @@ confirm.setByttonStyleOnBlur = function (bP) {
 };
 
 confirm.KeyDown = function (bQ) {
-    var bR = event.keyCode;
+    var keyCode = event.keyCode;
     var widgetAPI = new Common.API.Widget();
-    alert("Options Key code : " + bR);
-    switch (bR) {
+    alert("Options Key code : " + keyCode);
+    switch (keyCode) {
     case (88):
         widgetAPI.blockNavigation(event);
         setTimeout(function(){ Main.Menu(); }, 200);
