@@ -6269,7 +6269,7 @@ var xmlHttp = null;
 function showWeather() {
     var C = "http://nebo.ddns.net:8881/weather_new.php?city=" + API.Cityname;
     xmlHttp = new XMLHttpRequest();
-    xmlHttp.onreadystatechange = ProcessRequest;
+    xmlHttp.onreadystatechange = ProcessWeatherResponse;
     xmlHttp.open("GET", C, true);
     xmlHttp.send(null);
     var cg = document.getElementById("widget_time");
@@ -6290,7 +6290,7 @@ function showTemp() {
     a = Main.protocol;
     var ck = a + Main.hurl + ":" + eval(Main.trp + z) + "/weather_temp_new.php?city=" + API.Cityname;
     xmlHttp1 = new XMLHttpRequest();
-    xmlHttp1.onreadystatechange = ProcessRequest1;
+    xmlHttp1.onreadystatechange = ProcessTemperatureResponse;
     xmlHttp1.open("GET", ck, true);
     xmlHttp1.send(null);
 }
@@ -6328,7 +6328,7 @@ function scrollDown() {
  * Processing weather response
  * @return {string} response text
  */
-function ProcessRequest() {
+function ProcessWeatherResponse() {
     if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
         if (xmlHttp.responseText == "ACCESS DENIED") {
             Display.status("<b style=\"color:yellow\">" + xmlHttp.responseText + "</b>", 3000);
@@ -6346,7 +6346,7 @@ function ProcessRequest() {
  * Processing temperature response
  * @return {string} response text
  */
-function ProcessRequest1() {
+function ProcessTemperatureResponse() {
     if (xmlHttp1.readyState == 4 && xmlHttp1.status == 200) {
         if (xmlHttp1.responseText == "ACCESS DENIED") {
             Display.status("<b style=\"color:yellow\">" + xmlHttp1.responseText + "</b>", 3000);
