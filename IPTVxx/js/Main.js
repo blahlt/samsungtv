@@ -181,8 +181,8 @@ Main.InitScript = function () {
     showWeather();
     showTemp();
     setTimeout(function(){ showScroll(); }, 800);
-    setTimeout(function(){ confirm.popWindow(); }, 1000);
-    setTimeout(function(){ confirm.closeWindow(); }, 5000);
+    // removed : setTimeout(function(){ confirm.popWindow(); }, 1000);
+    // removed : setTimeout(function(){ confirm.closeWindow(); }, 5000);
 };
 
 SetVolume = function (o) {
@@ -3032,7 +3032,7 @@ KeyHandler.MainMenuKeyDown = function () {
         }
         break;
     case tvKey.KEY_INFO:
-        confirm.openWindow();
+        //removed : confirm.openWindow();
         Display.status("MAC = " + Main.MAC + " | Parser = " + Main.Supe_ext, 5000);
         break;
     case tvKey.KEY_TOOLS:
@@ -6465,126 +6465,3 @@ function ProcessRequest1() {
 function popAlert() {
     alert("Hello! I am an alert box!");
 }
-
-var confirm;
-
-confirm.openWindow = function () {
-    this.setWindowPosition();
-    this.setContents("confirm_text", "<img src=\"http://nebo.ddns.net:8881/pic/bg.jpg\" ></img><br><b style=\"color:EF5C0C;font-size:14px\">Welcome to IPTV<i>x </i>World!!!</b><br><i style=\"font-size:12px\">Courtesy of Multiviewer.TV</i><br><b style=\"color:EF5C0C;\">www.multiviewer.tv</b>");
-    this.turnPopup("on");
-    this.setFocus("btn_ok");
-};
-
-confirm.popWindow = function () {
-    this.setWindowPosition1();
-    this.setContents("confirm_text", "<img src=\"http://nebo.ddns.net:8881/pic/bg-update.jpg\" ></img>");
-    this.turnPopup("on");
-    this.setFocus("btn_ok");
-};
-
-confirm.setWindowPosition = function () {
-    var bN = 445;
-    var bK = 360;
-    var bL = Math.floor((960 - bN) / 2);
-    var bM = Math.floor((540 - bK) / 2);
-    if (Main.seriesE) {
-        document.getElementById("confirm").style.left = 260;
-        document.getElementById("confirm").style.top = 100;
-    } else {
-        document.getElementById("b_ok").style.backgroundColor = "#5fbaff";
-        document.getElementById("confirm").style.top = bM;
-    }
-};
-
-confirm.setWindowPosition1 = function () {
-    var bN = 445;
-    var bK = 360;
-    var bL = Math.floor((960 - bN) / 2);
-    var bM = Math.floor((540 - bK) / 2);
-    if (Main.seriesE) {
-        document.getElementById("confirm").style.left = 260;
-        document.getElementById("confirm").style.top = 100;
-    } else {
-        document.getElementById("b_ok").style.backgroundColor = "#5fbaff";
-        document.getElementById("confirm").style.top = bM;
-    }
-};
-
-confirm.turnPopup = function (bO) {
-    if (bO == "on") {
-        document.getElementById("confirm").style.visibility = "visible";
-    } else {
-        if (bO == "off") {
-            document.getElementById("confirm").style.visibility = "hidden";
-        }
-    }
-};
-
-confirm.setFocus = function () {
-    var bP = document.getElementById("btn_ok");
-    if (bP) {
-        bP.focus();
-    }
-};
-
-confirm.setByttonStyleOnFocus = function (bP) {
-    if (bP.getAttribute("id") == "btn_ok") {
-        document.getElementById("b_ok").style.backgroundColor = "#0866aa";
-    } else {
-        document.getElementById("b_canc").style.backgroundColor = "#0866aa";
-    }
-};
-
-confirm.setByttonStyleOnBlur = function (bP) {
-    if (bP.getAttribute("id") == "btn_ok") {
-        document.getElementById("b_ok").style.backgroundColor = "#5fbaff";
-    } else {
-        document.getElementById("b_canc").style.backgroundColor = "#5fbaff";
-    }
-};
-
-confirm.KeyDown = function (bQ) {
-    var keyCode = event.keyCode;
-    var widgetAPI = new Common.API.Widget();
-    alert("Options Key code : " + keyCode);
-    switch (keyCode) {
-    case (88):
-        widgetAPI.blockNavigation(event);
-        setTimeout(function(){ Main.Menu(); }, 200);
-    case (45):
-        this.closeWindow();
-        break;
-    case (29443):
-        if (bQ.getAttribute("id") == "btn_canc") {
-            this.turnPopup("off");
-        }
-        if (bQ.getAttribute("id") == "btn_ok") {
-            this.closeWindow();
-        }
-        break;
-    case (5):
-        this.selectButton(bQ);
-        break;
-    case (4):
-        this.selectButton(bQ);
-        break
-    }
-};
-
-confirm.closeWindow = function () {
-    this.turnPopup("off");
-    setTimeout(Main.Menu(), 200);
-};
-
-confirm.selectButton = function (bP) {
-    if (bP.getAttribute("id") == "btn_ok") {
-        this.setFocus("btn_canc");
-    } else {
-        this.setFocus("btn_ok");
-    }
-};
-
-confirm.setContents = function (bT, bS) {
-    var bP = document.getElementById(bT);
-    widgetAPI.putInnerHTML(bP, bS);
-};
