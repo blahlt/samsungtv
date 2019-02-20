@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget>
     <type>user</type>
-    <previewjs>IPTVx</previewjs>
-    <ver>2.90</ver>
+    <previewjs>My</previewjs>
+    <ver>1.000</ver>
     <mgrver>1.000</mgrver>
     <network>n</network>
     <fullwidget>y</fullwidget>
@@ -16,7 +16,7 @@
     <flashplayer>y</flashplayer>
     <dcont>y</dcont>
     <apptype>11</apptype>
-    <widgetname>IPTVx</widgetname>
+    <widgetname>My</widgetname>
     <description></description>
     <width>960</width>
     <height>540</height>
@@ -26,8 +26,8 @@
     <BigListIcon>img/logo/iptvx95x95.png</BigListIcon>
     <author>
     <name>ruleNone</name>
-    <email>im@multiviewer.tv</email>
-    <link>www.multiviewer.tv</link>
+    <email>email@email.email</email>
+    <link>www.example.com</link>
     <organization></organization>
     </author>
 </widget>

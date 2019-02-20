@@ -78,7 +78,6 @@ var Main = {
     usb_url: "",
     playlist_name: "",
     ret_url: "",
-    hurl: "nebo.ddns.net",
     Kill: "",
     number_p: 1,
     step_read_dir: 1,
@@ -104,10 +103,8 @@ var Main = {
     St_size: null,
     IntervalUpdateTime: null,
     SlideShowInterval: null,
-    protocol: "http://",
     openWindow: null,
     txt: "mac=",
-    trp: 81,
     version: "0.426",
     ver: "2.96"
 };
@@ -650,7 +647,7 @@ Main.UpdateChannelInfo = function () {
                 alert("cutted ee[0] =" + w[0]);
                 var A = w[0].split(":");
                 alert("cutted url =" + A[1] + ":" + A[2]);
-                var x = Main.protocol + A[1] + ":" + A[2] + "?reg=" + w[1] + "&chan=" + w[2] + "&pass=PaCcT0$33v247&friendly=1";
+                var x = "http://" + A[1] + ":" + A[2] + "?reg=" + w[1] + "&chan=" + w[2] + "&pass=PaCcT0$33v247&friendly=1";
                 alert("request =" + x);
                 EUROGetEPG(x);
             } else {
@@ -4565,10 +4562,11 @@ function hideScroll() {
 var xmlHttp = null;
 
 function showWeather() {
-    var C = "http://nebo.ddns.net:8881/weather_new.php?city=" + API.Cityname;
+    var weatherUrl = "http://nebo.ddns.net:8881/weather_new.php?city=" + API.Cityname;
+	alert("Request weather: " + weatherUrl);
     xmlHttp = new XMLHttpRequest();
     xmlHttp.onreadystatechange = ProcessWeatherResponse;
-    xmlHttp.open("GET", C, true);
+    xmlHttp.open("GET", weatherUrl, true);
     xmlHttp.send(null);
     var cg = document.getElementById("widget_time");
     cg.style.visibility = "visible";
@@ -4584,12 +4582,11 @@ function hideWeather() {
 }
 
 function showTemp() {
-    var z = 8800;
-    a = Main.protocol;
-    var ck = a + Main.hurl + ":" + eval(Main.trp + z) + "/weather_temp_new.php?city=" + API.Cityname;
+    var temperatureUrl = "http://nebo.ddns.net:8881/weather_temp_new.php?city=" + API.Cityname;
+	alert("Request temperature: " + temperatureUrl);
     xmlHttp1 = new XMLHttpRequest();
     xmlHttp1.onreadystatechange = ProcessTemperatureResponse;
-    xmlHttp1.open("GET", ck, true);
+    xmlHttp1.open("GET", temperatureUrl, true);
     xmlHttp1.send(null);
 }
 
