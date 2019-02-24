@@ -1,31 +1,31 @@
 #EXTM3U
 #EXTNAME:
 
-#EXTINF:1,LRT Televizija mpeg2
+#EXTINF:1 tvg-name="lrt-televizija",LRT Televizija mpeg2
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.12:1234
 
-#EXTINF:2,LRT Televizija h264
+#EXTINF:2 tvg-name="lrt-televizija",LRT Televizija h264
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.170:1234
 
-#EXTINF:3,LRT Televizija HD
+#EXTINF:3 tvg-name="lrt-televizija",LRT Televizija HD
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.158:1234
 
-#EXTINF:4,LNK mpeg2
+#EXTINF:4 tvg-name="lnk",LNK mpeg2
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.13:1234
 
-#EXTINF:5,LNK h264
+#EXTINF:5 tvg-name="lnk",LNK h264
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.172:1234
 
-#EXTINF:6,TV3 mpeg2
+#EXTINF:6 tvg-name="tv3-2",TV3 mpeg2
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.39:1234
 
-#EXTINF:7,TV3 h264
+#EXTINF:7 tvg-name="tv3-2",TV3 h264
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.173:1234
 
