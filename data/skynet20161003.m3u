@@ -29,39 +29,39 @@ udp://@233.136.41.39:1234
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.173:1234
 
-#EXTINF:8,BTV mpeg2
+#EXTINF:8 tvg-name="btv",BTV mpeg2
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.20:1234
 
-#EXTINF:9,BTV h264
+#EXTINF:9 tvg-name="btv",BTV h264
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.176:1234
 
-#EXTINF:10,Lietuvos ryto TV
+#EXTINF:10 tvg-name="lietuvos-ryto-televizija",Lietuvos ryto TV
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.15:1234
 
-#EXTINF:11,TV6 mpeg2
+#EXTINF:11 tvg-name="tv6-2",TV6 mpeg2
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.38:1234
 
-#EXTINF:12,TV6 h264
+#EXTINF:12 tvg-name="tv6-2",TV6 h264
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.175:1234
 
-#EXTINF:13,TV8 mpeg2
+#EXTINF:13 tvg-name="tv8",TV8 mpeg2
 #EXTTV:Lietuviski;;
 udp://@233.136.41.116:1234
 
-#EXTINF:14,TV8 h264
+#EXTINF:14 tvg-name="tv8",TV8 h264
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.179:1234
 
-#EXTINF:15,TV1 mpeg2
+#EXTINF:15 tvg-name="tv1",TV1 mpeg2
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.42:1234
 
-#EXTINF:16,TV1 h264
+#EXTINF:16 tvg-name="tv1",TV1 h264
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.174:1234
 
@@ -73,51 +73,51 @@ udp://@233.136.41.31:1234
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.171:1234
 
-#EXTINF:19,LRT Lituanica
+#EXTINF:19 tvg-name="lrt-lituanica",LRT Lituanica
 #EXTTV:Lietuviski;;
 udp://@233.136.41.147:1234
 
-#EXTINF:20,LIUKS! mpeg2
+#EXTINF:20 tvg-name="liuks",LIUKS! mpeg2
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.14:1234
 
-#EXTINF:21,LIUKS! h264
+#EXTINF:21 tvg-name="liuks",LIUKS! h264
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.178:1234
 
-#EXTINF:22,Info TV mpeg2
+#EXTINF:22 tvg-name="info-tv",Info TV mpeg2
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.17:1234
 
-#EXTINF:23,Info TV h264
+#EXTINF:23 tvg-name="info-tv",Info TV h264
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.177:1234
 
-#EXTINF:24,Balticum TV
+#EXTINF:24 tvg-name="balticum-tv",Balticum TV
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.21:1234
 
-#EXTINF:25,Balticum Gold
+#EXTINF:25 tvg-name="balticum-auksinis",Balticum Gold
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.105:1234
 
-#EXTINF:26,TV1000 Premium
+#EXTINF:26 tvg-name="tv1000-premium",TV1000 Premium
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.119:1234
 
-#EXTINF:27,Filmzone+ HD
+#EXTINF:27 tvg-name="filmzone",Filmzone+ HD
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.161:1234
 
-#EXTINF:28,GNTV
+#EXTINF:28 tvg-name="gntv",GNTV
 #EXTTV:Lietuviski;lt;
 udp://@233.136.41.148:1234
 
-#EXTINF:29,Siauliu Televizija mpeg2
+#EXTINF:29 tvg-name="siauliu-tv",Siauliu Televizija mpeg2
 #EXTTV:Lietuviski;;
 udp://@233.136.41.95:1234
 
-#EXTINF:30,Siauliu Televizija h264
+#EXTINF:30 tvg-name="siauliu-tv",Siauliu Televizija h264
 #EXTTV:Lietuviski;;
 udp://@233.136.41.181:1234
 
@@ -129,7 +129,7 @@ udp://@233.136.41.76:1234
 #EXTTV:Lietuviski;;
 udp://@233.136.41.180:1234
 
-#EXTINF:33,Pingvinukas
+#EXTINF:33 tvg-name="lolo-tv-lt",Lolo TV (LT)
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.115:1234
 
@@ -137,59 +137,59 @@ udp://@233.136.41.115:1234
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.145:1234
 
-#EXTINF:35,Seimas tiesiogiai
+#EXTINF:35 tvg-name="seimas-tiesiogiai",Seimas tiesiogiai
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.118:1234
 
-#EXTINF:36,Sport 1
+#EXTINF:36 tvg-name="sport-1",Sport 1
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.45:1234
 
-#EXTINF:37,Sport 1 HD
+#EXTINF:37 tvg-name="sport-1",Sport 1 HD
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.163:1234
 
-#EXTINF:38,Viasat Sport Baltic
+#EXTINF:38 tvg-name="tvplay-sports",TVPlay Sports
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.36:1234
 
-#EXTINF:39,TV Zvaigzde
+#EXTINF:39 tvg-name="zvaigzde",TV Zvaigzde
 #EXTTV:Lietuviski;;
 udp://@233.136.41.165:1234
 
-#EXTINF:40,Viasat Explorer
+#EXTINF:40 tvg-name="viasat-explore-nordic",Viasat Explore Nordic
 #EXTTV:;eng;
 udp://@233.136.41.37:1234
 
-#EXTINF:41,Viasat History
+#EXTINF:41 tvg-name="viasat-history",Viasat History
 #EXTTV:;eng;
 udp://@233.136.41.34:1234
 
-#EXTINF:42,Viasat History HD
+#EXTINF:42 tvg-name="viasat-history",Viasat History HD
 #EXTTV:;eng;
 udp://@233.136.41.140:1234
 
-#EXTINF:43,History
+#EXTINF:43 tvg-name="history-europe",History Europe
 #EXTTV:;eng;
 udp://@233.136.41.109:1234
 
-#EXTINF:44,Discovery Channel mpeg2
+#EXTINF:44 tvg-name="discovery-channel-ce",Discovery Channel CE mpeg2
 #EXTTV:;eng;
 udp://@233.136.41.4:1234
 
-#EXTINF:45,Discovery Channel h264
+#EXTINF:45 tvg-name="discovery-channel-ce",Discovery Channel CE h264
 #EXTTV:;eng;
 udp://@233.136.41.166:1234
 
-#EXTINF:46,Discovery Science HD
+#EXTINF:46 tvg-name="discovery-science-eu",Discovery Science EU HD
 #EXTTV:;eng;
 udp://@233.136.41.157:1234
 
-#EXTINF:47,Discovery Showcase HD
+#EXTINF:47 tvg-name="discovery-hd-showcase",Discovery HD Showcase
 #EXTTV:;eng;
 udp://@233.136.41.54:1234
 
-#EXTINF:48,Viasat Nature
+#EXTINF:48 tvg-name="viasat-nature-east",Viasat Nature East
 #EXTTV:;eng;
 udp://@233.136.41.133:1234
 
