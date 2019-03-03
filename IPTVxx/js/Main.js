@@ -23,22 +23,12 @@ var Main = {
     play_selected_channel: 0,
     play_selected_page: 0,
     play_chan_array_index: 0,
-    //PlayerMode: "",
-    yandextv_mode: false,
-    ya_all_day: false,
-    //Ya_flag_step: 0,
-    ya_prog_id: -1,
     temp_epg_info: "",
-    epg_info_step: 0,
     epg_t1: 0,
     epg_t2: 0,
     ch_index: "",
-    ya_prog_info_arr: [],
-    ya_epg_info_arr: [],
     guide: false,
     block_info: false,
-    lost_date: "",
-    lost_chname: "",
     scrolling: 0,
     load_timer: null,
     prev_pl_array: [],
@@ -74,14 +64,9 @@ var Main = {
     search_on: "",
     region: "",
     parser: "rulenone",
-    usb_url: "",
     playlist_name: "",
     ret_url: "",
     number_p: 1,
-    step_read_dir: 1,
-    FAV: false,
-    DEL: false,
-    RED: false,
     ret: false,
     search: false,
     start: false,
@@ -95,7 +80,6 @@ var Main = {
     Audio: null,
     St_size: null,
     IntervalUpdateTime: null,
-    openWindow: null,
     txt: "mac=",
     version: "0.426",
     ver: "2.96"
@@ -240,7 +224,6 @@ Main.Menu = function () {
     Display.hideplayer();
     Display.loadinghide();
     API.AsReqMode = true;
-    this.FAV = false;
     this.help_info = false;
     this.block_info = false;
     this.loading_pl = false;
@@ -251,7 +234,6 @@ Main.Menu = function () {
     getIdAndHide("help_set_par");
     getIdAndShow("rightHalf");
     getIdAndHide("infoList");
-    getIdAndHide("ya_date");
     getIdAndHide("ya_info");
     getIdAndHide("ya_help");
     Main.UpdateHelpBar();
@@ -293,7 +275,7 @@ Main.UpdateHelpBar = function () {
         getIdAndShow("0_help"); // show "Exit"
         getId("background").style.backgroundImage = "url(img/us_bg.png)";
         if (this.prev_pl_array.length > 0) {
-            if (API.categories.length < 3 && !Main.FAV && !Main.guide && API.XML_URL.indexOf("history.dat") < 0) {
+            if (API.categories.length < 3 && !Main.guide && API.XML_URL.indexOf("history.dat") < 0) {
                 getIdAndShow("9_help");
             }
             if (API.XML_URL.indexOf("start.xml") == 0) {
@@ -302,10 +284,8 @@ Main.UpdateHelpBar = function () {
         } else {
             if (API.XML_URL.indexOf("start.xml") != 0) {
                 getIdAndHide("6_help");
-                if (!this.RED) {
-                    getIdAndShow("7_help");
-                }
-                if (API.categories.length < 3 && !Main.FAV && !Main.guide) {
+				getIdAndShow("7_help");
+                if (API.categories.length < 3 && !Main.guide) {
                     getIdAndShow("9_help");
                 }
             } else {
@@ -319,7 +299,7 @@ Main.UpdateHelpBar = function () {
         getId("widget_time").style.left = "850px";
     }
     getIdAndShow("background");
-    if (API.XML_URL.indexOf("OpenFav") == 0 || Main.help_info) {
+    if (Main.help_info) {
         Main.block_fav = true;
     }
     widgetAPI.putInnerHTML(getId("version"), i);
@@ -445,7 +425,6 @@ Main.updateChannel = function () {
     if (KeyHandler.Focus == 0) {
         YaAbort();
         getIdAndHide("infoList");
-        getIdAndHide("ya_date");
         getIdAndHide("ya_info");
         Main.UpdateChannelBar();
     }
@@ -483,7 +462,6 @@ Main.UpdateChannelInfo = function () {
             var y = this.url.toString();
             //alert("this.url= " + y);
         };
-		this.yandextv_mode = false;
 		var channelCode = GetChannelInfo(3).toString();
 		//alert("GetChannelInfo(3)= " + channelCode);
 		if (channelCode != '') {
@@ -510,10 +488,9 @@ Main.LoadTimer = function (o, i) {
 Main.showinfoList = function (channelCode) {
     if (KeyHandler.Focus == 0) {
         getIdAndHide("infoList");
-        getIdAndHide("ya_date");
         getIdAndHide("ya_info");
         widgetAPI.putInnerHTML(getId("infoList"), "");
-        if (!this.yandextv_mode || Main.guide) {
+        if (Main.guide) {
             getIdAndHide("ya_help");
             var i = "";
             var p = "";
@@ -554,12 +531,9 @@ Main.showinfoList = function (channelCode) {
             getIdAndShow("infoList");
         } else {
             i = "<div id=\"allInfo\">" + channelCode + "<div>";
-            widgetAPI.putInnerHTML(getId("ya_date"), "");
-            widgetAPI.putInnerHTML(getId("ya_date"), Main.lost_date);
             widgetAPI.putInnerHTML(getId("ya_info"), "");
             widgetAPI.putInnerHTML(getId("ya_info"), i);
             getId("allInfo").style.top = "0px";
-            getIdAndShow("ya_date");
             getIdAndShow("ya_info");
             getIdAndShow("ya_help");
         }
@@ -573,7 +547,6 @@ Main.PlayPrevChannel = function () {
         this.selected_channel = o[0];
         this.selected_page = o[1];
         this.chan_array_index = o[2];
-        Main.yandextv_mode = true;
         Main.UpdateChannelInfo();
         Main.PlayChannel();
         Display.status("Previous channel", 500);
@@ -617,10 +590,8 @@ Main.PlayPrevPlaylist = function () {
         p = j[9];
         this.prev_pl_array.pop();
         this.playlist_prev = false;
-        Main.DEL = true;
         KeyHandler.bl = false;
         Main.guide = false;
-        Main.RED = false;
         API.search_on = "";
         if (this.pl_url.indexOf("starthelp.xml") == -1) {
             this.help_info = false;
@@ -646,7 +617,6 @@ Main.PlayPrevPlaylist = function () {
     } else {
         if (API.XML_URL.indexOf("start.xml") != 0) {
             this.start = true;
-            Main.DEL = false;
             Main.playlist();
         } else {
             Display.status("Main playlist!", 500);
@@ -715,7 +685,7 @@ function ListNextPage() {
     }
 }
 
-Main.selectNextPage = function () {
+Main.selectNextChannelsPage = function () {
     if (API.next_page_url != "" && this.selected_page == API.chan_pages - 1) {
         ListNextPage();
     } else {
@@ -742,7 +712,7 @@ function ListPrevPage() {
     }
 }
 
-Main.selectPrevPage = function () {
+Main.selectPrevChannelsPage = function () {
     if (API.prev_page_url != "" && this.selected_page == 0) {
         ListPrevPage();
     } else {
@@ -769,11 +739,7 @@ Main.PlayChannel = function () {
         } else {
             if (this.url != "" && this.url.indexOf("stop") != 0) {
                 if (Player.state != Player.STOPPED) {
-                    if (Main.PlayerMode == "0") {
-                        Main.stopFPlayer();
-                    } else {
-                        Player.stopV();
-                    }
+				   Player.stopV();
                 }
                 Main.UpdatePlayerStatusbar();
                 Display.status1(this.ch_num);
@@ -786,19 +752,10 @@ Main.PlayChannel = function () {
                 Main.XML_URL = API.XML_URL;
                 widgetAPI.putInnerHTML(getId("resolution"), "");
                 getIdAndHide("main");
-                if (this.url.indexOf("rtmp://") >= 0 || this.url.indexOf("rtsp://") >= 0 || this.url.indexOf("mms://") >= 0 || this.url.indexOf(".flv") >= 0) {
-                    Main.PlayerMode = "0";
-                    hideWeather();
-                    hideTemp();
-                    hideScroll();
-                    Main.PlayFlashStream();
-                } else {
-                    Main.PlayerMode = "1";
-                    setTimeout(function() { Main.PlayNoFlashStream(); }, 50);
-                    hideWeather();
-                    hideTemp();
-                    hideScroll();
-                };
+				setTimeout(function() { Main.PlayNoFlashStream(); }, 50);
+				hideWeather();
+				hideTemp();
+				hideScroll();
                 pluginAPI.setOffScreenSaver();
             } else {
                 if (this.url.indexOf("stop") == 0 || this.pl_url.indexOf("stop") == 0) {
@@ -822,7 +779,7 @@ Main.playlist = function () {
         if (Main.start) {
             this.pl_url = "start.xml"
         }
-        if (!this.DEL && !Main.guide && this.playlist_prev && Main.pl_url.indexOf("history.dat") < 0) {
+        if (!Main.guide && this.playlist_prev && Main.pl_url.indexOf("history.dat") < 0) {
             if (API.XML_URL.indexOf("fav.dat") > 0) {
                 Main.temp_fav_num = Main.fav_num;
                 Main.temp_fav_name = Main.fav_name;
@@ -898,34 +855,6 @@ Main.PlayNoFlashStream = function () {
         this.prev_ch_array.pop();
         setTimeout(function() { Main.Menu(); }, 500);
     }
-};
-
-Main.PlayFlashStream = function () {
-    Player.next = false;
-    Player.state = Player.LOADING;
-    KeyHandler.setFocus(2);
-    getIdAndHide("screen_size");
-    getIdAndShow("flashplayer");
-    widgetAPI.putInnerHTML(getId("flashplayer"), "");
-    var i = (this.url.indexOf(".flv") >= 0) ? ("flv=" + this.url) : ("file=" + this.url);
-    var o = "<object type=\"application/x-shockwave-flash\" id=\"rmtpplayerHD\" width=\"960\" height=\"540\">";
-    o += "<param name=\"movie\" value=\"nflashplayer.swf\" />";
-    o += "<param name=\"FlashVars\" value=\"" + i + "\" /></object>";
-    widgetAPI.putInnerHTML(getId("flashplayer"), o);
-    Player.state = Player.PLAYING_LIVE;
-    setTimeout(function() { Main.setPlayer(); }, 500);
-};
-
-Main.setPlayer = function () {
-    Main.player = window.rmtpplayerHD;
-};
-
-Main.stopFPlayer = function () {
-    delete Main.player;
-    getIdAndHide("flashplayer");
-    Display.hidestatus();
-    widgetAPI.putInnerHTML(getId("flashplayer"), "");
-    Player.state = Player.STOPPED;
 };
 
 Main.readFile = function (q, j) {
@@ -1014,9 +943,6 @@ function ReSize(o) {
 }
 
 Main.onUnload = function () {
-    if (Main.PlayerMode == "0") {
-        Main.stopFPlayer();
-    }
     Player.deinit();
     alert("DEINIT");
 };
@@ -1109,35 +1035,6 @@ function SetTimeDate() {
                 T.y_t_days = parseInt(s / 86400000);
                 getDT(s);
             //}
-        }
-    }
-    if (Main.ya_epg_info_arr.length > 0 && Main.epg_t1 <= Main.epg_t2) {
-        var D = parseInt((T.h * 3600 + T.m * 60 + T.s) * 1000);
-        if (Main.epg_t1 < 24 * 3600000 && Main.epg_t1 > D) {
-            D += 24 * 3600000;
-        }
-        if (Main.epg_t1 < D && D <= Main.epg_t2) {
-            if (D == Main.epg_t2) {
-                Main.epg_t2 = 0;
-                Main.epg_t1 = 0;
-                GetEpgInfo();
-            } else {
-                var u = D - Main.epg_t1;
-                var l = Main.epg_t2 - Main.epg_t1;
-                TimeInfo(u, l);
-            }
-        } else {
-            if (D == Main.epg_t2 + 1000) {
-                Main.epg_t2 = 0;
-                Main.epg_t1 = 0;
-                GetEpgInfo();
-            } else {
-                if (Main.epg_t2 < D) {
-                    TimeInfo(1, 1);
-                } else {
-                    TimeInfo(0, 0);
-                }
-            }
         }
     }
     var s = to(T.h, T.m, T.s, 0);
@@ -1339,10 +1236,7 @@ API.ResetAll = function () {
     API.search_on = "";
     API.next_page_text = "";
     API.prev_page_text = "";
-    if (!Main.DEL) {
-        Main.ResetSelectedPosition();
-    }
-    Main.DEL = false;
+	Main.ResetSelectedPosition();
 };
 
 API.getChannel_list = function (bk) {
@@ -1563,57 +1457,29 @@ Display.loadingshowTimer = function () {
     this.loadingshow_timer = setTimeout(function() { Player.ReturnMenu(); }, 60000);
 };
 
+// Shows top and bottom info bars
 Display.showplayer = function () {
     if (KeyHandler.Focus != 0) {
 		if (Player.state == Player.PLAYING_LIVE) {
 			getIdAndHide("p_info_line");
-			getIdAndHide("p_epg_line");
 			if (Main.seriesE) {
-				if (Main.PlayerMode == "1") {
-					getId("help_navi_l_player").style.left = "70px";
-				} else {
-					getId("help_navi_l_player").style.left = "130px";
-				}
+				getId("help_navi_l_player").style.left = "70px";
 				getId("progressBarBG").style.left = "10px";
 				getId("timeInfo").style.left = "595px";
 				getId("resolution").style.left = "740px";
 				getId("time").style.left = "850px";
 			} else {
-				if (Main.PlayerMode == "1") {
-					getId("help_navi_l_player").style.left = "80px";
-				} else {
-					getId("help_navi_l_player").style.left = "140px";
-				}
+				getId("help_navi_l_player").style.left = "80px";
 				getId("progressBarBG").style.left = "20px";
 				getId("timeInfo").style.left = "605px";
 				getId("resolution").style.left = "750px";
 				getId("time").style.left = "860px";
 			}
 			getIdAndShow("help_navi_l_player");
-			if (Main.PlayerMode == "1") {
-				if (Main.ya_epg_info_arr.length > 0 && Main.ya_prog_id == Main.chan_array_index) {
-					getIdAndShow("p_info_line");
-					getIdAndShow("p_epg_line");
-					var i = 302;
-					if (Main.seriesE) {
-						i = 280;
-					}
-					if (getId("epg_info").innerHTML.length > i) {
-						getId("statusbar").style.top = "120px";
-					} else {
-						getId("statusbar").style.top = "100px";
-					}
-				} else {
-					getId("statusbar").style.top = "70px";
-					setTimeout(function() { Main.UpdateChannelInfo(); }, 400);
-				}
-			}
+			getId("statusbar").style.top = "70px";
+			setTimeout(function() { Main.UpdateChannelInfo(); }, 400);
 		}
-        if (Main.PlayerMode == "1") {
-            getIdAndShow("resolution");
-        } else {
-            getIdAndHide("resolution");
-        }
+		getIdAndShow("resolution");
         if (API.Pstyle == "1") {
             getIdAndShow("p_second_line");
         } else {
@@ -1629,10 +1495,6 @@ Display.showplayer = function () {
 Display.hideplayer = function () {
     getIdAndHide("player");
     getId("statusbar").style.top = "10px";
-    if (Main.epg_info_step != 0) {
-        Main.epg_info_step = 0;
-        GetNextEpgInfo();
-    }
 };
 
 Display.infobarTimer = function () {
@@ -1640,9 +1502,9 @@ Display.infobarTimer = function () {
 };
 
 Display.status = function (o, i) {
-    getIdAndHide("version");
-    getIdAndShow("statusbar");
-    widgetAPI.putInnerHTML(getId("status"), o);
+    getIdAndHide('version');
+    getIdAndShow('statusbar');
+    widgetAPI.putInnerHTML(getId('status'), o);
     clearTimeout(this.status_timer);
     if (i == undefined) {
         Display.statusTimer(3000);
@@ -1654,8 +1516,8 @@ Display.status = function (o, i) {
 };
 
 Display.status1 = function (i) {
-    getIdAndShow("statusbar1");
-    widgetAPI.putInnerHTML(getId("status1"), i);
+    getIdAndShow('statusbar1');
+    widgetAPI.putInnerHTML(getId('status1'), i);
     clearTimeout(this.status1_timer);
     Display.status1Timer();
 };
@@ -1670,7 +1532,7 @@ Display.statusTimer = function (i) {
 };
 
 Display.status1Timer = function () {
-    this.status1_timer = setTimeout(function() { getIdAndHide("statusbar1"); }, 3000);
+    this.status1_timer = setTimeout(function() { getIdAndHide('statusbar1'); }, 3000);
 };
 
 var KeyHandler = {
@@ -1705,7 +1567,7 @@ function SmartExit() {
             widgetAPI.sendReturnEvent();
         }
         KeyHandler.send_Return = true;
-        Display.status("<b style=\"color:yellow\">To quit - press \"EXIT\" again!</b>", 2000);
+        Display.status('<b style="color:yellow">To quit - press "EXIT" again!</b>', 2000);
         setTimeout(function() { KeyHandler.send_Return=false; }, 2000);
     } else {
         Player.ReturnMenu();
@@ -1756,54 +1618,50 @@ KeyHandler.KanalSelector = function () {
             }
         }
     }
-    KeyHandler.NumberEntered = "";
+    KeyHandler.NumberEntered = '';
 };
 
 // Choose number with more than one digit
 KeyHandler.Keys10 = function (o) {
-    var i = "";
+    var i = '';
     switch (o) {
     case tvKey.KEY_1:
-        i = "1";
+        i = '1';
         break;
     case tvKey.KEY_2:
-        i = "2";
+        i = '2';
         break;
     case tvKey.KEY_3:
-        i = "3";
+        i = '3';
         break;
     case tvKey.KEY_4:
-        i = "4";
+        i = '4';
         break;
     case tvKey.KEY_5:
-        i = "5";
+        i = '5';
         break;
     case tvKey.KEY_6:
-        i = "6";
+        i = '6';
         break;
     case tvKey.KEY_7:
-        i = "7";
+        i = '7';
         break;
     case tvKey.KEY_8:
-        i = "8";
+        i = '8';
         break;
     case tvKey.KEY_9:
-        i = "9";
+        i = '9';
         break;
     case tvKey.KEY_0:
-        i = "0";
+        i = '0';
         break;
     default:
         break;
     }
     KeyHandler.NumberEntered = KeyHandler.NumberEntered + i;
-    if (KeyHandler.NumberEntered != "") {
+    if (KeyHandler.NumberEntered != '') {
         Display.hideplayer();
-        if (Main.PlayerMode == "0" && Player.state != Player.STOPPED) {
-            Main.player.info(KeyHandler.NumberEntered);
-        } else {
-            Display.status1(KeyHandler.NumberEntered);
-        }
+		Display.status1(KeyHandler.NumberEntered);
         clearTimeout(this.ChSelectorTimeout);
         this.ChSelectorTimeout = setTimeout(function() { KeyHandler.KanalSelector(); }, 2000);
     }
@@ -1813,190 +1671,112 @@ KeyHandler.MainMenuKeyDown = function () {
     var o = event.keyCode;
     KeyHandler.Keys10(o);
     switch (o) {
-    case tvKey.KEY_SOURCE:
-        if (!Main.FirstStart) {
-            Main.pl_url = "ScanUSB";
-            Main.playlist();
-        }
-        break;
-    case 1086:
-    case 84:
-        if (API.XML_URL.indexOf("start.xml") != 0) {
-            Main.start = true;
-            Main.playlist();
-        } else {
-            Main.PlayPrevPlaylist();
-        }
-        break;
-    case 256:
-    case 1057:
-    case tvKey.KEY_GUIDE:
-        widgetAPI.blockNavigation(event);
-        if (Main.play_chan_array_index != Main.chan_array_index) {
-            this.guide_step = 0;
-        }
-        if (Main.yandextv_mode && this.guide_step == 0 && Main.ya_prog_info_arr.length > 0) {
-            Main.guide = true;
-            Main.ReadPlArr(API.XML_URL, Main.ya_prog_info_arr);
-        } else {
-            if (Player.state == Player.PLAYING_LIVE && this.guide_step == 1) {
-                this.guide_step = 0;
-                Main.SetSelectedPosition();
-                getIdAndHide("main");
-                Display.hidestatus();
-                KeyHandler.setFocus(2);
-                Display.showplayer();
-            } else {
-                Display.status("There is no EPG!", 500);
-            }
-        }
-        break;
-    case tvKey.KEY_INFO:
-        Display.status("MAC = " + Main.MAC, 5000);
-		AlertInfo();
-        break;
-    case tvKey.KEY_TOOLS:
-        break;
-    case 1118:
-    case tvKey.KEY_PANEL_MENU:
-    case tvKey.KEY_MENU:
-        widgetAPI.blockNavigation(event);
-        ShowMenuTV();
-        break;
-    case 78:
-    case 259:
-        if (!Main.help_info) {
-            Main.PlayPrevChannel();
-        }
-        break;
-    case tvKey.KEY_EXIT:
-        SmartExit();
-        break;
-    case tvKey.KEY_RETURN:
-        widgetAPI.blockNavigation(event);
-        if (Player.state != Player.STOPPED && Main.XML_URL == API.XML_URL) {
-            this.guide_step = 0;
-            Main.SetSelectedPosition();
-            getIdAndHide("main");
-            Display.hidestatus();
-            if (Player.state == Player.PLAYING_LIVE) {
-                KeyHandler.setFocus(2);
-            } else {
-                KeyHandler.setFocus(3);
-            }
-            Display.showplayer();
-            hideWeather();
-            hideTemp();
-            hideScroll();
-        } else {
-            Main.PlayPrevPlaylist();
-        }
-        break;
-    case 106:
-    case tvKey.KEY_DOWN:
-        Main.selectNextChannel();
-        break;
-    case 105:
-    case tvKey.KEY_UP:
-        Main.selectPrevChannel();
-        break;
-    case tvKey.KEY_LEFT:
-        Main.selectPrevPage();
-        break;
-    case tvKey.KEY_RIGHT:
-        Main.selectNextPage();
-        break;
-    case 612:
-    case 309:
-    case tvKey.KEY_ENTER:
-        if (KeyHandler.NumberEntered != "") {
-            clearTimeout(this.ChSelectorTimeout);
-            KeyHandler.KanalSelector();
-        } else {
-            if (Main.help_info) {
-                Main.help_step++;
-            }
-            Main.PlayChannel();
-        }
-        break;
-    case tvKey.KEY_RED:
-        break;
-    case tvKey.KEY_GREEN:
-        break;
-    case tvKey.KEY_YELLOW:
-        break;
-    case tvKey.KEY_BLUE:
-        if (Main.FAV && !Main.block_fav) {
-            Main.RED = true;
-            Main.Menu();
-        } else {
-            if (Player.state == Player.STOPPED) {
-                if (Main.ret) {
-                    this.bl = true;
-                }
-                Main.PlayPrevPlaylist();
-            }
-        }
-        break;
-    case tvKey.KEY_FF:
-        widgetAPI.blockNavigation(event);
-        if (Main.yandextv_mode) {
-            T.delta++;
-            if (T.delta > 5) {
-                T.delta = 0;
-            }
-        } else {
-            ListNextPage();
-        }
-        break;
-    case tvKey.KEY_PAUSE:
-        widgetAPI.blockNavigation(event);
-        if (Player.total_time != 0) {
-            /*if (Player.state == Player.PAUSE_VOD) {
-                Player.resumeVideo();
-            } else {
-                Player.pauseVideo();
-            }*/
-        } else {
-            if (Main.yandextv_mode) {
-                c = (Main.region != "") ? Main.region : API.CODE;
-                Main.lost_date = ": <font style='font-size:16px;color:white;'>scroll page</font><font style='font-size:16px;color:cyan;'> P-/P+ </font>: <font style='font-size:16px;color:white;'>region - </font><font style='font-size:16px;color:cyan;'>" + c
-				+ "</font> : <font style='font-size:16px;color:white;'>index - </font><font style='font-size:16px;color:cyan;'>"
-				+ Main.ch_index
-				+ "</font> :";
-            }
-        }
-        break;
-    case tvKey.KEY_RW:
-        widgetAPI.blockNavigation(event);
-        if (Main.yandextv_mode) {
-            T.delta--;
-            if (T.delta < -6) {
-                T.delta = 0;
-            }
-        } else {
-            ListPrevPage();
-        }
-        break;
-    case 68:
-        ;
-    case 1078:
-        scrollDown();
-        break;
-    case 65:
-        ;
-    case 1080:
-        scrollUp();
-        break;
-    case tvKey.KEY_PLAY:
-        widgetAPI.blockNavigation(event);
-		if (Main.yandextv_mode) {
-			if (!Main.ya_all_day) {
-				Main.ya_all_day = true;
-			} else {
-				Main.ya_all_day = false;
+		case tvKey.KEY_SOURCE:
+			if (!Main.FirstStart) {
+				Main.pl_url = "ScanUSB";
+				Main.playlist();
 			}
-		} else {
+			break;
+		case 1086:
+		case 84:
+			if (API.XML_URL.indexOf("start.xml") != 0) {
+				Main.start = true;
+				Main.playlist();
+			} else {
+				Main.PlayPrevPlaylist();
+			}
+			break;
+		case 256:
+		case 1057:
+		case tvKey.KEY_GUIDE:
+			widgetAPI.blockNavigation(event);
+			break;
+		case tvKey.KEY_INFO:
+			Display.status("MAC = " + Main.MAC, 5000);
+			AlertInfo();
+			break;
+		case tvKey.KEY_TOOLS:
+			break;
+		case 1118:
+		case tvKey.KEY_PANEL_MENU:
+		case tvKey.KEY_MENU:
+			widgetAPI.blockNavigation(event);
+			ShowMenuTV();
+			break;
+		case 78:
+		case 259:
+			if (!Main.help_info) {
+				Main.PlayPrevChannel();
+			}
+			break;
+		case tvKey.KEY_EXIT:
+			SmartExit();
+			break;
+		case tvKey.KEY_RETURN:
+			widgetAPI.blockNavigation(event);
+			if (Player.state != Player.STOPPED && Main.XML_URL == API.XML_URL) {
+				this.guide_step = 0;
+				Main.SetSelectedPosition();
+				getIdAndHide("main");
+				Display.hidestatus();
+				if (Player.state == Player.PLAYING_LIVE) {
+					KeyHandler.setFocus(2);
+				} else {
+					KeyHandler.setFocus(3);
+				}
+				Display.showplayer();
+				hideWeather();
+				hideTemp();
+				hideScroll();
+			} else {
+				Main.PlayPrevPlaylist();
+			}
+			break;
+		case 106:
+		case tvKey.KEY_DOWN:
+			Main.selectNextChannel();
+			break;
+		case 105:
+		case tvKey.KEY_UP:
+			Main.selectPrevChannel();
+			break;
+		case tvKey.KEY_LEFT:
+			Main.selectPrevChannelsPage();
+			break;
+		case tvKey.KEY_RIGHT:
+			Main.selectNextChannelsPage();
+			break;
+		case 612:
+		case 309:
+		case tvKey.KEY_ENTER:
+			if (KeyHandler.NumberEntered != "") {
+				clearTimeout(this.ChSelectorTimeout);
+				KeyHandler.KanalSelector();
+			} else {
+				if (Main.help_info) {
+					Main.help_step++;
+				}
+				Main.PlayChannel();
+			}
+			break;
+		case tvKey.KEY_RED:
+		case tvKey.KEY_GREEN:
+		case tvKey.KEY_YELLOW:
+		case tvKey.KEY_BLUE:
+		case tvKey.KEY_FF:
+		case tvKey.KEY_PAUSE:
+		case tvKey.KEY_RW:
+			break;
+		case 68:
+		case 1078:
+			scrollDown();
+			break;
+		case 65:
+		case 1080:
+			scrollUp();
+			break;
+		case tvKey.KEY_PLAY:
+			widgetAPI.blockNavigation(event);
 			if (Player.state == Player.STOPPED) {
 				Main.PlayChannel();
 			} else {
@@ -2018,94 +1798,86 @@ KeyHandler.MainMenuKeyDown = function () {
 					}
 				}
 			}
-		}
-        break;
-    case tvKey.KEY_STOP:
-        widgetAPI.blockNavigation(event);
-        if (Main.FAV) {
-            if (Player.state != Player.STOPPED) {
-                Player.stopV();
-            }
-            setTimeout(function() { getIdAndHide('main'); }, 100);
-        } else {
-            if (!Main.help_info) {
-                if (Player.state != Player.STOPPED) {
-                    Player.stopV();
-                }
-                setTimeout(function() { getIdAndHide('main'); }, 100);
-            } else {
-                if (Player.state != Player.STOPPED) {
-                    Player.ReturnMenu();
-                }
-            }
-        }
-        break;
-    case 1249:
-    case 192:
-        widgetAPI.blockNavigation(event);
-        Display.status("MAC = " + Main.MAC, 5000);
-        break;
-    case 1236:
-    case 1089:
-    case tvKey.KEY_SUBTITLE:
-        Player.SEFSetNextAudioStream();
-        break;
-    default:
-        break
-    }
+			break;
+		case tvKey.KEY_STOP:
+			widgetAPI.blockNavigation(event);
+			if (!Main.help_info) {
+				if (Player.state != Player.STOPPED) {
+					Player.stopV();
+				}
+				setTimeout(function() { getIdAndHide('main'); }, 100);
+			} else {
+				if (Player.state != Player.STOPPED) {
+					Player.ReturnMenu();
+				}
+			}
+			break;
+		case 1249:
+		case 192:
+			widgetAPI.blockNavigation(event);
+			Display.status("MAC = " + Main.MAC, 5000);
+			break;
+		case 1236:
+		case 1089:
+		case tvKey.KEY_SUBTITLE:
+			Player.SEFSetNextAudioStream();
+			break;
+		default:
+			break;
+	}
 };
 KeyHandler.LoadingPlayerKeyDown = function () {
     var i = event.keyCode;
     KeyHandler.Keys10(i);
     switch (i) {
-    case tvKey.KEY_UP:
-    case 105:
-    case 68:
-    case 1078:
-        if (!Main.loading_pl) {
-            Main.block_info = true;
-            Main.selectNextChannel();
-            setTimeout(function(){ Main.PlayChannel(); }, 50);
-        }
-        break;
-    case tvKey.KEY_DOWN:
-    case 106:
-    case 65:
-    case 1080:
-        if (!Main.loading_pl) {
-            Main.block_info = true;
-            Main.selectPrevChannel();
-            setTimeout(function(){ Main.PlayChannel(); }, 50);
-        }
-        break;
-    case 78:
-    case 259:
-        if (!Main.loading_pl) {
-            Main.PlayPrevChannel();
-        }
-        break;
-    case tvKey.KEY_EXIT:
-        widgetAPI.blockNavigation(event);
-        if (!Main.loading_pl) {
-            Player.ReturnMenu();
-        } else {
-            API.stopRequest();
-        }
-        break;
-    case tvKey.KEY_RETURN:
-        widgetAPI.blockNavigation(event);
-        if (!Main.loading_pl) {
-            Player.ReturnMenu();
-        }
-        break;
-    case tvKey.KEY_STOP:
-        widgetAPI.blockNavigation(event);
-        if (!Main.loading_pl) {
-            Player.ReturnMenu();
-        }
-        break;
-    default:
-        break
+		case tvKey.KEY_UP:
+		case 105:
+		case 68:
+		case 1078:
+			if (!Main.loading_pl) {
+				Main.block_info = true;
+				Main.selectNextChannel();
+				setTimeout(function(){ Main.PlayChannel(); }, 50);
+			}
+			break;
+		case tvKey.KEY_DOWN:
+		case 106:
+		case 65:
+		case 1080:
+			if (!Main.loading_pl) {
+				Main.block_info = true;
+				Main.selectPrevChannel();
+				setTimeout(function(){ Main.PlayChannel(); }, 50);
+			}
+			break;
+		case 78:
+		case 259:
+			if (!Main.loading_pl) {
+				Main.PlayPrevChannel();
+			}
+			break;
+		case tvKey.KEY_EXIT:
+			widgetAPI.blockNavigation(event);
+			if (!Main.loading_pl) {
+				Player.ReturnMenu();
+			} else {
+				API.stopRequest();
+			}
+			break;
+		case tvKey.KEY_RETURN:
+			widgetAPI.blockNavigation(event);
+			if (!Main.loading_pl) {
+				Player.ReturnMenu();
+			}
+			break;
+		case tvKey.KEY_STOP:
+			widgetAPI.blockNavigation(event);
+			if (!Main.loading_pl) {
+				Player.ReturnMenu();
+			}
+			break;
+		default:
+			break;
     }
 };
 
@@ -2128,12 +1900,6 @@ KeyHandler.LivePlayerKeyDown = function () {
     case 256:
     case tvKey.KEY_GUIDE:
         widgetAPI.blockNavigation(event);
-        if (Main.yandextv_mode) {
-            Display.hideplayer();
-            Main.Menu();
-        } else {
-            Display.status("NO EPG!", 500);
-        }
         break;
     case tvKey.KEY_TOOLS:
         if (Main.serieC) {
@@ -2147,18 +1913,8 @@ KeyHandler.LivePlayerKeyDown = function () {
         ShowMenuTV();
         break;
     case tvKey.KEY_GREEN:
-        if (Main.PlayerMode == "1") {
-            Player.SEFSetNextAudioStream();
-        } else {
-            Display.status("Not Available!", 500);
-        }
-        break;
     case 20:
-        if (Main.PlayerMode == "1") {
-            Player.SEFSetNextAudioStream();
-        } else {
-            Display.status("Not Available!", 500);
-        }
+		Player.SEFSetNextAudioStream();
         break;
     case tvKey.KEY_YELLOW:
         Main.registVOLTVKey();
@@ -2173,27 +1929,19 @@ KeyHandler.LivePlayerKeyDown = function () {
     case 1249:
     case 1083:
         widgetAPI.blockNavigation(event);
-        if (Main.PlayerMode == "1") {
-            if (Player.size >= 6) {
-                Player.setSize(0, 1, 0);
-            } else {
-                Player.setSize(Player.size + 1, 1, 0);
-            }
-            Main.SetZoom = false;
-        } else {
-            Display.status("Not Available!", 500);
-        }
+		if (Player.size >= 6) {
+			Player.setSize(0, 1, 0);
+		} else {
+			Player.setSize(Player.size + 1, 1, 0);
+		}
+		Main.SetZoom = false;
         break;
     case 1219:
-        if (Main.PlayerMode == "1") {
-            if (Player.get3DMode() >= 2) {
-                Player.change3DMode(0);
-            } else {
-                Player.change3DMode(Player.get3DMode() + 1);
-            }
-        } else {
-            Display.status("Not Available!", 500);
-        }
+		if (Player.get3DMode() >= 2) {
+			Player.change3DMode(0);
+		} else {
+			Player.change3DMode(Player.get3DMode() + 1);
+		}
         break;
     case tvKey.KEY_UP:
     case 105:
@@ -2251,9 +1999,6 @@ KeyHandler.LivePlayerKeyDown = function () {
             clearTimeout(this.ChSelectorTimeout);
             KeyHandler.KanalSelector();
         } else {
-            if (Main.PlayerMode == "0") {
-                Main.player.info("Flash player");
-            }
             Display.showplayer();
         }
         break;
@@ -2262,63 +2007,19 @@ KeyHandler.LivePlayerKeyDown = function () {
     case tvKey.KEY_STOP:
     case tvKey.KEY_EXIT:
         widgetAPI.blockNavigation(event);
-        if (Main.PlayerMode == "0") {
-            Main.stopFPlayer();
-            Main.Menu();
-        } else {
-            Player.ReturnMenu();
-        }
+        Player.ReturnMenu();
         break;
     case tvKey.KEY_RETURN:
         widgetAPI.blockNavigation(event);
-        if (Main.PlayerMode == "0") {
-            Main.stopFPlayer();
-        } else {
-            Display.hideplayer();
-        }
-        Main.Menu();
+        Display.hideplayer();
+		Main.Menu();
         break;
     case tvKey.KEY_PLAY:
-		if (Main.PlayerMode == "1") {
-			Player.play(Player.url, 0);
-		} else {
-			Display.status("Not Available!", 500);
-		}
+		Player.play(Player.url, 0);
         break;
     case tvKey.KEY_FF:
-        widgetAPI.blockNavigation(event);
-        if (Main.PlayerMode == "1") {
-            if (Main.epg_info_step <= Main.ya_epg_info_arr.length - 1) {
-                Main.epg_info_step++;
-                GetNextEpgInfo();
-            } else {
-                Display.status("No data!", 500);
-            }
-        } else {
-            Display.status("Not Available!", 500);
-        }
-        break;
     case tvKey.KEY_PAUSE:
-        widgetAPI.blockNavigation(event);
-        if (Main.PlayerMode == "1") {
-            Main.epg_info_step = 0;
-            GetNextEpgInfo();
-        } else {
-            Display.status("Not Available!", 500);
-        }
-        break;
     case tvKey.KEY_RW:
-        widgetAPI.blockNavigation(event);
-        if (Main.PlayerMode == "1") {
-            if (Main.epg_info_step > 0) {
-                Main.epg_info_step--;
-                GetNextEpgInfo();
-            } else {
-                Display.status("No data!", 500);
-            }
-        } else {
-            Display.status("Not Available!", 500);
-        }
         break;
     case 192:
         if (this.black_line) {
@@ -2332,11 +2033,7 @@ KeyHandler.LivePlayerKeyDown = function () {
     case 650:
     case 1089:
     case tvKey.KEY_SUBTITLE:
-        if (Main.PlayerMode == "1") {
-            Player.SEFSetNextAudioStream();
-        } else {
-            Display.status("Not Available!", 500);
-        }
+		Player.SEFSetNextAudioStream();
         break;
     default:
         break
@@ -2600,7 +2297,6 @@ Player.stopV = function () {
     this.repeat = false;
     this.mode3D = 0;
     this.status3D = "";
-    Main.ya_epg_info_arr = [];
     Display.loadinghide();
     Display.hideplayer();
     Display.hidestatus();
@@ -3386,7 +3082,6 @@ function YaAbort() {
 
 function Err() {
     YaAbort();
-    Main.yandextv_mode = false;
     Main.showinfoList("Nothing Found!");
 }
 
@@ -3395,88 +3090,6 @@ function addZero(u) {
         u = "0" + u;
     }
     return u;
-}
-
-var Ya_name_index_obj = {};
-var Ya_icon_index_url_obj = {};
-var Ya_icon_name_url_obj = {};
-
-GetEpgInfo = function () {
-    if (Main.ya_epg_info_arr.length > 0) {
-        var bG = "<li><font style=\"color:#ffcc00;font-size:20px;font-weight:bold;\">";
-        var bF = "</font><font style=\"color:#CCCCCC;font-size:20px;font-weight:bold;\">";
-        var bC = "</font></li>";
-        var bw = Main.ya_epg_info_arr;
-        var bA;
-        var bJ = "";
-        var q = new Date();
-        var bx = addZero(q.getHours());
-        var bD = addZero(q.getMinutes());
-        alert("TIME _ HOURS_ MIN " + bx + ":" + bD);
-        for (bA = 0; bA < bw.length; bA++) {
-            var bH = bw[bA].split("|");
-            var bz = bH[0];
-            var bB = bH[1];
-            var bI = bH[0].split(":");
-            var by = bI[0];
-            var bE = bI[1];
-            if (by <= bx) {
-                if (by == bx && bE <= bD) {
-                    bJ += bG + bz + bF + "  " + bB + bC;
-                }
-            }
-        }
-        widgetAPI.putInnerHTML(getId("epg_info"), bJ);
-        Display.showplayer();
-    }
-};
-
-GetNextEpgInfo = function () {
-    if (Main.ya_epg_info_arr.length > 0) {
-        if (Main.epg_info_step == 1 && Main.temp_epg_info == "") {
-            Main.temp_epg_info = getId("epg_info").innerHTML;
-        }
-        if (Main.epg_info_step > 0 && Main.epg_info_step <= Main.ya_epg_info_arr.length) {
-            var i = Main.ya_epg_info_arr[Main.epg_info_step - 1].split("|");
-            var q = i[0];
-            var p = i[1];
-            if (dPr(q) != "" && dPr(p) != "") {
-                var o = q + "<font style='color:#00ccff;font-weight:bolder;padding-left:10px;'>" + p + "</font>";
-            }
-        } else {
-            if (Main.temp_epg_info != "") {
-                o = Main.temp_epg_info;
-                Main.temp_epg_info = "";
-            }
-        }
-        widgetAPI.putInnerHTML(getId("epg_info"), o);
-        if (Main.epg_info_step > 0) {
-            Display.showplayer();
-        }
-    }
-};
-
-function GetHash(p, o, l) {
-    var i = "";
-    if (l != "") {
-        var j = decLongUrl(API.Request(p + "action=get_test_url&s_key=" + l + "&url=" + o));
-    } else {
-        j = p;
-    }
-    j = j.split("|");
-    if (j[0] != "") {
-        var q = API.Request(j[0]);
-        q = parser(q, j[1], j[2]);
-        alert("hash =" + q);
-        if (l != "") {
-            i = API.Request(p + "action=get_result_url_hash&s_key=" + l + "&hash=" + q + "&url=" + o);
-        } else {
-            i = o.replace("md5hash", q);
-        }
-    } else {
-        i = o;
-    }
-    return i;
 }
 
 function parser(j, p, o) {

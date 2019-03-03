@@ -160,6 +160,7 @@ a:link, a:visited {
     padding-top: 0px;
     left:10px;
     width: 420px;
+	/*background-color:green;*/ /**/
 }
 
 #rightHalf  #allInput form
@@ -241,27 +242,13 @@ a:link, a:visited {
     color:#EEEEEE;
     font-size:18px;
 	z-index : 3;
+	/*background-color:blue;*/ /*delete*/
 }
 #infoList td
 {
     padding-right:5px;
 }
 
-#ya_date
-{
-    position:absolute;
-    top:0px;
-    left:0px;
-	padding-top:2px;
-	padding-left:10px;
-    width:426px;
-    height:28px;
-    color:#EEEEEE;
-    font-size:22px;
-    font-weight:bolder;
-    overflow:hidden;
-    z-index : 3;
-}
 #ya_info
 {
     position:absolute;
@@ -437,15 +424,7 @@ a:link, a:visited {
     font-size:20px;
     background-image: url("../img/player_bg.png");
 }
-#p_epg_line
-{
-    position:absolute;
-    top:60px;
-    width:100%;
-    height: auto;
-    font-size:20px;
-    background-image: url("../img/player_bg.png");
-}
+
 #p_bg_num_logo
 {
     position:absolute;
@@ -541,14 +520,6 @@ a:link, a:visited {
     height: 20px;
     font-size:18px;
     color:#00ccff;
-}
-#epg_info
-{
-    padding:4px;
-    width:100%;
-    float:left;
-    text-align:center;
-    font-size:18px;
 }
 #help_navi_l_player
 {
