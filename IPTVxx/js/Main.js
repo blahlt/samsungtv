@@ -2,8 +2,16 @@ var widgetAPI = new Common.API.Widget();
 var pluginAPI = new Common.API.Plugin();
 var tvKey = new Common.API.TVKeyValue();
 
+var Egp = {
+	scrollTop: 80,
+	scrollHeight: 380,
+	length: 0,
+	topId: 0
+};
+
+var EgpCache = [];
+
 var Main = {
-    setup_id: "",
     YaHTTP: null,
     Ya_ready_timeout: null,
     XML_URL: "",
@@ -15,12 +23,10 @@ var Main = {
     play_selected_channel: 0,
     play_selected_page: 0,
     play_chan_array_index: 0,
-    PlayerMode: "",
+    //PlayerMode: "",
     yandextv_mode: false,
     ya_all_day: false,
-    ya_base_info: false,
-    Ya_flag_step: 0,
-    Ya_flag_name: "",
+    //Ya_flag_step: 0,
     ya_prog_id: -1,
     temp_epg_info: "",
     epg_info_step: 0,
@@ -29,15 +35,8 @@ var Main = {
     ch_index: "",
     ya_prog_info_arr: [],
     ya_epg_info_arr: [],
-    uk_epg_info_arr: [],
-    uk_prog_info_arr: [],
-    temp_ya_epg_info_arr: [],
-    temp_uk_epg_info_arr: [],
-    ya_auto: false,
     guide: false,
     block_info: false,
-    writeGenUrlAndTime: false,
-    usb_info: "",
     lost_date: "",
     lost_chname: "",
     scrolling: 0,
@@ -78,7 +77,6 @@ var Main = {
     usb_url: "",
     playlist_name: "",
     ret_url: "",
-    Kill: "",
     number_p: 1,
     step_read_dir: 1,
     FAV: false,
@@ -87,13 +85,8 @@ var Main = {
     ret: false,
     search: false,
     start: false,
-    Foto: false,
-    xxx: false,
     Emu: false,
-    seriesC: false,
     seriesE: false,
-    seriesD: false,
-    Tsnake: true,
     FirstStart: true,
     Update_Page: false,
     SetZoom: false,
@@ -102,7 +95,6 @@ var Main = {
     Audio: null,
     St_size: null,
     IntervalUpdateTime: null,
-    SlideShowInterval: null,
     openWindow: null,
     txt: "mac=",
     version: "0.426",
@@ -110,7 +102,6 @@ var Main = {
 };
 
 Main.onLoad = function () {
-    showImage(); //show intro image
     try {
         this.Network = getId("pluginNetwork");
         this.MAC = this.Network.GetMAC();
@@ -123,60 +114,28 @@ Main.onLoad = function () {
         this.hardware = pluginTv.GetProductCode(1);
 
         if (this.hardware == "LN40B650_KOR") {
-            // enabled for emulator: Main.Emu = true;
-        } else {
-            if (this.hardware.indexOf("C") > 1) {
-                Main.seriesC = true;
-            } else {
-                if (this.hardware.indexOf("E") > 1 || (this.hardware.indexOf("C") < 0 && this.hardware.indexOf("D") < 0)) {
-                    Main.seriesE = true;
-                    var scriptElement = document.createElement("script");
-                    scriptElement.language = "javascript";
-                    scriptElement.type = "text/javascript";
-                    scriptElement.src = "$MANAGER_WIDGET/Common/IME_XT9/ime.js";
-                    document.body.appendChild(scriptElement);
-                }
-            }
+            Main.Emu = true;
         }
-        if (Main.Emu) {
-            alert("############## NOT FOR EMULATOR !!! ################");
-            setTimeout(function(){ location.reload(true); }, 2000);
-        } else {
-            if (API.init() && Player.init()) {
-                window.onShow = Main.onShowEventTVKey;
-                widgetAPI.sendReadyEvent();
-                Display.status("Loading...", 2000);
-                Display.loadingshow();
-                setTimeout(function(){ Main.InitScript(); }, 2500);
-            }
-        }
-    } catch (b) {}
+
+		if (API.init() && Player.init()) {
+			window.onShow = Main.onShowEventTVKey;
+			widgetAPI.sendReadyEvent();
+			Display.status("Loading...", 2000);
+			Display.loadingshow();
+			setTimeout(function(){ Main.InitScript(); }, 2500);
+		}
+    } catch (b) {
+		Display.status('Error onLoad:' + b.message, 2000);
+	}
 };
 
 Main.InitScript = function () {
 	Main.url_arr = [];
-	if (API.star_url.indexOf("fav.dat") > 0) {
-		Main.FAV = true;
-		Main.openCommonFile(API.star_url);
-	} else {
-		if (API.star_url.indexOf("OpenFav") == 0) {
-			if (API.fav_start_channels.length > 1) {
-				Main.ReadPlArr("OpenFav", API.fav_start_channels);
-			} else {
-				Main.FAV = true;
-				Main.openCommonFile(Main.fav_url);
-			}
-		} else {
-			API.XML_URL = API.star_url;
-			API.Request(API.star_url);
-		}
-	}
-	setTimeout(function(){ setGen(); }, 5000);
+	API.XML_URL = API.star_url;
+	API.Request(API.star_url);
     showWeather();
     showTemp();
     setTimeout(function(){ showScroll(); }, 800);
-    // removed : setTimeout(function(){ confirm.popWindow(); }, 1000);
-    // removed : setTimeout(function(){ confirm.closeWindow(); }, 5000);
 };
 
 SetVolume = function (o) {
@@ -274,15 +233,14 @@ Main.Menu = function () {
     };
 	setTimeout(function(){ Main.FirstStart=false; }, 3000);
     clearTimeout(this.load_timer);
-    if (!Main.search && !Main.xxx) {
+    if (!Main.search) {
         Display.hidestatus();
     }
-    getIdn("statusbar1");
+    getIdAndHide("statusbar1");
     Display.hideplayer();
     Display.loadinghide();
     API.AsReqMode = true;
     this.FAV = false;
-    this.xxx = false;
     this.help_info = false;
     this.block_info = false;
     this.loading_pl = false;
@@ -290,132 +248,69 @@ Main.Menu = function () {
     this.SetZoom = false;
     this.playlist_prev = true;
     this.pre_pl_url = API.XML_URL;
-    // removed : getIdn("selectbox");
-    getIdn("help_set_par");
-    getIdb("rightHalf");
-    getIdn("infoList");
-    getIdn("ya_date");
-    getIdn("ya_info");
-    getIdn("ya_help");
+    getIdAndHide("help_set_par");
+    getIdAndShow("rightHalf");
+    getIdAndHide("infoList");
+    getIdAndHide("ya_date");
+    getIdAndHide("ya_info");
+    getIdAndHide("ya_help");
     Main.UpdateHelpBar();
     KeyHandler.setFocus(0);
     Main.updatePage();
-    getIdb("channelList");
-    getIdb("main");
+    getIdAndShow("channelList");
+    getIdAndShow("main");
 };
 
 Main.UpdateHelpBar = function () {
-    getIdn("0_help");
-    getIdn("1_help");
-    getIdb("2_help");
-    getIdn("3_help");
-    getIdn("3.1_help");
-    getIdn("3.1_help");
-    getIdn("3.2_help");
-    getIdn("3.21_help");
-    getIdn("3.3_help");
-    getIdn("3.4_help");
-    getIdb("4_help");
-    getIdn("4.1_help");
-    getIdb("5_help");
-    getIdn("5.1_help");
-    getIdb("6_help");
-    getIdn("7_help");
-    getIdn("8_help");
-    getIdn("9_help");
-    getIdn("10_help");
-    getIdn("10.1_help");
-    getIdn("11_help");
-    getIdn("12_help");
-    if (API.XML_URL.indexOf("fav.dat") > 0 && !Main.guide) {
-        Main.FAV = true;
-        Main.fav_url = API.XML_URL;
-        if (!this.RED) {
-            var i = "Favourites" + Main.fav_num + " - \"" + Main.fav_name + "\"";
-            if (API.favorites.length > 1) {
-                getIdb("3.3_help");
-            }
-            getIdb("3.4_help");
-        } else {
-            i = "Edit Favourites" + Main.fav_num + " - \"" + Main.fav_name + "\"";
-            getIdn("2_help");
-            getIdb("3.2_help");
-            if (API.favorites.length > 1) {
-                getIdb("3.21_help");
-            }
-            getIdn("5_help");
-            getIdn("6_help");
-        }
-    } else {
-        if (API.XML_URL.indexOf("help") > 0) {
-            Main.help_info = true;
-            i = "HELP";
-            getIdn("2_help");
-            getIdb("10_help");
-            getIdb("4.1_help");
-        } else {
-            if (Main.guide) {
-                i = "EPG v." + this.version;
-                this.yandextv_mode = true;
-                getIdn("2_help");
-                getIdn("5_help");
-                getIdn("6_help");
-                getIdb("4.1_help");
-                getIdb("10.1_help");
-                if (!Main.ya_all_day) {
-                    this.selected_channel = 1;
-                }
-            } else {
-                if (API.XML_URL.indexOf("Open") < 0) {
-                    getIdb("3.1_help");
-                }
-                if (API.categories.length > 2) {
-                    getIdb("3_help");
-                }
-                if (API.XML_URL.indexOf("history.dat") > 0) {
-                    i = "History";
-                    getIdb("5.1_help");
-                } else {
-                    i = "<b style=\"color:00cbfe;\">IPTV<i>x </i></b><b style=\"font-size:16px;color:cyan;\"> v." + this.ver + "<b style=\"font-size:12px;\">  @</b><b style=\"font-size:16px;\">2016</b>";
-                }
-            }
-        }
-    }
+    getIdAndHide("0_help");
+    getIdAndHide("1_help");
+    getIdAndShow("2_help");
+    getIdAndHide("3_help");
+    getIdAndHide("3.1_help");
+    getIdAndHide("3.1_help");
+    getIdAndHide("3.2_help");
+    getIdAndHide("3.21_help");
+    getIdAndHide("3.3_help");
+    getIdAndHide("3.4_help");
+    getIdAndShow("4_help");
+    getIdAndHide("4.1_help");
+    getIdAndShow("5_help");
+    getIdAndHide("5.1_help");
+    getIdAndShow("6_help");
+    getIdAndHide("7_help");
+    getIdAndHide("8_help");
+    getIdAndHide("9_help");
+    getIdAndHide("10_help");
+    getIdAndHide("10.1_help");
+    getIdAndHide("11_help");
+    getIdAndHide("12_help");
+	var i = "<b style=\"color:00cbfe;\">IPTV<i>x </i></b><b style=\"font-size:16px;color:cyan;\"> v." + this.ver + "<b style=\"font-size:12px;\">  @</b><b style=\"font-size:16px;\">2016</b>";
     if (Player.state != Player.STOPPED) {
-        getIdb("1_help");
-        if (Player.state == Player.PLAYING_VOD && !this.RED) {
-            getIdb("8_help");
-        }
+        getIdAndShow("1_help"); // show "Stop"
         getId("background").style.backgroundImage = "url(img/bg.png)";
     } else {
         KeyHandler.guide_step = 0;
-        getIdb("0_help");
+        getIdAndShow("0_help"); // show "Exit"
         getId("background").style.backgroundImage = "url(img/us_bg.png)";
         if (this.prev_pl_array.length > 0) {
             if (API.categories.length < 3 && !Main.FAV && !Main.guide && API.XML_URL.indexOf("history.dat") < 0) {
-                getIdb("9_help");
+                getIdAndShow("9_help");
             }
             if (API.XML_URL.indexOf("start.xml") == 0) {
                 Display.status(API.XML_URL);
-                if (Main.Kill != "") {
-                    API.Xcode = Main.Kill;
-                }
             }
         } else {
             if (API.XML_URL.indexOf("start.xml") != 0) {
-                getIdn("6_help");
+                getIdAndHide("6_help");
                 if (!this.RED) {
-                    getIdb("7_help");
+                    getIdAndShow("7_help");
                 }
                 if (API.categories.length < 3 && !Main.FAV && !Main.guide) {
-                    getIdb("9_help");
+                    getIdAndShow("9_help");
                 }
             } else {
-                if (Main.Kill != "") {
-                    API.Xcode = Main.Kill;
-                }
-                getIdn("6_help");
-                getIdb("9_help");
+                getIdAndHide("6_help");
+                getIdAndShow("9_help");
             }
         }
     }
@@ -423,7 +318,7 @@ Main.UpdateHelpBar = function () {
         getId("widget_date").style.left = "540px";
         getId("widget_time").style.left = "850px";
     }
-    getIdb("background");
+    getIdAndShow("background");
     if (API.XML_URL.indexOf("OpenFav") == 0 || Main.help_info) {
         Main.block_fav = true;
     }
@@ -474,19 +369,19 @@ Main.updatePage = function () {
         var p = 10;
         this.selected_page = (this.selected_page > API.chan_pages - 1) ? 0 : (this.selected_page < 0) ? API.chan_pages - 1 : this.selected_page;
         for (var q = 0; q < 10; q++) {
-            getIdb("ch" + q);
+            getIdAndShow("ch" + q);
         }
         if (this.selected_page == API.chan_pages - 1) {
             p = API.last_page_channels_counter;
             for (var q = p; q < 10; q++) {
-                getIdn("ch" + q);
+                getIdAndHide("ch" + q);
             }
             if (this.selected_channel > API.last_page_channels_counter - 1) {
                 this.selected_channel = API.last_page_channels_counter - 1;
             }
         }
         Main.UpdateChannelBar();
-        alert("THIS IS RUNNING Update Channel");
+        //alert("THIS IS RUNNING Update Channel");
         for (var q = 0; q < p; q++) {
             var o = 10 * this.selected_page + q;
             if (Main.guide) {
@@ -505,26 +400,12 @@ Main.updatePage = function () {
             if (API.channels.length > 10) {
                 s = "<b style=\"font-size:16px;color:white\"> - [  This portal has <font color=#00ccff>" + API.channels.length + "</font> links  ]</b>";
             }
+			
             if (API.XML_URL.indexOf(".xml") > 0 || API.XML_URL.indexOf(".m3u") > 0 || API.XML_URL.indexOf("=m3u") > 0) {
                 widgetAPI.putInnerHTML(getId("version"), "<b style=\"color:00cbfe;\">IPTV<i>x </i></b><b style=\"font-size:16px;color:cyan;\"> v." + this.ver + "<b style=\"font-size:12px;\">  @</b><b style=\"font-size:16px;\">2016 </b></font>" + s);
-                if (API.XML_URL.indexOf("help") > 0) {
-                    widgetAPI.putInnerHTML(getId("version"), "<b style=\"color:00cbfe;\">HELP </b><b style=\"font-size:16px;color:cyan;\"> [ user guide ] </font>" + s);
-                }
-                if (API.XML_URL.indexOf("Mix") > 0) {
-                    widgetAPI.putInnerHTML(getId("version"), "<b style=\"color:00cbfe;\">EUROPE </b><b style=\"font-size:16px;color:cyan;\"> [ mix ] </font>" + s);
-                }
-                if (API.XML_URL.indexOf("films") > 0) {
-                    widgetAPI.putInnerHTML(getId("version"), "<b style=\"color:00cbfe;\">HOME </b><b style=\"font-size:16px;color:cyan;\"> [ cinema ] </font>" + s);
-                }
-                if (API.XML_URL.indexOf("kids") > 0) {
-                    widgetAPI.putInnerHTML(getId("version"), "<b style=\"color:00cbfe;\">KIDS </b><b style=\"font-size:16px;color:cyan;\"> [ cinema ] </font>" + s);
-                }
-                if (API.XML_URL.indexOf("tutorials") > 0) {
-                    widgetAPI.putInnerHTML(getId("version"), "<b style=\"color:00cbfe;\">VOD </b><b style=\"font-size:16px;color:cyan;\"> [ tutorial ] </font>" + s);
-                }
             }
         }
-        if (KeyHandler.Focus == 0 || KeyHandler.Focus == 5 || KeyHandler.Focus == 6) {
+        if (KeyHandler.Focus == 0) {
             Main.LoadTimer(function() { Main.updateChannel(); }, 100);
         } else {
             Main.updateChannel();
@@ -546,30 +427,7 @@ getLogo1 = function (p, o) {
 };
 
 getLogo2 = function (o, i, q) {
-    o = trimString(o);
-    var p = "";
-    if (API.XML_URL.indexOf("help") > 0) {
-        p = "logos/help.png";
-    } else {
-        if (q != "") {
-            p = "logos/blue_folder.png";
-        } else {
-            if (API.Forma == 0 || API.Forma == 1) {
-                if (Main.ya_auto && !isNaN(i) && i > 0 && i < 2000) {
-                    p = Ya_icon_index_url_obj[i];
-                }
-                if (Main.ya_auto && trimString(o) != "" && (p == undefined || isNaN(i) || i < 1 || i > 1999)) {
-                    p = Ya_icon_name_url_obj[trimString(o).toLowerCase().replace(/\_/g, " ")];
-                }
-                if (p == undefined || !Main.ya_auto) {
-                    p = (trimString(o) != "" && dPr(i) != "") ? "logos/blue_folder.png" : "logos/image.png";
-                }
-            } else {
-                p = "logos/image.png";
-            }
-        }
-    }
-    return p
+    return "logos/blue_folder.png";
 };
 
 Main.UpdateChannelBar = function () {
@@ -584,11 +442,11 @@ Main.UpdateChannelBar = function () {
 
 Main.updateChannel = function () {
     clearTimeout(this.load_timer);
-    if (KeyHandler.Focus == 0 || KeyHandler.Focus == 5 || KeyHandler.Focus == 6) {
+    if (KeyHandler.Focus == 0) {
         YaAbort();
-        getIdn("infoList");
-        getIdn("ya_date");
-        getIdn("ya_info");
+        getIdAndHide("infoList");
+        getIdAndHide("ya_date");
+        getIdAndHide("ya_info");
         Main.UpdateChannelBar();
     }
     Main.Update_Page = true;
@@ -602,7 +460,6 @@ Main.updateChannel = function () {
 // update right side block
 Main.UpdateChannelInfo = function () {
     Main.scrolling = 0;
-    Main.ya_base_info = false;
     this.chan_array_index = 10 * this.selected_page + this.selected_channel;
     this.ch_num = this.chan_array_index + 1;
     this.name = GetChannelInfo(0);
@@ -621,42 +478,19 @@ Main.UpdateChannelInfo = function () {
     this.region = GetChannelInfo(11);
     this.parser = decLongUrl(GetChannelInfo(12));
     this.search_on = GetChannelInfo(13);
-    if (!Main.block_info && KeyHandler.Focus != 5 && KeyHandler.Focus != 1) {
-        var i = "";
+    if (!Main.block_info && KeyHandler.Focus != 1) {
         if (this.url != "") {
             var y = this.url.toString();
-            alert("this.url= " + y);
-            // removed : i = GetYindex();
+            //alert("this.url= " + y);
         };
-        if (i != "") {
-            Main.yandextv_mode = true;
-            Main.ya_all_day = false;
-            T.delta = 0;
-            Main.Ya_flag_step = 0;
-            if (!Main.FirstStart) {
-				// removed : YandexGetUrl(i);
-            } else {
-                // removed : Main.LoadTimer(function() { YandexGetUrl(GetYindex()); }, 1000);
-            }
-        } else {
-            this.yandextv_mode = false;
-            var z = GetChannelInfo(3).toString();
-            alert("GetChannelInfo(3)= " + z);
-            if (GetChannelInfo(3) != "" && z.indexOf("epg_url:") >= 0) {
-                var w = z.split("|");
-                alert("cutted ee[0] =" + w[0]);
-                var A = w[0].split(":");
-                alert("cutted url =" + A[1] + ":" + A[2]);
-                var x = "http://" + A[1] + ":" + A[2] + "?reg=" + w[1] + "&chan=" + w[2] + "&pass=PaCcT0$33v247&friendly=1";
-                alert("request =" + x);
-                EUROGetEPG(x);
-            } else {
-                Main.showinfoList(GetChannelInfo(3));
-                if (typeof z == "string" && z != "" && z.indexOf("<") != 0) {
-                    // removed : UKGetUrl(i, z);
-                }
-            }
-        }
+		this.yandextv_mode = false;
+		var channelCode = GetChannelInfo(3).toString();
+		//alert("GetChannelInfo(3)= " + channelCode);
+		if (channelCode != '') {
+			GetChannelEgp(channelCode);	
+		} else {
+			Main.showinfoList(GetChannelInfo(3));
+		}
     }
     this.block_info = false;
 };
@@ -673,15 +507,14 @@ Main.LoadTimer = function (o, i) {
     this.load_timer = setTimeout(o, i);
 };
 
-Main.showinfoList = function (o) {
-    document.getElementById("scroll_cursor").style.top = "80px";
-    if (KeyHandler.Focus == 0 || KeyHandler.Focus == 6) {
-        getIdn("infoList");
-        getIdn("ya_date");
-        getIdn("ya_info");
+Main.showinfoList = function (channelCode) {
+    if (KeyHandler.Focus == 0) {
+        getIdAndHide("infoList");
+        getIdAndHide("ya_date");
+        getIdAndHide("ya_info");
         widgetAPI.putInnerHTML(getId("infoList"), "");
         if (!this.yandextv_mode || Main.guide) {
-            getIdn("ya_help");
+            getIdAndHide("ya_help");
             var i = "";
             var p = "";
             if (API.playlist_name != "") {
@@ -707,28 +540,28 @@ Main.showinfoList = function (o) {
             if (i != "") {
                 i = "<table><tr>" + i + "</tr></table>";
             }
-            if (o == "" || o == 0) {
+            if (channelCode == "" || channelCode == 0) {
                 i += "no additional information available";
-                o = "";
+                channelCode = "";
             }
-            i = "<div id=\"allInfo\">" + p + i + o + "<div>";
+            i = "<div id=\"allInfo\">" + p + i + channelCode + "<div>";
             widgetAPI.putInnerHTML(getId("infoList"), i);
             if (API.playlist_name != "") {
                 getId("allInfo").style.top = "5px";
             } else {
                 getId("allInfo").style.top = "10px";
             }
-            getIdb("infoList");
+            getIdAndShow("infoList");
         } else {
-            i = "<div id=\"allInfo\">" + o + "<div>";
+            i = "<div id=\"allInfo\">" + channelCode + "<div>";
             widgetAPI.putInnerHTML(getId("ya_date"), "");
-            widgetAPI.putInnerHTML(getId("ya_date"), Main.lost_date + Main.Ya_flag_name);
+            widgetAPI.putInnerHTML(getId("ya_date"), Main.lost_date);
             widgetAPI.putInnerHTML(getId("ya_info"), "");
             widgetAPI.putInnerHTML(getId("ya_info"), i);
             getId("allInfo").style.top = "0px";
-            getIdb("ya_date");
-            getIdb("ya_info");
-            getIdb("ya_help");
+            getIdAndShow("ya_date");
+            getIdAndShow("ya_info");
+            getIdAndShow("ya_help");
         }
     }
 };
@@ -745,7 +578,7 @@ Main.PlayPrevChannel = function () {
         Main.PlayChannel();
         Display.status("Previous channel", 500);
     } else {
-        Display.status("Starting channel", 500);
+        Display.status("Empty prev. channel list", 500);
     }
 };
 
@@ -921,7 +754,6 @@ Main.selectPrevPage = function () {
 };
 
 Main.PlayChannel = function () {
-    hideImage();
     try {
         clearTimeout(this.load_timer);
         if (this.pl_url != "" && this.pl_url.indexOf("stop") != 0) {
@@ -947,14 +779,13 @@ Main.PlayChannel = function () {
                 Display.status1(this.ch_num);
                 Main.url_arr = [];
                 Main.url_selected = 0;
-                Main.Foto = false;
                 Main.ssize = GetChannelInfo(6);
                 Main.a_num = GetChannelInfo(7);
                 Main.SavePrevChannel();
                 Main.SaveSelectedPosition();
                 Main.XML_URL = API.XML_URL;
                 widgetAPI.putInnerHTML(getId("resolution"), "");
-                getIdn("main");
+                getIdAndHide("main");
                 if (this.url.indexOf("rtmp://") >= 0 || this.url.indexOf("rtsp://") >= 0 || this.url.indexOf("mms://") >= 0 || this.url.indexOf(".flv") >= 0) {
                     Main.PlayerMode = "0";
                     hideWeather();
@@ -982,6 +813,7 @@ Main.PlayChannel = function () {
 };
 
 Main.playlist = function () {
+	alert('Main.playlist');
     setTimeout(function(){ showScroll(); }, 500);
     try {
         this.pl_url = decLongUrl(this.pl_url);
@@ -990,124 +822,56 @@ Main.playlist = function () {
         if (Main.start) {
             this.pl_url = "start.xml"
         }
-        if (API.Xcode != 0 && !Main.guide && !Main.start && !Main.help_info && this.url == "") {
-            var p = /[-="',&\/\?\s\_]xxx|porno|sex|erotica|секс|порно|эротика|aнал/i;
-            if (p.exec(" " + Main.name) != null || p.exec(" " + API.playlist_name) != null || p.exec(" " + this.pl_url) != null) {
-                this.xxx = true;
-            }
-        }
         if (!this.DEL && !Main.guide && this.playlist_prev && Main.pl_url.indexOf("history.dat") < 0) {
             if (API.XML_URL.indexOf("fav.dat") > 0) {
                 Main.temp_fav_num = Main.fav_num;
                 Main.temp_fav_name = Main.fav_name;
             }
             Main.SavePrevPlaylist();
-            if (Main.pl_url.indexOf("Open") != 0 && Main.pl_url.indexOf("history.dat") < 0 && API.XML_URL != "start.xml") {
-                Main.saveHistory("pl_history.dat");
-            }
         }
         this.start = false;
         this.search = false;
 
-		if (Main.pl_url == "OpenHistory") {
-			var i = [
-				["IP-TV, WEB-TV CHANNELS", "", "image.png", "IP-TV, WEB-TV CHANNELS", "", "live_history.dat", "", "", "", "", "", "", "", ""],
-				["FILMS, VIDEOS", "", "film.png", "FILMS, VIDEOS", "", "vod_history.dat", "", "", "", "", "", "", "", ""],
-				["PLAYLISTs, FILE LISTs", "", "blue_folder.png", "PLAYLISTs, FILE LISTs", "", "pl_history.dat", "", "", "", "", "", "", "", ""]
-			];
-			Main.ReadPlArr("OpenHistory", i);
+		if (Main.name.indexOf("-=SEARCH=-") == 0 || this.pl_url.indexOf("ytv3/3.php") >= 0 || this.pl_url.indexOf("search.php") >= 0 || this.search_on != "") {
+			Main.search = true;
 		} else {
-			if (Main.pl_url.indexOf("history.dat") >= 0) {
-				if (API.Xcode != 0) {
-					this.xxx = true;
-					// removed : setTimeout(function() { SearchFormular(); }, 500);
+			alert('reading branch');
+			API.XML_URL = this.pl_url;
+			this.loading_pl = true;
+			Display.status("Reading... ", 0);
+			if (Main.pl_url.indexOf("=m3u") >= 0) {
+				API.AsReqMode = true;
+				if (this.pl_url.indexOf("=m3u") >= 0) {
+					setTimeout(function() { API.Request(Main.pl_url); }, 3000);
 				} else {
-					Main.openCommonFile(Main.pl_url);
+					API.Request(Main.pl_url);
 				}
 			} else {
-				if (Main.pl_url.indexOf("OpenFav") == 0) {
-					if (API.fav_start_channels.length > 1) {
-						Main.ReadPlArr("OpenFav", API.fav_start_channels);
-					} else {
-						Main.FAV = true;
-						Main.openCommonFile(Main.fav_url);
-					}
-				} else {
-					if (Main.pl_url.indexOf("fav.dat") > 0) {
-						Main.fav_num = Main.ch_num;
-						Main.fav_name = Main.name;
-						Main.FAV = true;
-						Main.openCommonFile(Main.pl_url);
-					} else {
-						if (this.xxx || Main.name.indexOf("-=SEARCH=-") == 0 || this.pl_url.indexOf("ytv3/3.php") >= 0 || this.pl_url.indexOf("search.php") >= 0 || this.search_on != "") {
-							if (!this.xxx) {
-								Main.search = true;
-							}
-							// removed : setTimeout(function() { SearchFormular(); }, 500);
-						} else {
-							API.XML_URL = this.pl_url;
-							this.loading_pl = true;
-							Display.status("Reading... ", 0);
-							if (Main.pl_url.indexOf("=m3u") >= 0) {
-								API.AsReqMode = true;
-								if (this.pl_url.indexOf("=m3u") >= 0) {
-									setTimeout(function() { API.Request(Main.pl_url); }, 3000);
-								} else {
-									API.Request(Main.pl_url);
-								}
-							} else {
-								setTimeout(function() { API.Request(Main.pl_url); }, 50);
-							}
-						}
-					}
-				}
+				setTimeout(function() { API.Request(Main.pl_url); }, 50);
 			}
 		}
     } catch (d) {}
 };
 
-StartSlideShow = function () {
-    Main.block_info = true;
-    Main.selectNextChannel();
-    setTimeout(function(){ Main.PlayChannel(); }, 20);
-};
-
-StopSlideShow = function () {
-    if (Main.SlideShowInterval !== null) {
-        clearInterval(Main.SlideShowInterval);
-        Main.SlideShowInterval = null;
-    }
-};
-
 Main.PlayNoFlashStream = function () {
-    Foto = /\.(gif|jpg|jpeg|bmp|tiff|raw )$/i;
-    if (Foto.exec(this.url) != null) {
-        Main.Foto = true;
-    } else {
-        StopSlideShow();
-    }
     if (API.Ibuffer > 0 && API.Buffer == 0) {
         Main.buffer = "";
     } else {
-        if (Main.Foto) {
-            Main.buffer = 0.5;
-        } else {
-            if (Main.buffer != "") {
-                Main.buffer = (Main.buffer > 20) ? 20 : (Main.buffer < 0.5) ? 0.5 : Main.buffer;
-                if (Main.ibuffer > 0) {
-                    Main.ibuffer = (Main.ibuffer > 50) ? 50 : (Main.ibuffer < 10) ? 10 : Main.ibuffer;
-                }
-            } else {
-                if (API.Buffer > 0) {
-                    Main.buffer = API.Buffer;
-                    if (API.Ibuffer > 0) {
-                        Main.ibuffer = API.Ibuffer;
-                    }
-                }
-            }
-        }
+		if (Main.buffer != "") {
+			Main.buffer = (Main.buffer > 20) ? 20 : (Main.buffer < 0.5) ? 0.5 : Main.buffer;
+			if (Main.ibuffer > 0) {
+				Main.ibuffer = (Main.ibuffer > 50) ? 50 : (Main.ibuffer < 10) ? 10 : Main.ibuffer;
+			}
+		} else {
+			if (API.Buffer > 0) {
+				Main.buffer = API.Buffer;
+				if (API.Ibuffer > 0) {
+					Main.ibuffer = API.Ibuffer;
+				}
+			}
+		}
     }
-    getIdb("screen_size");
+    getIdAndShow("screen_size");
     var i = this.url;
     i = i.replace("rtp://", "udp://");
     if (i.indexOf("udp://") >= 0) {
@@ -1115,15 +879,13 @@ Main.PlayNoFlashStream = function () {
             i = "http://" + API.Proxy + "/udp/" + i.substr(7);
         }
     } else {
-        if (!Main.Foto) {
-            API.AsReqMode = false;
-            try {
-                // removed : i = Super_parser(i);
-            } catch (b) {
-                i = this.url;
-            }
-            API.AsReqMode = true;
-        }
+		API.AsReqMode = false;
+		try {
+			// removed : i = Super_parser(i);
+		} catch (b) {
+			i = this.url;
+		}
+		API.AsReqMode = true;
     }
     if (dPr(i) != "") {
         if (i.indexOf(".m3u8") >= 0) {
@@ -1141,10 +903,9 @@ Main.PlayNoFlashStream = function () {
 Main.PlayFlashStream = function () {
     Player.next = false;
     Player.state = Player.LOADING;
-    Main.saveHistory("live_history.dat");
     KeyHandler.setFocus(2);
-    getIdn("screen_size");
-    getIdb("flashplayer");
+    getIdAndHide("screen_size");
+    getIdAndShow("flashplayer");
     widgetAPI.putInnerHTML(getId("flashplayer"), "");
     var i = (this.url.indexOf(".flv") >= 0) ? ("flv=" + this.url) : ("file=" + this.url);
     var o = "<object type=\"application/x-shockwave-flash\" id=\"rmtpplayerHD\" width=\"960\" height=\"540\">";
@@ -1161,7 +922,7 @@ Main.setPlayer = function () {
 
 Main.stopFPlayer = function () {
     delete Main.player;
-    getIdn("flashplayer");
+    getIdAndHide("flashplayer");
     Display.hidestatus();
     widgetAPI.putInnerHTML(getId("flashplayer"), "");
     Player.state = Player.STOPPED;
@@ -1199,110 +960,11 @@ Main.writeFile = function (q, j) {
     }
 };
 
-Main.saveHistory = function (q) {
-    var p = [dSp(dI(Main.name) + "|" + dI(this.url) + "|" + dI(this.logo) + "|" + dI(GetChannelInfo(3)) + "||" + dI(this.pl_url) + "|" + this.ssize + "|" + this.a_num + "|" + this.buffer + "|" + this.ibuffer + "|" + this.timeshift + "|" + this.region + "|" + dI(this.parser) + "|" + dI(this.search_on))];
-    Main.readFile(p, q);
-    if (p.length > 10) {
-        p.pop();
-    }
-    var i = (this.url != "") ? dI(this.url) : dI(this.pl_url);
-    for (var o = 1; o < p.length; o++) {
-        if (p[o].indexOf(i) > 0) {
-            p.splice(o, 1);
-            break;
-        }
-    }
-    Main.writeFile(p, q);
-};
-
-Main.delHistory = function (i) {
-    var o = [];
-    Main.writeFile(o, i);
-    Main.PlayPrevPlaylist();
-};
-
-Main.saveFavorites = function () {
-    var i = [dSp(dI(Main.name) + "|" + dI(this.url) + "|" + dI(this.logo) + "|" + dI(GetChannelInfo(3)) + "||" + dI(this.pl_url) + "|" + this.ssize + "|" + this.a_num + "|" + this.buffer + "|" + this.ibuffer + "|" + this.timeshift + "|" + this.region + "|" + dI(this.parser) + "|" + dI(this.search_on))];
-    Main.readFile(i, Main.fav_url);
-    Main.writeFile(i, Main.fav_url);
-    Display.status("<b style=\"color:#CDCDCD\">Added to Favourites " + Main.fav_num + " - \"" + Main.fav_name + "\"</b>", 1500);
-};
-
-Main.delFavorites = function () {
-    var i = this.ch_num - 1;
-    var o = [];
-    Main.readFile(o, Main.fav_url);
-    o.splice(i, 1);
-    Main.writeFile(o, Main.fav_url);
-    this.DEL = true;
-    if (o.length == 0) {
-        Display.status("<b style=\"color:yellow\">Favourites folder " + Main.fav_num + " - \"" + Main.fav_name + "\" -  EMPTY !</b>", 1500);
-        Main.FAV = false;
-        Main.RED = false;
-        if (Main.prev_pl_array.length == 0 && API.XML_URL.indexOf("start.xml") < 0) {
-            API.XML_URL = "start.xml";
-            setTimeout(function() { API.Request(API.XML_URL); }, 3000);
-        } else {
-            setTimeout(function() { Main.PlayPrevPlaylist(); }, 3000);
-        }
-    } else {
-        this.playlist_prev = false;
-        Main.openCommonFile(Main.fav_url);
-    }
-};
-
-Main.moveFavorites = function (p) {
-    var i = this.ch_num - 1;
-    var q = [];
-    Main.readFile(q, Main.fav_url);
-    if (q.length > 1) {
-        p = (i == 0 && p == 1) ? -q.length : (i == q.length - 1 && p == -1) ? q.length - 1 : p;
-        this.DEL = true;
-        var o = q.splice(i, 1);
-        q.splice(i - p, 0, o.toString());
-        Main.writeFile(q, Main.fav_url);
-        this.playlist_prev = false;
-        Main.openCommonFile(Main.fav_url);
-        if (p == -1 || p == q.length - 1) {
-            Main.selectNextChannel();
-        } else {
-            Main.selectPrevChannel();
-        }
-    }
-};
-
 Main.openCommonFile = function (p) {
     var l = [];
     Main.readFile(l, p);
     if (l.length == 0) {
-        if (p.indexOf("fav.dat") > 0) {
-            if (Main.prev_pl_array.length == 0 && API.XML_URL.indexOf("start.xml") < 0) {
-                Display.status("<b style=\"color:yellow\">Your Favourites folder is EMPTY !</b>", 1500);
-                setTimeout(function() {
-					Display.status('Please change address in the settings');
-				}, 3500);
-                API.XML_URL = "start.xml";
-                setTimeout(function() { API.Request(API.XML_URL); }, 7000);
-            } else {
-                Display.status("<b style=\"color:yellow\">Favourites folder" + Main.fav_num + " - " + Main.fav_name + " -  is EMPTY !</b>", 1500);
-                if (API.XML_URL.indexOf("fav.dat") > 0) {
-                    Main.SetFavSelectedPosition();
-                    Main.readFile(l, API.XML_URL);
-                } else {
-                    if (Main.FAV) {
-                        Main.FAV = false;
-                    }
-                }
-                if (API.XML_URL.indexOf("OpenFav") >= 0) {
-                    this.prev_pl_array.pop();
-                    this.playlist_prev = true;
-                }
-                // removed : Selectbox.selected = Selectbox.pre_selected;
-                // removed : Selectbox.selected_page = Selectbox.pre_selected_page;
-            }
-        } else {
-            Display.status("Empty!", 500);
-        }
+		Display.status("Empty!", 500);
     } else {
         var q = [];
         for (var o = 0; o < l.length; o++) {
@@ -1360,6 +1022,7 @@ Main.onUnload = function () {
 };
 
 function StartTime() {
+	alert('executed StartTime()');
     clearInterval(Main.IntervalUpdateTime);
     Main.IntervalUpdateTime = setInterval(function() { SetTimeDate(); }, 1000);
     if (API.Timemode == 0) {
@@ -1383,7 +1046,8 @@ var T = {
 };
 
 function SyncInetTime() {
-    var i = null;
+    /*
+	var i = null;
     i = new XMLHttpRequest();
     i.onreadystatechange = function () {
         if (i.readyState == 4) {
@@ -1409,6 +1073,7 @@ function SyncInetTime() {
     i.open("GET", "http://wwp.greenwichmeantime.com/time/scripts/clock-8/x.php", true);
     i.setRequestHeader("User-Agent", "Opera/9.80 (Windows NT 5.1; U; ru) Presto/2.9.168 Version/11.51");
     i.send();
+	*/
 }
 
 function getDT(o) {
@@ -1438,12 +1103,12 @@ function SetTimeDate() {
             T.y_t_days = parseInt(new Date() / 86400000);
             getDT(s);
         } else {
-            if (!Main.Emu) {
+            //if (!Main.Emu) {
                 var R = getId("pluginTime");
                 s = parseInt(R.GetEpochTime() * 1000);
                 T.y_t_days = parseInt(s / 86400000);
                 getDT(s);
-            }
+            //}
         }
     }
     if (Main.ya_epg_info_arr.length > 0 && Main.epg_t1 <= Main.epg_t2) {
@@ -1478,12 +1143,12 @@ function SetTimeDate() {
     var s = to(T.h, T.m, T.s, 0);
     getId("widget_time").innerHTML = s;
     getId("time").innerHTML = s;
-    var j = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    var q = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    var p = j[T.day];
-    var o = q[T.month];
-    var i = p + " " + T.date + " " + o;
-    getId("widget_date").innerHTML = i;
+    var weekDays = ['sekmadienis', 'pirmadienis', 'antradienis', 'trečiadienis', 'ketvirtadienis', 'penktadienis', 'šeštadienis'];
+    var months = ['Sausio', 'Vasario', 'Kovo', 'Balandžio', 'Gegužės', 'Biržėlio', 'Liepos', 'Rugpjūčio', 'Rugsėjo', 'Spalio', 'Lapkričio', 'Gruodžio'];
+    var weekDay = weekDays[T.day];
+    var month = months[T.month];
+	var dateText = month + ' ' + T.date + 'd., ' + weekDay;
+    getId("widget_date").innerHTML = dateText;
 }
 
 function TimeInfo(j, q) {
@@ -1508,18 +1173,14 @@ msecToStr = function (i, o) {
 };
 
 var API = {
-    XML_URL: "start.xml",
-    //star_url: "https://raw.githubusercontent.com/blahlt/samsungtv/master/data/skynet20161003.m3u",
-	star_url: "https://raw.githubusercontent.com/blahlt/samsungtv/master/data/de-m3uplaylist-2018-03-10-1.m3u",
-    help_url: "http://nebo.ddns.net/help/starthelp.xml",
-    GenUrl: "", // Menu(?) generation url
-    GenT: "500", // Menu(?) generation timer
-    Gen: false,
-    Proxy: "",
-    Timefix: "0",
-    Timemode: "0",
-    Xcode: "0",
-    Size: "",
+    XML_URL: 'start.xml',
+    star_url: 'https://raw.githubusercontent.com/blahlt/samsungtv/master/data/skynet20161003.m3u',
+	//star_url: 'http://190.2.144.79:25461/get.php?username=mejoradaa&password=cambio&type=m3u',
+	//star_url: 'https://raw.githubusercontent.com/blahlt/samsungtv/master/data/de-m3uplaylist-2018-03-10-1.m3u',
+    Proxy: '',
+    Timefix: '0',
+    Timemode: '0',
+    Size: '',
     Ph: "100",
     Pw: "100",
     a_size1: "2",
@@ -1529,13 +1190,9 @@ var API = {
     CODE: 213,
     REG: "ru",
     Scode: "0",
-    Login: "",
-    Pasword: "",
-    Surl: "",
     Buffer: "0",
     Ibuffer: "0",
     Timeshift: "0",
-    Favname: " Main | IP-TV | Films | Series",
     Cityname: "London",
     Pstyle: "1",
     Mac: "1",
@@ -1550,88 +1207,18 @@ var API = {
     stReq_time: 50000,
     AsReqMode: true,
     categories: [],
-    favorites: [],
-    fav_start_channels: [],
     search_string: "",
     next_page_url: "",
     prev_page_url: "",
     playlist_name: "",
     search_on: "",
     next_page_text: "",
-    prev_page_text: "",
-    fn: ""
+    prev_page_text: ""
 };
 
 API.init = function () {
     try {
         Main.MAC = Main.Network.GetMAC();
-        API.fn = parseInt(Main.MAC, 16) + "291s.dat";
-        var q = [];
-        Main.readFile(q, API.fn);
-        if (q.length > 0) {
-            API.star_url = (dPr(q[0]) != "") ? q[0] : API.star_url;
-            API.Surl = (dPr(q[1]) != "") ? q[1] : "";
-            API.Login = (dPr(q[2]) != "") ? q[2] : "";
-            API.Pasword = (dPr(q[3]) != "") ? q[3] : "";
-            API.Proxy = (dPr(q[4]) != "") ? q[4] : "";
-            API.Xcode = (q[5] > 0 && q[5] < 10000) ? q[5] : "0";
-            API.Scode = (q[6] < 10000 && q[6] > 0) ? q[6] : "0";
-            API.Favname = (dPr(q[7]) != "") ? q[7] : API.Favname;
-            API.CODE = (q[8] < 100000 && q[8] > 0) ? q[8] : 213;
-            API.REG = q[9];
-            API.Timeshift = q[10].replace("+", "");
-            API.Timemode = q[11];
-            API.Timefix = q[12].replace("+", "");
-            API.Size = q[13];
-            API.Ph = q[14];
-            API.Pw = q[15];
-            API.a_size1 = q[16];
-            API.a_size2 = q[17];
-            API.a_size3 = q[18];
-            API.Forma = q[19];
-            API.Buffer = q[20];
-            API.Ibuffer = q[21];
-            API.Pstyle = q[22];
-            API.Mac = q[23];
-            API.Header = q[24];
-            API.Vquality = (q[25] == undefined) ? "360p" : q[25];
-            API.Cityname = (dPr(q[26]) != "") ? q[26] : API.Cityname;
-        }
-        API.favorites = [];
-        API.fav_start_channels = [];
-        var p = API.Favname.split("|");
-        var u = (p.length > 10) ? 10 : p.length;
-        for (var D = 0; D < u; D++) {
-            var o = (D > 0) ? D : "";
-            if (API.Scode != "" && parseInt(API.Scode, 10) > 0) {
-                var i = API.Scode + o + "fav.dat";
-            } else {
-                i = parseInt(Main.MAC, 16).toString() + o + "fav.dat";
-            }
-            var l = [p[D], "", "blue_folder.png", p[D], "", i, "", "", "", "", "", "", "", ""];
-            API.fav_start_channels.push(l);
-            var G = [D, p[D], i];
-            API.favorites.push(G);
-        }
-        Main.fav_num = 1 + API.favorites[0][0];
-        Main.fav_name = API.favorites[0][1];
-        Main.fav_url = API.favorites[0][2];
-        Main.temp_fav_num = Main.fav_num;
-        Main.temp_fav_name = Main.fav_name;
-        q = [];
-        Main.ya_auto = false;
-        Main.readFile(q, API.CODE + "_ya_name_index_url.dat");
-        if (q.length > 0) {
-            Main.ya_auto = true;
-            var E = "<font style=\"color:#00ccff;font-weight:bolder\">";
-            for (var D = 0; D < q.length; D++) {
-                var s = q[D];
-                s = s.split("|");
-                Ya_name_index_obj[s[0].toLowerCase()] = s[1];
-                Ya_icon_index_url_obj[s[1]] = s[2];
-                Ya_icon_name_url_obj[s[0].toLowerCase()] = s[2];
-            }
-        }
         setTimeout(function() { StartTime(); }, 50);
     } catch (k) {
         return false;
@@ -1639,33 +1226,12 @@ API.init = function () {
     return true;
 };
 
-GetYaBaseInfo = function () {
-    tempArr = [];
-    var p = "";
-    Main.readFile(tempArr, API.CODE + "_ya_name_index_url.dat");
-    if (tempArr.length > 0) {
-        var j = "<font style=\"color:#00ccff;font-weight:bolder\">";
-        for (var q = 0; q < tempArr.length; q++) {
-            var i = tempArr[q];
-            i = i.split("|");
-            p += "<br>" + (q + 1) + ") " + i[0] + " - " + j + i[1] + "</font>";
-        }
-        Main.ya_base_info = true;
-    }
-    var o = "Channel";
-    if (parseInt(tempArr.length / 10) * 10 == tempArr.length) {
-        o = "Channels";
-    }
-    p = "In the database of " + j + API.CODE + "</font> region " + j + tempArr.length + " </font> " + o + " : " + p;
-    Main.showinfoList(p);
-};
-
 API.loadComplete = function () {
     if (API.channels.length == 0) {
         Display.status("<b style=\"color:yellow\">ERROR IN THE PLAYLIST!</b>");
         if (Main.prev_pl_array.length == 0 && API.XML_URL == "start.xml") {
             setTimeout(function() {
-				getIdb('main');
+				getIdAndShow('main');
 			}, 2000);
         } else {
             setTimeout(function() { Main.PlayPrevPlaylist(); }, 500);
@@ -1721,31 +1287,6 @@ API.Request = function (url) {
     } catch (c) {}
 };
 
-function AGen() {
-    if (!Main.FirstStart && KeyHandler.Focus != 1 && !Player.jump && API.AsReqMode) {
-        var i = null;
-        i = new XMLHttpRequest();
-        i.onreadystatechange = function () {
-            if (i.readyState == 4 && i.status == 200) {
-                API.Gen = true;
-            }
-        }
-        alert("AGEN URL =" + i);
-        i.open("GET", API.GenUrl, true);
-        i.setRequestHeader("User-Agent", "Opera/9.80 (Windows NT 5.1; U; ru) Presto/2.9.168 Version/11.51");
-        i.send();
-        setTimeout(function() {
-			if (API.Gen) {
-				if (API.GenT >= 1000)
-					API.GenT = API.GenT/2;
-				API.Gen = false;
-			} else if (API.GenT < 512000)
-				API.GenT = API.GenT*2;
-			AGen();
-		}, parseInt(API.GenT));
-    }
-}
-
 API.recieveMenuData = function (url) {
     clearTimeout(API.stReq_timeout);
     if (API.XHRObj.status == 200) {
@@ -1768,7 +1309,7 @@ API.recieveMenuData = function (url) {
                 setTimeout(function() { API.Request(API.XML_URL); }, 3000);
             } else {
                 setTimeout(function() {
-					getIdb('main');
+					getIdAndShow('main');
 				}, 3000);
             }
         } else {
@@ -1792,10 +1333,6 @@ API.ResetAll = function () {
     API.channels = [];
     API.all_channels = [];
     API.categories = [];
-    // removed: if (!Main.FAV) {
-    //    Selectbox.selected = 0;
-    //    Selectbox.selected_page = 0;
-    //}
     API.playlist_name = "";
     API.next_page_url = "";
     API.prev_page_url = "";
@@ -1856,7 +1393,7 @@ API.getChannel_list = function (bk) {
                     if ((lines[lineIndex].indexOf("#EXTINF:") >= 0 && (lines[lineIndex + 1].indexOf("://") > 0 || lines[lineIndex + 2].indexOf("://") > 0
 						|| lines[lineIndex + 1].indexOf("/dtv") > -1 || lines[lineIndex + 2].indexOf("/dtv") > -1)) || lines[lineIndex].indexOf("#EXTM3U") >= 0) {
                         var E = "";
-                        var y = "";
+                        var channelName = "";
                         var u = "";
 						
 						var channelCache = "";
@@ -1906,25 +1443,21 @@ API.getChannel_list = function (bk) {
                             bg = (channelTimeShift != "") ? channelTimeShift : "";
                         } else {
                             channelGroup = trimString(parser(lines[lineIndex], "group-title=\"", "\"").replace(/"/g, ""));
-                            y = trimString(parser(lines[lineIndex], ","));
-                            var bf = (lines[lineIndex + 1].indexOf("://") > 0 || lines[lineIndex + 1].indexOf("/dtv") > -1) ? lines[lineIndex + 1] : lines[lineIndex + 2];
-                            bf = trimString(bf);
+                            channelName = trimString(parser(lines[lineIndex], ","));
+                            var channelUrl = (lines[lineIndex + 1].indexOf("://") > 0 || lines[lineIndex + 1].indexOf("/dtv") > -1) ? lines[lineIndex + 1] : lines[lineIndex + 2];
+                            channelUrl = trimString(channelUrl);
                             channelLogo = (channelLogo != "") ? channelLogo : p;
-                            if (channelLogo != "" && channelLogo.indexOf("://") < 0 && channelLogo.indexOf(".png") < 0) {
-                                var bb = Ya_icon_name_url_obj[channelLogo.toLowerCase()];
-                                channelLogo = (bb != undefined) ? bb : "";
-                            }
-                            if (bf.indexOf(".m3u8") < 0) {
-                                if (bf.indexOf(".m3u") > -1 || bf.indexOf(".xml") > -1) {
+                            if (channelUrl.indexOf(".m3u8") < 0) {
+                                if (channelUrl.indexOf(".m3u") > -1 || channelUrl.indexOf(".xml") > -1) {
                                     channelLogo = (channelLogo == "") ? "blue_folder.png" : channelLogo;
                                     if (channelGroup != "") {
                                         channelCode = "Category : " + channelGroup;
                                     }
-                                    u = bf;
-                                    bf = "";
+                                    u = channelUrl;
+                                    channelUrl = "";
                                 }
                             }
-                            if (bf != "") {
+                            if (channelUrl != "") {
                                 channelAspectRatio = (channelAspectRatio != "") ? channelAspectRatio : o;
                                 channelAudioTrack = (channelAudioTrack != "") ? channelAudioTrack : i;
                                 channelTimeShift = (channelTimeShift != "") ? channelTimeShift : bg;
@@ -1940,7 +1473,7 @@ API.getChannel_list = function (bk) {
                                     channelGroupIndex++;
                                 }
                             }
-                            var Z = [y, bf, channelLogo, channelCode, E, u, channelAspectRatio, channelAudioTrack, channelCache, "", channelTimeShift, "", "", ""];
+                            var Z = [channelName, channelUrl, channelLogo, channelCode, E, u, channelAspectRatio, channelAudioTrack, channelCache, "", channelTimeShift, "", "", ""];
                             API.channels.push(Z);
                             lineIndex++;
                         }
@@ -1998,7 +1531,7 @@ var Display = {
 
 Display.loadingshow = function () {
     if (!this.run) {
-        getIdb("loading");
+        getIdAndShow("loading");
         Display.loadingshowTimer();
         this.run = true;
         Display.loadingstep();
@@ -2008,7 +1541,7 @@ Display.loadingshow = function () {
 Display.loadinghide = function () {
     this.run = false;
     clearTimeout(this.loadingshow_timer);
-    getIdn("loading");
+    getIdAndHide("loading");
 };
 
 Display.loadingstep = function () {
@@ -2032,118 +1565,69 @@ Display.loadingshowTimer = function () {
 
 Display.showplayer = function () {
     if (KeyHandler.Focus != 0) {
-        if (Player.state == Player.PLAYING_VOD || Player.state == Player.PAUSE_VOD) {
-            Main.ya_epg_info_arr = [];
-            Main.epg_t1 = 0;
-            Main.epg_t2 = 0;
-            getIdn("help_navi_l_player");
-            getIdn("p_epg_line");
-            if (Main.seriesE) {
-                getId("progressBarBG").style.left = "0px";
-                getId("timeInfo").style.left = "560px";
-                getId("resolution").style.left = "725px";
-                getId("time").style.left = "850px";
-            } else {
-                getId("progressBarBG").style.left = "10px";
-                getId("timeInfo").style.left = "580px";
-                getId("resolution").style.left = "745px";
-                getId("time").style.left = "860px";
-            }
-            getIdb("p_info_line");
-            getIdb("help_navi_vod_player");
-            getId("statusbar").style.top = "68px";
-            if (Player.state == Player.PAUSE_VOD) {
-                getIdn("vod_pause");
-                getIdb("vod_play");
-                if (Main.seriesE) {
-                    getId("help_navi_vod_player").style.left = "39px";
-                } else {
-                    getId("help_navi_vod_player").style.left = "48px";
-                }
-            } else {
-                getIdb("vod_pause");
-                getIdn("vod_play");
-                if (Main.seriesE) {
-                    getId("help_navi_vod_player").style.left = "30px";
-                } else {
-                    getId("help_navi_vod_player").style.left = "40px";
-                }
-                if (Player.repeat) {
-                    Display.status("Repeat mode", 1000);
-                } else {
-                    if (Player.next) {
-                        Display.status("Continuous playback", 1000);
-                    }
-                }
-            }
-        } else {
-            if (Player.state == Player.PLAYING_LIVE) {
-                getIdn("help_navi_vod_player");
-                getIdn("p_info_line");
-                getIdn("p_epg_line");
-                if (Main.seriesE) {
-                    if (Main.PlayerMode == "1") {
-                        getId("help_navi_l_player").style.left = "70px";
-                    } else {
-                        getId("help_navi_l_player").style.left = "130px";
-                    }
-                    getId("progressBarBG").style.left = "10px";
-                    getId("timeInfo").style.left = "595px";
-                    getId("resolution").style.left = "740px";
-                    getId("time").style.left = "850px";
-                } else {
-                    if (Main.PlayerMode == "1") {
-                        getId("help_navi_l_player").style.left = "80px";
-                    } else {
-                        getId("help_navi_l_player").style.left = "140px";
-                    }
-                    getId("progressBarBG").style.left = "20px";
-                    getId("timeInfo").style.left = "605px";
-                    getId("resolution").style.left = "750px";
-                    getId("time").style.left = "860px";
-                }
-                getIdb("help_navi_l_player");
-                if (Main.PlayerMode == "1") {
-                    if (Main.ya_epg_info_arr.length > 0 && Main.ya_prog_id == Main.chan_array_index) {
-                        getIdb("p_info_line");
-                        getIdb("p_epg_line");
-                        var i = 302;
-                        if (Main.seriesE) {
-                            i = 280;
-                        }
-                        if (getId("epg_info").innerHTML.length > i) {
-                            getId("statusbar").style.top = "120px";
-                        } else {
-                            getId("statusbar").style.top = "100px";
-                        }
-                    } else {
-                        getId("statusbar").style.top = "70px";
-                        setTimeout(function() { Main.UpdateChannelInfo(); }, 400);
-                    }
-                }
-            }
-        }
+		if (Player.state == Player.PLAYING_LIVE) {
+			getIdAndHide("p_info_line");
+			getIdAndHide("p_epg_line");
+			if (Main.seriesE) {
+				if (Main.PlayerMode == "1") {
+					getId("help_navi_l_player").style.left = "70px";
+				} else {
+					getId("help_navi_l_player").style.left = "130px";
+				}
+				getId("progressBarBG").style.left = "10px";
+				getId("timeInfo").style.left = "595px";
+				getId("resolution").style.left = "740px";
+				getId("time").style.left = "850px";
+			} else {
+				if (Main.PlayerMode == "1") {
+					getId("help_navi_l_player").style.left = "80px";
+				} else {
+					getId("help_navi_l_player").style.left = "140px";
+				}
+				getId("progressBarBG").style.left = "20px";
+				getId("timeInfo").style.left = "605px";
+				getId("resolution").style.left = "750px";
+				getId("time").style.left = "860px";
+			}
+			getIdAndShow("help_navi_l_player");
+			if (Main.PlayerMode == "1") {
+				if (Main.ya_epg_info_arr.length > 0 && Main.ya_prog_id == Main.chan_array_index) {
+					getIdAndShow("p_info_line");
+					getIdAndShow("p_epg_line");
+					var i = 302;
+					if (Main.seriesE) {
+						i = 280;
+					}
+					if (getId("epg_info").innerHTML.length > i) {
+						getId("statusbar").style.top = "120px";
+					} else {
+						getId("statusbar").style.top = "100px";
+					}
+				} else {
+					getId("statusbar").style.top = "70px";
+					setTimeout(function() { Main.UpdateChannelInfo(); }, 400);
+				}
+			}
+		}
         if (Main.PlayerMode == "1") {
-            getIdb("resolution");
+            getIdAndShow("resolution");
         } else {
-            getIdn("resolution");
+            getIdAndHide("resolution");
         }
         if (API.Pstyle == "1") {
-            getIdb("p_second_line");
+            getIdAndShow("p_second_line");
         } else {
-            getIdn("p_second_line");
+            getIdAndHide("p_second_line");
         }
-        getIdn("statusbar1");
-        getIdb("player");
+        getIdAndHide("statusbar1");
+        getIdAndShow("player");
         clearTimeout(this.infobar_timer);
-        if (Player.state != Player.PAUSE_VOD) {
-            Display.infobarTimer();
-        }
+		Display.infobarTimer();
     }
 };
 
 Display.hideplayer = function () {
-    getIdn("player");
+    getIdAndHide("player");
     getId("statusbar").style.top = "10px";
     if (Main.epg_info_step != 0) {
         Main.epg_info_step = 0;
@@ -2156,8 +1640,8 @@ Display.infobarTimer = function () {
 };
 
 Display.status = function (o, i) {
-    getIdn("version");
-    getIdb("statusbar");
+    getIdAndHide("version");
+    getIdAndShow("statusbar");
     widgetAPI.putInnerHTML(getId("status"), o);
     clearTimeout(this.status_timer);
     if (i == undefined) {
@@ -2170,15 +1654,15 @@ Display.status = function (o, i) {
 };
 
 Display.status1 = function (i) {
-    getIdb("statusbar1");
+    getIdAndShow("statusbar1");
     widgetAPI.putInnerHTML(getId("status1"), i);
     clearTimeout(this.status1_timer);
     Display.status1Timer();
 };
 
 Display.hidestatus = function () {
-    getIdn("statusbar");
-    getIdb("version");
+    getIdAndHide("statusbar");
+    getIdAndShow("version");
 };
 
 Display.statusTimer = function (i) {
@@ -2186,7 +1670,7 @@ Display.statusTimer = function (i) {
 };
 
 Display.status1Timer = function () {
-    this.status1_timer = setTimeout(function() { getIdn("statusbar1"); }, 3000);
+    this.status1_timer = setTimeout(function() { getIdAndHide("statusbar1"); }, 3000);
 };
 
 var KeyHandler = {
@@ -2232,30 +1716,26 @@ KeyHandler.setFocus = function (i) {
     KeyHandler.Focus = i;
     switch (i) {
     case 0:
+		alert('setFocus:' + i + ' | MainMenu_Anchor');
         getId("MainMenu_Anchor").focus();
-        if (!Main.seriesC) {
-            pluginAPI.registKey(tvKey.KEY_TOOLS);
-        }
+        pluginAPI.registKey(tvKey.KEY_TOOLS);
         break;
     case 1:
+		alert('setFocus:' + i + ' | LoadingPlayer_Anchor');
         getId("LoadingPlayer_Anchor").focus();
         break;
     case 2:
+		alert('setFocus:' + i + ' | LivePlayer_Anchor');
         getId("LivePlayer_Anchor").focus();
-        if (!Main.seriesC) {
-            pluginAPI.unregistKey(tvKey.KEY_TOOLS);
-        }
-        break;
-    case 3:
-        getId("VODPlayer_Anchor").focus();
-        if (!Main.seriesC) {
-            pluginAPI.unregistKey(tvKey.KEY_TOOLS);
-        }
+        pluginAPI.unregistKey(tvKey.KEY_TOOLS);
         break;
     default:
+		alert('setFocus:' + i + ' | Unknown');
         break;
     }
 };
+
+// Handle channel selector (- or --)
 KeyHandler.KanalSelector = function () {
     if (KeyHandler.NumberEntered > API.channels.length) {
         Display.status("Input error", 500);
@@ -2340,7 +1820,6 @@ KeyHandler.MainMenuKeyDown = function () {
         }
         break;
     case 1086:
-        ;
     case 84:
         if (API.XML_URL.indexOf("start.xml") != 0) {
             Main.start = true;
@@ -2350,9 +1829,7 @@ KeyHandler.MainMenuKeyDown = function () {
         }
         break;
     case 256:
-        ;
     case 1057:
-        ;
     case tvKey.KEY_GUIDE:
         widgetAPI.blockNavigation(event);
         if (Main.play_chan_array_index != Main.chan_array_index) {
@@ -2365,7 +1842,7 @@ KeyHandler.MainMenuKeyDown = function () {
             if (Player.state == Player.PLAYING_LIVE && this.guide_step == 1) {
                 this.guide_step = 0;
                 Main.SetSelectedPosition();
-                getIdn("main");
+                getIdAndHide("main");
                 Display.hidestatus();
                 KeyHandler.setFocus(2);
                 Display.showplayer();
@@ -2375,21 +1852,18 @@ KeyHandler.MainMenuKeyDown = function () {
         }
         break;
     case tvKey.KEY_INFO:
-        //removed : confirm.openWindow();
         Display.status("MAC = " + Main.MAC, 5000);
+		AlertInfo();
         break;
     case tvKey.KEY_TOOLS:
         break;
     case 1118:
-        ;
     case tvKey.KEY_PANEL_MENU:
-        ;
     case tvKey.KEY_MENU:
         widgetAPI.blockNavigation(event);
         ShowMenuTV();
         break;
     case 78:
-        ;
     case 259:
         if (!Main.help_info) {
             Main.PlayPrevChannel();
@@ -2403,7 +1877,7 @@ KeyHandler.MainMenuKeyDown = function () {
         if (Player.state != Player.STOPPED && Main.XML_URL == API.XML_URL) {
             this.guide_step = 0;
             Main.SetSelectedPosition();
-            getIdn("main");
+            getIdAndHide("main");
             Display.hidestatus();
             if (Player.state == Player.PLAYING_LIVE) {
                 KeyHandler.setFocus(2);
@@ -2419,20 +1893,12 @@ KeyHandler.MainMenuKeyDown = function () {
         }
         break;
     case 106:
-        ;
     case tvKey.KEY_DOWN:
         Main.selectNextChannel();
-        if (Main.scrolling == 0) {
-            document.getElementById("scroll_cursor").style.top = "80px";
-        }
         break;
     case 105:
-        ;
     case tvKey.KEY_UP:
         Main.selectPrevChannel();
-        if (Main.scrolling == 0) {
-            document.getElementById("scroll_cursor").style.top = "80px";
-        }
         break;
     case tvKey.KEY_LEFT:
         Main.selectPrevPage();
@@ -2441,9 +1907,7 @@ KeyHandler.MainMenuKeyDown = function () {
         Main.selectNextPage();
         break;
     case 612:
-        ;
     case 309:
-        ;
     case tvKey.KEY_ENTER:
         if (KeyHandler.NumberEntered != "") {
             clearTimeout(this.ChSelectorTimeout);
@@ -2456,45 +1920,10 @@ KeyHandler.MainMenuKeyDown = function () {
         }
         break;
     case tvKey.KEY_RED:
-        hideScroll();
-        if (!Main.help_info && !Main.FAV && API.categories.length > 2) {
-            // removed : Main.showCategorySelector();
-        } else {
-            if (API.XML_URL.indexOf("history.dat") > 0) {
-                Main.delHistory(API.XML_URL);
-            } else {
-                Display.status("Not Available!", 500);
-            }
-        }
         break;
     case tvKey.KEY_GREEN:
-        hideScroll();
-        if (!Main.FAV && !Main.block_fav && API.XML_URL.indexOf("Open") < 0) {
-            if (API.favorites.length > 1) {
-                // removed : Main.showFavSelector();
-            } else {
-                Main.saveFavorites();
-            }
-        } else {
-            Display.status("Not Available!", 500);
-        }
         break;
     case tvKey.KEY_YELLOW:
-        hideScroll();
-        if (!Main.block_fav && API.XML_URL.indexOf("Open") < 0) {
-            if (API.favorites.length < 2 && !Main.FAV) {
-                Main.FAV = true;
-                Main.openCommonFile(Main.fav_url);
-            } else {
-                if (API.favorites.length > 1) {
-                    Main.FAV = true;
-                    // removed : Main.showFavSelector();
-                    alert("[[[[[[[[[[[[[[FAV]]]]]]]]]]]]]]]");
-                }
-            }
-        } else {
-            Display.status("Not Available!", 500);
-        }
         break;
     case tvKey.KEY_BLUE:
         if (Main.FAV && !Main.block_fav) {
@@ -2516,7 +1945,6 @@ KeyHandler.MainMenuKeyDown = function () {
             if (T.delta > 5) {
                 T.delta = 0;
             }
-            // removed : YandexGetUrl(GetYindex());
         } else {
             ListNextPage();
         }
@@ -2524,11 +1952,11 @@ KeyHandler.MainMenuKeyDown = function () {
     case tvKey.KEY_PAUSE:
         widgetAPI.blockNavigation(event);
         if (Player.total_time != 0) {
-            if (Player.state == Player.PAUSE_VOD) {
+            /*if (Player.state == Player.PAUSE_VOD) {
                 Player.resumeVideo();
             } else {
                 Player.pauseVideo();
-            }
+            }*/
         } else {
             if (Main.yandextv_mode) {
                 c = (Main.region != "") ? Main.region : API.CODE;
@@ -2536,19 +1964,6 @@ KeyHandler.MainMenuKeyDown = function () {
 				+ "</font> : <font style='font-size:16px;color:white;'>index - </font><font style='font-size:16px;color:cyan;'>"
 				+ Main.ch_index
 				+ "</font> :";
-                Main.Ya_flag_step++;
-                // removed : YandexGetUrl(GetYindex());
-            } else {
-                if (API.XML_URL.indexOf("start.xml") == 0) {
-                    if (Main.ya_auto && !Main.ya_base_info) {
-                        GetYaBaseInfo();
-                    } else {
-                        if (!Main.ya_base_info) {
-                            Display.status("creating Yandex EPG from database");
-                        }
-                        // removed : setTimeout(function() { GetYandexBase(); }, 500);
-                    }
-                }
             }
         }
         break;
@@ -2559,7 +1974,6 @@ KeyHandler.MainMenuKeyDown = function () {
             if (T.delta < -6) {
                 T.delta = 0;
             }
-            // removed : YandexGetUrl(GetYindex());
         } else {
             ListPrevPage();
         }
@@ -2567,68 +1981,58 @@ KeyHandler.MainMenuKeyDown = function () {
     case 68:
         ;
     case 1078:
-        Scrol("allInfo", 20);
         scrollDown();
         break;
     case 65:
         ;
     case 1080:
-        Scrol("allInfo", -20);
         scrollUp();
         break;
     case tvKey.KEY_PLAY:
         widgetAPI.blockNavigation(event);
-        if (Player.state == Player.PAUSE_VOD) {
-            Player.resumeVideo();
-        } else {
-            if (Main.yandextv_mode) {
-                if (!Main.ya_all_day) {
-                    Main.ya_all_day = true;
-                } else {
-                    Main.ya_all_day = false;
-                }
-                // removed : YandexGetUrl(GetYindex());
-            } else {
-                if (Player.state == Player.STOPPED) {
-                    Main.PlayChannel();
-                } else {
-                    if (Player.total_time != 0) {
-                        if (!Player.next && !Player.repeat) {
-                            Player.next = true;
-                            Display.status("Resume playback", 1000);
-                        } else {
-                            if (Player.next && !Player.repeat) {
-                                Player.repeat = true;
-                                Display.status("Repeat playback", 1000);
-                            } else {
-                                if (Player.next && Player.repeat) {
-                                    Player.next = false;
-                                    Player.repeat = false;
-                                    Display.status("All modes are disabled!", 1000);
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
+		if (Main.yandextv_mode) {
+			if (!Main.ya_all_day) {
+				Main.ya_all_day = true;
+			} else {
+				Main.ya_all_day = false;
+			}
+		} else {
+			if (Player.state == Player.STOPPED) {
+				Main.PlayChannel();
+			} else {
+				if (Player.total_time != 0) {
+					if (!Player.next && !Player.repeat) {
+						Player.next = true;
+						Display.status("Resume playback", 1000);
+					} else {
+						if (Player.next && !Player.repeat) {
+							Player.repeat = true;
+							Display.status("Repeat playback", 1000);
+						} else {
+							if (Player.next && Player.repeat) {
+								Player.next = false;
+								Player.repeat = false;
+								Display.status("All modes are disabled!", 1000);
+							}
+						}
+					}
+				}
+			}
+		}
         break;
     case tvKey.KEY_STOP:
         widgetAPI.blockNavigation(event);
-        showImageSet();
         if (Main.FAV) {
             if (Player.state != Player.STOPPED) {
                 Player.stopV();
             }
-            setTimeout(function() { getIdn('main'); }, 100);
-            // removed Main.LoadTimer(function() { ChannelSetupFormular(); }, 600);
+            setTimeout(function() { getIdAndHide('main'); }, 100);
         } else {
             if (!Main.help_info) {
                 if (Player.state != Player.STOPPED) {
                     Player.stopV();
                 }
-                setTimeout(function() { getIdn('main'); }, 100);
-                // removed : Main.LoadTimer(function() { SearchFormular(); }, 600);
+                setTimeout(function() { getIdAndHide('main'); }, 100);
             } else {
                 if (Player.state != Player.STOPPED) {
                     Player.ReturnMenu();
@@ -2637,15 +2041,12 @@ KeyHandler.MainMenuKeyDown = function () {
         }
         break;
     case 1249:
-        ;
     case 192:
         widgetAPI.blockNavigation(event);
         Display.status("MAC = " + Main.MAC, 5000);
         break;
     case 1236:
-        ;
     case 1089:
-        ;
     case tvKey.KEY_SUBTITLE:
         Player.SEFSetNextAudioStream();
         break;
@@ -2658,11 +2059,8 @@ KeyHandler.LoadingPlayerKeyDown = function () {
     KeyHandler.Keys10(i);
     switch (i) {
     case tvKey.KEY_UP:
-        ;
     case 105:
-        ;
     case 68:
-        ;
     case 1078:
         if (!Main.loading_pl) {
             Main.block_info = true;
@@ -2671,11 +2069,8 @@ KeyHandler.LoadingPlayerKeyDown = function () {
         }
         break;
     case tvKey.KEY_DOWN:
-        ;
     case 106:
-        ;
     case 65:
-        ;
     case 1080:
         if (!Main.loading_pl) {
             Main.block_info = true;
@@ -2684,7 +2079,6 @@ KeyHandler.LoadingPlayerKeyDown = function () {
         }
         break;
     case 78:
-        ;
     case 259:
         if (!Main.loading_pl) {
             Main.PlayPrevChannel();
@@ -2720,7 +2114,6 @@ KeyHandler.LivePlayerKeyDown = function () {
     KeyHandler.Keys10(i);
     switch (i) {
     case 1086:
-        ;
     case 84:
         if (Player.size == 5) {
             if (Main.SetZoom) {
@@ -2732,9 +2125,7 @@ KeyHandler.LivePlayerKeyDown = function () {
         }
         break;
     case 1057:
-        ;
     case 256:
-        ;
     case tvKey.KEY_GUIDE:
         widgetAPI.blockNavigation(event);
         if (Main.yandextv_mode) {
@@ -2750,9 +2141,7 @@ KeyHandler.LivePlayerKeyDown = function () {
         }
         break;
     case 1118:
-        ;
     case tvKey.KEY_PANEL_MENU:
-        ;
     case tvKey.KEY_MENU:
         widgetAPI.blockNavigation(event);
         ShowMenuTV();
@@ -2776,16 +2165,12 @@ KeyHandler.LivePlayerKeyDown = function () {
         pluginAPI.ShowTools(1);
         break;
     case 78:
-        ;
     case 259:
         Main.PlayPrevChannel();
         break;
     case tvKey.KEY_BLUE:
-        ;
     case 653:
-        ;
     case 1249:
-        ;
     case 1083:
         widgetAPI.blockNavigation(event);
         if (Main.PlayerMode == "1") {
@@ -2811,11 +2196,8 @@ KeyHandler.LivePlayerKeyDown = function () {
         }
         break;
     case tvKey.KEY_UP:
-        ;
     case 105:
-        ;
     case 68:
-        ;
     case 1078:
         if (Main.SetZoom) {
             if (Player.Ph < 150) {
@@ -2829,11 +2211,8 @@ KeyHandler.LivePlayerKeyDown = function () {
         }
         break;
     case tvKey.KEY_DOWN:
-        ;
     case 106:
-        ;
     case 65:
-        ;
     case 1080:
         if (Main.SetZoom) {
             if (Player.Ph > 50) {
@@ -2867,7 +2246,6 @@ KeyHandler.LivePlayerKeyDown = function () {
         }
         break;
     case tvKey.KEY_INFO:
-        ;
     case tvKey.KEY_ENTER:
         if (KeyHandler.NumberEntered != "") {
             clearTimeout(this.ChSelectorTimeout);
@@ -2880,11 +2258,8 @@ KeyHandler.LivePlayerKeyDown = function () {
         }
         break;
     case 612:
-        ;
     case 309:
-        ;
     case tvKey.KEY_STOP:
-        ;
     case tvKey.KEY_EXIT:
         widgetAPI.blockNavigation(event);
         if (Main.PlayerMode == "0") {
@@ -2904,21 +2279,11 @@ KeyHandler.LivePlayerKeyDown = function () {
         Main.Menu();
         break;
     case tvKey.KEY_PLAY:
-        if (Main.Foto) {
-            if (Main.SlideShowInterval == null) {
-                Main.SlideShowInterval = setInterval(function() { StartSlideShow(); }, 8000);
-                Display.status("Start SlideShow", 0);
-            } else {
-                Display.status("Stop SlideShow", 500);
-                StopSlideShow();
-            }
-        } else {
-            if (Main.PlayerMode == "1") {
-                Player.play(Player.url, 0);
-            } else {
-                Display.status("Not Available!", 500);
-            }
-        }
+		if (Main.PlayerMode == "1") {
+			Player.play(Player.url, 0);
+		} else {
+			Display.status("Not Available!", 500);
+		}
         break;
     case tvKey.KEY_FF:
         widgetAPI.blockNavigation(event);
@@ -2957,283 +2322,21 @@ KeyHandler.LivePlayerKeyDown = function () {
         break;
     case 192:
         if (this.black_line) {
-            getIdn("black_line_top");
+            getIdAndHide("black_line_top");
             this.black_line = false;
         } else {
-            getIdb("black_line_top");
+            getIdAndShow("black_line_top");
             this.black_line = true;
         }
         break;
     case 650:
-        ;
     case 1089:
-        ;
     case tvKey.KEY_SUBTITLE:
         if (Main.PlayerMode == "1") {
             Player.SEFSetNextAudioStream();
         } else {
             Display.status("Not Available!", 500);
         }
-        break;
-    default:
-        break
-    }
-};
-KeyHandler.VODPlayerKeyDown = function () {
-    var i = event.keyCode;
-    switch (i) {
-    case tvKey.KEY_0:
-        Player.PercentJump(0);
-        Display.status("0%");
-        break;
-    case tvKey.KEY_1:
-        Player.PercentJump(1);
-        break;
-    case tvKey.KEY_2:
-        Player.PercentJump(2);
-        break;
-    case tvKey.KEY_3:
-        Player.PercentJump(3);
-        break;
-    case tvKey.KEY_4:
-        Player.PercentJump(4);
-        break;
-    case tvKey.KEY_5:
-        Player.PercentJump(5);
-        break;
-    case tvKey.KEY_6:
-        Player.PercentJump(6);
-        break;
-    case tvKey.KEY_7:
-        Player.PercentJump(7);
-        break;
-    case tvKey.KEY_8:
-        Player.PercentJump(8);
-        break;
-    case tvKey.KEY_9:
-        Player.PercentJump(9);
-        break;
-    case 1086:
-        ;
-    case 84:
-        if (Player.size == 5) {
-            if (Main.SetZoom) {
-                Main.SetZoom = false;
-            } else {
-                Main.SetZoom = true;
-                Display.status("<table><tr><td><img src=\"img/buttons/move_m.png\"></img></td><td>- Set Zoom</td></tr></table>", 0);
-            }
-        }
-        break;
-    case 78:
-        ;
-    case 259:
-        Main.PlayPrevChannel();
-        break;
-    case 105:
-        ;
-    case 68:
-        ;
-    case 1078:
-        Main.block_info = true;
-        Main.selectNextChannel();
-        setTimeout(function(){ Main.PlayChannel(); }, 20);
-        break;
-    case 106:
-        ;
-    case 65:
-        ;
-    case 1080:
-        Main.block_info = true;
-        Main.selectPrevChannel();
-        setTimeout(function(){ Main.PlayChannel(); }, 20);
-        break;
-    case tvKey.KEY_TOOLS:
-        if (Main.serieC) {
-            widgetAPI.blockNavigation(event);
-        }
-        break;
-    case tvKey.KEY_INFO:
-        Display.showplayer();
-        break;
-    case 1118:
-        ;
-    case tvKey.KEY_PANEL_MENU:
-        ;
-    case tvKey.KEY_MENU:
-        widgetAPI.blockNavigation(event);
-        ShowMenuTV();
-        break;
-    case tvKey.KEY_UP:
-        if (Main.SetZoom) {
-            if (Player.Ph > 50) {
-                Player.Ph++;
-                Player.setSize(Player.size, 1, 0);
-            }
-        } else {
-            Player.MinutesJump(2);
-        }
-        break;
-    case tvKey.KEY_DOWN:
-        if (Main.SetZoom) {
-            if (Player.Ph > 50) {
-                Player.Ph--;
-                Player.setSize(Player.size, 1, 0);
-            }
-        } else {
-            Player.MinutesJump(-2);
-        }
-        break;
-    case tvKey.KEY_LEFT:
-        if (Main.SetZoom) {
-            if (Player.Pw > 50) {
-                Player.Pw--;
-                Player.setSize(Player.size, 1, 0);
-            }
-        } else {
-            SetVolume(1);
-        }
-        break;
-    case tvKey.KEY_RIGHT:
-        if (Main.SetZoom) {
-            if (Player.Pw < 150) {
-                Player.Pw++;
-                Player.setSize(Player.size, 1, 0);
-            }
-        } else {
-            SetVolume(0);
-        }
-        break;
-    case tvKey.KEY_BLUE:
-        ;
-    case 653:
-        ;
-    case 1249:
-        ;
-    case 1083:
-        widgetAPI.blockNavigation(event);
-        if (Main.PlayerMode == "1") {
-            if (Player.size >= 6) {
-                Player.setSize(0, 1, 0);
-            } else {
-                Player.setSize(Player.size + 1, 1, 0);
-            }
-            Main.SetZoom = false;
-        } else {
-            Display.status("Not Available!", 500);
-        }
-        break;
-    case tvKey.KEY_ENTER:
-        if (Player.save_time != 0) {
-            Player.PlaySaveTime();
-        } else {
-            if (Player.state == Player.PAUSE_VOD) {
-                Player.resumeVideo();
-            } else {
-                Player.pauseVideo();
-            }
-        }
-        break;
-    case tvKey.KEY_RETURN:
-        widgetAPI.blockNavigation(event);
-        if (Player.total_time == 0) {
-            Player.stopV();
-        }
-        Main.Menu();
-        break;
-    case 612:
-        ;
-    case 309:
-        ;
-    case tvKey.KEY_STOP:
-        ;
-    case tvKey.KEY_EXIT:
-        widgetAPI.blockNavigation(event);
-        Player.ReturnMenu();
-        break;
-    case tvKey.KEY_RED:
-        if (Main.url_arr.length > 1) {
-            // removed : Main.showSiseSelector();
-            Main.LoadTimer(function() {
-				// removed: getIdn('selectbox');
-				getIdb('rightHalf');
-				KeyHandler.setFocus(3);
-			}, 20000);
-        } else {
-            Display.status("Not Available!", 500);
-        }
-        break;
-    case tvKey.KEY_GREEN:
-        if (Main.hardware_type == 0 || Main.hardware_type == 1) {
-            Main.registVOLTVKey();
-            pluginAPI.ShowTools(0);
-        } else {
-            Player.SEFSetNextAudioStream();
-        }
-        break;
-    case tvKey.KEY_YELLOW:
-        Main.registVOLTVKey();
-        pluginAPI.ShowTools(1);
-        break;
-    case 1219:
-        if (Player.get3DMode() >= 2) {
-            Player.change3DMode(0);
-        } else {
-            Player.change3DMode(Player.get3DMode() + 1);
-        }
-        break;
-    case tvKey.KEY_FF:
-        widgetAPI.blockNavigation(event);
-        Player.MinutesJump(0.5);
-        break;
-    case tvKey.KEY_PAUSE:
-        widgetAPI.blockNavigation(event);
-        if (Player.state == Player.PAUSE_VOD) {
-            Player.resumeVideo();
-        } else {
-            Player.pauseVideo();
-        }
-        break;
-    case tvKey.KEY_RW:
-        widgetAPI.blockNavigation(event);
-        Player.MinutesJump(-0.5);
-        break;
-    case 192:
-        if (this.black_line) {
-            getIdn("black_line_top");
-            this.black_line = false;
-        } else {
-            getIdb("black_line_top");
-            this.black_line = true;
-        }
-        break;
-    case tvKey.KEY_PLAY:
-        if (Player.state == Player.PAUSE_VOD) {
-            Player.resumeVideo();
-        } else {
-            if (!Player.next && !Player.repeat) {
-                Player.next = true;
-                Display.status("Continuous playback", 1000);
-            } else {
-                if (Player.next && !Player.repeat) {
-                    Player.repeat = true;
-                    Display.status("Repeat playback", 1000);
-                } else {
-                    if (Player.next && Player.repeat) {
-                        Player.next = false;
-                        Player.repeat = false;
-                        Display.status("All modes are disabled!", 1000);
-                    }
-                }
-            }
-        }
-        break;
-    case 655:
-        ;
-    case 1089:
-        ;
-    case tvKey.KEY_SUBTITLE:
-        Player.SEFSetNextAudioStream();
         break;
     default:
         break
@@ -3255,8 +2358,6 @@ var Player = {
     STOPPED: 0,
     LOADING: 1,
     PLAYING_LIVE: 2,
-    PLAYING_VOD: 3,
-    PAUSE_VOD: 4,
     statusmessage: "",
     total_time: 0,
     cur_time: 0,
@@ -3265,16 +2366,11 @@ var Player = {
     next: false,
     repeat: false,
     jump: false,
-    long_pause: false,
     mode3D: 0,
     status3D: "",
     tnum: 0,
     url: "",
-    h_url: "",
-    serr: 0,
-    eerr: "",
-    ch: false,
-    ch_t: 0
+    serr: 0
 };
 
 Player.init = function () {
@@ -3325,13 +2421,7 @@ Player.change3DMode = function (i) {
                 this.status3D = "TOP - BOTTOM";
                 break
             };
-            if (Main.seriesC) {
-                if (this.Screen3Dplugin.Check3DEffectMode(i) == 1) {
-                    this.Screen3Dplugin.Set3DEffectMode(i);
-                }
-            } else {
-                Player.play(Player.url, 0);
-            }
+            Player.play(Player.url, 0);
         }
     }
 };
@@ -3354,7 +2444,7 @@ Player.OnRenderError = function (i) {
 
 Player.error = function (i) {
     if (this.state != this.STOPPED && i >= 1) {
-        this.eerr = (i == 1)
+        var eerr = (i == 1)
 			? "Unsupported container"
 			: (i == 2)
 				? "Unsupported video codec"
@@ -3372,15 +2462,15 @@ Player.error = function (i) {
 										? "Disconnected network"
 										: (i == 9)
 											? "Connection failed"
-											: this.eerr;
+											: eerr;
         if (i < 7 && this.serr < 3) {
             this.serr++;
             if (i < 3 && i != 6) {
                 Player.play(this.url, 0);
             }
         } else {
-            if (this.eerr != "") {
-                Display.status(Player.eerr);
+            if (eerr != "") {
+                Display.status(eerr);
                 setTimeout(function() { Player.ReturnMenu(); }, 500);
             }
         }
@@ -3401,7 +2491,7 @@ Player.AutoReStart = function () {
 Player.OnBufferingStart = function () {
     if (this.state != this.STOPPED) {
         Player.AutoReStart();
-        if (!this.jump && !Main.Foto) {
+        if (!this.jump) {
             Display.status("Buffer : 1%");
         }
     }
@@ -3409,7 +2499,7 @@ Player.OnBufferingStart = function () {
 
 Player.OnBufferingProgress = function (i) {
     if (this.state != this.STOPPED) {
-        if (!this.jump && !Main.Foto) {
+        if (!this.jump) {
             Display.status("Buffer : " + i + "%", 5000);
         }
     }
@@ -3426,20 +2516,13 @@ Player.OnBufferingComplete = function () {
             } catch (a) {
                 this.total_time = 0;
             }
-            if (this.total_time > 0 && this.url.indexOf("mms://") != 0 && this.url.indexOf(".m3u8") == -1 || this.url.indexOf(".mp3") > 0) {
-                this.state = this.PLAYING_VOD;
-                KeyHandler.setFocus(3);
-                this.h_url = "vod_history.dat";
-            } else {
-                this.state = this.PLAYING_LIVE;
-                KeyHandler.setFocus(2);
-                this.h_url = "live_history.dat";
-            }
+
+			this.state = this.PLAYING_LIVE;
+			KeyHandler.setFocus(2);
+			
             Player.GetResolution();
             setTimeout(function() { Player.GetVideoSize(); }, 1000);
-            if (!Main.Foto) {
-                Player.GetAudioNum();
-            }
+			Player.GetAudioNum();
             if (this.status3D != "") {
                 Player.message = this.status3D;
             }
@@ -3447,11 +2530,9 @@ Player.OnBufferingComplete = function () {
                 Player.message += "<tr><table><tr><td><img src=\"img/buttons/red_m.png\"></img></td><td>- Set Quality</td></tr></table></tr>";
             }
             Main.LoadTimer(function() {
-				if(Player.message != "")
+				if (Player.message != "") {
 					Display.status("<table>" + Player.message + "</table>", 6000);
-				Main.saveHistory(Player.h_url);
-				if(Player.state == Player.PLAYING_VOD)
-					Player.getSaveTime();
+				}
 			}, 2000);
             setTimeout(function() { Player.message = ""; }, 3000);
             Display.loadinghide();
@@ -3495,7 +2576,6 @@ Player.deinit = function () {
 Player.stop = function () {
     clearTimeout(this.buffering_timer);
     this.message = "";
-    this.eerr = "";
     this.w = 0;
     this.h = 0;
     this.Pw = parseInt(API.Pw);
@@ -3505,9 +2585,7 @@ Player.stop = function () {
     this.total_time = 0;
     this.cur_time = 0;
     this.save_time = 0;
-    this.ch = false;
     this.jump = false;
-    this.long_pause = false;
     if (this.state != this.STOPPED) {
         this.state = this.STOPPED;
         Player.SaveUrl();
@@ -3520,12 +2598,9 @@ Player.stop = function () {
 Player.stopV = function () {
     Player.stop();
     this.repeat = false;
-    this.ch_t = 0;
     this.mode3D = 0;
     this.status3D = "";
-    // removed : Selectbox.url_selected = 0;
     Main.ya_epg_info_arr = [];
-    StopSlideShow();
     Display.loadinghide();
     Display.hideplayer();
     Display.hidestatus();
@@ -3536,9 +2611,7 @@ Player.play = function (i, o) {
     Player.stop();
     Player.state = Player.LOADING;
     KeyHandler.setFocus(1);
-    if (!Main.Foto) {
-        Display.loadingshow();
-    }
+	Display.loadingshow();
 	this.SEFPlay(this.url, o);
 };
 
@@ -3556,44 +2629,6 @@ Player.SaveUrl = function () {
             }
         }
         Main.writeFile(i, "url.dat");
-    }
-};
-
-Player.getSaveTime = function () {
-    if (this.state == this.PLAYING_VOD && this.url.indexOf("video/x-flv") < 0 && this.url.indexOf(".flv") < 0) {
-        if (this.ch_t > 0 && this.ch) {
-            this.save_time = this.ch_t;
-            Main.LoadTimer(function() { Display.status(" Resume ?", 5000); }, 7000);
-            setTimeout(function() { Player.save_time = 0; }, 15000);
-        } else {
-            var o = [];
-            Main.readFile(o, "url.dat");
-            for (var p = 0; p < o.length; p++) {
-                if (o[p].indexOf(this.url) == 0) {
-                    var i = o[p];
-                    i = i.split("|");
-                    this.save_time = i[1];
-                    Main.LoadTimer(function() { Display.status(" Resume ?", 5000); }, 7000);
-                    setTimeout(function() { Player.save_time = 0; }, 20000);
-                    break;
-                }
-            }
-        }
-    }
-};
-
-Player.PlaySaveTime = function () {
-    if (this.state == this.PLAYING_VOD) {
-        var i = (this.save_time - this.cur_time) / 1000;
-        this.statusmessage = "resume!";
-        if (i > 0 && !this.jump) {
-            Player.JumpForward(i - 3);
-        }
-        Player.save_time = 0;
-        Player.BufferingTimer(function() {
-			Display.status("resume failed!", 2000);
-			Player.play(Player.url, 0);
-		}, 10000);
     }
 };
 
@@ -3644,7 +2679,7 @@ Player.GetVideoSize = function () {
         if (this.w == 0 || this.w == "") {
             Player.GetResolution();
         }
-        if (Player.mode3D == 0 && !Main.Foto) {
+        if (Player.mode3D == 0) {
             Player.size = (Main.ssize != "") ? parseInt(Main.ssize) : (API.Size != "") ? parseInt(API.Size) : parseInt(this.size);
         } else {
             Player.size = 0;
@@ -3656,7 +2691,7 @@ Player.GetVideoSize = function () {
 };
 
 Player.setSize = function (p, o, i) {
-    if (this.state != this.STOPPED && this.state != this.PAUSE_VOD) {
+    if (this.state != this.STOPPED) {
         var q = this.w;
         var l = this.h;
         if (o > 0) {
@@ -3824,101 +2859,12 @@ Player.setSize = function (p, o, i) {
         if ((o == 1 || (this.size == 6 && o == 0)) && i == 1) {
             Player.message = "<tr><table><tr><td><img src=\"img/buttons/blue_m.png\"></img></td><td>- " + j + "</td></tr></table></tr>" + Player.message;
         } else {
-            if ((o > 0 || (this.size == 6 && o == 0 && i == 0)) && !Main.Foto) {
+            if ((o > 0 || (this.size == 6 && o == 0 && i == 0))) {
                 Display.status(j);
             }
         }
 		this.SefPlugin.Execute("SetDisplayArea", z, G, E, R);
 		this.SefPlugin.Execute("SetCropArea", D, u, s, y);
-    }
-};
-
-Player.JumpForward = function (i) {
-    if (this.state == this.PLAYING_VOD) {
-        Display.status(this.statusmessage, 2000);
-        this.jump = true;
-		this.SefPlugin.Execute("JumpForward", i);
-        this.statusmessage = "";
-    }
-};
-
-Player.JumpBackward = function (o) {
-    if (this.state == this.PLAYING_VOD) {
-        if (o > 3) {
-            Display.status(this.statusmessage, 2000);
-        }
-        this.jump = true;
-		if (this.url.indexOf(".mp3") > 0) {
-			var i = (this.cur_time / 1000) - o;
-			Player.play(this.url, i);
-		} else {
-			this.SefPlugin.Execute("JumpBackward", o);
-		}
-        this.statusmessage = "";
-    }
-};
-
-Player.MinutesJump = function (q) {
-    if (this.state == this.PLAYING_VOD && !this.jump) {
-        var o = this.cur_time / 60000 * -1;
-        var i = this.delta_time / 60000;
-        this.statusmessage = q + " min.";
-        var p = "";
-        if (q >= 0) {
-            this.statusmessage = "+" + this.statusmessage;
-            if (q < i) {
-                Player.JumpForward(q * 60);
-            } else {
-                this.delta_time = 0;
-                Player.TestTime();
-            }
-        } else {
-            if (q > o) {
-                Player.JumpBackward(q * 60 * -1);
-            } else {
-                this.delta_time = 0;
-                Player.TestTime();
-            }
-        }
-    }
-};
-
-Player.PercentJump = function (o) {
-    if (this.state == this.PLAYING_VOD && !this.jump) {
-        this.statusmessage = o * 10 + "%";
-        var i = (this.total_time * o / 10 - this.cur_time) / 1000;
-        if (i > 0) {
-            Player.JumpForward(i);
-        } else {
-            if (i < 0) {
-                Player.JumpBackward(i * -1);
-            }
-        }
-    }
-};
-
-Player.resumeVideo = function () {
-    if (this.state == this.PAUSE_VOD) {
-        Display.status(" > > > ", 500);
-		this.SefPlugin.Execute("Resume");
-        this.state = this.PLAYING_VOD;
-        if (this.url.indexOf("http://") >= 0 && Player.long_pause) {
-            setTimeout(function() { Player.MinutesJump(-0.05); }, 100);
-        }
-        Display.hideplayer();
-        clearTimeout(this.buffering_timer);
-        this.long_pause = false;
-    }
-};
-
-Player.pauseVideo = function () {
-    if (this.state == this.PLAYING_VOD) {
-		this.SefPlugin.Execute("Pause");
-        this.state = this.PAUSE_VOD;
-        Display.showplayer();
-        Display.status("Pause", 0);
-        Player.SaveUrl();
-        Player.BufferingTimer(function() { Player.long_pause = true; }, 30000);
     }
 };
 
@@ -4004,22 +2950,18 @@ Player.SefOnEvent = function (i, o) {
 
 Player.SEFSetNextAudioStream = function () {
     if (this.state != this.STOPPED) {
-        if (!this.Sef) {
-            Display.status("Function is Not available!", 500);
-        } else {
-            if (this.tnum < 2) {
-                Display.status("Only one sound track!", 500);
-            } else {
-                var i = this.SefPlugin.Execute("GetCurrentStreamID", 1);
-                if (i >= 0) {
-                    i++;
-                    if (i > (this.tnum - 1)) {
-                        i = 0;
-                    }
-                    Player.SetAudioStream(i, 1);
-                }
-            }
-        }
+		if (this.tnum < 2) {
+			Display.status("Only one sound track!", 500);
+		} else {
+			var i = this.SefPlugin.Execute("GetCurrentStreamID", 1);
+			if (i >= 0) {
+				i++;
+				if (i > (this.tnum - 1)) {
+					i = 0;
+				}
+				Player.SetAudioStream(i, 1);
+			}
+		}
     }
 };
 
@@ -4056,9 +2998,9 @@ Player.SetAudioStream = function (q, o) {
         this.SefPlugin.Execute("SetStreamID", 1, q);
         var i = this.SefPlugin.Execute("GetStreamLanguageInfo", 1, q);
         var p = Player.LangCodes[i];
-        p = (p == null) ? "Unknown" : p;
+        p = (p == null) ? 'Unknown (' + i + ')' : p;
         if (o > 0) {
-            Display.status(p.toString() + " audio track \u2116" + (q + 1).toString());
+            Display.status(p.toString() + ' audio track \u2116' + (q + 1).toString());
         } else {
             Player.message += "<tr><td>" + p.toString() + " audio track \u2116" + (q + 1).toString() + "</td></tr>";
         }
@@ -4068,33 +3010,22 @@ Player.SetAudioStream = function (q, o) {
 };
 
 Player.GetAudioNum = function () {
-    if (this.Sef) {
-        try {
-            this.tnum = this.SefPlugin.Execute("GetTotalNumOfStreamID", 1);
-        } catch (a) {
-            this.tnum = 0;
-        }
-        if (this.tnum > 1) {
-            if (Main.a_num != "") {
-                Player.SetAudioStream((parseInt(Main.a_num) - 1), 0);
-            } else {
-                if (Main.hardware_type == 2) {
-                    Player.message += "<tr><table><tr><td><img src=\"img/buttons/green_m.png\"></img></td><td> - Change audio track</td></tr></table></tr>";
-                } else {
-                    Player.message += "<tr><td><img src=\"img/buttons/green_m.png\"></img> or \"AD/SUBT\" - Change audio track</td></tr>";
-                }
-            }
-        }
-    }
-};
-
-Scrol = function (o, i) {
-    Main.scrolling = Main.scrolling + i;
-    if (Main.scrolling == 0 || Main.scrolling < 0) {
-        getId(o).style.margin = Main.scrolling + "px 0px 0px 0px ";
-    } else {
-        Main.scrolling = 0;
-    }
+	try {
+		this.tnum = this.SefPlugin.Execute("GetTotalNumOfStreamID", 1);
+	} catch (a) {
+		this.tnum = 0;
+	}
+	if (this.tnum > 1) {
+		if (Main.a_num != "") {
+			Player.SetAudioStream((parseInt(Main.a_num) - 1), 0);
+		} else {
+			if (Main.hardware_type == 2) {
+				Player.message += "<tr><table><tr><td><img src=\"img/buttons/green_m.png\"></img></td><td> - Change audio track</td></tr></table></tr>";
+			} else {
+				Player.message += "<tr><td><img src=\"img/buttons/green_m.png\"></img> or \"AD/SUBT\" - Change audio track</td></tr>";
+			}
+		}
+	}
 };
 
 ime_callback = function () {};
@@ -4138,62 +3069,12 @@ var STimemode = {
     2: "manual"
 };
 
-SetString = function (p, o, i) {
-    if (o == "") {
-        o = " ";
-    }
-    widgetAPI.putInnerHTML(getId(p), o);
-    getId(p).value = o;
-    if (i == 1) {
-        SetStyle1(p);
-    } else {
-        if (i == 2) {
-            SetStyle1(p);
-            getId(p).style.width = "52px";
-        } else {
-            if (i == 3) {
-                SetStyle1(p);
-                getId(p).style.width = "120px";
-            }
-        }
-    }
-};
-
-SetStyle1 = function (i) {
-    getId(i).style.color = "black";
-    getId(i).style.background = "#999999";
-    getId(i).style.border = "2px solid #ffffff";
-};
-
-SetStyle2 = function (i) {
-    getId(i).style.color = "blue";
-    getId(i).style.background = "#eeeeee";
-    getId(i).style.border = "2px solid #999999";
-};
-
-function setGen() {
-    var i = [];
-    if (Main.writeGenUrlAndTime) {
-        i = [API.GenUrl, API.GenT];
-        Main.writeFile(i, "01" + API.fn);
-    } else {
-        Main.readFile(i, "01" + API.fn);
-        if (i.length > 0) {
-            API.GenUrl = i[0];
-            API.GenT = i[1];
-        }
-    }
-    if (dPr(API.GenUrl) != "" && dPr(API.GenT) != "") {
-        AGen();
-    }
-}
-
 /**
  * Set the element with the specified id display style to 'block'
  * @param {string} i The element id
  * @return {Object}
  */
-function getIdb(i) {
+function getIdAndShow(i) {
     try {
         return getId(i).style.display = "block";
     } catch (b) {
@@ -4206,7 +3087,7 @@ function getIdb(i) {
  * @param {string} i The element id
  * @return {Object}
  */
-function getIdn(i) {
+function getIdAndHide(i) {
     try {
         return getId(i).style.display = "none";
     } catch (b) {
@@ -4228,34 +3109,8 @@ function getId(i) {
 }
 
 /**
- * Get all elements with the specified tag name
- * @param {string} i The elements tag name
- * @return {Object} The document elements
- */
-function getTN(i) {
-    try {
-        return document.getElementsByTagName(i);
-    } catch (b) {
-        return "";
-    }
-}
-
-/**
- * Get all elements with the specified class name
- * @param {string} i The elements class name
- * @return {Object} The document elements
- */
-function getCl(i) {
-    try {
-        return document.getElementsByClassName(i);
-    } catch (b) {
-        return "";
-    }
-}
-
-/**
- * Get API channel
- * @param {number} i Channel info number (0 - name, 1 - url, 2 - logo, ...)
+ * Get API channel (filled by API.getChannel_list)
+ * @param {number} i Channel info number (0 - name, 1 - url, 2 - logo, 3 - channelCode, 4 - ?, 5 - ? , 6 - channelAspectRatio, 7 - channelAudioTrack, 8 - channelCache, 9 - '', 10 - channelTimeShift, ...)
  * @return
  */
 function GetChannelInfo(i) {
@@ -4276,22 +3131,13 @@ function dI(o) {
     return i;
 }
 
-/**
- * Remove '/>' or '>' (close tag's) from string
- * @param {string} o
- * @return {string}
- */
-function dTg(o) {
-    var i = (typeof o == "string" && o != "") ? o.replace(/<\/?[^>]+>/g, "") : "";
-    return i;
-}
 
 /**
  * Remove '\n', '\r' and '\t' (newlines, tabs) from string
  * @param {string} o
  * @return {string}
  */
-function dSp(o) {
+function deleteSpaces(o) {
     var i = (typeof o == "string" && o != "") ? o.replace(/[\n\r\t]/g, "") : "";
     return i;
 }
@@ -4317,10 +3163,6 @@ function dPr(o, p) {
     return i;
 }
 
-function xhrAbort() {
-    null != API.XHRObj && (API.XHRObj.abort(), API.XHRObj.destroy(), API.XHRObj = null);
-}
-
 function decodeURI(i) {
     for (var o = 0; i.indexOf("%") >= 0 && 10 > o; o++) {
         try {
@@ -4336,62 +3178,203 @@ function decodeURI(i) {
     return i;
 }
 
-function signa(i) {
-    i = i.replace("s=", "");
-    b = "signature=" + API.Request("http://185.25.119.98/php/youtubesign/youtube.php?sig=" + i);
-    return b;
+function GetChannelEgp(channelCode) {
+	/*EgpCache[channelCode] = {
+			programme:[
+				{
+					title:"LRT radijo \u017einios", start:"00:00", start_unix:1551218400, stop:"00:10", stop_unix:1551219000
+				},
+				{
+					title:"LRT radijo \u017einios", start:"00:00", start_unix:1551218400, stop:"00:10", stop_unix:1551219000
+				},
+				{
+					title:"LRT radijo \u017einios", start:"00:00", start_unix:1551218400, stop:"00:10", stop_unix:1551219000
+				},
+				{
+					title:"LRT radijo \u017einios", start:"00:00", start_unix:1551218400, stop:"00:10", stop_unix:1551219000
+				},
+				{
+					title:"LRT radijo double line double line double line", start:"00:00", start_unix:1551218400, stop:"00:10", stop_unix:1551219000
+				},
+				{
+					title:"LRT radijo \u017einios", start:"00:00", start_unix:1551218400, stop:"00:10", stop_unix:1551219000
+				},
+				{
+					title:"LRT radijo \u017einios", start:"00:00", start_unix:1551218400, stop:"00:10", stop_unix:1551219000
+				},
+				{
+					title:"LRT radijo \u017einios", start:"00:00", start_unix:1551218400, stop:"00:10", stop_unix:1551219000
+				},
+				{
+					title:"LRT radijo \u017einios", start:"00:00", start_unix:1551292598, stop:"00:10", stop_unix:1561292598
+				},
+				{
+					title:"LRT radijo \u017einios", start:"00:00", start_unix:1551218400, stop:"00:10", stop_unix:1551219000
+				},
+				{
+					title:"LRT radijo \u017einios", start:"00:00", start_unix:1551218400, stop:"00:10", stop_unix:1551219000
+				},
+				{
+					title:"LRT radijo \u017einios", start:"00:00", start_unix:1551218400, stop:"00:10", stop_unix:1551219000
+				},
+				{
+					title:"LRT radijo \u017einios", start:"00:00", start_unix:1551218400, stop:"00:10", stop_unix:1551219000
+				},
+				{
+					title:"LRT radijo \u017einios", start:"00:00", start_unix:1551218400, stop:"00:10", stop_unix:1551219000
+				},
+				{
+					title:"LRT radijo \u017einios", start:"00:00", start_unix:1551218400, stop:"00:10", stop_unix:1551219000
+				},
+				{
+					title:"LRT radijo \u017einios", start:"00:00", start_unix:1551218400, stop:"00:10", stop_unix:1551219000
+				},
+				{
+					title:"LRT radijo \u017einios", start:"00:00", start_unix:1551218400, stop:"00:10", stop_unix:1551219000
+				},
+				{
+					title:"LRT radijo \u017einios", start:"00:00", start_unix:1551218400, stop:"00:10", stop_unix:1551219000
+				}
+			]
+	};*/
+	if (EgpCache[channelCode] == null)
+	{
+		var now = new Date();
+		var day = now.getDate();
+		var month = now.getMonth() + 1;
+		var year = now.getFullYear();
+		var egpDate = (day > 9 ? day : ('0' + day)) + '-' + (month > 9 ? month : ('0' + month)) + '-' + year;
+		var url = 'https://www.tv24.lt/programme/listing/none/' + egpDate + '?filter=channel&subslug=' + channelCode;
+		//alert('EGP url: ' + url);
+		Main.showinfoList("Loading EPG...");
+		YaAbort();
+		Main.Ya_ready_timeout = setTimeout(function() { Err(); }, 3000);
+		Main.YaHTTP = new XMLHttpRequest();
+		Main.YaHTTP.onreadystatechange = function () {
+			if (Main.YaHTTP.readyState == 4 && Main.YaHTTP.status == 200) {
+				clearTimeout(Main.Ya_ready_timeout);
+				var responseText = Main.YaHTTP.responseText;
+				if (!Main.guide) {
+					alert('EGP (' + channelCode + ') from web');
+					var egp = JSON.parse(responseText);
+					EgpCache[channelCode] = egp.schedule;
+					ShowEgp(EgpCache[channelCode]);
+				}
+			}
+		}
+		Main.YaHTTP.open("GET", url, true);
+		Main.YaHTTP.setRequestHeader("User-Agent", "Opera/9.80 (Windows NT 5.1; U; ru) Presto/2.9.168 Version/11.51");
+		Main.YaHTTP.send(null);
+	} else {
+		//alert('EGP (' + channelCode + ') from cache');
+		ShowEgp(EgpCache[channelCode]);
+	}
 }
 
-function PsR(i, o, p) {
-    if (dPr(i) && void(0) !== o) {
-        if (o) {
-            var q = i.indexOf(o);
-        }; - 1 != q ? (i = i.substr(q + o.length), p && (q = i.indexOf(p), -1 != q && (i = i.substr(0, q)))) : i = "";
-    }
-    return i;
+function ShowEgp(schedule) {
+	Egp.length = schedule.programme.length;
+	
+	var egpList = '<ul id="egp-ul">';
+	for (var index = 0; index < schedule.programme.length; index++)
+	{
+		var program = schedule.programme[index];
+		var nowTime = new Date().getTime();
+		var startTime = program.start_unix * 1000;
+		var stopTime = program.stop_unix * 1000;
+		
+		var currentProgram = false;
+		if (startTime <= nowTime && nowTime <= stopTime)
+		{
+			currentProgram = true;
+		}
+		
+		var color = currentProgram ? '#ffcc00' : '#cccccc';
+		
+		egpList += '<li id="egp-' + index + '"';
+		if (currentProgram) {
+			egpList += ' class="current-program"';
+		}
+		egpList += '>';
+
+		egpList += '<font style="color:#00ccff;">' + program.start + '</font>';
+		egpList += '<font style="color:' + color + ';"> ' + program.title;
+		if (program.movie_id && (program.title_original || program.year || program.country))
+		{
+			egpList += ' (';
+			egpList += [program.title_original, program.year, program.country].filter(Boolean).join(', ');
+			egpList += ')';
+		}
+		else if (program.season || program.ep_nr)
+		{
+			egpList += ' (';
+			egpList += [program.season, program.ep_nr].filter(Boolean).join(', ');
+			egpList += ')';
+		}
+		egpList += '</font>';
+		egpList += '</li>';
+	}
+	
+	egpList += "</ul>";
+	Main.showinfoList(egpList);
+	ScrollEgpToCurrentProgram();
 }
 
-function EUROGetEPG(x) {
-    Main.showinfoList("Loading EPG...");
-    var i = "";
-    var j = "";
-    YaAbort();
-    Main.Ya_ready_timeout = setTimeout(function() { Err(); }, 3000);
-    Main.YaHTTP = new XMLHttpRequest();
-    Main.YaHTTP.onreadystatechange = function () {
-        if (Main.YaHTTP.readyState == 4 && Main.YaHTTP.status == 200) {
-            clearTimeout(Main.Ya_ready_timeout);
-            i = Main.YaHTTP.responseText;
-            if (!Main.guide) {
-                Main.showinfoList("Loaded!");
-                var Q = i.split("\x0A");
-                alert("J = " + Q[1]);
-                var bV = "<li><font style=\"color:#00ccff;\">";
-                var bG = "<li><font style=\"color:#ffcc00;\">";
-                var bW = "<li><font style=\"color:#ffeeee;\">";
-                var bF = "</font><font style=\"color:#CCCCCC;\">";
-                var bC = "</font></li>";
-                var bA;
-                var bJ = "<ul>";
-                var q = new Date();
-                var bx = addZero(q.getHours());
-                var bD = addZero(q.getMinutes());
-                for (bA = 0; bA < Q.length; bA++) {
-                    var bH = Q[bA].split("|");
-                    var bU = bH[0].split(" ");
-                    var bz = bU[0];
-                    var bB = bU[1];
-                    bJ += bV + bB + bF + "  " + bH[1] + bC;
-                }
-                bJ += "</ul>";
-                Main.showinfoList(bJ);
-            }
-        }
-    }
-    Main.YaHTTP.open("GET", x + j, true);
-    Main.YaHTTP.setRequestHeader("User-Agent", "Opera/9.80 (Windows NT 5.1; U; ru) Presto/2.9.168 Version/11.51");
-    Main.YaHTTP.send(null);
+function AlertInfo() {
+	alert('Egp.length:' + Egp.length + ', Egp.topId:' + Egp.topId);
 }
+
+function ScrollEgpToCurrentProgram() {
+	var elCurrentProgram = document.getElementsByClassName('current-program');
+	if (elCurrentProgram.length > 0)
+	{
+		Egp.topId = parseInt(elCurrentProgram[0].id.replace('egp-', ''));
+		Main.scrolling = elCurrentProgram[0].offsetTop;
+		var elEgp = document.getElementById('allInfo');
+		elEgp.style.margin = '-' + Main.scrolling + 'px 0px 0px 0px';
+		
+		var cursorPos = Math.abs(Egp.scrollTop + (Egp.scrollHeight*(Egp.topId/(Egp.length-1))));
+		document.getElementById('scroll_cursor').style.top = cursorPos + 'px';
+	} else {
+		document.getElementById('scroll_cursor').style.top = Egp.scrollTop + 'px';
+	}
+}
+
+function scrollUp() {
+	if (Egp.length - 1 <= Egp.topId)
+	{
+		return;
+	}
+	Egp.topId = Egp.topId + 1;
+	var elEgpProgram = document.getElementById('egp-' + Egp.topId);
+	Scrol(elEgpProgram.offsetTop);
+	
+	var cursorPos = Math.abs(Egp.scrollTop + (Egp.scrollHeight*(Egp.topId/(Egp.length-1))));
+	document.getElementById('scroll_cursor').style.top = cursorPos + 'px';
+}
+
+function scrollDown() {
+	if (Egp.topId <= 0)
+	{
+		return;
+	}
+	
+	Egp.topId = Egp.topId - 1;
+	var elEgpProgram = document.getElementById('egp-' + Egp.topId);
+	Scrol(elEgpProgram.offsetTop);
+	
+	var cursorPos = Math.abs(Egp.scrollTop + (Egp.scrollHeight*(Egp.topId/(Egp.length-1))));
+	document.getElementById('scroll_cursor').style.top = cursorPos + 'px';
+}
+
+// Scrolling egp (channel info)
+Scrol = function (i) {
+    Main.scrolling = -i;
+    if (Main.scrolling === 0 || Main.scrolling < 0) {
+        getId('allInfo').style.margin = Main.scrolling + "px 0px 0px 0px ";
+    } else {
+        Main.scrolling = 0;
+    }
+};
 
 function YaAbort() {
     clearTimeout(Main.Ya_ready_timeout);
@@ -4523,23 +3506,6 @@ function decLongUrl(i) {
     return i;
 }
 
-function showImage() {
-    var ci = document.getElementById("start_logo");
-    ci.style.backgroundImage = "url(http://neb0.no-ip.biz:8881/pic/IPTVxBG.jpg)";
-    ci.style.visibility = "visible"
-}
-
-function showImageSet() {
-    var ci = document.getElementById("start_logo");
-    ci.style.backgroundImage = "url(http://neb0.no-ip.biz:8881/pic/set-bg.jpg)";
-    ci.style.visibility = "visible";
-}
-
-function hideImage() {
-    var cb = document.getElementById("start_logo");
-    cb.style.visibility = "hidden";
-}
-
 function showScroll() {
     var ce = document.getElementById("scroll");
     var cd = document.getElementById("scroll_cursor");
@@ -4547,7 +3513,6 @@ function showScroll() {
     ce.style.visibility = "visible";
     cc.style.visibility = "visible";
     cd.style.visibility = "visible";
-    document.getElementById("scroll_cursor").style.top = "80px";
 }
 
 function hideScroll() {
@@ -4559,31 +3524,20 @@ function hideScroll() {
     cc.style.visibility = "hidden";
 }
 
-var xmlHttp = null;
-
 function showWeather() {
-    var weatherUrl = "http://nebo.ddns.net:8881/weather_new.php?city=" + API.Cityname;
-	alert("Request weather: " + weatherUrl);
-    xmlHttp = new XMLHttpRequest();
-    xmlHttp.onreadystatechange = ProcessWeatherResponse;
-    xmlHttp.open("GET", weatherUrl, true);
-    xmlHttp.send(null);
-    var cg = document.getElementById("widget_time");
-    cg.style.visibility = "visible";
+    var elTime = document.getElementById("widget_time");
+    elTime.style.visibility = "visible";
 }
 
 function hideWeather() {
-    var ch = document.getElementById("weather_icons");
-    ch.style.visibility = "hidden";
-    var cf = document.getElementById("temp");
-    cf.style.visibility = "hidden";
-    var cg = document.getElementById("widget_time");
-    cg.style.visibility = "hidden";
+    var elTemp = document.getElementById('temp');
+    elTemp.style.visibility = 'hidden';
+    var elTime = document.getElementById('widget_time');
+    elTime.style.visibility = 'hidden';
 }
 
 function showTemp() {
-    var temperatureUrl = "http://nebo.ddns.net:8881/weather_temp_new.php?city=" + API.Cityname;
-	alert("Request temperature: " + temperatureUrl);
+	var temperatureUrl = 'http://www.meteo.lt/lt/miestas?placeCode=Vilnius';
     xmlHttp1 = new XMLHttpRequest();
     xmlHttp1.onreadystatechange = ProcessTemperatureResponse;
     xmlHttp1.open("GET", temperatureUrl, true);
@@ -4591,50 +3545,8 @@ function showTemp() {
 }
 
 function hideTemp() {
-    var cf = document.getElementById("temp");
-    cf.style.visibility = "hidden";
-}
-
-function scrollUp() {
-    var bj = document.getElementById("scroll_cursor").style.top;
-    var q = parseInt(bj);
-    if (q < 460) {
-        t = Math.abs(q + 20);
-        alert("new top=" + Main.scrolling);
-        document.getElementById("scroll_cursor").style.top = t + "px";
-    } else {
-        document.getElementById("scroll_cursor").style.top = "460px";
-    }
-}
-
-function scrollDown() {
-    var bj = document.getElementById("scroll_cursor").style.top;
-    var q = parseInt(bj);
-    if (q > 80) {
-        t = Math.abs(q - 20);
-        alert("new top=" + Main.scrolling);
-        document.getElementById("scroll_cursor").style.top = t + "px";
-    } else {
-        document.getElementById("scroll_cursor").style.top = "80px";
-    }
-}
-
-/**
- * Processing weather response
- * @return {string} response text
- */
-function ProcessWeatherResponse() {
-    if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
-        if (xmlHttp.responseText == "ACCESS DENIED") {
-            Display.status("<b style=\"color:yellow\">" + xmlHttp.responseText + "</b>", 3000);
-        } else {
-            var ci = document.getElementById("weather_icons");
-            var i = xmlHttp.responseText;
-            ci.style.backgroundImage = "url(" + i + ")";
-            ci.style.visibility = "visible";
-            return xmlHttp.responseText;
-        }
-    }
+    var cf = document.getElementById('temp');
+    cf.style.visibility = 'hidden';
 }
 
 /**
@@ -4642,19 +3554,36 @@ function ProcessWeatherResponse() {
  * @return {string} response text
  */
 function ProcessTemperatureResponse() {
-    if (xmlHttp1.readyState == 4 && xmlHttp1.status == 200) {
-        if (xmlHttp1.responseText == "ACCESS DENIED") {
-            Display.status("<b style=\"color:yellow\">" + xmlHttp1.responseText + "</b>", 3000);
-        } else {
-            var cj = document.getElementById("temp");
-            var o = xmlHttp1.responseText;
-            cj.innerHTML = "<p><b style=\"color:#FFFFFF;font-size:14px;\">" + API.Cityname + "</b> " + o + "</p>";
-            cj.style.visibility = "visible";
-            return xmlHttp1.responseText;
-        }
-    }
-}
+    if (xmlHttp1.readyState == 4 && xmlHttp1.status == 200) {	
+		var html = xmlHttp1.responseText.replace(/(\r\n|\n|\r)/gm, '');
+		
+		var htmlWeatherPattern = /<div class="weather_info type_1">(.+?)<div class="tab_block big">/;
+		var htmlWeather = html.match(htmlWeatherPattern)[1].trim();
+		
+		var htmlLeftPattern = /<div class="left">(.+?)<\/div>/;
+		var htmlLeft = html.match(htmlLeftPattern)[1].trim();
 
-function popAlert() {
-    alert("Hello! I am an alert box!");
+		var htmlRightPattern = /<div class="right">(.+?)<\/div>/;
+		var htmlRight = html.match(htmlRightPattern)[1].trim();
+
+		var cityPattern = /<p class="large">(.+?)</;
+		var city = htmlLeft.match(cityPattern)[1].trim();
+		//alert('city: ' + city);
+
+		var tempPattern = /temperature">(.+?)</;
+		var temp = htmlLeft.match(tempPattern)[1] + '&deg;C';
+		//alert('temp: ' + temp);
+
+		var conditionPattern = /<p class="large">(.+?)</;
+		var condition = htmlRight.match(conditionPattern)[1];
+		//alert('condition: ' + condition);
+
+		var feelLikePattern = /feelLike">(.+?)</;
+		var feelLike = htmlRight.match(feelLikePattern)[1] + '&deg;C';;
+		//alert('feelLike: ' + feelLike);
+		
+		var elTemp = document.getElementById('temp');
+		elTemp.innerHTML = '<p><b style="color:#FFFFFF;font-size:14px;">' + city + '</b> ' + temp + ' (' + feelLike + ')</p>';
+		elTemp.style.visibility = "visible";
+    }
 }
