@@ -1071,7 +1071,7 @@ msecToStr = function (i, o) {
 
 var API = {
     XML_URL: 'start.xml',
-    star_url: 'https://raw.githubusercontent.com/blahlt/samsungtv/master/data/skynet20161003.m3u',
+    star_url: 'https://raw.githubusercontent.com/blahlt/samsungtv/master/data/skynet.m3u',
 	//star_url: 'http://190.2.144.79:25461/get.php?username=mejoradaa&password=cambio&type=m3u',
 	//star_url: 'https://raw.githubusercontent.com/blahlt/samsungtv/master/data/de-m3uplaylist-2018-03-10-1.m3u',
     Proxy: '',
