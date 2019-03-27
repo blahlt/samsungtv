@@ -29,6 +29,9 @@ udp://@233.136.41.39:1234
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.173:1234
 
+#EXTINF:7 tvg-name="tv3-2",TV3 HD
+udp://@239.255.12.13:1234
+
 #EXTINF:8 tvg-name="btv",BTV mpeg2
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.20:1234
@@ -37,9 +40,15 @@ udp://@233.136.41.20:1234
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.176:1234
 
+#EXTINF:9 tvg-name="btv",BTV HD
+udp://@239.255.12.209:1234
+
 #EXTINF:10 tvg-name="lietuvos-ryto-televizija",Lietuvos ryto TV
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.15:1234
+
+#EXTINF:10 tvg-name="lietuvos-ryto-televizija",Lietuvos ryto TV HD
+udp://@239.255.12.8:1234
 
 #EXTINF:11 tvg-name="tv6-2",TV6 mpeg2
 #EXTTV:Lietuviski;lit;
@@ -48,6 +57,9 @@ udp://@233.136.41.38:1234
 #EXTINF:12 tvg-name="tv6-2",TV6 h264
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.175:1234
+
+#EXTINF:12 tvg-name="tv6-2",TV6 HD
+udp://@239.255.12.212:1234
 
 #EXTINF:13 tvg-name="tv8",TV8 mpeg2
 #EXTTV:Lietuviski;;
@@ -64,6 +76,9 @@ udp://@233.136.41.42:1234
 #EXTINF:16 tvg-name="tv1",TV1 h264
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.174:1234
+
+#EXTINF:16 tvg-name="tv1",TV1 HD
+udp://@239.255.12.210:1234
 
 #EXTINF:17,LRT Kultura mpeg2
 #EXTTV:Lietuviski;lit;
@@ -92,6 +107,9 @@ udp://@233.136.41.17:1234
 #EXTINF:23 tvg-name="info-tv",Info TV h264
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.177:1234
+
+#EXTINF:23 tvg-name="info-tv",Info TV HD
+udp://@239.255.12.28:1234
 
 #EXTINF:24 tvg-name="balticum-tv",Balticum TV
 #EXTTV:Lietuviski;lit;
@@ -152,6 +170,12 @@ udp://@233.136.41.163:1234
 #EXTINF:38 tvg-name="tvplay-sports",TVPlay Sports
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.36:1234
+
+#EXTINF:38 tvg-name="tvplay-sports",TVPlay Sports HD
+udp://@239.255.12.10:1234
+
+#EXTINF:-1,TVPlay Sports +
+udp://@239.255.12.74:1234
 
 #EXTINF:39 tvg-name="zvaigzde",TV Zvaigzde
 #EXTTV:Lietuviski;;
