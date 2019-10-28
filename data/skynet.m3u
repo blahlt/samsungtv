@@ -903,6 +903,18 @@ udp://@233.99.62.6:1234
 #EXTTV:;eng;
 udp://@233.99.62.5:1234
 
+#EXTINF:0,EroX
+udp://@233.99.62.15:1234
+
+#EXTINF:0,Outdoor
+udp://@233.99.62.12:1234
+
+#EXTINF:0,Channel 15
+udp://@233.99.62.14:1234
+
+#EXTINF:0,Bollywood HD
+udp://@233.99.62.2:1234
+
 #EXTINF:6,Channel 6
 #EXTTV:;eng;
 udp://@233.99.62.7:1234
