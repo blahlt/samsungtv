@@ -13,6 +13,10 @@ udp://@233.136.41.170:1234
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.158:1234
 
+#EXTINF:3 tvg-name="lrt-televizija",LRT Televizija HD
+#EXTTV:;lit;
+udp://@239.255.15.64:1234
+
 #EXTINF:4 tvg-name="lnk",LNK mpeg2
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.13:1234
@@ -20,6 +24,14 @@ udp://@233.136.41.13:1234
 #EXTINF:5 tvg-name="lnk",LNK h264
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.172:1234
+
+#EXTINF:5 tvg-name="lnk",LNK HD
+#EXTTV:;lit;
+udp://@233.132.130.4:1234
+
+#EXTINF:5 tvg-name="lnk",LNK HD
+#EXTTV:;lit;
+udp://@239.255.15.63:1234
 
 #EXTINF:6 tvg-name="tv3-2",TV3 mpeg2
 #EXTTV:Lietuviski;lit;
@@ -30,7 +42,12 @@ udp://@233.136.41.39:1234
 udp://@233.136.41.173:1234
 
 #EXTINF:7 tvg-name="tv3-2",TV3 HD
-udp://@239.255.12.13:1234
+#EXTTV:;lit;
+udp://@239.255.15.122:1234
+
+#EXTINF:7 tvg-name="tv3-2",TV3 HD
+#EXTTV:;;
+udp://@233.99.62.13:1234
 
 #EXTINF:8 tvg-name="btv",BTV mpeg2
 #EXTTV:Lietuviski;lit;
@@ -41,14 +58,20 @@ udp://@233.136.41.20:1234
 udp://@233.136.41.176:1234
 
 #EXTINF:9 tvg-name="btv",BTV HD
-udp://@239.255.12.209:1234
+#EXTTV:;lit;
+udp://@233.132.130.5:1234
+
+#EXTINF:9 tvg-name="btv",BTV HD
+#EXTTV:;lit;
+udp://@239.255.15.11:1234
 
 #EXTINF:10 tvg-name="lietuvos-ryto-televizija",Lietuvos ryto TV
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.15:1234
 
 #EXTINF:10 tvg-name="lietuvos-ryto-televizija",Lietuvos ryto TV HD
-udp://@239.255.12.8:1234
+#EXTTV:;lit;
+udp://@239.255.15.67:1234
 
 #EXTINF:11 tvg-name="tv6-2",TV6 mpeg2
 #EXTTV:Lietuviski;lit;
@@ -59,7 +82,8 @@ udp://@233.136.41.38:1234
 udp://@233.136.41.175:1234
 
 #EXTINF:12 tvg-name="tv6-2",TV6 HD
-udp://@239.255.12.212:1234
+#EXTTV:;lit;
+udp://@239.255.15.112:1234
 
 #EXTINF:13 tvg-name="tv8",TV8 mpeg2
 #EXTTV:Lietuviski;;
@@ -78,15 +102,28 @@ udp://@233.136.41.42:1234
 udp://@233.136.41.174:1234
 
 #EXTINF:16 tvg-name="tv1",TV1 HD
-udp://@239.255.12.210:1234
+#EXTTV:;lit;
+udp://@239.255.15.116:1234
 
-#EXTINF:17,LRT Kultura mpeg2
+#EXTINF:16 tvg-name="tv1",TV1 HD
+#EXTTV:;lit;
+udp://@233.132.130.12:1234
+
+#EXTINF:17,LRT Plius mpeg2
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.31:1234
+
+#EXTINF:104,LRT Plius HD
+#EXTTV:;lit;
+udp://@239.255.15.65:1234
 
 #EXTINF:18,LRT Kultura h264
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.171:1234
+
+#EXTINF:44,LRT Kultura HD-720
+#EXTTV:;lit;
+udp://@239.2.4.204:1234
 
 #EXTINF:19 tvg-name="lrt-lituanica",LRT Lituanica
 #EXTTV:Lietuviski;;
@@ -109,7 +146,12 @@ udp://@233.136.41.17:1234
 udp://@233.136.41.177:1234
 
 #EXTINF:23 tvg-name="info-tv",Info TV HD
-udp://@239.255.12.28:1234
+#EXTTV:;lit;
+udp://@233.132.130.13:1234
+
+#EXTINF:23 tvg-name="info-tv",Info TV HD
+#EXTTV:;;
+udp://@239.2.4.129:1234
 
 #EXTINF:24 tvg-name="balticum-tv",Balticum TV
 #EXTTV:Lietuviski;lit;
@@ -118,6 +160,14 @@ udp://@233.136.41.21:1234
 #EXTINF:25 tvg-name="balticum-auksinis",Balticum Gold
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.105:1234
+
+#EXTINF:144,Balticum PlatinumHD
+#EXTTV:;lit;
+udp://@239.255.15.110:1234
+
+#EXTINF:26 tvg-name="tv1000-premium",TV1000 Premium
+#EXTTV:;;
+udp://@239.255.15.120:1234
 
 #EXTINF:26 tvg-name="tv1000-premium",TV1000 Premium
 #EXTTV:Lietuviski;lit;
@@ -171,15 +221,31 @@ udp://@233.136.41.163:1234
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.36:1234
 
+#EXTINF:5 tvg-name="tvplay-sports",TVPlay Sports HD
+udp://@233.99.62.8:1234
+
 #EXTINF:38 tvg-name="tvplay-sports",TVPlay Sports HD
-udp://@239.255.12.10:1234
+#EXTTV:;lit;
+udp://@239.255.15.127:1234
 
 #EXTINF:-1,TVPlay Sports +
 udp://@239.255.12.74:1234
 
+#EXTINF:32,TVPlay Sports+ HD
+#EXTTV:;lit;
+udp://@233.132.130.11:1234
+
 #EXTINF:39 tvg-name="zvaigzde",TV Zvaigzde
 #EXTTV:Lietuviski;;
 udp://@233.136.41.165:1234
+
+#EXTINF:-1,Viasat Explore
+#EXTTV:;eng;
+udp://@239.255.15.131:1234
+
+#EXTINF:-1,Viasat Explore HD
+#EXTTV:;eng;
+udp://@233.136.41.141:1234
 
 #EXTINF:40 tvg-name="viasat-explore-nordic",Viasat Explore Nordic
 #EXTTV:;eng;
@@ -188,6 +254,10 @@ udp://@233.136.41.37:1234
 #EXTINF:41 tvg-name="viasat-history",Viasat History
 #EXTTV:;eng;
 udp://@233.136.41.34:1234
+
+#EXTINF:41 tvg-name="viasat-history",Viasat History
+#EXTTV:;eng;
+udp://@239.255.15.132:1234
 
 #EXTINF:42 tvg-name="viasat-history",Viasat History HD
 #EXTTV:;eng;
@@ -337,7 +407,7 @@ udp://@233.136.41.49:1234
 #EXTTV:;eng;
 udp://@233.136.41.52:1234
 
-#EXTINF:79,Euronews
+#EXTINF:79,Euronews Russian
 #EXTTV:;eng;
 udp://@233.136.41.56:1234
 
@@ -721,3 +791,694 @@ udp://@233.136.41.5:1234
 #EXTTV:;eng;
 udp://@233.136.41.30:1234
 
+#
+#nauji
+#
+
+#EXTINF:1,All Jazeera mpegts
+#EXTTV:;eng;
+udp://@233.136.41.0:1234
+
+#EXTINF:59,Init TV mpegts
+#EXTTV:;lit;
+udp://@233.136.41.117:1234
+
+#EXTINF:61,Filmzone mpegts
+#EXTTV:;lit;
+udp://@233.136.41.122:1234
+
+#EXTINF:98,FightBox HD
+#EXTTV:;spa;
+udp://@233.136.41.183:1234
+
+#EXTINF:100,ZARA TV
+#EXTTV:;rus;
+udp://@233.136.41.188:1234
+
+#EXTINF:101,Kuchnia
+#EXTTV:;rus;
+udp://@233.136.41.193:1234
+
+#EXTINF:102,La-Minor TV
+#EXTTV:;rus;
+udp://@233.136.41.192:1234
+
+#EXTINF:103,Kinokomedia
+#EXTTV:;rus;
+udp://@233.136.41.194:1234
+
+#EXTINF:104,Telekafe
+#EXTTV:;rus;
+udp://@233.136.41.197:1234
+
+#EXTINF:105,Dom Kino Premium HD
+#EXTTV:;;
+udp://@233.136.41.201:1234
+
+#EXTINF:106,Alpha2 ?
+#EXTTV:;rus;
+udp://@233.136.41.211:1234
+
+#EXTINF:107,Domashnij
+#EXTTV:;eng;
+udp://@233.136.41.210:1234
+
+#EXTINF:108,Kto est kto
+#EXTTV:;rus;
+udp://@233.136.41.213:1234
+
+#EXTINF:109,Pukas TV
+#EXTTV:;;
+udp://@233.136.41.212:1234
+
+#EXTINF:110,? Current Time HD
+#EXTTV:;;
+udp://@233.136.41.218:1234
+
+#EXTINF:111,Euronews English HD
+#EXTTV:;eng;
+udp://@233.136.41.219:1234
+
+#EXTINF:112,nickelodeon
+#EXTTV:;lit;
+udp://@233.136.41.223:1234
+
+#EXTINF:113,nickjr
+#EXTTV:;eng;
+udp://@233.136.41.224:1234
+
+#EXTINF:114,Epic Drama HD
+#EXTTV:;lit;
+udp://@233.136.41.231:1234
+
+#EXTINF:115,C music
+#EXTTV:;eng;
+udp://@233.136.41.232:1234
+
+#EXTINF:116,NickToons
+#EXTTV:;;
+udp://@233.136.41.230:1234
+
+#EXTINF:117,FOX
+#EXTTV:;eng;
+udp://@233.136.41.233:1234
+
+#EXTINF:118,National Geographic Channel
+#EXTTV:;eng;
+udp://@233.136.41.235:1234
+
+#EXTINF:119,FOXlife
+#EXTTV:;eng;
+udp://@233.136.41.234:1234
+
+#EXTINF:2,TVP Info HD
+#EXTTV:;pol;
+udp://@233.99.62.4:1234
+
+#EXTINF:3,Channel 3
+#EXTTV:;;
+udp://@233.99.62.6:1234
+
+#EXTINF:4,Playboy HD
+#EXTTV:;eng;
+udp://@233.99.62.5:1234
+
+#EXTINF:6,Channel 6
+#EXTTV:;eng;
+udp://@233.99.62.7:1234
+
+#EXTINF:7,Belarus 24 HD
+#EXTTV:;rus;
+udp://@233.99.62.10:1234
+
+#EXTINF:8,CTC Baltic
+#EXTTV:;;
+udp://@233.99.62.11:1234
+
+#EXTINF:9,Channel 9
+#EXTTV:;eng;
+udp://@233.99.62.12:1234
+
+#EXTINF:11,Channel 11
+#EXTTV:;rus;
+udp://@233.99.62.17:1234
+
+#EXTINF:12,PBK_LT
+#EXTTV:;rus;
+udp://@233.10.10.13:5000
+
+#EXTINF:13,Bober [0x0@25.00f 5000000]
+#EXTTV:;rus;
+udp://@233.10.10.17:5000
+
+#EXTINF:14,Muzyka
+#EXTTV:;rus;
+udp://@233.10.10.20:5000
+
+#EXTINF:15,Telekafe
+#EXTTV:;rus;
+udp://@233.10.10.19:5000
+
+#EXTINF:16,DK Premium HD
+#EXTTV:;;
+udp://@233.10.10.23:5000
+
+#EXTINF:17,Karusel Int
+#EXTTV:;rus;
+udp://@233.10.10.24:5000
+
+#EXTINF:18,NTV-Style
+#EXTTV:;rus;
+udp://@233.10.10.28:5000
+
+#EXTINF:19,NTV-Pravo
+#EXTTV:;rus;
+udp://@233.10.10.29:5000
+
+#EXTINF:20,O!
+#EXTTV:;;
+udp://@233.10.10.30:5000
+
+#EXTINF:21,Poehali!
+#EXTTV:;;
+udp://@233.10.10.31:5000
+
+#EXTINF:22,Dom Kino
+#EXTTV:;rus;
+udp://@233.10.11.18:5000
+
+#EXTINF:23,Kinomiks HD
+#EXTTV:;rus;
+udp://@233.10.11.40:5000
+
+#EXTINF:24,Nashe Novoe Kino HD
+#EXTTV:;rus;
+udp://@233.10.11.41:5000
+
+#EXTINF:25,Rodnoje Kino
+#EXTTV:;rus;
+udp://@233.10.11.42:5000
+
+#EXTINF:26,KBH TV
+#EXTTV:;rus;
+udp://@233.10.11.46:5000
+
+#EXTINF:27,M1-Global HD
+#EXTTV:;rus;
+udp://@233.10.11.47:5000
+
+#EXTINF:28,Boks TV
+#EXTTV:;rus;
+udp://@233.10.11.49:5000
+
+#EXTINF:29,Kuhnya TV HD
+#EXTTV:;rus;
+udp://@233.10.11.48:5000
+
+#EXTINF:35,Channel 35
+#EXTTV:;rus;
+udp://@233.132.130.25:1234
+
+#EXTINF:36,Channel 36
+#EXTTV:;lit;
+udp://@233.132.130.111:1234
+
+#EXTINF:37,Channel 37
+#EXTTV:;est;
+udp://@233.132.130.112:1234
+
+#EXTINF:38,Pingviniukas
+#EXTTV:;lit;
+udp://@233.132.130.122:1234
+
+#EXTINF:39,Duck TV
+#EXTTV:;;
+udp://@233.132.130.201:1234
+
+#EXTINF:41,Channel 41
+#EXTTV:;lit;
+udp://@239.2.4.201:1234
+
+#EXTINF:42,Channel 42
+#EXTTV:;lit;
+udp://@239.2.4.202:1234
+
+#EXTINF:43,LNK
+#EXTTV:;lit;
+udp://@239.2.4.203:1234
+
+#EXTINF:45,Channel 45
+#EXTTV:;lit;
+udp://@239.2.4.206:1234
+
+#EXTINF:46,TV6 Lithuania
+#EXTTV:;lit;
+udp://@239.2.4.207:1234
+
+#EXTINF:47,LRT Lituanica MPEG2
+#EXTTV:;lit;
+udp://@239.2.4.208:1234
+
+#EXTINF:48,Lietuvos rytas TV
+#EXTTV:;lit;
+udp://@239.2.4.209:1234
+
+#EXTINF:49,INFO TV
+#EXTTV:;lit;
+udp://@239.2.4.211:1234
+
+#EXTINF:50,Channel 50
+#EXTTV:;eng;
+udp://@239.255.15.1:1234
+
+#EXTINF:51,Animal Planet
+#EXTTV:;eng;
+udp://@239.255.15.2:1234
+
+#EXTINF:52,Channel 52
+#EXTTV:;eng;
+udp://@239.255.15.3:1234
+
+#EXTINF:53,Channel 53
+#EXTTV:;lit;
+udp://@239.255.15.5:1234
+
+#EXTINF:54,Channel 54
+#EXTTV:;lit;
+udp://@239.255.15.4:1234
+
+#EXTINF:55,Belarus 24
+#EXTTV:;rus;
+udp://@239.255.15.6:1234
+
+#EXTINF:56,Bloomberg Europe
+#EXTTV:;eng;
+udp://@239.255.15.7:1234
+
+#EXTINF:57,Boks TV
+#EXTTV:;rus;
+udp://@239.255.15.9:1234
+
+#EXTINF:58,Boomerang
+#EXTTV:;eng;
+udp://@239.255.15.10:1234
+
+#EXTINF:60,Channel 60
+#EXTTV:;eng;
+udp://@239.255.15.12:1234
+
+#EXTINF:61,Cartoon Network
+#EXTTV:;eng;
+udp://@239.255.15.13:1234
+
+#EXTINF:62,Channel 62
+#EXTTV:;eng;
+udp://@239.255.15.15:1234
+
+#EXTINF:63,Channel 63
+#EXTTV:;;
+udp://@239.255.15.16:1234
+
+#EXTINF:64,Discovery Channel
+#EXTTV:;eng;
+udp://@239.255.15.17:1234
+
+#EXTINF:65,Setanta Sports HD
+#EXTTV:;eng;
+udp://@239.255.15.19:1234
+
+#EXTINF:66,Discovery HD Showcase
+#EXTTV:;eng;
+udp://@239.255.15.20:1234
+
+#EXTINF:67,Channel 67
+#EXTTV:;eng;
+udp://@239.255.15.21:1234
+
+#EXTINF:68,Channel 68
+#EXTTV:;eng;
+udp://@239.255.15.22:1234
+
+#EXTINF:69,Disney XD
+#EXTTV:;;
+udp://@239.255.15.25:1234
+
+#EXTINF:70,Disney Junior
+#EXTTV:;;
+udp://@239.255.15.24:1234
+
+#EXTINF:71,Channel 71
+#EXTTV:;rus;
+udp://@239.255.15.26:1234
+
+#EXTINF:72,Channel 72
+#EXTTV:;;
+udp://@239.255.15.27:1234
+
+#EXTINF:73,Channel 73
+#EXTTV:;slo;
+udp://@239.255.15.28:1234
+
+#EXTINF:74,Channel 74
+#EXTTV:;eng;
+udp://@239.255.15.31:1234
+
+#EXTINF:75,Channel 75
+#EXTTV:;rus;
+udp://@239.255.15.32:1234
+
+#EXTINF:76,Eurosport
+#EXTTV:;eng;
+udp://@239.255.15.34:1234
+
+#EXTINF:77,Euronews English HD
+#EXTTV:;eng;
+udp://@239.255.15.33:1234
+
+#EXTINF:78,Channel 78
+#EXTTV:;eng;
+udp://@239.255.15.35:1234
+
+#EXTINF:79,Eurosport 2 HD
+#EXTTV:;eng;
+udp://@239.255.15.36:1234
+
+#EXTINF:80,Filmzone MPEG2 (Main)
+#EXTTV:;est;
+udp://@239.255.15.40:1234
+
+#EXTINF:81,Channel 81
+#EXTTV:;eng;
+udp://@239.255.15.42:1234
+
+#EXTINF:82,Fashion TV
+#EXTTV:;eng;
+udp://@239.255.15.39:1234
+
+#EXTINF:83,Food Network
+#EXTTV:;eng;
+udp://@239.255.15.43:1234
+
+#EXTINF:84,FOX
+#EXTTV:;eng;
+udp://@239.255.15.44:1234
+
+#EXTINF:85,Channel 85
+#EXTTV:;rus;
+udp://@239.255.15.45:1234
+
+#EXTINF:86,Channel 86
+#EXTTV:;fra;
+udp://@239.255.15.46:1234
+
+#EXTINF:87,Juvelirochka
+#EXTTV:;rus;
+udp://@239.255.15.47:1234
+
+#EXTINF:88,ID
+#EXTTV:;eng;
+udp://@239.255.15.49:1234
+
+#EXTINF:89,ID HD
+#EXTTV:;eng;
+udp://@239.255.15.50:1234
+
+#EXTINF:90,Channel 90
+#EXTTV:;lit;
+udp://@239.255.15.52:1234
+
+#EXTINF:91,Indijskoye Kino
+#EXTTV:;rus;
+udp://@239.255.15.51:1234
+
+#EXTINF:92,JimJam
+#EXTTV:;lit;
+udp://@239.255.15.53:1234
+
+#EXTINF:93,Channel 93
+#EXTTV:;est;
+udp://@239.255.15.55:1234
+
+#EXTINF:94,Channel 94
+#EXTTV:;rus;
+udp://@239.255.15.54:1234
+
+#EXTINF:95,Kidzone+ HD
+#EXTTV:;est;
+udp://@239.255.15.56:1234
+
+#EXTINF:96,Channel 96
+#EXTTV:;rus;
+udp://@239.255.15.59:1234
+
+#EXTINF:97,Kinomiks HD
+#EXTTV:;rus;
+udp://@239.255.15.58:1234
+
+#EXTINF:98,Channel 98
+#EXTTV:;rus;
+udp://@239.255.15.61:1234
+
+#EXTINF:99,Kuhnya TV HD
+#EXTTV:;rus;
+udp://@239.255.15.60:1234
+
+#EXTINF:101,Liuks!
+#EXTTV:;lit;
+udp://@239.255.15.62:1234
+
+#EXTINF:103,Channel 103
+#EXTTV:;qaa;
+udp://@239.255.15.66:1234
+
+#EXTINF:106,Channel 106
+#EXTTV:;rus;
+udp://@239.255.15.68:1234
+
+#EXTINF:107,Channel 107
+#EXTTV:;fra;
+udp://@239.255.15.70:1234
+
+#EXTINF:108,MTV Europe
+#EXTTV:;eng;
+udp://@239.255.15.71:1234
+
+#EXTINF:109,MCM TOP
+#EXTTV:;;
+udp://@239.255.15.69:1234
+
+#EXTINF:110,Channel 110
+#EXTTV:;eng;
+udp://@239.255.15.72:1234
+
+#EXTINF:111,Channel 111
+#EXTTV:;eng;
+udp://@239.255.15.73:1234
+
+#EXTINF:112,Nashe Lubimoe Kino
+#EXTTV:;;
+udp://@239.255.15.77:1234
+
+#EXTINF:113,Muzyka Pervogo
+#EXTTV:;rus;
+udp://@239.255.15.76:1234
+
+#EXTINF:114,Channel 114
+#EXTTV:;rus;
+udp://@239.255.15.78:1234
+
+#EXTINF:115,Channel 115
+#EXTTV:;eng;
+udp://@239.255.15.79:1234
+
+#EXTINF:116,Channel 116
+#EXTTV:;lit;
+udp://@239.255.15.81:1234
+
+#EXTINF:117,National Geographic Channel
+#EXTTV:;eng;
+udp://@239.255.15.80:1234
+
+#EXTINF:118,Nick Jr.
+#EXTTV:;rus;
+udp://@239.255.15.82:1234
+
+#EXTINF:119,NTV Mir
+#EXTTV:;rus;
+udp://@239.255.15.83:1234
+
+#EXTINF:120,Channel 120
+#EXTTV:;rus;
+udp://@239.255.15.85:1234
+
+#EXTINF:121,NTV-Pravo
+#EXTTV:;rus;
+udp://@239.255.15.84:1234
+
+#EXTINF:122,O!
+#EXTTV:;;
+udp://@239.255.15.87:1234
+
+#EXTINF:123,Channel 123
+#EXTTV:;rus;
+udp://@239.255.15.88:1234
+
+#EXTINF:124,Channel 124
+#EXTTV:;rus;
+udp://@239.255.15.89:1234
+
+#EXTINF:125,Pingviniukas
+#EXTTV:;lit;
+udp://@239.255.15.90:1234
+
+#EXTINF:126,Channel 126
+#EXTTV:;deu;
+udp://@239.255.15.92:1234
+
+#EXTINF:127,Channel 127
+#EXTTV:;;
+udp://@239.255.15.91:1234
+
+#EXTINF:128,RBK TV
+#EXTTV:;rus;
+udp://@239.255.15.94:1234
+
+#EXTINF:129,Channel 129
+#EXTTV:;rus;
+udp://@239.255.15.95:1234
+
+#EXTINF:130,RAI1
+#EXTTV:;ita;
+udp://@239.255.15.93:1234
+
+#EXTINF:131,Rossiya 24
+#EXTTV:;eng;
+udp://@239.255.15.97:1234
+
+#EXTINF:132,Rodnoje Kino
+#EXTTV:;rus;
+udp://@239.255.15.96:1234
+
+#EXTINF:133,Channel 133
+#EXTTV:;eng;
+udp://@239.255.15.98:1234
+
+#EXTINF:134,Channel 134
+#EXTTV:;eng;
+udp://@239.255.15.99:1234
+
+#EXTINF:135,Russia Today
+#EXTTV:;eng;
+udp://@239.255.15.100:1234
+
+#EXTINF:136,Channel 136
+#EXTTV:;deu;
+udp://@239.255.15.101:1234
+
+#EXTINF:137,Channel 137
+#EXTTV:;lit;
+udp://@239.255.15.102:1234
+
+#EXTINF:138,Channel 138
+#EXTTV:;lit;
+udp://@239.255.15.104:1234
+
+#EXTINF:139,Channel 139
+#EXTTV:;est;
+udp://@239.255.15.105:1234
+
+#EXTINF:140,Sport 1 HD
+#EXTTV:;lit;
+udp://@239.255.15.106:1234
+
+#EXTINF:141,Sport 1 HD
+#EXTTV:;lit;
+udp://@239.255.15.107:1234
+
+#EXTINF:142,Channel 142
+#EXTTV:;rus;
+udp://@239.255.15.108:1234
+
+#EXTINF:143,Channel 143
+#EXTTV:;eng;
+udp://@239.255.15.109:1234
+
+#EXTINF:145,Travel Channel HD
+#EXTTV:;eng;
+udp://@239.255.15.111:1234
+
+#EXTINF:147,TVP Polonia
+#EXTTV:;pol;
+udp://@239.255.15.114:1234
+
+#EXTINF:148,TV8
+#EXTTV:;lit;
+udp://@239.255.15.113:1234
+
+#EXTINF:149,Channel 149
+#EXTTV:;RUS;
+udp://@239.255.15.115:1234
+
+#EXTINF:151,TV1000 East
+#EXTTV:;;
+udp://@239.255.15.117:1234
+
+#EXTINF:152,TV1000 Action
+#EXTTV:;;
+udp://@239.255.15.118:1234
+
+#EXTINF:154,TV1000 Premium
+#EXTTV:;;
+udp://@239.255.15.119:1234
+
+#EXTINF:155,Channel 155
+#EXTTV:;;
+udp://@239.255.15.121:1234
+
+#EXTINF:157,Channel 157
+#EXTTV:;spa;
+udp://@239.255.15.124:1234
+
+#EXTINF:158,Channel 158
+#EXTTV:;eng;
+udp://@239.255.15.123:1234
+
+#EXTINF:159,Channel 159
+#EXTTV:;lit;
+udp://@239.255.15.126:1234
+
+#EXTINF:160,TVP Info HD
+#EXTTV:;pol;
+udp://@239.255.15.125:1234
+
+#EXTINF:161,Channel 161
+#EXTTV:;lit;
+udp://@239.255.15.128:1234
+
+#EXTINF:163,Channel 163
+#EXTTV:;eng;
+udp://@239.255.15.129:1234
+
+#EXTINF:166,Viasat Nature
+#EXTTV:;eng;
+udp://@239.255.15.133:1234
+
+#EXTINF:167,Vremja
+#EXTTV:;rus;
+udp://@239.255.15.134:1234
+
+#EXTINF:168,THT International
+#EXTTV:;rus;
+udp://@239.255.15.137:1234
+
+#EXTINF:169,Piatnica
+#EXTTV:;;
+udp://@239.255.15.136:1234
+
+#EXTINF:170,Channel 170
+#EXTTV:;rus;
+udp://@239.255.15.138:1234
+
+#EXTINF:171,Channel 171
+#EXTTV:;rus;
+udp://@239.255.15.139:1234
