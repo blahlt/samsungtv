@@ -1,6 +1,34 @@
 #EXTM3U
 #EXTNAME:
 
+#EXTINF:1 tvg-name="lrt-televizija",LRT Televizija
+#EXTTV:;qaa;
+udp://@239.255.15.66:1234
+
+#EXTINF:5 tvg-name="lnk",LNK HD
+#EXTTV:;lit;
+udp://@239.255.15.63:1234
+
+#EXTINF:7 tvg-name="tv3-2",TV3 HD
+#EXTTV:;lit;
+udp://@239.255.15.122:1234
+
+#EXTINF:9 tvg-name="btv",BTV HD
+#EXTTV:;lit;
+udp://@239.255.15.11:1234
+
+#EXTINF:10 tvg-name="lietuvos-ryto-televizija",Lietuvos ryto TV HD
+#EXTTV:;lit;
+udp://@239.255.15.67:1234
+
+#EXTINF:12 tvg-name="tv6-2",TV6 HD
+#EXTTV:;lit;
+udp://@239.255.15.112:1234
+
+#EXTINF:38 tvg-name="tvplay-sports",TVPlay Sports HD
+#EXTTV:;lit;
+udp://@239.255.15.127:1234
+
 #EXTINF:1 tvg-name="lrt-televizija",LRT Televizija mpeg2
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.12:1234
@@ -25,14 +53,6 @@ udp://@233.136.41.13:1234
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.172:1234
 
-#EXTINF:5 tvg-name="lnk",LNK HD
-#EXTTV:;lit;
-udp://@233.132.130.4:1234
-
-#EXTINF:5 tvg-name="lnk",LNK HD
-#EXTTV:;lit;
-udp://@239.255.15.63:1234
-
 #EXTINF:6 tvg-name="tv3-2",TV3 mpeg2
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.39:1234
@@ -40,10 +60,6 @@ udp://@233.136.41.39:1234
 #EXTINF:7 tvg-name="tv3-2",TV3 h264
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.173:1234
-
-#EXTINF:7 tvg-name="tv3-2",TV3 HD
-#EXTTV:;lit;
-udp://@239.255.15.122:1234
 
 #EXTINF:7 tvg-name="tv3-2",TV3 HD
 #EXTTV:;;
@@ -57,21 +73,9 @@ udp://@233.136.41.20:1234
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.176:1234
 
-#EXTINF:9 tvg-name="btv",BTV HD
-#EXTTV:;lit;
-udp://@233.132.130.5:1234
-
-#EXTINF:9 tvg-name="btv",BTV HD
-#EXTTV:;lit;
-udp://@239.255.15.11:1234
-
 #EXTINF:10 tvg-name="lietuvos-ryto-televizija",Lietuvos ryto TV
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.15:1234
-
-#EXTINF:10 tvg-name="lietuvos-ryto-televizija",Lietuvos ryto TV HD
-#EXTTV:;lit;
-udp://@239.255.15.67:1234
 
 #EXTINF:11 tvg-name="tv6-2",TV6 mpeg2
 #EXTTV:Lietuviski;lit;
@@ -80,10 +84,6 @@ udp://@233.136.41.38:1234
 #EXTINF:12 tvg-name="tv6-2",TV6 h264
 #EXTTV:Lietuviski;lit;
 udp://@233.136.41.175:1234
-
-#EXTINF:12 tvg-name="tv6-2",TV6 HD
-#EXTTV:;lit;
-udp://@239.255.15.112:1234
 
 #EXTINF:13 tvg-name="tv8",TV8 mpeg2
 #EXTTV:Lietuviski;;
@@ -223,10 +223,6 @@ udp://@233.136.41.36:1234
 
 #EXTINF:5 tvg-name="tvplay-sports",TVPlay Sports HD
 udp://@233.99.62.8:1234
-
-#EXTINF:38 tvg-name="tvplay-sports",TVPlay Sports HD
-#EXTTV:;lit;
-udp://@239.255.15.127:1234
 
 #EXTINF:-1,TVPlay Sports +
 udp://@239.255.12.74:1234
@@ -1259,10 +1255,6 @@ udp://@239.255.15.60:1234
 #EXTTV:;lit;
 udp://@239.255.15.62:1234
 
-#EXTINF:103,Channel 103
-#EXTTV:;qaa;
-udp://@239.255.15.66:1234
-
 #EXTINF:106,Channel 106
 #EXTTV:;rus;
 udp://@239.255.15.68:1234
@@ -1494,3 +1486,23 @@ udp://@239.255.15.138:1234
 #EXTINF:171,Channel 171
 #EXTTV:;rus;
 udp://@239.255.15.139:1234
+
+#EXTINF:1,Info TV
+#EXTTV:;;
+udp://@239.255.14.37:1234
+
+#EXTINF:2,Lietuvos rytas TV
+#EXTTV:;;
+udp://@239.255.14.36:1234
+
+#EXTINF:3,Service01
+#EXTTV:;;
+udp://@239.255.14.64:1234
+
+#EXTINF:4,Service01
+#EXTTV:;;
+udp://@239.255.14.65:1234
+
+#EXTINF:5,Service01
+#EXTTV:;;
+udp://@239.255.14.62:1234
