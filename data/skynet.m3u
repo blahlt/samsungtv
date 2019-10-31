@@ -1,12 +1,6 @@
 #EXTM3U
 #EXTNAME:
 
-#EXTINF:tvg-name="lrt-televizija",LRT Televizija HD 
-udp://@239.255.15.64:1234
-
-#EXTINF:tvg-name="lrt-televizija",LRT Televizija HD (CBR)
-udp://@239.255.15.140:1234
-
 #EXTINF:tvg-name="lrt-televizija",LRT Televizija 
 udp://@239.255.15.66:1234
 
@@ -25,8 +19,8 @@ udp://@239.255.15.67:1234
 #EXTINF:tvg-name="tv6-2",TV6 HD  
 udp://@239.255.15.112:1234
 
-#EXTINF:tvg-name="lrt-plius",LRT Plius HD
-udp://@239.255.15.65:1234
+#EXTINF:tvg-name="lrt-plius",LRT Plius
+udp://@239.255.14.32:1234
 
 #EXTINF:tvg-name="info-tv",Info TV HD
 udp://@239.255.15.52:1234
@@ -42,6 +36,15 @@ udp://@239.255.15.128:1234
 
 #EXTINF:tvg-name="tv1",TV1 HD
 udp://@239.255.15.116:1234
+
+#EXTINF:tvg-name="lrt-televizija",LRT Televizija HD 
+udp://@239.255.15.64:1234
+
+#EXTINF:tvg-name="lrt-televizija",LRT Televizija HD (CBR)
+udp://@239.255.15.140:1234
+
+#EXTINF:tvg-name="lrt-plius",LRT Plius HD
+udp://@239.255.15.65:1234
 
 #EXTINF:tvg-name="amc",AMC
 udp://@239.255.15.1:1234
@@ -552,10 +555,6 @@ udp://@239.255.14.31:1234
 #EXTINF:4,LNK
 #EXTTV:;;
 udp://@239.255.14.33:1234
-
-#EXTINF:5,LRT Plius
-#EXTTV:;;
-udp://@239.255.14.32:1234
 
 #EXTINF:6,BTV
 #EXTTV:;;
